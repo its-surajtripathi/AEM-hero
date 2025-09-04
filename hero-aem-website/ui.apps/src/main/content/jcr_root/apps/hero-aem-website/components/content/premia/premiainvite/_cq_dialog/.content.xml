@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Premia Invite Details"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.authoring.editor.hook]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <general
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Invite Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <title1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title 1"
+                                                name="./title1" />
+                                            <title2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title 2"
+                                                name="./title2" />
+                                            <text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Text"
+                                                name="./text" />
+                                            <formLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Form title"
+                                                name="./formTitle"
+                                                value="Help us with your details"/>
+                                            <formSubtext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Form Description"
+                                                name="./formDesc"
+                                                />
+                                            <circleText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Circular Area Text"
+                                                name="./circleText"
+                                                value="CLICK HERE TO GET YOUR INVITATION AND EXPERIENCE THE LAUNCH." />
+                                            <text3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Text1 inside Circle"
+                                                name="./text3"
+                                                value="Grab your" />
+                                            <text4
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Text2 inside Circle"
+                                                name="./text4"
+                                                value="INVITE" />
+                                            <asset
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select animation file"
+                                                name="./filePath"
+                                                rootPath="/content/dam/hero-aem-website" />
+                                            <asset2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select animation file - Mobile"
+                                                name="./mobileFilePath"
+                                                rootPath="/content/dam/hero-aem-website" />
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </general>
+                    <tab2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Post Lunch details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <postLunchtitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Post Lunch Title "
+                                                name="./postLunchTitle"
+                                                value="SEE YOU AT THE ONLINE LAUNCH EVENT" />
+                                            <postLunchDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Post Lunch Desciprion "
+                                                name="./postLunchDescription"
+                                                value="With the new H-D X 440 Everything will change" />
+                                            <buttonName
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Text"
+                                                name="./buttonName"
+                                                value="Discover more" />
+                                            <link
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Button Link"
+                                                name="./buttonLink"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <monthtext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Month"
+                                                name="./month" />
+                                            <datetext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Date"
+                                                name="./date" />
+                                            <timetext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Time"
+                                                name="./time" />
+                                            <ampm
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="AM or PM"
+                                                name="./ampm" />
+                                            <icon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Icon Asset"
+                                                fileNameParameter="./logoName"
+                                                fileReferenceParameter="./iconRef"
+                                                multiple="{Boolean}false"
+                                                name="./image"
+                                                title="Upload Icon Asset"
+                                                useHTML5="{Boolean}true" />
+                                            <img
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Image Asset"
+                                                fileNameParameter="./imgName"
+                                                fileReferenceParameter="./imgRef"
+                                                multiple="{Boolean}false"
+                                                name="./img"
+                                                title="Upload Image Asset"
+                                                useHTML5="{Boolean}true" />
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </tab2>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

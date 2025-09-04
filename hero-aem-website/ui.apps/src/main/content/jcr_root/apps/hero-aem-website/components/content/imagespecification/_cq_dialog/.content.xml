@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Image Specification Component"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem_cmp_tableofcontents_v1"
+          extraClientlibs="[hero-aem-website.multifield]">
+    <content
+            granite:class="cmp-toc__editor"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <general
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Properties"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <theme
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    class="cq-dialog-dropdown-showhide"
+                                                    cq-dialog-dropdown-showhide-target=".tab-show-hide"
+                                                    fieldDescription="Select Page Type"
+                                                    fieldLabel="Select Theme"
+                                                    name="./theme">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <scooter
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Scooters"
+                                                            checked="{Boolean}true"
+                                                            value="scooter"/>
+                                                    <city
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="City Product Page"
+                                                            value="city"/>
+                                                    <cityplus
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="City Plus Product Page"
+                                                            value="cityplus"/>
+                                                    <campaign
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Campaign Page"
+                                                            value="campaign"/>
+                                                </items>
+                                            </theme>
+                                            <text
+                                                    granite:class="hide tab-show-hide"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/container"
+                                                    showhidetargetvalue="scooter,campaign">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <headingtext
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                            fieldLabel="Enter Heading Text"
+                                                            name="./headingtext"
+                                                            useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                        <uiSettings
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                        <htmlRules jcr:primaryType="nt:unstructured">
+                                                            <blockHandling
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    removeSingleParagraphContainer="{Boolean}true"/>
+                                                        </htmlRules>
+                                                    </headingtext>
+                                                </items>
+                                            </text>
+                                            <campaigncontent
+                                                    granite:class="hide tab-show-hide"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/container"
+                                                    showhidetargetvalue="campaign">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <subtitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter Sub Heading"
+                                                            name="./subtitle"/>
+                                                    <campaignconfigurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <viewdetails
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Button Details"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <viewtext
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="View Details Text"
+                                                                            name="./viewtext"/>
+                                                                    <viewlink
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                            fieldLabel="View Details Link"
+                                                                            name="./viewlink"
+                                                                            rootPath="/content/hero-aem-website"/>
+                                                                </items>
+                                                            </viewdetails>
+                                                        </items>
+                                                    </campaignconfigurations>
+                                                </items>
+                                            </campaigncontent>
+                                            <specimage
+                                                granite:class="hide tab-show-hide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                showhidetargetvalue="scooter,city,cityplus">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <file
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Configure Image"
+                                                fileNameParameter="./fileName"
+                                                fileReferenceParameter="./fileReference"
+                                                multiple="{Boolean}false"
+                                                name="./file"
+                                                title="Upload Image Asset"
+                                                useHTML5="{Boolean}true"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                        </items>
+                                        </specimage>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </general>
+                    <imageSpecification
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Specifications"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <specifications
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldDescription="Add Specifications"
+                                                    fieldLabel="Add Specification Details"
+                                                    showhidetargetvalue="">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./specifications">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <specconfigs
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        jcr:title="Specifications"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <title
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="Enter Title"
+                                                                                name="./title"
+                                                                                required="{Boolean}true"/>
+                                                                        <value
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="Enter Value"
+                                                                                name="./value"
+                                                                                required="{Boolean}true"/>
+                                                                        <icon
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                        fieldLabel="Enter Icon path"
+                                                                                        name="./icon"
+                                                                                        required="{Boolean}false"
+                                                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                                    </items>
+                                                                </specconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </specifications>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </imageSpecification>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,7 @@
+#base=js
+moment-with-locales.js
+bookservice.js
+dealers.js
+servicedetails.js
+timePickSlider.js
+summarypage.js

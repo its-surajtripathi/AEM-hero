@@ -1,0 +1,46 @@
+<div class="privilege-available">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 privilegesection">
+            <div class="prev-header-container">
+                <h3 class="prev-header">${properties.privilegeheading}</h3>
+            </div>
+                <div class="privilege-six-container" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='privilegedetails'}"
+                     data-sly-list="${listUse}">
+                    <div class="privilege-container">
+                        <div class="privilege-img">
+                            <img src= "${item.properties.privilegeicon}">
+                        </div>
+                        <div class="privilege-discount">${item.properties.privilegediscount}</div>
+                        <div class="privilege-desc">${item.properties.privilegecontent}</div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-sly-test="${properties.strikingbenefitsheading}">
+            <div class="prev-header-container">
+                <h3 class="prev-header">${properties.strikingbenefitsheading}</h3>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide insurance-carousel" data-ride="carousel">
+                <ol class="carousel-indicators bindicators" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='benefitsdetails'}"
+                    data-sly-list="${listUse}">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="${itemList.index}" class="carousel-indicator${itemList.first? ' active': ''}"></li>
+                </ol>
+                <div class="carousel-inner binner" data-sly-use.benefitslistUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='benefitsdetails'}"
+                     data-sly-list="${benefitslistUse}">
+                        <div class="carousel-item${itemList.first? ' active': ''}">
+                            <div class="insurance-container">
+                                <div class="insurance-img">
+                                    <img src="${item.properties.benefitsimage}" />
+                                </div>
+                                <div class="insurance-content">
+                                    <div class="insurance-container-left">
+                                        <img src="${item.properties.benefitsicon}" />
+                                    </div>
+                                    <div class="insurance-container-right">${item.properties.benefitscontent}</div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

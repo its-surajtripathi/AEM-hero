@@ -1,0 +1,85 @@
+<section class="myVeh-wrapper">
+    <!-- Heading -->
+    <section>
+        <span class="myVehHed">${properties.vehiclesHeadingLabel}</span>
+        <div class="separatorLine"></div>
+    </section>
+
+    <!-- Details Start Here -->
+    <section class="myCarousel">
+
+        <section class="myVehicle">
+
+            <section class="myVehicle-nav">
+                <span class="myVehicle-nav-txt">Vehicle <span class="current-vehicle-index">1</span> of <span class="total-vehicle"></span></span>
+
+                <div class="myVeharrow-wrap">
+                    <a href="javascript:void(0)" class="myVehcarousel-arrow prev-vehicle disabled">
+                        <img class="active d-none" src="/content/dam/hero-aem-website/brand/design/icons/myvehicles/arrow-active.png" alt="left-arrow">
+
+                        <img class="inactive " src="/content/dam/hero-aem-website/brand/design/icons/myvehicles/arrow-disabled.png" alt="left-arrow">
+                    </a>
+                    <a href="javascript:void(0)" class="myVehcarousel-arrow next-vehicle">
+                        <img class="active" src="/content/dam/hero-aem-website/brand/design/icons/myvehicles/arrow-active.png" alt="right-arrow">
+
+                        <img class="inactive d-none" src="/content/dam/hero-aem-website/brand/design/icons/myvehicles/arrow-disabled.png" alt="left-arrow">
+                    </a>
+                </div>
+            </section>
+
+
+            <section class="myVehicle-name">
+                <script type="text/html" class="vehicleDataTemplate">
+                    <p class="myVehicle-modal"><%=vehicleDetails.modelName%></p>
+                    <p class="myVehicle-number"><%=vehicleDetails.licenseNo%></p>
+                </script>
+            </section>
+
+            <section class="myInsurance">
+                <p class="myInsurance-type amc-data d-none">
+                    <span class="myInsurace-title">${properties.amcLabel}</span>
+                    <span class="myInsurance-subTitle">
+                        ${properties.validTillLabel} <br>
+                        <span class="amc-expiry-date"></span>
+                    </span>
+                </p>
+
+            </section>
+
+
+            <div class="separatorLine"></div>
+
+        </section>
+
+        <!-- Bike IMAGE -->
+        <section class="myVehImg">
+
+
+
+            <div class="userbike-img">
+
+                <script type="text/html" class="vehicleImgDataTemplate">
+                    <img class="img-fluid bike-img moving-img" src="<%=vehicleDetails.imagePath%>" alt="bikePic">
+                </script>
+
+            </div>
+
+            <img class="img-fluid image-tray" src="/content/dam/hero-aem-website/in/servicejourney/Tray-without-shadow.png" alt="gray-disk-noShadow">
+        </section>
+
+    </section>
+
+    <!-- MINI CARDS -->
+    <section class="cardTiles">
+        <sly data-sly-resource="${'booksevicetile' @ resourceType='hero-aem-website/components/content/tileteaser' }">
+        </sly>
+        <sly data-sly-resource="${'goodlifetile' @ resourceType='hero-aem-website/components/content/tileteaser' }">
+        </sly>
+        <sly data-sly-resource="${'joyridetile' @ resourceType='hero-aem-website/components/content/tileteaser' }">
+        </sly>
+        <sly data-sly-resource="${'xclantile' @ resourceType='hero-aem-website/components/content/tileteaser' }">
+        </sly>
+    </section>
+
+</section>
+

@@ -1,0 +1,18 @@
+<sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='stages'}">
+	<ul class="hdbc-stages-container" data-sly-list="${listUse}">
+		<li class="hdbc-map-tags">
+			<div class="hdbc-sub-container">
+				<img class="hdbc-stage-images" src="${item.properties.imagepath}" alt="Stage image">
+				<div class="hdbc-stage-contents">
+					<div class="hdbc-stage-title">${item.properties.stageTitle}</div>
+					<div class="border-line-hdbc-stage"></div>
+					<div class="hdbc-stage-subheading">${item.properties.stageSubTitle}</div>
+					<span class="hdbc-stage-desc">${item.properties.stageDescription @ context='html'}</span>
+				</div>
+			</div>
+		</li>
+	</ul>
+</sly>
+<sly data-sly-test="${(wcmmode.edit || wcmmode.design) && !listUse }" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>

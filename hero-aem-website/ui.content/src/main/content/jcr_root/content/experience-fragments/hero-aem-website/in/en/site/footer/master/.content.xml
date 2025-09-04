@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-08-11T17:36:50.814Z"
+        cq:lastModifiedBy="gausiya.latif.momin@accenture.com"
+        cq:lastReplicated="{Date}2022-08-12T05:04:42.129Z"
+        cq:lastReplicated_publish="{Date}2022-08-12T05:04:42.129Z"
+        cq:lastReplicatedBy="c.vishwa.prakash.s@accenture.com"
+        cq:lastReplicatedBy_publish="c.vishwa.prakash.s@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[]"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer"
+        jcr:uuid="3ef29863-3a0b-4fff-aa63-127bddc9df4a"
+        sling:resourceType="hero-aem-website/components/structure/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <footer
+                jcr:created="{Date}2022-07-22T16:51:29.037+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-08-10T11:55:29.306Z"
+                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/structure/footer"
+                appstore="/content/dam/hero-aem-website/brand/design/app-store.png"
+                appstorelink="https://itunes.apple.com/us/app/hero-app/id1079298028?mt=8 "
+                copyrightText="Copyright Hero MotoCorp Ltd. 2021 . All Rights Reserved."
+                logo1="/content/dam/hero-aem-website/brand/logo/main-logo.png"
+                mobilefooter="false"
+                playstore="/content/dam/hero-aem-website/brand/design/google-play.png"
+                playstorelink="https://play.google.com/store/apps/details?id=com.customerapp.hero&amp;hl=en"
+                textIsRich="[true,true,true,true,true,true,true]">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <bootstraplayout
+                        jcr:created="{Date}2022-08-09T18:51:08.419Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-09T18:55:27.091Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/bootstraplayout">
+                        <container-item0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <uniquelist_copy
+                                jcr:created="{Date}2022-08-02T15:46:23.451+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-08-10T11:36:10.166Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/uniquelist"
+                                heading1="&lt;a href=&quot;https://www.heromotocorp.com/en-in/about-us.php&quot; target=&quot;_blank&quot;>About Us&lt;/a>"
+                                textIsRich="[true,true,true,true,true,true,true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="2"/>
+                                </cq:responsive>
+                                <aboutus jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/remembering-our-hero.html"
+                                        subheading="Chairman Emeritus"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/board-information.html"
+                                        subheading="Board of Directors"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/about-us/leadership-team.html"
+                                        subheading="Leadership Team"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/about-us/milestones.html"
+                                        subheading="Milestones"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/about-us/key-policies.html"
+                                        subheading="Key Policies"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/about-us/green-it.html"
+                                        subheading="Green Initiatives"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/about-us/we-care-green-manufacturing.html"
+                                        subheading="Our Investors"/>
+                                </aboutus>
+                            </uniquelist_copy>
+                        </container-item0>
+                        <container-item1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <uniquelist
+                                jcr:created="{Date}2022-08-03T16:05:44.394+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-08-10T11:36:57.440Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/uniquelist"
+                                heading1="&lt;a href=&quot;https://www.heromotocorp.com/en-in/csr.php&quot; target=&quot;_blank&quot;>CSR&lt;/a>"
+                                textIsRich="[true,true,true,true,true,true,true,true,true]">
+                                <aboutus jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        subheading="Maestro EDGE"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        subheading="Pleasure"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        subheading="Glamour"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        subheading="Xpulse"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        subheading="Xtreme"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        subheading="Passion"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        subheading="Splender"/>
+                                    <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        subheading="View 100+ products"/>
+                                </aboutus>
+                            </uniquelist>
+                        </container-item1>
+                        <columnlayouts jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                large="col-lg-2"
+                                medium="col-md-2"
+                                small="col-12"
+                                xlarge="col-xl-2"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                large="col-lg-2"
+                                medium="col-md-2"
+                                small="col-12"
+                                xlarge="col-xl-2"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                large="col-lg-2"
+                                medium="col-md-2"
+                                small="col-12"
+                                xlarge="col-xl-2"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                large="col-lg-2"
+                                medium="col-md-2"
+                                small="col-12"
+                                xlarge="col-xl-2"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                large="col-lg-2"
+                                medium="col-md-2"
+                                small="col-12"
+                                xlarge="col-xl-2"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                large="col-lg-2"
+                                medium="col-md-2"
+                                small="col-12"
+                                xlarge="col-xl-2"/>
+                        </columnlayouts>
+                        <container-item5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <uniquelist
+                                jcr:created="{Date}2022-08-03T16:12:01.881+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-08-10T11:19:26.056Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/uniquelist"
+                                heading1="&lt;a href=&quot;https://www.heromotocorp.com/en-in/reach-us/contact-us.html&quot; target=&quot;_blank&quot;>Reach Us&lt;/a>"
+                                textIsRich="[true,true,true]">
+                                <aboutus jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/hero-accessories/"
+                                        subheading="Accessories"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        subheading="Virtual Showroom"/>
+                                </aboutus>
+                            </uniquelist>
+                        </container-item5>
+                        <container-item4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <uniquelist
+                                jcr:created="{Date}2022-08-03T16:11:05.983+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-08-10T11:15:44.037Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/uniquelist"
+                                heading1="&lt;a href=&quot;https://www.heromotocorp.com/en-in/media.html&quot; target=&quot;_blank&quot;>Media&lt;/a>"
+                                textIsRich="[true,true,true,true,true]">
+                                <aboutus jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/media-kit.html"
+                                        subheading="Media Kit"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/in-the-press.html"
+                                        subheading="In the Press"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/press-releases.html"
+                                        subheading="Press Releases"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/product-pictures.html"
+                                        subheading="Product Pictures"/>
+                                </aboutus>
+                            </uniquelist>
+                        </container-item4>
+                        <container-item2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <uniquelist_copy_9547
+                                jcr:created="{Date}2022-08-02T15:46:23.451+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-08-10T11:37:05.886Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/uniquelist"
+                                heading1="&lt;a href=&quot;https://www.heromotocorp.com/en-in/investors.html&quot; target=&quot;_blank&quot;>Investors&lt;/a>"
+                                textIsRich="[true,true,true,true,true,true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="12"/>
+                                </cq:responsive>
+                                <aboutus jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/owners-manual.html"
+                                        subheading="Owner's Manual"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/rider-zone/biking-tips/pre-ride-inspection-guide.html"
+                                        subheading="Two Wheelers Tips"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/goodlife/"
+                                        subheading="Hero GoodLife"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/be-a-safe-hero.php"
+                                        subheading="Be A Safe Hero"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/rider-zone/bike-services-and-maintenance-schedule.html"
+                                        subheading="Service &amp;amp; Maintenance"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/hero-joyride/"
+                                        subheading="Hero Joyride"/>
+                                </aboutus>
+                            </uniquelist_copy_9547>
+                        </container-item2>
+                        <container-item3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <uniquelist
+                                jcr:created="{Date}2022-08-03T16:08:10.798+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-08-10T11:39:48.676Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/uniquelist"
+                                heading1="&lt;a href=&quot;https://www.heromotocorp.com/en-in/corporate-governance-and-sustainability.html&quot; target=&quot;_blank&quot;>Sustainability&lt;/a>"
+                                textIsRich="[true,true,true,true,true,true,true,true,true]">
+                                <aboutus jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/reach-us/contact-us.html"
+                                        subheading="Contact Us"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/careers/"
+                                        subheading="Careers"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/reach-us/query-form.html"
+                                        subheading="Suggestions"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/reach-us/product-enquiry"
+                                        subheading="Product Enquiry/Test Ride"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/reach-us/find-hero-bike-dealers.html"
+                                        subheading="Find a Dealer"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://www.heromotocorp.com/en-in/reach-us/corporate-sales.html"
+                                        subheading="Corporate Enquiry"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        linkfooter="https://channel.heromotocorp.com/admin/login"
+                                        subheading="Become a Channel Partner"/>
+                                    <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        subheading="Dealer Websites"/>
+                                </aboutus>
+                            </uniquelist>
+                        </container-item3>
+                    </bootstraplayout>
+                </container>
+                <socialicon
+                    jcr:lastModified="{Date}2022-08-11T17:36:50.771Z"
+                    jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/content/socialicons">
+                    <socialicondetails jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            alt="youtube"
+                            iconFileReference="/content/dam/hero-aem-website/brand/design/icons/youtube-icon.svg"
+                            iconlink="https://www.youtube.com/user/TheHeromotocorp"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            alt="facebook"
+                            iconFileReference="/content/dam/hero-aem-website/brand/design/icons/facebook-icon.svg"
+                            iconlink="https://www.facebook.com/HeroMotoCorpIndia"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            alt="linkedin"
+                            iconFileReference="/content/dam/hero-aem-website/brand/design/icons/linkedin-icon.svg"
+                            iconlink="https://www.linkedin.com/company/heromotocorp"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            alt="instagram"
+                            iconFileReference="/content/dam/hero-aem-website/brand/design/icons/instagram-icon.svg"
+                            iconlink="https://www.instagram.com/heromotocorp/"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            alt="Twitter"
+                            iconFileReference="/content/dam/hero-aem-website/brand/design/icons/twitter-icon.svg"
+                            iconlink="https://twitter.com/heromotocorp"/>
+                    </socialicondetails>
+                </socialicon>
+                <linksfooter jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        footerlink="https://www.heromotocorp.com/en-in/privacy-policy.html"
+                        footertext="Privacy Policy"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        footerlink="https://www.heromotocorp.com/en-in/disclaimer.html"
+                        footertext="Disclaimer"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        footerlink="https://www.heromotocorp.com/en-in/terms-of-use.html"
+                        footertext="Terms of Use"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        footerlink="https://www.heromotocorp.com/en-in/rules-and-regulations.html"
+                        footertext="Rules &amp;amp; Regulations"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        footerlink="https://www.heromotocorp.com/en-in/data-collection-contract.html"
+                        footertext="Data Collection"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        footerlink="https://www.heromotocorp.com/en-in/public-notice.html"
+                        footertext="Contract"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        footerlink="https://www.heromotocorp.com/en-in/sitemap.html"
+                        footertext="Sitemap"/>
+                </linksfooter>
+                <headeritems jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        text="About Us"
+                        url="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        text="Investors"
+                        url="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        text="CSR"
+                        url="#"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        text="Substainability"
+                        url="#"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        text="Media"
+                        url="#"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        text="Reach Us"
+                        url="#"/>
+                </headeritems>
+            </footer>
+            <modal_comp_copy
+                jcr:created="{Date}2022-08-04T10:33:34.326Z"
+                jcr:createdBy="sree.d.kollimarla@accenture.com"
+                jcr:lastModified="{Date}2022-08-10T06:18:16.098Z"
+                jcr:lastModifiedBy="palak.paisal@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/content/modal-comp"
+                modalId="countryModal">
+                <responsivegrid
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <country_selector_cop
+                        jcr:created="{Date}2022-08-04T10:33:52.214Z"
+                        jcr:createdBy="sree.d.kollimarla@accenture.com"
+                        jcr:lastModified="{Date}2022-08-10T06:19:16.566Z"
+                        jcr:lastModifiedBy="palak.paisal@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/country-selector"
+                        heading="Please Select Your Country"
+                        id="countryModal">
+                        <countries jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/angola.png"
+                                countryname="Angola"
+                                countrypagepath="https://www.heromotocorp.com/pt-ao/"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/argentina.jpg"
+                                countryname="Argentina"
+                                countrypagepath="https://heromotos.com.ar/"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/bangladesh.png"
+                                countryname="Bangladesh"
+                                countrypagepath="https://www.heromotocorp.com/en-bd/"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/bolivia.jpg"
+                                countryname="Bolivia"
+                                countrypagepath="https://heromotos.com.bo/"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/columbia.jpg"
+                                countryname="Columbia"
+                                countrypagepath="https://www.heromotos.com.co/"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/costa-rica.png"
+                                countryname="Costa Rica"
+                                countrypagepath="https://heromotos.cr/"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/dominican-republic.jpg"
+                                countryname="Dominican Republic"
+                                countrypagepath="https://heromotos.com.do/"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/ecuador.png"
+                                countryname="Ecuador"
+                                countrypagepath="https://heromotos.com.ec/"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/el-salvador.jpg"
+                                countryname="El Salvador"
+                                countrypagepath="https://heromotos.com.sv/"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/ethiopia.jpg"
+                                countryname="Ethiopia"
+                                countrypagepath="https://www.heromotocorp.com/en-et/"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/gcc.jpg"
+                                countryname="GCC"
+                                countrypagepath="https://www.heromotocorp.com/en-gc/"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/guatemala.jpg"
+                                countryname="Guatemala"
+                                countrypagepath="https://heromotos.com.gt/"/>
+                            <item12
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/guyana.jpg"
+                                countryname="Guyana"
+                                countrypagepath="https://www.heromotocorp.com/en-gy/"/>
+                            <item13
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/honduras.jpg"
+                                countryname="Honduras"
+                                countrypagepath="https://heromotos.com.hn/"/>
+                            <item14
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/india.gif"
+                                countryname="India"
+                                countrypagepath="/content/hero-aem-website/in/en-in/homepage"/>
+                            <item15
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/kenya.png"
+                                countryname="Kenya"
+                                countrypagepath="https://www.heromotocorp.com/en-ke/"/>
+                            <item16
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/madagascar.jpg"
+                                countryname="Madagascar"
+                                countrypagepath="https://www.heromotocorp.com/en-mg/"/>
+                            <item17
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/mexico.png"
+                                countryname="Mexico"
+                                countrypagepath="https://www.heromotos.mx/"/>
+                            <item18
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/myanmar.jpg"
+                                countryname="Myanmar"
+                                countrypagepath="https://www.heromotocorp.com/en-mm/"/>
+                            <item19
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/nepal.jpg"
+                                countryname="Nepal"
+                                countrypagepath="https://ngmhero.com/"/>
+                            <item20
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/nicaragua.png"
+                                countryname="Nicaragua"
+                                countrypagepath="https://heromotos.com.ni/"/>
+                            <item21
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/nigeria.jpg"
+                                countryname="Nigeria"
+                                countrypagepath="https://www.heromotocorp.com/en-ng/hunter/"/>
+                            <item22
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/panama.jpg"
+                                countryname="Panama"
+                                countrypagepath="https://www.heromotocorp.com/sp-pa/"/>
+                            <item23
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/peru.jpg"
+                                countryname="Peru"
+                                countrypagepath="https://heromotos.com.pe/"/>
+                            <item24
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/south-africa.jpg"
+                                countryname="South Africa"
+                                countrypagepath="https://www.heromotocorp.com/en-za/"/>
+                            <item25
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/sri-lanka.jpg"
+                                countryname="Sri Lanka"
+                                countrypagepath="https://www.heromotocorp.com/en-lk/"/>
+                            <item26
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/tanzania.png"
+                                countryname="Tanzania"
+                                countrypagepath="https://www.heromotocorp.com/en-tz/"/>
+                            <item27
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/trinidad.jpg"
+                                countryname="Trinidad"
+                                countrypagepath="https://www.heromotocorp.com/en-tt/"/>
+                            <item28
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/turkey.jpg"
+                                countryname="Turkey"
+                                countrypagepath="https://www.heromotor.com.tr/"/>
+                            <item29
+                                jcr:primaryType="nt:unstructured"
+                                countryicon="/content/dam/hero-aem-website/brand/design/flags/uganda.png"
+                                countryname="Uganda"
+                                countrypagepath="https://www.heromotocorp.com/en-ug/"/>
+                        </countries>
+                    </country_selector_cop>
+                </responsivegrid>
+            </modal_comp_copy>
+        </root>
+    </jcr:content>
+</jcr:root>

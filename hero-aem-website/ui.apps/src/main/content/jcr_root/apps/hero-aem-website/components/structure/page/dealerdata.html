@@ -1,0 +1,35 @@
+<sly data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}" data-sly-test.state="${request.requestPathInfo.selectors[1]}" data-sly-test.city="${request.requestPathInfo.selectors[2]}" data-sly-test.parentPath="${[pageconfig.dealerRootPath,'dlr',state,city] @ join='/'}"
+   data-sly-use.listUse="${'/apps/hero-aem-website/utils/getdropdownvalues.js' @ parentPath=parentPath}" data-sly-list="${listUse}">
+   <div class="near-you-common-div" data-sly-test="${item.properties.isdeleted_flg == '0'}">
+      <div class="near-img">
+         <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=properties.dealerimg1, rendition='dealer-web'}"
+         src="${imagePath}" alt="img" />
+         <div class="near-img-content" data-sly-test="${properties.dealerimgtext}">
+         <p>${properties.dealerimgtext}</p>
+         </div>
+      </div>
+      <div class="near-you-info">
+         <h3 class="near-you-h3">${item.properties.dealer_name}</h3>
+         <p class="near-you-p">${item.properties.address_1} ${item.properties.address_2} ${item.properties.address_3}
+         </p>
+      </div>
+      <div class="near-you-no">
+         <p data-sly-test="${item.properties.virtual_number || item.properties.mobile_1 || item.properties.mobile_2}"
+            class="near-you-no-p">
+            <a data-sly-test="${item.properties.virtual_number}" href="tel:${pageconfig.countryCode}${item.properties.virtual_number}">
+               ${item.properties.virtual_number},
+            </a>
+            <a data-sly-test="${item.properties.mobile_1}" href="tel:${pageconfig.countryCode}${item.properties.mobile_1}">
+               ${item.properties.mobile_1},
+            </a>
+            <a data-sly-test="${item.properties.mobile_2}" href="tel:${pageconfig.countryCode}${item.properties.mobile_2}">
+               ${item.properties.mobile_2}
+            </a>
+         </p>
+         <p class="near-you-p" data-sly-test="${item.properties.showroom_tel_1 && item.properties.std_code}"
+            data-sly-test.tel="${[item.properties.showroom_tel_1,item.properties.showroom_tel_2] @ join=', '}">Tel: ${pageconfig.countryCode}${item.properties.std_code} - ${tel}</p>
+         <p class="near-you-p" data-sly-test="${item.properties.email_1}">${item.properties.email_1}</p>
+         <p class="near-you-p" data-sly-test="${item.properties.contact_person_1}">${item.properties.contact_person_1}</p>
+      </div>
+   </div>
+</sly>

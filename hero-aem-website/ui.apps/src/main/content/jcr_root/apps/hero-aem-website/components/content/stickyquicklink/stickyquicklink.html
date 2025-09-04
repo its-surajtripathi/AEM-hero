@@ -1,0 +1,96 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<section
+    data-sly-test="${(properties.stickqlvariant == 'vertical' || properties.stickqlvariant == '') && properties.stickqlvariant != 'horizontal'}">
+    <div id="vertical-sticky" class="d-lg-block d-none vertical-sticky-desktop">
+        <div class="vertical-bar-wrap d-flex"
+            data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='stickyqldetailsver'}"
+            data-sly-list="${listUse}">
+            <div class="sticky-vertical-tile">
+                <img src="${item.properties.serimageIconRef}" alt="${item.properties.serimageAlt}">
+                <a aa-data-attr="track_cta"
+                    data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.serlinkTo}"
+                    href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                    data-sly-test="${item.properties.serurltype == 'url'}">
+                    ${item.properties.serquickLinkText}
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="vertical-sticky-mob" class="d-lg-none d-flex">
+        <div class="vertical-wrapper d-flex"
+            data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='stickyqldetailsver'}"
+            data-sly-list="${listUse}">
+            <div class="sticky-vertical-tile">
+                <img src="${item.properties.serimageIconRef}" alt="${item.properties.serimageAlt}">
+                <a aa-data-attr="track_cta"
+                    data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.serlinkTo}"
+                    href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                    data-sly-test="${item.properties.serurltype == 'url'}">
+                    ${item.properties.serquickLinkText}
+                </a>
+            </div>
+        </div>
+        <div id="click-to-expand">
+        </div>
+    </div>
+</section>
+
+<section data-sly-test="${properties.stickqlvariant == 'horizontal'}">
+    <div id="horizontal-sticky" class="d-none d-lg-block">
+        <div class="horizontal-sticky-wrap d-flex"
+            data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='stickyqldetailshor'}"
+            data-sly-list="${listUse}">
+            <div class="horizontal-tile d-flex">
+                <div class="img--wrap">
+                    <img src="${item.properties.horseimageIconRef}" alt="${item.properties.horseimageAlt}">
+                </div>
+                <a aa-data-attr="track_cta"
+                    data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.horselinkTo}"
+                    href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                    data-sly-test="${item.properties.horseurltype == 'url'}">${item.properties.horsequickLinkText}
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="horizontal-sticky-mob" class="d-block d-lg-none">
+        <div class="horizontal-sticky-wrapper d-flex position-relative"
+            data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='stickyqldetailshor'}"
+            data-sly-list="${listUse}">
+            <sly data-sly-test="${itemList.index==0}">
+                <div class="horizontal-tile d-flex">
+                    <div class="img--wrap">
+                        <img src="${item.properties.horseimageIconRef}" alt="${item.properties.horseimageAlt}">
+                    </div>
+                    <a aa-data-attr="track_cta"
+                        data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.horselinkTo}"
+                        href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                        data-sly-test="${item.properties.horseurltype == 'url'}">${item.properties.horsequickLinkText}
+                    </a>
+                </div>
+                <div class="arrow position-absolute">
+                    <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/clickexpand.svg"
+                        alt="">
+                </div>
+            </sly>
+        </div>
+        <div class="submenu"
+            data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='stickyqldetailshor'}"
+            data-sly-list="${listUse}">
+            <sly data-sly-test="${itemList.index!=0}">
+                <div class="horizontal-tile d-flex">
+                    <div class="img--wrap">
+                        <img src="${item.properties.horseimageIconRef}" alt="${item.properties.horseimageAlt}">
+                    </div>
+                    <a aa-data-attr="track_cta"
+                        data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.horselinkTo}"
+                        href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                        data-sly-test="${item.properties.horseurltype == 'url'}">${item.properties.horsequickLinkText}
+                    </a>
+                </div>
+            </sly>
+        </div>
+    </div>
+</section>

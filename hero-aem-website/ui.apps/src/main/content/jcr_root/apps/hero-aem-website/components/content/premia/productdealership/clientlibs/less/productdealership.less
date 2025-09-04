@@ -1,0 +1,299 @@
+.product-dealership-container {
+  background-color: var(--color-white);
+  background-image: url("/apps/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/dealership_desktop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  @media screen and (max-width: 767px) {
+    background-image: none;
+  }
+}
+
+.productDealerShipWrapper {
+  display: flex;
+  justify-content: space-between;
+  // padding: 80px 66px 48px 120px;
+  padding: 80px 0 48px 0;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    padding: 60px 0 48px;
+    // background-size: contain;
+    background-image: url("/apps/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/dealership_bg_mobile.png");
+    background-repeat: no-repeat;
+    background-size: 368px 178px;
+    background-position: right top;
+  }
+  @media only screen and (min-width: 1441px) {
+    padding: 48px 0 48px 0;
+  }
+  @media only screen and (min-width: 768px) {
+    padding: 48px 0 36px 0;
+  }
+
+  .productDealerTitleWrapper {
+    width: 50%;
+    padding-right: 150px;
+    margin-top: 60px;
+
+    @media screen and (max-width: 1023px) {
+      padding-right: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .productDealerShipTitle {
+      font-size: var(--font-size-32);
+      color: var(--color-black);
+      font-family: var(--font-transducer);
+      font-weight: var(--font-weight-600);
+      line-height: var(--line-height-44);
+      margin: 0;
+      @media screen and (max-width: 767px) {
+        font-size: var(--font-size-18);
+        line-height: 28px;
+      }
+      @media only screen and (min-width: 768px) {
+        font-size: var(--font-size-32);
+      }
+      sup {
+        font-size: 7.5px;
+        top: -2.4em;
+        margin: 0 2px;
+        @media screen and (max-width: 767px) {
+          font-size: 4px;
+          margin: 0;
+          font-weight: normal;
+          top: -10px;
+        }
+      }
+    }
+    .productDealerShipDescription {
+      font-size: var(--font-size-18);
+      color: var(--color-black);
+      font-family: var(--font-optika-regular);
+      font-weight: var(--font-weight-100);
+      line-height: var(--line-height-16);
+      margin: 32px 0 64px;
+      @media screen and (max-width: 767px) {
+        margin: 16px 0 24px;
+        font-size: var(--font-size-14);
+      }
+      @media only screen and (min-width: 768px) {
+        font-size: var(--font-size-14);
+        margin: 16px 0 40px;
+      }
+    }
+  }
+
+  .cmp-accordion {
+    width: 50%;
+    height: 560px;
+    overflow-y: auto;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: auto;
+      margin-top: 48px;
+    }
+    .cmp-accordion__item {
+      background-color: #f7f7f7;
+      margin-bottom: 32px;
+      margin-right: 38px;
+      @media screen and (max-width: 767px) {
+        margin-right: 0px;
+        margin-bottom: 8px;
+        &:nth-of-type(1n + 5) {
+          display: none;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        margin-bottom: 24px;
+        margin-right: 30px;
+      }
+      .cmp-accordion__header {
+        margin: 0;
+        button {
+          display: flex;
+          border: none;
+          justify-content: space-between;
+          padding: 20px 40px;
+          background-color: #f7f7f7;
+          align-items: center;
+          width: 100%;
+          @media only screen and (min-width: 768px) {
+            padding: 16px;
+          }
+          @media screen and (max-width: 767px) {
+            padding: 16px 20px;
+          }
+          .cmp-accordion__title {
+            font-size: var(--font-size-24);
+            color: var(--color-black);
+            font-family: var(--font-transducer);
+            font-weight: var(--font-weight-500);
+            @media screen and (max-width: 767px) {
+              font-size: var(--font-size-14);
+            }
+            @media only screen and (min-width: 768px) {
+              font-size: var(--font-size-18);
+            }
+          }
+          .cmp-accordion__icon {
+            display: inline-block;
+            background-image: url("/apps/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/accordian_collapse.png");
+            width: 32px;
+            height: 32px;
+            background-size: cover;
+            @media only screen and (min-width: 768px) {
+              width: 24px;
+              height: 24px;
+            }
+            @media screen and (max-width: 767px) {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+        .cmp-accordion__button--expanded {
+          .cmp-accordion__title {
+            color: var(--color-trinidad);
+          }
+          .cmp-accordion__icon {
+            background-image: url("/apps/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/accordian_open.png");
+          }
+        }
+      }
+      .cmp-accordion__panel--expanded {
+        .cmp-text {
+          font-size: var(--font-size-20);
+          color: var(--color-black);
+          opacity: 0.6;
+          font-family: var(--font-transducer);
+          font-weight: var(--font-weight-300);
+          padding: 24px 20px 65px 40px;
+          @media only screen and (min-width: 768px) {
+            font-size: var(--font-size-16);
+            padding: 0px 16px 32px;
+          }
+          p {
+            margin: 0;
+          }
+          @media screen and (max-width: 767px) {
+            font-size: var(--font-size-14);
+          }
+        }
+      }
+    }
+  }
+  .cmp-button {
+    display: inline-block;
+    background-color: var(--color-trinidad);
+    font-size: var(--font-size-18);
+    color: var(--color-white);
+    font-family: var(--font-transducer);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-16);
+    padding: 18px 48px 22px 48px;
+    text-align: center;
+    text-decoration: none;
+    @media only screen and (min-width: 768px) {
+      font-size: var(--font-size-14);
+    }
+    @media screen and (max-width: 767px) {
+      font-size: var(--font-size-14);
+      padding: 16px 24px;
+      .cmp-button__text {
+        display: inline-block;
+      }
+    }
+  }
+  .productDealerline {
+    width: 24px;
+    height: 4px;
+    background-color: var(--bg-color-trinidad);
+    margin: 0px 0 12px;
+    @media screen and (min-width: 1440px) {
+      margin: 0px 0 16px;
+      width: 40px;
+    }
+  }
+  #arrow_down {
+    display: none;
+    @media screen and (max-width: 767px) {
+      display: block;
+      text-align: center;
+      width: 24px;
+      height: 24px;
+      margin: 32px auto 40px;
+      transition: 0.2s linear;
+    }
+  }
+  .arrow-rotated {
+    transform: rotate(180deg);
+    transition: 0.2s linear;
+  }
+}
+.showAllAccordians {
+  .cmp-accordion {
+    @media screen and (max-width: 767px) {
+      .cmp-accordion__item {
+        &:nth-child(n) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.productDealerTitleWrapper {
+  .tooltipWrapper {
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    .tooltiptext {
+      background-color: #f7f7f7;
+      &::after {
+        border-bottom: 6px solid #f7f7f7;
+        right: 35%;
+        @media screen and (max-width: 767px) {
+          right: 50%;
+        }
+      }
+    }
+  }
+}
+
+.disable-booking-btn {
+  .productDealerTitleWrapper {
+    .cmp-button {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  }
+}
+.show-button-tooltip {
+  .productDealerTitleWrapper {
+    .tooltipWrapper {
+      display: flex;
+      justify-content: start;
+      margin-top: 14px;
+    }
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bg-color-black);
+}

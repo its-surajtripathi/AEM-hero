@@ -1,0 +1,57 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+<section class="hero-exchange ${properties.background}">
+    <div class="hero-exchange-wrapper">
+        <div class="bookinghrs${properties.blacktheme == 'true' ? ' black-theme' : ''}" data-sly-test="${properties.bookingdata}">
+            <div class="bookinghrs-info">
+                <img src="${properties.bookinghrsicon}" data-sly-test="${properties.bookinghrsicon}" class="img-fluid" alt="bookinghours" />
+                <p class="bookinghrs-p">${properties.bookingdata}</p>
+            </div>
+        </div>
+        <div class="hero-exchange-content">
+            <div class="hero-exchange-img"
+                data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+                data-sly-test="${image.src}"
+                data-cmp-dmimage="${image.dmImage}"
+                data-asset-id="${image.uuid}"
+                id="${image.id}"
+                data-cmp-data-layer="${image.data.json}"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <img srcset="${image.srcset}" src="${image.src}"
+                    loading="${image.lazyEnabled ? 'lazy' : ''}"
+                    height="${properties.height}px" class="cmp-image__image img-fluid"
+                    itemprop="contentUrl"
+                    alt="${image.alt || true}" title="${image.displayPopupTitle && image.title}">
+            </div>
+            <div class="hero-exchange-head-content">
+                ${properties.headline @ context='html'}
+                <div class="hero-exchange-btn-main">
+                    <a data-sly-test="${properties.linkTo1 && properties.type1 == 'url1'}"
+                       class="btn ${properties.bgStyle1}" aa-data-cta="${component.title}"
+                       aa-data-attr="track_cta"  target="${linkuse.isExternal ? '_blank' : '_self'}"
+                       data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkTo1}"
+                       href="${linkuse.value}">${properties.button1label}</a>
+                    <a data-sly-test="${properties.linkTo1 && properties.type1 == 'modal1'}"
+                       class="btn ${properties.bgStyle1}" aa-data-cta="${component.title}"
+                       aa-data-attr="track_cta" data-toggle="modal" data-target="${properties.linkTo1}"
+                       href="javascript:void(0)">${properties.button1label}</a>
+                    <a data-sly-test="${properties.button2label && properties.linkTo2 && properties.type2 == 'url2'}"
+                       class="btn ${properties.bgStyle2}" aa-data-cta="${component.title}"
+                       aa-data-attr="track_cta"  target="${linkuse.isExternal ? '_blank' : '_self'}"
+                       data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkTo2}"
+                       href="${linkuse.value}">${properties.button2label}</a>
+                    <a data-sly-test="${properties.button2label && properties.linkTo2 && properties.type2 == 'modal2'}" class="btn ${properties.bgStyle2}"
+                       aa-data-attr="track_cta" data-toggle="modal" data-target="${properties.linkTo2}" aa-data-cta="${component.title}"
+                       href="javascript:void(0)">${properties.button2label}</a>
+                    <p data-sly-test="${properties.text}"
+                       class="common-cta-load-p cust-common-cta-load-p2 emi-starting-info">${properties.text}
+                        <span class="common-cta-load-span">${properties.amount}</span>
+                        <a href="#" data-toggle="tooltip" title="${properties.text}" aa-data-attr="track_cta">
+                            <img src="${properties.tooltipicon}" alt="load" class="load-ex-img" /></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,52 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+ </p>
+ <div data-sly-test="${properties.variation == 'normal'}">
+ <div class="text-flip-container">
+     <div class="cta-section">
+          <div class="cta-card">
+             <div class="front">
+                <span>
+                  <img class="front-img" src="${properties.image}" alt="${item.properties.altText}">
+                </span>
+                <p>${properties.heading @context='html'}</p>
+             </div>
+             <div class="back">
+                <h3>${properties.title}</h3>
+                ${properties.description @context='html'}
+             </div>
+          </div>
+     </div>
+ </div>
+ </div>
+ <sly data-sly-test="${properties.variation == 'goodlife'}">
+     <div class="membership-plan" style="background-image: url('${properties.bgimage @context='html'}');background-repeat: no-repeat;">
+         <div class="membership_bg">
+             <center><img class="platinum-icon" src="${properties.planicon @context='html'}" alt="Platinum-Membership"> </center>
+             <div class="platinum-content">
+                 <center>
+                     <span> ${properties.planname}</span></br>
+                     <span class="pricetag"><b>${properties.planprice}</b></span>
+                 </center>
+             </div>
+         </div>
+     </div>
+ </sly>
+ <div class="">
+    <div class="">
+        <sly data-sly-test="${properties.variation == 'goodlifebenefits'}">
+            <div class="serv-perk">
+                <div class="service-perks-tab">
+                    <div class="service-tab-icon">
+                        <img src="${properties.icon}" alt="${properties.alt}">
+                    </div>
+                    <div class="service-tab-description">
+                        <p>${properties.details}</p>
+                    </div>
+                </div>
+            </div>
+            </sly>
+     </div>
+     
+ </div>
+ 

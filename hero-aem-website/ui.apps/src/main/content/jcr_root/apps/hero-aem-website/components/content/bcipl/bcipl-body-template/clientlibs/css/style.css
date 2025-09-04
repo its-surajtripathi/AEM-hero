@@ -1,0 +1,148 @@
+.bcipl-innerPg {
+    width: 100%;
+    max-width: 1290px;
+    margin: -1px auto 0 auto;
+    background: url('/etc.clientlibs/hero-aem-website/clientlibs/clientlib-bcipl-site/resources/innerBanner.jpg') no-repeat center top #ffffff;
+}
+
+.bcipl-innerPg .bcipl-container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-registerDetail {
+    padding: 108px 0 0 0;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-registerDetail h1,
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    color: #000000;
+    line-height: 1.07;
+    margin: -40px 0 0 0;
+    text-transform: uppercase;
+    padding: 0 0 0 40px;
+}
+
+.bcipl-innerPg .bcipl-container .registerDetail b,
+h1 b {
+    font-size: 60px;
+    display: block;
+    font-weight: normal;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-contest {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    padding: 25px 0 50px 0;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-contest h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    padding: 0 0px 0 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-contest p {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    padding: 0 0 0 50px;
+    margin: 30px 0 0 0;
+    line-height: 27px;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-contest p:first-child,
+.bcipl-innerPg .bcipl-container .bcipl-contest h2:first-child {
+    margin-top: 0;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-contest li {
+    margin-left: 20px;
+    margin-top: 30px;
+    color: #000000;
+    font-size: 15px;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-contest a,
+.bcipl-innerPg .bcipl-container .bcipl-contest a:hover,
+.bcipl-innerPg .bcipl-container .bcipl-contest a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+.bcipl-innerPg table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+    margin-left: 44px;
+    margin-bottom: 24px;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-contest td {
+    text-align: left;
+    padding: 6px 8px 2px 8px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    line-height: 27px;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-contest caption {
+    caption-side: top;
+    color: #000000;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .bcipl-innerPg .bcipl-container {
+        width: 100%;
+    }
+
+    .bcipl-innerPg .bcipl-container .bcipl-contest p {
+        padding: 0 15px 0 45px;
+    }
+
+    .bcipl-innerPg .bcipl-container .bcipl-contest {
+        padding: 20px 0 50px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bcipl-innerPg table {
+        margin-left: 10px;
+    }
+
+    
+    .bcipl-innerPg .bcipl-container .bcipl-registerDetail h1,
+    h1 {
+        font-size: 32px;
+        padding: 0 0 0 15px;
+    }
+
+    .bcipl-innerPg .bcipl-container .registerDetail b,
+    h1 b {
+        font-size: 32px;
+        display: inline;
+        padding-top: 0;
+    }
+
+    .bcipl-innerPg .bcipl-container .bcipl-registerDetail {
+        padding: 130px 0 0 0;
+    }
+
+    .bcipl-innerPg .bcipl-container .bcipl-contest p {
+        padding: 0 15px 0 15px;
+    }
+
+    .bcipl-innerPg .bcipl-container .bcipl-contest h2{
+        padding: 0 0 0 15px;
+    }
+}

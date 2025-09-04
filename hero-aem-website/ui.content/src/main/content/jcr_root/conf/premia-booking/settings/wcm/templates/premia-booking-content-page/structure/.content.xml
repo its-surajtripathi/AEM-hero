@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2023-06-30T13:29:23.110+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/premia-booking/settings/wcm/templates/premia-booking-content-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="hero-aem-website/components/structure/page-premia-booking">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                editable="{Boolean}true"
+                layout="responsiveGrid"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <xsmall
+                    jcr:primaryType="nt:unstructured"
+                    title="XSmall"
+                    width="{Long}576"/>
+                <small
+                    jcr:primaryType="nt:unstructured"
+                    title="Small"
+                    width="{Long}768"/>
+                <medium
+                    jcr:primaryType="nt:unstructured"
+                    title="Medium"
+                    width="{Long}992"/>
+                <large
+                    jcr:primaryType="nt:unstructured"
+                    title="Large"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

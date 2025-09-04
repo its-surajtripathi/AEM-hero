@@ -1,0 +1,668 @@
+.accordian-faq-wrapper .generic-mobile-faq {
+    display: none;
+}
+
+.investors-faq-section {
+    background-color: #FFFFFF;
+    padding: 1rem 2.5rem;
+}
+
+.investors-content-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.investors-content-wrap .left--invs-faqs {
+    flex: 0 0 32.815%;
+    display: flex;
+    flex-direction: column;
+}
+
+.investors-content-wrap .left--invs-faqs .submenu-faq-tile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #F8F8F8;
+    justify-content: space-between;
+    align-self: end;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.investors-content-wrap .left--invs-faqs .faq-button-active {
+    background: #F8F8F8;
+    margin-right: 10px;
+}
+
+
+.investors-content-wrap .left--invs-faqs .submenu-faq-tile:last-child {
+    margin-bottom: 0;
+}
+
+.investors-content-wrap .left--invs-faqs .submenu-faq-tile.faq-button-active p {
+    color: #303030;
+    font-family: var(--font-tstar-normal);
+    font-weight: 700;
+}
+
+.investors-content-wrap .left--invs-faqs .submenu-faq-tile .investor-left-faq-arrow .faq-inactive-arrows  {
+    width: 24px;
+    height: 24px;
+    margin: 40px 12px;
+}
+
+.investors-content-wrap .left--invs-faqs .submenu-faq-tile.faq-button-active .investor-left-faq-arrow .faq-inactive-arrows {
+    display: none;
+}
+
+.investors-content-wrap .left--invs-faqs .submenu-faq-tile .investor-left-faq-arrow .faq-active-arrows  {
+    display: none;
+}
+
+.investors-content-wrap .left--invs-faqs .submenu-faq-tile.faq-button-active .investor-left-faq-arrow .faq-active-arrows {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 40px 12px;
+}
+
+.investors-content-wrap .left--invs-faqs .submenu-faq-tile p {
+    font-family: var(--font-tstar-medium);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+    color: #303030;
+    width: 95%;
+}
+
+.investors-content-wrap .right--faq-section {
+    background-color: white;
+    width: 100%;
+    max-width: 996px;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap {
+    justify-content: space-between;
+    padding: 0 0 0 19px;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap.reveal {
+    display: flex;
+    flex-direction: column;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap .d-flex{
+    width: 100% !important;
+    display: flex !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    flex-direction: column;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap.slick-initialized.reveal {
+    display: block !important;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap .faqs-accord-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100% !important;
+    border: 1px solid #A5A5A5;
+    border-radius: 12px;
+    margin-bottom: 1.125rem;
+}
+
+.active-faq-border-box {
+    border: 1px solid #303030 !important;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap .faqs-accord-tile .card-head-faq p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 6px !important;
+    font-family: var(--font-tstar-medium);
+    font-weight: 400;
+    letter-spacing:0 !important;    
+    width: 94%;
+    color: #707070;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap .faqs-accord-tile .card-head-faq.active p {
+    font-family: var(--font-tstar-heavy);
+    font-weight: 900;
+    color: #303030;
+}
+
+.accordian-faq-wrapper .faq--slider-wrap .faqs-accord-tile .card-head-faq.active p {
+    font-family: var(--font-tstar-heavy);
+    font-weight: 900;
+    color: #303030;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap .faqs-accord-tile span {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    font-family: var(--font-tstar-medium);
+    font-weight: 400;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap .faqs-accord-tile:first-child {
+    margin-left: 0;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap .faqs-accord-tile:last-child {
+    margin-right: 0;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap.functional-rep {
+    padding: 28px 34px;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap .faqs-accord-tile span p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 6px;
+    font-family: var(--font-tstar-medium);
+    font-weight: 400;
+    color: #707070;
+}
+
+.submenu-faq-tile .faq-click-tile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 0 2.125rem;
+    cursor: pointer;
+}
+
+.submenu-faq-tile.faq-button-active .faq-click-tile {
+    background: #FFFFFF;
+    background-color: #FFFFFF;
+    border-left: 24px solid #F8F8F8;
+    padding: 0 0 0 0.7rem;
+    border-top-left-radius: 7%;
+    border-bottom-left-radius: 7%;
+}
+
+.investors-content-wrap .right--faq-section .faq--slider-wrap .d-flex::after,.investors-content-wrap .right--faq-section .faq--slider-wrap .d-flex::before{
+    display: none;
+}
+
+#investor-faq-scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #DFDFDF;
+}
+
+#investor-faq-scroll::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #DFDFDF;
+}
+
+#investor-faq-scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #EC2028;
+}
+
+.faq--slider-wrap .card {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-head-mobile h2 {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.faq--slider-wrap .card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.faqs-accord-tile .card-head {
+    width: inherit;
+}
+
+.card-head-mobile {
+    background: #F8F8F8;
+    border-radius: 6px 6px 0px 0px;
+    margin: 4px 0;
+}
+
+.accordian-heading-contacts {
+    padding: 14px 12px 28px 12px;
+}
+
+.card-body-mobile {
+    border: 1px solid #A5A5A5;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 2px auto;
+}
+
+.accordian-heading-contacts .submenu-faq-tile {
+    width: 90%;
+}
+
+.card-head-mobile.active .accordian-heading-contacts .investor-arrows {
+    background: url(/content/dam/hero-aem-website/in/icons/circle-up-arrow.png) no-repeat calc(100% - 10px) center;
+    width: 39px;
+    height: 28px;
+    background-size: 28px;
+    top: 22px;
+}
+
+.card-head-mobile .accordian-heading-contacts .investor-arrows {
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+  
+    right: 0;
+  
+    background: url(/content/dam/hero-aem-website/in/icons/circle-down-arrow.png) no-repeat calc(100% - 10px) center;
+    background-size: 25px;
+}
+
+.faqs-accord-tile .collapse {
+    width: inherit;
+}
+
+.card-head-faq {
+    background: #FFFFFF;
+    width: inherit;
+    border-radius: 12px;
+}
+
+.accordian-heading-faq {
+    padding: 0 1.5rem;
+    border-radius: 12px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body-faq {
+    width: 100%;
+    padding: 0 4.5rem 1rem 1.5rem;
+}
+
+.card-body-faq span {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card-body-mobile .card-head-faq.active .accordian-heading-faq .faq-arrows {
+    background: url(/content/dam/hero-aem-website/in/icons/faq-accord-cross.png) no-repeat calc(100% - 10px) center;
+    width: 25px;
+    height: 25px;
+    background-size: 15px;
+}
+
+.faq-arrow-wrapper {
+    padding: 1.75rem 0;
+}
+
+.card-body-mobile .card-head-faq .accordian-heading-faq .faq-arrows {
+    width: 24px;
+    height: 24px;
+}
+
+.faqs-accord-tile .card-head-faq.active .accordian-heading-faq .faq-arrows {
+    background: url(/content/dam/hero-aem-website/in/icons/faq-accord-cross.png) no-repeat calc(100% - 10px) center;
+    width: 24px;
+    height: 24px;
+    background-size: 14px;
+    top: 18px;
+    right: 12px;
+}
+
+.faqs-accord-tile .card-head-faq .accordian-heading-faq .faq-arrows-plus {
+    width: 24px;
+    height: 24px;
+}
+
+.faqs-accord-tile .card-head-faq.active .accordian-heading-faq .faq-arrows-plus {
+    display: none;
+}
+
+.faqs-accord-tile .card-head-faq .accordian-heading-faq .faq-arrows-cross {
+    display: none;
+}
+
+.faqs-accord-tile .card-head-faq.active .accordian-heading-faq .faq-arrows-cross {
+    display: block !important;
+    width: 24px;
+    height: 24px;
+}
+
+.accordian-faq-wrapper .view-all-investor {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: var(--font-tstar-bold);
+    margin-top: 32px;
+  }
+  
+.accordian-faq-wrapper .view-all-investor .view-all-arrow {
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+    .investors-content-wrap .left--invs-faqs .submenu-faq-tile p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .investors-content-wrap .left--invs-faqs .submenu-faq-tile span.investor-left-faq-arrow:after {
+        margin-left: 0.2em;
+    }
+
+    .submenu-faq-tile.faq-button-active .faq-click-tile {
+        padding: 1.5rem 0.2rem 1.5rem 0.7rem;
+    }
+
+    .submenu-faq-tile .faq-click-tile {
+        padding: 1.5rem 0.2rem 1.5rem 2.125rem;
+    }
+}
+
+@media (max-width: 569px) {
+
+    .accordian-faq-wrapper .generic-desktop-faq {
+        display: none;
+    }
+
+    .accordian-faq-wrapper .generic-mobile-faq {
+        display: block;
+    }
+
+    
+    .investors-faq-section {
+        background-color: #FFFFFF;
+        padding: 1rem;
+    }
+    
+    .investors-contact-mobile {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .investors-contact-mobile .left--sub-menu {
+        flex: 0 0 32.2%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .investors-contact-mobile .left--sub-menu .submenu--mob-faq-tile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2px;
+        background: #F8F8F8;
+        border-radius: 6px;
+        justify-content: space-between;
+        align-self: end;
+        width: 100%;
+        padding: 1.125rem 0.75rem;
+    }
+    
+    .investors-contact-mobile .left--sub-menu .faq-button-active-mob {
+        background: #EE2326;
+        border-radius: 6px 0px 0px 6px;
+        width: 97.1%;
+        margin: 6px 0;
+    }
+    
+    
+    .investors-contact-mobile .left--sub-menu .submenu--mob-faq-tile:last-child {
+        margin-bottom: 0;
+    }
+    
+    .investors-contact-mobile .left--sub-menu .submenu--mob-faq-tile.faq-button-active-mob p {
+        color: #FFFDFD;
+        font-family: var(--font-tstar-heavy);
+        font-weight: 900;
+    }
+
+    .mob-heading-faqs .submenu--mob-faq-tile p {
+        font-family: var(--font-tstar-medium);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #303030;
+    }
+    
+    .investors-contact-mobile .left--sub-menu .submenu--mob-faq-tile p {
+        font-family: var(--font-tstar-medium);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #303030;
+        width: 62%;
+    }
+    
+    .investors-contact-mobile .right--mob-content-section {
+        background-color: white;
+        width: 100%;
+        max-width: 996px;
+        overflow-x: hidden;
+    }
+    
+    .investors-contact-mobile .right--mob-content-section .faq--slider-wrap-mob {
+        display: none;
+        justify-content: space-between;
+        padding: 0 0 32px 22px;
+    }
+    
+    .investors-contact-mobile .right--mob-content-section .faq--slider-wrap-mob.reveal {
+        display: flex;
+    }
+    
+    .investors-contact-mobile .right--mob-content-section .faq--slider-wrap-mob .d-flex{
+        width: 100% !important;
+        display: flex !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        flex-direction: column;
+    }
+    
+    .investors-contact-mobile .right--mob-content-section .faq--slider-wrap-mob.slick-initialized.reveal {
+        display: block !important;
+    }
+    
+    .investors-contact-mobile .right--mob-content-section .faq--slider-wrap-mob .d-flex::after,.investors-contact-mobile .right--mob-content-section .faq--slider-wrap-mob .d-flex::before{
+        display: none;
+    }
+    
+    .right--mob-content-section .card {
+        border: none;
+    }
+    
+    .mob-head-faq-mobile h2 {
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: var(--font-tstar-normal);
+    }
+
+    .outer-faq-card:first-child .mob-head-faq-mobile {
+        border-radius: 6px 6px 0px 0px;
+    }
+
+    .outer-faq-card:last-child .mob-head-faq-mobile {
+        border-radius: 0px 0px 6px 6px;
+    }
+
+    .outer-faq-card:first-child .mob-head-faq-mobile.active .mob-heading-faqs {
+        border-top-left-radius: 10px 10px;
+        border-top-right-radius: 10px 10px;
+    }
+
+    #innerFaqAccordMob .active-faq-border-mob {
+        border: 1px solid #303030 !important;
+    }
+    
+    .mob-head-faq-mobile {
+        background: #F8F8F8;
+        margin: 1px 0;
+    }
+    
+    .mob-head-faq-mobile.active .mob-heading-faqs {
+        border-left: 6px solid #F8F8F8;
+        border-top: 6px solid #F8F8F8;
+        border-right: 6px solid #F8F8F8;
+        background-color: #fff;
+        padding: 0 6px 0 6px;
+    }
+    
+    .mob-heading-faqs {
+        align-items: center;
+        padding: 0 12px 0 12px;
+    }
+
+    .mob-head-faq-mobile.active .mob-heading-faqs .mob-arrow-wrap-faq {
+        margin: 22px 0 12px 0;
+    }
+
+    .mob-head-faq-mobile .mob-heading-faqs .mob-arrow-wrap-faq {
+        margin: 28px 0 12px 0;
+    }
+    
+    .faq-card-tile-mobile {
+        padding: 12px;
+        margin: 6px;
+        border: 0.8px solid #A5A5A5 !important;
+        border-radius: 6px;
+    }
+    
+    .mob-head-faq .mob-sub-heading-faq p {
+        color: #707070;
+        font-family: var(--font-tstar-medium);
+        font-weight: 400;
+        width: 93%;
+        line-height: 17px;
+        font-size: 14px;
+    }
+
+    .mob-head-faq.active .mob-sub-heading-faq p {
+        color: #303030;
+        font-family: var(--font-tstar-heavy);
+        font-weight: 900;
+        width: 95%;
+    }
+    
+    .mob-body-faq {
+        margin-top: 8px;
+    }
+    
+    .mob-body-faq p {
+        font-family: var(--font-tstar-medium);
+        font-weight: 400;
+        color: #707070;
+        width: 95%;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .mob-body-faq ol {
+        margin-left: 1rem;
+    }
+    
+    .mob-heading-faqs .submenu--mob-faq-tile {
+        width: 80%;
+    }
+    
+    .mob-head-faq-mobile .mob-heading-faqs .invs-faq-arrows-mob .faq-inactive-arrows {
+        width: 20px;
+        height: 20px;
+        margin-right: 1px;
+    }
+
+    .mob-head-faq-mobile.active .mob-heading-faqs .invs-faq-arrows-mob .faq-inactive-arrows {
+        display: none;
+    }
+
+    .mob-head-faq-mobile .mob-heading-faqs .invs-faq-arrows-mob .faq-active-arrows {
+        display: none;
+    }
+    
+    .mob-head-faq-mobile.active .mob-heading-faqs .invs-faq-arrows-mob .faq-active-arrows {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 1px;
+    }
+    
+    
+    .faq-card-tile-mobile .card-head .mob-sub-heading-faq {
+        padding: 12px;
+    }
+    
+    .mob-head-faq {
+        background: #FFFFFF;
+    }
+    
+    .faq-card-tile-mobile .mob-head-faq.active .mob-sub-heading-faq .faq-sub-mob-arrows {
+        background: url(/content/dam/hero-aem-website/in/icons/faq-accord-cross.png) no-repeat calc(100% - 10px) center;
+        width: 25px;
+        height: 25px;
+        background-size: 15px;
+    }
+    
+    .faq-card-tile-mobile .mob-head-faq .mob-sub-heading-faq .faq-sub-mob-arrows {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 0;
+      
+        background: url(/content/dam/hero-aem-website/in/icons/faq-accord-plus.png) no-repeat calc(100% - 10px) center;
+        background-size: 15px;
+    }
+
+    .faq-arrow-wrapper {
+        padding: 0;
+    }
+
+    .faq-card-tile-mobile .mob-head-faq .mob-sub-heading-faq .faq-arrows-plus {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .faq-card-tile-mobile .mob-head-faq.active .mob-sub-heading-faq .faq-arrows-plus {
+        display: none;
+    }
+    
+    .faq-card-tile-mobile .mob-head-faq .mob-sub-heading-faq .faq-arrows-cross {
+        display: none;
+    }
+    
+    .faq-card-tile-mobile .mob-head-faq.active .mob-sub-heading-faq .faq-arrows-cross {
+        display: block !important;
+        width: 18px;
+        height: 18px;
+    }
+
+    .view-all-faq-wrap {
+        margin-top: 0.5rem;
+    }
+}

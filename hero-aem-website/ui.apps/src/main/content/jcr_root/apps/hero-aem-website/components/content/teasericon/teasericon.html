@@ -1,0 +1,81 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+
+<sly data-sly-test="${properties.layoutvariation == 'layoutvariation1'}">
+
+  <div class="cust-card ${properties.classtext}"
+    style="background-image: url(${properties.imagemain ? properties.imagemain :'unset' @ context='uri'}); height:${properties.height @ context='styleToken'}px;">
+    <div class="talk-btn bg-color-secondarygrey">
+      <span class="talk-btn-span b2-bold-text-std">${properties.eshopicon}</span>
+    </div>
+    <div class="profile-div ">
+      <div class="profile-info ">
+        <div class="profile-detail">
+          <div class="profile-heading ">
+            <div class="profile-content mb-0 mb-lg-0">
+              <p class="profile-content-p font-italic">${properties.subtitle @ context='html'}</p>
+            </div>
+            <div class="profile-para-div pt-3">
+              <sly data-sly-list.item="${resource.getChildren}">
+                <sly data-sly-test="${item.name=='imageicondetails'}">
+                  <sly data-sly-list.link="${item.getChildren}">
+                    <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=link.iconimagelink}"
+                      href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                      class="profile-para-link "><img src="${link.iconimagepath}">
+                      <p class="profile-para-p pt-1">${link.titleicon}</p>
+                    </a>
+                  </sly>
+                </sly>
+              </sly>
+            </div>
+            <div class="customer-review-explore-div">
+              <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkfield}"
+                href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" aa-data-attr="track_cta"
+                class="customer-review-explore-a b1-bold-text-std">${properties.linktext}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</sly>
+
+<sly data-sly-test="${properties.layoutvariation == 'layoutvariation2'}">
+  <div class="teasericon-wrapper">
+    <div class="cust-card ${properties.classtext}"
+      style="width: 100%;height:${properties.height @ context='styleToken'}px;">
+      <div class="customer-image-background ${properties.anchor ? 'animate' : ''}"
+        style="background-image: url(${properties.imagemain ? properties.imagemain :'unset' @ context='uri'})"></div>
+      <div class="talk-btn bg-color-secondarygrey" data-sly-test="${properties.eshopicon}">
+        <span class="talk-btn-span b2-bold-text-std">${properties.eshopicon}</span>
+      </div>
+      <div class="profile-div ${properties.subtitle ? 'teaser-bg' : ''}">
+        <div class="profile-info ">
+          <div class="profile-detail">
+            <div class="profile-heading ">
+              <div class="profile-content mb-0 mb-md-0">
+                <p class="profile-content-p font-italic">${properties.subtitle @ context='html'}
+                </p>
+              </div>
+              <sly data-sly-test="${!properties.anchor}">
+                <div class="customer-review-explore-div">
+                  <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkfield}"
+                    href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" aa-data-attr="track_cta"
+                    class="customer-review-explore-a b1-bold-text-std">${properties.linktext}</a>
+                </div>
+              </sly>
+            </div>
+          </div>
+        </div>
+      </div>
+      <sly data-sly-test="${properties.anchor}">
+        <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}"
+          data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkfield}"
+          href="${linkuse.value}" class="image-link"></a>
+      </sly>
+    </div>
+  </div>
+</sly>

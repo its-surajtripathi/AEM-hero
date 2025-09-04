@@ -1,0 +1,133 @@
+.common-tabs-main {
+  width: max-content;
+  justify-content: flex-start;
+  border: none;
+  margin: 0 auto 57px auto;
+  max-width: 100%;
+}
+.common-tabs-main .slick-arrow {
+  left: 0px;
+  top: calc(50% - 12px);
+  transform-origin: center;
+  transform: rotate(0deg);
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+  background: #ffffff;
+}
+.common-tabs-main .slick-arrow img {
+  margin: auto;
+}
+.common-tabs-main .slick-arrow::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ffffff 26.87%, rgba(255, 255, 255, 0) 100%);
+  opacity: 1;
+  top: 0;
+  left: 20px;
+  z-index: -1;
+}
+.common-tabs-main .slick-arrow.slick-next {
+  left: auto;
+  right: 0px;
+  transform: rotate(180deg);
+}
+.common-tabs-main .nav-item {
+  margin-right: 25px;
+}
+.common-tabs-main .nav-item .nav-link {
+  font-family: var(--font-tstar-medium);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size20);
+  text-transform: uppercase;
+  color: var(--text-color-black);
+  border-radius: 0px;
+  margin: 0;
+  border: none;
+  border-bottom: 2px solid #303030;
+  text-align: center;
+  width: 193px;
+  padding: 0px 6px 6px 6px;
+  line-height: var(--line-height-24);
+  white-space: nowrap;
+}
+.common-tabs-main .nav-item .nav-link.active {
+  font-family: var(--font-tstar-bold);
+  color: var(--text-color-danger-red);
+  border-color: var(--text-color-danger-red);
+  font-weight: var(--font-weight-900);
+}
+.common-tabs-main .nav-item:last-child {
+  margin-right: 0;
+}
+
+/* LG Devices Start */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .common-tabs-main {
+    margin-bottom: 21px;
+  }
+  .common-tabs-main .nav-item {
+    margin-right: 22px;
+  }
+  .common-tabs-main .nav-item .nav-link {
+    font-size: var(--font-size20);
+    width: auto;
+    min-width: 150px;
+  }
+}
+/* MD Devices Start */
+@media (max-width: 991.2px) and (min-width: 768px) {
+  .common-tabs-main .nav-item {
+    margin-right: 22px;
+  }
+  .common-tabs-main .nav-item .nav-link {
+    font-family: var(--font-tstar-bold);
+    font-weight: var(--font-weight-900);
+    font-size: var(--font-size14);
+    line-height: var(--line-height-16);
+    width: auto;
+    min-width: 72px;
+  }
+  .common-tabs-main .nav-item .nav-link.active {
+    color: var(--text-color-black);
+    border-color: var(--text-color-black);
+  }
+  .common-tabs-main .nav-item.slick-current .nav-link {
+    color: var(--text-color-danger-red);
+    border-bottom: 2px solid var(--text-color-danger-red);
+  }
+  .common-tabs-main .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+/* SM & XS Devices Start */
+@media (max-device-width: 767px) and (min-width: 320px) {
+  .common-tabs-main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .common-tabs-main .nav-item {
+    margin-right: 22px;
+  }
+  .common-tabs-main .nav-item .nav-link {
+    font-family: var(--font-tstar-bold);
+    font-weight: var(--font-weight-900);
+    font-size: var(--font-size14);
+    line-height: 1.2;
+    width: auto;
+    min-width: 72px;
+  }
+  .common-tabs-main .nav-item .nav-link.active {
+    color: var(--text-color-black);
+    border-color: var(--text-color-black);
+  }
+  .common-tabs-main .nav-item.slick-current .nav-link {
+    color: var(--text-color-danger-red);
+    border-bottom: 2px solid var(--text-color-danger-red);
+  }
+  .common-tabs-main .nav-item:last-child {
+    margin-right: 0;
+  }
+}

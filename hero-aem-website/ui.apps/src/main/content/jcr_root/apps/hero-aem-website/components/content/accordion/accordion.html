@@ -1,0 +1,284 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+
+
+<div class="accordion keypolicies" id="accordionExample" data-sly-test="${properties.variation == 'normal'}">
+    <div data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multitext'}" data-sly-list="${listUse}">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+
+
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse${itemList.index}" aria-expanded="true" aria-controls="collapseOne">
+                    <span class="expand-icon"></span>
+                    <h5> ${item.properties.question @ context='html'}</h5> <a class="dlink" href="${item.properties.pdflink}" target="_blank"> <span><img src="${properties.pdficon}">${properties.pdftext}</img></span></a>
+                </button>
+
+
+
+            </div>
+
+            <div id="collapse${itemList.index}" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    ${item.properties.answer @ context='html'}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion" id="details-section" data-sly-test="${properties.variation == 'authenticated'}">
+    <div class="card">
+        <div class="card-header">
+            <button class="accordion-button" data-toggle="collapse" data-target="#collapse${currentNode.getPath.hashCode}">
+                <img src="${properties.icon}"><p>${properties.heading}</p><img src="${properties.arrow}" class="arrow-icon"></button>
+        </div>
+        <div id="collapse${currentNode.getPath.hashCode}" class="collapse">
+
+            <!-- Vehicle History Section -->
+
+            <div class="vehicleDetails" data-sly-test="${properties.subvariation == 'vehicles'}">
+
+
+                <div class="card-body">
+                    <div class="detailed-info">
+                        <div class="details">
+                            <h4>${properties.fieldLabel1 @ context='scriptString'}</h4>
+                            <p class="engine-no"></p>
+                        </div>
+                        <div class="details">
+                            <h4>${properties.fieldLabel2 @ context='scriptString'}</h4>
+                            <p class="vin-no"></p>
+                        </div>
+                        <div class="details">
+                            <h4>${properties.fieldLabel3 @ context='scriptString'}</h4>
+                            <p class='purchasedate'></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Manage License Section -->
+
+            <div class="manageLicense" data-sly-test="${properties.subvariation == 'manage-license'}">
+                <div class="alert-danger type-error hidden" >${properties.imagetypeerror}</div>
+
+                <div class="alert-danger size-error hidden" >${properties.imagesizeerror}</div>
+                <section class="fileUpload d-none">
+                    <label for="fileInput" class="uploadIcon">
+                        <img src="${properties.addlicenseicon}">
+                        <span>${properties.fieldLabel1}</span>
+                    </label>
+                    <input id="fileInput" type="file">
+                </section>
+                <div class="licensesection d-none">
+                    <script type="text/html" class="licenseData">
+                        <div class="document">
+                            <img src="<%=vehicleDetails.document_path%>?<%=atob(JSON.parse(atob(getCookie('data'))).mediaToken)%>">
+                            <p class="document-name"><%=vehicleDetails.document_name.substr(vehicleDetails.document_name.lastIndexOf('/')+1)%></p>
+                            <div class="doc-footer">
+                                <label for="licenseUpload" class="update-license">
+                                    ${properties.updatelabel @ context='scriptString'}
+                                </label>
+                                <input id="licenseUpload" type="file" hidden>
+                                <a href="<%=vehicleDetails.document_path%>?<%=atob(JSON.parse(atob(getCookie('data'))).mediaToken)%>">
+                                    ${properties.viewdoclabel @ context='scriptString'}
+                                    <img src="${properties.rightarrowicon @ context='uri'}" alt="right-arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+
+            <!-- Emergency Contact Section -->
+
+            <div class="emergencyContact" data-sly-test="${properties.subvariation == 'emergency-contacts'}">
+                <div class="emergency-contact">
+                    <script type="text/html" class="emergencyContactData">
+                        <% _.each(vehicleDetails, function(item, i, list) { %>
+                        <div class="fetch-contact" data-contactID="<%=vehicleDetails[i].id%>">
+                            <!-- <div class="image-con"><%=vehicleDetails[i].name.substring(0,2)%></div> -->
+                            <div>
+                                <img src="${properties.heroicon @ context='uri'}" alt="H-logo">
+                            </div>
+                            <div class="contact-info">
+                                <p class="name"><%=vehicleDetails[i].name%></p>
+                                <p class="number">
+                                    +91
+                                    <span class="mobile-number"><%=vehicleDetails[i].mobile%></span>
+                                    <span class="relation"><%=vehicleDetails[i].relation%></span>
+                                </p>
+                            </div>
+                            <a type="button" class="close removecontact" aria-label="Close">
+                                <img src="${properties.cancelicon @ context='uri'}" alt="X-icon">
+                            </a>
+                        </div>
+                        <% });%>
+                    </script>
+                </div>
+                <div class="add-contact">
+                    <p>${properties.fieldLabel1}</p>
+                    <a aa-data-attr="track_cta" data-toggle="modal" data-target="#addEmergencyContact" href="javascript:void(0)" class="contact-popup">
+                        <img src="${properties.addcontacticon}" alt="add-contact">
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Service History Section -->
+
+            <div class="serviceHistory" data-sly-test="${properties.subvariation == 'service-history'}">
+                <div class="service-details">
+                    <script type="text/html" class="service-detail">
+
+
+                        <div class="card-body">
+                            <div class="detailed-info">
+                                <div class="details">
+                                    <h4>${properties.fieldLabel1 @ context='scriptString'}</h4>
+
+                                    <% if(vehicleDetails[0].jobCardCompletedDate && vehicleDetails[0].jobCardCompletedDate !== "null" && vehicleDetails[0].jobCardCompletedDate !== ""){%>
+                                    <p><%=convertDate(vehicleDetails[0].jobCardCompletedDate)%> at <%=vehicleDetails[0].odometerReading%>km</p>
+
+                                    <% }%>
+                                </div>
+                                <div class="details">
+                                    <h4>${properties.fieldLabel2 @ context='scriptString'}</h4>
+                                    <p><%=vehicleDetails[0].serviceType%></p>
+                                </div>
+                                <div class="details">
+                                    <h4>${properties.fieldLabel3 @ context='scriptString'}</h4>
+                                    <a href="${properties.viewdetailslink @ context='uri',extension='html'}">${properties.viewdetailslabel @ context='scriptString'}
+                                      <span><img src="${properties.arrowicon @ context='uri'}"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </script>
+                </div>
+            </div>
+
+
+            <!-- documents Section -->
+
+            <div class="vehicle-docs-wrapper" data-sly-test="${properties.subvariation == 'vehicle-docs'}">
+                <div class="vehicle-docs-section">
+                    <div class="vehicle-docs">
+                        <script type="text/html" class="getVehicleDocsTemplate">
+
+                            <% _.each(vehicleDetails, function(item, i, list) { %>
+
+                            <div class="docs-vehicle">
+                                <div class="card-body">
+                                    <div class="document">
+
+                                        <div class="document-title">
+                                            <embed src="<%=vehicleDetails[i].document_path%>?<%=atob(JSON.parse(atob(getCookie('data'))).mediaToken)%>" width="100%" height="120"></embed>
+                                            <img src="${properties.docicon @ context='uri'}" alt="doc-logo">
+                                            <span><p><%=vehicleDetails[i].document_type%></p></span>
+                                        </div>
+                                        <div class="document-name"><p><%=$('.docs-full-names').val().split(',')[$('.docs-short-names').val().split(',').indexOf(vehicleDetails[i].document_type)]%></p></div>
+                                        <a href="<%=vehicleDetails[i].document_path%>?<%=atob(JSON.parse(atob(getCookie('data'))).mediaToken)%>">View Document &#8594;</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <% });%>
+
+                        </script>
+                    </div>
+
+                    <div class="vehicle-usermanual">
+                        <script type="text/html" class="getUserManualTemplate">
+                            <div class="card-body">
+                                <div class="document">
+
+                                    <div class="document-title">
+
+                                        <img src="${properties.defaultdocpath @context='uri'}" class="responsive img-fluid"/>
+                                        <img src="${properties.docicon @ context='uri'}" alt="doc-logo">
+                                        <span><p><%=vehicleDetails.model_name%></p></span>
+                                        <div class="document-name">${properties.usermanualLabel @ context='scriptString'}</div>
+                                        <a class="view-document" href="<%=vehicleDetails.owners_manual%>?<%=atob(JSON.parse(atob(getCookie('data'))).mediaToken)%>" target="_blank">${properties.viewdoclabel @ context='scriptString'} &#8594;</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="accordion productgallery" id="details-section" data-sly-test="${properties.variation  == 'productgallery'}">
+        <div class="card">
+            <div class="card-header gallery">
+                <button class="accordion-button" data-toggle="collapse" data-target="#collapse${currentNode.getPath.hashCode}">
+
+                    <p>${properties.heading}<img src="${properties.arrow}" class="arrow-icon collapsed-icon"><img src="${properties.darrow}" class="arrow-icon expanded-icon d-none"></p>
+                </button>
+            </div>
+            <div id="collapse${currentNode.getPath.hashCode}" class="collapse" data-parent="#details-section">
+                <div class="card-body">
+                    <div data-sly-resource="${currentNode.getPath.hashCode @resourceType='hero-aem-website/components/container'}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="faq-accordian" data-sly-test="${properties.variation == 'xtrackfaq'}">
+    <img class="accordian-background-gallery" src="/content/dam/hero-aem-website/in/xtracks/bg-faqs.jpg">
+    <div class="hm-container" id="accordionExample">
+        <h3 class="hm-heading">Frequently Asked Questions</h3>
+        <div class="accordion hm-accordion" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multitext'}" data-sly-list="${listUse}">
+            <div class="card">
+                <div class="card-header">
+                    <h5 data-toggle="collapse" data-target="#collapse${itemList.index}" aria-expanded="true" aria-controls="collapseOne">
+                        ${item.properties.question @ context='html'}
+                    </h5>
+                </div>
+                <div id="collapse${itemList.index}" class="collapse body-accord-faq" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        ${item.properties.answer @ context='html'}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="genuine-parts" data-sly-test="${properties.variation == 'genuineparts'}">
+    <div class="genuine-accordion-container">
+        <div class="genuine-parts-accordion" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='sermultitext'}" data-sly-list="${listUse}">
+            <div class="accordion-card">
+                <div class="accordion--title">
+                    ${item.properties.serquestion @context='html'}
+                </div>
+                <div class="accordion--panel">
+                    <div class="accordion-content-wrap d-flex">
+                        <img data-sly-test="${item.properties.serimgdesk}" src="${item.properties.serimgdesk}" alt="" class="d-none d-md-block">
+                        <img data-sly-test="${item.properties.serimgmob}" src="${item.properties.serimgmob}" alt="" class="d-block d-md-none">
+                        ${item.properties.seranswer @context='html'}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<sly data-sly-test="${properties.variation=='investorsfaq'}" data-sly-include="${properties.variation}.html"></sly>

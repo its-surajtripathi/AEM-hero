@@ -1,0 +1,45 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>
+
+<section class="media--forms media-component campaign-login">
+	<input type="hidden" id="defaultuser" value="${properties.username}"/>
+	<input type="hidden" id="defaultpassword" value="${properties.password}"/>
+	<div class="container">
+		<div class="contact--details">
+			<div class="addressPan m-0">
+				<div class="content--wrap">
+					<h3 class="mocktest-title mb-3">Login</h3>
+					<form action="" class="" autocomplete="off" id="mockTestCredential"
+						data-mock-test-json="${properties.mockjson}">
+						<div class="form--wrap">
+							<div class="form-group cust-form-group  cust-form-control cust-input-padding">
+								<span class="form-span">USERNAME <sup>*</sup></span>
+								<input type="text" class="form-control campaign-input cust-form-control text-transform"
+									id="username" required placeholder="Enter Username"
+									name="username">
+							</div>
+						</div>
+
+						<div class="form--wrap">
+							<div class="form-group cust-form-group">
+								<span class="form-span">PASSWORD <sup>*</sup></span>
+								<img src="" alt="" class="input-img2">
+								<input type="password"
+									class="form-control campaign-input cust-form-control text-transform"
+									placeholder="Enter Password" id="password" name="password" required>
+							</div>
+							
+						</div>
+						<label class="errorpassword d-none text-danger">**Incorrect Username or Password</label>
+						<div class="form--wrap justify-content-center">
+							<input type="button" class="campaign-btn btn-red-gradient btn book-test-submit"
+								value="submit" name="submit" id="loginCredentialSubmit" />
+							
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

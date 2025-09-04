@@ -1,0 +1,1922 @@
+
+.explore-360-main {
+  padding: 35px 0 45px 0;
+  background: #141414;
+  .explore-360-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .explore-360-menu-main {
+      padding-left: 50px;
+      align-self: center;
+      .explore-360-tab {
+        display:block;
+        border: none;
+        margin-bottom: 25px;
+        .nav-item {
+          margin: 8px 0;
+          .nav-link {
+            border-radius: 0;
+            border: none;
+            padding: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            img {
+              margin-right: 8px;
+              width: 48px;
+              border: 2px solid transparent;
+              transition: 0.2s;
+            }
+            p {
+              font-family: var(--font-tstar-bold);
+              font-weight: var(--font-weight-900);
+              font-size: var(--font-size18);
+              color: #ffffff;
+              line-height: 21.6px;
+              opacity: 0;
+              transition: 0.2s;
+            }
+            &.active {
+              opacity: 1;
+              img {
+                border: 2px solid #ffffff;
+              }
+              p {
+                opacity: 1;
+              }
+            }
+            &:hover {
+              opacity: 1;
+              img {
+                border: 2px solid #ffffff;
+                transition: 0.2s;
+              }
+              p {
+                opacity: 1;
+                transition: 0.2s;
+              }
+            }
+          }
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+      .engine-sound {
+        a {
+          display: flex;
+          align-items: center;
+          .icon-box {
+            width: 48px;
+            height: 48px;
+            background: #ffffff;
+            border-radius: 100%;
+            margin-right: 12px;
+            padding: 12px;
+            position: relative;
+            .icon-2 {
+              position: absolute;
+              top: 0px;
+              left: 0;
+              width: 100%;
+              opacity: 0;
+              transition: 0.3s;
+            }
+          }
+          p {
+            font-family: var(--font-tstar-regular);
+            font-weight: var(--font-weight-300);
+            font-size: var(--font-size18);
+            color: #ffffff;
+          }
+        }
+        &.animate {
+          a {
+            .icon-box {
+              .icon-2 {
+                opacity: 1;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+      }
+    }
+    .explore-360-wrapper-main {
+      width: 785px;
+      max-width: 100%;
+      margin: 0 20px 0 10px;
+      .explore-360-box {
+        .explore-360-view {
+          cursor: grab;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 100%;
+          max-height: 509px;
+          &:active {
+            cursor: grabbing;
+          }
+        }
+      }
+    }
+    .explore-360-features-main {
+      width: 306px;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .explore-download-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 30px;
+        min-height:30px;
+        .link-btn {
+          display: flex;
+          align-items: center;
+          margin-right: 15px;
+          border-radius: 0 50px 50px 0;
+          overflow: hidden;
+          p {
+            font-family: var(--font-tstar-bold);
+            font-weight: var(--font-weight-300);
+            font-size: var(--font-size18);
+            text-decoration: underline;
+            color: #ffffff;
+            border-bottom: 1px solid #ffffff;
+            text-decoration: none;
+            margin-right: 12px;
+            white-space: nowrap;
+          }
+          .icon-box {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &.share-btn {
+            border-radius: 100%;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        .share-options {
+          position: absolute;
+          right: 15px;
+          bottom: 43px;
+          height: 0;
+          overflow: hidden;
+          transition: 0.5s;
+          visibility: hidden;
+          ul {
+            display: flex;
+            width: max-content;
+            li {
+              margin: 0 5px;
+            }
+          }
+          &.active {
+            visibility: visible;
+            height: 32px;
+            transition: 0.5s;
+          }
+        }
+      }
+      .features-main {
+        width: 100%;
+        margin-bottom: 13px;
+        padding-right: 50px;
+        ul {
+          height: 100%;
+          max-height: 465px;
+          overflow: auto;
+          li {
+            position: relative;
+            margin: 25px 0;
+            display: flex;
+            align-items: center;
+            span {
+              font-family: var(--font-tstar-medium);
+              font-weight: var(--font-weight-400);
+              font-size: var(--font-size16);
+              color: rgba(255, 255, 255, 0.5);
+              transform-origin: center;
+              transform: rotate(180deg);
+              writing-mode: vertical-rl;
+              letter-spacing: 2px;
+              margin: 0 10px 0 0;
+            }
+            p {
+              font-family: var(--font-tstar-medium);
+              font-weight: var(--font-weight-400);
+              font-size: var(--font-size12);
+              color: var(--text-color-white);
+              text-transform: uppercase;
+            }
+            h5 {
+              font-family: var(--font-tstar-bold);
+              font-weight: var(--font-weight-900);
+              font-size: var(--font-size24);
+              color: var(--text-color-white);
+              margin: 8px 0;
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .explore-360-btn-main {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+    .btn {
+      margin: 0 30px;
+      &.btn-icon {
+        display: flex;
+        align-items: center;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        img {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  &.city-explore-360-main {
+    background: url("../images/rotate-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    .common-h3 {
+      padding: 0 0 31px 0;
+    }
+    .explore-360-wrapper {
+      align-items: center;
+      .explore-360-menu-main {
+        .bike-rotate-color-h4 {
+          font-family: var(--font-tstar-regular);
+          font-size: var(--font-size20);
+          line-height: var(--line-height-24);
+          text-transform: capitalize;
+          color: var(--text-color-black);
+          padding: 23px 0px 23px 0px;
+        }
+        .explore-360-tab {
+          flex-direction: column;
+
+          border: none;
+          max-height: 420px;
+          flex-wrap: nowrap;
+          overflow-y: auto;
+          direction: rtl;
+          padding-left: 10px;
+          .nav-item {
+            direction: ltr;
+            .nav-link {
+              img {
+                border: 2px solid transparent;
+                width: 40px;
+                border-radius: 100%;
+              }
+              p {
+                opacity: 1;
+                font-family: var(--font-tstar-bold);
+                font-weight: var(--font-weight-800);
+                font-size: var(--font-size18);
+                line-height: var(--line-height-26);
+                color: var(--text-color-black);
+                      }
+              &.active {
+                img {
+                  border: 2px solid #000000;
+                  border-radius: 100%;
+                  padding: 2px;
+                  background: #FFFFFF;
+                }
+              }
+            }
+          }
+        }
+      }
+      .explore-360-wrapper-main {
+        .explore-360-box {
+          background: none;
+          position: relative;
+          .left-rotate-arrow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            cursor: pointer;
+          }
+          .right-rotate-arrow {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            cursor: pointer;
+          }
+        }
+      }
+      .explore-360-features-main {
+        margin-top: 67px;
+        padding-right: 30px;
+        .rotate-bike-div {
+          display: flex;
+          padding-bottom: 40px;
+          padding-right: 30px;
+          align-items: center;
+          &.without-img{
+                .rotate-bike-p{
+                    font-weight:bold;
+                }
+           }
+          .rotate-bike-p {
+            font-family: "montserrat-regular";
+            font-style: normal;
+            font-weight: var(--font-weight-500);
+            font-size: var(--font-size18);
+            line-height: var(--line-height-22);
+            color: var(--text-color-black);
+            padding-left: 10px;
+          }
+
+        }
+      }
+    }
+    .explore-360-btn-main {
+      margin-top: 0;
+    }
+  }
+  &.city-plus-explore-360-main {
+    background: url(../images/products/city-plus/rotate-section-bg.png) no-repeat center;
+    background: linear-gradient(180deg, #4F4D4D 0%, #3D3D3D 100%) !important;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+    .common-h3 {
+      padding: 0 0 31px 0;
+      color: #FFFFFF;
+    }
+    .explore-360-wrapper {
+      align-items: inherit;
+      .explore-360-menu-main {
+        padding-left: 40px;
+        align-self: inherit;
+        width: 365px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .bike-rotate-color-h4 {
+          font-family: var(--font-tstar-regular);
+          font-size: var(--font-size20);
+          line-height: var(--line-height-24);
+          text-transform: capitalize;
+          color: var(--text-color-white);
+          padding: 23px 0px 23px 0px;
+        }
+        .explore-360-tab {
+          flex-direction: column;
+
+          border: none;
+          max-height: 420px;
+          flex-wrap: nowrap;
+          overflow-y: auto;
+          direction: rtl;
+          padding-left: 10px;
+          .nav-item {
+            direction: ltr;
+            .nav-link {
+              img {
+                border: 2px solid transparent;
+                width: 40px;
+                border-radius: 100%;
+              }
+              p {
+                opacity: 1;
+                font-family: var(--font-tstar-bold);
+                font-weight: var(--font-weight-800);
+                font-size: var(--font-size18);
+                line-height: var(--line-height-26);
+                color: var(--text-color-white);
+              }
+              &.active {
+                img {
+                  border: 2px solid #000000;
+                  border-radius: 100%;
+                  padding: 2px;
+                  background: #FFFFFF;
+                }
+              }
+            }
+          }
+        }
+      }
+      .explore-360-wrapper-main {
+        margin: 0;
+        padding: 30px 5px 80px 5px;
+        width: 710px;
+        .explore-360-box {
+          background: none;
+          position: relative;
+          .left-rotate-arrow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            cursor: pointer;
+          }
+          .right-rotate-arrow {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            cursor: pointer;
+          }
+          .explore-360-view {
+            max-height: 470px;
+          }
+        }
+      }
+      .explore-360-features-main {
+        width: 335px;
+        max-width: 100%;
+        padding: 125px 25px 25px;
+        justify-content: center;
+        .rotate-bike-div {
+          display: flex;
+          padding-bottom: 40px;
+          padding-right: 30px;
+          align-items: center;
+          .rotate-bike-p {
+            font-family: "montserrat-regular";
+            font-style: normal;
+            font-weight: var(--font-weight-500);
+            font-size: var(--font-size18);
+            line-height: var(--line-height-22);
+            color: var(--text-color-white);
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+    .explore-360-btn-main {
+      margin-top: 0px;
+      padding-bottom: 30px;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  &.scooter-explore-360-main {
+    background: linear-gradient(180deg, #ffe598 0%, rgba(255, 255, 255, 0.49) 34.63%) !important;
+    background-image: url(/content/dam/hero-aem-website/in/products/scooters/scooters-bg-img.png) !important;
+    background-size: 100% 100% !important;
+
+    &.yellow {
+      background: linear-gradient(180deg, #ffe598 0%, rgba(255, 255, 255, 0.49) 34.63%) !important;
+    }
+
+    &.candy-red {
+      background: linear-gradient(180deg, #ffb8be 0%, rgba(255, 255, 255, 0.49) 34.63%) !important;
+      background-image: url(/content/dam/hero-aem-website/in/products/scooters/scooters-bg-img.png) !important;
+      background-size: 100% 100% !important;
+    }
+
+    &.blue {
+      background: linear-gradient(180deg, #99d5ff 0%, #ffffff 22.91%) !important;
+      background-image: url(/content/dam/hero-aem-website/in/products/scooters/scooters-bg-img.png) !important;
+      background-size: 100% 100% !important;
+    }
+
+    .common-h3 {
+      padding: 0 0 31px 0;
+      font-family: var(--font-tstar-heavy);
+    }
+
+    .explore-360-wrapper {
+      align-items: flex-start;
+
+      .explore-360-menu-main {
+        margin-top: 100px;
+
+        .bike-rotate-color-h4 {
+          color: #70a928;
+          font-family: var(--font-montserrat-bold);
+          margin-bottom: 10px;
+          padding-left: 10px;
+          font-size: 16px;
+        }
+
+        .explore-360-tab {
+          flex-direction: column;
+
+          border: none;
+          max-height: 450px;
+          flex-wrap: nowrap;
+          overflow-y: auto;
+          direction: rtl;
+          padding-left: 10px;
+
+          .nav-item {
+            direction: ltr;
+
+            .nav-link {
+              p {
+                border: 0;
+                font-family: var(--font-tstar-heavy);
+                font-size: var(--font-size32);
+                background: linear-gradient(180deg, #333333 0%, rgba(51, 51, 51, 0) 167.72%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                opacity: 0.6;
+                line-height: inherit;
+              }
+
+              &.active {
+                p {
+                  background: none;
+                  -webkit-background-clip: unset;
+                  -webkit-text-fill-color: unset;
+                  background-clip: unset;
+                  text-fill-color: transparent;
+                  opacity: 1;
+                }
+
+                &.yellow {
+                  p {
+                    color: #e9a400;
+                  }
+                }
+				
+				&.orange {
+                  p {
+                    color: #FF5733;
+                  }
+                }
+				
+                &.matte-black {
+                  p {
+                    color: #495057;
+                  }
+                }
+
+                &.black {
+                  p {
+                    color: #1c1c1c;
+                  }
+                }
+
+                &.blue {
+                  p {
+                    color: #0083de;
+                  }
+                }
+                
+                &.techno-blue {
+                  p {
+                    color: #0083de;
+                  }
+                }
+
+                &.red {
+                  p {
+                    color: #e3090f;
+                  }
+                }
+
+                &.white {
+                  p {
+                    color: #dfdfdf;
+                  }
+                }
+
+                &.candy-red {
+                  p {
+                    color: #c80819;
+                  }
+                }
+
+                &.silver {
+                  p {
+                    color: #999d9e;
+                  }
+                }
+
+                &.special-edition-red {
+                  p {
+                    color: #ca2932;
+                  }
+                }
+
+                &.white {
+                  p {
+                    color: #dfdfdf;
+                  }
+                }
+
+                &.purple {
+                  p {
+                    color: #936188;
+                  }
+                }
+
+                &.brown {
+                  p {
+                    color: #954535;
+                  }
+                }
+
+                &.bronze {
+                  p {
+                    color: #954535;
+                  }
+                }
+
+                &.platinum {
+                  p {
+                    color: #495057;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .explore-360-wrapper-main {
+        .explore-360-box {
+          background: none;
+          position: relative;
+
+          .left-rotate-arrow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            cursor: pointer;
+          }
+
+          .right-rotate-arrow {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .explore-360-features-main {
+        margin-top: 100px;
+        padding-right: 30px;
+
+        .rotate-bike-div {
+          display: flex;
+          padding-bottom: 40px;
+          padding-right: 30px;
+
+          .rotate-bike-p {
+            font-family: "montserrat-regular";
+            font-style: normal;
+            font-weight: var(--font-weight-500);
+            font-size: var(--font-size18);
+            line-height: var(--line-height-22);
+            color: var(--text-color-black);
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+
+    .explore-360-btn-main {
+      margin-top: 0px;
+    }
+  }
+
+  &#specification{
+    .explore-360-box{
+      position: relative ;
+    }
+    .left-rotate-arrow{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      cursor: pointer;
+      @media(max-width: 768px){
+        width: 22px;
+      }
+    }
+    .right-rotate-arrow{
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      cursor: pointer;
+      @media(max-width: 768px){
+        width: 22px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* LG Devices Start  */
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .explore-360-main {
+    .explore-360-wrapper {
+      .explore-360-menu-main {
+        padding-left: 30px;
+      }
+      .explore-360-wrapper-main {
+        width: 700px;
+        margin: 0 20px;
+        .explore-360-box {
+          max-width: 100%;
+          .explore-360-view {
+            width: 480px !important;
+            height: 360px !important;
+          }
+        }
+      }
+      .explore-360-features-main {
+        padding-left: 30px;
+        .explore-download-wrapper {
+          margin-bottom: 15px;
+          .link-btn {
+            p {
+              font-size: var(--font-size14);
+            }
+            .icon-box {
+              width: 35px;
+              height: 35px;
+              padding: 9px;
+            }
+          }
+        }
+        .features-main {
+          padding-right: 35px;
+          ul {
+            max-height: 277px;
+          }
+        }
+      }
+    }
+    .explore-360-btn-main {
+      margin-top: 10px;
+    }
+    &.city-explore-360-main {
+      .common-h3 {
+        padding: 0 0 31px 0;
+      }
+      .explore-360-wrapper {
+        .explore-360-menu-main {
+          padding: 0 15px;
+          width: 200px;
+          .explore-360-tab {
+            flex-direction: column;
+
+            border: none;
+            max-height: 420px;
+            flex-wrap: nowrap;
+            overflow-y: auto;
+            direction: rtl;
+            padding-left: 10px;
+            .nav-item {
+              direction: ltr;
+              .nav-link {
+                img {
+                  border: 2px solid transparent;
+                  width: 40px;
+                  border-radius: 100%;
+                }
+                p {
+                  opacity: 1;
+                  font-family: var(--font-tstar-bold);
+                  font-weight: var(--font-weight-800);
+                  font-size: var(--font-size18);
+                  line-height: var(--line-height-26);
+                  color: var(--text-color-black);
+                }
+                &.active {
+                  img {
+                    border: 2px solid #000000;
+                    border-radius: 100%;
+                    padding: 2px;
+                    background: #FFFFFF;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .explore-360-wrapper-main {
+          .explore-360-box {
+            background: none;
+            position: relative;
+            .left-rotate-arrow {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .right-rotate-arrow {
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .explore-360-view {
+              height: 320px !important;
+            }
+          }
+        }
+        .explore-360-features-main {
+          margin-top: 67px;
+          padding-right: 30px;
+          .rotate-bike-div {
+            display: flex;
+            padding-bottom: 40px;
+            padding-right: 15px;
+            .rotate-bike-img {
+              width: 44px;
+            }
+            .rotate-bike-p {
+              font-size: var(--font-size12);
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+      .explore-360-btn-main {
+        margin-top: 0;
+      }
+    }
+    &.city-plus-explore-360-main {
+      .common-h3 {
+        padding: 0 0 31px 0;
+      }
+      .explore-360-wrapper {
+        .explore-360-menu-main {
+          padding: 0 15px;
+          width: 255px;
+          .explore-360-tab {
+            flex-direction: column;
+
+            border: none;
+            max-height: 420px;
+            flex-wrap: nowrap;
+            overflow-y: auto;
+            direction: rtl;
+            padding-left: 10px;
+            .nav-item {
+              direction: ltr;
+            }
+          }
+        }
+        .explore-360-wrapper-main {
+          padding: 30px 5px 70px 5px;
+          .explore-360-box {
+            background: none;
+            position: relative;
+            .left-rotate-arrow {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .right-rotate-arrow {
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .explore-360-view {
+              height: 320px !important;
+            }
+          }
+        }
+        .explore-360-features-main {
+          padding-right: 30px;
+          max-width: 220px;
+          .rotate-bike-div {
+            display: flex;
+            padding-bottom: 40px;
+            padding-right: 15px;
+            .rotate-bike-img {
+              width: 44px;
+            }
+            .rotate-bike-p {
+              font-size: var(--font-size12);
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+      .explore-360-btn-main {
+        margin-top: 0;
+      }
+    }
+    &.scooter-explore-360-main {
+      .common-h3 {
+        padding: 0 0 31px 0;
+      }
+      .explore-360-wrapper {
+        .explore-360-menu-main {
+          padding: 0 15px;
+          width: 200px;
+          .explore-360-tab {
+            flex-direction: column;
+
+            border: none;
+            max-height: 250px;
+            flex-wrap: nowrap;
+            overflow-y: auto;
+            direction: rtl;
+            padding-left: 10px;
+            .nav-item {
+              direction: ltr;
+              .nav-link {
+                p {
+                  border: 0;
+                  font-family: var(--font-tstar-heavy);
+                  font-size: var(--font-size24);
+                  background: linear-gradient(180deg, #333333 0%, rgba(51, 51, 51, 0) 167.72%);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  text-fill-color: transparent;
+                  opacity: 0.6;
+                  line-height: inherit;
+                }
+                &.active {
+                  img {
+                    border: 2px solid #000000;
+                    border-radius: 100%;
+                    padding: 2px;
+                    background: #FFFFFF;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .explore-360-wrapper-main {
+          .explore-360-box {
+            background: none;
+            position: relative;
+            .left-rotate-arrow {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .right-rotate-arrow {
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .explore-360-view {
+              height: 330px !important;
+            }
+          }
+        }
+        .explore-360-features-main {
+          margin-top: 100px;
+          padding-right: 30px;
+          .rotate-bike-div {
+            display: flex;
+            padding-bottom: 40px;
+            padding-right: 15px;
+            .rotate-bike-img {
+              width: 44px;
+            }
+            .rotate-bike-p {
+              font-size: var(--font-size12);
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+      .explore-360-btn-main {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+/* MD Devices Start  */
+
+@media (max-width: 991.2px) and (min-width: 768px) {
+  .explore-360-main {
+    padding: 35px 0 25px 0;
+    .explore-360-wrapper {
+      flex-direction: column;
+      .explore-360-menu-main {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        order: 2;
+        margin-bottom: 15px;
+        .explore-360-tab {
+          width: auto;
+          margin: 0 10px 0 0;
+          display: flex;
+          .nav-item {
+            margin: 0 7px;
+            .nav-link {
+              img {
+                margin: 0;
+                width: 34px;
+              }
+              p {
+                display: none;
+              }
+            }
+          }
+        }
+        .engine-sound {
+          a {
+            .icon-box {
+              width: 40px;
+              height: 40px;
+              padding: 8px;
+            }
+          }
+        }
+      }
+      .explore-360-wrapper-main {
+        order: 1;
+        margin: 0 auto;
+        .explore-360-box {
+          width: 700px;
+          margin: 0 auto;
+          .explore-360-view {
+            width: 600px !important;
+            height: 450px !important;
+          }
+        }
+      }
+      .explore-360-features-main {
+        width: 100%;
+        align-items: center;
+        order: 3;
+        .explore-download-wrapper {
+          margin-bottom: 20px;
+        }
+        .features-main {
+          padding: 0;
+          margin-bottom: 10px;
+          ul {
+            li {
+              margin: 0;
+              padding: 6px 16px 50px 16px;
+            }
+          }
+        }
+      }
+    }
+    .explore-360-btn-main {
+      margin: 0;
+    }
+    &.city-explore-360-main {
+      .common-h3 {
+        padding: 0 0 31px 0;
+      }
+      .explore-360-wrapper {
+        .explore-360-menu-main {
+          padding: 0;
+          width: 100%;
+          flex-direction: column;
+          .bike-rotate-color-h4 {
+            padding-top: 0;
+          }
+          .explore-360-tab {
+            width: max-content;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+            max-height: inherit;
+            flex-direction: row;
+            direction: ltr;
+            overflow: auto;
+            overflow: -webkit-scrollbars-none;
+            overflow: -moz-scrollbars-none;
+            overflow: -o-scrollbars-none;
+            overflow: scrollbars-none;
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            flex: 1;
+            &::-webkit-scrollbar {
+              width: 0 !important;
+              display: none;
+            }
+            .nav-item {
+              margin: 8px 7px;
+              .nav-link {
+                flex-direction: column;
+                p {
+                  display: block;
+                  opacity: 0;
+                  font-size: var(--font-size16);
+                  margin-top: 5px;
+                  text-align: center;
+                }
+                &.active {
+                  img {
+                    border: 2px solid #000000;
+                    border-radius: 100%;
+                    padding: 2px;
+                    background: #FFFFFF;
+                  }
+                  p {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .explore-360-wrapper-main {
+          .explore-360-box {
+            background: none;
+            position: relative;
+            .left-rotate-arrow {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .right-rotate-arrow {
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .explore-360-view {
+              height: 400px !important;
+            }
+          }
+        }
+        .explore-360-features-main {
+          margin-top: 0;
+          padding: 0 15px;
+          flex-direction: row;
+          .rotate-bike-div {
+            display: flex;
+            padding-bottom: 40px;
+            padding-right: 15px;
+            .rotate-bike-img {
+              width: 44px;
+            }
+            .rotate-bike-p {
+              font-size: var(--font-size12);
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+      .explore-360-btn-main {
+        margin-top: 0;
+      }
+    }
+    &.city-plus-explore-360-main {
+      .common-h3 {
+        padding: 0 0 31px 0;
+      }
+      .explore-360-wrapper {
+        .explore-360-menu-main {
+          padding: 0;
+          width: 100%;
+          flex-direction: column;
+          background: none;
+          .bike-rotate-color-h4 {
+            padding-top: 0;
+          }
+          .explore-360-tab {
+            width: max-content;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+            max-height: inherit;
+            flex-direction: row;
+            direction: ltr;
+            overflow: auto;
+            overflow: -webkit-scrollbars-none;
+            overflow: -moz-scrollbars-none;
+            overflow: -o-scrollbars-none;
+            overflow: scrollbars-none;
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            flex: 1;
+            &::-webkit-scrollbar {
+              width: 0 !important;
+              display: none;
+            }
+            .nav-item {
+              margin: 8px 7px;
+              .nav-link {
+                flex-direction: column;
+                p {
+                  display: block;
+                  opacity: 0;
+                  font-size: var(--font-size16);
+                  margin-top: 5px;
+                  text-align: center;
+                }
+                &.active {
+                  img {
+                    border: 2px solid #000000;
+                    border-radius: 100%;
+                    padding: 2px;
+                    background: #FFFFFF;
+                  }
+                  p {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .explore-360-wrapper-main {
+          padding: 35px 0 0 0;
+          .explore-360-box {
+            background: none;
+            position: relative;
+            .left-rotate-arrow {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .right-rotate-arrow {
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .explore-360-view {
+              height: 390px !important;
+            }
+          }
+        }
+        .explore-360-features-main {
+          margin-top: 0;
+          padding: 0 15px;
+          flex-direction: row;
+          width: 100%;
+          background: linear-gradient(270deg, rgba(0, 0, 0, 0.14) 4.2%, rgba(0, 0, 0, 0) 132.72%);
+          .rotate-bike-div {
+            display: flex;
+            padding-bottom: 40px;
+            padding-right: 15px;
+            padding: 12px 15px 12px 0;
+            .rotate-bike-img {
+              width: 44px;
+            }
+            .rotate-bike-p {
+              font-size: var(--font-size12);
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+      .explore-360-btn-main {
+        margin-top: 0;
+        position: relative;
+        padding-top: 30px;
+      }
+    }
+    &.scooter-explore-360-main {
+      .common-h3 {
+        padding: 0 0 31px 0;
+      }
+      .explore-360-wrapper {
+        .explore-360-menu-main {
+          padding: 0;
+          width: 100%;
+          flex-direction: column;
+          margin-top: 0;
+          .bike-rotate-color-h4 {
+            padding-top: 0;
+          }
+          .explore-360-tab {
+            width: max-content;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+            max-height: inherit;
+            flex-direction: row;
+            direction: ltr;
+            overflow: auto;
+            overflow: -webkit-scrollbars-none;
+            overflow: -moz-scrollbars-none;
+            overflow: -o-scrollbars-none;
+            overflow: scrollbars-none;
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            flex: 1;
+            &::-webkit-scrollbar {
+              width: 0 !important;
+              display: none;
+            }
+            .nav-item {
+              margin: 8px 7px;
+              .nav-link {
+                flex-direction: column;
+                padding: 8px 16px;
+                p {
+                  display: block;
+                  opacity: 0.6;
+                  padding-bottom: 7px;
+                  font-size: var(--font-size28);
+                  white-space: nowrap;
+                  line-height: 1;
+                }
+                &.active {
+                  p {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .explore-360-wrapper-main {
+          .explore-360-box {
+            background: none;
+            position: relative;
+            .left-rotate-arrow {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .right-rotate-arrow {
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .explore-360-view {
+              height: 400px !important;
+            }
+          }
+        }
+        .explore-360-features-main {
+          margin-top: 0;
+          padding: 0 15px;
+          flex-direction: row;
+          .rotate-bike-div {
+            display: flex;
+            padding-bottom: 40px;
+            padding-right: 15px;
+            .rotate-bike-img {
+              width: 44px;
+            }
+            .rotate-bike-p {
+              font-size: var(--font-size12);
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+      .explore-360-btn-main {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+/* SM & XS Devices Start  */
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .explore-360-main {
+    padding: 76px 0 25px 0;
+    .explore-360-wrapper {
+      flex-direction: column;
+      .explore-360-menu-main {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        order: 2;
+        flex-wrap: wrap;
+        justify-content: center;
+        .explore-360-tab {
+          width: auto;
+          margin: 0 10px 15px 0;
+          display: flex;
+          .nav-item {
+            margin: 0 7px;
+            .nav-link {
+              img {
+                margin: 0;
+                width: 34px;
+              }
+              p {
+                display: none;
+              }
+            }
+          }
+        }
+        .engine-sound {
+          margin-bottom: 15px;
+          a {
+            .icon-box {
+              width: 26px;
+              height: 26px;
+              padding: 5px;
+            }
+          }
+        }
+      }
+      .explore-360-wrapper-main {
+        order: 1;
+        margin: 0 auto;
+        .explore-360-box {
+          width: 300px;
+          margin: 0 auto;
+          .explore-360-view {
+            width: 100% !important;
+            height: 205px !important;
+          }
+        }
+      }
+      .explore-360-features-main {
+        width: 100%;
+        align-items: center;
+        order: 3;
+        .explore-download-wrapper {
+          margin-bottom: 20px;
+          .link-btn {
+            p {
+              font-size: var(--font-size12);
+            }
+            .icon-box {
+              width: 24px;
+              height: 24px;
+              padding: 6px;
+            }
+          }
+          .share-options {
+            height: 30px;
+            right: auto;
+            left: 180px;
+            bottom: -3px;
+            width: 0px;
+            &.active {
+              width: 80px;
+              height: 30px;
+            }
+            ul {
+              li {
+                a {
+                  img {
+                    width: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .features-main {
+          padding: 0;
+          margin-bottom: 10px;
+          ul {
+            li {
+              margin: 0;
+              padding: 6px 16px 50px 16px;
+              span {
+                font-size: var(--font-size14);
+              }
+              p {
+                font-size: var(--font-size10);
+              }
+              h5 {
+                font-size: var(--font-size18);
+              }
+            }
+          }
+        }
+      }
+    }
+    .explore-360-btn-main {
+      margin: 0;
+      .btn {
+        margin: 0 12px;
+        display: flex;
+        align-items: center;
+        &.btn-icon {
+          img {
+            width: 23px;
+          }
+        }
+      }
+    }
+    &.city-explore-360-main {
+      .common-h3 {
+        padding: 0 0 31px 0;
+      }
+      .explore-360-wrapper {
+        .explore-360-menu-main {
+          padding: 0;
+          width: 100%;
+          flex-direction: column;
+          .bike-rotate-color-h4 {
+            padding-top: 0;
+            padding-bottom: 8px;
+          }
+          .explore-360-tab {
+            width: max-content;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+            max-height: inherit;
+            flex-direction: row;
+            direction: ltr;
+            overflow: auto;
+            overflow: -webkit-scrollbars-none;
+            overflow: -moz-scrollbars-none;
+            overflow: -o-scrollbars-none;
+            overflow: scrollbars-none;
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            flex: 1;
+            &::-webkit-scrollbar {
+              width: 0 !important;
+              display: none;
+            }
+            .nav-item {
+              margin: 8px 7px;
+              .nav-link {
+                flex-direction: column;
+                img {
+                  width: 30px;
+                }
+                p {
+                  display: block;
+                  opacity: 0;
+                  font-size: var(--font-size10);
+                  margin-top: 5px;
+                  text-align: center;
+                  font-family: var(--font-tstar-bold);
+                  font-weight: var(--font-weight-800);
+                  line-height: var(--line-height-12);
+                }
+                &.active {
+                  img {
+                    border: 2px solid #000000;
+                    border-radius: 100%;
+                    padding: 2px;
+                    background: #FFFFFF;
+                  }
+                  p {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .explore-360-wrapper-main {
+          .explore-360-box {
+            background: none;
+            position: relative;
+            .left-rotate-arrow {
+              width: 22px;
+            }
+            .right-rotate-arrow {
+              width: 22px;
+            }
+          }
+        }
+        .explore-360-features-main {
+          margin-top: 15px;
+          margin-bottom: 40px;
+          padding: 0 15px;
+          flex-direction: row;
+          max-width: 100%;
+          overflow: auto;
+          overflow: -webkit-scrollbars-none;
+          overflow: -moz-scrollbars-none;
+          overflow: -o-scrollbars-none;
+          overflow: scrollbars-none;
+          scroll-behavior: smooth;
+          -ms-overflow-style: none;
+          flex: 1;
+          width: 100%;
+          justify-content: flex-start;
+          .rotate-bike-div {
+            display: flex;
+            padding-bottom: 0;
+            padding-right: 15px;
+            .rotate-bike-img {
+              width: 44px;
+            }
+            .rotate-bike-p {
+              font-size: var(--font-size12);
+              padding-left: 10px;
+              min-width: 110px;
+            }
+          }
+          &::-webkit-scrollbar {
+            width: 0 !important;
+            display: none;
+          }
+        }
+      }
+      .explore-360-btn-main {
+        margin-top: 0;
+      }
+    }
+    &.city-plus-explore-360-main {
+      padding-top: 64px;
+      .common-h3 {
+        padding: 0 0 15px 0;
+      }
+      .explore-360-wrapper {
+        .explore-360-menu-main {
+          padding: 0;
+          width: 100%;
+          flex-direction: column;
+          background: transparent;
+          .bike-rotate-color-h4 {
+            padding-top: 0;
+            padding-bottom: 8px;
+          }
+          .explore-360-tab {
+            width: max-content;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+            max-height: inherit;
+            flex-direction: row;
+            direction: ltr;
+            overflow: auto;
+            overflow: -webkit-scrollbars-none;
+            overflow: -moz-scrollbars-none;
+            overflow: -o-scrollbars-none;
+            overflow: scrollbars-none;
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            flex: 1;
+            &::-webkit-scrollbar {
+              width: 0 !important;
+              display: none;
+            }
+            .nav-item {
+              margin: 8px 7px;
+              .nav-link {
+                flex-direction: column;
+                img {
+                  width: 30px;
+                }
+                p {
+                  display: block;
+                  opacity: 0;
+                  font-size: var(--font-size10);
+                  margin-top: 5px;
+                  text-align: center;
+                  font-family: var(--font-tstar-bold);
+                  font-weight: var(--font-weight-800);
+                  line-height: var(--line-height-12);
+                }
+                &.active {
+                  img {
+                    border: 2px solid #000000;
+                    border-radius: 100%;
+                    padding: 2px;
+                    background: #FFFFFF;
+                  }
+                  p {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .explore-360-wrapper-main {
+          padding: 15px 0 0 0;
+          .explore-360-box {
+            background: none;
+            position: relative;
+            .left-rotate-arrow {
+              width: 22px;
+            }
+            .right-rotate-arrow {
+              width: 22px;
+            }
+            .explore-360-view {
+              height: 195px !important;
+            }
+          }
+        }
+        .explore-360-features-main {
+          margin-top: 15px;
+          margin-bottom: 25px;
+          padding: 0 15px;
+          flex-direction: row;
+          max-width: 100%;
+          overflow: auto;
+          overflow: -webkit-scrollbars-none;
+          overflow: -moz-scrollbars-none;
+          overflow: -o-scrollbars-none;
+          overflow: scrollbars-none;
+          scroll-behavior: smooth;
+          -ms-overflow-style: none;
+          flex: 1;
+          background: linear-gradient(270deg, rgba(0, 0, 0, 0.14) 4.2%, rgba(0, 0, 0, 0) 132.72%);
+          width: 100%;
+          justify-content: flex-start;
+          .rotate-bike-div {
+            display: flex;
+            padding: 12px 15px;
+            .rotate-bike-img {
+              width: 44px;
+            }
+            .rotate-bike-p {
+              font-size: var(--font-size12);
+              padding-left: 10px;
+              min-width: 110px;
+            }
+          }
+          &::-webkit-scrollbar {
+            width: 0 !important;
+            display: none;
+          }
+        }
+      }
+      .explore-360-btn-main {
+        margin-top: 0;
+        position: relative;
+        padding-bottom: 25px;
+      }
+    }
+    &.scooter-explore-360-main {
+      .common-h3 {
+        padding: 0 0 31px 0;
+      }
+      .explore-360-wrapper {
+        .explore-360-menu-main {
+          padding: 0;
+          width: 100%;
+          flex-direction: column;
+          margin-top: 0;
+          .bike-rotate-color-h4 {
+            padding-top: 0;
+            padding-bottom: 8px;
+            padding-left: 0;
+            margin-bottom: 0;
+          }
+          .explore-360-tab {
+            width: max-content;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+            max-height: inherit;
+            flex-direction: row;
+            direction: ltr;
+            overflow: auto;
+            overflow: -webkit-scrollbars-none;
+            overflow: -moz-scrollbars-none;
+            overflow: -o-scrollbars-none;
+            overflow: scrollbars-none;
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            flex: 1;
+            padding: 0 15px;
+            &::-webkit-scrollbar {
+              width: 0 !important;
+              display: none;
+            }
+            .nav-item {
+              margin: 8px 7px;
+              .nav-link {
+                flex-direction: column;
+                p {
+                  display: block;
+                  opacity: 0.6;
+                  padding-bottom: 7px;
+                  font-size: var(--font-size18);
+                  white-space: nowrap;
+                  line-height: 1;
+                }
+                &.active {
+                  img {
+                    border: 2px solid #000000;
+                    border-radius: 100%;
+                    padding: 2px;
+                    background: #FFFFFF;
+                  }
+                  p {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .explore-360-wrapper-main {
+          .explore-360-box {
+            background: none;
+            position: relative;
+            .left-rotate-arrow {
+              width: 22px;
+            }
+            .right-rotate-arrow {
+              width: 22px;
+            }
+          }
+        }
+        .explore-360-features-main {
+          margin-top: 15px;
+          margin-bottom: 40px;
+          padding: 0 15px;
+          flex-direction: row;
+          max-width: 100%;
+          overflow: auto;
+          overflow: -webkit-scrollbars-none;
+          overflow: -moz-scrollbars-none;
+          overflow: -o-scrollbars-none;
+          overflow: scrollbars-none;
+          scroll-behavior: smooth;
+          -ms-overflow-style: none;
+          flex: 1;
+          .rotate-bike-div {
+            display: flex;
+            padding-bottom: 0;
+            padding-right: 15px;
+            .rotate-bike-img {
+              width: 44px;
+            }
+            .rotate-bike-p {
+              font-size: var(--font-size12);
+              padding-left: 10px;
+              min-width: 110px;
+            }
+          }
+          &::-webkit-scrollbar {
+            width: 0 !important;
+            display: none;
+          }
+        }
+      }
+      .explore-360-btn-main {
+        margin-top: 0;
+      }
+    }
+  }
+}

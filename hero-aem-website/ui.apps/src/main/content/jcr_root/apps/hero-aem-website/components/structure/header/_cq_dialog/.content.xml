@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page Header"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <headeritems
+                        jcr:primaryType="nt:unstructured"
+                        showhidetargetvalue=""
+						jcr:title="Header Items"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        fieldDescription="Click 'Add Field' to add a  status."
+                        fieldLabel="Header Items"
+                        composite="{Boolean}true">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./headeritems">
+                            <items jcr:primaryType="nt:unstructured">
+                                <configurations
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <carouselconfigs
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Header Item"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <image
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="Desktop Icon"
+                                                    name="icon"
+                                                    rootPath="/content/dam/hero-aem-website"/>
+                                                <text
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Link Text"
+                                                    name="text"/>
+                                                <linktype
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    fieldLabel="Link Type"
+                                                    name="urltype">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                    <url
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="URL"
+                                                            value="url"/>
+                                                    <modal
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Modal"
+                                                        value="modal"/>
+                                                    </items>
+                                                </linktype>
+                                                <link
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="URL"
+                                                    name="url"/>
+                                                <addnclass
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Enter Additional Class"
+                                                    name="addnclass"/>
+                                            </items>
+                                        </carouselconfigs>
+                                    </items>
+                                </configurations>
+                            </items>
+                        </field>
+                    </headeritems>
+					<useraccount
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="User Account"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldDescription="Click 'Add Field' to add a  status."
+                        fieldLabel="Header Dropdown"
+                        showhidetargetvalue="">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./headerDropdown">
+                            <items jcr:primaryType="nt:unstructured">
+                                <configurations
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <carouselconfigs
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Header Dropdown Item"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <label
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Enter Label"
+                                                    name="./label"/>
+                                                <icon
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="Select Icon"
+                                                    name="./icon"
+                                                    rootPath="/content/dam/hero-aem-website"/>
+                                                <linktype
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    fieldLabel="Link Type"
+                                                    name="urltype">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <url
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="URL"
+                                                            value="url"/>
+                                                        <modal
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Modal"
+                                                            value="modal"/>
+                                                    </items>
+                                                </linktype>
+                                                <link
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="URL"
+                                                    name="url"/>
+                                                <addnclass
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Additional Class"
+                                                        name="addnclass"/>
+                                            </items>
+                                        </carouselconfigs>
+                                    </items>
+                                </configurations>
+                            </items>
+                        </field>
+                    </useraccount>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

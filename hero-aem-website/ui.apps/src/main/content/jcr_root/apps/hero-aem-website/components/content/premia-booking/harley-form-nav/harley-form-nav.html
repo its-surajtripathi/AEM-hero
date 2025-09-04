@@ -1,0 +1,32 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>
+
+<section class="harley-sub-nav-bar-wrapper">
+	<div class="harley-sub-nav-bar">
+		<h2 class="harley-title">Harley-Davidson X&trade; 440</h2>
+		<div class="multi-step-progress-bar">
+			<div class="progress-steps">
+				<div id="variant" class="step-container ${properties.active == 'true' ? 'active' : '' }">
+					<i class="circle icon ${properties.active == 'true' ? 'variant-active' : 'variant-disabled' }">
+					</i>
+					<div class="progress-text">VARIANT & COLOR</div>
+				</div>
+				<div id="dealer" class="step-container ${properties.active == 'true' ? 'active' : '' }">
+					<i class="circle icon  ${properties.active == 'true' ? 'dealer-active' : 'dealer-disabled' }">
+					</i>
+					<div class="progress-text">dealer</div>
+				</div>
+				<div id="card" class="step-container ${properties.active == 'true' ? 'active' : '' }">
+					<i class="circle icon  ${properties.active == 'true' ? 'card-active' : 'card-disabled' }">
+					</i>
+					<div class="progress-text">payment</div>
+				</div>
+				<div class="progress-bar"> 
+					<span class="indicator" data-sly-test="${properties.active != 'true'}"></span>
+					<span class="indicator" data-sly-test="${properties.active == 'true'}" style="width:100%"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

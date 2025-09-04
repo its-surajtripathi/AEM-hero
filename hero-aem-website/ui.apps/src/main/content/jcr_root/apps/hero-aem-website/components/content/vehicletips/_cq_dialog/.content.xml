@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Tips"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <container
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <variation
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                                        fieldLabel="Select Variation"
+                                                        name="./alignvariation">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <left
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Align Left"
+                                                                value="left"/>
+                                                            <right
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Align RIght"
+                                                                value="right"/>
+                                                        </items>
+                                                    </variation>
+                                                    <headline
+                                                           jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                            fieldLabel="Enter Tip header here"
+                                                         name="./servehicletipheader"
+                                                         useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins
+                                                            jcr:primaryType="nt:unstructured"
+                                                              sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                               <uiSettings
+                                                                      jcr:primaryType="nt:unstructured"
+                                                                      sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                 </headline>
+                                                    <deskimg
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Desktop Image"
+                                                        fieldLabel="Select Desktop Bike Image"
+                                                        name="./serbikeimgdesk"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <mobileimage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Mobile Image"
+                                                        fieldLabel="Select Mobile Bike Image"
+                                                        name="./serbikeimgmob"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <genuineparts
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <multitext
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldLabel="Add Vehicle Tips">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                    name="./sertipsmultitext">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <accordion
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <tips
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    jcr:title="Vehicle tips"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                        <deskimg
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                            fieldDescription="Icon"
+                                                                                            fieldLabel="Select Icon for the tip"
+                                                                                            name="./tipicon"
+                                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                                        <question
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                            fieldLabel="Enter Tip here"
+                                                                                            name="./servehicletip"
+                                                                                            useFixedInlineToolbar="{Boolean}true">
+                                                                                            <rtePlugins
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                            <uiSettings
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                        </question>
+                                                                                    </items>
+                                                                                </tips>
+                                                                            </items>
+                                                                        </accordion>
+                                                                    </items>
+                                                                </field>
+                                                            </multitext>
+                                                        </items>
+                                                    </genuineparts>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </container>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

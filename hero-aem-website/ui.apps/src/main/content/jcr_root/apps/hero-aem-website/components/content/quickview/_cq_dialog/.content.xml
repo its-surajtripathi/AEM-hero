@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Quick view"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[hero-aem-website.multifield]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <General
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="General"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                fieldLabel="Title"
+                                name="./title"
+                                useFixedInlineToolbar="{Boolean}true">
+                                <rtePlugins
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                <uiSettings
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                            </title>
+                            <lowercase
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                    checked="{Boolean}false"
+                                    fieldDescription="Check to make text case sensitive"
+                                    name="./lowercase"
+                                    text="Check to make text case sensitive"
+                                    uncheckedValue="false"
+                                    value="true"/>
+                            <bgimage
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                    fieldLabel="Background Image"
+                                    fileNameParameter="./bgimageFileName"
+                                    fileReferenceParameter="./bgimageFileReference"
+                                    multiple="{Boolean}false"
+                                    name="./bgimage"
+                                    title="Upload Image Asset"
+                                    useHTML5="{Boolean}true"/>
+                            <viewtext
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="View Details Text"
+                                    name="./viewtext"/>
+                            <viewlink
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                    fieldLabel="View Details Link"
+                                    name="./viewlink"
+                                    rootPath="/content/hero-aem-website"/>
+                            <booknow
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Book Now Text"
+                                    name="./booknow"/>
+                            <booknowlink
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                    fieldLabel="Book Now Link"
+                                    name="./booknowlink"
+                                    rootPath="/content/hero-aem-website"/>
+                        </items>
+                    </General>
+                    <featuresdetails
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Features"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <features
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                    composite="{Boolean}true"
+                                    fieldDescription="Add Features"
+                                    fieldLabel="Add Feature Details"
+                                    validation="multifield-max-4">
+                                <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        name="./features">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <configurations
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <featureconfigs
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Feature Details"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <featuretext
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Feature Label"
+                                                                name="./featuretext"
+                                                                required="{Boolean}true"/>
+                                                        <iconfile
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                                fieldLabel="Icon Image Asset"
+                                                                fileNameParameter="./iconFileName"
+                                                                fileReferenceParameter="./iconFileReference"
+                                                                multiple="{Boolean}false"
+                                                                name="./iconFile"
+                                                                title="Upload Image Asset"
+                                                                useHTML5="{Boolean}true"/>
+                                                        <alt
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Alt"
+                                                                name="./alt"/>
+                                                    </items>
+                                                </featureconfigs>
+                                            </items>
+                                        </configurations>
+                                    </items>
+                                </field>
+                            </features>
+                        </items>
+                    </featuresdetails>
+                    <productspecifications
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Specifications"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                                    <specificationsdetails
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Horizontal Features"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <specifications
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldDescription="Add Specifications"
+                                                    fieldLabel="Add Specification Details"
+                                                    validation="multifield-max-4">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./specifications">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <specconfigs
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        jcr:title="Specifications"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <title
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="Enter Title"
+                                                                                name="./title"
+                                                                                required="{Boolean}true"/>
+                                                                        <value
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="Enter Value"
+                                                                                name="./value"
+                                                                                required="{Boolean}true"/>
+                                                                    </items>
+                                                                </specconfigs>
+                                                    </items>
+                                                </field>
+                                            </specifications>
+                                        </items>
+                                    </specificationsdetails>
+                        </items>
+                    </productspecifications>
+                    <colorvariants
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Color Variants"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <colors
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                    composite="{Boolean}true"
+                                    fieldDescription="Add Color Variants "
+                                    fieldLabel="Add Feature Details">
+                                <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        name="./colors">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <configurations
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <colorsconfigs
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Variant Details"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <colortext
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Color Label"
+                                                                name="./colortext"
+                                                                required="{Boolean}true"/>
+                                                        <coloricon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                                fieldLabel="Icon Image Asset"
+                                                                fileNameParameter="./coloriconName"
+                                                                fileReferenceParameter="./coloriconReference"
+                                                                multiple="{Boolean}false"
+                                                                name="./coloriconFile"
+                                                                title="Upload Image Asset"
+                                                                useHTML5="{Boolean}true"/>
+                                                        <bikeimage
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                                fieldLabel="Bike Image Asset"
+                                                                fileNameParameter="./iconFileName"
+                                                                fileReferenceParameter="./bikeimageFileReference"
+                                                                multiple="{Boolean}false"
+                                                                name="./bikeimage"
+                                                                title="Upload Bike Image Asset"
+                                                                useHTML5="{Boolean}true"/>
+                                                    </items>
+                                                </colorsconfigs>
+                                            </items>
+                                        </configurations>
+                                    </items>
+                                </field>
+                            </colors>
+                        </items>
+                    </colorvariants>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

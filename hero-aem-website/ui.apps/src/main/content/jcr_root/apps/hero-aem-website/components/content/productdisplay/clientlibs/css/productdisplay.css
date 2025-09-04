@@ -1,0 +1,379 @@
+.product-display-section {
+  position: relative;
+  background: var(--background-url) center 475px;
+  background-size: cover;
+}
+.product-display-section .container {
+  max-width: 1236px;
+}
+.product-display-section .banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.product-display-section .banner-video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36.02%, rgba(0, 0, 0, 0.86) 83.44%);
+  z-index: 1;
+}
+.product-display-section .banner-video video {
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+.product-display-section .banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-style: italic;
+  padding: 50px 0;
+  color: var(--text-color-white);
+}
+.product-display-section .banner-content .banner-heading {
+  font-family: var(--font-montserrat-bold);
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px -1px 0 rgba(255, 255, 255, 0.4);
+  font-size: var(--font-size64);
+  letter-spacing: 5px;
+}
+.product-display-section .banner-content .banner-sub-heading {
+  font-size: var(--font-size24);
+}
+.product-display-section .banner-content .banner-bikes {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 75px;
+}
+.product-display-section .banner-content .banner-bikes .bike {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+.product-display-section .banner-content .banner-bikes .bike img {
+  display: inline-block;
+  max-width: 100%;
+}
+.product-display-section .banner-content .banner-bikes .bike h2 {
+  font-size: var(--font-size26);
+  font-family: var(--font-tstar-heavy);
+}
+.product-display-section .banner-content .banner-bikes .bike p {
+  font-size: var(--font-size18);
+}
+.product-display-section .banner-content .banner-bikes .bike .hover-content {
+  display: none;
+  transition: all 300ms ease-in;
+  opacity: 0;
+  visibility: hidden;
+}
+.product-display-section .banner-content .banner-bikes .bike .hover-content .actions li {
+  cursor: pointer;
+  color: var(--text-color-blue);
+  font-family: var(--font-tstar-heavy);
+  font-style: normal;
+}
+.product-display-section .banner-content .banner-bikes .bike:hover .hover-content {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.product-display-section .banner-content .banner-bikes .bike:hover h2 {
+  color: var(--bg-color-danger);
+}
+.product-display-section .banner-content .banner-bikes .bike:hover p {
+  color: var(--bg-color-danger);
+}
+.product-display-section .banner-content.white-theme {
+  background: var(--background-url) no-repeat center center;
+  background-size: cover;
+}
+.product-display-section .banner-content.white-theme .white-theme-sub-heading {
+  font-family: var(--font-tstar-bold);
+  color: var(--text-color-black);
+  font-size: var(--font-size38);
+  line-height: var(--line-height-46);
+  font-weight: 700;
+  font-style: normal;
+}
+.product-display-section .banner-content.white-theme .banner-bikes {
+  margin-top: 18px;
+}
+.product-display-section .banner-content.white-theme .banner-bikes .bike h2 {
+  color: var(--text-color-black);
+}
+.product-display-section .banner-content.white-theme .banner-bikes .bike .hover-content .actions li {
+  color: #e50c0c;
+}
+.product-display-section.banner-type-2 {
+  background-color: #fff;
+}
+.product-display-section.banner-type-2 .banner-slider img {
+  width: 100%;
+}
+.product-display-section.banner-type-2 .banner-slider .carousel-indicators {
+  bottom: 10px;
+}
+.product-display-section.banner-type-2 .banner-content {
+  background: #fff var(--background-url) no-repeat center center;
+  background-size: cover;
+  padding: 25px 0px;
+}
+.product-display-section.banner-type-2 .banner-content .banner-heading {
+  font-family: var(--font-tstar-heavy);
+  color: var(--text-color-black);
+  text-shadow: none;
+  font-size: var(--font-size48);
+  letter-spacing: 0px;
+}
+.product-display-section.banner-type-2 .banner-content .banner-sub-heading {
+  font-size: var(--font-size24);
+}
+.product-display-section.banner-type-2 .banner-content .banner-bikes {
+  margin-top: 18px;
+}
+.product-display-section.banner-type-2 .banner-content .banner-bikes .bike h2 {
+  font-size: var(--font-size26);
+  font-family: var(--font-tstar-heavy);
+  color: var(--text-color-black);
+  margin-bottom: 0px;
+}
+.product-display-section.banner-type-2 .banner-content .banner-bikes .bike h2.newhead {
+  margin-bottom: 10px !important;
+}
+.product-display-section.banner-type-2 .banner-content .banner-bikes .bike p {
+  font-size: var(--font-size18);
+}
+.product-display-section.banner-type-2 .banner-content .banner-bikes .bike .hover-content .actions li {
+  cursor: pointer;
+  color: var(--text-color-black) !important;
+  font-family: var(--font-tstar-bold);
+  font-style: normal;
+}
+.product-display-section.banner-type-2 .banner-content .banner-bikes .bike .hover-content .actions li.compare-btn {
+  font-family: var(--font-tstar-heavy);
+}
+.product-display-section.banner-type-2 .banner-content .banner-bikes .bike .hover-content .actions li span {
+  display: inline-block;
+  font-size: 16px;
+  color: #303030;
+  margin-left: 4px;
+}
+.product-display-section.banner-type-2 .banner-content .banner-bikes .bike .hover-content .actions li:hover {
+  color: var(--bg-color-danger);
+}
+.product-display-section.banner-type-2 .banner-content .banner-bikes .bike:hover h2 {
+  color: var(--bg-color-black);
+}
+.product-display-section.banner-type-3 .banner-slider img {
+  width: 100%;
+}
+.product-display-section.banner-type-3 .banner-slider .carousel-indicators {
+  bottom: 10px;
+}
+.product-display-section.banner-type-3 .banner-content {
+  background: #86888ae0 var(--background-url) no-repeat;
+  background-size: cover;
+  padding: 25px 0px;
+}
+.product-display-section.banner-type-3 .banner-content .banner-heading {
+  font-family: var(--font-tstar-heavy);
+  color: var(--text-color-white);
+  text-shadow: none;
+  font-size: var(--font-size48);
+  letter-spacing: 0px;
+}
+.product-display-section.banner-type-3 .banner-content .banner-sub-heading {
+  font-size: var(--font-size24);
+}
+.product-display-section.banner-type-3 .banner-content .banner-bikes {
+  margin-top: 18px;
+}
+.product-display-section.banner-type-3 .banner-content .banner-bikes .bike h2 {
+  font-size: var(--font-size26);
+  font-family: var(--font-tstar-heavy);
+  color: var(--text-color-white);
+  margin-bottom: 10px;
+}
+.product-display-section.banner-type-3 .banner-content .banner-bikes .bike p {
+  font-size: var(--font-size18);
+}
+.product-display-section.banner-type-3 .banner-content .banner-bikes .bike .hover-content .actions li {
+  cursor: pointer;
+  color: var(--text-color-white) !important;
+  font-family: var(--font-tstar-bold);
+  font-style: normal;
+}
+.product-display-section.banner-type-3 .banner-content .banner-bikes .bike .hover-content .actions li.compare-btn {
+  font-family: var(--font-tstar-heavy);
+}
+.product-display-section.banner-type-3 .banner-content .banner-bikes .bike .hover-content .actions li span {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 4px;
+  color: white;
+}
+.product-display-section.banner-type-3 .banner-content .banner-bikes .bike .hover-content .actions li:hover {
+  color: var(--bg-color-danger);
+}
+.product-display-section.banner-type-3 .banner-content .banner-bikes .bike:hover h2 {
+  color: var(--bg-color-black);
+}
+@media (max-width: 1199px) {
+  .product-display-section.banner-type-2 .banner-content .banner-heading {
+    font-size: var(--font-size30);
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike h2 {
+    font-size: var(--font-size20);
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike p {
+    font-size: var(--font-size14);
+  }
+}
+@media (max-width: 991px) {
+  .product-display-section {
+    position: relative;
+    background: var(--background-url) center 475px;
+    background-size: cover;
+  }
+  .product-display-section .banner-content {
+    background-size: contain !important;
+  }
+  .product-display-section .banner-content .banner-heading {
+    font-size: var(--font-size52);
+    letter-spacing: 5px;
+  }
+  .product-display-section .banner-content .banner-sub-heading {
+    font-size: var(--font-size20);
+  }
+  .product-display-section.banner-type-3 .banner-content {
+    background: #86888ae0 var(--background-url) no-repeat;
+    background-size: cover !important;
+    padding: 25px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .product-display-section {
+    position: relative;
+    background: var(--background-url) center 260px;
+    background-size: cover;
+  }
+  .product-display-section .banner-video video {
+    height: 275px;
+  }
+  .product-display-section .banner-wrapper {
+    padding-top: 25px;
+    background: rgba(219, 215, 213, 0.5);
+  }
+  .product-display-section .banner-content {
+    padding: 30px 0 10px;
+  }
+  .product-display-section .banner-content .banner-heading {
+    font-size: var(--font-size40);
+    letter-spacing: 3px;
+    line-height: 1.2;
+  }
+  .product-display-section .banner-content .banner-sub-heading {
+    font-size: var(--font-size14);
+  }
+  .product-display-section .banner-content .banner-bikes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  .product-display-section .banner-content .banner-bikes .bike {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+  .product-display-section .banner-content .banner-bikes .bike:nth-child(3) {
+    flex: 0 0 calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+  .product-display-section .banner-content .banner-bikes .bike:nth-child(3) .bike-img {
+    max-width: calc(50% - 10px);
+    margin: 0 auto;
+  }
+  .product-display-section .banner-content .banner-bikes .bike h2 {
+    font-size: var(--font-size18);
+  }
+  .product-display-section .banner-content .banner-bikes .bike p {
+    display: none;
+  }
+  .product-display-section .banner-content .banner-bikes .bike .hover-content {
+    display: block;
+    transition: all 300ms ease-in;
+    opacity: 1;
+    visibility: visible;
+    margin: 10px 0 20px;
+  }
+  .product-display-section .banner-content .banner-bikes .bike .hover-content .has-bluetooth img {
+    max-width: 15px;
+  }
+  .product-display-section .banner-content .banner-bikes .bike .hover-content .color-available .color {
+    height: 5px;
+    width: 20px;
+    transform: skewX(-50deg);
+    border: 0.2px solid #d3d3d3;
+  }
+  .product-display-section .banner-content .banner-bikes .bike .hover-content .actions li {
+    font-size: var(--font-size14);
+  }
+  .product-display-section.banner-type-2 .banner-slider .carousel-indicators {
+    bottom: 4px;
+  }
+  .product-display-section.banner-type-2 .banner-content {
+    padding: 16px 0px;
+    background-size: contain;
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-heading {
+    font-size: var(--font-size24);
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes {
+    justify-content: center;
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike h2 {
+    font-size: var(--font-size14);
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike p {
+    font-size: var(--font-size14);
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike .bike-img {
+    padding: 0 15%;
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike:nth-child(3) {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike:nth-child(3) .bike-img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 479px) {
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike h2 {
+    font-size: 12.8px;
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike p {
+    font-size: var(--font-size12);
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike li img {
+    width: 21px;
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike .hover-content {
+    margin: 0px 0 20px;
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike .hover-content .actions li {
+    font-size: 12px;
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike .hover-content .actions li span {
+    font-size: 12px;
+  }
+  .product-display-section.banner-type-2 .banner-content .banner-bikes .bike .hover-content .color-available {
+    margin-bottom: 7px !important;
+  }
+}

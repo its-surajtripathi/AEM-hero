@@ -1,0 +1,30 @@
+<sly data-sly-test="${wcmmode.edit}">
+    Product Page Header Component.
+</sly>
+    <div class="container-fluid top-bar-main">
+        <ul data-sly-use.list="com.adobe.cq.wcm.core.components.models.List"
+            data-sly-use.itemTemplate="item.html"
+            data-sly-list.item="${list.listItems}"
+            id="${list.id}"
+            data-cmp-data-layer="${list.data.json}"
+            class="navbar-nav cmp-list">
+            <li data-sly-test="${!list.displayItemAsTeaser}"
+                class="nav-item cmp-list__item" data-sly-call="${itemTemplate.item @ list = list, item = item}"
+                data-cmp-data-layer="${item.data.json}"></li>
+        </ul>
+	<div class="dropdown mobile-nav-dropdown custom-dropdown cmp-list" data-sly-list=${currentPage.getParent.listChildren}>
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-sly-test="${currentPage.pageTitle == item.pageTitle}">
+          ${item.pageTitle}
+        </button>
+        <div class="dropdown-menu dropdown-menu-right cmp-list" 
+		data-sly-list.item="${list.listItems}">
+        <sly data-sly-test="${!list.displayItemAsTeaser}" 
+			data-sly-use.list="com.adobe.cq.wcm.core.components.models.List"
+            data-sly-use.itemTemplate="item1.html"
+            id="${list.id}"
+            data-cmp-data-layer="${list.data.json}"
+			data-sly-call="${itemTemplate.item1 @ list = list, item = item}"
+            data-cmp-data-layer="${item.data.json}"></sly>
+        </div>
+      </div>
+	</div>

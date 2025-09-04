@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Generic Teaser"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <layoutVariation
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="General"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <layoutvariation
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/foundation/form/select"
+                                                class="cq-dialog-dropdown-showhide"
+                                                cq-dialog-dropdown-showhide-target=".variation-show-hide"
+                                                fieldDescription="Select Layout Variation"
+                                                fieldLabel="Layout Variation"
+                                                name="./layoutvariation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <layoutvariation1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Teaser/ Teaser with Icon"
+                                                        value="layoutvariation1"/>
+                                                    <layoutvariation2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Customer Review"
+                                                        value="layoutvariation2"/>
+                                                    <layoutvariation3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="About-us Explore Section with Animation"
+                                                        value="layoutvariation3"/>
+                                                    <layoutvariation4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Xpulse Experience Programs"
+                                                        value="layoutvariation4"/>
+                                                </items>
+                                            </layoutvariation>
+                                            <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Enter Teaser Image path"
+                                                name="./file"
+                                                required="{Boolean}true"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <alt
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Alt text of Teaser Image"
+                                                name="./alt"
+                                                required="{Boolean}true"/>
+                                            <height
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/numberfield"
+                                                fieldLabel="Enter height for Teaser image"
+                                                name="./height"/>
+                                            <searchbtntitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldLabel="Enter Redirection Label"
+                                                name="./searchbtntitle"/>
+                                            <searchbtnlink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Enter Redirection URL"
+                                                name="./searchbtnpath"
+                                                rootPath=""/>
+                                            <anchor
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                name="./anchor"
+                                                text="Enable checkbox to make image as a link"
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                            <check
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                name="./ctabuttoncheck"
+                                                text="Make CTA as Button?"
+                                                value="true"/>
+                                            <searchbtnicon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Enter Icon Path for Redirection"
+                                                name="./searchbtn"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <variation3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="variation-show-hide"
+                                                showhidetargetvalue="layoutvariation3">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <checkbox
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}false"
+                                                        fieldDescription="Enable the checkbox to add the animation effects to the teaser"
+                                                        name="./animation"
+                                                        text="Enable Animation"
+                                                        uncheckedValue="0"
+                                                        value="1"/>
+                                                    <animationtype
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/foundation/form/select"
+                                                        fieldDescription="Select Animation Type"
+                                                        fieldLabel="Animation Type"
+                                                        name="./animationType">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <type1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Fade Up"
+                                                                value="fade-up"/>
+                                                            <type2
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Fade Left"
+                                                                value="fade-left"/>
+                                                            <type3
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Fade Right"
+                                                                value="fade-right"/>
+                                                        </items>
+                                                    </animationtype>
+                                                </items>
+                                            </variation3>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </layoutVariation>
+                    <textGroup
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Text Content"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldLabel="Enter Title"
+                                                name="./teasertitle"/>
+                                            <level
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldLabel="Enter Level"
+                                                name="./teaserlevel"/>
+                                            <subtitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Enter Subtitle"
+                                                name="./subtitle"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                <htmlRules jcr:primaryType="nt:unstructured">
+                                                    <blockHandling
+                                                        jcr:primaryType="nt:unstructured"
+                                                        removeSingleParagraphContainer="{Boolean}true"/>
+                                                </htmlRules>
+                                            </subtitle>
+                                            <teaserdescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/textarea"
+                                                fieldLabel="Enter Teaser Description"
+                                                name="./teaserdescription"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <subscription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldLabel="Enter Subscription"
+                                                name="./teasersubscription"/>
+                                            <duration
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldLabel="Enter Duration"
+                                                name="./teaserduration"/>
+                                            <reviewcontainer
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="variation-show-hide"
+                                                showhidetargetvalue="layoutvariation2">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <customerreviewtitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/textarea"
+                                                        fieldLabel="Enter Customer Review"
+                                                        name="./customerreview"/>
+                                                </items>
+                                            </reviewcontainer>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </textGroup>
+                    <imageIconGroup
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Icon Content"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <iconmultifield
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Image Icon details">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./imageicondetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <imgicontitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Title for Image Icon "
+                                                            name="./titleicon"/>
+                                                        <imageicon
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Enter a Image Icon Path"
+                                                            name="./iconimagepath"
+                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                        <iconalt
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter a icon alt"
+                                                            name="./iconalt"
+                                                            required="{Boolean}true"/>
+                                                        <imageiconlink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Enter an URL"
+                                                            name="./iconimagelink"/>
+                                                    </items>
+                                                </field>
+                                            </iconmultifield>
+                                            <reviewcontainer
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="variation-show-hide"
+                                                showhidetargetvalue="layoutvariation2">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <imageiconcr
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Enter a Image Icon Path (only for Customer review variation)"
+                                                        name="./iconimagepathcr"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <iconaltcr
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter a icon alt ( for Customer review variation)"
+                                                        name="./iconaltcr"/>
+                                                    <explanationicon
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Enter a Explanation Icon Path for Customer review variation"
+                                                        name="./explanationicon"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                </items>
+                                            </reviewcontainer>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </imageIconGroup>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

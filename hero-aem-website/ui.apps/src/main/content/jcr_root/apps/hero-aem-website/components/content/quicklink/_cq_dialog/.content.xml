@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Author QuickLink Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-author_editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <multifieldwithmap
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Multifield With Map"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                fieldLabel="QuickLink Details">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <variant
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        class="cq-dialog-dropdown-showhide"
+                                        cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                                        fieldDescription="Select Tab Variant."
+                                        fieldLabel="Variant"
+                                        name="./qlvariant">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Default"
+                                                value="default"/>
+                                            <investors
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Investors Page"
+                                                value="investors"/>
+                                            <dividendinvestors
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Investors Dividend Page"
+                                                value="investorsdividend"/>
+                                        </items>
+                                    </variant>
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container"
+                                        class="show-hide-textfield"
+                                        showhidetargetvalue="default">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <headline
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Headling"
+                                                name="./headline"/>
+                                            <quicklinkdetails
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Quick Link Details"
+                                                fieldLabel="Quick Link Details"
+                                                required="{Boolean}false">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    emptyText="Author Quick Link Details"
+                                                    name="./quicklinkdetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <carouselconfigs
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Quick Link Item"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <image
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                                            fieldLabel="Image on Load"
+                                                                            fileNameParameter="./logoName"
+                                                                            fileReferenceParameter="./imageRef"
+                                                                            multiple="{Boolean}false"
+                                                                            name="./image"
+                                                                            title="Upload Image Asset"
+                                                                            useHTML5="{Boolean}true"/>
+                                                                        <imageIcon
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                                            fieldLabel="Image on Hover"
+                                                                            fileNameParameter="./imageIcon"
+                                                                            fileReferenceParameter="./imageIconRef"
+                                                                            multiple="{Boolean}false"
+                                                                            name="./imageIcon"
+                                                                            title="Upload Icon"
+                                                                            useHTML5="{Boolean}true"/>
+                                                                        <imageAlt
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldDescription="Image Alt"
+                                                                            fieldLabel="Image Alt"
+                                                                            name="./imageAlt"
+                                                                            text="Image Alt"/>
+                                                                        <quickLinkText
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            emptyText="Link Text"
+                                                                            fieldLabel="Link Text"
+                                                                            name="./quickLinkText"/>
+                                                                        <linkTo
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="CTA Link"
+                                                                            name="./linkTo"
+                                                                            rootPath="/content"/>
+                                                                        <linktype
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                                            fieldLabel="CTA Link Type"
+                                                                            name="urltype">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <url
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="URL"
+                                                                                    value="url"/>
+                                                                                <modal
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="Modal"
+                                                                                    value="modal"/>
+                                                                            </items>
+                                                                        </linktype>
+                                                                        <wrapperclass
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="Wrapper class"
+                                                                            name="./wrapperclass"/>
+                                                                    </items>
+                                                                </carouselconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </quicklinkdetails>
+                                        </items>
+                                    </default>
+                                    <investors
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container"
+                                        class="show-hide-textfield"
+                                        showhidetargetvalue="investors">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <multilinks
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="click on add button to add Quick Link Items">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./quicklinksmulti">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <bgclass
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                                            fieldDescription="Select Tab Variant."
+                                                            fieldLabel="Variant"
+                                                            name="./qlvariant">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <red
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Red BG"
+                                                                    value="red"/>
+                                                                <black
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Black BG"
+                                                                    value="black"/>
+                                                                <grey
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Grey BG"
+                                                                    value="grey"/>
+                                                                <silver
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Silver BG"
+                                                                    value="silver"/>
+                                                                <lightgrey
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Light Grey"
+                                                                    value="lightgrey"/>
+                                                            </items>
+                                                        </bgclass>
+                                                        <title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                            fieldLabel="Enter Quick Link Heading"
+                                                            name="./qltitle"
+                                                            useFixedInlineToolbar="{Boolean}true">
+                                                            <rtePlugins
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                            <uiSettings
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                        </title>
+                                                        <field1
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <submultilinks
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                    composite="{Boolean}true"
+                                                                    fieldLabel="click on add button to add sub quick link items">
+                                                                    <field
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                        name="./submultiquicklinks">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <title
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                fieldLabel="Enter Sub Quick Link Title"
+                                                                                name="./subqltitle"
+                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                <rtePlugins
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                <uiSettings
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                            </title>
+                                                                            <ctalabel
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="CTA Label"
+                                                                                name="./qlctalabel"/>
+                                                                            <ctaurl
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                                fieldLabel="Enter CTA URL"
+                                                                                name="./qlctaurl"
+                                                                                rootPath="/content/hero-aem-website"/>
+                                                                        </items>
+                                                                    </field>
+                                                                </submultilinks>
+                                                            </items>
+                                                        </field1>
+                                                    </items>
+                                                </field>
+                                            </multilinks>
+                                        </items>
+                                    </investors>
+                                    <investorsdividend
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container"
+                                        class="show-hide-textfield"
+                                        showhidetargetvalue="investorsdividend">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <multilinks
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="click on add button to add Quick Link Items">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./divquicklinksmulti">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <bgclass
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                                            fieldDescription="Select Tab Variant."
+                                                            fieldLabel="Variant"
+                                                            name="./divqlvariant">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <red
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Red BG"
+                                                                    value="red"/>
+                                                                <black
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Black BG"
+                                                                    value="black"/>
+                                                                <silver
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Silver BG"
+                                                                    value="silver"/>
+                                                            </items>
+                                                        </bgclass>
+                                                        <title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                            fieldLabel="Enter Quick Link Heading"
+                                                            name="./divqltitle"
+                                                            useFixedInlineToolbar="{Boolean}true">
+                                                            <rtePlugins
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                            <uiSettings
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                        </title>
+                                                        <field1
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <submultilinks
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                    composite="{Boolean}true"
+                                                                    fieldLabel="click on add button to add sub quick link items">
+                                                                    <field
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                        name="./divmultiquicklinks">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <title
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                fieldLabel="Enter Sub Quick Link Title"
+                                                                                name="./divqltitle"
+                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                <rtePlugins
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                <uiSettings
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                            </title>
+                                                                            <ctalabel
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="CTA Label"
+                                                                                name="./divqlctalabel"/>
+                                                                            <ctaurl
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                                fieldLabel="Enter CTA URL"
+                                                                                name="./divqlctaurl"
+                                                                                rootPath="/content/hero-aem-website"/>
+                                                                        </items>
+                                                                    </field>
+                                                                </submultilinks>
+                                                            </items>
+                                                        </field1>
+                                                    </items>
+                                                </field>
+                                            </multilinks>
+                                        </items>
+                                    </investorsdividend>
+                                </items>
+                            </well>
+                        </items>
+                    </multifieldwithmap>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

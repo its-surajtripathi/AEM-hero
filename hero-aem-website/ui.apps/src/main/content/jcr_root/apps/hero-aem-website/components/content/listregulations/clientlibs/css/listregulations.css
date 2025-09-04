@@ -1,0 +1,135 @@
+  .regulations-list-container {
+    padding: 0 41px 40px 40px;
+    box-sizing: border-box;
+    background: #f5f5f5;
+  }
+  
+  .regulations-list-container .regulation-list {
+    background-color: #ffffff;
+    color: #303030;
+    padding: 36px 28px 16px 36px;
+    box-sizing: border-box;
+  }
+  
+  .regulations-list-container .regulation-list-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 24px 25px;
+    border-bottom: 1px solid rgba(238, 35, 38, 0.5);
+    margin-bottom: 24px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 29px;
+    box-sizing: border-box;
+    font-family: var(--font-tstart-bold);
+  }
+  
+  .regulations-list-container .sr-no {
+    min-width: 37px;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: 700;
+    font-family: var(--font-tstar-bold);
+  }
+  
+  .regulations-list-container .regulation-requirement {
+    width: 896px;
+    padding: 5px 76px 0 22px;
+    border-left: 1px solid rgba(48, 48, 48, 0.5);
+  }
+
+  .regulations-list-container .regulation-requirement > *{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-family: var(--font-tstar-bold);
+   }
+  
+  .regulations-list-container .regulation-know-more {
+    padding-top: 5px;
+    color: #009fda;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    min-width: max-content;
+    margin-left: auto;
+    font-weight: 700;
+    font-family: var(--font-tstar-bold);
+  }
+
+  .regulations-list-container .regulation-none {
+    padding-top: 5px;
+    color: 	#808080;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    min-width: max-content;
+    margin-left: auto;
+    font-weight: 700;
+    font-family: var(--font-tstar-bold);
+    font-size: 24px;
+    line-height: 29px;
+  }
+  
+  .regulations-list-container .blue-right-arrow {
+    margin-left: 16px;
+    width: 13px;
+    height: 13px;
+  }
+  
+  @media (max-width: 767px) {
+    .regulations-list-container {
+      padding: 0 16px 27px;
+    }
+  
+    .regulations-list-container .regulation-list {
+      padding: 16px 16px 0;
+    }
+  
+    .regulations-list-container .regulation-list-item {
+      font-size: 16px;
+      line-height: 19px;
+      padding: 0 0 10px;
+      margin-bottom: 10px;
+    }
+    .regulations-list-container .regulation-list-item:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+    .regulations-list-container .sr-no {
+      min-width: 31px;
+      padding: 0;
+      text-align: left;
+    }
+  
+    .regulations-list-container .regulation-requirement {
+      padding: 0 6px 0 5px;
+      width: max-content;
+      word-wrap: break-word;
+    }
+
+    .regulations-list-container .regulation-requirement > *{
+      font-size: 16px;
+      line-height: 1.19;
+    }
+  
+    .regulations-list-container .regulation-know-more {
+      padding: 0;
+      font-size: 14px;
+      line-height: 17px;
+      min-width: max-content;
+    }
+
+    .regulations-list-container .regulation-none {
+      padding: 0;
+      font-size: 14px;
+      line-height: 17px;
+      min-width: max-content;
+    }
+  
+    .regulations-list-container .blue-right-arrow {
+      margin-left: 11px;
+      width: 9px;
+      height: 9px;
+    }
+  }

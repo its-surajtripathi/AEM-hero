@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Dealers Portal Contact Us"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <variant
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                class="cq-dialog-dropdown-showhide"
+                                                cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                                                fieldDescription="Select Tab Variant."
+                                                fieldLabel="Variant"
+                                                name="./layoutvariation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <fullwidth
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Full width"
+                                                        value="fullwidth"/>
+                                                    <halfwidth
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Half Width"
+                                                        value="halfwidth"/>
+                                                </items>
+                                            </variant>
+                                            <Heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter the Contact Heading"
+                                                name="./contactHeading"/>
+                                            <imagepath
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Enter Image Path"
+                                                name="./imagePath"
+                                                rootPath="/content/dam"/>
+                                            <alttext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Image alt Text"
+                                                name="./altText"/>
+                                            <name
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Contact Name"
+                                                name="./contactName"/>
+                                            <email
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Enter Contact Email"
+                                                    name="./contactEmail"/>
+                                            <position
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter the Contact Position"
+                                                name="./contactPosition"/>
+                                            <areaLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Contact Area Label"
+                                                name="./areaLabel"/>
+                                            <managerlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter the Manager Label"
+                                                name="./managerLabel"/>
+                                            <contactarea
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="click on add button to add Contact Area">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./contactArea">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <areaName
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Please enter Contact Area Name"
+                                                            fieldLabel="Please enter Contact Area Name"
+                                                            name="./contactAreaName"/>
+                                                    </items>
+                                                </field>
+                                            </contactarea>
+                                            <contactmanager
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="click on add button to add Manager Details">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./managerDetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <managername
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Please enter Manager Name"
+                                                            fieldLabel="Please enter Manager Name"
+                                                            name="./managerName"/>
+                                                        <manageremail
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter Manager Email"
+                                                            name="./email"/>
+                                                    </items>
+                                                </field>
+                                            </contactmanager>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

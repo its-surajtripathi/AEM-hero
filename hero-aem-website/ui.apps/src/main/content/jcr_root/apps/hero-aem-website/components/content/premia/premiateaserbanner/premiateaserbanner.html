@@ -1,0 +1,78 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<!-- <div> 
+	<p>${properties.preTitle}</p>
+	<p>${properties.title}</p>
+	<p>${properties.description}</p>
+	<img src="${properties.videoLink}" alt="img">
+
+	<p>${properties.promoText}</p>
+	<video autoplay muted loop data-sly-test="${properties.video}">
+            <source src="${properties.video}" type="video/mp4">
+    </video>
+</div> -->
+
+<!-- Teaser-banner new design code -->
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<!-- <div> 
+	<p>${properties.preTitle}</p>
+	<p>${properties.title}</p>
+	<p>${properties.description}</p>
+	<img src="${properties.videoLink}" alt="img">
+
+	<p>${properties.promoText}</p>
+	<video autoplay muted loop data-sly-test="${properties.video}">
+            <source src="${properties.video}" type="video/mp4">
+    </video>
+</div> -->
+
+<!-- Teaser-banner new design code -->
+<div class="teaser-banner-wrapper container-fluid-width">
+	<div class="teaser-banner-content-wrapper">
+		<img class="teaser-banner-harley-engine-img unreveal-harley" src="${properties.link1}" loading="lazy"
+			alt="harley_bike_lenswipe">
+		<div class="teaser-banner-primary-content">
+			<div class="harley-bike-blink-wrapper unreveal-harley">
+				<div class="harley-bike-blink" id="harley-bike-blinker"></div>
+			</div>
+			<div class="harley-headlight-img-wrapper unreveal-harley">
+				<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/harley_headlight.png"
+					loading="lazy" alt="harley_headlight_img">
+			</div>
+			<div class="harley-headlight-shadow-img-wrapper unreveal-harley">
+				<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/harley_headlight_shadow.png"
+					loading="lazy" alt="harley_headlight_shadow_img">
+			</div>
+			<div class="harley-bike-quotes-wrapper unreveal-harley">
+				<p class="harley-bike-quotes">${properties.preTitle @ context='html'}</p>
+			</div>
+
+			<div class="harley-bike-quotes-wrapper unreveal-harley">
+				<p class="harley-bike-quotes-mob">${properties.preTitlemob @ context='html'}</p>
+			</div>
+
+		</div>
+		<div class="harley-description-wrapper unreveal-harley">
+			<div class="harley-description-content">
+				<div class="harley-description-primary-text-wrapper">
+					<p class="harley-description-primary-text m-0">${properties.title @ context='html'}</p>
+				</div>
+				<div class="harley-description-divider-line-wrapper my-45 my-mobile-16">
+					<div class="harley-description-left-divider-line mr-500 mr-mobile-200 unreveal-harley"></div>
+					<div class="harley-description-right-divider-line unreveal-harley"></div>
+				</div>
+				<div class="harley-description-sub-text-wrapper">
+					<p class="harley-description-sub-text">${properties.description @ context='html'}</p>
+				</div>
+			</div>
+		</div>
+		<div class="teaser-banner-disclaimer-text-wrapper unreveal-harley">
+			<p class="teaser-banner-disclaimer-text">${properties.desclaimer @ context='html'}</p>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,256 @@
+<input type="hidden" value="${currentPage.path}" id="defaultservlet" name="defaultservlet" />
+<section id="booking__section" class="book-test-ride-campaign d-none">
+    <div class="booking__container" id="harley__campaign">
+        <div class="content__wrap">
+            <div class="form__wrap">
+                <div class="header--wrap d-flex">
+                    <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-booking-site/resources/address.svg"
+                        alt="" class="header-img">
+                    <h4>
+                        Add Detail & ADDRESS
+                    </h4>
+                </div>
+
+                <div class="input-form-wrap w-100">
+                    <form action="" class="w-100" id="harley__form">
+                        <div class="form--wrap">
+                            <div class="cust-form-group">
+                                <span class="form-label">
+                                    First Name <sup>*</sup>
+                                </span>
+                                <input type="text" required class="harley-input" placeholder="Enter your first name"
+                                    data-validation-msg-req="Please enter first name"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '')"
+                                    data-validation-msg-format="Please enter valid first name" name="firstname">
+                            </div>
+
+                            <div class="cust-form-group">
+                                <span class="form-label">
+                                    Last Name <sup>*</sup>
+                                </span>
+                                <input type="text" class="harley-input" placeholder="Enter your last name"
+                                    data-validation-msg-req="Please enter last name"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '')"
+                                    data-validation-msg-format="Please enter valid last name" name="lastname">
+                            </div>
+
+                            <div class="cust-form-group">
+                                <span class="form-label">
+                                    Select State<sup>*</sup>
+                                </span>
+                                <div class="dropdown cust-drop-down">
+                                    <button id="state" name="statename"
+                                        class="dropdown-select form-control cust-form-control" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        data-validation-msg-req="">
+                                        Select State
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req="Please select State"
+                                        name="stateNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu" aria-labelledby="stateDropdown"
+                                        style="width: 100%;">
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="cust-form-group">
+                                <span class="form-label">
+                                    Select City<sup>*</sup>
+                                </span>
+                                <div class="dropdown cust-drop-down">
+                                    <button id="city" name="cityname"
+                                        class="dropdown-select form-control cust-form-control" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        data-validation-msg-req="">
+                                        Select City
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req="Please select City"
+                                        name="cityNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu" aria-labelledby="cityDropdown"
+                                        style="width: 100%;">
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="cust-form-group">
+                                <span class="form-label">
+                                    Address 1 <sup>*</sup>
+                                </span>
+                                <input type="text" class="harley-input" placeholder="Enter your Address" required
+                                    data-validation-msg-req="Please enter address"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z0-9\s]/g, '')"
+                                    data-validation-msg-format="Please enter valid Address" name="address1">
+                            </div>
+
+                            <div class="cust-form-group">
+                                <span class="form-label">
+                                    Address 2
+                                </span>
+                                <input type="text" class="harley-input" placeholder="Enter your Address"
+                                    data-validation-msg-req="Please enter address"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z0-9\s]/g, '')"
+                                    data-validation-msg-format="Please enter valid Address" name="address2">
+                            </div>
+
+                            <div class="cust-form-group">
+                                <span class="form-label">
+                                    PIN Code <sup>*</sup>
+                                </span>
+                                <input type="text" class="harley-input" required placeholder="Enter your Pin Code"
+                                    data-validation-msg-req="Please enter Pin Code"
+                                    oninput="this.value=this.value.replace(/[^0-9]/g, '').substring(0, 6)"
+                                    data-validation-msg-format="Please enter valid Pin Code" name="pin">
+                            </div>
+
+                            <div class="cust-form-group">
+                                <span class="form-label">
+                                    Email ID<sup>*</sup>
+                                </span>
+                                <input type="text" class="harley-input" required placeholder="Enter your Email ID"
+                                    data-validation-msg-req="Please enter Email ID"
+                                    data-validation-msg-format="Please enter valid Email ID" name="email">
+                            </div>
+
+                            <div class="cust-form-group">
+                                <span class="form-label">
+                                    Mobile<sup>*</sup>
+                                </span>
+                                <input type="text" class="harley-input mobile-no" required
+                                    placeholder="Enter your mobile number"
+                                    data-validation-msg-req="Please enter mobile number"
+                                    oninput="this.value=this.value.replace(/\D/g, '').substring(0, 10)"
+                                    data-validation-msg-format="Please enter valid mobile number" name="mobile">
+                                <a href="" class="position-absolute d-none" id="send-otp">Send OTP</a>
+                                <p class="otp--sent d-none">${properties.sentOtpPremia}</p>
+                                <div id="timer"></div>
+                            </div>
+
+                            <div class="cust-form-group">
+                                <span class="form-label">
+                                    OTP<sup>*</sup>
+                                </span>
+                                <input type="text" class="harley-input otp-field" disabled required
+                                    placeholder="Enter OTP" data-validation-msg-req="Please enter OTP" maxlength="6"
+                                    oninput="this.value=this.value.replace(/[^0-9]/g, '').substring(0, 6)"
+                                    data-validation-msg-format="Please enter valid mobile number" name="otp">
+                                <p class="valid__otp d-none">
+                                    ${properties.validOtpPremia}
+                                </p>
+                                <p class="invalid__otp d-none">
+                                    ${properties.invalidOtpPremia}
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="bike__details">
+                <div class="bike__details--top">
+                    <img src="${properties.biketopimage}" alt="" class="d-none">
+                    <div class="model__details d-flex">
+                        <h6 data-aa-name="product-name">
+                            Harley-Davidson X<sup>TM</sup> 440
+                        </h6>
+                        <p id="varient">
+                            Variant : <span></span>
+                        </p>
+
+                        <p id="color">
+                            Color - <span></span>
+                        </p>
+
+                        <div class="price--wrap">
+                            <div class="showroom--price">
+                                ₹ 89,550
+                            </div>
+                            <!-- <div class="road--price">
+                                ₹ 1,20000
+                            </div>
+                            <div class="disclaimer">
+                                Inclusive of all taxes
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="bike__details--bottom">
+                    <div class="dealer__wrap">
+                        <div class="dealer__wrap--left d-flex">
+                            <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-booking-site/resources/box.svg"
+                                alt="" class="d-none">
+                            <div class="dealer__wrap--left-text d-flex">
+                                <h6 data-aa-name="dealer-detail" id="dealer">
+                                    Himgiri Hero Automobiles Pvt Ltd
+                                </h6>
+                                <p>
+                                    ${properties.deliveryday}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dealer__wrap--right">
+                            <a class="d-flex">
+                                <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-booking-site/resources/change.svg"
+                                    alt="">
+                                <p>
+                                    Change
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkbox--wrap">
+            <div class="control-group">
+                <label class="control control-checkbox">
+                    ${properties.checkboxtext @context= 'html'}
+                    <input type="checkbox" id="paynowcheck" />
+                    <div class="control_indicator"></div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="paynow__section">
+        <div class="paynow__container d-flex">
+            <div class="bottom-nav-header">
+                <h5>
+                    ${properties.bottomnavheader}
+                </h5>
+                <p>
+                    ${properties.bottomnavtextdesc}
+                </p>
+            </div>
+
+            <button disabled id="pay-now">
+                ${properties.paynowtext} ${properties.payamount}
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="form-submit d-none" id="magento-form-submit">
+    <form name="frmPayment" id="frmPayment" action="${properties.paynowurl}" method="POST">
+        <input type="text" name="email" id="emailID">
+        <input type="text" name="customer_mobile">
+        <input type="text" name="buy_page_order_id" value="100001">
+        <input type="text" name="booking_amount" value="94b48e4eff1554fe2d15434e1f038270">
+        <input type="text" name="ex_showroom_price" id="exshowroomprice">
+        <input type="text" name="dealer_code" id="dealer_code_value">
+        <input type="text" name="order_source_ip" value="${properties.ordersourceip}">
+        <input type="text" name="order_success_url" value="${properties.statusurl}">
+        <input type="text" name="customer_address[firstname]" id="firstname">
+        <input type="text" name="customer_address[lastname]" id="lastname">
+        <input type="text" name="customer_address[street1]" id="address1">
+        <input type="text" name="customer_address[street2]" id="address2">
+        <input type="text" name="customer_address[city]" id="city">
+        <input type="text" name="customer_address[state_code]" id="state">
+        <input type="text" name="customer_address[postcode]" id="pincode">
+        <input type="text" name="customer_address[mobile_no]" value="8111111111">
+        <input type=text name="item_details[variant_sku]" id="mcode">
+        <input type="text" name="modal_name" id="bikevariant">
+        <input type="text" name="bike_color" id="bikecolor">
+        <button class="btn-payment" type="submit">Place Order</button>
+    </form>
+</section>

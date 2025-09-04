@@ -1,0 +1,115 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='bikeDetails'}">
+  <div class="product-page-banner">
+    <div class="product-details-wrapper container-fixed-width">
+      <div class="product-details-container pt-48 pb-67">
+        <div class="colored-border"></div>
+        ${properties.bikeTitle @context='html'}
+        <!-- <p class="product-title mb-0 pt-20">
+          ${properties.bikeTitle}<sup class="super-text">TM</sup>440
+        </p> -->
+        <p class="product-title-promo mb-0 pb-32">${properties.titlePromo @context='html'}</p>
+        ${properties.bikeDescription @context='html'}
+        <!-- <p class="product-desc mb-0 pb-40">
+          ${properties.bikeDescription}<sup class="super-text-desc">TM</sup>440
+        </p> -->
+        <button class="discover-more py-7 px-16 d-none" data-sly-test="${properties.buttonLink && properties.buttonLabel}">
+          <a class="discover-more-link" href="${properties.buttonLink}">
+            ${properties.buttonLabel}
+          </a></button>
+          
+      </div>
+    </div>
+    <div class="d-none">
+      <audio controls id="audioElement">
+        <source src="${properties.audioPath}" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div class="product-video-container">
+      <video autoplay muted loop id="videoElementDesktop" data-sly-test="${properties.bgVideo}" class="product-video">
+        <source src="${properties.bgVideo}" type="video/mp4" />
+      </video>
+      <video autoplay muted loop id="videoElementMobile" data-sly-test="${properties.bgVideoMobile}"
+        class="product-video" data-videopath-mobile="${properties.bgVideoMobile}">
+        <source src="${properties.bgVideoMobile}" type="video/mp4" />
+      </video>
+    </div>
+    <div class="bike-audio-trigger-section">
+      <div class="start-button-animation-container">
+        <div class="button-round1 button-circle1">
+          <svg width="100%" height="100%" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="49" fill="transparent" />
+            <circle cx="50" cy="50" r="46" stroke="#fff" stroke-width="1.5" stroke-dasharray="0 10"
+              stroke-linecap="round" fill="transparent" />
+          </svg>
+        </div>
+        <div class="button-round2 button-circle2">
+          <svg width="100%" height="100%" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="49" fill="transparent" />
+            <circle cx="50" cy="50" r="46" stroke="#fff" stroke-width="1.5" stroke-dasharray="0 10"
+              stroke-linecap="round" fill="transparent" />
+          </svg>
+        </div>
+        <div class="button-round3 button-circle3">
+          <svg width="100%" height="100%" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="49" fill="transparent" />
+            <circle cx="50" cy="50" r="46" stroke="#fff" stroke-width="1.5" stroke-dasharray="0 10"
+              stroke-linecap="round" fill="transparent" />
+          </svg>
+        </div>
+        <div class="eclipse-background">
+          <img
+            src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/start_engine_background.png"
+            loading="lazy" />
+        </div>
+        <div class="audio-power-on">
+          <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/start_engine.png"
+            loading="lazy" class="power-on d-none" />
+          <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/stop_engine.png"
+            loading="lazy" class="power-off" />
+        </div>
+      </div>
+      <p class="mb-0 audio-trigger-text start-text">
+        ${properties.startEngine}
+      </p>
+      <p class="mb-0 audio-trigger-text stop-text d-none">
+        ${properties.stopEngine}
+      </p>
+    </div>
+  </div>
+
+  <div class="harley-features-overview-wrapper">
+    <div class="features-overview-container container-fixed-width">
+      <div data-sly-list.items="${listUse}" class="features-container">
+        <div class="features-icon-and-text">
+          <img class="harley-feature-icon" data-sly-test="${items.properties.logoimg_1}"
+            src="${items.properties.logoimg_1}" loading="lazy" alt="Logo_1" />
+          <p class="harley-feature-text">${items.properties.description_1}</p>
+        </div>
+        <div class="features-icon-and-text">
+          <img class="harley-feature-icon" data-sly-test="${items.properties.logoimg_2}"
+            src="${items.properties.logoimg_2}" loading="lazy" alt="Logo_2" />
+          <p class="harley-feature-text">${items.properties.description_2}</p>
+        </div>
+        <div class="features-icon-and-text">
+          <img class="harley-feature-icon" data-sly-test="${items.properties.logoimg_3}"
+            src="${items.properties.logoimg_3}" loading="lazy" alt="Logo_3" />
+          <p class="harley-feature-text">${items.properties.description_3}</p>
+        </div>
+      </div>
+      <div class="overview-container">
+        <div class="overview-inner-container">
+          <p class="overview-title">${properties.ovTitle}</p>
+          <ul>
+            <li class="overview-list-feature">${properties.text_1}</li>
+            <li class="overview-list-feature">${properties.text_2}</li>
+            <li class="overview-list-feature">${properties.text_3}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

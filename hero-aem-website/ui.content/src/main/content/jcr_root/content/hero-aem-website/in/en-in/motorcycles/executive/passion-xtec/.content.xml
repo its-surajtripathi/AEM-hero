@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-13T11:29:25.282Z"
+        cq:lastModifiedBy="gausiya.latif.momin@accenture.com"
+        cq:lastReplicated="{Date}2022-09-13T11:31:17.609Z"
+        cq:lastReplicated_publish="{Date}2022-09-13T11:31:17.609Z"
+        cq:lastReplicatedBy="gausiya.latif.momin@accenture.com"
+        cq:lastReplicatedBy_publish="gausiya.latif.momin@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/city-plus"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Passion Xtec"
+        jcr:uuid="57950eeb-edb5-4bc8-869e-d841e28eaa07"
+        sling:resourceType="hero-aem-website/components/structure/productpage"
+        pagerank="8"
+        pageTitle="Passion Xtec"
+        productmodel="/content/hmc/prices/in/passion_xtec"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                jcr:lastModified="{Date}2022-08-21T10:48:38.534Z"
+                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/header/city-plus-header"/>
+            <container
+                jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                layout="responsiveGrid">
+                <container
+                    cq:styleIds="[1660795084168]"
+                    jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid">
+                    <carousel_copy
+                        jcr:created="{Date}2022-08-18T13:32:17.401Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T10:38:31.689Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/carousel"
+                        carouselindicatorstyling="carousel-indicators"
+                        textIsRich="[true]"
+                        variant="home">
+                        <image.sftmp/>
+                        <herodetailswithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="Request Call Back"
+                                btnlabel2="Book Now"
+                                buttonalign="slide-1-content-left"
+                                headline="&lt;h1>Passion XTEC&lt;br>&#xd;&#xa;&lt;/h1>&#xd;&#xa;&lt;p>Welcome to the world of Passion Xtec.&lt;/p>&#xd;&#xa;&lt;p>Alag style, alag andaaz&lt;/p>&#xd;&#xa;"
+                                imageAlt="banner"
+                                imageRef="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/banner/Banner-Passion Xtec.jpg"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/passion-xtec.html"
+                                mobimageRef="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/banner/Banner-Passion Xtec.jpg"
+                                styling="text-left"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"/>
+                        </herodetailswithmap>
+                    </carousel_copy>
+                </container>
+                <container_copy
+                    jcr:lastModified="{Date}2022-08-18T13:32:00.216Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="OVERVIEW"
+                    layout="responsiveGrid">
+                    <color_switch
+                        jcr:created="{Date}2022-08-18T17:46:15.568Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T11:29:25.248Z"
+                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/color-switch"
+                        background="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/color-360/Passion website content-Background.jpg"
+                        btnlabel1="Explore"
+                        btnlabel2="Book Now"
+                        headline="Colours &amp; 360"
+                        imgbtn1="/content/dam/hero-aem-website/brand/design/icons/360-view-icon.svg"
+                        leftarrowpath="/content/dam/hero-aem-website/in/products/city-plus/glamour/color-switch/rotate-icon-left.png"
+                        leftheading="COLORS"
+                        linkTo1="https://virtualshowroom.heromotocorp.com/"
+                        linkTo2="https://eshop.heromotocorp.com/passion-xtec.html"
+                        rightarrowpath="/content/dam/hero-aem-website/in/products/city-plus/glamour/color-switch/rotate-icon-right.png"
+                        styling1="btn-icon btn-white"
+                        styling2="btn-red-gradient"
+                        variationtype="city-plus-explore-360-main">
+                        <imagerotation
+                            jcr:lastModified="{Date}2022-08-30T07:48:08.184Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/imagerotation"/>
+                        <colors jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/color-360/Candy Blazing Red.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/color-360/red"
+                                colortitle="Candy Blazing Red"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/color-360/Black with Force Silver.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/color-360/black-silver"
+                                colortitle="Black with force silver"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/color-360/Black with Polestar Blue.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/color-360/polestar"
+                                colortitle="Black with Polestar Blue."/>
+                        </colors>
+                        <multitext jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/1white.png"
+                                title="TWO-WHEELER MANUFACTURER"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/37white.png"
+                                title="YEARS OF EXCELLENCE"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/100Mnwhite.png"
+                                title="TWO-WHEELERS SOLD"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/9000white.png"
+                                title="CUSTOMER TOUCH POINTS"/>
+                        </multitext>
+                    </color_switch>
+                </container_copy>
+                <container_814465498
+                    cq:styleIds="[1660795969470]"
+                    jcr:created="{Date}2022-08-30T10:56:53.008Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T10:56:53.008Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <booktestride_copy_co
+                        jcr:created="{Date}2022-08-08T07:10:29.353Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:36:53.305Z"
+                        jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/booktestride"
+                        acknowledgemsg="&lt;p>Thank You!&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgfail="&lt;h3>Sorry&lt;/h3>&#xd;&#xa;"
+                        acknowledgemsgfailsubtitle="&lt;p>An error Occured. Please try after sometime&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgsubtitle="&lt;p>We will connect with you soon.&lt;/p>&#xd;&#xa;"
+                        buttonlabel="Submit"
+                        citylabel="City"
+                        cityvalmsg="select a city"
+                        defaultproduct="/content/hero-aem-website/in/en-in/motorcycles/executive/passion-xtec"
+                        enterOtplabel="Enter OTP"
+                        ispopup="false"
+                        loadimgpath="/content/dam/hero-aem-website/brand/design/icons/form-submit-loader.svg"
+                        mobilelabel="Mobile No."
+                        mobilevalformmsg="Enter correct mobile number"
+                        mobilevalmsg="Please Enter a valid Mobile Number"
+                        name="Name"
+                        nameformvalmsg="Invalid Name"
+                        namereqvalmsg="The Name is required"
+                        otpresultmsg="Incorrect OTP"
+                        otpvalmsg="OTP not matching"
+                        resendOtplabel="Resend OTP"
+                        sendOtplabel="Send OTP"
+                        statelabel="State"
+                        statevalmsg="select a state"
+                        subtitle="&lt;p>Take A Hero Ride And Experience The Thrill.&lt;/p>&#xd;&#xa;"
+                        textIsRich="[true,true,true,true,true,true,true]"
+                        title="&lt;h3>BOOK A TEST RIDE NOW&lt;/h3>&#xd;&#xa;"
+                        variationtype="productpage"
+                        vehiclelabel="Vehicle"
+                        vehiclevalmsg="Select a vehicle"/>
+                </container_814465498>
+                <container_782757487
+                    jcr:created="{Date}2022-08-29T18:27:52.478Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:08.564Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FEATURES">
+                    <hotspot
+                        jcr:created="{Date}2022-08-29T18:28:45.986Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T16:03:40.734Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/hotspot"
+                        bgimage="/content/dam/hero-aem-website/in/banner/Hero-MotoCorp-Road-Passion.png"
+                        featureheading="Features"
+                        heading="Passion XTEC Features"
+                        icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagehotspot/features-view-icon.svg"
+                        productimage="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/passion-xtec-specificatio.png"
+                        staricon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagehotspot/star-icon-features.svg"
+                        textIsRich="[true,true,true,true,true,true]"
+                        theme="features-section-main dark-theme">
+                        <hotspotdetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/features/250x250_Passion-Xtec-Red-Built-in-Mobile-Charger.png"
+                                featuretag="First in the segment"
+                                featuretext="&lt;p>BUILT-IN&lt;/p>&#xd;&#xa;&lt;h4>MOBILE CHARGER&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="20%"
+                                style2="65%"
+                                topbottom="top"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/features/250x250_Passion-Xtec--Digital Display-.png"
+                                featuretag="First in the segment"
+                                featuretext="&lt;p>DIGITAL METER&lt;/p>&#xd;&#xa;&lt;h4>CONSOLE&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="15%"
+                                style2="66%"
+                                topbottom="top"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/features/250x250_Passion-Xtec-Red-Low-Fuel-Indicator.png"
+                                featuretag="First in the segment"
+                                featuretext="&lt;p>LOW FUEL&lt;/p>&#xd;&#xa;&lt;h4>INDICATOR&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="24%"
+                                style2="61%"
+                                topbottom="top"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/features/250x250_Passion-Xtec--Red-LED-Headlamp.png"
+                                featuretag="First in the segment"
+                                featuretext="&lt;p>LED PROJECTOR&lt;/p>&#xd;&#xa;&lt;h4>HEADLAMP&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="25%"
+                                style2="75%"
+                                topbottom="top"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/features/250x250_Passion-Xtec-Red--Side-Stand-Engine-Cut-Off.png"
+                                featuretag="First in the segment"
+                                featuretext="&lt;p>SIDE STAND&lt;/p>&#xd;&#xa;&lt;h4>ENGINE CUT OFF&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="15%"
+                                style2="62%"
+                                topbottom="top"/>
+                        </hotspotdetails>
+                    </hotspot>
+                    <experiencefragment_c
+                        jcr:created="{Date}2022-08-29T07:43:49.455Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-30T04:05:59.620Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/request-callback-pop-up/master"/>
+                    <container
+                        cq:styleIds="[1660796926355]"
+                        jcr:created="{Date}2022-09-06T12:00:53.868Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-06T12:00:53.868Z"
+                        jcr:lastModifiedBy="d.porwal@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"/>
+                </container_782757487>
+                <container_2132676925
+                    cq:styleIds="[1660795290818]"
+                    jcr:created="{Date}2022-08-29T18:29:32.182Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-29T18:29:32.182Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <adbanner_copy_copy
+                        jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T06:56:45.289Z"
+                        jcr:lastModifiedBy="prajwala.vemula@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adbanner"
+                        background="grey-bg"
+                        bgStyle1="btn-white"
+                        bgStyle2="btn-red-gradient"
+                        bookingdata="100+ Bookings in last 24 hours"
+                        bookinghrsicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/lightbulb-icon.svg"
+                        button1label="BOOK NOW"
+                        fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/Lead_Generation_Passion-XTEC_315x289.png"
+                        headline="&lt;h4>Ride your passion and experience the world of Passion Xtec                                      &lt;/h4>&#xd;&#xa;&lt;p>Book a test ride at your doorstep&lt;/p>&#xd;&#xa;"
+                        imageAlt="hero ride image"
+                        imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-ride-img.svg"
+                        linkTo1="https://eshop.heromotocorp.com/passion-xtec.html"
+                        textIsRich="true"
+                        type1="url1"
+                        type2="modal2"/>
+                </container_2132676925>
+                <container_1179138905
+                    cq:styleIds="[1660795123209]"
+                    jcr:created="{Date}2022-08-29T18:30:09.931Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:27.154Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="SPECIFICATION">
+                    <generictab
+                        jcr:created="{Date}2022-08-29T18:30:47.206Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T10:51:17.912Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/generictab"
+                        bgimage="/content/dam/hero-aem-website/in/products/city-plus/bg-images/specification-bg.png"
+                        specificationstext1="Passion XTEC Specification"
+                        textIsRich="true"
+                        variant="cityplusproduct">
+                        <tab-0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:01:02.696Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-02T18:43:45.647Z"
+                                jcr:lastModifiedBy="d.porwal@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/specifications/386x288_Passion-Xtec-Red-Engine.png"
+                                textIsRich="true"
+                                theme="cityplus">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Displacement"
+                                        value="113.2 cc"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Power"
+                                        value="6.73 kW @ 7500 r.p.m"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Torque"
+                                        value="9.79 Nm @ 5000 rpm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Bore x Stroke "
+                                        value="50.0 x 57.8 mm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel System"
+                                        value="Fuel Injection"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-0>
+                        <tab-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:03:31.272Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-02T18:45:33.960Z"
+                                jcr:lastModifiedBy="d.porwal@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/specifications/386x288_Passion-Xtec-Red-Split-Alloy-Wheels.png"
+                                textIsRich="true"
+                                theme="cityplus">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Wheel type"
+                                        value="Alloy"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Tyre"
+                                        value="80/100-18 (Tubeless)"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Tyre"
+                                        value="80/100-18 (Tubeless)"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-1>
+                        <tab-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:05:40.892Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-02T18:47:09.259Z"
+                                jcr:lastModifiedBy="d.porwal@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/specifications/386x288_Passion-Xtec-Red--Longer-Front-Suspension.png"
+                                textIsRich="true"
+                                theme="cityplus">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Suspension type"
+                                        value="Conventional fork - Dia. 30mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Suspension Type"
+                                        value="Twin Shox"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-2>
+                        <tab-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:07:09.821Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T11:03:33.939Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="dimension"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/specifications/386x288_Passion-Xtec-Red-360D_S01.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Length"
+                                        value="2036mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Width"
+                                        value="Drum -715mm , Disc - 739mm"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Height"
+                                        value="1113mm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Wheelbase"
+                                        value="1270mm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Seat height"
+                                        value="799mm"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Ground Clearance"
+                                        value="180 mm"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel Tank Capacity"
+                                        value="10 Litres"/>
+                                    <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Kerb Weight"
+                                        value="Drum -117 Kg  Disc- 118 Kg"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-3>
+                        <tab-4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:08:37.556Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-08T13:55:06.862Z"
+                                jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="gearbox"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/specifications/386x288_Passion-Xtec-Red--5-Speed-Gear-Box.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Gearbox"
+                                        value="5 speed gearbox"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-4>
+                        <tab-5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:10:40.859Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-08-30T08:12:36.769Z"
+                                jcr:lastModifiedBy="d.porwal@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                fileReference="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/specfication6.png"
+                                textIsRich="true"
+                                theme="cityplus">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Battery"
+                                        value="MF Battery, 12V - 4Ah"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Headlamp"
+                                        value="12 V - 35 / 35 W (Halogen Bulb), Trapezoidal  MFR "/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title=" Tail/Stop Lamp "
+                                        value="12V - 5 / 10W - MFR"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title=" Turn Signal Lamp "
+                                        value="Electric start/kick start"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-5>
+                        <tab-6
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:12:51.774Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-08-30T08:15:43.993Z"
+                                jcr:lastModifiedBy="d.porwal@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                fileReference="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/specfication7.png"
+                                textIsRich="true"
+                                theme="cityplus">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Length"
+                                        value="2042 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Width"
+                                        value="740 mm"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Height"
+                                        value="1102 mm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title=" Saddle Height "
+                                        value="799 mm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title=" Wheelbase"
+                                        value="1273 mm"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Ground Clearance "
+                                        value="180 mm"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-6>
+                        <cityplusshareicon
+                            jcr:lastModified="{Date}2022-09-09T14:02:45.755Z"
+                            jcr:lastModifiedBy="prajwala.vemula@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/shareicon"
+                            emailIcon="/content/dam/hero-aem-website/brand/design/icons/email-icon.svg"
+                            emailSub="Check this out..."
+                            icon="/content/dam/hero-aem-website/brand/design/icons/share-icon.svg"
+                            linkpath="/content/dam/hero-aem-website/in/documents/product-brochures/passion-xtec.pdf"
+                            text="Hey, my rider buddy! Check out some exciting, and innovative features of Passion Xtec which makes it stand out. Click here to explore more!!! "
+                            variation="motorcycle"
+                            wpIcon="/content/dam/hero-aem-website/brand/design/icons/whatsapp-icon.svg"
+                            wpLink="https://api.whatsapp.com"
+                            wpText="Hey, my rider buddy! Check out some exciting, and innovative features of Passion Xtec which make it stand out. Click here to explore more!!! "/>
+                        <cityplusdownloadbrochure
+                            jcr:lastModified="{Date}2022-09-12T13:09:18.191Z"
+                            jcr:lastModifiedBy="preeti.nalawade@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/downloadbrochure"
+                            icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/arrow-down.png"
+                            link="/content/dam/hero-aem-website/in/documents/product-brochures/passion-xtec.pdf"
+                            text="Download Brochure"
+                            variation="link-btn download-btn"/>
+                        <tabitems jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                title="Engine"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                title="Wheels"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                title="Suspension"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                title="Dimensions"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                title="Gearbox"/>
+                        </tabitems>
+                    </generictab>
+                </container_1179138905>
+                <container_883143836
+                    cq:styleIds="[1660795283944]"
+                    jcr:created="{Date}2022-08-29T18:33:47.386Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:47.207Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="PRICE">
+                    <price_info_copy_copy
+                        jcr:created="{Date}2022-08-18T09:33:32.211Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T11:49:13.019Z"
+                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/price-info"
+                        bgImage="/content/dam/hero-aem-website/in/products/city-plus/bg-images/pricing-bg.png"
+                        bgStyle="btn-red-gradient"
+                        buttonlabel="Book Now"
+                        buttonlink="https://eshop.heromotocorp.com/passion-xtec.html"
+                        buttonlinktype="url"
+                        citylabel="City"
+                        defaultcitylabel="Select City"
+                        defaultcitypath="/content/hmc/prices/in/passion_xtec/mah/mumbai"
+                        defaultstatelabel="Select State"
+                        defaultstatepath="/content/hmc/prices/in/passion_xtec/mah"
+                        desktopimage="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/comparison/454x340_Passion-Xtec-Red-360D_S01-01.png"
+                        disclaimer="&lt;p>*Please contact the dealer for exact on-road prices. Local levies, Octroi, Entry tax will be extra as applicable. Price ruling at the time of delivery would be applicable. Prices are subject to change without notice. HMCL reserves the right to modify the prices at its discretion at any point of time.&lt;/p>&#xd;&#xa;"
+                        heading="Passion XTEC Price"
+                        mobilemage="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/comparison/454x340_Passion-Xtec-Red-360D_S01-01.png"
+                        productPath="/content/hero-aem-website/in/en-in/motorcycles/executive/passion-xtec"
+                        showroomlabel="Ex-Showroom Price"
+                        statelabel="State"
+                        textIsRich="true"
+                        variantlabel="Variant"
+                        variationtype="dark-theme"/>
+                </container_883143836>
+                <container_1947122026
+                    jcr:created="{Date}2022-08-30T10:38:55.093Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-09T04:49:05.184Z"
+                    jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <adbanner_copy_copy_c
+                        jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-09T04:46:50.851Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adbanner"
+                        background="dark-blue-bg"
+                        bgStyle1="btn-white"
+                        bgStyle2="btn-red-gradient"
+                        button1label="EXCHANGE NOW"
+                        fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/exchange/Passion-XTEC_360x225.png"
+                        headline="&lt;h4>Hero Bike Exchange Offers&lt;/h4>&#xd;&#xa;&lt;p>We also have amazing bike exchange offers ! Bring us your old bike and ride away on a next level.&lt;/p>&#xd;&#xa;"
+                        imageAlt="restart india image"
+                        imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-exchange-img.png"
+                        linkTo1="http://wheelsoftrust.com"
+                        textIsRich="true"
+                        type1="url1"
+                        type2="modal2"/>
+                </container_1947122026>
+                <container_101072763
+                    cq:styleIds="[1660795954617]"
+                    jcr:created="{Date}2022-08-30T10:41:26.687Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:20:20.973Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="COMPARE">
+                    <productcompare_copy_
+                        jcr:created="{Date}2022-08-17T10:06:55.280Z"
+                        jcr:createdBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T11:09:40.889Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/productcompare"
+                        headline="Compare Passion XTEC"
+                        image="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/comparison/web/454x340_Passion-Xtec-Red-360D_S01-01.png"
+                        imageOneMob="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/comparison/mobile/454x340_Passion-Xtec-Red-360D_S01-01.png"
+                        imageTwo="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/comparison/web/Passion Pro Techno Blue 360 Degree_402px x 252px-07 1.png"
+                        imageTwoMob="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec/comparison/mobile/Passion Pro Techno Blue 360 Degree_402px x 252px-07 2.png"
+                        productName="PASSION XTEC"
+                        productNameTwo="PASSION PRO"
+                        theme="dark-theme"
+                        variation="normal">
+                        <specificationDetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                type="Max Power Kw"
+                                valueOne="6.73@7500 rpm"
+                                valueTwo="6.73@7500 rpm"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                type="Built-in Mobilr Charger"
+                                valueOne="Yes"
+                                valueTwo="No"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                type="LED Projector Headlamp"
+                                valueOne="Yes"
+                                valueTwo="No"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                type="Starting System "
+                                valueOne="Self (with i3s) &amp; Kick"
+                                valueTwo="Electric Start/Kick Start"/>
+                        </specificationDetails>
+                    </productcompare_copy_>
+                </container_101072763>
+                <container_1062518803
+                    cq:styleIds="[1660795975221]"
+                    jcr:created="{Date}2022-08-30T10:57:44.838Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T10:57:44.838Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <experiencefragment_c
+                        jcr:created="{Date}2022-09-13T06:37:55.363Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:38:25.215Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/collage-section/master"/>
+                </container_1062518803>
+                <container_2075998844
+                    jcr:created="{Date}2022-08-30T10:58:31.293Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:21:18.190Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FIND-DEALER">
+                    <dealer_info_copy
+                        jcr:created="{Date}2022-08-18T13:54:15.970Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T11:49:40.717Z"
+                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/dealer-info"
+                        citylabel="City"
+                        dealerheading="Book appointment at your nearest experience center"
+                        defaultcity="/content/hmc/dealers/in/dlr/MAH/mumbai"
+                        statelabel="State"
+                        subtitle="Where do you live?"
+                        theme="city-plus-theme dark-theme"
+                        title="We are near you!"/>
+                </container_2075998844>
+                <experiencefragment_c
+                    jcr:created="{Date}2022-09-03T12:48:10.231Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-03T17:47:07.683Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/modals/request-callback-pop-up-product"/>
+            </container>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/footer/master"
+                id="footer"/>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-09-13T08:04:19.923Z"
+            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,734 @@
+.xoom-big-wrapper {
+    padding-top: 3.5rem;
+}
+
+.xoom-lights-heading-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.xoom-lights-heading-wrapper h3 {
+    padding-left: 6.25rem;
+    background: url(/content/dam/hero-aem-website/products/xoom/xoom-title-right.png) no-repeat;
+    background-size: 100% 100%;
+    font-family: var(--font-tstar-heavy);
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 62.4px;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    width: 42.85%;
+    color: #FFFFFF;
+    height: 60px;
+    align-items: center;
+    display: flex;
+}
+
+.light-text-wrapper {
+    margin-left: 5rem;
+}
+
+.tech-text-wrapper {
+    margin-left: 3rem;
+}
+
+.xoom-tyres-heading-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.xoom-tyres-heading-wrapper h3 {
+    padding-left: 6.25rem;
+    background: url(/content/dam/hero-aem-website/products/xoom/xoom-title-left.png) no-repeat;
+    background-size: 100% 100%;
+    font-family: var(--font-tstar-heavy);
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 62.4px;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    width: 35.5%;
+    color: #FFFFFF;
+    height: 60px;
+    align-items: center;
+    display: flex;
+}
+
+.xoom-container-invert-horz {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.lights-image-wrapper {
+    position: relative;
+    margin: 0 0 3.1rem 5.25rem;
+}
+
+.tyres-ellipse-image {
+    position: absolute;
+    top: -2%;
+    width: 118%;
+    left: 2%;
+}
+
+.lights-ellipse-image {
+    position: absolute;
+    top: -2.5%;
+    width: 114%;
+    left: 2%;
+}
+
+.tech-ellipse-image {
+    position: absolute;
+    top: -3%;
+    width: 106%;
+    left: 2%;
+}
+
+.lights-on-image {
+    position: relative;
+    top: 0%;
+    left: 5%;
+    width: 108%;
+}
+
+.lights-off-image {
+    position: relative;
+    top: 0%;
+    left: 5%;
+    width: 108%;
+}
+
+.tech-default-image {
+    position: relative;
+    top: 0%;
+    left: 5%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.tyres-default-image {
+    position: relative;
+    top: 0%;
+    left: 5%;
+    width: 112%;
+    border-radius: 50%;
+}
+
+.light-lists-wrapper {
+    font-family: var(--font-tstar-heavy);
+    padding: 2.25rem 0 0 2.2rem;
+    font-weight: 900;
+    line-height: 34px;
+    color: #FFFFFF;
+    column-count: 2;
+    column-gap: 2.5rem;
+}
+
+.utility-lists-extras {
+    column-count: 1;
+    width: 78.9%;
+    padding: 2.25rem 0 0 18rem;
+}
+
+.tyres-lists-wrapper {
+    font-family: var(--font-tstar-heavy);
+    padding: 2.25rem 0 0 6.25rem;
+    font-weight: 900;
+    line-height: 34px;
+    color: #FFFFFF;
+    column-count: 2;
+    column-gap: 2.5rem;
+    width: 115%;
+}
+
+.tyres-image-wrapper {
+    position: relative;
+    margin: 0 9.75rem 3.1rem 14rem;
+}
+
+.style-image-wrapper {
+    position: relative;
+    margin: 0 9.75rem 3.1rem 11.5rem;
+}
+
+.style-lists-extras {
+    width: 98%;
+}
+
+.li-list-width li:nth-child(3n) {
+    width: 80%;
+}
+
+.style-lists-extras li:nth-child(2n) {
+    width: 80%;
+}
+
+.style-lists-extras li:nth-child(3n) {
+    width: 80%;
+}
+
+.style-lists-extras li:last-child {
+    width: 70%;
+}
+
+/* Left Xoom contents p tags */
+.light-lists-wrapper p {
+    display: flex;
+    font-size: 28px !important;
+    padding: 1.25rem 0 0.75rem 1rem;
+    margin-bottom: 1rem;
+    background: url(/content/dam/hero-aem-website/products/xoom/xoom-border-bottom.png) no-repeat 50% 92%;
+    background-size: 90%;
+    background-position-x: unset;
+}
+
+/* Left Xoom contents image tags */
+.light-lists-wrapper li::before {
+    content: '';
+    background: url(/content/dam/hero-aem-website/products/xoom/red-logo-xoom.png) no-repeat;
+    position:absolute;
+    height: 35px;
+    width: 9px;
+    margin-top: 1.4rem;
+  }
+
+.tyres-lists-wrapper li::before {
+    content: '';
+    background: url(/content/dam/hero-aem-website/products/xoom/red-logo-xoom.png) no-repeat;
+    position:absolute;
+    height: 35px;
+    width: 9px;
+    margin-top: 1.4rem;
+  }
+
+.tyres-lists-wrapper p {
+    display: flex;
+    font-size: 28px !important;
+    padding: 1.25rem 0 0.75rem 1rem;
+    margin-bottom: 1rem;
+    background: url(/content/dam/hero-aem-website/products/xoom/xoom-border-bottom.png) no-repeat 50% 92%;
+    background-size: 90%;
+    background-position-x: unset;
+}
+
+/* Left Xoom contents switch toggle wrapper */
+.xoom-toggle-switch-wrapper {
+    display: flex;
+    padding: 1rem 0 3rem 2.4rem;
+    align-items: center;
+}
+
+/* Left Xoom contents switch toggle texts */
+.xoom-toggle-switch-text {
+    font-family: var(--font-tstar-heavy);
+    color: #fff;
+    font-size: 32px;
+}
+
+/* Left Xoom contents switch toggle button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    margin: 0.4rem 1.125rem 0 1.125rem;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.xoom-slider-switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.xoom-slider-switch:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .xoom-slider-switch {
+    background-color: #EE2326;
+}
+
+input:focus + .xoom-slider-switch {
+    box-shadow: 0 0 1px #EE2326;
+}
+
+input:checked + .xoom-slider-switch:before {
+    -webkit-transform: translateX(36px);
+    -ms-transform: translateX(36px);
+    transform: translateX(36px);
+}
+
+/* Rounded xoom-slider-switchs */
+.xoom-slider-switch.round {
+    border-radius: 34px;
+}
+
+.xoom-slider-switch.round:before {
+    border-radius: 50%;
+}
+
+@media (max-width: 2560px) {
+    .xoom-container-invert-horz {
+        justify-content: space-evenly;
+    }
+
+    .xoom-lights-contents {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1600px) {
+    .xoom-container-invert-horz {
+        justify-content: flex-start;
+    }
+
+    .xoom-lights-contents {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1299px) and (min-width: 1201px) {
+    .tyres-lists-wrapper {
+        width: 125%;
+    }
+
+    .xoom-tyres-heading-wrapper h3 {
+        line-height: 0.9;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .xoom-lights-heading-wrapper h3 {
+        font-size: 42px;
+        line-height: 0.9;
+        height: auto;
+    }
+
+    .light-lists-wrapper {
+        padding: 1.25rem 0 0 0.5rem;
+        column-gap: 1.5rem;
+    }
+
+    .light-lists-wrapper p {
+        padding: 1.25rem 0 0.75rem 0.8rem;
+        font-size: 18px !important;
+    }
+
+    .light-lists-wrapper li::before {
+        margin-top: 2rem;
+        background-size: 75% 75%;
+      }
+    
+    .tyres-lists-wrapper li::before {
+        margin-top: 2rem;
+        background-size: 75% 75%;
+      }
+
+    .xoom-toggle-switch-wrapper {
+        padding: 1rem 0 3rem 0.5rem;
+    }
+    
+    .tech-ellipse-image {
+        width: 94%;
+    }
+
+    .tech-default-image {
+        width: 88%;
+    }
+
+    .tech-text-wrapper {
+        margin-left: 0;
+    }
+
+    .utility-lists-extras {
+        width: auto;
+        padding: 2.25rem 0 0 7.2rem;
+    }
+
+    .li-list-width li:nth-child(3n) {
+        width: auto;
+    }
+
+    .style-lists-extras li:nth-child(2n) {
+        width: auto;
+    }
+    
+    .style-lists-extras li:nth-child(3n) {
+        width: auto;
+    }
+    
+    .style-lists-extras li:last-child {
+        width: auto;
+    }
+
+    .xoom-tyres-heading-wrapper h3 {
+        font-size: 42px;
+        line-height: 0.9;
+        width: 40%;
+        height: auto;
+    }
+
+    .tyres-image-wrapper {
+        margin: 0 7.25rem 3.1rem 8rem;
+    }
+
+    .tyres-lists-wrapper {
+        padding: 1.25rem 0 0 6.25rem;
+        column-gap: 1.5rem;
+        width: 125%;
+    }
+
+    .tyres-lists-wrapper p {  
+        padding: 1.25rem 0 0.75rem 0.8rem;
+        font-size: 18px !important;
+    }
+
+    .style-image-wrapper {
+        margin: 0 8.25rem 3.1rem 6.5rem;
+    }
+
+    .style-lists-extras {
+        width: 105%;
+    }
+}
+
+@media (max-width: 900px) {
+    .xoom-lights-heading-wrapper h3 {
+        font-size: 32px;
+        line-height: 0.9;
+        padding-bottom: 0.3rem;
+        padding-left: 4.25rem;
+    }
+
+    .lights-image-wrapper {
+        margin: 0 0 3.1rem 1.5rem;
+    }
+
+    .lights-ellipse-image {
+        top: -3.5%;
+        width: 102%;
+    }
+
+    .lights-off-image {
+        width: 96%;
+    }
+
+    .lights-on-image {
+        width: 96%;
+    }
+
+    .light-text-wrapper {
+        margin-left: 2rem;
+    }
+
+    .light-lists-wrapper {
+        padding: 1.25rem 0 0 0;
+        column-gap: 1rem;
+        line-height: 30px;
+    }
+
+    .light-lists-wrapper {
+        width: 95%;
+        margin-right: 5rem;
+    }
+
+    .light-lists-wrapper p {
+        padding: 1.25rem 0 0.75rem 0.7rem;
+        font-size: 13px !important;
+    } 
+
+    .tyres-lists-wrapper p {
+        font-size: 13px !important;
+        padding: 0.5rem 0 0.75rem 0.7rem;
+    }
+
+    .light-lists-wrapper li::before {
+        margin-top: 1.6rem;
+        background-size: 65% 60%;
+    }
+
+    .tyres-lists-wrapper li::before {
+        margin-top: 0.9rem;
+        background-size: 65% 60%;
+    }
+
+    .xoom-toggle-switch-wrapper {
+        padding: 1rem 0 3rem 0;
+    }
+
+    .tech-default-image {
+        width: 80%
+    }
+
+    .tech-ellipse-image {
+        width: 86%;
+        top: -4%;
+    }
+
+    .utility-image-extras {
+        width: 79%;
+    }
+
+    .utility-ellipse-extras {
+        width: 85%;
+    }
+
+    .utility-lists-extras {
+        padding: 1.25rem 0 0 3.2rem;
+    }
+
+    .xoom-tyres-heading-wrapper h3 {
+        width: 40%;
+        font-size: 32px;
+        line-height: 0.9;
+        padding-bottom: 0.3rem;
+        padding-left: 4.25rem;
+    }
+
+    .tyres-image-wrapper {
+        margin: 0 7.25rem 3.1rem 8rem;
+    }
+
+    .tyres-ellipse-image {
+        top: -3%;
+        width: 121%;
+    }
+
+    .tyres-default-image {
+        width: 115%;
+    }
+
+    .tyres-lists-wrapper {
+        padding: 1.25rem 0 0 4.25rem;
+        column-gap: 1rem;
+        width: 156%;
+        line-height: 30px;
+    }
+
+    .tyres-lists-wrapper p img {
+        height: 24px;
+        width: 7px;
+        margin-top: 0.2rem;
+    }
+
+    .style-image-wrapper {
+        margin: 0 7rem 3.1rem 6.25rem;
+    }
+
+    .style-lists-extras {
+        width: 107%;
+    }
+}
+
+@media (max-width: 500px) {
+    .zoom-lights-wrapper-mobile {
+        padding-top: 1rem !important;
+    }
+
+    .xoom-big-wrapper {
+        padding-top: 0;
+        background: url(/content/dam/hero-aem-website/products/xoom/xoom-ride-bg-2.png) no-repeat;
+        background-size: cover;
+    }
+
+    .xoom-lights-heading-wrapper h3 {
+        padding-left: 2.25rem;
+        background-size: 100% 100%;
+        font-size: 28px;
+        line-height:33.6px;
+        width: 76%;
+    }
+
+    .xoom-tyres-heading-wrapper h3 {
+        padding-left: 1rem;
+        font-size: 28px;
+        line-height: 34px;
+        width: 62%;
+        background-size: 100% 100%;
+    }
+
+    .xoom-lights-alt-heading-wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .xoom-lights-alt-heading-wrapper h3 {
+        background: url(/content/dam/hero-aem-website/products/xoom/xoom-title-left.png) no-repeat;
+        background-size: 100% 100%;
+        font-family: var(--font-tstar-heavy);
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-left: 1rem;
+        font-size: 28px;
+        line-height: 34px;
+        width: 62%;
+    }
+
+    .light-text-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 0rem;
+    }
+
+    .tech-text-wrapper {
+        margin-left: 0rem;
+    }
+
+    .xoom-lights-contents {
+        flex-direction: column;
+    }
+
+    .light-lists-wrapper, .tyres-lists-wrapper {
+        padding: 0 1rem 1rem 1rem;
+        line-height: 17px;
+        column-gap: 1.5rem;
+        width: 100%;
+    }
+
+    .light-lists-wrapper p, .tyres-lists-wrapper p {
+        font-size: 14px !important;
+        padding: 1rem 0 0.5rem 0.5;
+        margin-bottom: 0.5rem;
+    }
+
+    .light-lists-wrapper li::before {
+        margin-top: 1.2rem;
+        background-size: 65% 60%;
+    }
+
+    .tyres-lists-wrapper li::before {
+        margin-top: 0.5rem;
+        background-size: 65% 60%;
+    }
+
+    .lights-image-wrapper {    
+        margin: 1rem 6.5rem 1.1rem 5.5rem;
+    }
+
+    .tyres-image-wrapper, .style-image-wrapper {    
+        margin: 1rem 6.5rem 0.3rem 5.5rem;    
+    }
+
+    .lights-ellipse-image {
+        top: -3.5%;
+        width: 104%;
+    }
+
+    .tyres-ellipse-image {
+        top: -3%;
+        width: 104%;
+    }
+
+    .tech-ellipse-image {
+        top: -3.5%;
+        width: 105%;
+        left: 1.5%;
+    }
+
+    .tyres-default-image {
+        width: 98%;
+    }
+
+    .tech-default-image {
+        width: 98%;
+    }
+
+    .lights-off-image {
+        width: 98%;
+    }
+
+    .lights-on-image {
+        width: 98%;
+    }
+
+    .xoom-toggle-switch-wrapper {
+        padding: 0rem 0 0 1rem;
+    }
+
+    .xoom-toggle-switch-text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .xoom-lights-alt-heading-wrapper h3 {
+        line-height: 34px;
+    }
+
+    .xoom-tyres-heading-wrapper h3 {
+        line-height: 34px;
+    }
+
+    .xoom-toggle-switch-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 361px) and (min-width: 351px) {
+    .light-lists-wrapper {
+        width: 104%;
+    }
+}
+
+@media (max-width: 350px) {
+    .xoom-lights-alt-heading-wrapper h3 {
+        font-size: 22px;
+        line-height: 1;
+    }
+
+    .xoom-tyres-heading-wrapper h3 {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .xoom-tyres-heading-wrapper h3 {
+        font-size: 22px;
+        line-height: 1;
+    }
+
+    .lights-image-wrapper {
+        margin: 1rem 6rem 1.1rem 5rem;
+    }
+
+    .tyres-image-wrapper, .style-image-wrapper {
+        margin: 1rem 6rem 0.3rem 5rem;
+    }
+
+    .light-lists-wrapper, .tyres-lists-wrapper {
+        line-height: 12px;
+        column-gap: 1rem;
+    }
+
+    .light-lists-wrapper p, .tyres-lists-wrapper p {
+        padding: 0.5rem 0 0.5rem 0.5rem;
+        font-size: 11px !important;
+    }
+
+    .tyres-lists-wrapper li::before, .light-lists-wrapper li::before {
+        margin-top: 0.5rem;
+        background-size: 45% 45%;
+    }
+}

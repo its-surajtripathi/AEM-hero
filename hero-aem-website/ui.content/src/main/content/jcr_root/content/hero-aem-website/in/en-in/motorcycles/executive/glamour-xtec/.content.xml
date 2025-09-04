@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-13T11:34:24.113Z"
+        cq:lastModifiedBy="gausiya.latif.momin@accenture.com"
+        cq:lastReplicated="{Date}2022-09-13T11:34:33.218Z"
+        cq:lastReplicated_publish="{Date}2022-09-13T11:34:33.218Z"
+        cq:lastReplicatedBy="gausiya.latif.momin@accenture.com"
+        cq:lastReplicatedBy_publish="gausiya.latif.momin@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/city-plus"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Glamour Xtec"
+        jcr:uuid="e2c9bcde-aceb-47a3-ba02-049621020808"
+        sling:resourceType="hero-aem-website/components/structure/productpage"
+        pagerank="6"
+        pageTitle="Glamour Xtec"
+        productmodel="/content/hmc/prices/in/glamour_xtec"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                jcr:lastModified="{Date}2022-08-21T10:48:38.534Z"
+                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/header/city-plus-header"/>
+            <container
+                jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                layout="responsiveGrid">
+                <container
+                    cq:styleIds="[1660795084168]"
+                    jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid">
+                    <carousel_copy
+                        jcr:created="{Date}2022-08-18T13:32:17.401Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T07:44:04.107Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/carousel"
+                        carouselindicatorstyling="carousel-indicators"
+                        textIsRich="[true]"
+                        variant="home">
+                        <image.sftmp/>
+                        <herodetailswithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="Request Call Back"
+                                btnlabel2="Book Now"
+                                buttonalign="slide-1-content-right"
+                                fontcolor="#111111"
+                                imageAlt="banner"
+                                imageRef="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/banner/glamour-Xtech-banner.jpg"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/glamour-xtec.html"
+                                mobimageRef="/content/dam/hero-aem-website/in/products/city-plus/glamour/carousel/Banner-glamour-xtech.jpg"
+                                styling="text-right"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"/>
+                        </herodetailswithmap>
+                    </carousel_copy>
+                </container>
+                <container_copy
+                    jcr:lastModified="{Date}2022-08-18T13:32:00.216Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="OVERVIEW"
+                    layout="responsiveGrid">
+                    <color_switch
+                        jcr:created="{Date}2022-08-18T17:46:15.568Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T11:34:24.080Z"
+                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/color-switch"
+                        background="/content/dam/hero-aem-website/in/products/city-plus/glamour/color-switch/Colour-360-BG-img.png"
+                        btnlabel1="Explore"
+                        btnlabel2="Book Now"
+                        headline="Colours &amp; 360"
+                        imgbtn1="/content/dam/hero-aem-website/brand/design/icons/360-view-icon.svg"
+                        leftarrowpath="/content/dam/hero-aem-website/in/products/city-plus/glamour/color-switch/rotate-icon-left.png"
+                        leftheading="COLORS"
+                        linkTo1="https://virtualshowroom.heromotocorp.com/"
+                        linkTo2="https://eshop.heromotocorp.com/glamour-xtec.html"
+                        rightarrowpath="/content/dam/hero-aem-website/in/products/city-plus/glamour/color-switch/rotate-icon-right.png"
+                        styling1="btn-icon btn-white"
+                        styling2="btn-red-gradient"
+                        variationtype="city-plus-explore-360-main">
+                        <imagerotation
+                            jcr:lastModified="{Date}2022-08-30T07:48:08.184Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/imagerotation"/>
+                        <colors jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/color-switch/GlamourXTech_Glossy Black.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/color-360/glossy-black"
+                                colortitle="Glossy Black"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/color-360/color-icons/Matte-Axis-Grey.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/color-360/matte-axis-grey"
+                                colortitle="Matte Axis Grey"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/color-360/color-icons/Candy-Blazing-Red.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/color-360/candy-blazing-red"
+                                colortitle="Candy Blazing Red"/>
+                        </colors>
+                        <multitext jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/1white.png"
+                                title="TWO-WHEELER MANUFACTURER"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/37white.png"
+                                title="YEARS OF EXCELLENCE"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/100Mnwhite.png"
+                                title="TWO-WHEELERS SOLD"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/9000white.png"
+                                title="CUSTOMER TOUCH POINTS"/>
+                        </multitext>
+                    </color_switch>
+                </container_copy>
+                <container_814465498
+                    cq:styleIds="[1660795969470]"
+                    jcr:created="{Date}2022-08-30T10:56:53.008Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T10:56:53.008Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <booktestride_copy_co
+                        jcr:created="{Date}2022-08-08T07:10:29.353Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:40:52.886Z"
+                        jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/booktestride"
+                        acknowledgemsg="&lt;p>Thank You!&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgfail="&lt;h3>Sorry&lt;/h3>&#xd;&#xa;"
+                        acknowledgemsgfailsubtitle="&lt;p>An error Occured. Please try after sometime&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgsubtitle="&lt;p>We will connect with you soon.&lt;/p>&#xd;&#xa;"
+                        buttonlabel="Submit"
+                        citylabel="City"
+                        cityvalmsg="select a city"
+                        defaultproduct="/content/hero-aem-website/in/en-in/motorcycles/executive/glamour-xtec"
+                        enterOtplabel="Enter OTP"
+                        ispopup="false"
+                        loadimgpath="/content/dam/hero-aem-website/brand/design/icons/form-submit-loader.svg"
+                        mobilelabel="Mobile No."
+                        mobilevalformmsg="Enter correct mobile number"
+                        mobilevalmsg="Please Enter a valid Mobile Number"
+                        name="Name"
+                        nameformvalmsg="Invalid Name"
+                        namereqvalmsg="The Name is required"
+                        otpresultmsg="Incorrect OTP"
+                        otpvalmsg="OTP not matching"
+                        resendOtplabel="Resend OTP"
+                        sendOtplabel="Send OTP"
+                        statelabel="State"
+                        statevalmsg="select a state"
+                        subtitle="&lt;p>Take A Hero Ride And Experience The Thrill.&lt;/p>&#xd;&#xa;"
+                        textIsRich="[true,true,true,true,true,true,true]"
+                        title="&lt;h3>BOOK A TEST RIDE NOW&lt;/h3>&#xd;&#xa;"
+                        variationtype="productpage"
+                        vehiclelabel="Vehicle"
+                        vehiclevalmsg="Select a vehicle"/>
+                </container_814465498>
+                <container_782757487
+                    jcr:created="{Date}2022-08-29T18:27:52.478Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:08.564Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FEATURES">
+                    <hotspot
+                        jcr:created="{Date}2022-08-29T18:28:45.986Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T07:57:38.328Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/hotspot"
+                        bgimage="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/bike-specification/bike-feature-background..jpg"
+                        featureheading="Features"
+                        heading="Glamour Xtec features"
+                        icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagehotspot/features-view-icon.svg"
+                        productimage="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/hotspot/Glamour-Xtec-Black-.png"
+                        staricon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagehotspot/star-icon-features.svg"
+                        textIsRich="[true,true,true,true,true,true,true,true,true]"
+                        theme="features-section-main dark-theme">
+                        <hotspotdetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/hotspot/Engine.png"
+                                featuretext="&lt;p>POWERFUL&lt;/p>&#xd;&#xa;&lt;h4>ENGINE&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="54%"
+                                style2="52%"
+                                topbottom="top"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/hotspot/LED-Headlamp.png"
+                                featuretext="&lt;h4>LED &lt;/h4>&#xd;&#xa;&lt;p>HEADLAMP&lt;/p>&#xd;&#xa;"
+                                leftright="left"
+                                style1="25%"
+                                style2="73%"
+                                topbottom="top"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/hotspot/Split-Alloy-Wheels.png"
+                                featuretext="&lt;p>SPLIT ALLOY&lt;/p>&#xd;&#xa;&lt;h4>WHEELS&lt;/h4>&#xd;&#xa;"
+                                leftright="right"
+                                style1="20%"
+                                style2="10%"
+                                topbottom="bottom"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/hotspot/Bluetooth-Connectivity.png"
+                                featuretext="&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;h4>BLUETOOTH CONNECT&lt;/h4>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                                leftright="right"
+                                style1="20%"
+                                style2="30%"
+                                topbottom="top"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/hotspot/Integrated-USB-Charger.png"
+                                featuretext="&lt;p>BUILT-IN&lt;/p>&#xd;&#xa;&lt;h4>MOBILE CHARGER&lt;/h4>&#xd;&#xa;"
+                                leftright="right"
+                                style1="15%"
+                                style2="30%"
+                                topbottom="top"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/hotspot/Muscular-Fuel-Tank.png"
+                                featuretag="First in the segment"
+                                featuretext="&lt;p>MUSCULAR&lt;/p>&#xd;&#xa;&lt;h4>FUEL TANK&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="35%"
+                                style2="55%"
+                                topbottom="top"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/hotspot/5-Speed-Gear-Box.png"
+                                featuretag="First in the segment"
+                                featuretext="&lt;p>5-SPEED&lt;/p>&#xd;&#xa;&lt;h4>GEAR BOX&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="20%"
+                                style2="47%"
+                                topbottom="bottom"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/hotspot/Side-stand.png"
+                                featuretag="First in the segment"
+                                featuretext="&lt;p>SIDE STAND&lt;/p>&#xd;&#xa;&lt;h4>ENGINE CUT OFF&lt;/h4>&#xd;&#xa;"
+                                leftright="right"
+                                style1="15%"
+                                style2="35%"
+                                topbottom="top"/>
+                        </hotspotdetails>
+                    </hotspot>
+                </container_782757487>
+                <container_1779104515
+                    cq:styleIds="[1660796926355]"
+                    jcr:created="{Date}2022-08-30T14:22:44.051Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:22:44.051Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"/>
+                <container_2132676925
+                    cq:styleIds="[1660795290818]"
+                    jcr:created="{Date}2022-08-29T18:29:32.182Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-29T18:29:32.182Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <adbanner_copy_copy
+                        jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T06:55:37.342Z"
+                        jcr:lastModifiedBy="prajwala.vemula@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adbanner"
+                        background="red-theme no-mob-img-hide"
+                        bgStyle1="btn-white"
+                        bgStyle2="btn-red-gradient"
+                        bookingdata="100+ Bookings in last 24 hours"
+                        bookinghrsicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/lightbulb-icon.svg"
+                        button1label="BOOK NOW"
+                        fileReference="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/adbanner/lead-generation.png"
+                        headline="&lt;h4>Do it the Glamour way &lt;/h4>&#xd;&#xa;&lt;p>Book a test ride at your doorstep&lt;/p>&#xd;&#xa;"
+                        imageAlt="hero ride image"
+                        imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-ride-img.svg"
+                        linkTo1="https://eshop.heromotocorp.com/glamour-xtec.html"
+                        textIsRich="true"
+                        type1="url1"
+                        type2="modal2"/>
+                </container_2132676925>
+                <container_1179138905
+                    cq:styleIds="[1660795123209]"
+                    jcr:created="{Date}2022-08-29T18:30:09.931Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:27.154Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="SPECIFICATION">
+                    <generictab
+                        jcr:created="{Date}2022-08-29T18:30:47.206Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T09:18:00.516Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/generictab"
+                        bgimage="/content/dam/hero-aem-website/in/products/city-plus/bg-images/specification-bg.png"
+                        specificationstext1="Glamour XTEC Specifications"
+                        textIsRich="true"
+                        variant="cityplusproduct">
+                        <tab-0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:01:02.696Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T08:05:32.752Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="specification"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/bike-specification/engine.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Engine Type"
+                                        value="Air Cooled 4 stroke"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Bore &amp; Stroke"
+                                        value="52.4 mm x 57.8 mm"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Power"
+                                        value="10.7 bhp @ 7500 r.p.m"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Torque"
+                                        value="10.6 Nm @ 6000 rpm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel System"
+                                        value="Fuel Injection"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-0>
+                        <tab-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:03:31.272Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T09:14:56.518Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="specification"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/bike-specification/Glamour-Xtec-Specification_386-x-288pxl_0004_Front-Tyre.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Wheel type"
+                                        value="Alloy"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front tyre"
+                                        value="80/100-18 (Tubeless)"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Tyre"
+                                        value="100/80 - 18 (Tubeless)"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-1>
+                        <tab-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:05:40.892Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T09:15:39.897Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="specification"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/bike-specification/Glamour-Xtec-Specification_386-x-288pxl_0001_Wheel-Tyre.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front suspension Type"
+                                        value=" Dia. 30 Telescopic"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear suspension type"
+                                        value="5 step Adjustable Hydraulic Shock Absorbers"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-2>
+                        <tab-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:07:09.821Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T15:49:46.607Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="specification"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/bike-specification/chasis.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Frame type"
+                                        value="Diamond"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Transmission Type"
+                                        value="5 speed"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Clutch type"
+                                        value="Wet Multiplate"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-3>
+                        <tab-4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:08:37.556Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T09:17:18.895Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="specification"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/bike-specification/Glamour-Xtec-Specification_386-x-288pxl_0004_Front-Tyre.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Brake type"
+                                        value="Disc-Dia 240"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear brake type"
+                                        value="Drum - Dia 130"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-4>
+                        <tab-5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:10:40.859Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T15:47:16.741Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="specification"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/bike-specification/Dimensions.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Length"
+                                        value="2051 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Width"
+                                        value="Drum - 130 mm, Disc - 743 mm"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Height"
+                                        value="1074 mm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Wheelbase"
+                                        value="1273 mm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Seat Height"
+                                        value="798 mm"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Ground Clearance"
+                                        value="180 mm"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Trail"
+                                        value="92 mm"/>
+                                    <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel Tank Capacity"
+                                        value="10 Litres"/>
+                                    <item8
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Kerb Weight"
+                                        value="Self Drum Cast -122 Kg , Self Disc Cast -123 kg"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-5>
+                        <tab-6
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:12:51.774Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-07T10:23:22.196Z"
+                                jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="specification"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Length"
+                                        value="2051 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Width"
+                                        value="Drum-720/ Disc-743"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Height"
+                                        value="1074 mm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title=" Seat Height "
+                                        value="798 mm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title=" Wheelbase"
+                                        value="1273 mm"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Ground Clearance "
+                                        value="180 mm"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-6>
+                        <cityplusdownloadbrochure
+                            jcr:lastModified="{Date}2022-09-12T13:10:56.042Z"
+                            jcr:lastModifiedBy="preeti.nalawade@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/downloadbrochure"
+                            icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/arrow-down.png"
+                            link="/content/dam/hero-aem-website/in/documents/product-brochures/glamour-xtec.pdf"
+                            text="Download Brochure"
+                            variation="link-btn download-btn"/>
+                        <cityplusshareicon
+                            jcr:lastModified="{Date}2022-09-09T12:29:20.071Z"
+                            jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/shareicon"
+                            emailIcon="/content/dam/hero-aem-website/brand/design/icons/email-icon.svg"
+                            emailSub="Check this out..."
+                            icon="/content/dam/hero-aem-website/brand/design/icons/share-icon.svg"
+                            linkpath="/content/dam/hero-aem-website/in/documents/product-brochures/glamour-xtec.pdf"
+                            text="Hey, my rider buddy! Check out some exciting, and innovative features of Glamour Xtec which make it stand out. Click here to explore more!!! "
+                            variation="motorcycle"
+                            wpIcon="/content/dam/hero-aem-website/brand/design/icons/whatsapp-icon.svg"
+                            wpLink="https://api.whatsapp.com"
+                            wpText="Hey, my rider buddy! Check out some exciting, and innovative features of Glamour Xtec which make it stand out. Click here to explore more!!! "/>
+                        <downloadbrochure
+                            jcr:lastModified="{Date}2022-09-09T12:35:41.607Z"
+                            jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/downloadbrochure"
+                            icon="/content/dam/hero-aem-website/in/products/city-plus/arrow-down.png"
+                            link="/content/dam/hero-aem-website/in/documents/product-brochures/glamour-xtec.pdf"
+                            text="Download Brochure"
+                            variation="link-btn download-btn"/>
+                        <shareicon
+                            jcr:lastModified="{Date}2022-09-09T12:32:10.467Z"
+                            jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/shareicon"
+                            emailIcon="/content/dam/hero-aem-website/brand/design/icons/email-icon.svg"
+                            emailSub="Check this out..."
+                            icon="/content/dam/hero-aem-website/brand/design/icons/share-icon.svg"
+                            linkpath="/content/dam/hero-aem-website/in/documents/product-brochures/glamour-xtec.pdf"
+                            text="Hey, my rider buddy! Check out some exciting, and innovative features of Glamour Xtec which make it stand out. Click here to explore more!!! "
+                            variation="motorcycle"
+                            wpIcon="/content/dam/hero-aem-website/brand/design/icons/whatsapp-icon.svg"
+                            wpLink="https://api.whatsapp.com/"
+                            wpText="Hey, my rider buddy! Check out some exciting, and innovative features of Glamour Xtec which make it stand out. Click here to explore more!!! "/>
+                        <tabitems jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                title="Engine"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                title="Wheels &amp; Tyres"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                title="Suspension"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                title="Chassis"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                title="Brakes"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                title="Dimensions"/>
+                        </tabitems>
+                    </generictab>
+                </container_1179138905>
+                <container_883143836
+                    cq:styleIds="[1660795283944]"
+                    jcr:created="{Date}2022-08-29T18:33:47.386Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:47.207Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="PRICE">
+                    <price_info_copy_copy
+                        jcr:created="{Date}2022-08-18T09:33:32.211Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T10:01:06.822Z"
+                        jcr:lastModifiedBy="palak.paisal@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/price-info"
+                        bgImage="/content/dam/hero-aem-website/in/products/city-plus/glamour/price-data/Price-BG-img-web.png"
+                        bgStyle="btn-red-gradient"
+                        buttonlabel="Book Now"
+                        buttonlink="https://eshop.heromotocorp.com/glamour-xtec.html"
+                        buttonlinktype="url"
+                        citylabel="City"
+                        defaultcitylabel="Select City"
+                        defaultcitypath="/content/hmc/prices/in/glamour_xtec/mah/mumbai"
+                        defaultstatelabel="Select State"
+                        defaultstatepath="/content/hmc/prices/in/glamour_xtec/mah"
+                        desktopimage="/content/dam/hero-aem-website/in/products/city-plus/glamour/price-data/price-data.png"
+                        disclaimer="&lt;p>*Please contact the dealer for exact on-road prices. Local levies, Octroi, Entry tax will be extra as applicable. Price ruling at the time of delivery would be applicable. Prices are subject to change without notice. HMCL reserves the right to modify the prices at its discretion at any point of time.&lt;/p>&#xd;&#xa;"
+                        heading="Glamour XTEC PRICE"
+                        mobilemage="/content/dam/hero-aem-website/in/products/city-plus/glamour/price-data/price-data-mob.png"
+                        productPath="/content/hero-aem-website/in/en-in/motorcycles/executive/glamour-xtec"
+                        showroomlabel="Ex-Showroom Price"
+                        statelabel="State"
+                        textIsRich="true"
+                        variantlabel="Variant"
+                        variationtype="dark-theme"/>
+                </container_883143836>
+                <container_1947122026
+                    jcr:created="{Date}2022-08-30T10:38:55.093Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-12T08:58:46.404Z"
+                    jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <adbanner_copy_copy_c
+                        jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T08:58:57.434Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adbanner"
+                        background="grey-bg"
+                        bgStyle1="btn-white"
+                        bgStyle2="btn-red-gradient"
+                        button1label="EXCHANGE NOW"
+                        fileReference="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/bike-exchange/exchange-glamour.png"
+                        headline="&lt;h4>Hero Bike Exchange Offers&lt;/h4>&#xd;&#xa;&lt;p>We also have amazing bike exchange offers ! Bring us your old bike and ride away on a real next level&lt;/p>&#xd;&#xa;"
+                        imageAlt="restart india image"
+                        imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-exchange-img.png"
+                        linkTo1="https://wheelsoftrust.com/"
+                        textIsRich="true"
+                        type1="url1"
+                        type2="modal2">
+                        <image/>
+                    </adbanner_copy_copy_c>
+                </container_1947122026>
+                <container_101072763
+                    cq:styleIds="[1660795954617]"
+                    jcr:created="{Date}2022-08-30T10:41:26.687Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:20:20.973Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="COMPARE">
+                    <productcompare_copy_
+                        jcr:created="{Date}2022-08-17T10:06:55.280Z"
+                        jcr:createdBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T07:34:10.262Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/productcompare"
+                        headline="Compare Hero Glamour Xtec Variants"
+                        image="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/product-compare/comparison-glamour-xtech-left- web.png"
+                        imageOneAlt="glamour xtec"
+                        imageOneMob="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/product-compare/mobile-comparison-glamour-xtech-left-mobile.png"
+                        imageTwo="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/product-compare/comparison-glamour-xtech-right-web.png"
+                        imageTwoAlt="super splendour"
+                        imageTwoMob="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec/product-compare/mobile-comparison-glamour-xtech-right-mobile.png"
+                        productName="GLAMOUR XTEC"
+                        productNameTwo="SUPER SPLENDOR"
+                        theme="dark-theme"
+                        variation="normal">
+                        <specificationDetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                type="Displacement"
+                                valueOne="124.7 CC"
+                                valueTwo="124.7 CC"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                type="Max Power BHP"
+                                valueOne="10.7 @7500 RPM"
+                                valueTwo="10.7 @7500 RPM"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                type="Max Torque"
+                                valueOne="10.6 @6000 RPM"
+                                valueTwo="10.6 @6000 RPM"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                type="Navigation Assist"
+                                valueOne="Yes"
+                                valueTwo="No"/>
+                        </specificationDetails>
+                    </productcompare_copy_>
+                </container_101072763>
+                <container_1062518803
+                    cq:styleIds="[1660795975221]"
+                    jcr:created="{Date}2022-08-30T10:57:44.838Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T10:57:44.838Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <experiencefragment_c
+                        jcr:created="{Date}2022-09-13T06:37:55.363Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:38:25.215Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/collage-section/master"/>
+                </container_1062518803>
+                <container_2075998844
+                    jcr:created="{Date}2022-08-30T10:58:31.293Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:21:18.190Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FIND-DEALER">
+                    <dealer_info_copy
+                        jcr:created="{Date}2022-08-18T13:54:15.970Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T11:55:20.605Z"
+                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/dealer-info"
+                        citylabel="City"
+                        dealerheading="Book appointment at your nearest experience center"
+                        defaultcity="/content/hmc/dealers/in/dlr/MAH/mumbai"
+                        statelabel="State"
+                        subtitle="Where do you live?"
+                        theme="city-plus-theme dark-theme"
+                        title="We are near you!"/>
+                </container_2075998844>
+                <experiencefragment_c
+                    jcr:created="{Date}2022-09-03T12:48:10.231Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-04T12:54:16.583Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/modals/request-callback-pop-up-product"/>
+            </container>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/footer/master"
+                id="footer"/>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-09-13T08:06:12.513Z"
+            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[premia-booking-aem-website.site]"
+    cssProcessor="[default:none,min:yui]"
+    embed="[premia-booking-aem-website.harley-header,premia-booking-aem-website.harleypayment,premia-booking-aem-website.premiabookingform,premia-booking-aem-website.premia-dealer-form,premia-booking-aem-website.harley-form-nav]"
+    jsProcessor="[default:none,min:gcc]"/>

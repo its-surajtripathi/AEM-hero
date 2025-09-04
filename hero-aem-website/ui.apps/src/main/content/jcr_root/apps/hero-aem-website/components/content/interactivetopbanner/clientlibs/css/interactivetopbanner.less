@@ -1,0 +1,460 @@
+#xtreme-teaser {
+  .videoSection video.preload {
+    position: fixed;
+    top: -200px;
+    left: -200px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .videoSection {
+    display: flex;
+    /* height: 100vh; */
+    position: relative;
+    width: 100%;
+  }
+
+  .videoSection .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #fff;
+    border-bottom-color: #ee2326;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+  }
+  .videoSection video {
+    display: flex;
+    width: 100%;
+    /* object-fit: cover; */
+    z-index: 1;
+  }
+
+  section.videoSection video {
+    position: relative;
+  }
+
+  section.videoSection p.interact {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    z-index: 2;
+    background: #d90100;
+    padding: 8px 15px;
+    color: #fff;
+    border-radius: 15px;
+    top: 50%;
+    bottom: unset;
+    left: unset;
+    right: 0;
+    transform: translate(-170px, 0);
+    opacity: 0;
+    font-family: Arial;
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  }
+
+  section.videoSection p.interact.active {
+    transform: translate(-180px, 0);
+    opacity: 1;
+  }
+
+  section.videoSection p.interact:after {
+    content: "";
+    display: block;
+    border: 10px solid #d90100;
+    border-color: #d90100 transparent transparent;
+    border-width: 10px 10px 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    left: unset;
+    right: 0;
+    border-width: 14px 0 14px 14px;
+    border-color: transparent transparent transparent #d90100;
+    bottom: 50%;
+    transform: translate(70%, 50%);
+  }
+
+  .videoSection .buttons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: #2b3137;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    /* background-size: 100%; */
+    /* padding: 20px 0; */
+    width: 150px;
+  }
+
+  .videoSection .buttons i {
+    display: flex;
+    position: relative;
+    width: calc(100% - 20px);
+    margin: 10px 10px;
+    height: 10px;
+  }
+
+  .videoSection .buttons i:before,
+  .videoSection .buttons i:after {
+    display: flex;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url(/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/buttons-nail.png)
+      no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .videoSection .buttons i:after {
+    left: unset;
+    right: 0;
+  }
+
+  .videoSection .buttons span.sep {
+    margin: 10px 0;
+    width: 90%;
+  }
+
+  .videoSection .buttons span.sep img.des {
+    display: block;
+    width: 100%;
+  }
+
+  .videoSection .buttons span.sep img.mob {
+    display: none;
+    width: 100%;
+  }
+
+  .videoSection .buttons a {
+    background: none;
+    cursor: pointer;
+    /* width: 120px;
+        height: 120px; */
+    /* transform: scale(1); */
+    transition: transform 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    position: relative;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 22px;
+    /* transition: color 0.3s ease-in; */
+  }
+
+  .videoSection .buttons a:hover {
+    color: #d90101;
+  }
+
+  .videoSection .buttons a span:not(.text) {
+    background: url(/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/bg-button.png)
+      no-repeat top center;
+    background-size: 100%;
+    width: 80px;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .videoSection .buttons a:hover span:not(.text),
+  .videoSection .buttons a:active span:not(.text) {
+    background: url(/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/bg-button.png)
+      no-repeat bottom center;
+    background-size: 100%;
+    /* transform: scale(1.1); */
+  }
+
+  .videoSection .buttons a span:not(.text) img {
+    /* height: auto;
+        width: 100%; */
+    width: 60%;
+  }
+
+  .videoSection .buttons a span.text {
+    /* margin: 5px 0 0; */
+    width: 90%;
+  }
+
+  .videoSection .buttons a span.text img {
+    width: 100%;
+  }
+
+  .videoSection .playerButtons {
+    display: none;
+    gap: 15px;
+    position: absolute;
+    /*bottom: 14%;*/
+    bottom: 5%;
+    /*left: 18%;*/
+    left: 45%;
+    z-index: 1;
+  }
+
+  .videoSection .playerButtons a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .videoSection .playerButtons a img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  #xtreme-teaser {
+    .videoSection .buttons a span:not(.text) {
+      width: 60px;
+      height: 60px;
+    }
+
+    section.videoSection p.interact.active {
+      transform: translate(-130px, 0);
+    }
+
+    section.videoSection p.interact {
+      transform: translate(-120px, 0);
+    }
+
+    .videoSection .buttons a {
+      margin: 0 16px;
+      font-size: 18px;
+    }
+
+    .videoSection .buttons {
+      gap: 10px;
+      width: 100px;
+    }
+
+    .videoSection .buttons i:before,
+    .videoSection .buttons i:after {
+      width: 7px;
+      height: 7px;
+    }
+
+    .videoSection .buttons i {
+      width: calc(100% - 14px);
+      margin: 7px 7px;
+      height: 7px;
+    }
+
+    .videoSection .playerButtons a {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #xtreme-teaser {
+    .videoSection {
+      height: auto;
+      flex-direction: column;
+    }
+
+    .videoSection video {
+      object-fit: unset;
+    }
+
+    .videoSection .buttons {
+      padding: 5px 0 10px;
+    }
+
+    .videoSection .buttons span.sep {
+      margin: 5px 0;
+    }
+
+    .videoSection .playerButtons {
+      bottom: unset;
+      top: 79%;
+      left: 13%;
+    }
+
+    .videoSection .playerButtons a {
+      width: 35px;
+      height: 35px;
+    }
+
+    .videoSection .loader {
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      border: 3px solid #fff;
+      border-bottom-color: #ee2326;
+    }
+
+    .videoSection .buttons a span:not(.text) {
+      width: 50px;
+      height: 50px;
+    }
+
+    .videoSection .buttons a span.text {
+      margin-top: 5px;
+    }
+
+    .videoSection .buttons i {
+      display: none;
+    }
+
+    section.videoSection p.interact {
+      top: 50%;
+      bottom: unset;
+      left: unset;
+      right: 0;
+      transform: translate(-100%, 0);
+    }
+
+    section.videoSection p.interact:after {
+      left: unset;
+      right: 0;
+      border-width: 14px 0 14px 14px;
+      border-color: transparent transparent transparent #d90100;
+      bottom: 50%;
+      transform: translate(70%, 50%);
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) and (orientation: portrait) {
+  #xtreme-teaser {
+    section.videoSection p.interact {
+      position: absolute;
+      bottom: 90px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: block;
+      z-index: 2;
+      background: #d90100;
+      padding: 8px 15px;
+      color: #fff;
+      border-radius: 15px;
+      top: unset;
+      right: unset;
+    }
+
+    section.videoSection p.interact:after {
+      content: "";
+      display: block;
+      border: 10px solid #d90100;
+      border-color: #d90100 transparent transparent;
+      border-width: 10px 10px 0;
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 100%);
+    }
+
+    section.videoSection p.interact {
+      transform: translate(-50%, 10px);
+    }
+
+    section.videoSection p.interact.active {
+      transform: translate(-50%, 0);
+    }
+
+    .videoSection .loader {
+      top: 33%;
+    }
+
+    .videoSection .playerButtons {
+      bottom: unset;
+      top: 57%;
+      right: 10px;
+      gap: 5px;
+      left: unset;
+    }
+
+    .videoSection .playerButtons a {
+      width: 30px;
+      height: 30px;
+    }
+
+    .videoSection .buttons {
+      position: relative;
+      top: unset;
+      right: unset;
+      transform: unset;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .videoSection .buttons a {
+      display: block;
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .videoSection .buttons a span:not(.text) {
+      margin: 0 auto 5px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .videoSection .buttons a span.text {
+      /* margin: 10px 0 0; */
+      max-width: 80px;
+      height: auto;
+      display: flex;
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    .videoSection .buttons span.sep {
+      display: none;
+    }
+
+    .videoSection .buttons i {
+      width: 10px;
+      height: 130px;
+    }
+
+    .videoSection .buttons i:after {
+      bottom: 0;
+      top: unset;
+    }
+
+    .videoSection .buttons span.sep img.des {
+      display: none;
+      width: 100%;
+    }
+
+    .videoSection .buttons span.sep img.mob {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

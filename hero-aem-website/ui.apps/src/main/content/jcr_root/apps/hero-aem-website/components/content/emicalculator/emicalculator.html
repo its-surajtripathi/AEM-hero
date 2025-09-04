@@ -1,0 +1,76 @@
+<!-- EMI Section -->
+<section class="emi-section${properties.theme == 'dark' ? ' dark-theme' : ''}"
+    style="--background-image: url(${properties.backgroundimage @ context='uri'});">
+    <h3 class="common-h3 cust-common-h3 h2-heading-std text-to-uppercase">
+        ${properties.title}</h3>
+    <div class="emi-wrapper"
+        data-sly-set.contextconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}">
+        <div class="emi-range-slider" style="--background-url: url(${properties.slidericon @ context='uri'});">
+            <div class=" emi-range-amount">
+                <div class="emi-range-input">
+                    <div class="emi-range-input-div">
+                        <h4 class="emi-range-input-h4 b1-heavy-text-std"> ${properties.amountheading} </h4>
+                        <div class="input-amount">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <input type="text" class="form-control range-field tiny-text-std" id="emiAmountTxt"
+                                    default-amount="${properties.defaultamount}"
+                                    amount-lower-limit="${properties.amountlowerlimit}"
+                                    amount-upper-limit="${properties.amountupperlimit}">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="emiAmountSlider"></div>
+                    <div class="emi-range-input-minmax">
+                        <p class="emi-range-input-p tiny-text-std"> ${contextconfig.currencyUnit} ${properties.amountlowerlimit}
+                            ${properties.amounttextlabel}</p>
+                        <p class="emi-range-input-p tiny-text-std"> ${contextconfig.currencyUnit} ${properties.amountupperlimit}
+                            ${properties.amounttextlabel}</p>
+                    </div>
+                </div>
+                <div class="emi-range-input">
+                    <div class="emi-range-input-div">
+                        <h4 class="emi-range-input-h4 b1-heavy-text-std">${properties.interestheading}</h4>
+                        <div class="input-amount ">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <input type="text" class="form-control range-field tiny-text-std" id="emiInterestRateTxt"
+                                    default-interest="${properties.defaultinterest}"
+                                    interest-lower-limit="${properties.interestlowerlimit}"
+                                    interest-upper-limit="${properties.interestupperlimit}">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="emiInterestRateSlider"></div>
+                    <div class="emi-range-input-minmax">
+                        <p class="emi-range-input-p tiny-text-std">${properties.interestlowerlimit} ${properties.interestlabel}</p>
+                        <p class="emi-range-input-p tiny-text-std">${properties.interestupperlimit} ${properties.interestlabel}</p>
+                    </div>
+                </div>
+                <div class="emi-range-input">
+                    <div class="emi-range-input-div">
+                        <h4 class="emi-range-input-h4 b1-heavy-text-std">${properties.durationHeading}</h4>
+                        <div class="input-amount">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <input type="text" class="form-control range-field tiny-text-std" id="emiDurationTxt"
+                                    default-duration="${properties.defaultduration}"
+                                    duration-lower-limit="${properties.durationlowerlimit}"
+                                    duration-upper-limit="${properties.durationupperlimit}">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="emiDurationSlider"></div>
+                    <div class="emi-range-input-minmax">
+                        <p class="emi-range-input-p tiny-text-std">${properties.durationlowerlimit} ${properties.durationlabel}</p>
+                        <p class="emi-range-input-p tiny-text-std">${properties.durationupperlimit} ${properties.durationlabel}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment-section" style="background-image: url('${properties.bgimage ? properties.bgimage : 'unset' @ context='uri'}')">
+            <div class="payment-div">
+                <h4 class="payment-div-h4 h3-bold-heading-std">${properties.paymentheading}</h4>
+                <h3 class="payment-div-h3 h1-heading-std">${contextconfig.currencyUnit} <span>${properties.paymentamount}</span></h3>
+                <p class="payment-div-p"><a href="#">${properties.paymentbreakup}</a></p>
+            </div>
+        </div>
+    </div>
+</section>

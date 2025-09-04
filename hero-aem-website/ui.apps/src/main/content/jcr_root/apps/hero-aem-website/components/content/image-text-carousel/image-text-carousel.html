@@ -1,0 +1,26 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+
+
+<div class="image-text-container container-fluid mission-container-fluid">
+    <div class="image-slick row"
+        data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='carousel'}"
+        data-sly-list="${listUse}">
+        <div class="p-0 col-md-12 col-12">
+            <div class="image-text-wrapper">
+                <div class="image-wrapper">
+                    <img src="${item.properties.images}" alt="chariman" height="100%" width="100%" class="image" />
+                    <div class="image-border"></div>
+                </div>
+                <div class="text-wrapper">
+                    <h2 class="text-heading h3-heavy-heading-std">${item.properties.heading}</h2>
+                    <div class="text-description">
+                        <h5 class="h4-bold-heading-std">${item.properties.designation}</h5>
+                        <p class="b1-text-std">${item.properties.desc}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

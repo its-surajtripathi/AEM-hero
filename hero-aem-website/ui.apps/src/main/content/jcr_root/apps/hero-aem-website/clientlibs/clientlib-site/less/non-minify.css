@@ -1,0 +1,352 @@
+.header-main .navbar .navbar-nav .megamenu-li .megamenu{
+    height : calc(100vh - 101px);
+}
+.header-main .navbar .navbar-nav .megamenu-li.active.e-shop .dropdown-toggle::before{
+	top: 51px;
+}
+.common-tabs-main  .slick-arrow {
+    top: calc(50% - 12px);
+}
+.header-main .navbar .navbar-nav .megamenu-li .megamenu .megamenu-option-wrapper .megamenu-option-main .megamenu-option-box .dropdown-item .badge::before {
+     top: calc(50% - 2px);
+}
+.book-test-drive-section .book-test-drive-wrapper .book-test-drive-parent .book-test-drive-form .cust-form-group label::before {
+    top: calc(50% - 4.5px);
+}
+.help-offer-main .help-offer-container .offer-main-wrapper .offer-carousel .carousel-control-prev,
+.help-offer-main .help-offer-container .offer-main-wrapper .offer-carousel .carousel-control-next {
+    top: calc(50% - 20.5px);
+}
+.right-content .inner-content.slick-active .cq-Editable-dom--container,.right-content .inner-content.slick-active .cq-Editable-dom{
+	width: 100%;
+	display: block !important;
+}
+.book-test-drive-section .book-test-drive-wrapper .book-test-drive-parent .book-test-drive-form .cust-form-group .cust-form-control:-webkit-autofill {
+  -webkit-text-fill-color: #FFFFFF;
+  transition-property: background-color;
+      transition-duration: 50000s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+}
+.slide-1-content-left{
+
+}
+.text-left{
+
+}
+.carousel-item  .text-right{
+
+    text-align:right !important;;
+    padding-right:50px !important;
+    }
+  .carousel-item  .text-right p{
+    max-width:none !important;
+    }
+
+
+.carousel-item  .text-center{
+    text-align:center !important;
+    padding:0;
+    padding-bottom:20px;
+    }
+    .carousel-item .text-center p{
+        max-width:none !important;
+        }
+
+.slide-1-content-right{
+    right: 0 !important;
+        left: auto !important;
+}
+.middle-column .genericteaser{
+    margin: 0 -25px;
+}
+.middle-column .genericteaser .customer-review-content-bg {
+    width: 103.75%;
+    margin: 0;
+    right: -10px;
+}
+.campaign-section .campaign-container .campaign-wrapper .campaign-right-content .campaign-form .cust-form-group .campaign-input:-webkit-autofill {
+  -webkit-text-fill-color: #000;
+  transition-property: background-color;
+      transition-duration: 5000s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+}
+.right-content .inner-content.slick-slide .cmp-container{
+	width: 100%;
+}
+
+.cust-form-group .cust-form-control:-webkit-autofill {
+
+   -webkit-text-fill-color: #000;
+    transition-property: background-color;
+        transition-duration: 5000s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+}
+.right-content .inner-content.slick-slide .cq-Editable-dom--container,.right-content .inner-content.slick-slide .cq-Editable-dom{
+	width: 100%;
+	display: none;
+}
+.space-extra {
+    background: #4e4e4e;
+    padding: 33px 0;
+}
+.slider-content.text-right{
+
+    padding-right:20px;
+}
+.bread-crumbs-section {
+	box-shadow: 0px 2px 4px rgb(0 0 0 / 30%);
+}
+/* LG Devices Start  */
+@media (max-width: 1199px) and (min-width: 992px) {
+ .header-main .navbar .navbar-wrapper .navbar-nav .nav-item.megamenu-li .megamenu {
+    height: calc(100vh - 92px);
+  }
+
+  .header-main .navbar .navbar-wrapper .navbar-nav .nav-item.megamenu-li .megamenu .megamenu-option-wrapper {
+    max-height: inherit;
+  }
+}
+/* MD Devices Start  */
+@media (max-width: 991.2px) and (min-width: 768px) {
+.prise-section .prise-wrapper .prise-left-div .prise-form .prise-form-dropdown-div{
+    flex-direction:column;
+}
+.home-main-section .carousel-inner .slider-content.text-right{
+    left:auto;
+    right:0;
+    padding-right:50px;
+}
+.book-test-drive-section .book-test-drive-wrapper .book-test-drive-parent .book-test-drive-form .cust-form-group{
+    width:100%;
+
+}
+.middle-column .genericteaser{
+    margin:0 -25px;
+}
+
+.middle-column .genericteaser .customer-review-content-bg {
+    width: 100%;
+    margin: 0;
+    right: 0px;
+}
+
+.features-section-wrapper .features-box-wrapper h3{
+position: static;
+    bottom: calc(100% + 190px);
+    left: calc(100% - 50px);
+    font-size: var(--font-size34);
+    line-height: 48px;
+}
+
+      .book-test-drive-section .book-test-drive-wrapper .collapse-btn .drop-down-collapse {
+            left: calc(50% - 18px);
+        }
+        .book-test-drive-modal .modal-dialog {
+            max-width: calc(100% - 30px);
+          }
+          .header-main .navbar .navbar-collapse {
+             height: calc(100% - 87px);
+          }
+          .header-main .navbar .navbar-collapse .navbar-wrapper .navbar-nav .nav-item.megamenu-li .megamenu {
+              top: 0;
+              height: calc(100vh - 88px);
+            }
+
+            .header-main .navbar .navbar-collapse .navbar-wrapper .navbar-nav.navbar-right .nav-item.e-shop .nav-link .vert {
+                bottom: 15px;
+                left: calc(85% + 0px);
+              }
+              .help-offer-main .help-offer-container .help-main-wrapper .help-main-box .slick-arrow {
+
+                  top: calc(50% - 10px);
+                }
+                 .help-offer-main .help-offer-container .offer-main-wrapper .offer-carousel .carousel-control-prev,
+                  .help-offer-main .help-offer-container .offer-main-wrapper .offer-carousel .carousel-control-next {
+
+                    top: calc(50% - 20.5px);
+                    }
+       .no-padding{
+       		padding : 0px;
+       	}
+
+}
+/* SM & XS Devices Start  */
+@media (max-width: 767px) and (min-width: 320px) {
+.home-main-section .carousel-inner .slider-content.text-right{
+    left:auto;
+    right:0;
+    padding-right:20px;
+}
+.more-text.events-box .event-box-link .event-info-main .event-info h4{
+    font-size:16px;
+    line-height:20px;
+    }
+
+.more-text.events-box .event-box-link .event-info-main .event-info p{
+    font-size:12px;
+    line-height:18px;
+    }
+
+.middle-column .genericteaser{
+    margin:0
+}
+
+.middle-column .genericteaser .customer-review-content-bg {
+    width: 100%;
+    margin: 0;
+    right: 0px;
+}
+
+.product-header-main .top-bar-main .mobile-nav-dropdown .dropdown-toggle::after {
+top: calc(50% - 10px);
+}
+ .features-section-wrapper .features-box-wrapper h3{
+position: absolute;
+    bottom: calc(100% + 190px);
+    left: calc(100% - 50px);
+    font-size: var(--font-size34);
+    line-height: 48px;
+}
+
+.less-top-margin{
+    margin-top:-20px;
+}
+.help-offer-main .help-offer-container{
+    display:block;
+}
+.header-main .navbar .navbar-collapse {
+   height: calc(100% - 87px);
+  }
+  .header-main .navbar .navbar-collapse .navbar-wrapper .navbar-nav .nav-item.megamenu-li .megamenu{
+  	height : calc(100vh - 87px);
+  }
+  .help-offer-main .help-offer-container .help-main-wrapper .help-main-box .slick-arrow {
+    top: calc(50% - 10px);
+  }
+  .book-test-drive-section .book-test-drive-wrapper .collapse-btn .drop-down-collapse {
+    left: calc(50% - 18px);
+  }
+  .header-main .navbar .navbar-collapse .navbar-wrapper .navbar-nav .nav-item.megamenu-li .megamenu {
+      top: 0;
+      height: calc(100vh - 88px);
+    }
+    .header-main .navbar .navbar-collapse .navbar-wrapper .navbar-nav.navbar-right .nav-item.e-shop .nav-link .vert {
+        bottom: 9px;
+        left: calc(73% + 0px);
+      }
+      .header-main .navbar .navbar-collapse .navbar-wrapper .navbar-nav.navbar-right .nav-item:last-child {
+        border: none;
+      }
+      .header-main .navbar .navbar-collapse .navbar-wrapper .navbar-nav.navbar-right .nav-item.megamenu-li .megamenu {
+        width: calc(100% - 30px);
+        margin: auto;
+      }
+      .prise-section.scooter-price-maestro .prise-wrapper .prise-left-div .prise-form .prise-form-info .prise-form-cta .prise-form-cta-img, .prise-section.sports-section .prise-wrapper .prise-left-div .prise-form .prise-form-cta .prise-form-cta-img {
+	    width: calc(100% + 30px);
+	    margin-left: -15px;
+	}
+}
+/* Landscape */
+@media only screen
+  and (min-width: 375px)
+  and (max-width: 740px)
+  and (orientation: landscape) {
+   .help-offer-main .help-offer-container .adcarousel{
+        float:none;
+        width:100%;
+    }
+
+
+  }
+@media only screen
+  and (min-width: 375px)
+  and (max-width: 900px)
+  and (orientation: landscape) {
+
+.specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .slick-list{
+    padding :0px !important;
+}
+.specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .slick-track{
+    margin-left:-25px;
+}
+.specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active{
+    background-color:#EA0000;
+}
+.specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active .stright-d .nav-link-p{
+color:var(--text-color-white);
+}
+.splendor-feature-section-content .splendor-feature-row .splendor-feature-col .splendor-feature-wrapper .slick-slider .slick-arrow.slick-next{
+ right:10px;
+}
+.splendor-feature-section-content .splendor-feature-row .splendor-feature-col .splendor-feature-wrapper .slick-slider .slick-arrow.slick-prev{
+left:-15px;
+}
+  }
+
+
+
+  @media only screen
+    and (min-width: 768px)
+    and (max-width: 991px)
+    {
+    .header-main .navbar .navbar-collapse .navbar-wrapper .navbar-nav .nav-item.megamenu-li .megamenu .megamenu-option-wrapper{
+  	        max-height:inherit;
+  }
+}
+
+.news-n-blogs.news-n-blogs-scooter .news-n-blogs{
+  background-color: var(--text-color-white) !important;
+  margin-top: -5px;
+}
+
+.news-n-blogs.news-n-blogs-scooter .event-blog-box .content {
+  max-width: calc(100% - 10px);
+  max-height: calc(100% - 10px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.no-margin{
+    margin:0;
+}
+.hide-section{
+	display:none;
+}
+@media (max-width: 991px) and (min-width: 320px){
+   .news-n-blogs .event-blog-box .img-wrapper img {
+    height: 100% !important;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+   .tile-teaser {
+		background-size: 100% 100%;
+   }
+}
+.loader-div{
+	margin: 0 auto;
+    position: relative;
+    width: 35%;
+    min-height: 330px;
+}
+.loader-div img{
+	position: absolute;
+    margin-top: 70%;
+}
+/*@media (max-width: 991.2px) {
+	body.fixedcontent{
+		position:fixed;
+	}
+}
+*/
+
+.good-life-plan-wrapper{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+}
+.earning-history-container .table-responsive{
+	box-shadow: 0px 2px 10px rgb(0 0 0 / 15%);
+
+	}

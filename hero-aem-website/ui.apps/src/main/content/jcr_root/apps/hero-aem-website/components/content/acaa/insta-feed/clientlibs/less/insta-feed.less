@@ -1,0 +1,385 @@
+#instagram-feed-container {
+  @media screen and (max-width: 991px) {
+    .instagram-feed-image-slick-wrapper .slick-slide.slick-active {
+      z-index: 2;
+    }
+
+    .instagram-feed-image-card.slick-slide[aria-hidden='true'] {
+      z-index: 1;
+      transform: scale3d(0.8, 0.8, 1);
+      filter: blur(3px);
+    }
+    .instagram-feed-image-slick-wrapper .slick-dots {
+      gap: 15px;
+    }
+
+    .slick-dots li button {
+      height: 5px;
+      width: 1px;
+      padding: 3px 0.8px;
+    }
+
+    .slick-dots li.slick-active button {
+      height: 18px;
+      width: 2px;
+      padding: 10px 1.25px;
+    }
+  }
+}
+
+.insta-feed {
+  .instagram-feed-wrapper {
+    height: 100%;
+    margin-top: 2rem;
+    @media only screen and (max-width: 991px) {
+      margin-top: 0rem;
+    }
+    .instagram-feed-section {
+      display: flex;
+      height: 100%;
+
+      // height: 100vh;
+      @media only screen and (max-width: 991px) {
+        flex-direction: column;
+      }
+
+      .instagram-feed-text-section {
+        @media only screen and (max-width: 991px) {
+          padding-top: 3.5rem;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 50%;
+
+        .instagram-feed-header-wrapper {
+          padding-top: 0.75rem;
+          .instagram-feed-header-text {
+            max-width: 21rem;
+            max-height: 4.8125rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            @media screen and (max-width: 368px) {
+              max-height: 3.4rem;
+            }
+            @media only screen and (max-width: 767px) {
+              max-width: 18rem;
+            }
+          }
+          max-width: 20.625rem;
+        }
+
+        .instagram-feed-qrcode-list-wrapper {
+          display: flex;
+          flex-direction: row;
+          padding-top: 5.62rem;
+          gap: 2.19rem;
+          align-items: end;
+
+          @media only screen and (max-width: 991px) {
+            padding-top: 2rem;
+          }
+
+          .instagram-feed-qrcode-image-wrapper {
+            width: 6rem;
+            height: 5.9375rem;
+
+            @media only screen and (max-width: 991px) {
+              display: none;
+            }
+          }
+
+          .instagram-feed-list-wrapper {
+            margin-left: 2%;
+            max-width: 48%;
+
+            @media only screen and (max-width: 800px) {
+              max-width: 33%;
+            }
+
+            @media only screen and (max-width: 991px) {
+              max-width: 100%;
+              margin-left: 0.9rem;
+            }
+
+            .instagram-feed-list-text {
+              list-style-image: url('/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/images/plus.png');
+              color: var(--color-white);
+
+              &:last-child {
+                padding-bottom: 0 !important;
+              }
+
+              .instagram-feed-list-text {
+                padding-left: 1rem;
+                padding-bottom: 0.75rem;
+
+                @media only screen and (max-width: 991px) {
+                  padding-left: 0.5rem;
+                  padding-bottom: 0.25rem;
+                }
+              }
+
+              .instagram-feed-list-mobile-text {
+                display: none;
+
+                @media only screen and (max-width: 991px) {
+                  display: list-item;
+                }
+              }
+
+              .instagram-feed-list-desktop-text {
+                display: list-item;
+
+                @media only screen and (max-width: 991px) {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .instagram-feed-image-section {
+        // left: 0;
+        // position: absolute;
+        width: 100%;
+        width: -moz-available;
+        /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;
+        /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
+
+        @media only screen and (max-width: 991px) {
+          position: inherit;
+          padding-top: 2.87rem;
+          margin: 0 -1.5rem;
+        }
+
+        .instagram-feed-image-wrapper {
+          position: relative;
+          z-index: 1;
+          height: 100vh;
+          // overflow: hidden;
+          pointer-events: none;
+
+          @media only screen and (max-width: 991px) {
+            height: inherit;
+            pointer-events: inherit;
+          }
+
+          .instagram-feed-image-card {
+            cursor: pointer;
+            overflow: hidden;
+            position: absolute;
+            // height: 19.62rem;
+            // width: 14.28rem;
+            border-radius: 10px;
+            top: 120%;
+            left: 150%;
+            user-select: none;
+            pointer-events: all;
+            transition: transform 0.1s cubic-bezier(0, 0.02, 0, 1);
+
+            .instagram-feed-box-image-wrapper {
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              transition: opacity 0.1s cubic-bezier(0, 0.02, 0, 1);
+
+              .instagram-feed-box-image {
+                // height: 100%;
+                // object-fit: contain;
+                width: 100%;
+              }
+
+              &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      .instagram-feed-explore-section {
+        display: none;
+
+        @media only screen and (max-width: 991px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 0.88rem;
+          padding-bottom: 2.38rem;
+        }
+
+        .instafeed-feed-explore-button-wrapper {
+          .cmp-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            background: transparent;
+            border-style: solid;
+            border-width: 1.5px;
+            border-image: linear-gradient(
+                90deg,
+                var(--color-lightning-yellow) 7%,
+                transparent 7%,
+                transparent 93%,
+                var(--color-lightning-yellow) 7%
+              )
+              1;
+            position: relative;
+            transition-duration: 1s;
+            min-width: 10.125rem;
+            min-height: 2.25rem;
+            padding: 0.25rem 1.5rem;
+
+            &__text {
+              color: var(--color-white);
+              font-family: var(--font-transducer);
+              font-size: var(--font-size-0-875-rem);
+              font-weight: var(--font-weight-400);
+              line-height: 120%;
+              /* 1.05rem */
+              letter-spacing: var(--letter-spacing-0-035);
+              display: inline-block;
+              transition-duration: 1s;
+              transform: scale(100%);
+            }
+
+            &__icon {
+              background: url('/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/images/exploreCameraImage.png')
+                no-repeat center;
+              width: 0.875rem;
+              height: 0.75rem;
+              display: inline-block;
+              margin: 0 0.69rem 0 0;
+            }
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: -1.5px;
+              left: 0;
+              height: 1.5px;
+              width: 8.5rem;
+              background: linear-gradient(
+                90deg,
+                var(--color-lightning-yellow) 25%,
+                transparent 80%
+              );
+              transition-duration: 1s;
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: -1.5px;
+              right: 0;
+              height: 1.5px;
+              width: 8.5rem;
+              background: linear-gradient(
+                -90deg,
+                var(--color-lightning-yellow) 25%,
+                transparent 80%
+              );
+              transition-duration: 1s;
+            }
+
+            &:hover {
+              .cmp-button__text {
+                transform: scale(80%);
+              }
+
+              &::before,
+              &::after {
+                width: 3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.instagram-feed-image-slick-wrapper {
+  .slick-dots {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    position: inherit;
+    bottom: -5px;
+    right: 0px;
+  }
+
+  .slick-dots li {
+    transform: rotatex(179deg) rotate(270deg);
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    margin: 0 -50px;
+    transition: transform 0.3s ease-out;
+
+    &:not(.slick-active) {
+      transform: scale3d(0.8, 0.8, 1);
+      opacity: 0.8;
+    }
+
+    &.slick-active {
+      transform: scale3d(1, 1, 1) !important;
+      opacity: 1;
+    }
+  }
+
+  // .instagram-feed-image-card{
+  //   width: 14.678rem !important;
+  //     height: 20.5rem;
+  //   .instagram-feed-box-image-wrapper {
+  //     width: 100%;
+  //     height: 100%;
+  //     .instagram-feed-box-image {
+  //       width: 100%;
+  //       height: 100%;
+  //     }
+  //   }
+  // }
+}
+
+.left-card-scroll-animation {
+  animation: leftcardscrollanimation 1s cubic-bezier(0.54, -0.03, 0.43, 1.04)
+    forwards;
+}
+
+@keyframes leftcardscrollanimation {
+  from {
+    top: 120%;
+    left: 150%;
+    transform-origin: 0 -80%;
+  }
+  to {
+    top: 41%;
+    left: 48%;
+    transform-origin: 0 110%;
+  }
+}

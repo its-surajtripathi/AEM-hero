@@ -1,0 +1,26 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+<div data-sly-use.textModel="com.adobe.cq.wcm.core.components.models.Text"
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.text="${textModel.text}"
+     data-cmp-data-layer="${textModel.data.json}"
+     id="${component.id}"
+     class="cmp-text">
+    <p class="cmp-text__paragraph" data-sly-test="${properties.isanimation != 'true'}">${text @ context = textModel.isRichText ? 'html' : 'text'}</p>
+       <div class="headsingle ads" data-aos-anchor-placement="center-bottom" data-aos-offset="200" data-aos-delay="200"
+       data-sly-test="${properties.isanimation == 'true' && properties.animationtype == 'fade-up'}">${text @ context='html'}</div>
+       <div class="paramission para-mission1" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200"
+       data-sly-test="${properties.isanimation == 'true' && properties.animationtype == 'fade-left-miss'}">
+       ${text @ context='html'}</div>
+       <div class="paramission para-mission1" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200"
+       data-sly-test="${properties.isanimation == 'true' && properties.animationtype == 'fade-right-miss'}">
+       ${text @ context='html'}</div>
+       <div class="child_section2 mb-2 mb-md-0" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200"
+       data-sly-test="${properties.isanimation == 'true' && properties.animationtype == 'fade-left-who'}">
+       ${text @ context='html'}</div>
+       <div class="mb-3 mb-md-0" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200"
+       data-sly-test="${properties.isanimation == 'true' && properties.animationtype == 'fade-right-who'}">
+       ${text @ context='html'}</div>
+</div>

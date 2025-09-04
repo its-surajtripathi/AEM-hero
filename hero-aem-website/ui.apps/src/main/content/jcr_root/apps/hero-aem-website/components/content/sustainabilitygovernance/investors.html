@@ -1,0 +1,66 @@
+<sly data-sly-list.governanceMultifield="${resource.getChildren}">
+
+	<sly data-sly-test="${governanceMultifield.name == 'ingovernancemulti'}">
+
+		<section class="sustainability-governance-section">
+			<div class="container-sustainabilty">
+				<div class="bottom--content-wrap">
+
+					<div class="left--sub-menu">
+						<sly data-sly-list.governance="${governanceMultifield.getChildren}">
+
+							<sly data-sly-test="${governanceList.index==0}">
+								<div class="submenu--tile button-active">
+									<span class="hollow-circle"></span>
+
+									${governance.intitle @ context='html'}
+
+								</div>
+							</sly>
+
+							<sly data-sly-test="${governanceList.index!=0}">
+								<div class="submenu--tile">
+									<span class="hollow-circle"></span>
+
+									${governance.intitle @ context='html'}
+
+								</div>
+							</sly>
+
+						</sly>
+					</div>
+
+					<div class="right--content-section">
+						<sly data-sly-list.governance="${governanceMultifield.getChildren}">
+							<!--/* Get all child resources */-->
+							<sly data-sly-list.committeeMultifield="${governance.getChildren}">
+								<div class="content--slider-wrap" style="padding-bottom: 0">
+									<sly data-sly-test="${committeeMultifield.name == 'inmultipersons'}">
+										<sly data-sly-list.committeeinfo="${committeeMultifield.getChildren}">
+											<a aa-data-attr="track_cta"
+												data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=committeeinfo.inprofilepageurl}"
+												href="${linkuse.value}" target="_blank" class="anchor-wrap">
+												<div class="img-tile">
+													<img src="${committeeinfo.inimagepath}" alt="">
+
+													${committeeinfo.inpersonname @ context='html'}
+
+													<span>${committeeinfo.indesignation @ context='html'}</span>
+												</div>
+
+											</a>
+										</sly>
+									</sly>
+								</div>
+							</sly>
+							<div class="ref-wrap d-none">
+								<a href="${governance.inpdfpath}" id="termsofref" target="_blank"><img
+									src="${governance.inpdficon}">${governance.reftitle}</a>
+							</div>
+						</sly>
+					</div>
+				</div>
+			</div>
+		</section>
+	</sly>
+</sly>

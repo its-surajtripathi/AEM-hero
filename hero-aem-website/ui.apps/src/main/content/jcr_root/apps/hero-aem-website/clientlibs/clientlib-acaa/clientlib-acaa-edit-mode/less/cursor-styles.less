@@ -1,0 +1,167 @@
+.pseudo-styles {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.nth-child-styles {
+  .pseudo-styles();
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 4px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.half-left-child-styles {
+  .nth-child-styles();
+  left: -1px;
+  border-right: 1px solid var(--bg-color-lightning-yellow);
+}
+
+.half-right-child-styles {
+  .nth-child-styles();
+  border-left: 1px solid var(--bg-color-lightning-yellow);
+  right: -1px;
+}
+
+.border-cut-styles {
+  .pseudo-styles();
+  height: 2.5px;
+  width: 4px;
+  background-color: var(--bg-color-black);
+}
+
+.mouse-cursor-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1.5px solid var(--color-lightning-yellow);
+  border-radius: 50%;
+  position: relative;
+  // background-color: var(--bg-color-black);
+  cursor: pointer;
+  margin: auto;
+
+  &::before {
+    .border-cut-styles();
+    top: -2px;
+  }
+  &::after {
+    .border-cut-styles();
+    top: auto;
+    bottom: -2px;
+  }
+  div {
+    background-color: var(--bg-color-lightning-yellow);
+    width: 1px;
+    margin: 0 1px;
+    position: relative;
+    &:nth-child(1) {
+      height: 0.5rem;
+      &::before {
+        .half-left-child-styles();
+      }
+    }
+    &:nth-child(2) {
+      height: 0.8rem;
+      &::before {
+        .half-left-child-styles();
+      }
+    }
+
+    &:nth-child(3) {
+      height: 1rem;
+      &::before {
+        .half-left-child-styles();
+      }
+      &::after {
+        .half-right-child-styles();
+      }
+    }
+    &:nth-child(4) {
+      height: 0.8rem;
+      &::after {
+        .half-right-child-styles();
+      }
+    }
+    &:nth-child(5) {
+      height: 0.5rem;
+      &::before {
+        .half-right-child-styles();
+      }
+    }
+  }
+
+  &.muted {
+    &::before {
+      top: 40%;
+      left: -2px;
+      height: 4px;
+    }
+    &::after {
+      top: 40%;
+      right: -2px;
+      height: 4px;
+    }
+    div {
+      width: 1px;
+      height: 2px;
+      background-color: var(--bg-color-lightning-yellow);
+      &::after,
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  &.playing div {
+    &:nth-child(1),
+    &:nth-child(5) {
+      animation: barAnimation1 0.3s linear infinite alternate;
+    }
+    &:nth-child(2),
+    &:nth-child(4) {
+      animation: barAnimation2 0.3s linear infinite alternate;
+    }
+
+    &:nth-child(3) {
+      animation: barAnimation3 0.3s linear infinite alternate;
+    }
+  }
+}
+
+@keyframes barAnimation1 {
+  to {
+    height: 0.8rem;
+  }
+}
+@keyframes barAnimation2 {
+  from {
+    height: 1rem;
+  }
+  to {
+    height: 0.5rem;
+  }
+}
+@keyframes barAnimation3 {
+  from {
+    height: 0.5rem;
+  }
+  to {
+    height: 0.8rem;
+  }
+}
+
+.cursor-desc-text {
+  color: var(--color-white);
+  font-family: var(--font-transducer);
+  font-size: var(--font-size-0-75-rem);
+  font-weight: var(--font-weight-400);
+  letter-spacing: var(--letter-spacing-0-075);
+  text-transform: uppercase;
+}

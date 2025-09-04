@@ -1,0 +1,116 @@
+.bcipl-homeBanner {
+    width: 100%;
+    max-width: 1290px;
+    margin: -4px auto 0 auto;
+}
+
+.bcipl-homebg {
+    width: 100%;
+    max-width: 1290px;
+    margin: -4px auto 0 auto;
+    background: url('/etc.clientlibs/hero-aem-website/clientlibs/clientlib-bcipl-site/resources/bottomBanner.png') no-repeat center bottom #ffffff;
+}
+
+.bcipl-home-container {
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.bcipl-contestSchedulePan {
+    padding: 20px 0px 60px 0;
+    /* margin: 0 auto; */
+}
+
+.bcipl-contestSchedulePan ul {
+    margin: 0;
+    padding: 30px 0 0;
+}
+
+.bcipl-contestSchedulePan ul li:first-child {
+    width: 300px;
+    padding: 0 20px 70px 0;
+    border: none;
+}
+
+.bcipl-contestSchedulePan ul li:nth-child(2) {
+    width: 311px;
+    padding: 0 15px 0px 15px;
+}
+
+.bcipl-contestSchedulePan ul li:last-child {
+    width: 321px;
+    padding: 0 10px 0 30px;
+}
+
+.bcipl-contestSchedulePan ul li {
+    display: block;
+    float: left;
+    margin: 0;
+    list-style: none;
+    padding: 0 15px;
+    border-left: #cccccc 1px solid;
+    width: 300px;
+}
+
+.bcipl-contestSchedulePan ul li h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+    color: #ed1c24;
+    line-height: 100%;
+    padding: 0 0 20px 0;
+    font-weight: 400;
+}
+
+.bcipl-contestSchedulePan ul li p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    line-height: 20px;
+    min-height: 62px;
+    margin-bottom: 0;
+}
+
+.bcipl-contestSchedulePan ul li a {
+    display: block;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: underline;
+    padding: 25px 0 0 0;
+    text-transform: uppercase;
+}
+
+.bcipl-contestSchedulePan ul li a:hover {
+    color: red;
+}
+
+@media screen and (max-width: 990px) {
+    .bcipl-contestSchedulePan{
+        width: 100%;
+    }
+
+    .bcipl-contestSchedulePan ul li,
+    .bcipl-contestSchedulePan ul li:first-child,
+    .bcipl-contestSchedulePan ul li:last-child,
+    .bcipl-contestSchedulePan ul li:nth-child(2) {
+        width: 100%;
+        border-left: none;
+        padding: 20px 15px;
+        border-bottom: #cccccc 1px solid;
+    }
+
+    .bcipl-home-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .bcipl-contestSchedulePan ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .bcipl-contestSchedulePan ul li p{
+        min-height: auto;
+    }
+}

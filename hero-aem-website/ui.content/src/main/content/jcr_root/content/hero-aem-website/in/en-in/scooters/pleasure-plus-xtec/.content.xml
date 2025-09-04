@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-13T11:20:47.048Z"
+        cq:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicated="{Date}2022-09-13T11:29:55.728Z"
+        cq:lastReplicated_publish="{Date}2022-09-13T11:29:55.728Z"
+        cq:lastReplicatedBy="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicatedBy_publish="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/scooter"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="PLEASURE+ XTEC"
+        jcr:uuid="28090a28-55ef-4ce6-84ac-f5ebc28c5b98"
+        sling:resourceType="hero-aem-website/components/structure/productpage"
+        pagerank="10"
+        pageTitle="PLEASURE+ XTEC"
+        productmodel="/content/hmc/prices/in/pleasureplus_xtec"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                jcr:lastModified="{Date}2022-08-23T13:24:48.592Z"
+                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/header/scooter-header"/>
+            <container
+                jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                layout="responsiveGrid">
+                <container
+                    cq:styleIds="[1660795084168]"
+                    jcr:lastModified="{Date}2022-09-13T07:40:41.620Z"
+                    jcr:lastModifiedBy="prajwala.vemula@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid">
+                    <carousel_404830286_c
+                        jcr:created="{Date}2022-08-24T12:39:48.798Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-11T07:55:42.564Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/carousel"
+                        carouselindicatorstyling="carousel-indicators carousel-indicators-left justify-content-start"
+                        textIsRich="[true,true]"
+                        variant="scooter">
+                        <herodetailswithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="TEST RIDE"
+                                btnlabel2="BOOK NOW"
+                                buttonalign="slide-1-content-left"
+                                imageRef="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/banner/banner-desktop.jpg"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/pleasure-xteck.html"
+                                mobimageRef="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/banner/banner-mobile.jpg"
+                                styling="text-left"
+                                styling1="booknow-btn"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                assettype="videoasset"
+                                btnlabel1="TEST RIDE"
+                                btnlabel2="BOOK NOW"
+                                buttonalign="slide-1-content-left"
+                                headline="&lt;h1>#LadkiChala&lt;/h1>&#xd;&#xa;&lt;h1>RahiHai&lt;/h1>&#xd;&#xa;"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/pleasure-xteck.html"
+                                styling="text-left"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"
+                                video2="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/banner/pleasurevideo.mp4"/>
+                        </herodetailswithmap>
+                    </carousel_404830286_c>
+                </container>
+                <container_1990212815
+                    cq:styleIds="[1660795119891]"
+                    jcr:created="{Date}2022-08-25T09:23:40.710Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-25T09:23:40.710Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <color_switch_copy_co
+                        jcr:created="{Date}2022-08-18T17:46:15.568Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T11:20:47.007Z"
+                        jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/color-switch"
+                        btnlabel1="Explore"
+                        btnlabel2="Book Now"
+                        headline="Your style, your way"
+                        imgbtn1="/content/dam/hero-aem-website/brand/design/icons/360-view-icon.svg"
+                        leftarrowpath="/content/dam/hero-aem-website/in/products/city/hf-deluxe/colorswitch/left-rotate.png"
+                        linkTo1="https://virtualshowroom.heromotocorp.com/"
+                        linkTo2="https://eshop.heromotocorp.com/pleasure-xteck.html"
+                        rightarrowpath="/content/dam/hero-aem-website/in/products/city/hf-deluxe/colorswitch/right-rotate.png"
+                        styling1="btn-icon btn-white"
+                        styling2="btn-red-gradient"
+                        variationtype="scooter-explore-360-main">
+                        <imagerotation
+                            jcr:lastModified="{Date}2022-08-29T07:36:36.190Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/imagerotation"/>
+                        <colors jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                color="yellow"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/360/yellow"
+                                colortitle="Jubilant Yellow"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                color="matte-black"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/360/vernier-grey"
+                                colortitle="Matte Vernier Grey"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                color="matte-black"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/360/matte-black"
+                                colortitle="Matte Black"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                color="blue"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/360/blue"
+                                colortitle="Pole Star Blue"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                color="black"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/360/black"
+                                colortitle="Midnight Black"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                color="red"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/360/red"
+                                colortitle="Sporty Red"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                color="white"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/360/white"
+                                colortitle="Pearl Silver White"/>
+                        </colors>
+                        <multitext jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/1black.png"
+                                title="TWO-WHEELER MANUFACTURER"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/37black.png"
+                                title="YEARS OF EXCELLENCE"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/100Mnblack.png"
+                                title="TWO-WHEELERS SOLD"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/9000black.png"
+                                title="CUSTOMER TOUCH POINTS"/>
+                        </multitext>
+                    </color_switch_copy_co>
+                </container_1990212815>
+                <container_832901463
+                    cq:styleIds="[1660795969470]"
+                    jcr:created="{Date}2022-08-25T09:31:16.835Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-25T09:31:16.835Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <booktestride_copy_co
+                        jcr:created="{Date}2022-08-23T12:51:15.259Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:22:28.646Z"
+                        jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/booktestride"
+                        acknowledgemsg="&lt;h3>Thank You!&lt;/h3>&#xd;&#xa;"
+                        acknowledgemsgfail="&lt;h3>Sorry&lt;/h3>&#xd;&#xa;"
+                        acknowledgemsgfailsubtitle="&lt;p>An error Occured. Please try after sometime&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgsubtitle="&lt;p>We will connect with you soon.&lt;/p>&#xd;&#xa;"
+                        buttonlabel="Submit"
+                        citylabel="City"
+                        cityvalmsg="select a city"
+                        enterOtplabel="Enter OTP"
+                        ispopup="false"
+                        mobilelabel="Mobile No."
+                        mobilevalformmsg="Enter correct mobile number"
+                        mobilevalmsg="Please Enter a valid Mobile Number"
+                        name="Name"
+                        nameformvalmsg="Invalid Name"
+                        namereqvalmsg="The Name is required"
+                        otpresultmsg="Incorrect OTP"
+                        otpvalmsg="OTP is required"
+                        resendOtplabel="Resend OTP"
+                        sendOtplabel="Send OTP"
+                        statelabel="State"
+                        statevalmsg="select a state"
+                        subtitle="&lt;p>Take A Hero Ride And Experience The Thrill.&lt;/p>&#xd;&#xa;"
+                        textIsRich="[true,true,true,true,true,true,true]"
+                        title="&lt;h3>&lt;b>BOOK A TEST RIDE NOW&lt;/b>&lt;/h3>&#xd;&#xa;"
+                        variationtype="productpage"
+                        vehiclelabel="Vehicle"
+                        vehiclevalmsg="Select a vehicle"/>
+                </container_832901463>
+                <container_1990212815_1531034109
+                    jcr:created="{Date}2022-08-25T09:23:40.710Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-13T07:42:35.371Z"
+                    jcr:lastModifiedBy="prajwala.vemula@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FEATURES">
+                    <featurecarousel_copy
+                        jcr:created="{Date}2022-08-17T07:19:55.675Z"
+                        jcr:createdBy="sree.d.kollimarla@accenture.com"
+                        jcr:lastModified="{Date}2022-09-11T07:18:35.809Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/featurecarousel"
+                        carouselBackground="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/specifications/bgfeature.jpg"
+                        carouselHeading="Pleasure Plus Xtec Features"
+                        textIsRich="[true,true,true,true,true,true]">
+                        <carouseldetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/specifications/ProjectorLEDHeadLamps.png"
+                                carouselText="Projector LED Headlamps"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/specifications/BluetoothConnectivity.png"
+                                carouselText="Bluetooth connectivity"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/specifications/ElegantSeatBackrest.png"
+                                carouselText="Elegant Seat Backrest"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/specifications/ChromeMirror.png"
+                                carouselText="Chrome Mirrors"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/specifications/MetalFender.png"
+                                carouselText="Metal Fender"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/specifications/FuelsavingTechnology.png"
+                                carouselText="Fuel Saving Technology"/>
+                        </carouseldetails>
+                    </featurecarousel_copy>
+                </container_1990212815_1531034109>
+                <container_1746791139
+                    jcr:created="{Date}2022-08-25T09:26:26.641Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-11T07:23:26.191Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="hero-connect">
+                    <image
+                        jcr:created="{Date}2022-09-06T09:52:54.309Z"
+                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                        jcr:lastModified="{Date}2022-09-11T07:20:42.334Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/image"
+                        alt="hero-connect"
+                        altValueFromDAM="false"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/HeroConnectBanner.jpg"
+                        imageFromPageImage="false"
+                        isDecorative="false"
+                        linkTarget="_self"
+                        titleValueFromDAM="true"/>
+                </container_1746791139>
+                <container_2140053336_455995663
+                    cq:styleIds="[1662803750569]"
+                    jcr:created="{Date}2022-08-25T09:24:21.223Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-11T06:59:27.694Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="SPECIFICATION">
+                    <generictab_copy_copy
+                        jcr:created="{Date}2022-08-17T07:10:31.422Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-11T06:48:56.907Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/generictab"
+                        specificationstext="HF Deluxe Specifications"
+                        specificationstext1="Pleasure Plus Xtec Specifications"
+                        textIsRich="true"
+                        variant="cityproduct">
+                        <tab-0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:00:50.814Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-11T06:51:22.894Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Engine"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/features/Engine.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Type"
+                                        value="Air cooled, 4-stroke Single Cylinder OHC"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Displacement"
+                                        value="110.9 cc"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Power"
+                                        value="6.0kW (8 BHP) @ 7000 Revolutions per Minute(RPM)"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Torque"
+                                        value="8.70 Nm @ 5500 Revolutions Per Minute (RPM)"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Compression Ratio"
+                                        value="9.5:1"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Starting System"
+                                        value="Electric start / Kick start"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-0>
+                        <tab-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:10:29.393Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-11T06:52:41.680Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="wheels and tyres"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/features/Wheels _ Tyres.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Tyre"
+                                        value="90/100x10-53 J (Tubeless)"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Tyre"
+                                        value="90/100x10-53 J (Tubeless)"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-1>
+                        <tab-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:13:12.352Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-11T06:53:41.574Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Tyres"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/features/Suspension.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Suspension"
+                                        value="Bottom link with spring-loaded hydraulic dampers"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Suspension"
+                                        value="Swing Arm with spring-loaded hydraulic dampers"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-2>
+                        <tab-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification_322802938
+                                jcr:created="{Date}2022-08-17T08:03:30.745Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-11T06:54:52.882Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="brakes"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/features/Brakes.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Brake"
+                                        value="Internal Expanding Shoe Type (130 mm)"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Brake"
+                                        value="Internal Expanding Shoe Type (130 mm)"/>
+                                </specifications>
+                            </imagespecification_322802938>
+                        </tab-3>
+                        <tab-4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:14:35.825Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-11T06:56:54.219Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Electricals"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/features/Electricals.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Battery"
+                                        value="12V-4Ah ETZ-5 MF-Battery"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Headlamp"
+                                        value="Headlamp 12V-LED, Projector Technology(ZX+), Headlamp 12V-35W/35W, Halogen Bulb, Multi-Focal Reflector(LX/VX)"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Tail/Stop Lamp"
+                                        value="12V 5W/21W Multi-Focal Reflector Type"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Turn Signal Lamp"
+                                        value="12V-10W x4 nos.(Multi-Focal Reflector-Clear Lens-Amber Bulb)"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Ignition System"
+                                        value="FI(Fuel Injection)"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-4>
+                        <downloadbrochure
+                            jcr:lastModified="{Date}2022-09-11T07:00:06.209Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/downloadbrochure"
+                            icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/arrow-down.png"
+                            link="/content/dam/hero-aem-website/in/documents/product-brochures/Pleasure-Plus-XTEC.pdf"
+                            text="Download Brochure"
+                            variation="btn callback-btn"/>
+                        <tab-5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:16:17.306Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-11T06:59:03.945Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Weight"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/features/Dimensions.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Length"
+                                        value="1769 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Width"
+                                        value="704 mm"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Height"
+                                        value="1161 mm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Wheelbase"
+                                        value="1238 mm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Ground Clearance"
+                                        value="155 mm"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel Tank Capacity"
+                                        value="4.8 litres"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Kerb Weight"
+                                        value="106 kg(ZX+)/104 kg(LX, VX)"/>
+                                    <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max Payload"
+                                        value="130 kg"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-5>
+                        <shareicon
+                            jcr:lastModified="{Date}2022-09-11T07:01:49.504Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/shareicon"
+                            emailIcon="/content/dam/hero-aem-website/brand/design/icons/email-icon-black.svg"
+                            emailSub="Check this out..."
+                            icon="/content/dam/hero-aem-website/brand/design/icons/share-icon2.svg"
+                            linkpath="/content/dam/hero-aem-website/in/documents/product-brochures/Pleasure-Plus-XTEC.pdf"
+                            linkto="#"
+                            text="Hey, my rider buddy! Check out some exciting, and innovative features of Pleasure Plus Xtec which takes it stand out. Click here to explore more!!! &#xd;&#xa;"
+                            textIsRich="true"
+                            variation="motorcycle"
+                            wpIcon="/content/dam/hero-aem-website/brand/design/icons/whatsapp-icon-black.svg"
+                            wpLink="https://api.whatsapp.com"
+                            wpText="Hey, my rider buddy! Check out some exciting, and innovative features of Pleasure Plus Xtec which makes it stand out. Click here to explore more!!! "/>
+                        <tabitems jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-100/image-specification/icons/engine-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/engine-grey-icon.svg"
+                                title="Engine"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/wheel-tyers-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/wheel-tyers-icon.svg"
+                                title="Wheels &amp; Tyres"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/suspension-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/suspension-grey-icon.svg"
+                                title="Suspension"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/brakes-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/brakes-grey-icon.svg"
+                                title="Brakes"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/electric-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/electric-grey-icon.svg"
+                                title="Electricals"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/dimension-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/dimension-grey-icon.svg"
+                                title="Dimensions"/>
+                        </tabitems>
+                    </generictab_copy_copy>
+                </container_2140053336_455995663>
+                <container_546725311
+                    jcr:created="{Date}2022-09-07T09:36:09.650Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-07T09:36:09.650Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <adbanner_copy_copy
+                        jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-09T12:53:24.393Z"
+                        jcr:lastModifiedBy="d.porwal@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adbanner"
+                        background="grey-bg"
+                        bgStyle1="btn-white"
+                        bgStyle2="btn-red-gradient"
+                        bookinghrsicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/lightbulb-icon.svg"
+                        button1label="REQUEST CALLBACK"
+                        button2label="BOOK NOW"
+                        fileReference="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/adbanner/adBannerRide.png"
+                        headline="&lt;h4>Ride it yourself. Love it yourself&lt;/h4>&#xd;&#xa;&lt;p>Book a test ride today&lt;/p>&#xd;&#xa;"
+                        imageAlt="hero ride image"
+                        imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-ride-img.svg"
+                        linkTo1="#requestCallBack"
+                        linkTo2="https://eshop.heromotocorp.com/pleasure-xteck.html"
+                        textIsRich="true"
+                        type1="modal1"
+                        type2="url2"/>
+                </container_546725311>
+                <container_305980260
+                    jcr:created="{Date}2022-08-25T09:21:25.415Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-25T09:21:25.415Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <container
+                        cq:styleIds="[1660795123209]"
+                        jcr:created="{Date}2022-08-25T09:24:47.040Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-08T04:54:24.333Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"/>
+                    <container_930333100
+                        cq:styleIds="[1660795283944]"
+                        jcr:created="{Date}2022-08-25T09:27:55.909Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:29:07.745Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="PRICE">
+                        <price_info_copy
+                            jcr:created="{Date}2022-08-23T12:39:22.304Z"
+                            jcr:createdBy="d.porwal@accenture.com"
+                            jcr:lastModified="{Date}2022-09-12T12:20:22.435Z"
+                            jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/price-info"
+                            bgStyle="btn-red-gradient"
+                            buttonlabel="Book Now"
+                            buttonlink="https://eshop.heromotocorp.com/pleasure-xteck.html"
+                            buttonlinktype="url"
+                            citylabel="City"
+                            defaultcitylabel="Select City"
+                            defaultcitypath="/content/hmc/prices/in/pleasureplus_xtec/mah/mumbai"
+                            defaultstatelabel="Select State"
+                            defaultstatepath="/content/hmc/prices/in/pleasureplus_xtec/mah"
+                            desktopimage="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/price/Pleasureprice.png"
+                            disclaimer="&lt;p>*Please contact the dealer for exact on-road prices. Local levies, Octroi, Entry tax will be extra as applicable. Price ruling at the time of delivery would be applicable. Prices are subject to change without notice. HMCL reserves the right to modify the prices at its discretion at any point of time.&lt;/p>&#xd;&#xa;"
+                            heading="Hero Pleasure+ Price"
+                            mobilemage="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/adbanner/adBannerRide.png"
+                            productPath="/content/hero-aem-website/in/en-in/scooters/pleasure-plus-xtec"
+                            showroomlabel="Ex-Showroom Price"
+                            statelabel="State"
+                            textIsRich="true"
+                            variantlabel="Variant"
+                            variationtype="scooter-price-maestro"/>
+                    </container_930333100>
+                    <container_463933864
+                        jcr:created="{Date}2022-09-07T12:18:06.705Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-07T12:18:06.705Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container">
+                        <adbanner_copy_copy_c
+                            jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                            jcr:createdBy="d.porwal@accenture.com"
+                            jcr:lastModified="{Date}2022-09-09T12:54:51.529Z"
+                            jcr:lastModifiedBy="d.porwal@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/adbanner"
+                            background="grey-bg"
+                            bgStyle1="btn-white"
+                            bookinghrsicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/lightbulb-icon.svg"
+                            button1label="EXCHANGE NOW"
+                            fileReference="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/adbanner/adBannerRide.png"
+                            headline="&lt;h4>Hero Scooter Exchange Offers&lt;/h4>&#xd;&#xa;&lt;p> Just bring your old scooter, upgrade with us and unleash your stylish and bold avatar. And ride back home with the stylish Pleasure+ XTEC&lt;/p>&#xd;&#xa;"
+                            imageAlt="hero ride image"
+                            imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-ride-img.svg"
+                            linkTo1="https://wheelsoftrust.com/"
+                            textIsRich="true"
+                            type1="url1"
+                            type2="modal2"/>
+                    </container_463933864>
+                    <container_1081847767
+                        jcr:created="{Date}2022-09-06T15:16:24.548Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-07T12:18:23.399Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="FINANCE"/>
+                    <container_1036136207
+                        jcr:created="{Date}2022-08-25T09:30:22.144Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:43:12.628Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="COMPARE">
+                        <productcompare_copy
+                            jcr:created="{Date}2022-08-23T12:50:29.172Z"
+                            jcr:createdBy="d.porwal@accenture.com"
+                            jcr:lastModified="{Date}2022-09-12T14:22:59.267Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/productcompare"
+                            bgImage="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/background-img/comparisonBanner.jpg"
+                            headline="Compare Hero Pleasure+ Variants"
+                            image="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/compare-image/Pleasure-plus-yellow-left-1.png"
+                            imageOneAlt="hero-pleasure-plus-xtec"
+                            imageOneMob="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/compare-image/mobile-img/Pleasure-plus-yellow-left-2.png"
+                            imageTwo="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/compare-image/Pleasure-plus-Pole-Star-Blue-right-1.png"
+                            imageTwoAlt="hero-pleasure-plus"
+                            imageTwoMob="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/compare-image/mobile-img/Pleasure-plus-pole-star-blue-right-2.png"
+                            productName="PLEASURE+ XTEC "
+                            productNameTwo="PLEASURE+ VX"
+                            theme="compare-scooter-section"
+                            variation="normal">
+                            <specificationDetails jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    type="Bluetooth connectivity"
+                                    valueOne="Yes"
+                                    valueTwo="No"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    type="Projector LED Headlamps"
+                                    valueOne="Yes"
+                                    valueTwo="No"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    type="Chrome Mirrors"
+                                    valueOne="Yes"
+                                    valueTwo="No"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    type="Elegant Seat backrest"
+                                    valueOne="Yes"
+                                    valueTwo="No"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    type="i3s technology"
+                                    valueOne="Yes"
+                                    valueTwo="No"/>
+                            </specificationDetails>
+                        </productcompare_copy>
+                    </container_1036136207>
+                    <container_592079601
+                        cq:styleIds="[1660795962763]"
+                        jcr:created="{Date}2022-08-25T09:34:18.152Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:34:27.590Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container">
+                        <bootstraplayout_copy
+                            jcr:created="{Date}2022-08-22T10:56:00.216Z"
+                            jcr:createdBy="gausiya.latif.momin@accenture.com"
+                            jcr:lastModified="{Date}2022-09-10T07:23:20.706Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/bootstraplayout"
+                            classes="container-fluid px-0"
+                            rowclasses="row">
+                            <container-item0
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-07T11:24:16.422Z"
+                                    jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="hero Connect"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/teaser/CustomerSays.png"
+                                    height="420"
+                                    layoutvariation="layoutvariation2"
+                                    searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                    textIsRich="true"/>
+                            </container-item0>
+                            <container-item1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy_c
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-11T07:39:11.927Z"
+                                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="goodlife"
+                                    ctabuttoncheck="true"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/teaser/Goodlife.png"
+                                    height="420"
+                                    layoutvariation="layoutvariation2"
+                                    searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                    searchbtnpath="/en-in/goodlife/"
+                                    searchbtntitle="Explore Now"
+                                    textIsRich="true"/>
+                            </container-item1>
+                            <container-item2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy_c
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-11T07:39:24.460Z"
+                                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="accessories"
+                                    ctabuttoncheck="true"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/teaser/Accessories Website Banner_revised_new_451 x 383.jpg"
+                                    height="420"
+                                    layoutvariation="layoutvariation2"
+                                    searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                    searchbtnpath="https://eshop.heromotocorp.com/accessories-miscellaneous.html"
+                                    searchbtntitle="Explore Now"
+                                    textIsRich="true"/>
+                            </container-item2>
+                            <container-item3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-06T17:52:01.277Z"
+                                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="goodlife"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/teaser/Goodlife.png"
+                                    height="420"
+                                    layoutvariation="layoutvariation2"
+                                    searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                    searchbtnpath="#"
+                                    searchbtntitle="Explore"
+                                    textIsRich="true"/>
+                            </container-item3>
+                            <container-item4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-06T17:52:20.639Z"
+                                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="accessories"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/teaser/Accessories.png"
+                                    height="420"
+                                    layoutvariation="layoutvariation2"
+                                    searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                    searchbtnpath="#"
+                                    searchbtntitle="Explore"
+                                    textIsRich="true"/>
+                            </container-item4>
+                            <columnlayouts jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    large="col-lg-4"
+                                    medium="col-md-12"
+                                    small="col-12"
+                                    xlarge="col-xl-4"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    class="middle-column"
+                                    large="col-lg-4"
+                                    medium="col-md-12"
+                                    small="col-12"
+                                    xlarge="col-xl-4"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    large="col-lg-4"
+                                    medium="col-md-12"
+                                    small="col-12"
+                                    xlarge="col-xl-4"/>
+                            </columnlayouts>
+                        </bootstraplayout_copy>
+                    </container_592079601>
+                    <container_1370996405
+                        cq:styleIds="[1660795991335]"
+                        jcr:created="{Date}2022-08-25T09:35:24.744Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:44:11.967Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="find-dealer">
+                        <dealer_info_copy_cop
+                            jcr:created="{Date}2022-08-23T12:54:05.926Z"
+                            jcr:createdBy="d.porwal@accenture.com"
+                            jcr:lastModified="{Date}2022-09-12T12:20:58.146Z"
+                            jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/dealer-info"
+                            citylabel="City"
+                            dealerheading="Book appointment at your nearest experience center"
+                            defaultcity="/content/hmc/dealers/in/dlr/MAH/mumbai"
+                            statelabel="State"
+                            subtitle="Where do you live?"
+                            title="We are where you are!"/>
+                    </container_1370996405>
+                    <experiencefragment_c
+                        jcr:created="{Date}2022-09-03T12:48:10.231Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-03T17:47:07.683Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/modals/request-callback-pop-up-product"/>
+                </container_305980260>
+            </container>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/footer/master"
+                id="footer"/>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-09-13T08:00:21.411Z"
+            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

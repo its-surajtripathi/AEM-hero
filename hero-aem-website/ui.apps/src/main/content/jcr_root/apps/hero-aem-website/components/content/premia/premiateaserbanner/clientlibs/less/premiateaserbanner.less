@@ -1,0 +1,644 @@
+.teaser-banner-wrapper {
+  background: var(--bg-color-black);
+  padding: 0px 0px !important;
+
+  .teaser-banner-content-wrapper {
+    min-height: 700px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .teaser-banner-harley-engine-img {
+      position: absolute;
+      height: 100%;
+      opacity: 0;
+    }
+
+    .teaser-banner-primary-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .harley-bike-blink-wrapper {
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+
+        .harley-bike-blink {
+          position: absolute;
+          width: 800px;
+          top: -16%;
+        }
+      }
+
+      .harley-headlight-img-wrapper {
+        position: absolute;
+        width: 300px;
+        top: 23%;
+      }
+
+      .harley-headlight-shadow-img-wrapper {
+        position: absolute;
+        width: 500px;
+        top: 13%;
+      }
+
+      .harley-bike-quotes-wrapper {
+        position: absolute;
+        top: 37%;
+
+        .harley-bike-quotes {
+          color: var(--color-white);
+          font-size: var(--font-size-24);
+          font-family: var(--font-sans-regular);
+          line-height: var(--line-height-39);
+          letter-spacing: var(--letter-spacing-9);
+          sup {
+            font-size: var(--font-size-9-5);
+            top: -2.4em;
+            font-weight: 400;
+          }
+        }
+        .harley-bike-quotes-mob {
+          display: none;
+        }
+      }
+    }
+
+    .harley-description-wrapper {
+      position: absolute;
+      bottom: 0%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      opacity: 0;
+      left: 0;
+
+      .harley-description-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .harley-description-primary-text-wrapper {
+          .harley-description-primary-text {
+            font-size: var(--font-size-60);
+            font-family: var(--font-transducer);
+            font-weight: var(--font-weight-600);
+            line-height: var(--line-height-64);
+            text-transform: capitalize;
+            background: var(--teaser-banner-harley-description-primary-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+          }
+        }
+
+        .harley-description-divider-line-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .harley-description-left-divider-line {
+            height: 3px;
+            background: var(--teaser-banner-harley-description-left-divider);
+            width: 0px;
+            opacity: 0;
+          }
+
+          .harley-description-right-divider-line {
+            height: 3px;
+            background: var(--teaser-banner-harley-description-right-divider);
+            transform: scaleX(-1);
+            width: 0px;
+            opacity: 0;
+          }
+        }
+
+        .harley-description-sub-text-wrapper {
+          width: 800px;
+          text-align: center;
+
+          @media screen and (max-width: 1023px) {
+            width: 80%;
+          }
+
+          .harley-description-sub-text {
+            font-size: var(--font-size-20);
+            font-weight: var(--font-weight-400);
+            font-family: var(--font-optika-regular);
+            line-height: var(--line-height-30);
+            background: var(--color-quill-gray);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+          }
+        }
+      }
+    }
+
+    .teaser-banner-disclaimer-text-wrapper {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      bottom: 23%;
+      opacity: 0;
+
+      .teaser-banner-disclaimer-text {
+        color: var(--color-quill-gray);
+        text-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.65);
+        font-size: var(--font-size-12);
+        font-family: var(--font-sans-regular);
+        line-height: var(--line-height-17);
+      }
+    }
+  }
+
+  /* css for revealing harley animation */
+  .unreveal-harley {
+    animation-play-state: paused !important;
+  }
+
+  .reveal-harley {
+    animation-play-state: running !important;
+  }
+}
+
+/* responsive animation css for tablet and desktop view */
+@media (min-width: 768px) {
+  .teaser-banner-wrapper {
+    .teaser-banner-content-wrapper {
+      .teaser-banner-harley-engine-img {
+        animation-name: harley_engine_img;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+      }
+
+      .teaser-banner-primary-content {
+        .harley-bike-blink-wrapper {
+          animation-name: harley_blinking;
+          animation-fill-mode: forwards;
+          animation-duration: 4s;
+          animation-delay: 0.3s;
+        }
+
+        .harley-headlight-img-wrapper {
+          animation-name: harley_headlight;
+          animation-fill-mode: forwards;
+          animation-delay: 0.3s;
+        }
+
+        .harley-headlight-shadow-img-wrapper {
+          animation-name: harley_headlight_shadow;
+          animation-fill-mode: forwards;
+          animation-delay: 0.3s;
+        }
+
+        .harley-bike-quotes-wrapper {
+          animation-name: harley_quote;
+          animation-fill-mode: forwards;
+          animation-duration: 4s;
+          animation-delay: 0.3s;
+        }
+      }
+
+      .harley-description-wrapper {
+        animation-name: harley_description;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+
+        .harley-description-content {
+          .harley-description-divider-line-wrapper {
+            .harley-description-left-divider-line {
+              animation-name: harley_left_divider;
+              animation-delay: 5s;
+              animation-fill-mode: forwards;
+              animation-duration: 1.5s;
+            }
+
+            .harley-description-right-divider-line {
+              animation-name: harley_right_divider;
+              animation-delay: 5s;
+              animation-fill-mode: forwards;
+              animation-duration: 1.5s;
+            }
+          }
+        }
+      }
+
+      .teaser-banner-disclaimer-text-wrapper {
+        animation-name: harley_disclaimer;
+        animation-delay: 0.5s;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
+
+/* responsive animation keyframes for tablet and desktop view */
+@keyframes harley_headlight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes harley_headlight_shadow {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes harley_quote {
+  from {
+    top: 37%;
+    opacity: 1;
+  }
+
+  20% {
+    top: -5%;
+    opacity: 1;
+  }
+
+  50% {
+    top: -5%;
+    opacity: 1;
+  }
+
+  80% {
+    top: -5%;
+    opacity: 1;
+  }
+
+  100% {
+    top: -5%;
+    opacity: 0;
+  }
+}
+
+@keyframes harley_blinking {
+  from {
+    opacity: 0;
+  }
+
+  0.1% {
+    opacity: 0.8;
+  }
+
+  25% {
+    opacity: 0.8;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes harley_description {
+  from {
+    bottom: 0%;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 35%;
+    opacity: 1;
+  }
+}
+
+@keyframes harley_left_divider {
+  from {
+    opacity: 0;
+    width: 0px;
+    margin-right: 500px;
+  }
+
+  to {
+    opacity: 1;
+    width: 200px;
+    margin-right: 0px;
+  }
+}
+
+@keyframes harley_right_divider {
+  from {
+    opacity: 0;
+    width: 0px;
+  }
+
+  to {
+    opacity: 1;
+    width: 200px;
+  }
+}
+
+@keyframes harley_engine_img {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes harley_disclaimer {
+  from {
+    opacity: 0.5;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* responsive css for mobile-view */
+@media only screen and (max-width: 767px) {
+  .teaser-banner-wrapper {
+    .teaser-banner-content-wrapper {
+      min-height: 475px !important;
+
+      .teaser-banner-harley-engine-img {
+        animation-name: harley_engines_img;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      .teaser-banner-primary-content {
+        .harley-bike-blink-wrapper {
+          animation-name: harley_blinker;
+          animation-fill-mode: forwards;
+          animation-duration: 4s;
+          animation-delay: 0.3s;
+          opacity: 0;
+
+          .harley-bike-blink {
+            width: 400px !important;
+            top: -4% !important;
+          }
+        }
+
+        .harley-headlight-img-wrapper {
+          width: 155px !important;
+          top: 13% !important;
+          animation-name: harley_headlights;
+          animation-fill-mode: forwards;
+          animation-delay: 0.3s;
+          top: 25% !important;
+        }
+
+        .harley-headlight-shadow-img-wrapper {
+          width: 275px !important;
+          top: 18% !important;
+          animation-name: harley_headlight_shadows;
+          animation-fill-mode: forwards;
+          animation-delay: 0.3s;
+          top: 18%;
+        }
+
+        .harley-bike-quotes-wrapper {
+          animation-name: harley_quotes;
+          animation-fill-mode: forwards;
+          animation-duration: 4s;
+          animation-delay: 0.3s;
+          top: 32%;
+
+          .harley-bike-quotes {
+            display: none;
+          }
+          .harley-bike-quotes-mob {
+            text-align:center;
+            color: var(--color-white);
+            font-family: var(--font-sans-regular);
+            display:block;
+            font-size: var(--font-size-18) !important;
+            line-height: var(--line-height-20) !important;
+            sup {
+              font-size: var(--font-size-4);
+              top: -1.5em;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      .harley-description-wrapper {
+        bottom: 0%;
+        animation-name: harley_descriptions;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+        opacity: 0;
+
+        .harley-description-content {
+          .harley-description-primary-text-wrapper {
+            .harley-description-primary-text {
+              font-size: var(--font-size-20) !important;
+              line-height: var(--line-height-32) !important;
+            }
+          }
+
+          .harley-description-divider-line-wrapper {
+            .harley-description-left-divider-line {
+              height: 1px !important;
+              animation-name: harley_left_dividers;
+              animation-delay: 5s;
+              animation-fill-mode: forwards;
+              animation-duration: 1.5s;
+              width: 0px;
+              opacity: 0;
+            }
+
+            .harley-description-right-divider-line {
+              height: 1px !important;
+              animation-name: harley_right_dividers;
+              animation-delay: 5s;
+              animation-fill-mode: forwards;
+              animation-duration: 1.5s;
+              width: 0px;
+              opacity: 0;
+            }
+          }
+
+          .harley-description-sub-text-wrapper {
+            .harley-description-sub-text {
+              font-size: var(--font-size-12) !important;
+              line-height: var(--line-height-15) !important;
+            }
+          }
+        }
+      }
+
+      .teaser-banner-disclaimer-text-wrapper {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        bottom: 31%;
+        padding: 0px 16px;
+        animation-name: harley_disclaimers;
+        animation-delay: 0.5s;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+
+        .teaser-banner-disclaimer-text {
+          color: var(--color-quill-gray);
+          text-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.65);
+          font-size: var(--font-size-8);
+          font-family: var(--font-sans-regular);
+          line-height: var(--line-height-12);
+        }
+      }
+    }
+  }
+}
+
+/* responsive animation keyframes for mobile-view */
+@keyframes harley_headlights {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes harley_headlight_shadows {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes harley_quotes {
+  from {
+    top: 32%;
+    opacity: 1;
+  }
+
+  20% {
+    top: 2%;
+    opacity: 1;
+  }
+
+  80% {
+    top: 2%;
+    opacity: 1;
+  }
+
+  to {
+    top: 2%;
+    opacity: 0;
+  }
+}
+
+@keyframes harley_blinker {
+  from {
+    opacity: 0;
+  }
+
+  0.1% {
+    opacity: 0.8;
+  }
+
+  25% {
+    opacity: 0.8;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes harley_descriptions {
+  from {
+    bottom: 0%;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 38%;
+    opacity: 1;
+  }
+}
+
+@keyframes harley_left_dividers {
+  from {
+    opacity: 0;
+    width: 0px;
+    margin-right: 200px;
+  }
+
+  to {
+    opacity: 1;
+    width: 75px;
+    margin-right: 0px;
+  }
+}
+
+@keyframes harley_right_dividers {
+  from {
+    opacity: 0;
+    width: 0px;
+  }
+
+  to {
+    opacity: 1;
+    width: 75px;
+  }
+}
+
+@keyframes harley_engines_img {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes harley_disclaimers {
+  from {
+    opacity: 0.5;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0;
+  }
+}

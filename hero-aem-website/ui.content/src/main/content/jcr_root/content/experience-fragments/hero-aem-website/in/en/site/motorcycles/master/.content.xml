@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-08-11T10:38:44.441Z"
+        cq:lastModifiedBy="preeti.nalawade@accenture.com"
+        cq:lastReplicated="{Date}2022-08-10T06:38:56.372Z"
+        cq:lastReplicated_publish="{Date}2022-08-10T06:38:56.372Z"
+        cq:lastReplicatedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicatedBy_publish="kiran.jaganmohan@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Motorcycles"
+        jcr:uuid="db06ec00-2f6c-4bdc-80a6-c336fb29d5d6"
+        sling:resourceType="hero-aem-website/components/structure/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <secondarynavigation
+                jcr:created="{Date}2022-07-24T16:15:56.707+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-08-11T10:38:44.325Z"
+                jcr:lastModifiedBy="preeti.nalawade@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/structure/secondarynavigation"
+                helptext="&lt;p>Don't know which bike to choose?&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;https://techveduat.com/Hero-Motocorop-html/home.html#&quot;>Help me choose&lt;/a>&lt;/p>&#xd;&#xa;"
+                textIsRich="true">
+                <flyouts
+                    jcr:lastModified="{Date}2022-07-24T16:27:57.982+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid">
+                    <productflyout_copy_248950418
+                        jcr:created="{Date}2022-07-24T16:21:59.729+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-08-08T04:59:17.815Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/structure/secondarynavigation/productflyout"
+                        element="h3"
+                        exploreurl="#"
+                        heading="CITY"
+                        headingurl="/content/hero-aem-website/in/en-in/motorcycles/city"
+                        linkhead="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <products jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city/splendor-plus-black-accent.png"
+                                tag="New"
+                                text="SPLENDOR+ BLACK ACCENT"
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city/splendor-plus.png"
+                                spec="110 CC"
+                                text="SPLENDOR+ "
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city/splendor-ismart.png"
+                                spec="110 CC"
+                                text="SPLENDOR iSMART "
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city/splendor-plus-xtec.png"
+                                spec="110 CC"
+                                text="SPLENDOR+ XTEC "
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city/hf-deluxe.png"
+                                spec="100 CC"
+                                text="HF DELUXE "
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city/hf-100.png"
+                                spec="100 CC"
+                                text="HF 100"
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city"/>
+                        </products>
+                    </productflyout_copy_248950418>
+                    <productflyout_copy
+                        jcr:created="{Date}2022-07-24T16:21:59.729+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-07-27T06:12:40.381+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/structure/secondarynavigation/productflyout"
+                        element="h3"
+                        heading="CITY PLUS"
+                        headingurl="/content/hero-aem-website/in/en-in/motorcycles/city"
+                        linkhead="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <products jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city-plus/super-splendor.png"
+                                spec="125 CC"
+                                tag="TRENDING"
+                                text="SUPER SPLENDER "
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city-plus/glamour.png"
+                                spec="125 CC"
+                                text="GLAMOUR "
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city-plus/new-glamour.png"
+                                spec="125 CC"
+                                text="NEW GLAMOUR "
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city-plus/glamour-xtec.png"
+                                spec="125 CC"
+                                text="GLAMOUR XTEC"
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city-plus/passion-pro.png"
+                                spec="110 CC"
+                                text="PASSION PRO"
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/city-plus/passion-xtec.png"
+                                spec="110 CC"
+                                text="PASSION XTEC"
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                        </products>
+                    </productflyout_copy>
+                    <productflyout
+                        jcr:created="{Date}2022-07-24T16:21:59.729+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-07-27T06:13:11.631+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/structure/secondarynavigation/productflyout"
+                        element="h3"
+                        heading="SPORTS &amp; ADVENTURE"
+                        headingurl="/content/hero-aem-website/in/en-in/motorcycles/city"
+                        linkhead="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <products jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s.png"
+                                spec="200 CC"
+                                tag="TRENDING"
+                                text="XTREME 200S "
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-160r.png"
+                                spec="160 CC"
+                                text="XTREME 160R "
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200.png"
+                                spec="200 CC"
+                                text="XPULSE 200 "
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200-4v.png"
+                                spec="200 CC"
+                                text="XPULSE 200 4V"
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200-t.png"
+                                spec="200 CC"
+                                text="XPULSE 200 T"
+                                url="/content/hero-aem-website/in/en-in/motorcycles/city/splendor-plus-xtec"/>
+                        </products>
+                    </productflyout>
+                </flyouts>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                </cq:responsive>
+            </secondarynavigation>
+        </root>
+        <cq:metadata jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

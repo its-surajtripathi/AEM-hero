@@ -1,0 +1,35 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+<div class="offer-main-wrapper">
+    <h3 data-sly-test="${properties.heading}" class="h3-bold-heading-std">${properties.heading}</h3>
+    <div id="adcarousel${resource.path.hashCode}" class="carousel offer-carousel slide" data-ride="carousel"
+        data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='adbean'}">
+        <!-- The slideshow -->
+        <div data-sly-list="${listUse}" class="carousel-inner">
+            <div class="carousel-item${itemList.first ? ' active': ''}"  id="adcarousel">
+                <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.imageRef, rendition='ad-banner', extension='png'}"
+                    src="${imagePath}" alt="${item.properties.imageAlt}" class="img-fluid" />
+                <a data-sly-test="${item.properties.btnlabel}" class="btn know-more-btn ${item.properties.bgStyle} ${item.properties.bgSize}" aa-data-attr="track_cta"
+                    data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo1}"
+                    href="${linkuse.value}"  target="${linkuse.isExternal ? '_blank' : '_self'}">${item.properties.btnlabel}</a>
+            </div>
+        </div>
+        <!-- Indicators -->
+        <ul data-sly-list="${listUse}" class="carousel-indicators">
+            <li data-target="#adcarousel${resource.path.hashCode}" data-slide-to="${itemList.index}"
+                class="${itemList.first ? 'active': ''}"></li>
+        </ul>
+        <!-- Left and right controls -->
+        <sly data-sly-list="${properties.check}">
+            <a href="#adcarousel${resource.path.hashCode}" class="carousel-control-prev" data-slide="prev" aa-data-attr="track_cta"
+                name="Carousel Control - Previous">
+                <img loading="lazy" src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/left-arrow-slider.svg" alt="left-arrow"/>
+            </a>
+            <a href="#adcarousel${resource.path.hashCode}" class="carousel-control-next" data-slide="next" aa-data-attr="track_cta"
+                name="Carousel Control - Next">
+                <img loading="lazy" src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/right-arrow-slider.svg" alt="right-arrow"/>
+            </a>
+        </sly>
+    </div>
+</div>

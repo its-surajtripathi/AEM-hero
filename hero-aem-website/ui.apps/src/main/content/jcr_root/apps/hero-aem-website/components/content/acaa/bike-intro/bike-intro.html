@@ -1,0 +1,76 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<!-- <div class="container_1">
+	<p>${properties.bikeName}</p>
+	<p>${properties.description}</p>
+	<img data-sly-test="${properties.infoIconRef}" src="${properties.infoIconRef}" alt="InfoIcon" />
+</div> -->
+
+<div class="acc-banner-container enable-scroll-snap">
+	<div class="mouse-cursor-follow d-none">
+		<div class="mouse-cursor-button">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<p class="cursor-desc-text">${properties.pointerText}</p>
+	</div>
+	<div class="brand-reveal-bg">
+		<div class="bg-cover-cont"></div>
+		<div class="universe">
+			<div class="stars"></div>
+			<div class="stripes"></div>
+		</div>
+	</div>
+	<div class="intro-parent-text-wrapper">
+		<div class="intro-primary-text-wrapper">
+			<p class="intro-primary-text">${properties.preText1}</p>
+		</div>
+		<div class="intro-secondary-text-wrapper">
+			<p class="intro-secondary-text">${properties.preText2}</p>
+		</div>
+	</div>
+	<div class="intro-karizma-video-wrapper visibility-hidden">
+		<video class="intro-karizma-video" muted>
+			<!-- <source src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/video/karizma_logo_video.mp4">-->
+			<source src="${properties.karizmaVideo}">
+		</video>
+	</div>
+	<div class="bike-intro-text-container">
+		<div class="intro-logo-quote-wrapper">
+			<div class="bike-intro-logo-img-wrapper visibility-hidden">
+				<!-- <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/images/bike_intro_shimmer_logo.png"
+				alt="bike_intro_logo"> -->
+				<img data-sly-test="${properties.infoIconRef}" src="${properties.infoIconRef}" alt="bike_intro_logo" />
+			</div>
+			<div class="bike-intro-description-text-wrapper">
+				<p class="bike-intro-description-text">${properties.bikeName}</p>
+			</div>
+		</div>
+		<div class="bike-intro-scroll-text-content">
+			<div class="bike-intro-static-container">
+				<div class="bike-intro-scroll-text-wrapper">
+					<p class="bike-intro-scroll-text">${properties.description}</p>
+				</div>
+				<div class="bike-intro-scroll-img-wrapper">
+					<img data-sly-test="${properties.scrolldownRef}" src="${properties.scrolldownRef}"
+						alt="scroll_img" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="line-anime-container pull-outside-window">
+		<div class="banner-brand-reveal-line">
+			<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/images/svg/banner-line.svg" alt="" />
+			<div class="line-container-animate"></div>
+		</div>
+		<div class="banner-brand-reveal-line reverse">
+			<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/images/svg/banner-line.svg" alt="" />
+			<div class="line-container-animate"></div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-13T11:26:43.407Z"
+        cq:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicated="{Date}2022-09-13T11:29:55.728Z"
+        cq:lastReplicated_publish="{Date}2022-09-13T11:29:55.728Z"
+        cq:lastReplicatedBy="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicatedBy_publish="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/scooter"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="DESTINI 125 XTEC"
+        jcr:uuid="4dbe49db-e94b-4865-b533-9fc05c6977ac"
+        sling:resourceType="hero-aem-website/components/structure/productpage"
+        pagerank="12"
+        pageTitle="DESTINI 125 XTEC"
+        productmodel="/content/hmc/prices/in/destini_125_xtec"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                jcr:lastModified="{Date}2022-08-23T13:24:48.592Z"
+                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/header/scooter-header"/>
+            <container
+                jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                layout="responsiveGrid">
+                <container
+                    cq:styleIds="[1660795084168]"
+                    jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid">
+                    <carousel_404830286_c
+                        jcr:created="{Date}2022-08-24T12:39:48.798Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T11:29:04.233Z"
+                        jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/carousel"
+                        carouselindicatorstyling="carousel-indicators"
+                        textIsRich="[true,true,true]"
+                        variant="scooter">
+                        <herodetailswithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                assettype="videoasset"
+                                btnlabel1="TEST RIDE"
+                                btnlabel2="Book Now"
+                                buttonalign="slide-1-content-left"
+                                headline="&lt;h1>Destini 125 XTEC&lt;/h1>&#xd;&#xa;&lt;h5>I Choose My Destini&lt;br />&#xd;&#xa; &lt;/h5>&#xd;&#xa;"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/destini-xtec.html"
+                                styling="text-left"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"
+                                video2="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/banner/videobanner1-desktop.mp4"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="TEST RIDE"
+                                btnlabel2="BOOK NOW"
+                                buttonalign="slide-1-content-left"
+                                imageAlt="banner"
+                                imageRef="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/banner/imagebanner-desktop.jpg"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/destini-xtec.html"
+                                mobimageRef="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/banner/imagebanner-mob.jpg"
+                                styling="text-left"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="modal2"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                assettype="videoasset"
+                                btnlabel1="TEST RIDE"
+                                btnlabel2="Book Now"
+                                buttonalign="slide-1-content-left"
+                                headline="&lt;h1>Destini 125 XTEC&lt;/h1>&#xd;&#xa;&lt;h5>I Choose My Destini&lt;br>&#xd;&#xa;&amp;nbsp;&lt;/h5>&#xd;&#xa;"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/destini-xtec.html"
+                                styling="text-left"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"
+                                video2="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/banner/videobanner2-desktop.mp4"/>
+                        </herodetailswithmap>
+                    </carousel_404830286_c>
+                </container>
+                <container_1990212815
+                    jcr:created="{Date}2022-08-25T09:23:40.710Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-09T11:51:03.093Z"
+                    jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <color_switch_copy_co
+                        jcr:created="{Date}2022-08-18T17:46:15.568Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T11:26:43.363Z"
+                        jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/color-switch"
+                        btnlabel1="Explore"
+                        btnlabel2="Book Now"
+                        classforscooter="blue"
+                        headline="Our Offerings, Your Style"
+                        imgbtn1="/content/dam/hero-aem-website/brand/design/icons/360-view-icon.svg"
+                        leftarrowpath="/content/dam/hero-aem-website/in/products/city/hf-deluxe/colorswitch/left-rotate.png"
+                        linkTo1="https://virtualshowroom.heromotocorp.com/"
+                        linkTo2="https://eshop.heromotocorp.com/destini-xtec.html"
+                        rightarrowpath="/content/dam/hero-aem-website/in/products/city/hf-deluxe/colorswitch/right-rotate.png"
+                        styling1="btn-icon btn-white"
+                        styling2="btn-red-gradient"
+                        variationtype="scooter-explore-360-main">
+                        <imagerotation
+                            jcr:lastModified="{Date}2022-08-29T07:52:23.576Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/imagerotation"/>
+                        <colors jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                color="blue"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/blue"
+                                colortitle="Nexus Blue"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                color="black"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/matte-black"
+                                colortitle="Matte Black"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                color="red"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/red"
+                                colortitle="Nobel Red"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                color="bronze"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/brown"
+                                colortitle="Chestnut Brown"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                color="silver"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/silver"
+                                colortitle="Matte Ray Silver"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                color="black"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/panther-black"
+                                colortitle="Panther Black"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                color="white"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/white"
+                                colortitle="Pearl Silver White"/>
+                        </colors>
+                        <multitext jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/1black.png"
+                                title="TWO-WHEELER MANUFACTURER"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/37black.png"
+                                title="YEARS OF EXCELLENCE"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/100Mnblack.png"
+                                title="TWO-WHEELERS SOLD"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/9000black.png"
+                                title="CUSTOMER TOUCH POINTS"/>
+                        </multitext>
+                    </color_switch_copy_co>
+                </container_1990212815>
+                <container_832901463
+                    cq:styleIds="[1660795969470]"
+                    jcr:created="{Date}2022-08-25T09:31:16.835Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-25T09:31:16.835Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <booktestride_copy_co
+                        jcr:created="{Date}2022-08-23T12:51:15.259Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:21:13.475Z"
+                        jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/booktestride"
+                        acknowledgemsg="&lt;h3>Thank You!&lt;/h3>&#xd;&#xa;"
+                        acknowledgemsgfail="&lt;h3>Sorry&lt;/h3>&#xd;&#xa;"
+                        acknowledgemsgfailsubtitle="&lt;p>An error Occured. Please try after sometime&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgsubtitle="&lt;p>We will connect with you soon.&lt;/p>&#xd;&#xa;"
+                        buttonlabel="Submit"
+                        citylabel="City"
+                        cityvalmsg="select a city"
+                        enterOtplabel="Enter OTP"
+                        ispopup="false"
+                        mobilelabel="Mobile No."
+                        mobilevalformmsg="Enter correct mobile number"
+                        mobilevalmsg="Please Enter a valid Mobile Number"
+                        name="Name"
+                        nameformvalmsg="Invalid Name"
+                        namereqvalmsg="The Name is required"
+                        otpresultmsg="Incorrect OTP"
+                        otpvalmsg="OTP is required"
+                        resendOtplabel="Resend OTP"
+                        sendOtplabel="Send OTP"
+                        statelabel="State"
+                        statevalmsg="select a state"
+                        subtitle="&lt;p>Take A Hero Ride And Experience The Thrill.&lt;/p>&#xd;&#xa;"
+                        textIsRich="[true,true,true,true,true,true,true]"
+                        title="&lt;h3>&lt;b>BOOK A TEST RIDE NOW&lt;/b>&lt;/h3>&#xd;&#xa;"
+                        variationtype="productpage"
+                        vehiclelabel="Vehicle"
+                        vehiclevalmsg="Select a vehicle"/>
+                </container_832901463>
+                <container_2140053336
+                    jcr:created="{Date}2022-08-25T09:24:21.223Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-13T08:54:17.770Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FEATURES">
+                    <featurecarousel_copy
+                        jcr:created="{Date}2022-08-17T07:19:55.675Z"
+                        jcr:createdBy="sree.d.kollimarla@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T10:24:50.827Z"
+                        jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/featurecarousel"
+                        carouselBackground="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/feature-hotspot-banner.jpg"
+                        carouselHeading="Destini 125 XTEC Features"
+                        textIsRich="[true,true,true,true,true,true,true,true,true,true,true,true,true]">
+                        <carouseldetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/1. LED Headlamp.png"
+                                carouselText="LED Headlamp"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/2. Chrome Mirrors.png"
+                                carouselText="Chrome Mirrors"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/3. Chrome Muffler.png"
+                                carouselText="Chrome Muffler"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/4. Bluetooth Connectivity.png"
+                                carouselText="Bluetooth Connectivity"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/5. Chrome Handler Bar Ends.png"
+                                carouselText="Chrome Handler Bar Ends"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/7. Digi Analong Cluster.png"
+                                carouselText="Digi Analong Cluster"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/21. Stylish Tail Lamp.png"
+                                carouselText="Stylish Tail Lamp"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/Elegant Metal Body.png"
+                                carouselText="Elegant Metal Body"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/Front Mobile Charging Port.png"
+                                carouselText="Front Mobile Charging Port"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/Front Telescopic Suspension.png"
+                                carouselText="Front Telescopic Suspension"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/i3S.png"
+                                carouselText="i3S"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/Retro Front Design.png"
+                                carouselText="Retro Front Design"/>
+                            <item12
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/feature-hotspot/Seat Backrest.png"
+                                carouselText="Seat Backrest"/>
+                        </carouseldetails>
+                    </featurecarousel_copy>
+                </container_2140053336>
+                <container_1491948538
+                    jcr:created="{Date}2022-09-13T08:55:07.338Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-13T08:55:46.136Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="SPECIFICATION">
+                    <generictab_copy_copy
+                        jcr:created="{Date}2022-08-17T07:10:31.422Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T10:25:06.392Z"
+                        jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/generictab"
+                        specificationstext="HF Deluxe Specifications"
+                        specificationstext1="Destini 125 XTEC Specifications"
+                        textIsRich="true"
+                        variant="cityproduct">
+                        <tab-0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:00:50.814Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T07:45:25.509Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Engine"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/specification/Engine.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Type"
+                                        value="Air Cooled, 4-Stroke, SI Engine"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Displacement"
+                                        value="124.6 cc"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Power"
+                                        value="6.7 kW (9 BHP) @ 7000 Revolutions Per Minute (rpm)"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Torque"
+                                        value="10.4 Nm @ 5500 Revolutions Per Minute (rpm)"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Starting"
+                                        value="Self - Start / Kick-Start"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Ignition"
+                                        value="Electronic Control Unit (ECU)"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel System"
+                                        value="Fuel Injection (FI)"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-0>
+                        <tab-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:10:29.393Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T07:46:40.159Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Suspension"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/specification/2.1 Suspension.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front"
+                                        value="Telescopic Hydraulic Shock Absorber"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear"
+                                        value="Unit Swing with Spring Loaded Hydraulic Damper"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-1>
+                        <tab-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:13:12.352Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T07:48:03.454Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Brakes"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/specification/3.1 Brakes.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Brake Drum"
+                                        value="130 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Brake Drum"
+                                        value="130 mm"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-2>
+                        <tab-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification_322802938
+                                jcr:created="{Date}2022-08-17T08:03:30.745Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T07:49:34.635Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Wheels &amp; Tyres"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/specification/4.1 Wheels and Tyres.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Tyre"
+                                        value="90/100-10"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Tyre"
+                                        value="90/100-10"/>
+                                </specifications>
+                            </imagespecification_322802938>
+                        </tab-3>
+                        <tab-4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:14:35.825Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T07:51:32.560Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Electricals"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/specification/5.1 Electricals.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Battery (V-Ah)"
+                                        value="12 V - 4 Ah ETZ5 MF Battery"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Headlamp"
+                                        value="12 V - 35 W/35 W - LED Bulb ( Multi - Reflector Type)"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Tail/Stop Lamp"
+                                        value="12 V - 5/21 W (Multi-Reflector Type)"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Turn Signal Lamp"
+                                        value="12 V - 10 W x 4 nos. (MFR - Clear Lens - Amber Bulb)"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-4>
+                        <downloadbrochure
+                            jcr:lastModified="{Date}2022-09-12T08:06:00.970Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/downloadbrochure"
+                            icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/arrow-down.png"
+                            link="/content/dam/hero-aem-website/in/documents/product-brochures/destini-125-xtec.pdf"
+                            text="Download Brochure"
+                            variation="btn callback-btn"/>
+                        <tab-5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:16:17.306Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T07:54:08.072Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Dimensions"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/specification/6.1 Dimensions.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Length"
+                                        value="1809 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Width"
+                                        value="729 mm"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Height"
+                                        value="1154 mm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Saddle Height"
+                                        value="778 mm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Wheelbase"
+                                        value="1245 mm"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Ground Clearance"
+                                        value="155 mm"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel Tank Capacity"
+                                        value="5 litres"/>
+                                    <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max Payload"
+                                        value="130 Kg"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-5>
+                        <shareicon
+                            jcr:lastModified="{Date}2022-09-12T09:50:25.310Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/shareicon"
+                            emailIcon="/content/dam/hero-aem-website/brand/design/icons/email-icon-black.svg"
+                            emailSub="Check this out..."
+                            icon="/content/dam/hero-aem-website/brand/design/icons/share-icon2.svg"
+                            linkpath="/content/dam/hero-aem-website/in/documents/product-brochures/destini-125-xtec.pdf"
+                            linkto="#"
+                            text="Hey, my rider buddy! Check out some exciting, and innovative features of Pleasure Plus Xtec which takes it stand out. Click here to explore more!!! &#xd;&#xa;"
+                            textIsRich="true"
+                            variation="motorcycle"
+                            wpIcon="/content/dam/hero-aem-website/brand/design/icons/whatsapp-icon-black.svg"
+                            wpLink="https://api.whatsapp.com"
+                            wpText="Hey, my rider buddy! Check out some exciting, and innovative features of Pleasure Plus Xtec which makes it stand out. Click here to explore more!!! "/>
+                        <tabitems jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-100/image-specification/icons/engine-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/engine-grey-icon.svg"
+                                title="Engine"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/suspension-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/suspension-grey-icon.svg"
+                                title="Suspension"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/brakes-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/brakes-grey-icon.svg"
+                                title="Brakes"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/wheel-tyers-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/wheel-tyers-icon.svg"
+                                title="Wheels &amp; Tyres"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/electric-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/electric-grey-icon.svg"
+                                title="Electricals"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/dimension-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/dimension-grey-icon.svg"
+                                title="Dimensions"/>
+                        </tabitems>
+                    </generictab_copy_copy>
+                </container_1491948538>
+                <container_305980260
+                    cq:styleIds="[1662803750569]"
+                    jcr:created="{Date}2022-08-25T09:21:25.415Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-25T09:21:25.415Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <container
+                        cq:styleIds="[1660795123209]"
+                        jcr:created="{Date}2022-09-09T06:46:49.637Z"
+                        jcr:createdBy="aditya.l.srivastava@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T08:54:38.488Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container">
+                        <adbanner_copy_copy
+                            jcr:lastModified="{Date}2022-09-12T08:41:54.586Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/adbanner"
+                            background="blue-bg"
+                            bgStyle1="btn-white"
+                            bgStyle2="btn-red-gradient"
+                            bookinghrsicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/lightbulb-icon.svg"
+                            button1label="REQUEST CALLBACK"
+                            button2label="BOOK NOW"
+                            fileReference="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/exchange/Destini_Xtech_Exchange.png"
+                            headline="&lt;h4>Ride With Us &amp;amp; Carve Your Own Path&lt;/h4>&#xd;&#xa;&lt;p>Book A Test Ride Today&lt;/p>&#xd;&#xa;"
+                            imageAlt="hero ride image"
+                            imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-ride-img.svg"
+                            linkTo1="#requestCallBack"
+                            linkTo2="https://eshop.heromotocorp.com/destini-xtec.html"
+                            textIsRich="true"
+                            type1="modal1"
+                            type2="url2"/>
+                    </container>
+                    <container_930333100
+                        cq:styleIds="[1660795283944]"
+                        jcr:created="{Date}2022-08-25T09:27:55.909Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:29:07.745Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="PRICE">
+                        <price_info_copy
+                            jcr:created="{Date}2022-08-23T12:39:22.304Z"
+                            jcr:createdBy="d.porwal@accenture.com"
+                            jcr:lastModified="{Date}2022-09-12T12:36:45.089Z"
+                            jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/price-info"
+                            bgStyle="btn-red-gradient"
+                            buttonlabel="Book Now"
+                            buttonlink="https://eshop.heromotocorp.com/destini-xtec.html"
+                            buttonlinktype="url"
+                            citylabel="City"
+                            defaultcitylabel="City"
+                            defaultcitypath="/content/hmc/prices/in/destini_125_xtec/mah/mumbai"
+                            defaultstatelabel="State"
+                            defaultstatepath="/content/hmc/prices/in/destini_125_xtec/mah"
+                            desktopimage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/pricing/pricing-desktop.jpg"
+                            disclaimer="&lt;p>*Please contact the dealer for exact on-road prices. Local levies, Octroi, Entry tax will be extra as applicable. Price ruling at the time of delivery would be applicable. Prices are subject to change without notice. HMCL reserves the right to modify the prices at its discretion at any point of time.&lt;/p>&#xd;&#xa;"
+                            heading="Let's Talk Pricing"
+                            mobilemage="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/pricing/pricing-mobile.png"
+                            productPath="/content/hero-aem-website/in/en-in/scooters/destini-125-xtec"
+                            showroomlabel="Ex-Showroom Price"
+                            statelabel="State"
+                            textIsRich="true"
+                            variantlabel="Variant"
+                            variationtype="scooter-price-maestro"/>
+                    </container_930333100>
+                    <container_1302837441
+                        jcr:created="{Date}2022-09-07T15:23:31.503Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-07T15:23:31.503Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"/>
+                    <container_1036136207
+                        jcr:created="{Date}2022-08-25T09:30:22.144Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:43:12.628Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="COMPARE">
+                        <adbanner_copy_copy_c
+                            jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                            jcr:createdBy="d.porwal@accenture.com"
+                            jcr:lastModified="{Date}2022-09-12T08:40:33.345Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/adbanner"
+                            background="blue-bg"
+                            bgStyle1="btn-white"
+                            bookinghrsicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/lightbulb-icon.svg"
+                            button1label="EXCHANGE NOW"
+                            fileReference="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/exchange/Destini_Xtech_Exchange.png"
+                            headline="&lt;h4>Hero Bike Exchange Offers&lt;/h4>&#xd;&#xa;&lt;p>We also have amazing bike exchange offers !All you have to do is bring us your old bikes and you can ride away on a stunning new Hero MotoCorp bike.&lt;/p>&#xd;&#xa;"
+                            imageAlt="hero ride image"
+                            imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-ride-img.svg"
+                            linkTo1="https://www.wheelsoftrust.com/"
+                            textIsRich="true"
+                            type1="url1"
+                            type2="modal2"/>
+                    </container_1036136207>
+                    <container_1238899750
+                        cq:styleIds="[1660795954617]"
+                        jcr:created="{Date}2022-09-07T15:23:31.609Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-10T05:57:11.648Z"
+                        jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container">
+                        <productcompare
+                            jcr:created="{Date}2022-09-09T07:28:01.835Z"
+                            jcr:createdBy="aditya.l.srivastava@accenture.com"
+                            jcr:lastModified="{Date}2022-09-13T11:04:13.874Z"
+                            jcr:lastModifiedBy="palak.paisal@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/productcompare"
+                            headline="Know Your Destini 125 XTEC"
+                            image="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/detailed-compare/Destini-Website Banners_269x402-13_web.png"
+                            imageOneMob="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/blue/2.png"
+                            imageTwo="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/detailed-compare/Destini-Website Banners_269x402-15_web.png"
+                            imageTwoMob="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/panther-black/6.png"
+                            productName="DESTINI 125 XTEC"
+                            productNameTwo="DESTINI 125"
+                            theme="compare-scooter-section"
+                            variation="normal">
+                            <specificationDetails jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    type="LED Headlamp"
+                                    valueOne="Yes"
+                                    valueTwo="Yes"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    type="i3S"
+                                    valueOne="Yes"
+                                    valueTwo="Yes"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    type="Bluetooth"
+                                    valueOne="Yes"
+                                    valueTwo="No"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    type="Raised Backrest"
+                                    valueOne="Yes"
+                                    valueTwo="Optional"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    type="Metal Body"
+                                    valueOne="Yes"
+                                    valueTwo="Yes"/>
+                            </specificationDetails>
+                        </productcompare>
+                    </container_1238899750>
+                    <container_592079601
+                        cq:styleIds="[1660795962763]"
+                        jcr:created="{Date}2022-08-25T09:34:18.152Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:34:27.590Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container">
+                        <bootstraplayout_copy
+                            jcr:created="{Date}2022-08-22T10:56:00.216Z"
+                            jcr:createdBy="gausiya.latif.momin@accenture.com"
+                            jcr:lastModified="{Date}2022-09-10T07:25:11.935Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/bootstraplayout"
+                            classes="container-fluid px-0"
+                            rowclasses="row">
+                            <container-item0
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy_c
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-12T08:26:31.566Z"
+                                    jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="reviews"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/collage-img/know-what-others-say-new.jpg"
+                                    height="385"
+                                    layoutvariation="layoutvariation2"
+                                    textIsRich="true"/>
+                            </container-item0>
+                            <container-item1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy_c
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-12T09:03:56.495Z"
+                                    jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="goodlife"
+                                    ctabuttoncheck="true"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/collage-img/goodlife-new.jpg"
+                                    height="385"
+                                    layoutvariation="layoutvariation2"
+                                    searchbtnpath="/en-in/goodlife/"
+                                    searchbtntitle="Explore Now"
+                                    textIsRich="true"/>
+                            </container-item1>
+                            <container-item2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-12T08:50:23.633Z"
+                                    jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="accessories"
+                                    ctabuttoncheck="true"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/collage-img/accessories-new.jpg"
+                                    height="385"
+                                    layoutvariation="layoutvariation2"
+                                    searchbtnpath="https://eshop.heromotocorp.com/accessories-miscellaneous.html"
+                                    searchbtntitle="Explore Now"
+                                    textIsRich="true"/>
+                            </container-item2>
+                            <container-item3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-09T09:30:13.784Z"
+                                    jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="other-say"
+                                    customerreview="Ayushman - &quot;This is my first scooter in the 125 cc segment and I'm loving it's pick up and style!&quot;"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/collage-img/OTHER-SAY.png"
+                                    height="386"
+                                    layoutvariation="layoutvariation2"
+                                    textIsRich="true"/>
+                            </container-item3>
+                            <container-item4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-09T09:21:40.777Z"
+                                    jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="accessories"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtech/collage-img/accessories.png"
+                                    height="385"
+                                    layoutvariation="layoutvariation2"
+                                    textIsRich="true"/>
+                            </container-item4>
+                            <columnlayouts jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    large="col-lg-4"
+                                    medium="col-md-12"
+                                    small="col-12"
+                                    xlarge="col-xl-4"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    class="middle-column"
+                                    large="col-lg-4"
+                                    medium="col-md-12"
+                                    small="col-12"
+                                    xlarge="col-xl-4"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    large="col-lg-4"
+                                    medium="col-md-12"
+                                    small="col-12"
+                                    xlarge="col-xl-4"/>
+                            </columnlayouts>
+                        </bootstraplayout_copy>
+                    </container_592079601>
+                    <container_1370996405
+                        cq:styleIds="[1660795991335]"
+                        jcr:created="{Date}2022-08-25T09:35:24.744Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:44:11.967Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="find-dealer">
+                        <dealer_info_copy_cop
+                            jcr:created="{Date}2022-08-23T12:54:05.926Z"
+                            jcr:createdBy="d.porwal@accenture.com"
+                            jcr:lastModified="{Date}2022-09-12T12:37:48.496Z"
+                            jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/dealer-info"
+                            citylabel="City"
+                            dealerheading="Book appointment at your nearest experience center"
+                            defaultcity="/content/hmc/dealers/in/dlr/MAH/mumbai"
+                            statelabel="State"
+                            subtitle="Search for a location"
+                            title="Find Us Where You Are"/>
+                    </container_1370996405>
+                </container_305980260>
+                <experiencefragment_c
+                    jcr:created="{Date}2022-09-03T12:48:10.231Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-03T17:47:07.683Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/modals/request-callback-pop-up-product"/>
+            </container>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/footer/master"
+                id="footer"/>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-09-13T08:00:06.862Z"
+            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

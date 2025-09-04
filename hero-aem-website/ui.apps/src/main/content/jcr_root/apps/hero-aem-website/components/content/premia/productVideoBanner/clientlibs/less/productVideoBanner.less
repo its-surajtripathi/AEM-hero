@@ -1,0 +1,182 @@
+.prodictVideoBannerContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  @media screen and (max-width: 767px) {
+    // height: 350px;
+    padding: 64px 0;
+  }
+  @media only screen and (min-width: 1441px) {
+    height: 675px;
+  }
+  @media only screen and (min-width: 768px) {
+    height: 600px;
+  }
+
+  img {
+    cursor: pointer;
+  }
+
+  .productVideoBannerVideo {
+    width: 100%;
+    object-fit: fill;
+    background-color: var(--color-black);
+    opacity: 0.6;
+    z-index: -1;
+    // @media screen and (max-width: 767px) {
+    //   height: 100%;
+    // }
+  }
+
+  .prodictVideoBannerTitle {
+    font-size: var(--font-size-40);
+    color: var(--color-white);
+    font-family: var(--font-transducer);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-44);
+    text-align: center;
+    position: absolute;
+    top: 420px;
+    left: 0;
+    right: 0;
+    @media screen and (max-width: 767px) {
+      font-size: var(--font-size-18);
+      top: 38%;
+    }
+    @media only screen and (min-width: 1440px) {
+      top: 266px;
+      font-size: var(--font-size-32);
+    }
+    @media only screen and (min-width: 768px) {
+      top: 238px;
+      font-size: var(--font-size-32);
+    }
+  }
+
+  .prodictVideoBannerButtonWrapper {
+    position: absolute;
+    top: 480px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+      top: 53%;
+    }
+    @media only screen and (min-width: 1440px) {
+      top: 358px;
+    }
+    @media only screen and (min-width: 768px) {
+      top: 326px;
+    }
+    .prodictVideoBannerButton {
+      background-color: var(--color-trinidad);
+      font-size: var(--font-size-18);
+      color: var(--color-white);
+      font-family: var(--font-transducer);
+      font-weight: var(--font-weight-600);
+      line-height: var(--line-height-16);
+      padding: 18px 48px 22px 48px;
+      text-align: center;
+      text-decoration: none;
+      @media screen and (max-width: 767px) {
+        font-size: var(--font-size-14);
+        padding: 16px 24px;
+      }
+      @media only screen and (min-width: 768px) {
+        font-size: var(--font-size-14);
+      }
+    }
+  }
+
+  .tooltipWrapper {
+    left: 0;
+    right: 0;
+    top: 65%;
+    z-index: 1;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+      top: 285px;
+    }
+    .tooltiptext {
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        object-fit: fill;
+        background-image: url("/apps/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/disableInfo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 8px;
+      }
+      &::after {
+        right: 47%;
+      }
+    }
+  }
+
+  img {
+    display: inline;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 16px;
+    right: 7.5%;
+    display: none;
+  }
+  #unmute-button,
+  #mute-button {
+    @media only screen and (min-width: 1441px) {
+      width: 51px;
+      height: 51px;
+    }
+    @media screen and (max-width: 767px) {
+      right: 20px;
+    }
+  }
+  #play-button,
+  #pause-button {
+    right: 7.5%;
+    @media only screen and (min-width: 1441px) {
+      width: 51px;
+      height: 51px;
+    }
+    @media screen and (max-width: 767px) {
+      right: 60px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 70px;
+    }
+  }
+  // #pause-button {
+  //   width: 32px;
+  //   height: 32px;
+  //   bottom: 49px;
+  //   @media screen and (max-width: 767px) {
+  //     width: 24px;
+  //     height: 24px;
+  //   }
+  // }
+}
+
+.disable-booking-btn {
+  .prodictVideoBannerContainer {
+    .prodictVideoBannerButtonWrapper {
+      .prodictVideoBannerButton {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+    }
+    // .tooltipWrapper {
+    //   display: flex;
+    //   justify-content: center;
+    // }
+  }
+}

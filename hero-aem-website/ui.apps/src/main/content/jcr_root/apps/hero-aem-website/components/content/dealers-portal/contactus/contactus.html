@@ -1,0 +1,33 @@
+<div class="contactUsWrappers ${properties.layoutvariation=='fullwidth'?'contactUsVersion':''}">
+	<div class="contactUsTitle">${properties.contactHeading}</div>
+	<div class="contactUsContainer">
+		<div class="contactUsPhoto">
+			<img src="${properties.imagePath}"
+				alt="${properties.altText}" class="contactUsImage">
+			<a href="mailto:${properties.contactEmail}" class="contactUsName">${properties.contactName}</a>
+			<p class="contactUsRole">${properties.contactPosition}</p>
+		</div>
+		<div class="areaManagerWrapper">
+		<div class="contactUsArea">
+			<p class="contactUsAreaOffice">${properties.areaLabel}</p>
+			<sly data-sly-list.contactArea="${resource.getChildren}">
+    		<sly data-sly-test="${contactArea.name == 'contactArea'}">
+			<sly data-sly-list.item="${contactArea.getChildren}">
+			<p class="contactUsAreaDetail">${item.contactAreaName}</p>
+			</sly>
+			</sly>
+			</sly>
+		</div>
+		<div class="contactUsManager">
+			<p class="contactUsManagerName">${properties.managerLabel}</p>
+			<sly data-sly-list.managerDetails="${resource.getChildren}">
+    		<sly data-sly-test="${managerDetails.name == 'managerDetails'}">
+			<sly data-sly-list.item="${managerDetails.getChildren}">
+			<a href="mailto:${item.email}" class="contactUsManagerDetail">${item.managerName}</a>
+			</sly>
+			</sly>
+			</sly>
+		</div>
+		</div>
+	</div>
+</div>

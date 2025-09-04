@@ -1,0 +1,15 @@
+<!-- Slick Carousel -->
+<section class="img-slick-carousel" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='carouselitems'}"
+ data-sly-list="${listUse}">
+	<div class="img-container">
+      <div class="img-text">
+         ${item.properties.headline @ context='html'}
+         <a class="img-btn-link" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo}" 
+            href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" data-sly-test="${item.properties.btnlabel}">
+                ${item.properties.btnlabel} 
+         <img src="${item.properties.icon}" alt="arrow">
+         </a>
+      </div>
+		<img src="${item.properties.image}" alt="${item.properties.imageAlt}">
+	</div>
+</section>

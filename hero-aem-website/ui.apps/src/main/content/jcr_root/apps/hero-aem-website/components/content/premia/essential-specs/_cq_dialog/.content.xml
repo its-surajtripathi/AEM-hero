@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Specifications"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.authoring.editor.hook]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <general
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="General Bike Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <buttnText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Text"
+                                                name="./buttnText" />
+                                            <modalTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title of Modal"
+                                                name="./modalTitle" />
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </general>
+                    <tab1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured">
+                                            <tabmulti
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Add Tab Details"
+                                                fieldLabel="Add tabs"
+                                                showhidetargetvalue="">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./tabitems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <tabconfigs
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Tab Details"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items
+                                                                        jcr:primaryType="nt:unstructured">
+                                                                        <title
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldDescription="Text to display title of the Tab."
+                                                                            fieldLabel="Title"
+                                                                            name="./title"
+                                                                            required="{Boolean}true" />
+                                                                        <tabid
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldDescription="Text to display title of the Tab."
+                                                                            fieldLabel="Tab id"
+                                                                            name="./id"
+                                                                            required="{Boolean}true" />
+                                                                        <field
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            jcr:title="Specification&#xa; details"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                            margin="{Boolean}true">
+                                                                            <items
+                                                                                jcr:primaryType="nt:unstructured">
+                                                                                <columns
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                                                                    margin="{Boolean}true">
+                                                                                    <items
+                                                                                        jcr:primaryType="nt:unstructured">
+                                                                                        <column
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                            <items
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:hideChildren="*">
+                                                                                                <multifield
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                                    composite="{Boolean}true"
+                                                                                                    fieldLabel="Provide details">
+                                                                                                    <field
+                                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                                        name="./iconTextItems">
+                                                                                                        <items
+                                                                                                            jcr:primaryType="nt:unstructured">
+                                                                                                            <specskey
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                                fieldLabel="Specification Key"
+                                                                                                                name="./specskey" />
+                                                                                                            <specsvalue
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                                fieldLabel="Specification Value"
+                                                                                                                name="./specsvalue" />
+                                                                                                        </items>
+                                                                                                    </field>
+                                                                                                </multifield>
+                                                                                            </items>
+                                                                                        </column>
+                                                                                    </items>
+                                                                                </columns>
+                                                                            </items>
+                                                                        </field>
+                                                                    </items>
+                                                                </tabconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </tabmulti>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </tab1>
+                </items>
+            </tabs>
+
+        </items>
+    </content>
+</jcr:root>

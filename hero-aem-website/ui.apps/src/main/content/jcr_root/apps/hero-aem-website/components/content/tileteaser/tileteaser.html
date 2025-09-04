@@ -1,0 +1,160 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+ </p>
+ <sly data-sly-test="${properties.layoutvariation == 'layoutvariation1'}">
+    <div class="tile-teaser ${properties.styleclass}" data-sly-test.imageRendition="${properties.height == '620' ? 'teaser-full-web' : 'teaser-web'}"
+       data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=properties.fileReference, rendition=imageRendition}"
+       style="background-image: url(${imagePath @ context='uri'}); height:${properties.height @ context='styleToken'}px;">
+       <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkto}"
+          href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" class="img-text ${properties.titlePosition}" aa-data-attr="track_cta">
+          <h4 class="h3-bold-heading-std">${properties.title}</h4>
+          <div class="d-flex justify-content-between b1-text-std">
+             ${properties.subtitle @context= 'html'}
+             <p class="explore-more d-flex align-items-center" data-sly-test="${properties.explore}">
+                ${properties.explore}
+                <img loading="lazy" src="${properties.fileIcon}" alt="Know More" class="pl-2">
+             </p>
+          </div>
+       </a>
+    </div>
+ </sly>
+ <sly data-sly-test="${properties.layoutvariation == 'layoutvariation2'}">
+    <div class="events-box ${properties.styleclass}" style=" height: ${properties.height @context='styleToken'}px;"
+       data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+       data-sly-test="${image.src}"
+       data-cmp-dmimage="${image.dmImage}"
+       data-asset-id="${image.uuid}"
+       id="${image.id}"
+       data-cmp-data-layer="${image.data.json}"
+       itemscope itemtype="http://schema.org/ImageObject">
+       <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkto}"
+          href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" class="event-box-link" aa-data-attr="track_cta">
+          <img srcset="${image.srcset}" src="${image.src}"
+             loading="${image.lazyEnabled ? 'lazy' : ''}"
+             height="${properties.height}px" class="cmp-image__image img-fluid event-img"
+             itemprop="contentUrl"
+             alt="${image.alt || true}" title="${image.displayPopupTitle && image.title}">
+          <div class="event-info-main">
+             <div class="event-info">
+                <h4 class="h3-bold-heading-std">${properties.title}</h4>
+                <p class="b1-text-std">${properties.subtitle @context= 'html'}</p>
+             </div>
+             <div class="event-explore" data-sly-test="${properties.explore}">
+                <p>${properties.explore}</p>
+                <img loading="lazy" src="${properties.fileIcon}" alt="">
+             </div>
+          </div>
+       </a>
+    </div>
+ </sly>
+ 
+ <sly data-sly-test="${properties.layoutvariation == 'layoutvariation3'}">
+ <div class="my-vehicle-card">
+         <section class="card" data-subtype="${properties.serviceType}">
+             <div class="sub-item1 d-none">
+                 ${properties.duedatelabel} <span class="due-date"></span>
+             </div>
+             <div class="cardBody">
+                 <div class="cardTitle">
+                     <span>
+                         <img src="${properties.serviceLogo}" alt="Hero-Logo" data-sly-test="${properties.serviceLogo}">
+                         <span class="title-pre">${properties.title}</span>
+                         <span class="title-post d-none">${properties.titlePost}</span>
+                         <span class="title-present d-none">${properties.titlePresent}</span>
+                     </span>
+                     <span class="cardSubtitle title-pre">
+                         ${properties.subtitle @ context='html'}
+                     </span>
+                     <span class="cardSubtitle title-post d-none">
+                         <p>${properties.subtitlePost}</p>
+                     </span>
+                     <span class="cardSubtitle title-present d-none">
+                         <p>${properties.subtitlePresent}</p>
+                     </span>
+                     <span class="cardSubtitle error-msg d-none">Unable to retrieve Services. Please try again later</span>
+                 </div>
+                 <img class="img-fluid" src="${properties.serviceIcon}" alt="Hero-Logo" data-default-img="${properties.serviceIcon}"/>
+             </div>
+             <a class="cardFooter pre-sub " data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkto}"
+                  href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" aa-data-attr="track_cta">
+                 <span class="cardFootLink">${properties.explore}</span>
+                 <span>
+                     <img src="${properties.fileIcon}" alt="arrow-right-red">
+                 </span>
+             </a>
+              <a class="cardFooter post-sub d-none" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.postSubLink}"
+                  href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" aa-data-attr="track_cta">
+                 <span class="cardFootLink">${properties.postLabel}</span>
+                 <span>
+                     <img src="${properties.fileIcon}" alt="arrow-right-red">
+                 </span>
+             </a>
+         </section> 
+         </div>  
+ </sly>
+ 
+ <sly data-sly-test="${properties.layoutvariation == 'layoutvariation4'}">
+  <div class="post-refer-friend-wrapper">
+    <div class="refer-card">
+     <div class="refer">
+       <div class="col-sm-7">
+          <p class="heading">${properties.title}</p>
+          <div class="subtext">${properties.subtitle @context='html'}</div>
+          <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkto}"
+             href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" aa-data-attr="track_cta">
+            <button class="bt_refer">${properties.explore}</button>
+          </a>
+       </div>
+       <div class="col-sm-5" data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=properties.fileReference, rendition=imageRendition}">
+          <img src="${imagePath}" class="img_position" />
+       </div>
+     </div>
+    </div>
+  </div>
+ </sly>
+ 
+ <sly data-sly-test="${properties.layoutvariation == 'layoutvariation5'}">
+         <div class="row complete-profile">
+             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                 <img class="img-profile" src="${properties.fileIcon}"
+                      alt="img">
+             </div>
+             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                 <div class="complete-profile-subtext">
+                     <p class="heading-comp-profile title">${properties.title}</p>
+                     <p class="heading-comp-profile subtext">${properties.titlePost} </p>
+                 </div>
+                 <div class="view-details">
+                     <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkto}"
+                        href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" aa-data-attr="track_cta">
+                         <span class="red-text-view">${properties.explore}</span>
+                         <img class="view-arrow" src="${properties.arrowIcon}" alt="right-arrow">
+                     </a>
+                 </div>
+             </div>
+         </div>
+ </sly>
+ 
+ <sly data-sly-test="${properties.layoutvariation == 'layoutvariation6'}">
+         <div class="row welcome-reward">
+             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                 <img class="img-reward" src="${properties.fileIcon}"
+                      alt="img">
+             </div>
+ 
+             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                 <div class="welcome-reward-subtext">
+                     <p class="heading-comp-profile title">${properties.title}</p>
+                     <p class="heading-comp-profile subtext">${properties.titlePost}</p>
+                 </div>
+ 
+                 <div class="view-details">
+                     <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkto}"
+                        href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" aa-data-attr="track_cta">
+                         <span class="white-text">${properties.explore}</span>
+                         <img class="view-arrow" src="${properties.arrowIcon}" alt="right-arrow">
+                     </a>
+                 </div>
+             </div>
+     </div>
+ </sly>

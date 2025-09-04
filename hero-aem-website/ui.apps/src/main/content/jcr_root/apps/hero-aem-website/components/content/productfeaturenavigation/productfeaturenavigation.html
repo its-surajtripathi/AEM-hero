@@ -1,0 +1,36 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+<section id="HighlightedFeaturesSection" class="carousel slide highlighted-features-section" data-ride="carousel"
+         data-interval="${properties.carouselinterval ? properties.carouselinterval : '14' }000" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='videoDetails'}">
+   <div class="overlay"></div>
+   <div class="text-content">
+      <div class="container-fluid">
+         <h2>${properties.heading}</h2>
+         <p>${properties.subheading}</p>
+         <ul class="carousel-indicators flex-column d-inline-flex"
+             data-sly-list="${listUse}">
+            <li data-target="#HighlightedFeaturesSection" data-slide-to="${itemList.index}" class="${itemList.first ? 'active' : ''}">
+               ${item.properties.title}
+            </li>
+         </ul>
+         <h3>${properties.footer}</h3>
+      </div>
+   </div>
+   <div class="carousel-inner" data-sly-list="${listUse}">
+      <div class="carousel-item ${itemList.first ? 'active' : ''}">
+         <video class="w-100 d-block" autoplay muted loop disablePictureInPicture disableremoteplayback
+                data-sly-test="${item.properties.assettype == 'videoasset'}">
+            <source src="${item.properties.video}" type="video/webm">
+            <source src="${item.properties.video}" type="video/mp4">
+            ${item.properties.videoAlt}
+         </video>
+         <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.imageRef, rendition='banner-web'}"
+              src="${imagePath}" alt="${item.properties.imageAlt}" class="d-none d-sm-block img-fluid w-100"
+              data-sly-test="${item.properties.assettype == 'imageasset'}">
+         <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.mobimageRef, rendition='banner-mobile'}"
+              src="${imagePath}" alt="${item.properties.imageAlt}" class="d-block d-sm-none img-fluid w-100"
+              data-sly-test="${item.properties.assettype == 'imageasset'}">
+      </div>
+   </div>
+</section>

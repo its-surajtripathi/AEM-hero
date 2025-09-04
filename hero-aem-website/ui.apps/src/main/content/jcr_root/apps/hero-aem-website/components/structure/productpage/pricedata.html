@@ -1,0 +1,12 @@
+<sly data-sly-test.state="${request.requestPathInfo.selectors[1]}" data-sly-test.city="${request.requestPathInfo.selectors[2]}" data-sly-test.parentPath="${[pageProperties.productmodel,state,city] @ join='/'}"
+    data-sly-use.listUse="${'/apps/hero-aem-website/utils/getdropdownvalues.js' @ parentPath=parentPath}">
+    <sly data-sly-list="${listUse}">
+		<li class="w-50 px-2 px-lg-0">
+			<p class="b2-text-std">${item.properties.variant_desc}</p>
+		</li>
+		<li class="w-50 px-2 px-lg-3"
+			data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}">
+			<p class="b2-text-std">${pageconfig.currencyUnit} ${item.properties.ex_showroom}</p>
+		</li>
+	</sly>
+</sly>

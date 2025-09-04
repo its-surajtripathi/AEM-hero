@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Redirection Tiles"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <container
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <multitext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        fieldLabel="click on add button to add Redirection Tiles">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./redirectiontile">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                    fieldLabel="Enter Redirection Tile Heading"
+                                                                    name="./tileheading"
+                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                    <rtePlugins
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                    <uiSettings
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                </title>
+                                                                <imagepath
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                    fieldLabel="Choose Tile Banner Image"
+                                                                    name="./bannerimage"
+                                                                    rootPath="/content/dam/hero-aem-website"/>
+                                                                <field1
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <multitiles
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                            composite="{Boolean}true"
+                                                                            fieldLabel="click on add button to add redirection URLs">
+                                                                            <field
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                name="./multitiles">
+                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                    <name
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                        fieldLabel="Enter Redirection Title"
+                                                                                        name="./redirectiontitle"
+                                                                                        useFixedInlineToolbar="{Boolean}true">
+                                                                                        <rtePlugins
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                        <uiSettings
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                    </name>
+                                                                                    <url
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                                        fieldLabel="Enter Redirection URL"
+                                                                                        name="./redirecturl"
+                                                                                        rootPath="/content/hero-aem-website"/>
+                                                                                </items>
+                                                                            </field>
+                                                                        </multitiles>
+                                                                    </items>
+                                                                </field1>
+                                                            </items>
+                                                        </field>
+                                                    </multitext>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </container>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

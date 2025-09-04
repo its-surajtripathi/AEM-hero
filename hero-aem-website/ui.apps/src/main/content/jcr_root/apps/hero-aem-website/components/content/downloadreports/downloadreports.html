@@ -1,0 +1,27 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+  format=[component.title], i18n} </sly>
+
+<div class="investor-download-reports">
+  <div class="headerbackground">
+    <h2 class="download-reports-title h2-heading-std">${properties.heading}</h2>
+  </div>
+  <div class="download-reports-links-container">
+    <div class="years-container">
+      <p class="select-year">Select Year</p>
+      <div class="years-list d-flex position-relative" id="years-lists">
+         <p></p> 
+        <i class="arrow down"></i>
+        <ul class="d-none position-absolute"></ul>
+      </div>
+    </div>
+
+    <div class="reports-links" id="reports-category" data-path="${properties.reportsPath}">
+      <sly data-sly-list.reports="${resource.children}">
+        <sly data-sly-test="${reports.name == 'category'}" data-sly-list.category="${reports.children}">
+          <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=category.categoryPageLink}" href="${linkuse.value}" class="report-category-link ${pageProperties['jcr:title'].toLowerCase == category.categoryAttr.toLowerCase ? 'active-report' : ''}" data-attribute="${category.categoryAttr}">${category.categoryHeading}</a>
+        </sly>
+      </sly>
+    </div>
+
+  </div>
+</div>

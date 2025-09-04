@@ -1,0 +1,61 @@
+.addressPan .cust-form-group .campaign-input.text-transform {
+    text-transform: unset;
+}
+
+.form-wrap-mocktest {
+    border: #e2e2e2 1px solid;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.mock-test-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.anwsers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.anwsers input[type=radio] {
+    cursor: pointer;
+}
+
+.mocktest-results{
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'tstar-medium';
+}
+
+.mocktest-title {
+    font-size: 24px;
+    line-height: 1.2;
+    font-family: 'tstar-medium';
+}
+
+.ans-label {
+    font-family: 'tstar-bold';
+}
+
+.correctanswer {
+    color: #00CC00;
+}
+
+.wronganswer {
+    color: #ff0000;
+}
+
+@media (max-width: 768px) {
+    .mocktest-results{
+        font-size: 16px;
+    }
+    .mocktest-title {
+        font-size: 20px;
+    }
+}

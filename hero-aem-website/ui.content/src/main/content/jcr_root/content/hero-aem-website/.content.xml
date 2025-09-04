@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/conf/hero-aem-website/settings/wcm/templates/(?!xf-).*]"
+        cq:conf="/conf/hero-aem-website"
+        cq:redirectTarget="/content/hero-aem-website/in/en-in"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Hero MotoCorp"
+        sling:configRef="/conf/hero-aem-website"
+        sling:redirect="{Boolean}true"
+        sling:redirectStatus="{Long}302"
+        sling:resourceType="hero-aem-website/components/structure/page">
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+    <us/>
+    <in/>
+</jcr:root>

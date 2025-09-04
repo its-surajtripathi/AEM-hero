@@ -1,0 +1,70 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div class="container-fluid">
+    <div class="col-sm-12">
+        <div class="whole_service-history-section">
+            <div class="serviceRecord-first-section">
+                <div class="serviceheading serviceRecordheading">
+                    <div class="heading-container">
+                        <img src="${properties.menuIcon}">
+                        <h4>${properties.servicerecordLabel}</h4>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="service-history" data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}">
+                    <script type="text/html" class="getServiceHistory">
+                        <% _.each(getServiceData, function(item, i, list) { %>
+                        <div class="serviceRecord-history">
+                            <div class="row">
+                                <div class="col-sm-6 col-8">
+                                    <div class="serviceRecordleft-side">
+                                        <h5><% if(getServiceData[i].jobCardCloseDate != ''){%><%=convertDateTime(getServiceData[i].jobCardCloseDate)%><%}%></h5>
+                                                <p><% if(getServiceData[i].serviceType == 'FSC'){%>Free service<%}else{%><%=getServiceData[i].serviceType%><%}%></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-4">
+                                            <div class="serviceRecordright-side">
+                                                <h5><%=getServiceData[i].odometerReading%> ${properties.kmLabel @ context='scriptString'}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="serviceRecord-divide-border">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 serviceRecordleft-side">
+                                    <div class="serviceRecordbasic-details">
+                                        <h5 class="toleft">${properties.srNoLabel @ context='scriptString'} </h5>
+                                        <p class="sr-id"><%=getServiceData[i].serviceBookingNumber%></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="serviceRecordright-side float-left-mob" id="detailsDiv">
+                                        <% if(getServiceData[i].jobCardNumber != ''){%>
+                                        <a class="sr-details-link" href="javascript:void(0)" data-url="${properties.detailsLink @ context='uri',extension='html'}" >${properties.detailsLabel @ context='scriptString'}
+                                            <span><img src="${properties.detailslinkIcon @ context='uri'}"></span>
+                                        </a>
+                                        <% }%>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="serviceRecordleft-side">
+                                        <button class="service-record-button-completed" id="statusText"><% if(getServiceData[i].jobCardCloseDate != ''){%> Completed<%}else {%>Pending<%}%></button>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                        </div>
+                        <% });%>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

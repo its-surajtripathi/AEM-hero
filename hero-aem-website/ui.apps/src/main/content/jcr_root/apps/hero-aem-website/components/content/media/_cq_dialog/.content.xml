@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Media Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <container
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <variation
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                                        fieldLabel="Select Variation"
+                                                        name="./variation"
+                                                        required="{Boolean}true">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <inthepress
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="In The Press"
+                                                                value="inthepress"/>
+                                                            <pressreleases
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Press Releases"
+                                                                value="pressreleases"/>
+                                                            <newsletter
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Newsletter"
+                                                                value="newsletter"/>   
+                                                            <annualreport
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Annual Report"
+                                                                value="annualreport"/>  
+                                                        </items>
+                                                    </variation>
+                                                    <iconpath
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose icon image path"
+                                                        name="./iconpath"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </container>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

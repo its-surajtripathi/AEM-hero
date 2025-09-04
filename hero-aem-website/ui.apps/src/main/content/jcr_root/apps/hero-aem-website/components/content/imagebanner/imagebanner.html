@@ -1,0 +1,48 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div class="row" data-sly-test="${properties.theme!='others'}"
+    data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='imageitems'}">
+    <div class="col-md-12 col-12 d-flex justify-content-center flex-wrap flex-md-nowrap ${listUse.length == 4 ? 'layout-2':''}"
+        data-sly-list.image="${listUse}">
+        <div class="bike-product-prant">
+            <a  aa-data-attr="track_cta" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=image.properties.redirectionurl}"
+                href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" data-sly-element="${linkuse.value ? 'a' : 'div'}">
+                <img loading="lazy" data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=image.properties.desktopimage, rendition='explore-products-web', extension='png'}"
+                    src="${imagePath}" class="img-fluid bike-product-img d-none d-md-block" width="100%"
+                    alt="${image.properties.bikename @ context = 'html'}"/>
+                <img loading="lazy" data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=image.properties.mobileimage, rendition='explore-products-mobile', extension='png'}"
+                    src="${imagePath}" class="img-fluid bike-product-img bike-product-img2 d-block d-md-none" alt="${image.properties.bikename @ context = 'html'}" width="100%"/>
+                <p class="d-block d-md-none  bike-product-paramob">${image.properties.bikename @ context = 'html'}</p>
+                <p class="d-none d-md-block  bike-product-para">${image.properties.bikename @ context = 'html'}</p>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row" data-sly-test="${properties.theme=='others'}"
+     data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='imageitems'}"
+     data-sly-list.spec="${listUse}">
+<div class="col-6 col-md-3">
+    <div class="card border-0  gov-card text-center"
+         data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=spec.properties.desktopimage, rendition='explore-products-web', extension='png'}">
+       <sly data-sly-test="${!spec.properties.redirectionurl}">
+           <img loading="lazy" src="${imagePath}" width="100%"
+                class="card-img-top gov-img" alt="${image.properties.name}">
+           <div class="card-body">
+               <h5 class="card-title">${spec.properties.name}</h5>
+               <p class="card-text">${spec.properties.designation}</p>
+           </div>
+       </sly>
+        <a  aa-data-attr="track_cta" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=spec.properties.redirectionurl}"
+            href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+            data-sly-test="${spec.properties.redirectionurl}">
+            <img loading="lazy" src="${imagePath}" width="100%"
+             class="card-img-top gov-img" alt="${image.properties.name}">
+        <div class="card-body">
+            <h5 class="card-title">${spec.properties.name}</h5>
+            <p class="card-text">${spec.properties.designation}</p>
+        </div>
+        </a>
+    </div>
+</div>
+</div>

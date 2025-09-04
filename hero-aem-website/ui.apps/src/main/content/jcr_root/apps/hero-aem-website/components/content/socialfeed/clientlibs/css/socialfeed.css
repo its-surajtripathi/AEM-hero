@@ -1,0 +1,376 @@
+.xtracks-social {
+    padding: 4rem 0;
+    position: relative;
+}
+
+.xtracks-social .bg-img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.xtracks-social .bg-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.xtracks-social .lg-container {
+    width: 100%;
+    max-width: 1600px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.xtracks-social .social-heading {
+    margin-right: 2rem;
+    min-width: 160px;
+    max-width: 160px;
+}
+
+.xtracks-social .social-heading h3 {
+    font-size: 32px;
+    line-height: 1.2;
+    color: #000;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-monumentExtended-ultrabold);
+    font-weight: 900;
+}
+
+.xtracks-social .slider--wrap .social-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #b71116;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 650px;
+}
+
+.xtracks-social .slider--wrap .social-list:hover .social-img img {
+    transform: scale(1.1);
+}
+
+.xtracks-social .slider--wrap .social-list.bg-red {
+    background-image: url('/content/dam/hero-aem-website/in/xtracks/bg-twitter.jpg');
+}
+
+.xtracks-social .slider--wrap .social-list.bg-black {
+    background-image: url('/content/dam/hero-aem-website/in/xtracks/bg-insta.jpg');
+}
+
+.xtracks-social .slider--wrap .social-list.bg-white {
+    background-image: url('/content/dam/hero-aem-website/in/xtracks/bg-facebook.jpg');
+}
+
+
+.xtracks-social .slider--wrap .social-list .sf-icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.xtracks-social .slider--wrap .social-list .social-img {
+    overflow: hidden;
+}
+
+.xtracks-social .slider--wrap .social-list .social-img img {
+    max-width: 100%;
+    transition: .3s;
+    overflow: hidden;
+    -webkit-transition: .3s;
+}
+
+
+.xtracks-social .slider--wrap .social-list.bg-white .social-text {
+    color: #3c3c3c;
+}
+
+.xtracks-social .slider--wrap .social-list .social-text {
+    color: #fff;
+    margin-top: 1rem;
+    min-height: 130px;
+    font-family: var(--font-robotocondensed-regular);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.xtracks-social .slider--wrap .social-list .social-text p {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.xtracks-social .slider--wrap .social-list .social-text span {
+    text-decoration: underline;
+}
+
+.xtracks-social .slick-dots {
+    margin-top: 10px;
+    bottom: -35px;
+    display: none !important;
+}
+
+.xtracks-social .slick-dots li button::before {
+    content: '';
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #fff;
+    opacity: 1;
+    width: 14px;
+    height: 14px;
+}
+
+.xtracks-social .slick-dots li button:hover::before {
+    background: #ed1c24;
+    border: 1px solid #ed1c24;
+}
+
+.xtracks-social .slick-dots li.slick-active button:before {
+    opacity: 1;
+    background: #ed1c24;
+    border: 1px solid #ed1c24;
+}
+
+.xtrack-scrollToTop {
+    position: fixed;
+    background: #ff0000;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 2rem;
+    line-height: 1.2;
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    right: 30px;
+    z-index: 15;
+    -webkit-box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%);
+    -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%);
+    cursor: pointer;
+    display: none;
+}
+
+.xtrack-scrollToTop:hover,
+.xtrack-scrollToTop:focus {
+    background: #3c3c3c;
+}
+
+.xtrack-scrollToTop.reveal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xtrack-scrollToTop::before {
+    content: " ";
+    border-left: 7px solid #ffffff;
+    border-bottom: 7px solid #ffffff;
+    width: 16px;
+    height: 16px;
+    transform: rotate(135deg);
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+}
+
+.xtracks-social .slick-arrow {
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    margin: 0;
+    height: 40px;
+    background: #ed1c24;
+    border-radius: 0;
+    padding: 6px;
+}
+
+.social-arrow-left {
+    top: 50%;
+    left: -1.5%;
+}
+.socialfeed .social-arrow-left{
+    left: -15px;
+}
+
+.social-arrow-right {
+    right: -1.5%;
+    top: 50%;
+}
+
+.socialfeed .social-arrow-right{
+    right: -15px;
+}
+
+
+@media (max-width:1499px) {
+    .xtracks-social .lg-container {
+        max-width: 1260px
+    }
+
+    .xtracks-social .slider--wrap .social-list .social-text {
+        min-height: 155px;
+    }
+}
+
+@media(max-width:1199.98px) {
+    .xtracks-social .lg-container {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+}
+
+@media(max-width:999.98px) {
+    .xtracks-social .lg-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .xtracks-social .social-heading {
+        margin-right: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .xtracks-social .social-heading h3 {
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+    }
+
+    .xtracks-social .social-heading br {
+        display: none;
+    }
+
+    .xtracks-social .slider--wrap .social-list .social-text {
+        min-height: 177px;
+    }
+}
+
+
+/* xtrack banner css code*/
+.hero-carousel #scooterBanner {
+    margin-top: 0;
+}
+
+.hero-carousel #scooterBanner .hero-xtrack-slider-indicators {
+    padding-left: 0px;
+    z-index: 2;
+    margin: 10px 0 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    bottom: 35px;
+}
+
+.hero-carousel #scooterBanner .hero-xtrack-slider-indicators li {
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    background: transparent;
+    border: 1px solid #fff;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+    transform: none;
+}
+
+.hero-carousel #scooterBanner .hero-xtrack-slider-indicators>li:hover {
+    background: #f00;
+    border-color: #f00;
+}
+
+.hero-carousel #scooterBanner .hero-xtrack-slider-indicators>li.active {
+    background: #f00;
+    border-color: #f00;
+}
+
+#xtrack-carrousel-img {
+    max-width: 600px;
+    position: absolute;
+    top: 0;
+    padding: 320px 0 0 75px;
+}
+
+.hero-carousel #scooterBanner .button-aligner {
+    padding: 300px 0 0 75px;
+    top: 0;
+}
+
+@media screen and (max-width: 575px) {
+    #xtrack-carrousel-img {
+        max-width: 280px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #xtrack-carrousel-img {
+        width: 100%;
+        max-width: 80% !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-carousel #scooterBanner .button-aligner {
+        top: 0;
+        padding: 45% 0 0 0 !important;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #xtrack-carrousel-img {
+        top: 0;
+        padding: 225px 0 0 75px;
+    }
+
+    .hero-carousel #scooterBanner .button-aligner {
+        top: 0;
+        padding: 50% 0 0 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    #xtrack-carrousel-img {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #xtrack-carrousel-img {
+        max-width: 40%;
+    }
+
+    .hero-carousel #scooterBanner .button-aligner {
+        padding: 280px 0 0 75px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .hero-carousel #scooterBanner .button-aligner {
+        padding: 260px 0 0 75px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .hero-carousel #scooterBanner .button-aligner {
+        top: 0;
+        padding: 260px 0 0 75px;
+    }
+}

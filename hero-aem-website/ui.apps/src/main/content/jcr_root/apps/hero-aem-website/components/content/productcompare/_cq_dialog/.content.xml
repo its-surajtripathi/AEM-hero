@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product Compare"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <variation
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        class="cq-dialog-dropdown-showhide"
+                        cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                        fieldLabel="Select Variation"
+                        name="./variation"
+                        required="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <normal
+                                jcr:primaryType="nt:unstructured"
+                                text="Normal page"
+                                value="normal"/>
+                            <premium
+                                jcr:primaryType="nt:unstructured"
+                                text="Premium page"
+                                value="premium"/>
+                        </items>
+                    </variation>
+                    <themeVariation
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="show-hide-textfield"
+                        showhidetargetvalue="normal">
+                        <items jcr:primaryType="nt:unstructured">
+                            <theme
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="select theme based on the type of page"
+                                fieldLabel="Select Theme"
+                                name="./theme">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <city
+                                        jcr:primaryType="nt:unstructured"
+                                        text="City"
+                                        value=""/>
+                                    <cityplus
+                                        jcr:primaryType="nt:unstructured"
+                                        text="City Plus"
+                                        value="dark-theme"/>
+                                    <scooter
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Scooter"
+                                        value="compare-scooter-section"/>
+                                </items>
+                            </theme>
+                        </items>
+                    </themeVariation>
+                    <bgImage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                            fieldDescription="Enter Image path for background"
+                            fieldLabel="Select Background Image"
+                            name="./bgImage"
+                            rootPath="/content/dam/hero-aem-website"/>
+                    <showfirstinmobile
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            checked="{Boolean}false"
+                            fieldDescription="Enable the checkbox to unmute the Video"
+                            name="./textColor"
+                            text="Check to make the Text Color white"
+                            uncheckedValue="false"
+                            value="true"/>
+                    <productNameOne
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Enter Product Name"
+                        fieldLabel="Variant One Product Name"
+                        name="./productName"
+                        required="{Boolean}true"/>
+                    <productNameTwo
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Enter Product Name"
+                        fieldLabel="Variant Two Product Name"
+                        name="./productNameTwo"
+                        required="{Boolean}true"/>
+                    <imageone
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Enter variant one Image path"
+                        fieldLabel=" Image one"
+                        name="./image"
+                        rootPath="/content/dam/hero-aem-website"/>
+                    <imageAlt
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Image Alt Text"
+                        name="./imageOneAlt"/>
+                    <imagetwo
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Enter variant two Image path"
+                        fieldLabel=" Image two"
+                        name="./imageTwo"
+                        rootPath="/content/dam/hero-aem-website"/>
+                    <imageTwoAlt
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Image Alt Text"
+                        name="./imageTwoAlt"/>
+                    <ctaLabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="Enter CTA Label"
+                        fieldLabel="CTA Label"
+                        name="./ctaLabel"/>
+                    <ctaLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Enter CTA Link"
+                        fieldLabel="CTA Link"
+                        name="./ctaLink"/>
+                    <premium
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="show-hide-textfield"
+                        showhidetargetvalue="premium">
+                        <items jcr:primaryType="nt:unstructured">
+                            <details
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel=" Premium page Specification Details">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./premiumSpecificationDetailsTwo">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <iconone
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            emptyText="Enter variant one icon path "
+                                            name="./iconOne"
+                                            rootPath="/content/dam"/>
+                                        <icontwo
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            emptyText="Enter variant two icon path "
+                                            name="./iconTwo"
+                                            rootPath="/content/dam"/>
+                                        <type
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Enter  Specification type"
+                                            name="./specificationType"/>
+                                    </items>
+                                </field>
+                            </details>
+                        </items>
+                    </premium>
+                    <normal
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="show-hide-textfield"
+                        showhidetargetvalue="normal">
+                        <items jcr:primaryType="nt:unstructured">
+                            <imageone
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldDescription="Enter variant one mobile mode Image path"
+                                fieldLabel=" Image One for Mobile Mode"
+                                name="./imageOneMob"
+                                rootPath="/content/dam/hero-aem-website"/>
+                            <imagetwo
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldDescription="Enter variant two mobile mode Image path"
+                                fieldLabel=" Image Two for Mobile mode"
+                                name="./imageTwoMob"
+                                rootPath="/content/dam/hero-aem-website"/>
+                            <headline
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Enter Headline"
+                                fieldLabel="Headline"
+                                name="./headline"/>
+                            <details
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel=" Normal page Specification Details">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./specificationDetails">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <type
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Enter  Specification type"
+                                            name="./type"/>
+                                        <valueone
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Enter Specification value for variant one"
+                                            name="./valueOne"/>
+                                        <valuetwo
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Enter Specification value for variant two"
+                                            name="./valueTwo"/>
+                                    </items>
+                                </field>
+                            </details>
+                        </items>
+                    </normal>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

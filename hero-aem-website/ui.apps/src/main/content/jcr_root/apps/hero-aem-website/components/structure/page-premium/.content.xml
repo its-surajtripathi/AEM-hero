@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Component"
+    jcr:title="Hero Premium Page"
+    jcr:description="Hero Premium Page for ACAA and others. Not to be used for RAAA(Harley x440)"
+    sling:resourceSuperType="hero-aem-website/components/structure/page"
+    componentGroup=".hidden"/>

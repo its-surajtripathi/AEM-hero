@@ -1,0 +1,335 @@
+.hero-exchange .hero-exchange-wrapper {
+  background: var(--bg-color-light-skin);
+  max-height: 245px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content {
+  display: flex;
+  align-items: end;
+
+  flex: 1;
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-img {
+  display: inline-block;
+  max-width:320px;
+
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-img img{
+    max-height: 235px;
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content {
+  text-align: left;
+  padding: 32px 95px 32px 50px;
+  flex: 1;
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content h4 {
+  font-size: var(--font-size32);
+  font-weight: var(--font-weight-900);
+  line-height: var(--line-height-38);
+  font-family: var(--font-tstar-regular);
+  margin-bottom: 8px;
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content h5 {
+  font-size: var(--font-size28);
+  line-height: var(--line-height-33);
+  color: var(--text-color-black);
+  font-family: var(--font-tstar-regular);
+  margin-bottom: 27px;
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content p {
+  font-size: var(--font-size18);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-22);
+  font-family: var(--font-tstar-regular);
+  margin-bottom: 27px;
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .btn {
+  margin-right: 40px;
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .btn:last-child {
+  margin-right: 0 !important;
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .emi-starting-info {
+  font-family: var(--font-tstar-regular);
+  font-size: var(--font-size16);
+  line-height: var(--line-height-19);
+  color: var(--text-color-black);
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .emi-starting-info span {
+  margin: 0 5px;
+  font-family: var(--font-tstar-regular);
+  font-size: var(--font-size16);
+  line-height: var(--line-height-19);
+  color: var(--text-color-red);
+  border-bottom: 1px solid var(--text-color-red);
+}
+.hero-exchange .hero-exchange-wrapper .bookinghrs {
+  background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+  border-radius: 32px 0px 0px 32px;
+  position: absolute;
+  right: 0px;
+  top: -23px;
+  padding: 5px 0px 5px 12px;
+  z-index: 1;
+}
+.hero-exchange .hero-exchange-wrapper .bookinghrs .bookinghrs-info {
+  padding: 0px 50px 0px 13px;
+  display: flex;
+}
+.hero-exchange .hero-exchange-wrapper .bookinghrs .bookinghrs-info .bookinghrs-p {
+  font-family: "tstar-regular";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.hero-exchange.restart-india .hero-exchange-wrapper .hero-exchange-content {
+  padding-left: 0;
+}
+.hero-exchange.restart-india .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content {
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.hero-exchange.blue-bg .hero-exchange-wrapper {
+  background-color: #B2E2FF;
+}
+.hero-exchange.xoom-blue .hero-exchange-wrapper {
+  background-color: #2776BC;
+}
+.hero-exchange.grey-bg .hero-exchange-wrapper {
+  background-color: #D0D0D1;
+}
+.hero-exchange.dark-blue-bg .hero-exchange-wrapper {
+  background-color: #76C9FF;
+}
+.hero-exchange.yellow-bg .hero-exchange-wrapper {
+  background-color: var(--bg-color-yellow);
+}
+.hero-exchange.red-bg .hero-exchange-wrapper {
+  background-color: #ff5f66;
+  color: #FFFFFF;
+}
+.hero-exchange.red-bg .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content h5 {
+  color: #FFFFFF;
+}
+.hero-exchange.red-bg .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .emi-starting-info {
+  color: #FFFFFF;
+}
+.hero-exchange.red-bg .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .emi-starting-info span {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.hero-exchange.blue-gradient-bg .hero-exchange-wrapper {
+  background: linear-gradient(267.74deg, #4b65c4 1.71%, #f35e62 99.51%);
+  color: #FFFFFF;
+}
+.hero-exchange.blue-gradient-bg .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content h5 {
+  color: #FFFFFF;
+}
+.hero-exchange.blue-gradient-bg .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .emi-starting-info {
+  color: #FFFFFF;
+}
+.hero-exchange.blue-gradient-bg .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .emi-starting-info span {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.hero-exchange.red-gradient-bg .hero-exchange-wrapper {
+  background: linear-gradient(267.74deg, #7a1729 1.71%, #fe4a4f 99.51%);
+  color: #FFFFFF;
+}
+.hero-exchange.red-gradient-bg .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content h5 {
+  color: #FFFFFF;
+}
+.hero-exchange.red-gradient-bg .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .emi-starting-info {
+  color: #FFFFFF;
+}
+.hero-exchange.red-gradient-bg .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .emi-starting-info span {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.hero-exchange.red-theme .hero-exchange-wrapper {
+  background-color: var(--bg-color-danger);
+}
+.hero-exchange.red-theme .hero-exchange-wrapper .hero-exchange-content {
+  padding-left: 0;
+  color: #ffffff;
+}
+.hero-exchange.red-theme .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-head-p {
+  color: #ffffff;
+}
+.hero-exchange.red-theme .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .emi-starting-info {
+  color: #ffffff;
+}
+.hero-exchange.red-theme .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .emi-starting-info span {
+  color: #ffffff;
+  border-color: #ffffff;
+  margin: 0 12px;
+}
+.hero-exchange.red-theme .hero-exchange-wrapper.restart-india .hero-exchange-wrapper .hero-exchange-content .common-cta .common-cta-load-p {
+  color: #ffffff;
+  padding-left: 20px;
+}
+.hero-exchange.red-theme .hero-exchange-wrapper.restart-india .hero-exchange-wrapper .hero-exchange-content .common-cta .common-cta-load-p .common-cta-load-span {
+  color: #ffffff;
+}
+.hero-exchange.red-theme .hero-exchange-wrapper .bookinghrs {
+  background: #ffedef;
+}
+.hero-exchange.red-theme .hero-exchange-wrapper .bookinghrs .bookinghrs-info .bookinghrs-p {
+  color: var(--text-color-red);
+}
+.bookinghrs.black-theme {
+ background: linear-gradient(160.69deg, #201F1F 22.35%, #454141 68.47%, #000000 114.59%) !important;
+}
+.black-theme .bookinghrs-info .bookinghrs-p {
+ color: #fff !important;
+}
+/* LG Devices Start  */
+
+@media (max-width: 1199px) and (min-width: 992px) {
+.hero-exchange .hero-exchange-wrapper{
+    max-height:none;
+}
+}
+
+/* MD Devices Start  */
+@media (max-width: 991.2px) and (min-width: 768px) {
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content {
+    padding-left: 0px;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-img {
+    display: none;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content {
+    text-align: center;
+    padding: 32px 16px 32px 16px !important;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content h4 {
+    font-size: var(--font-size32);
+    font-weight: var(--font-weight-900);
+    line-height: var(--line-height-38);
+    font-family: var(--font-tstar-regular);
+    margin-bottom: 8px;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content p {
+    font-size: var(--font-size18);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-22);
+    font-family: var(--font-tstar-regular);
+    margin-bottom: 27px;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main {
+    justify-content: center;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .btn:last-child {
+    margin-right: 0;
+  }
+}
+/* SM & XS Devices Start  */
+@media (max-width: 767px) and (min-width: 320px) {
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content {
+    padding-left: 0px;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-img {
+    display: none;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content {
+    text-align: center;
+    padding: 30px 15px 30px 15px;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content h4 {
+    font-size: var(--font-size24);
+    font-weight: var(--font-weight-900);
+    line-height: var(--line-height-28);
+    font-family: var(--font-tstar-regular);
+    margin-bottom: 10px;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content h5 {
+    font-size: var(--font-size16);
+    margin-bottom: 15px;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content p {
+    font-size: var(--font-size16);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-19);
+    font-family: var(--font-tstar-regular);
+    margin-bottom: 20px;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main {
+    justify-content: center;
+  }
+  .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .btn {
+    margin-right: 15px;
+  }
+  .hero-exchange .hero-exchange-wrapper .bookinghrs {
+    background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+    border-radius: 32px 0px 0px 32px;
+    position: absolute;
+    right: 0px;
+    top: -18px;
+    padding: 5px 0px 5px 12px;
+  }
+  .hero-exchange .hero-exchange-wrapper .bookinghrs .bookinghrs-info {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 13px;
+  }
+  .hero-exchange .hero-exchange-wrapper .bookinghrs .bookinghrs-info img {
+    width: 24px;
+    height: 24px;
+  }
+  .hero-exchange .hero-exchange-wrapper .bookinghrs .bookinghrs-info .bookinghrs-p {
+    font-family: "tstar-regular";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 0px 20px 0px 5px;
+  }
+  .hero-exchange.restart-india .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content {
+    padding-top: 10px;
+  }
+  .hero-exchange.restart-india .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main {
+    flex-direction: column;
+  }
+  .hero-exchange.restart-india .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main .btn {
+    margin: 0 0 15px 0;
+  }
+
+  .ride-safe-ad-banner-img{
+    padding: 30px 21px 28px 16px !important;
+  }
+
+  .services-adbanner .ride-safe-ad-banner-img{
+    padding: 0 21px 28px 16px !important;
+  }
+
+  .services-adbanner .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content {
+    text-align: center;
+    padding: 16px 15px 16px 0;
+  }
+
+  .services-adbanner .service-adban-heading {
+    font-size: 24px !important;
+    line-height: 29px !important;
+    padding-bottom: 8px;
+  }
+
+  .services-adbanner .service-adban-subheading {
+    font-size: 12px !important;
+    line-height: 14px !important;
+  }
+}

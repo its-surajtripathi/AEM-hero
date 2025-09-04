@@ -1,0 +1,143 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<div class="enrollment-form-wrapper" data-formType="${properties.planVariation}">
+
+    <div class="row align-center">
+
+        <div class="col-lg-11 col-11 enrollmentform-main">
+            <div class="banner-heading">
+
+            </div>
+            <div class="enrollment-step prequiste-form-wrapper" data-sly-test="${properties.planVariation == 'xclan'}">
+                <div class="row pre-requistes-details">
+                    <div class="col-md-3 col-12">
+                        <p>${properties.heading}</p>
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <sly data-sly-resource="${'prereqdetails' @ resourceType='hero-aem-website/components/container' }">
+                        </sly>
+                    </div>
+                </div>
+
+                <div class="submit-button-wrapper">
+                	<div class="alert-danger member-api-error hidden" > ${properties.apiErrorMsg}</div>
+                    <a class="img-btn-link" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.cancelLink}" href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}">
+                        <button class="btn btn-danger">${properties.cancelLabel}</button>
+                    </a>
+                    <button class="btn proceed pre-requiste-form btn-red-gradient">${properties.proceedLabel}</button>
+                </div>
+            </div>
+            <!-- d-none -->
+            <div class="enrollment-step profile-form-wrapper ${(properties.planVariation != 'xclan') ? '' : ((wcmmode.edit) ? '' : 'd-none')}" >
+                <div class="select-member">
+                	<div class="alert-danger enrollment-error hidden" >${properties.enrollError}<span class="enrollment-type"></span></div>
+                    <sly data-sly-resource="${'membertype' @ resourceType='hero-aem-website/components/container' }" />
+                </div>
+                <div class="row personal-details">
+                    <div class="col-md-3 col-12">
+                        <p>${properties.personalDetails}</p>
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <sly data-sly-resource="${'personaldetails' @ resourceType='hero-aem-website/components/container' }">
+                        </sly>
+                    </div>
+                </div>
+                <div class="row personal-address-details" data-sly-test="${properties.planVariation != 'good-life-199'}">
+                    <div class="col-md-3 col-12">
+                        <p>${properties.editAddress}</p>
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <sly data-sly-resource="${'editaddress' @ resourceType='hero-aem-website/components/container' }">
+                        </sly>
+                    </div>
+                </div>
+                <div class="submit-button-wrapper">
+                <sly data-sly-test="${properties.planVariation == 'good-life-199'}">
+                <div class="alert-danger no-response-error hidden" >${properties.apiErrorMsg}</div>
+                	<div class="alert-danger api-error hidden"> </div>
+                    <input type="hidden" class="success-redirect" value="${properties.sucRedirectPath @ extension='html'}" />
+                    <input type="hidden" class="failure-redirect" value="${properties.failedRedirectPath @ extension='html'}" />
+                    <input type="hidden" class="payment-amount" value="${properties.amount}" />
+                    <input type="hidden" class="request-path" value="${currentNode.path}" />
+                   </sly>
+                                  	<div class="alert-danger member-api-error hidden" data-sly-test="${properties.planVariation == 'good-life-399'}"> ${properties.apiErrorMsg}</div>
+                   
+                    <button class="btn btn-danger cancel" data-sly-test="${properties.planVariation != 'good-life-199'}">${properties.backLabel}</button>
+                   
+                    <button class="btn proceed nominee-proceed btn-red-gradient">${properties.proceedLabel}</button>
+                </div>
+            </div>
+            <!-- d-none -->
+            <div class="enrollment-step insurance-form-wrapper ${wcmmode.edit ? '' : 'd-none'}" data-sly-test="${properties.planVariation != 'good-life-199'}">
+                <div class="row insurance-details">
+                    <div class="col-md-3 col-12">
+                        <p>${properties.nomineeDetailsLabel}</p>
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <sly data-sly-resource="${'nomineedetails' @ resourceType='hero-aem-website/components/container' }">
+                        </sly>
+                    </div>
+                </div>
+                <div class="row insured-address-details">
+                    <div class="col-md-3 col-12">
+                        <p>${properties.nomineeAddressLabel}</p>
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <sly data-sly-resource="${'nomineeaddress' @ resourceType='hero-aem-website/components/container' }">
+                        </sly>
+                    </div>
+                </div>
+                <!-- T&C check-box -->
+                <div class="TC-Check-box">
+                    <fieldset class="form-group checkbox ">
+                        <legend> </legend>
+                        <div>
+                            <div class="checkbox-item">
+                                <input class="icon-checkbox-Same as user" data-required-msg="${properties.acknowledgeErrorMsg}" type="checkbox" name="acknowledgement" value="true" required="true">
+                                <span class="cmp-form-options__field-description">
+                                    <p>
+                                        I, <span class="owner-name"></span></p>
+                                    <div class="formfield">
+                                        <div class="form-group drop-down ">
+                                            <select name="DeclarationRelation" id="form-options-" class="form-control" placeholder="Select Relation Type" required="true" data-cmp-required="please select" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multitext'}" data-sly-list="${listUse}" onchange="changeMe(this)">
+                                                <option value="${item.properties.value}">${item.properties.key}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="formfield">
+
+                                        <div class="form-group ">
+                                            <input type="text" name="DeclarationRelativeName" required="true" autocomplete="off" data-required-msg="Please Enter Relative Name" placeholder="Relative Name" data-constraint-msg="please enter Relative name">
+                                        </div>
+                                    </div>
+                                    ${properties.acknowledgeText @ context='html'}
+                                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                </div>
+
+                <div class="acknowledge">
+                    <sly data-sly-resource="${'acknowledge' @ resourceType='hero-aem-website/components/container' }">
+                    </sly>
+                </div>
+
+                <div class="enroll-divider"></div>
+
+                <div class="submit-button-wrapper">
+                	<div class="alert-danger no-response-error hidden" >${properties.apiErrorMsg}</div>
+                	<div class="alert-danger api-error hidden" > </div>
+                    <button class="btn btn-danger cancel">${properties.backLabel}</button>
+                    <input type="hidden" class="success-redirect" value="${properties.sucRedirectPath @ extension='html'}" />
+                    <input type="hidden" class="failure-redirect" value="${properties.failedRedirectPath @ extension='html'}" />
+                    <input type="hidden" class="payment-amount" value="${properties.amount}" />
+					<input type="hidden" class="request-path" value="${currentNode.path}" />
+                    <button class="btn payment btn-red-gradient">${properties.proceedPaymentLabel}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

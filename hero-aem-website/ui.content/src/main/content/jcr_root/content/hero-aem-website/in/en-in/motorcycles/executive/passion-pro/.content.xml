@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-13T11:30:55.037Z"
+        cq:lastModifiedBy="gausiya.latif.momin@accenture.com"
+        cq:lastReplicated="{Date}2022-09-13T11:31:25.336Z"
+        cq:lastReplicated_publish="{Date}2022-09-13T11:31:25.336Z"
+        cq:lastReplicatedBy="gausiya.latif.momin@accenture.com"
+        cq:lastReplicatedBy_publish="gausiya.latif.momin@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/city-plus"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Passion pro"
+        jcr:uuid="53cec269-286c-40c2-80d4-c46141ee027e"
+        sling:resourceType="hero-aem-website/components/structure/productpage"
+        pagerank="28"
+        pageTitle="Passion pro"
+        productmodel="/content/hmc/prices/in/passion_pro"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                jcr:lastModified="{Date}2022-08-21T10:48:38.534Z"
+                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/header/city-plus-header"/>
+            <container
+                jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                layout="responsiveGrid">
+                <container
+                    cq:styleIds="[1660795084168]"
+                    jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid">
+                    <carousel_copy
+                        jcr:created="{Date}2022-08-18T13:32:17.401Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T16:06:43.456Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/carousel"
+                        carouselindicatorstyling="carousel-indicators"
+                        textIsRich="[true,true]"
+                        variant="home">
+                        <image.sftmp/>
+                        <herodetailswithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="Request Call Back"
+                                btnlabel2="Book Now"
+                                buttonalign="slide-1-content-left"
+                                fontcolor="#111111"
+                                headline="&lt;h1>Alag Style, Alag Andaaz&lt;/h1>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                                imageAlt="banner"
+                                imageRef="/content/dam/hero-aem-website/in/banner/passionpro/banners-02.jpg"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/passion-pro-bs6.html"
+                                styling="text-left"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="Request Call Back"
+                                btnlabel2="Book Now"
+                                buttonalign="slide-1-content-left"
+                                fontcolor="#111111"
+                                headline="&lt;h1>Alag Style, Alag Andaaz&lt;/h1>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                                imageAlt="banner"
+                                imageRef="/content/dam/hero-aem-website/in/banner/passionpro/banners-04.jpg"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/passion-pro-bs6.html"
+                                styling="text-left"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"/>
+                        </herodetailswithmap>
+                    </carousel_copy>
+                </container>
+                <container_copy
+                    jcr:lastModified="{Date}2022-08-18T13:32:00.216Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="OVERVIEW"
+                    layout="responsiveGrid">
+                    <color_switch
+                        jcr:created="{Date}2022-08-18T17:46:15.568Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T11:30:54.999Z"
+                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/color-switch"
+                        background="/content/dam/hero-aem-website/in/products/city-plus/color-switch/rotate-section-bg.png"
+                        btnlabel1="Explore"
+                        btnlabel2="Book Now"
+                        headline="Colours &amp; 360"
+                        imgbtn1="/content/dam/hero-aem-website/brand/design/icons/360-view-icon.svg"
+                        leftarrowpath="/content/dam/hero-aem-website/in/products/city-plus/glamour/color-switch/rotate-icon-left.png"
+                        leftheading="COLORS"
+                        linkTo1="https://virtualshowroom.heromotocorp.com/"
+                        linkTo2="https://eshop.heromotocorp.com/passion-pro-bs6.html"
+                        rightarrowpath="/content/dam/hero-aem-website/in/products/city-plus/glamour/color-switch/rotate-icon-right.png"
+                        styling1="btn-icon btn-white"
+                        styling2="btn-red-gradient"
+                        variationtype="city-plus-explore-360-main">
+                        <imagerotation
+                            jcr:lastModified="{Date}2022-08-30T07:48:08.184Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/imagerotation"/>
+                        <colors jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/Techno Blue.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/technoblue"
+                                colortitle="Techno Blue"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/100 million Limited Edition.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/limited-edition"
+                                colortitle="100 Million Limited Edition"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/Glaze Black.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/black"
+                                colortitle="Glaze Black"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/Sports Red.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/sports-red"
+                                colortitle="Sports Red"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/Heavy Grey Metallic.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/grey-metallic"
+                                colortitle="Heavy grey metallic"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/Heavy Grey Metallic-1.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/color-switch/yellow"
+                                colortitle="Moon yellow"/>
+                        </colors>
+                        <multitext jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/1white.png"
+                                title="TWO-WHEELER MANUFACTURER"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/37white.png"
+                                title="YEARS OF EXCELLENCE"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/100Mnwhite.png"
+                                title="TWO-WHEELERS SOLD"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/9000white.png"
+                                title="CUSTOMER TOUCH POINTS  "/>
+                        </multitext>
+                    </color_switch>
+                </container_copy>
+                <container_814465498
+                    cq:styleIds="[1660795969470]"
+                    jcr:created="{Date}2022-08-30T10:56:53.008Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T10:56:53.008Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <booktestride_copy_co
+                        jcr:created="{Date}2022-08-08T07:10:29.353Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:36:37.357Z"
+                        jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/booktestride"
+                        acknowledgemsg="&lt;p>Thank You!&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgfail="&lt;h3>Sorry&lt;/h3>&#xd;&#xa;"
+                        acknowledgemsgfailsubtitle="&lt;p>An error Occured. Please try after sometime&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgsubtitle="&lt;p>We will connect with you soon.&lt;/p>&#xd;&#xa;"
+                        buttonlabel="Submit"
+                        citylabel="City"
+                        cityvalmsg="select a city"
+                        defaultproduct="/content/hero-aem-website/in/en-in/motorcycles/executive/passion-pro"
+                        enterOtplabel="Enter OTP"
+                        ispopup="false"
+                        loadimgpath="/content/dam/hero-aem-website/brand/design/icons/form-submit-loader.svg"
+                        mobilelabel="Mobile No."
+                        mobilevalformmsg="Enter correct mobile number"
+                        mobilevalmsg="Please Enter a valid Mobile Number"
+                        name="Name"
+                        nameformvalmsg="Invalid Name"
+                        namereqvalmsg="The Name is required"
+                        otpresultmsg="Incorrect OTP"
+                        otpvalmsg="OTP not matching"
+                        resendOtplabel="Resend OTP"
+                        sendOtplabel="Send OTP"
+                        statelabel="State"
+                        statevalmsg="select a state"
+                        subtitle="&lt;p>Take A Hero Ride And Experience The Thrill.&lt;/p>&#xd;&#xa;"
+                        textIsRich="[true,true,true,true,true,true,true]"
+                        title="&lt;h3>BOOK A TEST RIDE NOW&lt;/h3>&#xd;&#xa;"
+                        variationtype="productpage"
+                        vehiclelabel="Vehicle"
+                        vehiclevalmsg="Select a vehicle"/>
+                </container_814465498>
+                <container_782757487
+                    jcr:created="{Date}2022-08-29T18:27:52.478Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:08.564Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FEATURES">
+                    <hotspot
+                        jcr:created="{Date}2022-08-29T18:28:45.986Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-09T06:04:48.619Z"
+                        jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/hotspot"
+                        bgimage="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/hotspot/hotspot-bg.png"
+                        featureheading="Features"
+                        heading="Passion Pro Features"
+                        icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagehotspot/features-view-icon.svg"
+                        productimage="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/hotspot/passion-pro-specification.png"
+                        staricon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagehotspot/star-icon-features.svg"
+                        textIsRich="[true,true,true,true,true,true,true]"
+                        theme="features-section-main dark-theme">
+                        <hotspotdetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/hotspot/DigitalSpeedometer.png"
+                                featuretext="&lt;h4>&lt;span class=&quot;text-uppercase&quot;>Digi Analogue Console&lt;/span>&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="21%"
+                                style2="67%"
+                                topbottom="top"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/hotspot/TailLight.png"
+                                featuretext="&lt;h4>&lt;span class=&quot;text-uppercase&quot;>Signature Taillamp&lt;/span>&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="32%"
+                                style2="7%"
+                                topbottom="top"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/hotspot/FuelTank.png"
+                                featuretext="&lt;h4>&lt;span class=&quot;text-uppercase&quot;>Muscular tank with triple tone graphics &lt;/span>&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="38%"
+                                style2="54%"
+                                topbottom="top"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/hotspot/FrontSuspension.png"
+                                featuretext="&lt;h4>&lt;b>&lt;span class=&quot;text-uppercase&quot;>Longer Front Suspension&lt;/span>&lt;/b>&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="59%"
+                                style2="74%"
+                                topbottom="top"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/hotspot/Engine.png"
+                                featuretext="&lt;h4> New &lt;span class=&quot;text-uppercase&quot;>113CC engine&lt;/span> with higher torque on demand&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="69%"
+                                style2="50%"
+                                topbottom="top"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/hotspot/Headlight.png"
+                                featuretext="&lt;h4>&lt;span class=&quot;text-uppercase&quot;>Brighter Headlamp&lt;/span>&lt;/h4>&#xd;&#xa;"
+                                leftright="left"
+                                style1="32%"
+                                style2="75%"
+                                topbottom="top"/>
+                        </hotspotdetails>
+                    </hotspot>
+                </container_782757487>
+                <container_1779104515
+                    jcr:created="{Date}2022-08-30T14:22:44.051Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:22:44.051Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"/>
+                <container_2132676925
+                    cq:styleIds="[1660795290818]"
+                    jcr:created="{Date}2022-08-29T18:29:32.182Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-29T18:29:32.182Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <adbanner_copy_copy
+                        jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-05T16:51:18.250Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adbanner"
+                        background="blue-bg"
+                        bgStyle1="btn-white"
+                        bgStyle2="btn-red-gradient"
+                        button1label="BOOK NOW"
+                        fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/adbanner/exchange.png"
+                        headline="&lt;h4>Embrace your Passion&lt;/h4>&#xd;&#xa;&lt;p>Book a test ride at your doorstep&lt;/p>&#xd;&#xa;"
+                        imageAlt="hero ride image"
+                        imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-ride-img.svg"
+                        linkTo1="https://eshop.heromotocorp.com/passion-pro-bs6.html"
+                        textIsRich="true"
+                        type1="url1"
+                        type2="modal2"/>
+                </container_2132676925>
+                <container_1179138905
+                    cq:styleIds="[1660795123209]"
+                    jcr:created="{Date}2022-08-29T18:30:09.931Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:27.154Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="SPECIFICATION">
+                    <generictab
+                        jcr:created="{Date}2022-08-29T18:30:47.206Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-05T17:11:40.040Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/generictab"
+                        bgimage="/content/dam/hero-aem-website/in/products/city-plus/bg-images/specification-bg.png"
+                        specificationstext1="Passion Pro Specifications"
+                        textIsRich="true"
+                        variant="cityplusproduct">
+                        <tab-0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:01:02.696Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-05T17:09:39.869Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="engine"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/specifications/Engine.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Engine Type"
+                                        value=" Air Cooled 4 stroke"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Power"
+                                        value="6.73 kW @ 7500 r.p.m "/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Torque"
+                                        value="9.89 Nm @ 5000 rpm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Bore x Stroke "
+                                        value="50.0 x 57.8 mm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title=" Starting  System"
+                                        value="Electric/ Kick Start"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-0>
+                        <tab-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:12:51.774Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T10:24:03.063Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="diemension"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/specifications/Dimensions.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Length"
+                                        value="2036 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Width"
+                                        value="715mm (Drum), 739mm(Disc)"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Height"
+                                        value="1113mm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title=" Saddle Height "
+                                        value="799 mm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title=" Wheelbase"
+                                        value="1270 mm"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Ground Clearance "
+                                        value="180 mm"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel Tank Capacity"
+                                        value="10 Litres"/>
+                                    <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Kerb Weight"
+                                        value="Drum -117 Kg / Disc- 118 Kg"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-1>
+                        <tab-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification_886877011
+                                jcr:created="{Date}2022-08-30T08:03:31.272Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-05T17:12:51.925Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="tyre"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/specifications/Tyre-shot.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Tyre"
+                                        value="80/100-18 (Tubeless)"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Tyre"
+                                        value="80/100-18 (Tubeless)"/>
+                                </specifications>
+                            </imagespecification_886877011>
+                        </tab-2>
+                        <tab-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:07:09.821Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-05T17:22:32.548Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="suspension"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/specifications/Suspension.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Suspension"
+                                        value="Conventional Fork - Dia 30mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Suspension"
+                                        value="Twin shox"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-3>
+                        <tab-4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:08:37.556Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-05T17:23:38.407Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="brakes"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/specifications/Tyre-shot.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Brake Disc "
+                                        value="240 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Brake Drum "
+                                        value="130 mm"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Brake Drum "
+                                        value="130 mm"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-4>
+                        <tab-5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:10:40.859Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-05T17:27:16.138Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="fueltank"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/specifications/Tank-shot.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel Tank Capacity"
+                                        value="1100ml"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-5>
+                        <tab-6
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification_c
+                                jcr:created="{Date}2022-08-30T08:10:40.859Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-05T17:29:17.495Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="transmission"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/specifications/transmission.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Clutch"
+                                        value="Multi Plate"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Gear Box"
+                                        value=" Constant Mesh"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Frame"
+                                        value="Diamond"/>
+                                </specifications>
+                            </imagespecification_c>
+                        </tab-6>
+                        <cityplusshareicon
+                            jcr:lastModified="{Date}2022-09-10T06:23:26.358Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/shareicon"
+                            emailIcon="/content/dam/hero-aem-website/brand/design/icons/email-icon.svg"
+                            emailSub="Check this out..."
+                            icon="/content/dam/hero-aem-website/brand/design/icons/share-icon.svg"
+                            linkpath="/content/dam/hero-aem-website/in/documents/product-brochures/passion-pro-bs6.pdf"
+                            text="Hey, my rider buddy! Check out some exciting, and innovative features of Passion Pro which makes it stand out. Click here to explore more!!! "
+                            variation="motorcycle"
+                            wpIcon="/content/dam/hero-aem-website/brand/design/icons/whatsapp-icon.svg"
+                            wpLink="https://api.whatsapp.com"
+                            wpText="Hey, my rider buddy! Check out some exciting, and innovative features of Passion Pro which makes it stand out. Click here to explore more!!! "/>
+                        <cityplusdownloadbrochure
+                            jcr:lastModified="{Date}2022-09-05T17:03:35.489Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/downloadbrochure"
+                            icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/arrow-down.png"
+                            link="/content/dam/hero-aem-website/in/documents/product-brochures/passion-pro-bs6.pdf"
+                            text="Download Brochure"
+                            variation="link-btn download-btn"/>
+                        <tabitems jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                title="Engine"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                title="Dimensions"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                title="Tyres"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                title="Suspension"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                title="Brakes"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                title="Fuel Tank"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                title="Chassis"/>
+                        </tabitems>
+                    </generictab>
+                </container_1179138905>
+                <container_883143836
+                    cq:styleIds="[1660795283944]"
+                    jcr:created="{Date}2022-08-29T18:33:47.386Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:47.207Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="PRICE">
+                    <price_info_copy_copy
+                        jcr:created="{Date}2022-08-18T09:33:32.211Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T11:47:07.013Z"
+                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/price-info"
+                        bgImage="/content/dam/hero-aem-website/in/products/city-plus/bg-images/pricing-bg.png"
+                        bgStyle="btn-red-gradient"
+                        buttonlabel="Book Now"
+                        buttonlink="https://eshop.heromotocorp.com/passion-pro-bs6.html"
+                        buttonlinktype="url"
+                        citylabel="City"
+                        defaultcitylabel="Select City"
+                        defaultcitypath="/content/hmc/prices/in/passion_pro/mah/mumbai"
+                        defaultstatelabel="Select State"
+                        defaultstatepath="/content/hmc/prices/in/passion_pro/mah"
+                        desktopimage="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/compare/compare-left.png"
+                        disclaimer="&lt;p>*Please contact the dealer for exact on-road prices. Local levies, Octroi, Entry tax will be extra as applicable. Price ruling at the time of delivery would be applicable. Prices are subject to change without notice. HMCL reserves the right to modify the prices at its discretion at any point of time.&lt;/p>&#xd;&#xa;"
+                        heading="Hero Passion Pro Price"
+                        mobilemage="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/compare/compare-left.png"
+                        productPath="/content/hero-aem-website/in/en-in/motorcycles/executive/passion-pro"
+                        showroomlabel="Ex-Showroom Price"
+                        statelabel="State"
+                        textIsRich="true"
+                        variantlabel="Variant"
+                        variationtype="dark-theme"/>
+                </container_883143836>
+                <container_1947122026
+                    cq:styleIds="[1660796993324]"
+                    jcr:created="{Date}2022-08-30T10:38:55.093Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T10:38:55.093Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <adbanner_copy_copy_c
+                        jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-10T12:56:19.974Z"
+                        jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adbanner"
+                        background="yellow-bg"
+                        bgStyle1="btn-white"
+                        bgStyle2="btn-red-gradient"
+                        button1label="EXCHANGE NOW"
+                        fileReference="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/adbanner/exchange.png"
+                        headline="&lt;h4>Hero Bike Exchange Offers&lt;/h4>&#xd;&#xa;&lt;p>We also have amazing bike exchange offers ! Bring us your old bike and ride away on a next level.&lt;/p>&#xd;&#xa;"
+                        imageAlt="restart india image"
+                        imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-exchange-img.png"
+                        linkTo1="https://Wheelsoftrust.com"
+                        textIsRich="true"
+                        type1="url1"
+                        type2="modal2">
+                        <image/>
+                    </adbanner_copy_copy_c>
+                </container_1947122026>
+                <container_101072763
+                    cq:styleIds="[1660795954617]"
+                    jcr:created="{Date}2022-08-30T10:41:26.687Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:20:20.973Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="COMPARE">
+                    <productcompare_copy_
+                        jcr:created="{Date}2022-08-17T10:06:55.280Z"
+                        jcr:createdBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T14:58:30.079Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/productcompare"
+                        headline="Know your Passion"
+                        image="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/compare/compare left pro.png"
+                        imageOneMob="/content/dam/hero-aem-website/in/products/city-plus/glamour/product-compare/splender-4-mob.png"
+                        imageTwo="/content/dam/hero-aem-website/in/products/city-plus/passion-pro/compare/compare right pro.png"
+                        imageTwoMob="/content/dam/hero-aem-website/in/products/city-plus/glamour/product-compare/splender-5-mob.png"
+                        productName="PASSION PRO"
+                        productNameTwo="PASSION XTEC"
+                        theme="dark-theme"
+                        variation="normal">
+                        <specificationDetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                type="Displacement"
+                                valueOne="113 cc"
+                                valueTwo="113.2 cc"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                type="Max Power Kw"
+                                valueOne="6.73@7500 rpm"
+                                valueTwo="6.73@7500 rpm"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                type="Max Torque NM"
+                                valueOne="9.89@5000 rpm"
+                                valueTwo="9.79@5000 rpm"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                type="Starting System"
+                                valueOne="Electric Start/Kick Start"
+                                valueTwo="Self (with i3s) &amp; Kick"/>
+                        </specificationDetails>
+                    </productcompare_copy_>
+                </container_101072763>
+                <container_1062518803
+                    cq:styleIds="[1660795975221]"
+                    jcr:created="{Date}2022-08-30T10:57:44.838Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T10:57:44.838Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <experiencefragment_c
+                        jcr:created="{Date}2022-09-13T06:37:55.363Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:38:25.215Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/collage-section/master"/>
+                </container_1062518803>
+                <container_2075998844
+                    jcr:created="{Date}2022-08-30T10:58:31.293Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:21:18.190Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FIND-DEALER">
+                    <dealer_info_copy
+                        jcr:created="{Date}2022-08-18T13:54:15.970Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T11:47:39.045Z"
+                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/dealer-info"
+                        citylabel="City"
+                        dealerheading="Book appointment at your nearest experience center"
+                        defaultcity="/content/hmc/dealers/in/dlr/MAH/mumbai"
+                        statelabel="State"
+                        subtitle="Where do you live?"
+                        theme="city-plus-theme dark-theme"
+                        title="We are near you!"/>
+                </container_2075998844>
+                <experiencefragment_c
+                    jcr:created="{Date}2022-09-03T12:48:10.231Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-03T17:47:07.683Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/modals/request-callback-pop-up-product"/>
+            </container>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/footer/master"
+                id="footer"/>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-09-13T08:03:46.269Z"
+            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

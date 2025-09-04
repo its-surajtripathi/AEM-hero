@@ -1,0 +1,136 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<!--
+<div class="title">
+   <h1>Send Feedback</h1>
+</div>
+<div class="wrapper">
+   <form action="">
+      <h1 class="toptitle">Customer Feedback form</h1>
+      <hr class="hrclass">
+      <br/>
+      <span class="leftalign">Were you attended promptly when you came for the service?</span><br/><br>
+      <span class="chkbox">
+      <input class="checkbox" type="checkbox" name="myCheckbox" value="1" onclick="selectOnlyThis(this)" /><span class="select">Yes</span>
+      <input class="checkbox" type="checkbox" name="myCheckbox" value="2" onclick="selectOnlyThis(this)"/><span class="select">No</span>
+      </span></br><br/>
+      <span class="leftalign">Whether the complaints are resolved at the time of delivery?</span><br/>
+      <span class="chkbox">
+      <input class="checkbox" type="checkbox" name="myCheckbox" value="1" onclick="selectOnlyThis(this)" /><span class="select">Yes</span>
+      <input type="checkbox" name="myCheckbox" value="2" onclick="selectOnlyThis(this)"/><span class="select">No</span>
+      </span>
+      <br/><br/>
+      <hr class="hrclass">
+      <br/>
+      <div>
+         <h5 class="rangeHeading">
+         Kindly rate your experience (0 is the minumum and 10 is the highest)</p>
+      </div>
+      <br><br>
+      <div class="__range __range-step">
+         <p class="subtitle">Service Reception</p>
+         <input value="1" type="range" max="11" min="1" step="1" list="ticks1" />
+         <datalist id="ticks1">
+            <option value="1">0</option>
+            <option value="2">1</option>
+            <option value="3">2</option>
+            <option value="4">3</option>
+            <option value="5">4</option>
+            <option value="6">5</option>
+            <option value="7">6</option>
+            <option value="8">7</option>
+            <option value="9">8</option>
+            <option value="10">9</option>
+            <option value="11">10</option>
+         </datalist>
+      </div>
+      <div class="__range __range-step">
+         <p class="subtitle">Service Advisor</p>
+         <input value="1" type="range" max="11" min="1" step="1" list="ticks1" />
+         <datalist id="ticks1">
+            <option value="1">0</option>
+            <option value="2">1</option>
+            <option value="3">2</option>
+            <option value="4">3</option>
+            <option value="5">4</option>
+            <option value="6">5</option>
+            <option value="7">6</option>
+            <option value="8">7</option>
+            <option value="9">8</option>
+            <option value="10">9</option>
+            <option value="11">10</option>
+         </datalist>
+      </div>
+      <div class="__range __range-step">
+         <p class="subtitle">Billing</p>
+         <input value="1" type="range" max="11" min="1" step="1" list="ticks1" />
+         <datalist id="ticks1">
+            <option value="1">0</option>
+            <option value="2">1</option>
+            <option value="3">2</option>
+            <option value="4">3</option>
+            <option value="5">4</option>
+            <option value="6">5</option>
+            <option value="7">6</option>
+            <option value="8">7</option>
+            <option value="9">8</option>
+            <option value="10">9</option>
+            <option value="11">10</option>
+         </datalist>
+      </div>
+      <div class="__range __range-step">
+         <p class="subtitle">Delivery</p>
+         <input value="1" type="range" max="11" min="1" step="1" list="ticks1" />
+         <datalist id="ticks1">
+            <option value="1">0</option>
+            <option value="2">1</option>
+            <option value="3">2</option>
+            <option value="4">3</option>
+            <option value="5">4</option>
+            <option value="6">5</option>
+            <option value="7">6</option>
+            <option value="8">7</option>
+            <option value="9">8</option>
+            <option value="10">9</option>
+            <option value="11">10</option>
+         </datalist>
+         <hr class="hrclass">
+         <br><br>
+         <p>Other Suggestions</p>
+         <br/>
+         <textarea id="suggestion" name="suggestion" rows="4" cols="50"></textarea>
+         <br><br>
+         <hr class="hrclass"><br>
+         <div><button class="submitBtn">SUBMIT</button></div>
+      </div>
+
+-->
+
+
+<div class="submit-feedback">
+   <form class="feedback-form">
+      <sly data-sly-resource="${'container' @ resourceType='hero-aem-website/components/container' }">
+      </sly>
+
+      <div class="form-group textarea">
+         <label for="comment">${properties.feedbackLabel}</label>
+
+
+         <textarea class="form-control" maxlength="300" placeholder="${properties.feedbackPlaceholder}" id="comment"></textarea>
+
+
+
+         <div id="the-count">
+            <span id="current">0</span>
+            <span id="maximum">/ 300</span>
+         </div>
+      </div>
+
+
+      <div class="pt-4 m-4 pb-4 text-right"><button class="feedback-submitBtn">${properties.buttonLabel}</button></div>
+   </form>
+</div>
+
+

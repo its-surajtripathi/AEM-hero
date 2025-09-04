@@ -1,0 +1,23 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<sly data-sly-test="${properties.variation == 'myvehicle'}" data-sly-include="getVehicle_template.html"></sly>
+
+
+
+<div class="myVehicles-wrapper" data-sly-test="${properties.variation == 'myvehicle'}">
+    
+    <p data-sly-test="${wcmmode.edit || wcmmode.design}">
+        Add My vehicles section components
+    </p>
+    <sly data-sly-resource="${'myvehiclescontent' @ resourceType='hero-aem-website/components/container'}"/>
+	<input type="hidden" value="${properties.shortForm}" class="docs-short-names">
+	<input type="hidden" value="${properties.fullForm}" class="docs-full-names">
+	<input type="hidden" value="${properties.subscription}" class="goodlife-sub-type">
+	<input type="hidden" value="${properties.subscriptionImg}" class="goodlife-sub-img">
+	
+	
+</div>
+
+<sly data-sly-test="${properties.variation == 'good-life'}" data-sly-include="good-life-landing.html"></sly>

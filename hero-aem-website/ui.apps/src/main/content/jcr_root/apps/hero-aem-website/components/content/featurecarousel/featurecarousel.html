@@ -1,0 +1,66 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<!--  splendor feature slider -->
+<section data-sly-test="${properties.featurevariant != 'hovervideo'}" class="splendor-feature-section"
+  id="FEATURES"
+  style="background-image: url('${properties.carouselBackground ? properties.carouselBackground :'unset' @ context='styleString'}')">
+  <div class=" splendor-feature-section-content container ">
+    <div class=" splendor-feature-row row">
+      <div class=" splendor-feature-col col-12 p-0 m-0">
+        <div class="splendor-feature-wrapper text-center">
+          <h2 class="splendor-feature-h2 h2-heading-std text-to-uppercase">${properties.carouselHeading @
+            context='html'}</h3>
+            <div class="splender-feature-slider">
+              <sly
+                data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='carouseldetails'}"
+                data-sly-list="${listUse}">
+                <div class="splendor-image-slide text-center">
+                  <img loading="lazy" class="semicircle-bg-img"
+                    data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.carouselImage, rendition='feature-carousel', extension='png'}"
+                    src="${imagePath}" alt="${item.properties.carouselHeading}">
+                  <h3 class="splendor-feature-h3 text-center h4-bold-heading-std">${item.properties.carouselText @
+                    context='html'}</h3>
+                </div>
+              </sly>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-sly-test="${properties.featurevariant=='hovervideo'}" id="hovervideo-section">
+  <div class="hovervideo--container">
+    <h2>${properties.videofeatureHeading @ context='html'}</h2>
+    <div class="outer--wrap">
+      <div class="inner--wrap"
+        data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='hovervideodetails'}"
+        data-sly-list="${listUse}">
+        <div
+          class="feature--tile ${item.properties.alignthumbnail == 'top-left adj-width bottom-mob' ? 'half-width' : (item.properties.alignthumbnail == 'top-right adj-width-align-right' ? 'half-width order-change' : '')}">
+          <div class="tile--content">
+            <img class="${item.properties.alignthumbnail == 'top-left adj-width bottom-mob' ? 'left-auto' : (item.properties.alignthumbnail == 'top-right adj-width-align-right' ? 'right-auto' : '')}" src="${item.properties.featurethumbnailImg}" alt="">
+            <div
+              class="overlay--content position-absolute ${item.properties.alignthumbnail=='top-left' ? 'bg-lt-orange clip-path-2' : (item.properties.alignthumbnail=='bottom-left' ? 'bg-grey clip-path-1' : (item.properties.alignthumbnail=='top-left adj-width bottom-mob' ? 'bg-grey clip-path-3' : (item.properties.alignthumbnail=='top-right adj-width-align-right' ? 'bg-lt-orange clip-path-4' : '')))}">
+              <div class="overlay--wrap">
+                <h3 class="${item.properties.alignthumbnail}">
+                  ${item.properties.featurethumbnailText @ context='html'}
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="tile--onhover ${item.properties.alignhovertext}">
+            <img src="${item.properties.featurehovervideo}" alt="" loop="true">
+            <div class="text-desc">
+              <h4>
+                ${item.properties.featurehovertitle @ context='html'}
+              </h4>
+              <p>${item.properties.featurehovertext @ context='html'}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,583 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+<div class="d-none" id="utmsource" data-utmsource="${properties.utmsource}" data-sly-test="${properties.utmsource}"></div>
+<div data-sly-test="${!(properties.variationtype == 'campaignpage') && !(properties.variationtype == 'golfpage') && !(properties.variationtype == 'ndccampaign') && !(properties.variationtype == 'harleycampaign')}"
+   class="book-test-drive-wrapper position-relative">
+   <div class="book-test-drive-parent">
+      <form autocomplete="off" class="book-test-drive-form" id="book-test-drive-form2"
+         data-aa-formname="${properties.ispopup ? 'callback' : 'bookride'}" novalidate="novalidate">
+         <div class="container-fluid position-relative">
+            <div class="row">
+               <div class="col-12">
+                  <div class="book-test-drive-heading text-center mt-4">
+                     ${properties.title @ context = 'html'}
+                     ${properties.subtitle @ context = 'html'}
+                  </div>
+               </div>
+            </div>
+            <div class="row justify-content-center mt-md-5 mt-3 pb-md-3">
+               <div class="form-group cust-form-group">
+                  <input type="text" required class="form-control cust-form-control " placeholder="${properties.name}"
+                     data-validation-msg-req="${properties.namereqvalmsg}"
+                     data-validation-msg-format="${properties.nameformvalmsg}" name="fullname">
+               </div>
+               <div class="form-group cust-form-group">
+                  <input type="tel" class="form-control cust-form-control mobile-number" required
+                     placeholder="${properties.mobilelabel}" data-validation-msg-req="${properties.mobilevalmsg}"
+                     name="mobileno" data-validation-msg-format="${properties.mobilevalformmsg}"
+                     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                     maxlength="10">
+                  <a href="javascript:void(0)" aa-data-attr="track_cta"
+                     class="test-drive-otp-link send-otp-btn">${properties.sendOtplabel}</a>
+               </div>
+               <div class="form-group cust-form-group">
+                  <input type="tel" class="form-control cust-form-control otp-value" required=""
+                     placeholder="${properties.enterOtplabel}" data-validation-msg-req="${properties.otpvalmsg}"
+                     name="otp" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                     maxlength="6">
+                  <a href="javascript:void(0)" data-attempt="1" aa-data-attr="track_cta"
+                     class="test-drive-otp-link resend-otp-btn">${properties.resendOtplabel}</a>
+                  <label class="invalid-otp-message d-none">${properties.otpresultmsg}</label>
+               </div>
+               <div class="form-group cust-form-group" data-sly-test="${properties.emaillabel}">
+                  <input type="text" class="form-control campaign-input cust-form-control" id="email"
+                     data-validation-msg-req="${properties.emailvalmsg}" data-validation-msg-format="${properties.emailvalformmsg}"
+                     placeholder="${properties.emaillabel}" name="email">
+               </div>
+               <div class="form-group cust-form-group "
+                  data-sly-test="${properties.variationtype == 'homepage' || properties.variationtype == 'categorypage'}">
+                  <div class="dropdown cust-drop-down">
+                     <button id="vehicleDropdown" name="vehiclename"
+                        class="dropdown-select form-control cust-form-control font-size-18 line-height-24 font-montserrat-regular font-weight-500 text-color-white bg-color-danger text-left"
+                        type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        data-validation-msg-req="${properties.vehiclevalmsg}">
+                        ${properties.vehiclelabel}
+                        <span class="caret"></span>
+                     </button>
+                     <input type="hidden" required value="" data-validation-msg-req="${properties.vehiclevalmsg}"
+                        name="vehicleNameVal" />
+                     <ul class="dropdown-menu cust-dropdown-menu" aria-labelledby="vehicleDropdown" style="">
+                        <sly
+                           data-sly-use.languagePage="${'/apps/hero-aem-website/utils/pathhelper.js' @depth=properties.variationtype =='categorypage' ? currentPage.depth : 3}"
+                           data-sly-use.listUse="${'/apps/hero-aem-website/utils/searchutils.js' @ path=languagePage.path}"
+                           data-sly-list="${listUse}">
+                           <li class="font-montserrat-regular font-weight-500 "
+                              value="${item['jcr:content/pageTitle'] || item['jcr:content/jcr:title']}"
+                              data-product-path="${item.path}">
+                              <a href="javascript:void(0)">${item['jcr:content/navTitle'] ||
+                                 item['jcr:content/pageTitle'] || item['jcr:content/jcr:title']}</a>
+                           </li>
+                        </sly>
+                     </ul>
+                  </div>
+               </div>
+               <input data-sly-test="${!(properties.variationtype == 'homepage')}" type="hidden" name="vehicleName"
+                  value="${currentPage.title}" />
+               <input data-sly-test="${!(properties.variationtype == 'homepage')}" type="hidden" name="vehicleNameVal"
+                  value="${currentPage.pageTitle || currentPage.title}" />
+               <sly data-sly-include="statecitydropdown.html"
+                  data-sly-test="${properties.ispopup != 'true' && properties.variationtype == 'productpage'}" />
+            </div>
+            <div class="row justify-content-center text-center collapse ${properties.ispopup == 'true' ? 'show' : ''}"
+               id="${properties.ispopup == 'true' ? '' : 'bookTestRideCollapse'}" style="">
+               <sly data-sly-include="statecitydropdown.html"
+                  data-sly-test="${properties.ispopup == 'true' || properties.variationtype == 'homepage' || properties.variationtype == 'categorypage'}" />
+            </div>
+         </div>
+      </form>
+   </div>
+   <a href="javascript:void(0)" data-toggle="collapse" data-target="#bookTestRideCollapse"
+      name="Collapse Test Ride Form" class="text-center collapse-btn collapsed expand-form" aria-expanded="true"
+      data-sly-test="${properties.variationtype == 'homepage' || properties.variationtype == 'categorypage'}">
+      <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/collapse-btn-icon.svg"
+         class="img-fluid" alt="collapse">
+   </a>
+   <div class="book-test-drive-loading">
+      <img src="${properties.loadimgpath}" class="img-fluid" alt="Loading">
+   </div>
+   <div class="book-test-thankyou success">
+      <button type="button" class="close form-close">×</button>
+      <div class="book-test-thankyou-head">
+         ${properties.acknowledgemsg @ context = 'html'}
+      </div>
+      ${properties.acknowledgemsgsubtitle @ context = 'html'}
+   </div>
+   <div class="book-test-thankyou fail">
+      <button type="button" class="close form-close">×</button>
+      <div class="book-test-thankyou-head">
+         ${properties.acknowledgemsgfail @ context = 'html'}
+      </div>
+      ${properties.acknowledgemsgfailsubtitle @ context = 'html'}
+   </div>
+</div>
+
+<!-- campaign form starts -->
+
+<div class="book-test-ride-campaign" data-sly-test="${(properties.variationtype == 'campaignpage')}"
+   data-validationtype="otp">
+   ${properties.title @ context='html'}
+   <input type="hidden" class="form-control campaign-input cust-form-control" id="capaignpage" value="campaignpage">
+   <div class="successmsg d-none">${properties.acknowledgemsg @ context='html'}</div>
+   <div class="failmsg d-none">${properties.acknowledgemsgfail @ context='html'}</div>
+   <form class="campaign-form " id="campaign-sub-form" data-aa-formname="campaign">
+      <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+         <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/name-img.png"
+            alt="" class="input-img1">
+         <span class="form-span">${properties.name}</span>
+         <input type="text" class="form-control campaign-input cust-form-control" id="name"
+            data-validation-msg-req="${properties.namereqvalmsg}"
+            data-validation-msg-format="${properties.nameformvalmsg}" required placeholder=" Enter Your Name"
+            name="fullname">
+      </div>
+      <div class="form-group cust-form-group">
+         <a href="javascript:void(0)" aa-data-attr="track_cta"
+            class="test-drive-otp-link send-otp-btn sent-otp otp-link">${properties.sendOtplabel}</a>
+         <span class="form-span">${properties.mobilelabel}</span>
+         <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/number-img.png"
+            alt="" class="input-img2">
+         <input type="tel" class="form-control campaign-input cust-form-control mobile-number " id="number"
+            data-validation-msg-req="${properties.mobilevalmsg}"
+            data-validation-msg-format="${properties.mobilevalformmsg}" required placeholder="+91" name="mobileno"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="10">
+      </div>
+      <div class="form-group  cust-form-group">
+         <a href="javascript:void(0)" aa-data-attr="track_cta" data-attempt="1"
+            class="test-drive-otp-link resent-otp resend-otp-btn">${properties.resendOtplabel}</a>
+         <span class="form-span">${properties.enterOtplabel}</span>
+         <input type="tel" class="form-control campaign-input cust-form-control otp-field" id="otp"
+            data-validation-msg-req="${properties.otpvalmsg}" required placeholder=" Please Enter OTP" name="otp"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="6">
+         <label class="invalid-otp-message">${properties.otpresultmsg}</label>
+      </div>
+      <div class="form-group cust-form-group" data-sly-test="${properties.emaillabel}">
+         <span class="form-span">${properties.emaillabel}</span>
+         <input type="text" class="form-control campaign-input cust-form-control" id="email"
+            data-validation-msg-req="${properties.emailvalmsg}" data-validation-msg-format="${properties.emailvalformmsg}"
+            placeholder="${properties.emailplaceholder}" name="email">
+      </div>
+      <!--  vehicle drop down -->
+      <div class=" form group cust-form-group vehicle-dropdown"
+         data-sly-test="${properties.showvehicledropdown == 'true'}">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left mb-4 active"
+               name="vehiclename" type="button" data-toggle="dropdown"
+               data-default-label="${properties.vehiclelabel}">${properties.vehiclelabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" required value="" data-validation-msg-req="${properties.vehiclemsg}"
+               name="vehicleNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="vehicleDropdown" style=""
+               data-sly-use.listitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multitext'}"
+               data-sly-list="${listitems}">
+               <li class="font-montserrat-regular font-weight-500 " value="${item.properties.value}">
+                  <a href="javascript:void(0)">${item.properties.title}</a>
+               </li>
+            </ul>
+            <span class="select-p">${properties.vehiclelabel}</span>
+         </div>
+      </div>
+      <div class=" form group cust-form-group">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left active"
+               name="statename" type="button" data-toggle="dropdown"
+               data-default-label="${properties.stateplaceholder ? properties.stateplaceholder : properties.statelabel}">${properties.statelabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" required value="" data-validation-msg-req="${properties.statevalmsg}"
+               name="stateNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="stateDropdown" style="">
+            </ul>
+            <span class="select-p">${properties.statelabel}</span>
+         </div>
+      </div>
+      <div class=" form group cust-form-group">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary dropdown-toggle w-100 text-left active" type="button"
+               name="cityname" data-toggle="dropdown"
+               data-default-label="${properties.cityplaceholder ? properties.cityplaceholder : properties.citylabel}">${properties.citylabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" required value="" data-validation-msg-req="${properties.cityvalmsg}"
+               name="cityNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="cityDropdown" style="">
+            </ul>
+            <span class="select-p">${properties.citylabel}</span>
+         </div>
+      </div>
+      <div class=" form group cust-form-group" data-sly-test="${properties.dealerlabel}">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left active"
+               name="dealername" type="button" data-toggle="dropdown"
+               data-default-label="${properties.dealerplaceholder ? properties.dealerplaceholder : properties.dealerlabel}">${properties.dealerlabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" id="dealer" required value="" data-validation-msg-req="${properties.dealervalmsg}"
+               name="dealerNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="dealerDropdown" style="">
+            </ul>
+            <span class="select-p">${properties.dealerlabel}</span>
+         </div>
+      </div>
+      <div class="form-group cust-form-group captcha-section d-none">
+         <div class="captcha-field">
+            <div id="captcha">
+            </div>
+            <img class="refresh"
+               src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/refresh-32.png" />
+         </div>
+         <div class="captcha-input">
+            <input type="text" placeholder="${properties.captchainputlabel}" id="cpatchaTextBox" name="captcha" required
+               class="form-control cust-form-control campaign-input ignore-validation" maxlength="6" />
+            <label class="invalid-otp-message">${properties.incorrectCaptchamsg}</label>
+         </div>
+      </div>
+      <p class="campaign-p">${properties.privacypolicy @ context = 'html'}
+      </p>
+      <input type="hidden" value="${properties.variationtype}" name="pageType" />
+      <input type="hidden" value="${properties.ispopup}" name="isPopup" />
+      <input type="hidden" value="${properties.modelName}" name="modelName" />
+      <input type="hidden" value="${properties.defaultproduct || currentPage.path}" name="productpath" />
+      <input type="hidden" value="${properties.thankyoulink @ extension='html'}" name="thankyoulink" />
+      <input type="hidden" value="${[resource.path, 'requestcallback.html'] @ join='.'}" name="action_url" />
+      <input type="hidden" value="${[resource.path, 'statecitylist.json'] @ join='.'}" name="statecitylist_url" />
+      <input type="button" class="campaign-btn btn-red-gradient btn w-100 book-test-submit" id="campaign-sub-btn"
+         value="${properties.buttonlabel}" name="submit" />
+   </form>
+</div>
+
+<div class="book-test-ride-campaign ndc-campaign" data-sly-test="${(properties.variationtype == 'ndccampaign')}">
+   ${properties.title @ context='html'}
+   <input type="hidden" class="form-control campaign-input cust-form-control" id="capaignpage" value="ndc-campaign-page">
+   <div class="successmsg d-none">${properties.acknowledgemsg @ context='html'}</div>
+   <div class="failmsg d-none">${properties.acknowledgemsgfail @ context='html'}</div>
+   <form class="campaign-form " id="campaign-sub-form" data-aa-formname="campaign">
+      <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+         <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/name-img.png"
+            alt="" class="input-img1">
+         <span class="form-span">${properties.name}</span>
+         <input type="text" class="form-control campaign-input cust-form-control" id="name"
+            data-validation-msg-req="${properties.namereqvalmsg}"
+            data-validation-msg-format="${properties.nameformvalmsg}" required placeholder=" Enter Your Name"
+            name="fullname">
+      </div>
+      <div class="form-group cust-form-group">
+         <span class="form-span">${properties.mobilelabel}</span>
+         <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/number-img.png"
+            alt="" class="input-img2">
+         <input type="tel" class="form-control campaign-input cust-form-control mobile-number " id="number"
+            data-validation-msg-req="${properties.mobilevalmsg}"
+            data-validation-msg-format="${properties.mobilevalformmsg}" required placeholder="+91" name="mobileno"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="10">
+      </div>
+      <!--  vehicle drop down -->
+      <div class=" form group cust-form-group vehicle-dropdown"
+         data-sly-test="${properties.showvehicledropdown == 'true'}">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left active"
+               name="vehiclename" type="button" data-toggle="dropdown"
+               data-default-label="${properties.vehiclelabel}">${properties.vehiclelabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" required value="" data-validation-msg-req="${properties.vehiclemsg}"
+               name="vehicleNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="vehicleDropdown" style=""
+               data-sly-use.listitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multitext'}"
+               data-sly-list="${listitems}">
+               <li class="font-montserrat-regular font-weight-500 " value="${item.properties.value}">
+                  <a href="javascript:void(0)">${item.properties.title}</a>
+               </li>
+            </ul>
+            <span class="select-p">${properties.vehiclelabel}</span>
+         </div>
+      </div>
+      <div class=" form group cust-form-group">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left active"
+               name="statename" type="button" data-toggle="dropdown"
+               data-default-label="${properties.stateplaceholder ? properties.stateplaceholder : properties.statelabel}">${properties.statelabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" required value="" data-validation-msg-req="${properties.statevalmsg}"
+               name="stateNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="stateDropdown" style="">
+            </ul>
+            <span class="select-p">${properties.statelabel}</span>
+         </div>
+      </div>
+      <div class=" form group cust-form-group">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary dropdown-toggle w-100 text-left active" type="button"
+               name="cityname" data-toggle="dropdown"
+               data-default-label="${properties.cityplaceholder ? properties.cityplaceholder : properties.citylabel}">${properties.citylabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" required value="" data-validation-msg-req="${properties.cityvalmsg}"
+               name="cityNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="cityDropdown" style="">
+            </ul>
+            <span class="select-p">${properties.citylabel}</span>
+         </div>
+      </div>
+      <div class="form group cust-form-group" data-sly-test="${properties.dealerlabel}">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left active"
+               name="dealername" type="button" data-toggle="dropdown"
+               data-default-label="${properties.dealerplaceholder ? properties.dealerplaceholder : properties.dealerlabel}">${properties.dealerlabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" id="dealer" required value="" data-validation-msg-req="${properties.dealervalmsg}"
+               name="dealerNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="dealerDropdown" style="">
+            </ul>
+            <span class="select-p">${properties.dealerlabel}</span>
+         </div>
+      </div>
+      <div class="form group cust-form-group">
+         <div class="select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left active"
+               name="topics" type="button" data-toggle="dropdown"
+               data-default-label="${properties.topicplaceholder ? properties.topicplaceholder : properties.topiclabel}">${properties.topicplaceholder}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" id="ndc-topic" value=""
+               name="topicVal" />
+               <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="topicDropdown" style="">
+                  <li class="font-montserrat-regular font-weight-500" value="Gain in Premium Market Share">
+                     <a href="javascript:void(0)">Gain in Premium Market Share</a>
+                  </li>
+                  <li class="font-montserrat-regular font-weight-500" value="Gain in Scooter Market Share">
+                     <a href="javascript:void(0)">Gain in Scooter Market Share</a>
+                  </li>
+                  <li class="font-montserrat-regular font-weight-500" value="Leadership in 125CC segment">
+                     <a href="javascript:void(0)">Leadership in 125CC segment</a>
+                  </li>
+                  <li class="font-montserrat-regular font-weight-500" value="Increase Non vehicular Revenue">
+                     <a href="javascript:void(0)">Increase Non vehicular Revenue</a>
+                  </li>
+               </ul>
+            <span class="select-p">${properties.topiclabel}</span>
+         </div>
+      </div>
+      <div class="form group cust-form-group">
+         <div class="select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left active"
+               name="sectiondropdown" type="button" data-toggle="dropdown"
+               data-default-label="${properties.sectionplaceholder ? properties.sectionplaceholder : properties.sectionlabel}">${properties.sectionplaceholder}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" id="ndc-section" value=""
+               name="sectionVal" />
+               <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="sectionDropdown" style="">
+                  <li class="font-montserrat-regular font-weight-500" value="Sales">
+                     <a href="javascript:void(0)">Sales</a>
+                  </li>
+                  <li class="font-montserrat-regular font-weight-500" value="Service (CE)">
+                     <a href="javascript:void(0)">Service (CE)</a>
+                  </li>
+                  <li class="font-montserrat-regular font-weight-500" value="Parts, Accessories and Merchandise">
+                     <a href="javascript:void(0)">Parts, Accessories and Merchandise</a>
+                  </li>
+                  <li class="font-montserrat-regular font-weight-500" value="Marketing">
+                     <a href="javascript:void(0)">Marketing</a>
+                  </li>
+                  <li class="font-montserrat-regular font-weight-500" value="Product">
+                     <a href="javascript:void(0)">Others</a>
+                  </li>
+               </ul>
+            <span class="select-p">${properties.sectionlabel}</span>
+         </div>
+      </div>
+      <div class="form-group cust-form-group">
+         <span class="form-span">${properties.ndcsuggestion}</span>
+         <textarea name="txtComplaint" required="" rows="2" cols="20" id="txtSuggestion" maxlength="2000" class="formTextbox" style="height:100px;width:100%;padding:10px 17px;border: 1px solid #ced4da;"></textarea>
+      </div>
+      <div class="form-group cust-form-group">
+         <span class="form-span">${properties.ndccommitment}</span>
+         <textarea name="txtComplaint" required="" rows="2" cols="20" id="txtCommitment" maxlength="2000" class="formTextbox" style="height:100px;width:100%;padding:10px 17px;border: 1px solid #ced4da;"></textarea>
+      </div>
+      </p>
+      <input type="hidden" value="${properties.variationtype}" name="pageType" />
+      <input type="hidden" value="${properties.ispopup}" name="isPopup" />
+      <input type="hidden" value="${properties.modelName}" name="modelName" />
+      <input type="hidden" value="${properties.defaultproduct || currentPage.path}" name="productpath" />
+      <input type="hidden" value="${properties.thankyoulink @ extension='html'}" name="thankyoulink" />
+      <input type="hidden" value="${[resource.path, 'requestcallback.html'] @ join='.'}" name="action_url" />
+      <input type="hidden" value="${[resource.path, 'statecitylist.json'] @ join='.'}" name="statecitylist_url" />
+      <input type="button" class="campaign-btn btn-red-gradient btn w-100 book-test-submit" id="campaign-sub-btn"
+         value="${properties.buttonlabel}" name="submit" />
+   </form>
+</div>
+
+<div class="book-test-ride-campaign golf-page" data-sly-test="${(properties.variationtype == 'golfpage')}">
+   ${properties.title @ context='html'}
+   <div class="successmsg d-none">${properties.acknowledgemsg @ context='html'}</div>
+   <div class="failmsg d-none">${properties.acknowledgemsgfail @ context='html'}</div>
+   <form class="campaign-form " id="campaign-sub-form" data-aa-formname="campaign">
+      <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+         <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/name-img.png"
+            alt="" class="input-img1">
+         <span class="form-span">${properties.name}</span>
+         <input type="text" class="form-control campaign-input cust-form-control" id="name"
+            data-validation-msg-req="${properties.namereqvalmsg}"
+            data-validation-msg-format="${properties.nameformvalmsg}" required placeholder="Enter Your Name"
+            name="fullname">
+      </div>
+      <div class="form-group cust-form-group">
+         <span class="form-span">${properties.mobilelabel}</span>
+         <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/number-img.png"
+            alt="" class="input-img2">
+         <input type="tel" class="form-control campaign-input cust-form-control mobile-number " id="number"
+            data-validation-msg-req="${properties.mobilevalmsg}"
+            data-validation-msg-format="${properties.mobilevalformmsg}" required placeholder="+91" name="countrymobileno"
+            oninput="this.value = this.value.replace(/[^+\\0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="15">
+      </div>
+
+      <div class="form-group cust-form-group">
+         <span class="form-span">${properties.emaillabel}</span>
+         <input type="text" class="form-control campaign-input cust-form-control" id="email"
+            data-validation-msg-req="${properties.emailvalmsg}" data-validation-msg-format="${properties.emailvalformmsg}"
+            required placeholder="${properties.emailplaceholder}" name="email">
+      </div>
+      <div class="form-group cust-form-group">
+         <span class="form-span">${properties.organisationName}</span>
+         <input type="text" class="form-control campaign-input cust-form-control " id="organisation"
+            data-validation-msg-req="${properties.organisationNamemsg}" required
+            placeholder="${properties.organisationNameplaceholder}" name="organisationName">
+      </div>
+      <div class="form-group cust-form-group">
+         <span class="form-span">${properties.birdies}</span>
+         <input type="text" class="form-control campaign-input cust-form-control  " id="birdies"
+            data-validation-msg-req="${properties.birdiesmsg}" required placeholder="${properties.birdiesplaceholder}"
+            name="birdies" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+            maxlength="4">
+      </div>
+      <p class="campaign-p">${properties.privacypolicy @ context = 'html'}
+      </p>
+      <div class="book-test-drive-loading" id="golf-loader">
+         <img src="${properties.loadimgpath}" class="img-fluid" alt="Loading">
+      </div>
+
+      <p id="golf-error-response"><span></span>*</p>
+      <input type="hidden" value="${properties.thankyoulink @ extension='html'}" name="thankyoulink" />
+
+
+      <input type="button" class="campaign-btn btn-red-gradient btn w-100" id="golf-form-submit"
+         value="${properties.buttonlabel}" name="submit" />
+   </form>
+</div>
+
+<div class="book-test-ride-campaign" id="harley__campaign" data-sly-test="${(properties.variationtype == 'harleycampaign')}">
+   ${properties.title @ context='html'}
+   <input type="hidden" class="form-control campaign-input cust-form-control" id="capaignpage" value="harleycampaign">
+   <div class="successmsg d-none">${properties.acknowledgemsg @ context='html'}</div>
+   <div class="failmsg d-none">${properties.acknowledgemsgfail @ context='html'}</div>
+   <form class="campaign-form " id="campaign-sub-form" data-aa-formname="campaign">
+      <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+         <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/name-img.png"
+            alt="" class="input-img1">
+         <span class="form-span">${properties.name}</span>
+         <input type="text" class="form-control campaign-input cust-form-control" id="name"
+            data-validation-msg-req="${properties.namereqvalmsg}"
+            data-validation-msg-format="${properties.nameformvalmsg}" required placeholder=" Enter Your Name"
+            name="fullname">
+      </div>
+      <div class="form-group cust-form-group">
+         <span class="form-span">${properties.mobilelabel}</span>
+         <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/number-img.png"
+            alt="" class="input-img2">
+         <input type="tel" class="form-control campaign-input cust-form-control mobile-number " id="number"
+            data-validation-msg-req="${properties.mobilevalmsg}"
+            data-validation-msg-format="${properties.mobilevalformmsg}" required placeholder="+91" name="mobileno"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="10">
+      </div>
+      
+      <div class="form-group cust-form-group" data-sly-test="${properties.emaillabel}">
+         <span class="form-span">${properties.emaillabel}</span>
+         <input type="text" class="form-control campaign-input cust-form-control" id="email"
+            data-validation-msg-req="${properties.emailvalmsg}" data-validation-msg-format="${properties.emailvalformmsg}"
+            placeholder="${properties.emailplaceholder}" name="email">
+      </div>
+      <!--  vehicle drop down -->
+      <div class=" form group cust-form-group vehicle-dropdown"
+         data-sly-test="${properties.showvehicledropdown == 'true'}">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left active"
+               name="vehiclename" type="button" data-toggle="dropdown"
+               data-default-label="${properties.vehiclelabel}">${properties.vehiclelabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" required value="" data-validation-msg-req="${properties.vehiclemsg}"
+               name="vehicleNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="vehicleDropdown" style=""
+               data-sly-use.listitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multitext'}"
+               data-sly-list="${listitems}">
+               <li class="font-montserrat-regular font-weight-500 " value="${item.properties.value}">
+                  <a href="javascript:void(0)">${item.properties.title}</a>
+               </li>
+            </ul>
+            <span class="select-p">${properties.vehiclelabel}</span>
+         </div>
+      </div>
+      <div class=" form group cust-form-group">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left active"
+               name="statename" type="button" data-toggle="dropdown"
+               data-default-label="${properties.stateplaceholder ? properties.stateplaceholder : properties.statelabel}">${properties.statelabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" required value="" data-validation-msg-req="${properties.statevalmsg}"
+               name="stateNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="stateDropdown" style="">
+            </ul>
+            <span class="select-p">${properties.statelabel}</span>
+         </div>
+      </div>
+      <div class=" form group cust-form-group">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary dropdown-toggle w-100 text-left active" type="button"
+               name="cityname" data-toggle="dropdown"
+               data-default-label="${properties.cityplaceholder ? properties.cityplaceholder : properties.citylabel}">${properties.citylabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" required value="" data-validation-msg-req="${properties.cityvalmsg}"
+               name="cityNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="cityDropdown" style="">
+            </ul>
+            <span class="select-p">${properties.citylabel}</span>
+         </div>
+      </div>
+      <div class=" form group cust-form-group" data-sly-test="${properties.dealerlabel}">
+         <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+            <button class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left active"
+               name="dealername" type="button" data-toggle="dropdown"
+               data-default-label="${properties.dealerplaceholder ? properties.dealerplaceholder : properties.dealerlabel}">${properties.dealerlabel}<span
+                  class="caret select-span"></span>
+            </button>
+            <input type="hidden" id="dealer" required value="" data-validation-msg-req="${properties.dealervalmsg}"
+               name="dealerNameVal" />
+            <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown" aria-labelledby="dealerDropdown" style="">
+            </ul>
+            <span class="select-p">${properties.dealerlabel}</span>
+         </div>
+      </div>
+      <div class="form-group cust-form-group  cust-form-control cust-input-padding address-input d-none">
+         <span class="form-span">Address</span>
+         <textarea class="form-control campaign-input cust-form-control" id="harley__dealer--address"
+             placeholder="Dealer Address"
+            name="dealer-address">
+         </textarea>
+      </div>
+      <p class="campaign-p">${properties.privacypolicy @ context = 'html'}
+      </p>
+      <input type="hidden" value="${properties.variationtype}" name="pageType" />
+      <input type="hidden" value="${properties.ispopup}" name="isPopup" />
+      <input type="hidden" value="${properties.modelName}" name="modelName" />
+      <input type="hidden" value="${properties.defaultproduct || currentPage.path}" name="productpath" />
+      <input type="hidden" value="${properties.thankyoulink @ extension='html'}" name="thankyoulink" />
+      <input type="hidden" value="${[resource.path, 'requestcallback.html'] @ join='.'}" name="action_url" />
+      <input type="hidden" value="${[resource.path, 'statecitylist.json'] @ join='.'}" name="statecitylist_url" />
+      <input type="button" class="campaign-btn btn-red-gradient btn w-100 book-test-submit" id="campaign-sub-btn"
+         value="${properties.buttonlabel}" name="submit" />
+   </form>
+</div>

@@ -1,0 +1,28 @@
+<sly data-sly-test="${wcmmode.edit}">
+    Author Flyout Product component
+</sly>
+<div class="megamenu-option-main">
+    <div class="megamenu-option-head">
+        <h3 data-sly-test="${properties.heading}" data-sly-element="${properties.element}">
+            <a data-sly-unwrap="${!properties.headingurl}" aa-data-attr="track_cta"
+                data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.headingurl}"
+                href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}">${properties.heading}</a>
+        </h3>
+        <a data-sly-test="${properties.exploreurl}" class="explore-link" aa-data-attr="track_cta"
+            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.exploreurl}"
+            href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}">${properties.exploretext}</a>
+    </div>
+    <div class="megamenu-option-box"
+        data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='products'}"
+        data-sly-list="${listUse}">
+        <a class="dropdown-item" aa-data-attr="track_cta"
+            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.url}"
+            href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}">
+            <img loading="lazy" data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.image, rendition='navigation-web', extension='png'}"
+                src="${imagePath}" class="img-fluid" alt="${item.properties.text}">
+            <p>${item.properties.text}<span class="capsule"
+                    data-sly-test="${item.properties.spec}">${item.properties.spec}</span></p>
+            <span data-sly-test="${item.properties.tag}" class="badge">${item.properties.tag}</span>
+        </a>
+    </div>
+</div>

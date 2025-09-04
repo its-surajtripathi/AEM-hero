@@ -1,0 +1,40 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+	format=[component.title], i18n} </sly>
+
+
+<div class="bcipl-innerPg">
+	<div class="bcipl-container">
+		<div class="bcipl-registerDetail">
+			${properties.heading @context='html'}
+		</div>
+		<div class="bcipl-investor-contest">
+			<p data-sly-test="${properties.selectLabel}">
+				<span>${properties.selectLabel}</span>
+				<select class="selectPressBox">
+					<sly data-sly-list.dropdown="${resource.getChildren}">
+						<sly data-sly-test="${dropdown.name == 'bciplselect'}">
+							<sly data-sly-list.dropdownitems="${dropdown.getChildren}">
+								<option value="sub0${dropdownitemsList.index}"
+									selected="${dropdownitemsList.index == 0 ? 'selected' : ''}">
+									${dropdownitems.dropdownLabel}
+								</option>
+							</sly>
+						</sly>
+					</sly>
+				</select>
+			</p>
+			<div class="list-container">
+				<sly data-sly-list.dropdown="${resource.getChildren}">
+					<sly data-sly-test="${dropdown.name == 'bciplselect'}">
+						<sly data-sly-list.dropdownitems="${dropdown.getChildren}">
+							<div class="list-item ${dropdownitemsList.index == 0 ? '' : 'd-none'}"
+								id="gov_sub0${dropdownitemsList.index}">
+								${dropdownitems.dropdownText @context= 'html'}
+							</div>
+						</sly>
+					</sly>
+				</sly>
+			</div>
+		</div>
+	</div>
+</div>

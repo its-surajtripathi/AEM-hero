@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="NPS Feedback"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-author_editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <multifieldwithmap
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Multifield With Map"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                fieldLabel="Hero Feedback Details">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <npsfeedback
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <npstitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="NPS Feedback Title on Wrap"
+                                                name="./npstitle"/>
+                                            <npsheading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="NPS Feedback Headline"
+                                                name="./npsheadline"/>
+                                            <npspoorrating
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="NPS Feedback Text for Rating 1(lowest)"
+                                                name="./npspoorratingtext"/>
+                                            <npstoprating
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="NPS Feedback Text for Highest Rating"
+                                                name="./npstopratingtext"/>
+                                            <thankyouimg
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Thank you Message Image Path"
+                                                name="./npsthankimg"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <thankyoumain
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="NPS Feedback Thank you Main text"
+                                                name="./npsthankmain"/>
+                                            <thankyousub
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="NPS Feedback Thank you SUB text"
+                                                name="./npsthanksub"/>
+                                            <npsfeedbackdetails
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="NPS Feedback Details"
+                                                fieldLabel="NPS Feedback Details"
+                                                required="{Boolean}false">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    emptyText="NPS Feedback Rating Details"
+                                                    name="./npsfeedbackdetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <npsconfigs
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="NPS Rating Items"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <ratingexptitle
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="NPS Feedback Rating Experience Title"
+                                                                            name="./npsratingtitle"/>
+                                                                        <ratingexpreasons
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                            composite="{Boolean}true"
+                                                                            fieldLabel="NPS Rating Experience Reasons">
+                                                                            <field
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                emptyText="NPS Rating Reason Details"
+                                                                                name="./npsreasondetails">
+                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                    <ratingexptitle
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                        fieldLabel="NPS Feedback Rating Experience Reason"
+                                                                                        name="./npsratingexpreason"/>
+                                                                                </items>
+                                                                            </field>
+                                                                        </ratingexpreasons>
+                                                                    </items>
+                                                                </npsconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </npsfeedbackdetails>
+                                        </items>
+                                    </npsfeedback>
+                                </items>
+                            </well>
+                        </items>
+                    </multifieldwithmap>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,58 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+    format=[component.title], i18n} </sly>
+
+<div data-sly-test="${properties.variant == 'calendar'}" class="container-fluid events-container-fluid">
+    <div class="events-container">
+        <div class="events-image">
+            <img class="desk-img" src="${properties.eventImage}" width="100%" height="100%" alt="${properties.eventimagealt}">
+            <img class="mob-img" src="${properties.eventmobImage}" width="100%" height="100%" alt="${properties.eventimagealt}">
+        </div>
+        <div class="events-wrapper">
+            <div data-sly-test="${properties.jsonData}" class="select-year-div d-flex" data-quater="${properties.jsonData}">
+                <div class="report-aligner d-none" data-category="calender-events"></div>
+                <p> Select Quarter: </p>
+                <select name="" id="select-quarter">
+                </select>
+            </div>
+            <div>
+                <div class="events-upcoming">
+                    <span data-sly-test="${properties.ineventshead}">${properties.ineventshead @ context='html'}</span>
+                    <span class="events-year" data-sly-test="${properties.eventyear}">${properties.eventyear}</span>
+                </div>
+                <div class="events-calender">
+                    <sly
+                        data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='inevents'}">
+                        <sly data-sly-list=${listUse}>
+                            <div class="events-calender-wrapper">
+                                <div>
+                                    <div class="events-calender-wrapper-label">${item.properties.ineventlocation @
+                                        context='html'}</div>
+                                    <div class="events-calender-wrapper-desc">${item.properties.ineventTitle @
+                                        context='html'}</div>
+                                </div>
+                                <div class="date-wrapper">
+                                    <div class="events-calender-wrapper-date">${'dd MMM, yyyy' @
+                                        format=item.properties.eventcalendardate, timezone='IST', locale='en'}</div>
+                                    <div data-sly-test="${item.properties.calendarbtnlabel}"
+                                        class="events-calender-wrapper-cal"><img
+                                            src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/cal.png"
+                                            alt="calender" />${item.properties.calendarbtnlabel}</div>
+                                </div>
+                            </div>
+                        </sly>
+                </div>
+                </sly>
+            </div>
+            <a data-sly-test="${properties.eventctaurl != null}" class="events-calender-viewall"
+                aa-data-attr="track_cta"
+                data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.eventctaurl}"
+                href="${linkuse.value}"
+                target="${linkuse.isExternal ? '_blank' : '_self'}">${properties.eventctalabel}<img
+                    class="blue-right-arrow"
+                    src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/blue-right-arrow.svg" />
+            </a>
+        </div>
+    </div>
+</div>
+
+<sly data-sly-test="${properties.variant == 'callrecords'}" data-sly-include="${properties.variant}.html"></sly>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="EMI Calculator"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_tableofcontents_v1">
+    <content
+        granite:class="cmp-toc__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <firstsection
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="First Section"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <firstsectionitems
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="First Section Items"
+                                                fieldLabel="First Section Items"
+                                                required="{Boolean}false">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    emptyText="First Section Items"
+                                                    name="./firstsectionitems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <carouselconfigs
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Carousel Items"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <imagedesktop
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            jcr:title="Desktop Image"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                            fieldLabel="Desktop Image"
+                                                                            name="./desktopImage"/>
+                                                                        <imagemobile
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            jcr:title="Mobile Image"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                            fieldLabel="Mobile Image"
+                                                                            name="./mobileImage"/>
+                                                                    </items>
+                                                                </carouselconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </firstsectionitems>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </firstsection>
+                     <secondsection
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Second Section"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <secondsectionitems
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Second Section Items"
+                                                fieldLabel="Second Section Items"
+                                                required="{Boolean}false">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    emptyText="Second Section Items"
+                                                    name="./secondsectionitems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <carouselconfigs
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Carousel Items"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <imagedesktop
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            jcr:title="Desktop Image"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                            fieldLabel="Desktop Image"
+                                                                            name="./desktopImage"/>
+                                                                        <imagemobile
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            jcr:title="Mobile Image"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                            fieldLabel="Mobile Image"
+                                                                            name="./mobileImage"/>
+                                                                    </items>
+                                                                </carouselconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </secondsectionitems>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </secondsection>
+                     <thirdsection
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Third Section"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <thirdsectionitems
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Second Section Items"
+                                                fieldLabel="Second Section Items"
+                                                required="{Boolean}false">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    emptyText="Second Section Items"
+                                                    name="./thirdsectionitems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <carouselconfigs
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Carousel Items"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <imagedesktop
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            jcr:title="Desktop Image"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                            fieldLabel="Desktop Image"
+                                                                            name="./desktopImage"/>
+                                                                        <imagemobile
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            jcr:title="Mobile Image"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                            fieldLabel="Mobile Image"
+                                                                            name="./mobileImage"/>
+                                                                    </items>
+                                                                </carouselconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </thirdsectionitems>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </thirdsection>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

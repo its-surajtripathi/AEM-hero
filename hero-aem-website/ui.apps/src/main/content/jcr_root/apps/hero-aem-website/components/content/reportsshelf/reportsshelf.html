@@ -1,0 +1,47 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+  format=[component.title], i18n} </sly>
+
+<div class="annual-report-container">
+  <div class="annual-report-header">${properties.shelfheadline}</div>
+  <div class="annual-report-inner-container">
+    <div class="annual-report-image">
+      <picture>
+        <img src="${properties.leftmobileImage}" class="mob-img">
+        <img src="${properties.leftImage}" class="desktop-img">
+      </picture>
+    </div>
+    <div class="annual-report-info-container">
+      <div class="description-text">
+        ${properties.shelfdesc @ context='html'}
+      </div>
+      <div class="report-aligner" data-category="${properties.categoryAttr}">
+
+        <sly data-sly-list.report="${resource.children}">
+          <sly data-sly-test="${report.name == 'investorsReport'}" data-sly-list.reportNodes="${report.children}">
+            <div class="report-container">
+              <div class="border-line"></div>
+              <div class="report-details">
+                <div class="report-name">${reportNodes.title}</div>
+                <div class="report-link">
+                  <div class="report-download"><img
+                      src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/download-icon.png"><a
+                      href="${reportNodes.link}"> Download </a></div>
+                  <div class="report-size"> ${reportNodes.size}</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-line-mobile"></div>
+          </sly>
+        </sly>
+
+        <sly data-sly-test="${properties.showHeading == 'true'}" data-sly-include="formats.html"></sly>
+        
+      </div>
+    </div>
+  </div>
+  <div class="report-footer"><img
+      src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/download-icon.png">
+    <p> Download All </p>
+  </div>
+</div>

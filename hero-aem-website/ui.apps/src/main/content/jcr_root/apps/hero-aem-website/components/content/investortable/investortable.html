@@ -1,0 +1,127 @@
+<sly data-sly-test="${properties.layoutvariation == 'creditpage'}">
+    <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='investortable'}">
+
+        <div class="inv-credit-container-fluid">
+            <div class="inv-credit-container invs-credit-wrap">
+                <div class="inv-credit-main-heading">${properties.creditmainheading @context='html'}</div>
+                <div class="d-flex inv-credit-middle-container">
+                    <div class="inv-credit-image-wrapper">
+                        <img class="inv-credit-desktop-img" src="${properties.creditdesktop}"
+                            width="100%" height="100%" alt="Quarterly Desktop view image">
+                        <img class="inv-credit-mobile-img" src="${properties.creditmobile}"
+                            width="100%" height="100%" alt="Quarterly Mobile view image">
+                    </div>
+                    <div class="d-flex inv-credit-content-wrap">
+                        <div class="inv-credit-content-heading">${properties.creditsubheading @context='html'}</div> 
+                        <div class="credits-scroll-wrapper">
+                            <div class="table-responsive">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" data-sly-list="${listUse}">
+                                        <thead data-sly-test="${itemList.index==0}">
+                                            <tr>
+                                                <th scope="col">${item.properties.firstfield}</th>
+                                                <th scope="col">${item.properties.secondfield}</th>
+                                                <th scope="col">${item.properties.thirdfield}</th>
+                                                <th scope="col">${item.properties.fourthfield}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody data-sly-test="${itemList.index!=0}">
+                                            <tr>
+                                                <td scope="row">${item.properties.firstfield}</td>
+                                                <td scope="row">${item.properties.secondfield}</td>
+                                                <td scope="row">${item.properties.thirdfield}</td>
+                                                <td scope="row">${item.properties.fourthfield}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="d-flex credits-note-wrapper" data-sly-test="${properties.creditnotes}">
+                                <div class="investor-text-note">Note:</div>
+                                <div class="investor-text-sub-note">${properties.creditnotes @context='html'}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </sly>
+</sly>
+
+<sly data-sly-test="${properties.layoutvariation == 'analyst'}">
+        <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='investortable'}">
+
+			<div class="inv-analyst-container-fluid">
+                <div class="inv-analyst-container invs-analyst-wrap">
+                    <div class="inv-analyst-main-heading">${properties.amainheading @context='html'}</div>
+                    <div class="inv-analyst-content-heading">${properties.asubheading @context='html'}</div>
+                    <div class="analyst-scroll-wrapper">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" data-sly-list="${listUse}">
+                                <thead data-sly-test="${itemList.index==0}">
+                                    <tr>
+                                        <th scope="col">${item.properties.afieldOne}</th>
+                                        <th scope="col">${item.properties.afieldTwo}</th>
+                                        <th scope="col">${item.properties.afieldThree}</th>
+                                        <th scope="col" data-sly-test="${item.properties.afieldFour}">${item.properties.afieldFour}</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-sly-test="${itemList.index!=0}">
+                                    <tr>
+                                        <td scope="row">${item.properties.afieldOne}</td>
+                                        <td scope="row">${item.properties.afieldTwo}</td>
+                                        <td scope="row">${item.properties.afieldThree}</td>
+                                        <td scope="row" data-sly-test="${item.properties.afieldFour}">${item.properties.afieldFour}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </sly>
+</sly>
+
+
+
+<sly data-sly-test="${properties.layoutvariation == 'dividend'}">
+        <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='investortable'}">
+
+			<div class="inv-dividend-container-fluid">
+                <div class="invs-dividend-wrap">
+                    <!-- <div class="inv-analyst-main-heading">${properties.dmainheading}</div>
+                    <div class="inv-analyst-content-heading">${properties.dsubheading}</div> -->
+                    <div class="divided-scroll-wrapper">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" data-sly-list="${listUse}">
+                                <thead data-sly-test="${itemList.index==0}">
+                                    <tr>
+                                        <th scope="col">${item.properties.dfieldZero}</th>
+                                        <th scope="col">${item.properties.dfieldOne}</th>
+                                        <th scope="col">${item.properties.dfieldTwo}</th>
+                                        <th scope="col">${item.properties.dfieldThree}</th>
+                                        <th scope="col">${item.properties.dfieldFour}</th>
+										<th scope="row">${item.properties.dfieldfive}</th>
+										<th scope="row">${item.properties.dfieldsix}</th>
+										<th scope="row">${item.properties.dfieldseven}</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-sly-test="${itemList.index!=0}">
+                                    <tr>
+                                        <td scope="row">${item.properties.dfieldZero}</td>
+                                        <td scope="row">${item.properties.dfieldOne}</td>
+                                        <td scope="row">${item.properties.dfieldTwo}</td>
+                                        <td scope="row">${item.properties.dfieldThree}</td>
+                                        <td scope="row">${item.properties.dfieldFour}</td>
+										<td scope="row">${item.properties.dfieldfive}</td>
+										<td scope="row">${item.properties.dfieldsix}</td>
+										<td scope="row">${item.properties.dfieldseven}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </sly>
+</sly>

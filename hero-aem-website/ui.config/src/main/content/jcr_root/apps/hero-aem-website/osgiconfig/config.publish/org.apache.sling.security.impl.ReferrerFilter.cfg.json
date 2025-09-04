@@ -1,0 +1,18 @@
+{
+  "allow.hosts.regexp":[
+    "https://.*\\.adobe\\.com:443",
+    "https://.*\\.adobe\\.net:443",
+    "https://.*\\.workfront\\.com:443",
+    "https://.*\\.workfront-dev\\.com:443",
+    "https://.*\\.dev\\.workfront\\.tech:443",
+    "https://test\\.ccavenue\\.com",
+    "secure\\.ccavenue\\.com"
+  ],
+  "allow.hosts": [
+    "test.ccavenue.com",
+    "secure.ccavenue.com"
+  ],
+  "filter.methods": [
+      "POST"
+  ]
+}

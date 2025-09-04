@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Winner of the Month Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <variation
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                class="cq-dialog-dropdown-showhide"
+                                                cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                                                fieldLabel="Select Variation"
+                                                name="./variation"
+                                                required="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <banner
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Banner"
+                                                        value="banner"/>
+                                                    <banner-details
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Banner with Details"
+                                                        value="banner-details"/>
+                                                </items>
+                                            </variation>
+                                            <bgImage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select Background Image"
+                                                name="./bgImage"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <priceIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select Price Icon"
+                                                name="./priceIcon"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <wonLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Won label"
+                                                name="./wonLabel"/>
+                                            <banner
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="show-hide-textfield"
+                                                showhidetargetvalue="banner">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <winnermonthLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Winner of the month label"
+                                                        name="./winnermonthLabel"/>
+                                                    <viewdetailsLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter View Details label"
+                                                        name="./viewdetailsLabel"/>
+                                                    <viewdetailsLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="View Details Link"
+                                                        name="./viewdetailsLink"/>
+                                                </items>
+                                            </banner>
+                                            <bikeImage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select Bike Image"
+                                                name="./bikeImage"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <banner-with-details
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="show-hide-textfield"
+                                                showhidetargetvalue="banner-details">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <fromLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter From label"
+                                                        name="./fromLabel"/>
+                                                    <worthLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Worth label"
+                                                        name="./worthLabel"/>
+                                                    <detailsLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Details label"
+                                                        name="./detailsLabel"/>
+                                                    <bikeIcon
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Select Bike Icon"
+                                                        name="./bikeIcon"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                </items>
+                                            </banner-with-details>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[dealers-portal-aem-website.site]"
+    cssProcessor="[default:none,min:yui]"
+    embed="[dealers-portal-aem-website.dealersportalcarousel,dealers-portal-aem-website.dealersportalheader,dealers-portal-aem-website.dealersportalimagebanner,dealers-portal-aem-website.dealersportalcontactus,hero-aem-website.text,hero-aem-website.image,hero-aem-website.imagebanner,dealers-portal-aem-website.login]"
+    jsProcessor="[default:none,min:gcc]"/>

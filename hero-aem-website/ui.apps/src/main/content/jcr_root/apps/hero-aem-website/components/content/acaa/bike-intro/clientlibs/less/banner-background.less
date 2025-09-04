@@ -1,0 +1,2546 @@
+:root {
+  --Background: #000;
+  --CurrentLine: #44475a;
+  --Foreground: #f8f8f2af;
+  --Comment: #6272a4;
+  --Cyan: #8be9fd;
+  --Green: #50fa7b;
+  --Orange: #ffb86c;
+  --Pink: #ff79c6;
+  --Purple: #bd93f9;
+  --Red: #ff5555;
+  --Yellow: #f1fa8c;
+}
+
+.brand-reveal-bg {
+  background: var(--bg-colr-charade);
+  display: flex;
+  overflow: hidden;
+  perspective: 1440px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  // z-index: -1;
+  // opacity: 0;
+  transition: opacity 1.5s linear;
+  mix-blend-mode: screen;
+
+  &.show-universe {
+    opacity: 1;
+  }
+
+  .bg-cover-cont {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--Background);
+  }
+
+  .universe {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    animation: rotate 20s cubic-bezier(0.81, -0.42, 0.27, 1.45) infinite,
+      tilt 20s linear infinite alternate;
+  }
+
+  .universe .stars {
+    position: absolute;
+    width: 100%;
+    height: 500%;
+    top: -250%;
+    transform-style: preserve-3d;
+  }
+
+  .universe .stars .star {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--Foreground);
+    box-shadow: 0 0 25px var(--Foreground);
+    animation: twinkle 1s linear infinite alternate;
+  }
+
+  .universe .stars .star:nth-of-type(1) {
+    scale: 0.62382;
+    left: 47vw;
+    top: 29%;
+    rotate: 176deg;
+    translate: 0px 0px 79px;
+    animation-delay: 0.44043s;
+    animation-duration: 1.28199s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(2) {
+    scale: 0.23187;
+    left: 27vw;
+    top: 22%;
+    rotate: 353deg;
+    translate: 0px 0px 58px;
+    animation-delay: 0.98977s;
+    animation-duration: 0.89416s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(3) {
+    scale: 0.96758;
+    left: 28vw;
+    top: 89%;
+    rotate: 171deg;
+    translate: 0px 0px 41px;
+    animation-delay: 0.47162s;
+    animation-duration: 0.403s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(4) {
+    scale: 0.58395;
+    left: 83vw;
+    top: 73%;
+    rotate: 99deg;
+    translate: 0px 0px 19px;
+    animation-delay: 0.18959s;
+    animation-duration: 0.48539s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(5) {
+    scale: 0.10374;
+    left: 5vw;
+    top: 14%;
+    rotate: 209deg;
+    translate: 0px 0px 69px;
+    animation-delay: 0.86445s;
+    animation-duration: 0.96474s;
+    border-radius: 50%;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(6) {
+    scale: 0.60241;
+    left: 72vw;
+    top: 41%;
+    rotate: 152deg;
+    translate: 0px 0px 45px;
+    animation-delay: 0.15013s;
+    animation-duration: 0.63819s;
+    border-radius: 50%;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(7) {
+    scale: 0.10619;
+    left: 72vw;
+    top: 42%;
+    rotate: 194deg;
+    translate: 0px 0px 2px;
+    animation-delay: 0.2775s;
+    animation-duration: 1.04767s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(8) {
+    scale: 0.56588;
+    left: 100vw;
+    top: 65%;
+    rotate: 44deg;
+    translate: 0px 0px 70px;
+    animation-delay: 0.38477s;
+    animation-duration: 1.07215s;
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(9) {
+    scale: 0.11526;
+    left: 42vw;
+    top: 88%;
+    rotate: 346deg;
+    translate: 0px 0px 98px;
+    animation-delay: 0.53454s;
+    animation-duration: 0.46015s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(10) {
+    scale: 0.21648;
+    left: 55vw;
+    top: 45%;
+    rotate: 284deg;
+    translate: 0px 0px 8px;
+    animation-delay: 0.51387s;
+    animation-duration: 0.49026s;
+  }
+
+  .universe .stars .star:nth-of-type(11) {
+    scale: 0.40675;
+    left: 59vw;
+    top: 78%;
+    rotate: 339deg;
+    translate: 0px 0px 26px;
+    animation-delay: 0.70853s;
+    animation-duration: 0.63359s;
+    border-radius: 50%;
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(12) {
+    scale: 0.70145;
+    left: 38vw;
+    top: 5%;
+    rotate: 252deg;
+    translate: 0px 0px 94px;
+    animation-delay: 0.63502s;
+    animation-duration: 0.93832s;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(13) {
+    scale: 0.25482;
+    left: 19vw;
+    top: 55%;
+    rotate: 138deg;
+    translate: 0px 0px 45px;
+    animation-delay: 0.26423s;
+    animation-duration: 0.79394s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(14) {
+    scale: 0.34874;
+    left: 22vw;
+    top: 80%;
+    rotate: 322deg;
+    translate: 0px 0px 11px;
+    animation-delay: 0.02674s;
+    animation-duration: 1.01088s;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(15) {
+    scale: 0.91872;
+    left: 49vw;
+    top: 33%;
+    rotate: 126deg;
+    translate: 0px 0px 3px;
+    animation-delay: 0.57099s;
+    animation-duration: 1.29145s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(16) {
+    scale: 0.8695;
+    left: 1vw;
+    top: 80%;
+    rotate: 328deg;
+    translate: 0px 0px 14px;
+    animation-delay: 0.03759s;
+    animation-duration: 1.29987s;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(17) {
+    scale: 0.53207;
+    left: 11vw;
+    top: 51%;
+    rotate: 62deg;
+    translate: 0px 0px 59px;
+    animation-delay: 0.0647s;
+    animation-duration: 0.47651s;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(18) {
+    scale: 0.50767;
+    left: 32vw;
+    top: 15%;
+    rotate: 312deg;
+    translate: 0px 0px 34px;
+    animation-delay: 0.64326s;
+    animation-duration: 0.43539s;
+    border-radius: 50%;
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(19) {
+    scale: 0.43004;
+    left: 92vw;
+    top: 48%;
+    rotate: 26deg;
+    translate: 0px 0px 34px;
+    animation-delay: 0.86952s;
+    animation-duration: 0.53306s;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(20) {
+    scale: 0.84878;
+    left: 87vw;
+    top: 4%;
+    rotate: 198deg;
+    translate: 0px 0px 64px;
+    animation-delay: 0.32878s;
+    animation-duration: 1.28168s;
+  }
+
+  .universe .stars .star:nth-of-type(21) {
+    scale: 0.41995;
+    left: 30vw;
+    top: 66%;
+    rotate: 39deg;
+    translate: 0px 0px 62px;
+    animation-delay: 0.08928s;
+    animation-duration: 0.5336s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(22) {
+    scale: 0.96223;
+    left: 74vw;
+    top: 3%;
+    rotate: 140deg;
+    translate: 0px 0px 47px;
+    animation-delay: 0.40739s;
+    animation-duration: 1.11124s;
+    border-radius: 50%;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(23) {
+    scale: 0.79206;
+    left: 52vw;
+    top: 73%;
+    rotate: 182deg;
+    translate: 0px 0px 5px;
+    animation-delay: 0.04717s;
+    animation-duration: 1.05116s;
+  }
+
+  .universe .stars .star:nth-of-type(24) {
+    scale: 0.03904;
+    left: 43vw;
+    top: 32%;
+    rotate: 124deg;
+    translate: 0px 0px 51px;
+    animation-delay: 0.40348s;
+    animation-duration: 0.63786s;
+    border-radius: 50%;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(25) {
+    scale: 0.1469;
+    left: 22vw;
+    top: 40%;
+    rotate: 39deg;
+    translate: 0px 0px 49px;
+    animation-delay: 0.52251s;
+    animation-duration: 0.95669s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(26) {
+    scale: 0.21742;
+    left: 54vw;
+    top: 65%;
+    rotate: 277deg;
+    translate: 0px 0px 82px;
+    animation-delay: 0.11856s;
+    animation-duration: 1.06768s;
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(27) {
+    scale: 0.13103;
+    left: 3vw;
+    top: 42%;
+    rotate: 69deg;
+    translate: 0px 0px 85px;
+    animation-delay: 0.76453s;
+    animation-duration: 0.43436s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(28) {
+    scale: 0.3559;
+    left: 3vw;
+    top: 93%;
+    rotate: 105deg;
+    translate: 0px 0px 13px;
+    animation-delay: 0.17876s;
+    animation-duration: 1.35873s;
+    border-radius: 50%;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(29) {
+    scale: 0.92717;
+    left: 32vw;
+    top: 35%;
+    rotate: 70deg;
+    translate: 0px 0px 48px;
+    animation-delay: 0.0183s;
+    animation-duration: 0.9s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(30) {
+    scale: 0.03558;
+    left: 85vw;
+    top: 81%;
+    rotate: 325deg;
+    translate: 0px 0px 55px;
+    animation-delay: 0.73952s;
+    animation-duration: 0.51246s;
+    border-radius: 50%;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(31) {
+    scale: 0.72591;
+    left: 6vw;
+    top: 39%;
+    rotate: 254deg;
+    translate: 0px 0px 64px;
+    animation-delay: 0.44789s;
+    animation-duration: 1.15716s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(32) {
+    scale: 0.74656;
+    left: 93vw;
+    top: 76%;
+    rotate: 308deg;
+    translate: 0px 0px 68px;
+    animation-delay: 0.39443s;
+    animation-duration: 0.67038s;
+  }
+
+  .universe .stars .star:nth-of-type(33) {
+    scale: 0.62506;
+    left: 36vw;
+    top: 54%;
+    rotate: 342deg;
+    translate: 0px 0px 39px;
+    animation-delay: 0.53428s;
+    animation-duration: 1.18568s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(34) {
+    scale: 0.77868;
+    left: 45vw;
+    top: 3%;
+    rotate: 99deg;
+    translate: 0px 0px 72px;
+    animation-delay: 0.77832s;
+    animation-duration: 1.30047s;
+    border-radius: 50%;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(35) {
+    scale: 0.41441;
+    left: 73vw;
+    top: 64%;
+    rotate: 139deg;
+    translate: 0px 0px 31px;
+    animation-delay: 0.20652s;
+    animation-duration: 0.62268s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(36) {
+    scale: 0.29229;
+    left: 97vw;
+    top: 45%;
+    rotate: 207deg;
+    translate: 0px 0px 56px;
+    animation-delay: 0.26933s;
+    animation-duration: 0.42456s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(37) {
+    scale: 0.77216;
+    left: 56vw;
+    top: 21%;
+    rotate: 303deg;
+    translate: 0px 0px 38px;
+    animation-delay: 0.87555s;
+    animation-duration: 0.91162s;
+  }
+
+  .universe .stars .star:nth-of-type(38) {
+    scale: 0.46651;
+    left: 81vw;
+    top: 16%;
+    rotate: 220deg;
+    translate: 0px 0px 10px;
+    animation-delay: 0.61202s;
+    animation-duration: 1.04448s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(39) {
+    scale: 0.83754;
+    left: 21vw;
+    top: 2%;
+    rotate: 331deg;
+    translate: 0px 0px 69px;
+    animation-delay: 0.41385s;
+    animation-duration: 0.4628s;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(40) {
+    scale: 0.17003;
+    left: 51vw;
+    top: 64%;
+    rotate: 229deg;
+    translate: 0px 0px 83px;
+    animation-delay: 0.75812s;
+    animation-duration: 0.83495s;
+    border-radius: 50%;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(41) {
+    scale: 0.15846;
+    left: 93vw;
+    top: 99%;
+    rotate: 252deg;
+    translate: 0px 0px 31px;
+    animation-delay: 0.60223s;
+    animation-duration: 0.53638s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(42) {
+    scale: 0.36938;
+    left: 64vw;
+    top: 14%;
+    rotate: 208deg;
+    translate: 0px 0px 100px;
+    animation-delay: 0.79176s;
+    animation-duration: 0.98962s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(43) {
+    scale: 0.7795;
+    left: 19vw;
+    top: 42%;
+    rotate: 191deg;
+    translate: 0px 0px 9px;
+    animation-delay: 0.41518s;
+    animation-duration: 1.22979s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(44) {
+    scale: 0.11711;
+    left: 14vw;
+    top: 21%;
+    rotate: 132deg;
+    translate: 0px 0px 8px;
+    animation-delay: 0.4208s;
+    animation-duration: 1.39622s;
+    border-radius: 50%;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(45) {
+    scale: 0.39235;
+    left: 96vw;
+    top: 34%;
+    rotate: 204deg;
+    translate: 0px 0px 27px;
+    animation-delay: 0.91384s;
+    animation-duration: 0.95224s;
+    border-radius: 50%;
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(46) {
+    scale: 0.53889;
+    left: 59vw;
+    top: 9%;
+    rotate: 180deg;
+    translate: 0px 0px 66px;
+    animation-delay: 0.06726s;
+    animation-duration: 1.23907s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(47) {
+    scale: 0.04423;
+    left: 53vw;
+    top: 97%;
+    rotate: 82deg;
+    translate: 0px 0px 43px;
+    animation-delay: 0.63351s;
+    animation-duration: 1.22312s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(48) {
+    scale: 0.42228;
+    left: 38vw;
+    top: 67%;
+    rotate: 232deg;
+    translate: 0px 0px 99px;
+    animation-delay: 0.29694s;
+    animation-duration: 0.46742s;
+  }
+
+  .universe .stars .star:nth-of-type(49) {
+    scale: 0.23672;
+    left: 70vw;
+    top: 17%;
+    rotate: 221deg;
+    translate: 0px 0px 2px;
+    animation-delay: 0.42217s;
+    animation-duration: 1.00157s;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(50) {
+    scale: 0.53321;
+    left: 98vw;
+    top: 82%;
+    rotate: 227deg;
+    translate: 0px 0px 70px;
+    animation-delay: 0.4017s;
+    animation-duration: 1.36838s;
+    border-radius: 50%;
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(51) {
+    scale: 0.38003;
+    left: 96vw;
+    top: 19%;
+    rotate: 23deg;
+    translate: 0px 0px 9px;
+    animation-delay: 0.13346s;
+    animation-duration: 0.46103s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(52) {
+    scale: 0.89646;
+    left: 91vw;
+    top: 64%;
+    rotate: 107deg;
+    translate: 0px 0px 78px;
+    animation-delay: 0.56829s;
+    animation-duration: 0.60397s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(53) {
+    scale: 0.45162;
+    left: 53vw;
+    top: 25%;
+    rotate: 221deg;
+    translate: 0px 0px 94px;
+    animation-delay: 0.18127s;
+    animation-duration: 0.7816s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(54) {
+    scale: 0.36631;
+    left: 84vw;
+    top: 5%;
+    rotate: 213deg;
+    translate: 0px 0px 73px;
+    animation-delay: 0.19907s;
+    animation-duration: 1.04756s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(55) {
+    scale: 0.05902;
+    left: 82vw;
+    top: 15%;
+    rotate: 93deg;
+    translate: 0px 0px 61px;
+    animation-delay: 0.97284s;
+    animation-duration: 0.6124s;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(56) {
+    scale: 0.68222;
+    left: 100vw;
+    top: 42%;
+    rotate: 86deg;
+    translate: 0px 0px 1px;
+    animation-delay: 0.02655s;
+    animation-duration: 1.26336s;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(57) {
+    scale: 0.47935;
+    left: 70vw;
+    top: 44%;
+    rotate: 233deg;
+    translate: 0px 0px 48px;
+    animation-delay: 0.38398s;
+    animation-duration: 1.38875s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(58) {
+    scale: 0.92416;
+    left: 43vw;
+    top: 74%;
+    rotate: 82deg;
+    translate: 0px 0px 93px;
+    animation-delay: 0.34022s;
+    animation-duration: 1.15759s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(59) {
+    scale: 0.36678;
+    left: 3vw;
+    top: 52%;
+    rotate: 124deg;
+    translate: 0px 0px 24px;
+    animation-delay: 0.52021s;
+    animation-duration: 1.29803s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(60) {
+    scale: 0.01582;
+    left: 56vw;
+    top: 13%;
+    rotate: 148deg;
+    translate: 0px 0px 74px;
+    animation-delay: 0.53401s;
+    animation-duration: 1.15291s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(61) {
+    scale: 0.10726;
+    left: 71vw;
+    top: 30%;
+    rotate: 331deg;
+    translate: 0px 0px 49px;
+    animation-delay: 0.39694s;
+    animation-duration: 1.32587s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(62) {
+    scale: 0.5442;
+    left: 74vw;
+    top: 39%;
+    rotate: 125deg;
+    translate: 0px 0px 71px;
+    animation-delay: 0.03252s;
+    animation-duration: 1.18378s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(63) {
+    scale: 0.14627;
+    left: 48vw;
+    top: 18%;
+    rotate: 323deg;
+    translate: 0px 0px 2px;
+    animation-delay: 0.18238s;
+    animation-duration: 1.11361s;
+    border-radius: 50%;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(64) {
+    scale: 0.72634;
+    left: 63vw;
+    top: 25%;
+    rotate: 9deg;
+    translate: 0px 0px 9px;
+    animation-delay: 0.28446s;
+    animation-duration: 0.90345s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(65) {
+    scale: 0.65639;
+    left: 76vw;
+    top: 52%;
+    rotate: 50deg;
+    translate: 0px 0px 86px;
+    animation-delay: 0.10092s;
+    animation-duration: 1.10677s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(66) {
+    scale: 0.22267;
+    left: 7vw;
+    top: 30%;
+    rotate: 340deg;
+    translate: 0px 0px 52px;
+    animation-delay: 0.8607s;
+    animation-duration: 1.04085s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(67) {
+    scale: 0.40898;
+    left: 65vw;
+    top: 9%;
+    rotate: 146deg;
+    translate: 0px 0px 1px;
+    animation-delay: 0.76668s;
+    animation-duration: 0.68091s;
+    border-radius: 50%;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(68) {
+    scale: 0.92288;
+    left: 2vw;
+    top: 15%;
+    rotate: 50deg;
+    translate: 0px 0px 74px;
+    animation-delay: 0.62888s;
+    animation-duration: 0.7245s;
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(69) {
+    scale: 0.6444;
+    left: 90vw;
+    top: 95%;
+    rotate: 276deg;
+    translate: 0px 0px 67px;
+    animation-delay: 0.57788s;
+    animation-duration: 0.47325s;
+    border-radius: 50%;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(70) {
+    scale: 0.42953;
+    left: 84vw;
+    top: 3%;
+    rotate: 217deg;
+    translate: 0px 0px 91px;
+    animation-delay: 0.50544s;
+    animation-duration: 0.8853s;
+  }
+
+  .universe .stars .star:nth-of-type(71) {
+    scale: 0.83866;
+    left: 8vw;
+    top: 1%;
+    rotate: 239deg;
+    translate: 0px 0px 70px;
+    animation-delay: 0.91927s;
+    animation-duration: 0.59356s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(72) {
+    scale: 0.03105;
+    left: 10vw;
+    top: 15%;
+    rotate: 141deg;
+    translate: 0px 0px 20px;
+    animation-delay: 0.81716s;
+    animation-duration: 0.96437s;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(73) {
+    scale: 0.48085;
+    left: 68vw;
+    top: 59%;
+    rotate: 206deg;
+    translate: 0px 0px 2px;
+    animation-delay: 0.64895s;
+    animation-duration: 0.74405s;
+  }
+
+  .universe .stars .star:nth-of-type(74) {
+    scale: 0.85939;
+    left: 4vw;
+    top: 7%;
+    rotate: 201deg;
+    translate: 0px 0px 91px;
+    animation-delay: 0.94791s;
+    animation-duration: 1.07761s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(75) {
+    scale: 0.68624;
+    left: 66vw;
+    top: 18%;
+    rotate: 309deg;
+    translate: 0px 0px 32px;
+    animation-delay: 0.32919s;
+    animation-duration: 0.91261s;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(76) {
+    scale: 0.59758;
+    left: 24vw;
+    top: 42%;
+    rotate: 274deg;
+    translate: 0px 0px 75px;
+    animation-delay: 0.01537s;
+    animation-duration: 1.2283s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(77) {
+    scale: 0.0224;
+    left: 47vw;
+    top: 85%;
+    rotate: 62deg;
+    translate: 0px 0px 60px;
+    animation-delay: 0.60114s;
+    animation-duration: 0.41361s;
+    border-radius: 50%;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(78) {
+    scale: 0.08449;
+    left: 27vw;
+    top: 41%;
+    rotate: 185deg;
+    translate: 0px 0px 6px;
+    animation-delay: 0.17983s;
+    animation-duration: 0.44296s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(79) {
+    scale: 0.19668;
+    left: 16vw;
+    top: 92%;
+    rotate: 93deg;
+    translate: 0px 0px 47px;
+    animation-delay: 0.2614s;
+    animation-duration: 1.15357s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(80) {
+    scale: 0.05198;
+    left: 90vw;
+    top: 6%;
+    rotate: 92deg;
+    translate: 0px 0px 89px;
+    animation-delay: 0.09581s;
+    animation-duration: 0.64326s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(81) {
+    scale: 0.89024;
+    left: 50vw;
+    top: 68%;
+    rotate: 299deg;
+    translate: 0px 0px 96px;
+    animation-delay: 0.79567s;
+    animation-duration: 1.32731s;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(82) {
+    scale: 0.25786;
+    left: 15vw;
+    top: 4%;
+    rotate: 106deg;
+    translate: 0px 0px 54px;
+    animation-delay: 0.60544s;
+    animation-duration: 0.75484s;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(83) {
+    scale: 0.97688;
+    left: 31vw;
+    top: 99%;
+    rotate: 292deg;
+    translate: 0px 0px 95px;
+    animation-delay: 0.47962s;
+    animation-duration: 1.15201s;
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(84) {
+    scale: 0.44407;
+    left: 18vw;
+    top: 11%;
+    rotate: 330deg;
+    translate: 0px 0px 86px;
+    animation-delay: 0.63612s;
+    animation-duration: 1.21475s;
+    border-radius: 50%;
+  }
+
+  .universe .stars .star:nth-of-type(85) {
+    scale: 0.00148;
+    left: 11vw;
+    top: 7%;
+    rotate: 353deg;
+    translate: 0px 0px 65px;
+    animation-delay: 0.43215s;
+    animation-duration: 0.43403s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(86) {
+    scale: 0.13245;
+    left: 37vw;
+    top: 98%;
+    rotate: 133deg;
+    translate: 0px 0px 38px;
+    animation-delay: 0.95371s;
+    animation-duration: 0.40009s;
+    border-radius: 50%;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(87) {
+    scale: 0.17909;
+    left: 81vw;
+    top: 91%;
+    rotate: 343deg;
+    translate: 0px 0px 53px;
+    animation-delay: 0.90906s;
+    animation-duration: 0.95242s;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(88) {
+    scale: 0.91282;
+    left: 39vw;
+    top: 63%;
+    rotate: 150deg;
+    translate: 0px 0px 24px;
+    animation-delay: 0.3239s;
+    animation-duration: 1.13157s;
+    border-radius: 50%;
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(89) {
+    scale: 0.97991;
+    left: 12vw;
+    top: 96%;
+    rotate: 351deg;
+    translate: 0px 0px 100px;
+    animation-delay: 0.96503s;
+    animation-duration: 0.4593s;
+  }
+
+  .universe .stars .star:nth-of-type(90) {
+    scale: 0.36853;
+    left: 16vw;
+    top: 61%;
+    rotate: 171deg;
+    translate: 0px 0px 86px;
+    animation-delay: 0.78251s;
+    animation-duration: 1.14113s;
+  }
+
+  .universe .stars .star:nth-of-type(91) {
+    scale: 0.27679;
+    left: 11vw;
+    top: 39%;
+    rotate: 7deg;
+    translate: 0px 0px 92px;
+    animation-delay: 0.96836s;
+    animation-duration: 0.52592s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(92) {
+    scale: 0.73531;
+    left: 87vw;
+    top: 36%;
+    rotate: 27deg;
+    translate: 0px 0px 49px;
+    animation-delay: 0.22249s;
+    animation-duration: 0.80779s;
+  }
+
+  .universe .stars .star:nth-of-type(93) {
+    scale: 0.91809;
+    left: 72vw;
+    top: 98%;
+    rotate: 228deg;
+    translate: 0px 0px 35px;
+    animation-delay: 0.47584s;
+    animation-duration: 1.16336s;
+    border-radius: 50%;
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(94) {
+    scale: 0.8421;
+    left: 80vw;
+    top: 45%;
+    rotate: 339deg;
+    translate: 0px 0px 33px;
+    animation-delay: 0.50888s;
+    animation-duration: 0.65813s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(95) {
+    scale: 0.22508;
+    left: 71vw;
+    top: 52%;
+    rotate: 104deg;
+    translate: 0px 0px 28px;
+    animation-delay: 0.90764s;
+    animation-duration: 1.34236s;
+    border-radius: 50%;
+    background: var(--Orange);
+  }
+
+  .universe .stars .star:nth-of-type(96) {
+    scale: 0.98325;
+    left: 70vw;
+    top: 44%;
+    rotate: 239deg;
+    translate: 0px 0px 30px;
+    animation-delay: 0.00834s;
+    animation-duration: 1.00097s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Pink);
+  }
+
+  .universe .stars .star:nth-of-type(97) {
+    scale: 0.70752;
+    left: 84vw;
+    top: 80%;
+    rotate: 206deg;
+    translate: 0px 0px 29px;
+    animation-delay: 0.07773s;
+    animation-duration: 1.08733s;
+  }
+
+  .universe .stars .star:nth-of-type(98) {
+    scale: 0.10035;
+    left: 75vw;
+    top: 5%;
+    rotate: 88deg;
+    translate: 0px 0px 33px;
+    animation-delay: 0.29609s;
+    animation-duration: 0.43424s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--Green);
+  }
+
+  .universe .stars .star:nth-of-type(99) {
+    scale: 0.81389;
+    left: 72vw;
+    top: 92%;
+    rotate: 42deg;
+    translate: 0px 0px 15px;
+    animation-delay: 0.20794s;
+    animation-duration: 0.94045s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .universe .stars .star:nth-of-type(100) {
+    scale: 0.88961;
+    left: 71vw;
+    top: 95%;
+    rotate: 347deg;
+    translate: 0px 0px 89px;
+    animation-delay: 0.40486s;
+    animation-duration: 0.76952s;
+    border-radius: 50%;
+    background: var(--Pink);
+  }
+
+  .universe .stripes {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+  }
+
+  .universe .stripes .title {
+    position: absolute;
+    display: ilnine-block;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: transparent;
+    background: linear-gradient(
+      to right,
+      var(--Red),
+      var(--Comment),
+      var(--Red)
+    );
+    background-size: 200% 100%;
+    background-position: 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: titleZoomies 40s linear infinite, fadeInOut 10s linear infinite,
+      paint 2s linear infinite normal;
+    font-family: Montserrat;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .universe .stripes .title.ride {
+    translate: -50% -50% -17451px;
+  }
+
+  .universe .stripes .title.ment {
+    translate: -50% -50% -27259px;
+  }
+
+  .universe .stripes .stripe {
+    position: absolute;
+    width: 100%;
+    top: 50vh;
+    left: 50vw;
+    margin-left: -50%;
+    background: var(--Yellow);
+    background: repeating-linear-gradient(
+      to right,
+      transparent 0px,
+      transparent 50px,
+      var(--Yellow) 50px,
+      var(--Yellow) 60px,
+      transparent 60px,
+      transparent 110px
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    rotate: 0 1 0 90deg;
+    animation: speedLines 10s linear infinite, fadeInOut 10s linear infinite,
+      paint 1s linear infinite;
+  }
+
+  .universe .stripes .stripe:nth-of-type(1) {
+    height: 2px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 13vw 33vh -24747px;
+    animation-delay: 0s, 0s, 0.9079s, 0.56081s;
+    animation-duration: 10s, 10s, 0.65329s, 15.32945s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(2) {
+    height: 3px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -4vw -3vh -48516px;
+    animation-delay: 0s, 0s, 0.90687s, 0.31768s;
+    animation-duration: 10s, 10s, 1.04554s, 15.57834s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(3) {
+    height: 3px;
+    translate: -13vw 29vh -50474px;
+    animation-delay: 0s, 0s, 0.14584s, 0.47575s;
+    animation-duration: 10s, 10s, 0.75471s, 15.88304s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(4) {
+    height: 4px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 18vw -22vh -31367px;
+    animation-delay: 0s, 0s, 0.86441s, 0.5117s;
+    animation-duration: 10s, 10s, 1.04653s, 15.99167s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(5) {
+    height: 1px;
+    translate: -20vw -12vh -29024px;
+    animation-delay: 0s, 0s, 0.20928s, 0.58727s;
+    animation-duration: 10s, 10s, 1.41556s, 15.24214s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(6) {
+    height: 4px;
+    translate: 1vw -11vh -15044px;
+    animation-delay: 0s, 0s, 0.86685s, 0.94075s;
+    animation-duration: 10s, 10s, 1.39265s, 15.11176s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(7) {
+    height: 4px;
+    translate: -7vw -16vh -31465px;
+    animation-delay: 0s, 0s, 0.27882s, 0.10069s;
+    animation-duration: 10s, 10s, 1.29155s, 15.89384s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(8) {
+    height: 3px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -24vw 37vh -24474px;
+    animation-delay: 0s, 0s, 0.9925s, 0.68594s;
+    animation-duration: 10s, 10s, 0.87641s, 15.79988s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(9) {
+    height: 3px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -19vw -43vh -46954px;
+    animation-delay: 0s, 0s, 0.34176s, 0.18732s;
+    animation-duration: 10s, 10s, 1.00494s, 15.28451s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(10) {
+    height: 2px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -17vw 10vh -51459px;
+    animation-delay: 0s, 0s, 0.95832s, 0.55823s;
+    animation-duration: 10s, 10s, 0.93673s, 15.48603s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(11) {
+    height: 5px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -20vw 43vh -12870px;
+    animation-delay: 0s, 0s, 0.58399s, 0.74456s;
+    animation-duration: 10s, 10s, 0.93347s, 15.15585s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(12) {
+    height: 2px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 18vw -37vh -19605px;
+    animation-delay: 0s, 0s, 0.23407s, 0.0396s;
+    animation-duration: 10s, 10s, 0.63033s, 15.391s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(13) {
+    height: 2px;
+    translate: 25vw -1vh -52832px;
+    animation-delay: 0s, 0s, 0.13113s, 0.68492s;
+    animation-duration: 10s, 10s, 1.21341s, 15.11465s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(14) {
+    height: 3px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 23vw -42vh -49745px;
+    animation-delay: 0s, 0s, 0.85566s, 0.95698s;
+    animation-duration: 10s, 10s, 0.88184s, 15.54322s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(15) {
+    height: 2px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -22vw 41vh -41095px;
+    animation-delay: 0s, 0s, 0.15758s, 0.22203s;
+    animation-duration: 10s, 10s, 1.35112s, 15.99293s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(16) {
+    height: 1px;
+    translate: 19vw -33vh -24291px;
+    animation-delay: 0s, 0s, 0.90317s, 0.03621s;
+    animation-duration: 10s, 10s, 1.19109s, 15.34456s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(17) {
+    height: 5px;
+    translate: 13vw 25vh -14932px;
+    animation-delay: 0s, 0s, 0.38185s, 0.97623s;
+    animation-duration: 10s, 10s, 0.56832s, 15.48678s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(18) {
+    height: 1px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -8vw -31vh -47843px;
+    animation-delay: 0s, 0s, 0.44181s, 0.57342s;
+    animation-duration: 10s, 10s, 0.5386s, 15.13682s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(19) {
+    height: 5px;
+    translate: 9vw -2vh -22701px;
+    animation-delay: 0s, 0s, 0.83154s, 0.36621s;
+    animation-duration: 10s, 10s, 1.26102s, 15.34492s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(20) {
+    height: 4px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -16vw -36vh -24974px;
+    animation-delay: 0s, 0s, 0.06912s, 0.55667s;
+    animation-duration: 10s, 10s, 0.71753s, 15.28306s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(21) {
+    height: 5px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 20vw -11vh -13804px;
+    animation-delay: 0s, 0s, 0.09328s, 0.0736s;
+    animation-duration: 10s, 10s, 0.59352s, 15.78661s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(22) {
+    height: 4px;
+    translate: -11vw -34vh -6743px;
+    animation-delay: 0s, 0s, 0.14146s, 0.7876s;
+    animation-duration: 10s, 10s, 0.95924s, 15.78629s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(23) {
+    height: 4px;
+    height: 323px;
+    background: repeating-linear-gradient(
+      60deg,
+      transparent 0px,
+      transparent 50px,
+      var(--Yellow) 50px,
+      var(--Yellow) 100px
+    );
+    background-size: 100px auto;
+    translate: 1vw -2vh -23035px;
+    animation-delay: 0s, 0s, 0.56411s, 0.12871s;
+    animation-duration: 10s, 10s, 0.74909s, 15.09535s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(24) {
+    height: 1px;
+    translate: -12vw -43vh -6782px;
+    animation-delay: 0s, 0s, 0.03873s, 0.59627s;
+    animation-duration: 10s, 10s, 0.72114s, 15.60141s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(25) {
+    height: 5px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 19vw 8vh -31576px;
+    animation-delay: 0s, 0s, 0.7525s, 0.44682s;
+    animation-duration: 10s, 10s, 1.34935s, 15.13828s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(26) {
+    height: 5px;
+    translate: 2vw -15vh -34886px;
+    animation-delay: 0s, 0s, 0.84085s, 0.54861s;
+    animation-duration: 10s, 10s, 0.86261s, 15.36944s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(27) {
+    height: 2px;
+    translate: 4vw -10vh -54793px;
+    animation-delay: 0s, 0s, 0.01847s, 0.017s;
+    animation-duration: 10s, 10s, 1.19115s, 15.10216s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(28) {
+    height: 5px;
+    translate: 18vw 38vh -31857px;
+    animation-delay: 0s, 0s, 0.16213s, 0.14724s;
+    animation-duration: 10s, 10s, 1.4209s, 15.91419s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(29) {
+    height: 1px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 21vw 12vh -19134px;
+    animation-delay: 0s, 0s, 0.51249s, 0.23506s;
+    animation-duration: 10s, 10s, 0.54646s, 15.30928s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(30) {
+    height: 1px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 25vw 28vh -29268px;
+    animation-delay: 0s, 0s, 0.94862s, 0.1013s;
+    animation-duration: 10s, 10s, 0.93818s, 15.13957s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(31) {
+    height: 3px;
+    translate: 20vw 0vh -31096px;
+    animation-delay: 0s, 0s, 0.74148s, 0.80815s;
+    animation-duration: 10s, 10s, 0.50431s, 15.95942s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(32) {
+    height: 1px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 17vw -42vh -21702px;
+    animation-delay: 0s, 0s, 0.63967s, 0.7726s;
+    animation-duration: 10s, 10s, 0.81575s, 15.1072s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(33) {
+    height: 3px;
+    translate: 16vw -33vh -14452px;
+    animation-delay: 0s, 0s, 0.36985s, 0.77284s;
+    animation-duration: 10s, 10s, 0.96615s, 15.8311s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(34) {
+    height: 3px;
+    translate: 3vw 49vh -50195px;
+    animation-delay: 0s, 0s, 0.7316s, 0.93299s;
+    animation-duration: 10s, 10s, 1.14815s, 15.5288s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(35) {
+    height: 5px;
+    translate: 2vw 33vh -18586px;
+    animation-delay: 0s, 0s, 0.13314s, 0.35631s;
+    animation-duration: 10s, 10s, 1.32985s, 15.92119s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(36) {
+    height: 3px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -24vw 17vh -49246px;
+    animation-delay: 0s, 0s, 0.70645s, 0.58858s;
+    animation-duration: 10s, 10s, 0.53411s, 15.38761s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(37) {
+    height: 1px;
+    translate: -17vw -48vh -14774px;
+    animation-delay: 0s, 0s, 0.35081s, 0.25796s;
+    animation-duration: 10s, 10s, 0.58585s, 15.70677s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(38) {
+    height: 2px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 24vw 20vh -19223px;
+    animation-delay: 0s, 0s, 0.04276s, 0.32842s;
+    animation-duration: 10s, 10s, 0.88056s, 15.47121s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(39) {
+    height: 5px;
+    translate: -13vw 8vh -45293px;
+    animation-delay: 0s, 0s, 0.37005s, 0.16353s;
+    animation-duration: 10s, 10s, 0.68322s, 15.52064s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(40) {
+    height: 5px;
+    translate: 3vw 2vh -10366px;
+    animation-delay: 0s, 0s, 0.95874s, 0.95745s;
+    animation-duration: 10s, 10s, 1.35111s, 15.21818s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(41) {
+    height: 5px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 17vw 0vh -13663px;
+    animation-delay: 0s, 0s, 0.07481s, 0.0712s;
+    animation-duration: 10s, 10s, 0.70453s, 15.80539s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(42) {
+    height: 5px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 9vw -45vh -46409px;
+    animation-delay: 0s, 0s, 0.66723s, 0.10941s;
+    animation-duration: 10s, 10s, 1.15985s, 15.70059s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(43) {
+    height: 5px;
+    translate: -13vw -40vh -34614px;
+    animation-delay: 0s, 0s, 0.41918s, 0.23003s;
+    animation-duration: 10s, 10s, 1.37147s, 15.10595s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(44) {
+    height: 3px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 20vw 48vh -43698px;
+    animation-delay: 0s, 0s, 0.55375s, 0.77801s;
+    animation-duration: 10s, 10s, 1.40782s, 15.99729s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(45) {
+    height: 3px;
+    translate: -10vw 43vh -34128px;
+    animation-delay: 0s, 0s, 0.48817s, 0.69664s;
+    animation-duration: 10s, 10s, 0.6846s, 15.43446s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(46) {
+    height: 2px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 3vw 22vh -33060px;
+    animation-delay: 0s, 0s, 0.19695s, 0.03402s;
+    animation-duration: 10s, 10s, 1.05216s, 15.87784s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(47) {
+    height: 4px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 0vw -32vh -21658px;
+    animation-delay: 0s, 0s, 0.16463s, 0.81242s;
+    animation-duration: 10s, 10s, 1.17039s, 15.29781s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(48) {
+    height: 5px;
+    translate: 5vw -21vh -12454px;
+    animation-delay: 0s, 0s, 0.20098s, 0.75618s;
+    animation-duration: 10s, 10s, 0.77004s, 15.23357s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(49) {
+    height: 3px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -4vw -27vh -25446px;
+    animation-delay: 0s, 0s, 0.93233s, 0.79464s;
+    animation-duration: 10s, 10s, 0.70585s, 15.13298s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(50) {
+    height: 2px;
+    height: 147px;
+    background: repeating-linear-gradient(
+      60deg,
+      transparent 0px,
+      transparent 50px,
+      var(--Yellow) 50px,
+      var(--Yellow) 100px
+    );
+    background-size: 100px auto;
+    translate: 1vw 11vh -30999px;
+    animation-delay: 0s, 0s, 0.09614s, 0.10158s;
+    animation-duration: 10s, 10s, 0.96501s, 15.3873s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(51) {
+    height: 1px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 6vw -13vh -7182px;
+    animation-delay: 0s, 0s, 0.03548s, 0.31581s;
+    animation-duration: 10s, 10s, 1.16315s, 15.42768s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(52) {
+    height: 3px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -13vw -18vh -12827px;
+    animation-delay: 0s, 0s, 0.92679s, 0.83693s;
+    animation-duration: 10s, 10s, 1.11165s, 15.53295s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(53) {
+    height: 5px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -15vw 19vh -41498px;
+    animation-delay: 0s, 0s, 0.86184s, 0.57353s;
+    animation-duration: 10s, 10s, 0.89198s, 15.12769s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(54) {
+    height: 4px;
+    translate: 4vw -6vh -49349px;
+    animation-delay: 0s, 0s, 0.2555s, 0.55782s;
+    animation-duration: 10s, 10s, 0.72313s, 15.22386s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(55) {
+    height: 3px;
+    translate: -3vw 31vh -9385px;
+    animation-delay: 0s, 0s, 0.59849s, 0.62196s;
+    animation-duration: 10s, 10s, 1.05497s, 15.33662s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(56) {
+    height: 2px;
+    translate: 22vw 16vh -36283px;
+    animation-delay: 0s, 0s, 0.38502s, 0.70063s;
+    animation-duration: 10s, 10s, 0.66581s, 15.46193s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(57) {
+    height: 1px;
+    translate: -13vw -47vh -7384px;
+    animation-delay: 0s, 0s, 0.90929s, 0.50087s;
+    animation-duration: 10s, 10s, 0.52321s, 15.3895s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(58) {
+    height: 2px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -9vw -38vh -53751px;
+    animation-delay: 0s, 0s, 0.73361s, 0.89146s;
+    animation-duration: 10s, 10s, 0.60161s, 15.17525s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(59) {
+    height: 1px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -13vw -38vh -28149px;
+    animation-delay: 0s, 0s, 0.23979s, 0.94655s;
+    animation-duration: 10s, 10s, 0.52931s, 15.31237s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(60) {
+    height: 3px;
+    height: 258px;
+    background: repeating-linear-gradient(
+      60deg,
+      transparent 0px,
+      transparent 50px,
+      var(--Yellow) 50px,
+      var(--Yellow) 100px
+    );
+    background-size: 100px auto;
+    translate: 22vw 20vh -8637px;
+    animation-delay: 0s, 0s, 0.58683s, 0.8216s;
+    animation-duration: 10s, 10s, 1.1016s, 15.63153s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(61) {
+    height: 4px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 4vw -16vh -51277px;
+    animation-delay: 0s, 0s, 0.86678s, 0.31929s;
+    animation-duration: 10s, 10s, 0.70786s, 15.67767s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(62) {
+    height: 2px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -2vw 40vh -42775px;
+    animation-delay: 0s, 0s, 0.99043s, 0.7444s;
+    animation-duration: 10s, 10s, 1.33716s, 15.26252s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(63) {
+    height: 4px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -20vw -13vh -35082px;
+    animation-delay: 0s, 0s, 0.389s, 0.85237s;
+    animation-duration: 10s, 10s, 0.69566s, 15.66028s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(64) {
+    height: 2px;
+    translate: -8vw -42vh -7534px;
+    animation-delay: 0s, 0s, 0.31167s, 0.49039s;
+    animation-duration: 10s, 10s, 1.32533s, 15.46276s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(65) {
+    height: 4px;
+    translate: 1vw -21vh -23656px;
+    animation-delay: 0s, 0s, 0.88322s, 0.51082s;
+    animation-duration: 10s, 10s, 1.17305s, 15.06493s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(66) {
+    height: 5px;
+    translate: -13vw -34vh -50097px;
+    animation-delay: 0s, 0s, 0.46233s, 0.56439s;
+    animation-duration: 10s, 10s, 1.07337s, 15.08978s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(67) {
+    height: 1px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 7vw -18vh -15032px;
+    animation-delay: 0s, 0s, 0.56506s, 0.29594s;
+    animation-duration: 10s, 10s, 0.66971s, 15.60533s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(68) {
+    height: 1px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -19vw 33vh -48295px;
+    animation-delay: 0s, 0s, 0.29538s, 0.78946s;
+    animation-duration: 10s, 10s, 0.74275s, 15.42734s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(69) {
+    height: 2px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 16vw -7vh -14643px;
+    animation-delay: 0s, 0s, 0.12556s, 0.44113s;
+    animation-duration: 10s, 10s, 1.34092s, 15.81719s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(70) {
+    height: 5px;
+    translate: 25vw 16vh -38107px;
+    animation-delay: 0s, 0s, 0.10388s, 0.82136s;
+    animation-duration: 10s, 10s, 1.04303s, 15.02065s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(71) {
+    height: 1px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 3vw 39vh -29039px;
+    animation-delay: 0s, 0s, 0.05611s, 0.71491s;
+    animation-duration: 10s, 10s, 0.84668s, 15.40307s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(72) {
+    height: 5px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 6vw -10vh -43272px;
+    animation-delay: 0s, 0s, 0.41101s, 0.90958s;
+    animation-duration: 10s, 10s, 1.37539s, 15.41302s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(73) {
+    height: 3px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -10vw 36vh -54458px;
+    animation-delay: 0s, 0s, 0.20843s, 0.92484s;
+    animation-duration: 10s, 10s, 0.70215s, 15.31109s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(74) {
+    height: 3px;
+    translate: -17vw -7vh -43629px;
+    animation-delay: 0s, 0s, 0.6283s, 0.27702s;
+    animation-duration: 10s, 10s, 0.9813s, 15.08331s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(75) {
+    height: 1px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 25vw 43vh -15675px;
+    animation-delay: 0s, 0s, 0.58567s, 0.49024s;
+    animation-duration: 10s, 10s, 0.74123s, 15.73593s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(76) {
+    height: 4px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 20vw 12vh -37983px;
+    animation-delay: 0s, 0s, 0.22188s, 0.96339s;
+    animation-duration: 10s, 10s, 0.69682s, 15.12844s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(77) {
+    height: 3px;
+    translate: -12vw -8vh -22205px;
+    animation-delay: 0s, 0s, 0.72818s, 0.26465s;
+    animation-duration: 10s, 10s, 1.1378s, 15.84102s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(78) {
+    height: 5px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -20vw -42vh -10328px;
+    animation-delay: 0s, 0s, 0.33727s, 0.91717s;
+    animation-duration: 10s, 10s, 1.08912s, 15.91884s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(79) {
+    height: 1px;
+    translate: -2vw 40vh -34503px;
+    animation-delay: 0s, 0s, 0.74997s, 0.00171s;
+    animation-duration: 10s, 10s, 0.77357s, 15.3318s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(80) {
+    height: 1px;
+    translate: 16vw -39vh -7615px;
+    animation-delay: 0s, 0s, 0.26633s, 0.35993s;
+    animation-duration: 10s, 10s, 0.69909s, 15.40197s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(81) {
+    height: 4px;
+    translate: 24vw -24vh -10477px;
+    animation-delay: 0s, 0s, 0.80073s, 0.04822s;
+    animation-duration: 10s, 10s, 0.57774s, 15.04137s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(82) {
+    height: 1px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 3vw 38vh -8961px;
+    animation-delay: 0s, 0s, 0.74731s, 0.29534s;
+    animation-duration: 10s, 10s, 0.77726s, 15.00192s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(83) {
+    height: 2px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -15vw 46vh -25725px;
+    animation-delay: 0s, 0s, 0.81537s, 0.1999s;
+    animation-duration: 10s, 10s, 1.31175s, 15.0103s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(84) {
+    height: 4px;
+    translate: 5vw 48vh -41479px;
+    animation-delay: 0s, 0s, 0.56164s, 0.59625s;
+    animation-duration: 10s, 10s, 1.44164s, 15.82333s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(85) {
+    height: 4px;
+    translate: 8vw -15vh -22387px;
+    animation-delay: 0s, 0s, 0.8278s, 0.08266s;
+    animation-duration: 10s, 10s, 1.43569s, 15.04637s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(86) {
+    height: 2px;
+    translate: -1vw -33vh -46382px;
+    animation-delay: 0s, 0s, 0.30096s, 0.6337s;
+    animation-duration: 10s, 10s, 1.38916s, 15.21859s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(87) {
+    height: 5px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: 0vw -36vh -41995px;
+    animation-delay: 0s, 0s, 0.5389s, 0.35639s;
+    animation-duration: 10s, 10s, 1.28955s, 15.96856s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(88) {
+    height: 4px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -13vw 28vh -23240px;
+    animation-delay: 0s, 0s, 0.50206s, 0.5267s;
+    animation-duration: 10s, 10s, 1.00631s, 15.3624s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(89) {
+    height: 2px;
+    translate: 15vw 0vh -27190px;
+    animation-delay: 0s, 0s, 0.01961s, 0.51105s;
+    animation-duration: 10s, 10s, 0.96777s, 15.66667s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(90) {
+    height: 4px;
+    translate: 9vw 32vh -27467px;
+    animation-delay: 0s, 0s, 0.63757s, 0.41709s;
+    animation-duration: 10s, 10s, 0.9748s, 15.87592s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(91) {
+    height: 5px;
+    translate: -24vw -40vh -53361px;
+    animation-delay: 0s, 0s, 0.14396s, 0.62113s;
+    animation-duration: 10s, 10s, 1.17545s, 15.99179s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(92) {
+    height: 4px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -4vw -9vh -20390px;
+    animation-delay: 0s, 0s, 0.04157s, 0.56398s;
+    animation-duration: 10s, 10s, 1.20729s, 15.31328s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(93) {
+    height: 4px;
+    translate: 18vw -25vh -49673px;
+    animation-delay: 0s, 0s, 0.39144s, 0.93129s;
+    animation-duration: 10s, 10s, 1.3526s, 15.49397s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(94) {
+    height: 4px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -2vw 25vh -27304px;
+    animation-delay: 0s, 0s, 0.44987s, 0.6257s;
+    animation-duration: 10s, 10s, 0.67946s, 15.95895s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(95) {
+    height: 5px;
+    translate: -16vw -1vh -5107px;
+    animation-delay: 0s, 0s, 0.22698s, 0.06686s;
+    animation-duration: 10s, 10s, 0.804s, 15.15716s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(96) {
+    height: 4px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -14vw 32vh -21334px;
+    animation-delay: 0s, 0s, 0.89478s, 0.00014s;
+    animation-duration: 10s, 10s, 0.54743s, 15.39809s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(97) {
+    height: 3px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--Foreground) 33.3%,
+      var(--Foreground) 66.6%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+    translate: -12vw 15vh -53498px;
+    animation-delay: 0s, 0s, 0.90289s, 0.98756s;
+    animation-duration: 10s, 10s, 0.7466s, 15.21222s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(98) {
+    height: 1px;
+    translate: -23vw 43vh -9222px;
+    animation-delay: 0s, 0s, 0.2841s, 0.73009s;
+    animation-duration: 10s, 10s, 0.57752s, 15.43713s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(99) {
+    height: 4px;
+    translate: 22vw 38vh -36297px;
+    animation-delay: 0s, 0s, 0.92342s, 0.12562s;
+    animation-duration: 10s, 10s, 0.54777s, 15.67871s;
+  }
+
+  .universe .stripes .stripe:nth-of-type(100) {
+    height: 3px;
+    translate: 0vw 40vh -25091px;
+    animation-delay: 0s, 0s, 0.63152s, 0.17899s;
+    animation-duration: 10s, 10s, 0.68727s, 15.34289s;
+  }
+
+  @keyframes speedLines {
+    to {
+      transform: translateX(-40000px);
+    }
+  }
+
+  @keyframes titleZoomies {
+    to {
+      transform: translateZ(40000px);
+    }
+  }
+
+  @keyframes rotate {
+    to {
+      rotate: 360deg;
+    }
+  }
+
+  @keyframes fadeInOut {
+    from {
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes twinkle {
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes paint {
+    to {
+      background-position: 250% 0%;
+    }
+  }
+
+  @keyframes tilt {
+    from {
+      transform: rotateX(0deg);
+    }
+
+    33.3% {
+      transform: rotateX(3deg);
+    }
+
+    66.6% {
+      transform: rotateX(-3deg);
+    }
+
+    to {
+      transform: rotateX(0deg);
+    }
+  }
+}

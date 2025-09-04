@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[hero-aem-website.authenticatedpages]"
+    embed="[hero-aem-website.editprofile,hero-aem-website.navigationmenu,hero-aem-website.profilesummary,hero-aem-website.bookservice,hero-aem-website.myvehicles,hero-aem-website.formfield,hero-aem-website.feedbackform,hero-aem-website.servicerecord,hero-aem-website.servicesummary,hero-aem-website.refer-a-friend,hero-aem-website.enrollmentform,hero-aem-website.goodlife,hero-aem-website.textwithimage,hero-aem-website.xclanridedetails,hero-aem-website.xclanridelist,hero-aem-website.xclanenrollmentform,hero-aem-website.button,hero-aem-website.winner-of-month,hero-aem-website.earning-and-redemption,hero-aem-website.pointsredemption,hero-aem-website.earning-and-redemption-banner,hero-aem-website.goodlife-banner,hero-aem-website.membershipplans,hero-aem-website.privilegesandbenefits]"/>
+
+

@@ -1,0 +1,74 @@
+// products-comparison scooter theme
+
+.compare-bike-section {
+  &.compare-scooter-section {
+    .compare-bike-common-cta {
+    }
+    padding: 20px 0px 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(/content/dam/hero-aem-website/in/products/scooters/scooters-bg-img.png) !important;
+  }
+}
+
+@media (max-width: 767px) {
+ .compare-bike-section {
+    &.compare-scooter-section {
+      .compare-bike-wrappper {
+        .compare-bike-header {
+          padding: 15px;
+        }
+        .bike-compare-div {
+          .compare-bike-info {
+            .compare-bike-mob-div {
+              img {
+                max-width: 35%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// products-comparison dark theme
+
+.compare-bike-section {
+  &.dark-theme {
+    background-size: cover;
+    background: linear-gradient(180deg, #4F4D4D 0%, #3D3D3D 100%) !important;
+    background: linear-gradient(180deg, #6f6f6f 0%, #313131 100%),
+      url(../images/products/city-plus/comparision-bg.png) no-repeat center;
+
+    .common-h3 {
+      color: #eeeeee;
+      text-transform: capitalize;
+    }
+
+    .compare-bike-wrappper {
+      .bike-compare-div {
+        .compare-bike-info {
+          .compare-bike-common-div {
+            .compare-bike-common-p {
+              color: #eeeeee;
+            }
+
+            .compare-bike-common-p:nth-child(1) {
+              color: #eeeeee;
+            }
+
+            .compare-bike-common-middle-p {
+              color: #eeeeee;
+            }
+          }
+        }
+      }
+    }
+
+    .common-cta {
+      padding-top: 20px;
+    }
+  }
+}
+

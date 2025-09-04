@@ -1,0 +1,21 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-test="${image.src}"
+  data-cmp-dmimage="${image.dmImage}" data-asset-id="${image.uuid}" id="${image.id}"
+  data-cmp-data-layer="${image.data.json}"
+  class="cmp-image${!wcmmode.disabled ? ' cq-dd-image' : ''} ${properties.pageType=='0' ? 'd-flex flex-md-column flex-row align-items-md-start mb-3 mb-md-0' : ''}"
+  itemscope itemtype="http://schema.org/ImageObject">
+  <a data-sly-unwrap="${!image.imageLink.valid}" class="cmp-image__link"
+    data-sly-attribute="${image.imageLink.htmlAttributes}" data-cmp-clickable="${image.data ? true : false}">
+    <img srcset="${image.srcset}" src="${image.src}" loading="${image.lazyEnabled ? 'lazy' : ''}" itemprop="contentUrl"
+      class="${properties.addtnclass}" alt="${image.alt || true}" title="${image.displayPopupTitle && image.title}" />
+  </a>
+  <span class="cmp-image__title" itemprop="caption"
+    data-sly-test="${!image.displayPopupTitle && image.title}">${image.title}</span>
+  <meta itemprop="caption" content="${image.title}" data-sly-test="${image.displayPopupTitle && image.title}">
+  <p class="${properties.addtntitleclass}" data-sly-element="${properties.type}">
+    ${properties.title}
+  </p>
+</div>

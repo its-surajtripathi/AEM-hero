@@ -1,0 +1,17 @@
+<div class="xtreme-160R-spec">
+    <div class="xtreme-head">${properties.headingtext @ context='html'}</div>
+    <p class="xtreme-p">${properties.subtitle}</p>
+    <div class="xtreme-160R-spec-wrapper row"
+         data-sly-use.specifications="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='specifications'}"
+         data-sly-list="${specifications}">
+        <div class="xtreme-160R-content col-md-3 col-12 text-center mb-35">
+            <img loading="lazy" class="img-fluid" src="${item.properties.icon}" alt="">
+            <h4 class="campaign-h4">${item.properties.title}</h4>
+            <p class="xtreme-p2">${item.properties.value}</p>
+        </div>
+    </div>
+    <div class="view-details d-flex justify-content-end align-items-center  px-md-4 pt-3 px-3">
+        <p class="view-p"><a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.viewlink}"
+                    href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"> ${properties.viewtext} <span class="arrow-p">></span></a></p>
+    </div>
+</div>

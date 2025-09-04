@@ -1,0 +1,169 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div class="container-fluid">
+    <div class="col-12 col-sm-12">
+        <div class="servicesummary" data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}">
+            <script type="text/html" class="getServiceSummaryTemplate">
+
+                <div class="serviceSummaryfirst-section">
+
+                    <div class="serviceheading">
+                        <img src="${properties.summaryIcon @ context='uri'}">
+                        <h4>${properties.summaryLabel @ context='scriptString'}</h4>
+                    </div>
+
+                    <div class="serviceSummaryvehicle-details">
+
+                        <div class="col-12 col-sm-4">
+
+                            <div class="serviceSummaryVehicleImage">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-sm-8">
+
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="serviceSummaryVehicleName">
+                                        <h4 class="serviceSummaryvehicle-title"><%= getServiceSummaryData.modelName%></h4>
+                                        <p class="serviceSummarytitle-description"><%= getServiceSummaryData.licenseNo%></p>
+                                        <div><button class="service-summary-button-completed <%=getServiceSummaryData.jobCardCloseDate != '' ? 'completed' : 'ongoing'%>"><%if(getServiceSummaryData.jobCardCloseDate != ''){ %><%="${properties.completedLabel @ context='scriptString'}"%><%}else{%><%="${properties.onGoingLabel @ context='scriptString'}"%><%}%></button></div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-12 col-sm-6">
+                                    <div class="serviceSummaryVehicleSRNo">
+                                        <h4 class="serviceSummaryVehicleSRNo-title">${properties.srnoLabel @ context='scriptString'}</h4>
+                                        <p class="serviceSummarytitle-description"><%= getServiceSummaryData.serviceBookingNumber%></p>
+                                        <div>
+                                            <p class="serviceSummarytitle-description"><%= getServiceSummaryData.serviceType%></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 serviceSummarydivide-border">
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="summary-Service-details">
+                                        <div>
+                                            <div class="serviceSummarydetails-title">
+                                                <h4 class="serviceSummaryvehicle-title">${properties.serviceDetailsLabel @ context='scriptString'}</h4>
+                                            </div>
+                                            <div class="serviceSummarybasic-details">
+                                                <p class="serviceSummarytoleft">${properties.serviceDate @ context='scriptString'}</p><span class="serviceSummaryaligntoright">
+                                                    <p class=""><%= convertDate(getServiceSummaryData.serviceBookingDate) %></p>
+                                                </span>
+                                            </div>
+                                            <div class="serviceSummarybasic-details">
+                                                <p class="serviceSummarytoleft">${properties.serviceTime @ context='scriptString'}</p><span class="serviceSummaryaligntoright">
+                                                    <p><%= convertTime(getServiceSummaryData.serviceBookingDate) %></p>
+                                                </span>
+                                            </div>
+                                            <div class="serviceSummarybasic-details">
+                                                <p class="serviceSummarytoleft">${properties.serviceType @ context='scriptString'}</p><span class="serviceSummaryaligntoright">
+                                                    <p><%= getServiceSummaryData.serviceType %></p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-12 col-sm-6 summaryServiceDealer">
+                                    <div class="serviceSummarydetails-title">
+                                        <h4 class="serviceSummaryvehicle-title-support">${properties.dealerLabel @ context='scriptString'}</h4>
+                                    </div>
+                                    <div class="serviceSummary-address-details">
+                                        <h6 class="serviceSummarytext-bold"><%= getServiceSummaryData.dealerName%></h6>
+                                        <p><%= getServiceSummaryData.dealerAddress %> </p>
+                                        <div class="dealer-tel <%= getServiceSummaryData.dealerMobile != null ? getServiceSummaryData.dealerMobile : 'd-none'%>">
+                                            <img src="${properties.greyphoneIcon @ context='uri'}" alt="grey-telephone">
+                                            <span><%= getServiceSummaryData.dealerMobile%></span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="serviceSummarysection">
+                            <div class="servicesummaryheading">
+                                <img src="${properties.jobcardIcon @ context='uri'}">
+                                <span>
+                                    <h5>${properties.jobcardLabel @ context='scriptString'}</h5>
+                                </span>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="serviceSummarydivide-border">
+                                </div>
+                            </div>
+							<div class="serviceSummaryinfo-section">
+                                <div class="info-section-left">
+                                    <p class="serviceSummarytext-bold">${properties.jobcardnumLabel @ context='scriptString'}</p>
+                                </div>
+                                <div class="info-section-right">
+                                    <p class="serviceSummarytext-bold" id="totalAmount"><%= getServiceSummaryData.jobCardNumber %></p>
+                                </div>
+                            </div>
+							<div class="serviceSummaryinfo-section">
+                                <div class="info-section-left">
+                                    <p class="serviceSummarytext-bold"><%if(getServiceSummaryData.jobCardCloseDate != ''){ %>${properties.jobcardclosedateLabel @ context='scriptString'}<%}else{%>${properties.jobcardesttimeLabel @ context='scriptString'}<%}%></p>
+                                </div>
+                                <div class="info-section-right">
+                                    <p class="serviceSummarytext-bold" id="totalAmount"><%if(getServiceSummaryData.jobCardCloseDate != ''){ %><%= convertDateTime(getServiceSummaryData.jobCardCloseDate)%><%}else{%><%=convertDateTime(getServiceSummaryData.estimatedTime)%><%}%> </p>
+                                </div>
+                            </div>
+                            <div class="serviceSummaryinfo-section">
+                                <div class="info-section-left">
+                                    <p class="serviceSummarytext-bold"><%if(getServiceSummaryData.jobCardCloseDate != ''){ %>${properties.totalamountLabel @ context='scriptString'}<%}else{%>${properties.estamountLabel @ context='scriptString'}<%}%></p>
+                                </div>
+                                <div class="info-section-right">
+                                    <p class="serviceSummarytext-bold" id="totalAmount"><%if(getServiceSummaryData.jobCardCloseDate != ''){ %>${pageconfig.currencyUnit @ context='scriptString'} <%=parseFloat(getServiceSummaryData.orderTotal).toFixed(2)%><%}else{%>${pageconfig.currencyUnit @ context='scriptString'} <%=parseFloat(getServiceSummaryData.estimatedPrice).toFixed(2)%><%}%></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class=" col-sm-12">
+                        <div class="serviceSummarysupport-section">
+                            <div class="servicesummaryheading">
+                                <img src="${properties.supportIcon @ context='uri'}">
+                                <h5>${properties.supportLabel @ context='scriptString'}</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="serviceSummarysupport">
+                                        <h5 class="serviceSummarysupport-text"><%= getServiceSummaryData.supportPerson %></h5>
+                                        <p>${properties.supportPerson @ context='scriptString'}</p>
+                                        <div class="support-tel">
+                                            <img src="${properties.redphoneIcon @ context='uri'}" alt="red-telephone">
+                                            <h5 class="serviceSummarytext-red"><%= getServiceSummaryData.supportPerMobNo %></h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </script>
+        </div>
+    </div>
+</div>

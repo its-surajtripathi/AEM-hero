@@ -1,0 +1,32 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+	${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+<div class="page-csr-we-care">
+	<div class="videoCon" id="VidGallery" name="VidGallery">
+		
+		<div class="video-detial-container">
+			
+			<sly
+				data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='csrvideomulti'}">
+				<div class="csr-video-header">
+					<div><h2>CSR Video</h2></div>
+					<div class="mediaLeft">
+						<div class="videoWraper">
+							<iframe id="yt" name="yt-player" src="${listUse[0].properties.csrvideo}" frameborder="0" allowfullscreen="">
+								
+							</iframe>
+						</div>
+					</div>
+				</div>				
+				<div class="mediaRight">
+                    <div id="videoList" class="video-list inner-video-list" >                     
+						<ul data-sly-list="${listUse}">
+							<a href="${item.properties.csrvideo}" target="yt-player"><li><span><img src="${item.properties.thumbnilepath}" loading="lazy"></span> 
+							<span>${item.properties.utubetitle @ context='html'}</span></li></a>
+						</ul>
+					</div>
+				</div>
+			</sly>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container-fluid p-0">
+<div class="explore-products investor-explore">
+    <div class="explore-tab-section">
+        <div class="bike-tab-section"
+            data-sly-use.tabitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='tabitems'}">
+            <div class="tab-wrapper">
+                <ul class="nav nav-tabs common-tabs-main" data-sly-list="${tabitems}">
+                    <li class="nav-item">
+                        <a data-toggle="tab" aa-data-attr="track_cta" href="#menu${item.path.hashCode}"
+                            class="nav-link${itemList.first ? ' active' : ''}">${item.properties.title}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bike-product-wrapper">
+                <div class="tab-content" data-sly-list="${tabitems}">
+                    <div id="menu${item.path.hashCode}" class="tab-pane fade show${itemList.first ? ' active' : ''}"
+                        data-sly-resource="${['tab',itemList.index] @ join='-' , resourceType='wcm/foundation/components/responsivegrid'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explore-div px-md-5 px-4" data-sly-test="${properties.inctalabel}">
+            <a href="${properties.inctaurl}" target="_blank">${properties.inctalabel}</a>
+        </div>
+    </div>
+</div>
+</div>

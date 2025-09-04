@@ -1,0 +1,21 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+ </p>
+ <section class="refer-afriend">
+    <form id="refer-a-friend" action="" class="bgform">
+       <sly data-sly-resource="${'container' @ resourceType='hero-aem-website/components/container' }">
+       </sly>
+       <div class="referFriendAccept-policy">
+          <p class="campaign-p">${properties.privacypolicy  @ context = 'html'}</p>
+          <button class="refer-friend-submitBtn" data-sly-test="${properties.urlType == 'modal'}" data-toggle="modal" 
+             data-target="${properties.url}">${properties.label}</button>
+          <a aa-data-attr="track_cta" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.url}" href="${linkuse.value}" 
+             target="${linkuse.isExternal ? '_blank' : '_self'}" data-sly-test="${properties.urlType == 'url'}">
+          <button class="refer-friend-submitBtn" type="button">${properties.label}</button>
+          </a>
+       </div>
+       <input type="hidden" required value="" data-referal-type="${properties.referralType}" name="referralType"/>
+       <p id="result" style="display:none"></p>
+       <p id="demo"  style="display:none"></p>
+    </form>
+ </section>

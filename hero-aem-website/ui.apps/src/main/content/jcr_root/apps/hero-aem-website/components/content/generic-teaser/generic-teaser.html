@@ -1,0 +1,11 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.link}"
+   href="${linkuse.value}"> <img src="${properties.fileReference}" height=500 width=500> </a>
+
+<!--/* <a href="${properties.fileReference @ extension = 'html' height=500 width=500}">${properties.fileReference}</a> */-->
+<!--/* <img src="${properties.fileReference}" height=500 width=500> */-->
+
+<div>${properties.title}</div>
+<div>${properties.text @context= 'html'}</div>

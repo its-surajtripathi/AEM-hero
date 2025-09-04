@@ -1,0 +1,60 @@
+.ride-list-wrapper{
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    .ridessection {
+        position: relative;
+        margin-bottom: 25px;
+    }
+    .rideImag {
+        width: 100%;
+        @media screen (max-width:767px){
+              padding-left:15px;
+              padding-right:15px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .date-month {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            @media screen (max-width:767px){
+                 left:20px;
+            }
+            .date {
+                display: block;
+                width: 60px;
+                background: #ed1c24;
+                padding: 6px 4px;
+                color: #fff;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .month {
+                display: inline-block;
+                width: 60px;
+                background: #000;
+                margin-top: 2px;
+                color: #fff;
+                text-align: center;
+            }
+        }
+        .durationdetails {
+            background: #fff;
+            padding: 10px;
+        }
+        h3 {
+            color: #E81938;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+    }
+    .api-error{
+        color: #E81938;
+        font-size: 28px;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,183 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<section class="premia-dealer-container" id="premia-dealer-variant">
+   <div class="premia-dealer-carousel-container">
+      <img class="harley-bike-img" src="${properties.harleyimage}" alt="bike image" />
+      <sly data-sly-list.parent="${resource.children}">
+         <sly data-sly-test="${parent.name == 'herodetailswithmap'}">
+            <sly data-sly-list.child="${parent.children}">
+               <div>
+                  <img class="harley-bike-img" src="${child.variantImagePath}" alt="${child.variantName}" />
+                  <div class="specs-container">                    
+                     <sly data-sly-list.specifications="${child.children}">
+                        <sly data-sly-test="${specifications.name == 'bikeSpec'}">
+                           <sly data-sly-list.specification="${specifications.children}">
+                              <div class="bike-specification">
+                                 <img src="${specification.specIconPath}" alt="specs icon" />
+                                 <div class="bike-spec-text">${specification.description}</div>
+                              </div>
+                           </sly>
+                        </sly>
+                     </sly>
+                  </div>
+               </div>
+            </sly>
+         </sly>
+      </sly>
+   </div>
+   <div class="premia-dealer-form-container">
+      <div class="premia-dealer-form-wrapper">
+         <form class="premia-dealer-form-fields">
+            <div class="dealer-wrapper">
+               <img
+                  src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-booking-site/resources/dealer-icon.svg"
+                  alt="dealer-icon" class="dealer-wrapper-image" />
+               <span>STATE & CITY</span>
+            </div>
+            <div class="permia-dropdown-state-city">
+               <div class="form group cust-form-group">
+                  <div class="select-dropdown btn-drop-v1 cust-drop-down">
+                     <button class="dropdown-select btn-drop btn-primary dropdown-toggle w-100 text-left"
+                        name="statename" type="button" data-toggle="dropdown" data-default-label="Select A State">
+                        <span class="caret select-span">Select A State</span>
+                     </button>
+                     <input type="hidden" required value="" data-validation-msg-req="" name="stateNameVal" />
+                     <ul class="dropdown-menu cust-dropdown-menu permia-dropdown" aria-labelledby="stateDropdown"
+                        style=""></ul>
+                     <span class="select-p">State</span>
+                  </div>
+               </div>
+               <div class="form group cust-form-group">
+                  <div class="select-dropdown btn-drop-v1 cust-drop-down">
+                     <button class="dropdown-select btn-drop btn-primary dropdown-toggle w-100 text-left"
+                        name="cityname" type="button" data-toggle="dropdown" data-default-label="Select A City">
+                        <span class="caret select-span">Select A City</span>
+                     </button>
+                     <input type="hidden" required value="" data-validation-msg-req="" name="cityNameVal"
+                        id="harley-city" />
+                     <ul class="dropdown-menu cust-dropdown-menu permia-dropdown" aria-labelledby="cityDropdown"
+                        style=""></ul>
+                     <span class="select-p">City</span>
+                  </div>
+               </div>
+            </div>
+            <div class="variant-wrapper">
+               <div class="dealer-wrapper">
+                  <img
+                     src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-booking-site/resources/bike-icon.svg"
+                     alt="dealer-icon" class="dealer-wrapper-image" />
+                  <span>VARIANT & COLOR</span>
+               </div>
+
+               <div class="permia-bike-variant-wrapper no-servlet-call" id="variant-container">
+                  <sly data-sly-list.parent="${resource.children}">
+                     <sly data-sly-test="${parent.name == 'herodetailswithmap'}">
+                        <sly data-sly-list.child="${parent.children}">
+                           <div class="cust-form-group">
+                              <div class="custom-control custom-radio">
+                                 <input type="radio" id="customRadio${childList.count}" data-index="${childList.count}"
+                                    name="customRadio" class="custom-control-input" required />
+                                 <label class="custom-control-label" for="customRadio${childList.count}">
+                                    <div class="bike-variant">
+                                       <h3 class="bike-variant-label" data-mcode="${child.variantMcode}">
+                                          <span>${child.variantName}</span>
+                                          <span>${child.variantColor}</span>
+                                       </h3>
+                                       <div>
+                                          <span class="bike-variant-price">${child.variantPrice}</span>
+                                          <span class="bike-variant-showroom">Ex showroom price</span>
+                                       </div>
+                                    </div>
+                                 </label>
+                              </div>
+                           </div>
+                        </sly>
+                     </sly>
+                  </sly>
+               </div>
+            </div>
+            <div class="dealer-locator-wrapper">
+               <div class="dealer-wrapper mt-lg-0 mt-3">
+                  <img
+                     src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-booking-site/resources/dealer-icon.svg"
+                     alt="dealer-icon" class="dealer-wrapper-image" />
+                  <span>DEALERS</span>
+               </div>
+               <div class="permia-bike-variant-wrapper" id="dealer-locator-container">
+                  <div class="cust-form-group">
+                     <div class="custom-control custom-radio">
+                        <input type="radio" id="dealerLocator1" name="dealerLocator" class="custom-control-input"
+                           data-dealer-code="11963" required="" />
+                        <label class="custom-control-label" for="dealerLocator1">
+                           <div class="dealer-locator">
+                              <h3 class="dealer-locator-label">AUTO WORLD</h3>
+                              <div>
+                                 <span class="dealer-locator-phonenumber">9401188016
+                                 </span>
+                                 <div class="dealer-locator-address">
+                                    ARENGAPARA RD PO-BENGNAKHOWA 785621
+                                 </div>
+                              </div>
+                           </div>
+                        </label>
+                     </div>
+                  </div>
+                  <div class="cust-form-group">
+                     <div class="custom-control custom-radio">
+                        <input type="radio" id="dealerLocator2" name="dealerLocator" class="custom-control-input"
+                           data-dealer-code="11963" required="" />
+                        <label class="custom-control-label" for="dealerLocator2">
+                           <div class="dealer-locator">
+                              <h3 class="dealer-locator-label">AUTO WORLD</h3>
+                              <div>
+                                 <span class="dealer-locator-phonenumber">9401188016
+                                 </span>
+                                 <div class="dealer-locator-address">
+                                    ARENGAPARA RD PO-BENGNAKHOWA 785621
+                                 </div>
+                              </div>
+                           </div>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+</section>
+
+<section class="bottom-sticky bottom-fix" id="hd-bsn">
+   <div class="bottom-navigation">
+      <div class="detail-bar">
+         <div data-aa-name="product-name" class="detail-Heading">
+            ${properties.detialheading @context='html'}
+         </div>
+         <div class="detail-content">
+            <div class="content-container" id="footer-variant-heading">
+               <div class="content-title">Variant & Color:</div>
+               <div data-aa-name="product-variant-color" class="content-desc">
+                  Harley-Davidson XTM 440 Denim ( Mustard Denim )
+               </div>
+            </div>
+            <div class="footer-div-line-mob"></div>
+            <div class="content-container" id="footer-dealer-heading">
+               <div class="content-title">Dealer:</div>
+               <div data-aa-name="dealer-detail" class="content-desc">
+                  Harley Automobiles Pvt. Ltd, Tilak Nagar
+               </div>
+            </div>
+         </div>
+      </div>
+      <button class="cat-primary-button" id="dealer-form-continue" disabled>
+         Continue
+      </button>
+   </div>
+   <div class="float-section">
+      <button class="drop-button" id="slide-button">
+         <i class="drop-icon"></i>
+      </button>
+   </div>
+</section>

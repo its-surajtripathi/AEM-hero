@@ -1,0 +1,188 @@
+
+    .heading{
+		border-bottom:none;
+    }
+    .form-group{
+        input{
+             &:-webkit-autofill {
+                      -webkit-text-fill-color: inherit;
+                      transition: background-color 50000s ease-in-out 0s;
+                    }
+                }
+        }
+
+    .form-control:-webkit-autofill,
+    .form-control:-webkit-autofill:hover,
+    .form-control:-webkit-autofill:focus,
+    .form-control:-webkit-autofill:active {
+
+        -webkit-text-fill-color: inherit;
+    }
+    .formfield{
+        .form-group{
+			display:block;
+            margin-bottom: 2rem;
+            span{
+                a{
+                    display:inline;
+                    color:red;
+                }
+            }
+            input,select{
+				width: 300px;
+                display: block;
+                border: none;
+                border-bottom: 1px solid;
+                height:40px;
+                border-radius:inherit;
+                border-bottom: 2px solid #CCCCCC;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.01em;
+                padding: unset;
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                    width: 100%;
+                }
+                &:focus{
+                    outline: none;
+                }
+                &[readonly] {
+				    cursor: not-allowed;
+				}
+            }
+            select{
+                color: #B8C1CB;
+                option{
+                    &:disabled{
+                        color:#B8C1CB;
+                    }
+                    &[value]{
+                        color: #333333;
+                    }
+                }
+            }
+
+            input[type="checkbox"], input[type="radio"]{
+				width:30px;
+                display:inline;
+                height:20px;
+                accent-color: #FF0000;
+                border: #FF0000;
+            }
+            input[type="date"]{
+                color: #B8C1CB;
+            }
+            
+            .checkbox-item, .radio-item{
+                display:flex;
+                margin-top:1rem;
+
+                span{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #333333;
+                    margin-right: 1rem;
+                }
+
+                input:checked + span{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #333333;
+                }
+            }
+
+            label, legend{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.01em;
+                color: rgba(51, 51, 51, 0.8);
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                }
+                span{
+                    color:red;
+                }
+            }
+
+            span.hasError{
+				color:red;
+            }
+
+            input,textarea{
+                &::-webkit-input-placeholder{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 0.01em;
+                    color: #ADADAD;
+                }
+                &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: #B8C1CB;
+                    opacity: 1; /* Firefox */
+                }
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: #B8C1CB;
+                }
+                &::-ms-input-placeholder { /* Microsoft Edge */
+                    color:#B8C1CB;
+                }
+            }
+        }
+    }
+#addEmergencyContact{
+  @media (max-width: 767px){
+    .modal-content{
+        padding:15px;
+        .modal-body{
+            .close{
+                margin-top:-3%;
+            }
+            h2{
+                font-size:26px;
+            }
+            .row{
+                margin-top:10%;
+            }
+        }
+    }
+  }
+    .formfield{
+        @media (max-width: 767px){
+
+            display:block;
+        }
+    }
+}
+
+#nomineeDetails{
+    .modal-content{
+        padding:20px;
+        @media (max-width: 767px){
+            padding:20px 0;
+        }
+    .service-main-heading {
+        padding:0;
+        padding-bottom:20px;
+        font-weight:bold;
+    }
+ .formfield{
+     @media (max-width: 767px){
+        display:block;
+        }
+         .form-group input[readonly]{
+                        border-bottom:none;
+                    }
+    }
+
+    }
+}

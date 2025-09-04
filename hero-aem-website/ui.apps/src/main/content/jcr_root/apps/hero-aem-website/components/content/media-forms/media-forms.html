@@ -1,0 +1,1029 @@
+<section class="media--forms media-component" id="suggestions" data-sly-test="${properties.variationtype == 'suggestions'}">
+    <div class="container">
+        <div class="contact--details">
+            <div class="top--button-wrap">
+                <a href="${properties.button1Url}"
+                    class="campaign-btn btn-black btn w-100 book-test-reset">${properties.button1Label}</a>
+                <a href="${properties.button2Url}"
+                    class="campaign-btn btn-black btn w-100 book-test-reset">${properties.button2Label}</a>
+            </div>
+            <div class="addressPan">
+                ${properties.topText @context='html'}
+                <div class="content--wrap suggestions" id="media--forms">
+                    <form action="" class="suggestions-form" autocomplete="off">
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+                                <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/name-img.png"
+                                    alt="" class="input-img1">
+                                <span class="form-span">First Name <sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control" id="first-name"
+                                    required placeholder=" Enter Your First Name" name="firstname" maxlength="50"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '');">
+                                <span class="error--message">First Name Required</span>
+                            </div>
+
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+                                <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/name-img.png"
+                                    alt="" class="input-img1">
+                                <span class="form-span">Last Name <sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control" id="last-name"
+                                    required placeholder="Enter Your Last Name" name="lastname" maxlength="50"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '');">
+                                <span class="error--message">Last Name Required</span>
+                            </div>
+                        </div>
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Mobile Number<sup>*</sup></span>
+                                <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/number-img.png"
+                                    alt="" class="input-img2">
+                                <input type="tel" class="form-control campaign-input cust-form-control mobile-number "
+                                    id="number" required placeholder="+91" name="mobileno"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                    maxlength="10">
+                                <span class="error--message">Required</span>
+                                <span class="validate--msg">Invalid Number</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Tel</span>
+                                <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/number-img.png"
+                                    alt="" class="input-img2">
+                                <input type="tel" class="form-control campaign-input cust-form-control mobile-number "
+                                    id="number" name="telephone"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                    maxlength="10">
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Email <sup>*</sup></span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="email-enquiries" type="email" class="form-control campaign-input cust-form-control email"
+                                    id="email" required oninput="this.value=this.value.replace(/\s/g,'');">
+                                <span class="error--message">Required</span>
+                                <span class="validate--msg">Invalid Email</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Address Line 1</span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="address-1" type="text" class="form-control campaign-input cust-form-control" id="address-1"
+                                    maxlength="250">
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Address Line 2</span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="address-2" type="text" class="form-control campaign-input cust-form-control" id="address-2"
+                                    maxlength="250">
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="statenameDistrict" type="button" data-toggle="dropdown">Select Your State<span
+                                            class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" value="" name="stateNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="stateDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Select State</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="cityname" type="button" data-toggle="dropdown"
+                                        data-default-label="Select Your District">Select Your District<span
+                                            class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" value="" data-validation-msg-req=""
+                                        name="cityNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="districtDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Select District</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Town</span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="town" type="text" class="form-control campaign-input cust-form-control" id="town"
+                                    maxlength="50" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Pin</span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="pin" type="number" class="form-control campaign-input cust-form-control" id="pin" pattern="\d*"/>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="vehiclemodelname" type="button" data-toggle="dropdown"
+                                        data-default-label="">Vehicle Model<span class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" value="" data-validation-msg-req=""
+                                        name="vehicleNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="vehicleDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Vehicle Model</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Vehicle Reg. No.</span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="vehicle-reg-no" type="text" class="form-control campaign-input cust-form-control"
+                                    id="vehicle-reg-no">
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Odometer Reading (kms)</span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="odometer" type="text" maxlength="7" class="form-control campaign-input cust-form-control"
+                                    id="odometer"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Malfunction Date <sup>*</sup></span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="malfunction-date" type="date" required class="form-control campaign-input cust-form-control"
+                                    id="malfunction-date">
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="dealerstate" type="button" data-toggle="dropdown"
+                                        data-default-label="Select Your Dealer State">Select Your Dealer State<span
+                                            class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req=""
+                                        name="dealerNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="dealerstateDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Dealer State <sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="dealercity" id="citybtn" data-listval="" type="button"
+                                        data-toggle="dropdown" data-default-label="Select Your Dealer Town">Select Your Dealer Town<span
+                                            class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req=""
+                                        name="dealerCityNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="dealertownDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Dealer Town <sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="dealername" type="button" data-toggle="dropdown"
+                                        data-default-label="Select Your Dealer">Select Your Dealer<span class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req=""
+                                        name="dealerVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="dealersspDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Dealer<sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="complaintstream" type="button" data-toggle="dropdown"
+                                        data-default-label="Complaint Stream">Complaint Stream<span
+                                            class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req="" name="complaintstreamVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="cmpstreamDropdown" style="">
+                                        <li>
+                                            <a href="javascript:void(0)">GoodLife</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Parts</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Sales</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Service</a>
+                                        </li>
+                                    </ul>
+                                    <span class="select-p">Complaint Stream <sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="complaintcategory" type="button" disabled data-toggle="dropdown"
+                                        data-default-label="Complaint Category">Complaint Category<span
+                                            class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req="" name="complaintcategoryVal"/>
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="cmpcategoryDropdown" style="">
+                                        <li data-category="goodlife">
+                                            <a href="javascript:void(0)">GoodLife Benefits</a>
+                                        </li>
+                                        <li data-category="goodlife">
+                                            <a href="javascript:void(0)">Program Related</a>
+                                        </li>
+                                        <li data-category="parts">
+                                            <a href="javascript:void(0)">Parts Availabilty</a>
+                                        </li>
+                                        <li data-category="parts">
+                                            <a href="javascript:void(0)">Parts Quality Related</a>
+                                        </li>
+                                        <li data-category="sales">
+                                            <a href="javascript:void(0)">Basic Amenities</a>
+                                        </li>
+                                        <li data-category="sales">
+                                            <a href="javascript:void(0)">Booking Related</a>
+                                        </li>
+                                        <li data-category="sales">
+                                            <a href="javascript:void(0)">Delivery Issue</a>
+                                        </li>
+                                        <li data-category="sales">
+                                            <a href="javascript:void(0)">Finance Related</a>
+                                        </li>
+                                        <li data-category="sales">
+                                            <a href="javascript:void(0)">Model Availability</a>
+                                        </li>
+                                        <li data-category="sales">
+                                            <a href="javascript:void(0)">Purchase price/overcharging</a>
+                                        </li>
+                                        <li data-category="sales">
+                                            <a href="javascript:void(0)">RC/Documentation Issue</a>
+                                        </li>
+                                        <li data-category="sales">
+                                            <a href="javascript:void(0)">Scheme Related</a>
+                                        </li>
+                                        <li data-category="sales">
+                                            <a href="javascript:void(0)">Staff Behaviour</a>
+                                        </li>
+                                        <li data-category="service">
+                                            <a href="javascript:void(0)">Cost & Estimate</a>
+                                        </li>
+                                        <li data-category="service">
+                                            <a href="javascript:void(0)">Electrical-Product Complaint</a>
+                                        </li>
+                                        <li data-category="service">
+                                            <a href="javascript:void(0)">Engine-Product Complaint</a>
+                                        </li>
+                                        <li data-category="service">
+                                            <a href="javascript:void(0)">Frame-Product Complaint</a>
+                                        </li>
+                                        <li data-category="service">
+                                            <a href="javascript:void(0)">Insurance Claim Issue</a>
+                                        </li>
+                                        <li data-category="service">
+                                            <a href="javascript:void(0)">Joyride</a>
+                                        </li>
+                                        <li data-category="service">
+                                            <a href="javascript:void(0)">Mileage-Product Complaint</a>
+                                        </li>
+                                        <li data-category="service">
+                                            <a href="javascript:void(0)">Service Quality</a>
+                                        </li>
+                                    </ul>
+                                    <span class="select-p">Complaint Category <sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap d-none" id="vin-number">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">VIN Number<sup>*</sup></span>
+                                <img src="" alt="" class="input-img2">
+                                <input type="text" class="form-control campaign-input cust-form-control"
+                                    oninput="this.value = this.value.replace(/[^a-zA-Z0-9]+/g, '')" maxlength="17" name="vin-number">
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Brief About Complaint <sup>*</sup></span>
+                                <textarea name="txtComplaint" required rows="2" cols="20" id="txtComplaint"
+                                    maxlength="2000" class="formTextbox" style="height:100px;width:100%;"></textarea>
+                                <span class="max--char">(Max 2000 characters, in ENGLISH only)</span>
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+                        <div class="form--wrap">
+                            <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                ${properties.disclaimerText @context='html'}
+                            </div>
+                        </div>
+                        <div class="form--wrap">
+                            <input type="button" class="campaign-btn btn-black btn w-100 book-test-reset"
+                                id="campaign-reset-btn" value="reset" name="reset" />
+                            <input type="button" class="campaign-btn btn-red-gradient btn w-100 book-test-submit"
+                                id="campaign-sub-btn" value="submit" name="submit" />
+                        </div>
+                        <input type="hidden" value="${properties.thankyoulink @ extension='html'}" name="thankyoulink" />
+			            <input type="hidden" value="${[resource.path, 'suggestions.html'] @ join='.'}" name="action_url" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="corporate--enquiries media-component" id="corporate-enq" data-sly-test="${properties.variationtype == 'corporateenquiries'}">
+    <div class="container">
+        <div class="contact--details">
+            <p class="query--para">
+                For queries, fill the form below and we will get back to you with the desired information at the
+                earliest.
+            </p>
+            <div class="addressPan">
+                <div class="content--wrap corporate-enquiries-wrap" id="media--forms">
+                    <div class="server-fail-msg d-none">
+                        <p>Hi</p>
+                        <br>
+                        <p>Due to high traffic on our site, the complaint cannot be captured at this moment.</p>
+                        <p>Kindly call our customer care number on <b>1800 266 0018</b> to register your complaint. Alternatively you can try again after sometime here.</p>
+                        <br>
+                        <p>Sincerely,</p>
+                        <p>Hero MotoCorp</p>
+                    </div>
+                    <form action="" class="enquiry-form" autocomplete="off">
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+                                <span class="form-span">Name <sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control"
+                                    id="fullname-enquiries" required placeholder="" name="name-enquiries" maxlength="50"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'');">
+                                <span class="error--message">Required</span>
+                            </div>
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+                                <span class="form-span">Designation <sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control"
+                                    id="designation-enquiries" required placeholder="" name="designation-enquiries"
+                                    maxlength="150" oninput="this.value=this.value.replace(/[^a-zA-Z. -]/g,'');">
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class="select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left"
+                                        name="category-name" type="button" data-toggle="dropdown"
+                                        data-default-label=""><span class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" id="category-now" required value="" data-validation-msg-req=""
+                                        name="categoryname" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="cmpstreamDropdown" style="">
+                                        <li class="font-montserrat-regular font-weight-500 " value="Global Business">
+                                            <a href="javascript:void(0)">Global Business</a>
+                                        </li>
+                                        <li class="font-montserrat-regular font-weight-500 "
+                                            value="Sales/Service Network">
+                                            <a href="javascript:void(0)">Sales/Service Network</a>
+                                        </li>
+                                        <li class="font-montserrat-regular font-weight-500 " value="Parts Network">
+                                            <a href="javascript:void(0)">Parts Network</a>
+                                        </li>
+                                        <li class="font-montserrat-regular font-weight-500 " value="HR">
+                                            <a href="javascript:void(0)">HR</a>
+                                        </li>
+                                        <li class="font-montserrat-regular font-weight-500 " value="Bulk Orders">
+                                            <a href="javascript:void(0)">Bulk Orders</a>
+                                        </li>
+                                        <li class="font-montserrat-regular font-weight-500 " value="Exports">
+                                            <a href="javascript:void(0)">Exports</a>
+                                        </li>
+                                        <li class="font-montserrat-regular font-weight-500 "
+                                            value="Investor related queries">
+                                            <a href="javascript:void(0)">Investor related queries</a>
+                                        </li>
+                                        <li class="font-montserrat-regular font-weight-500 " value="Marketing">
+                                            <a href="javascript:void(0)">Marketing</a>
+                                        </li>
+                                        <li class="font-montserrat-regular font-weight-500 " value="Others">
+                                            <a href="javascript:void(0)">Others</a>
+                                        </li>
+                                    </ul>
+                                    <span class="select-p">Category <sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+                                <span class="form-span">Company <sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control"
+                                    required placeholder="" name="company-enquiries"
+                                    maxlength="150">
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+                                <span class="form-span">Address <sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control"
+                                id="address-enq" required placeholder="" name="address-enquiries"
+                                    maxlength="250">
+                                <span class="error--message">Required</span>
+                            </div>
+
+                            <div class=" form group cust-form-group" style="margin-right: 0;" id="state-og">
+                                <div class="select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="statename" type="button" data-toggle="dropdown">Select Your State<span
+                                            class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" name="stateNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="stateDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">State <sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+
+                            
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding" id="text--state" style="display: none;">
+                                <span class="form-span">State<sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control"
+                                   placeholder="" name="state-text-enquiries"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'');">
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form group cust-form-group" id="city-og">
+                                <div class="select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="cityname" type="button" data-toggle="dropdown"
+                                        data-default-label="Select Your City">Select Your City<span class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req=""
+                                        name="cityNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="districtDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">City <sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+
+                            
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding" id="text--city" style="display: none;">
+                                <span class="form-span">City<sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control"
+                                    placeholder="" name="city-text-enquiries"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'');">
+                                <span class="error--message">Required</span>
+                            </div>
+
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+                                <span class="form-span">Phone Number <sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control"
+                                    id="phone-enquiries" required placeholder="" name="phone-enquiries"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                    maxlength="12">
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+                                <span class="form-span">Mobile Number <sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control"
+                                    id="mobile-enquiries" required placeholder="" name="mobileno"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                    maxlength="10">
+                                <span class="error--message">Required</span>
+                                <span class="validate--msg">Invalid Number</span>
+                            </div>
+
+
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+                                <span class="form-span">Email Address <sup>*</sup></span>
+                                <input type="email" class="form-control campaign-input cust-form-control"
+                                    id="email" required placeholder="" name="email-enquiries" maxlength="150">
+                                <span class="error--message">Required</span>
+                                <span class="validate--msg">Invalid Email</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Requirements <sup>*</sup></span>
+                                <textarea required name="txtComplaint" rows="2" cols="20" id="txtReq"
+                                    class="formTextbox" style="height:130px;width:100%;" maxlength="250"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z0-9. -]/g,'');"></textarea>
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Any Other Information</span>
+                                <textarea name="txtComplaint" rows="2" cols="20" id="txtInfo" class="formTextbox"
+                                    style="height:130px;width:100%;"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group cust-form-group captcha-section">
+                            <div class="captcha-field">
+                               <div id="captcha">
+                               </div>
+                               <img class="refresh"
+                                  src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/refresh-32.png" />
+                            </div>
+                            <div class="captcha-input">
+                               <input type="text" placeholder="${properties.captchainputlabel}" id="cpatchaTextBox" name="captcha" required
+                                  class="form-control cust-form-control campaign-input ignore-validation" maxlength="6" />
+                               <label class="invalid-otp-message d-none">Incorrect Captcha</label>
+                            </div>
+                         </div>
+                        <div class="form--wrap">
+                            <input type="button" class="campaign-btn btn-black btn w-100 book-test-reset"
+                                id="campaign-reset-btn" value="reset" name="reset" />
+                            <input type="button" class="campaign-btn btn-red-gradient btn w-100 book-test-submit"
+                                id="campaign-sub-btn" value="submit" name="submit" />
+                        </div>
+                        <input type="hidden" value="${properties.thankyoulink @ extension='html'}" name="thankyoulink" />
+			            <input type="hidden" value="${[resource.path, 'corporateEnquiry.html'] @ join='.'}" name="action_url" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="test--ride media-component" id="test-ride" data-sly-test="${properties.variationtype == 'productenquiry' }">
+    <div class="container">
+        <div class="contact--details">
+            <p class="query--para">
+                Looking to upgrade to a new Hero Two Wheeler? Or looking to buy your first two Wheeler? Take a test ride
+                today!
+            </p>
+            <div class="addressPan">
+                <div class="content--wrap product--enquires-wrap" id="media--forms">
+                    <div class="server-fail-msg d-none">
+                        <p>Hi</p>
+                        <br>
+                        <p>Due to high traffic on our site, the complaint cannot be captured at this moment.</p>
+                        <p>Kindly call our customer care number on <b>1800 266 0018</b> to register your complaint. Alternatively you can try again after sometime here.</p>
+                        <br>
+                        <p>Sincerely,</p>
+                        <p>Hero MotoCorp</p>
+                    </div>
+                    <form action="" class="product-enquiry-form" autocomplete="off">
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+                                <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/name-img.png"
+                                    alt="" class="input-img1">
+                                <span class="form-span">First Name <sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control" id="firstname"
+                                    required placeholder=" Enter Your First Name" name="firstname" maxlength="50"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '');">
+                                <span class="error--message">Required</span>
+                            </div>
+
+                            <div class="form-group cust-form-group  cust-form-control cust-input-padding">
+                                <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/name-img.png"
+                                    alt="" class="input-img1">
+                                <span class="form-span">Last Name <sup>*</sup></span>
+                                <input type="text" class="form-control campaign-input cust-form-control" id="lastname"
+                                    required placeholder="Enter Your Last Name" name="lastname" maxlength="50"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '');">
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/number-img.png"
+                                    alt="" class="input-img2">
+                                <span class="form-span">Mobile No. <sup>*</sup></span>
+                                <input type="tel" class="form-control campaign-input cust-form-control mobile-number "
+                                    id="number" required placeholder="+91" name="mobileno"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                    maxlength="10">
+                                <span class="error--message">Required</span>
+                                <span class="validate--msg">Invalid Number</span>
+                            </div>
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">${properties.mobilelabel}</span>
+                                <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/number-img.png"
+                                    alt="" class="input-img2">
+                                <span class="form-span">Tel.</span>
+                                <input type="tel" class="form-control campaign-input cust-form-control mobile-number "
+                                    id="tel-number" name="telno"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                    maxlength="10">
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Email</span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="email-enquiries" type="email" class="form-control campaign-input cust-form-control email"
+                                    id="email">
+                                <span class="validate--msg">Invalid Email</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="vehiclemodelname" type="button" data-toggle="dropdown"
+                                        data-default-label="">Vehicle Model<span class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req=""
+                                        name="vehicleNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="vehicleDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Vehicle Model<sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="statenameDistrict" type="button" data-toggle="dropdown">Select Your State<span
+                                            class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" name="stateNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="stateDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Select State <sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="cityname" type="button" data-toggle="dropdown"
+                                        data-default-label="Select Your District">Select Your District<span
+                                            class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req=""
+                                        name="cityNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="districtDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Select District<sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">City <sup>*</sup></span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="town" type="text" required class="form-control campaign-input cust-form-control"
+                                    id="town" placeholder="City" maxlength="50"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="existingvehiclemodelname" type="button" data-toggle="dropdown"
+                                        data-default-label="">Existing Vehicle<span class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req=""
+                                        name="existingvehicleNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="vehicleDropdown" style="">
+                                        <li>
+                                            <a href="javascript:void(0)">Two Wheeler</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Four Wheeler</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">First Time Buyer</a>
+                                        </li>
+                                    </ul>
+                                    <span class="select-p">Existing Vehicle <sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <input name="testride" type="checkbox" class="form-control checkbox-input" id="testride">
+                                <p class="checkbox-label formText">Would you like to take a Test Ride?</p>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap" id="test--date" style="display: none;">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Expected Date of Test Ride<sup>*</sup></span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="testride-date" type="date" class="form-control campaign-input cust-form-control"
+                                    id="testride-date">
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="dealerstate" type="button" data-toggle="dropdown"
+                                        data-default-label="Select Your Dealer State">Select Your Dealer State<span
+                                            class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req=""
+                                        name="dealerNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="dealerstateDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Dealer State <sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="dealercity" id="citybtn" data-listval="" type="button"
+                                        data-toggle="dropdown" data-default-label="Select Your Dealer Town">Select Your Dealer Town<span
+                                            class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req=""
+                                        name="dealerCityNameVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="dealertownDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Dealer Town <sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="dealername" type="button" data-toggle="dropdown"
+                                        data-default-label="Select Your Dealer">Select Your Dealer<span class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req=""
+                                        name="dealerVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="dealersspDropdown" style="">
+                                    </ul>
+                                    <span class="select-p">Dealer<sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Brief About Enquiry</span>
+                                <textarea name="txtComplaint" rows="2" cols="20" id="txtEnquiry" class="formTextbox"
+                                    style="height:100px;width:100%;"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Expected Date of Purchase<sup>*</sup></span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="expected-date" required type="date" class="form-control campaign-input cust-form-control"
+                                    id="expected-date">
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="gender" type="button" data-toggle="dropdown" data-default-label="">Select
+                                        Gender<span class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" required value="" data-validation-msg-req=""
+                                        name="genderVal" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="cmpstreamDropdown" style="">
+                                        <li>
+                                            <a href="javascript:void(0)">Male</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Female</a>
+                                        </li>
+                                    </ul>
+                                    <span class="select-p">Gender<sup>*</sup></span>
+                                    <span class="error--message">Required</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class="form-group cust-form-group">
+                                <span class="form-span">Age <sup>*</sup></span>
+                                <img src="" alt="" class="input-img2">
+                                <input name="age" type="number" required class="form-control campaign-input cust-form-control"
+                                    id="age" placeholder="Age" pattern="\d*"/>
+                                <span class="error--message">Required</span>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="occupation" type="button" data-toggle="dropdown"
+                                        data-default-label="">NA<span class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" value="" data-validation-msg-req="" name="Occupation" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="cmpstreamDropdown" style="">
+                                        <li>
+                                            <a href="javascript:void(0)">Farmer/Farm Related</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Government Sector</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Others</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Private Sector</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Student</a>
+                                        </li>
+                                    </ul>
+                                    <span class="select-p">Occupation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" form group cust-form-group">
+                                <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                    <button
+                                        class="dropdown-select btn-drop  btn-primary  dropdown-toggle w-100 text-left  "
+                                        name="intendedusage" type="button" data-toggle="dropdown"
+                                        data-default-label="">NA<span class="caret select-span"></span>
+                                    </button>
+                                    <input type="hidden" value="" data-validation-msg-req="" name="Intented Usage" />
+                                    <ul class="dropdown-menu cust-dropdown-menu campaign-dropdown"
+                                        aria-labelledby="cmpcategoryDropdown" style="">
+                                        <li>
+                                            <a href="javascript:void(0)">Low Daily</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Medium Daily</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Family Usage</a>
+                                        </li>
+                                    </ul>
+                                    <span class="select-p">Intended Usage</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--wrap">
+                            <div class=" select-dropdown btn-drop-v1 cust-drop-down">
+                                <p class="terms-text">*By clicking Submit, you agree to our
+                                    <a href="https://www.heromotocorp.com/en-in/terms-of-use.html" target="_blank"
+                                        class="term-align">Terms of Use</a>,
+                                    <a href="https://www.heromotocorp.com/en-in/disclaimer.html" target="_blank"
+                                        class="term-align">Disclaimer</a> and
+                                    <a href="https://www.heromotocorp.com/en-in/privacy-policy.html" target="_blank"
+                                        class="term-align">Privacy Policy</a>.
+
+                                </p>
+                                <p class="terms-text">You may receive Calls / SMS / Email notifications from us.</p>
+                            </div>
+                        </div>
+                        <div class="form--wrap">
+                            <input type="button" class="campaign-btn btn-black btn w-100 book-test-reset"
+                                id="campaign-reset-btn" value="reset" name="reset" />
+                            <input type="button" class="campaign-btn btn-red-gradient btn w-100 book-test-submit"
+                                id="campaign-sub-btn" value="submit" name="submit" />
+                        </div>
+                        <input type="hidden" value="${properties.thankyoulink @ extension='html'}" name="thankyoulink" />
+			            <input type="hidden" value="${[resource.path, 'productEnquiry.html'] @ join='.'}" name="action_url" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="server-fail-msg d-none">
+   ${properties.failureMsg @context='html'}
+</div>
+<div class="server-success-msg d-none">
+    ${properties.successMsg @context='html'}
+</div>
+
+<div class="media-loader-div d-none">
+    <img src="/content/dam/hero-aem-website/in/design/icons/Aniamtion-Transparent-page-unscreen.gif" class="img-fluid loader" alt="Loading"> 
+ </div>

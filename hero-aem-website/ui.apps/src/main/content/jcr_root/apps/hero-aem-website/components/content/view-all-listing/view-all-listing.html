@@ -1,0 +1,29 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+	${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+<div class="container-fluid">
+
+<div class="row mt-2 mb-2 ">
+	<div class="col-sm-12 mb-3">
+		<p class="who_view_all text-right">
+			<a target="_parent" class="mytext mytext2" id="who_all_expand"
+				data-expandLabel="${properties.expandLabel}" data-collapseLabel="${properties.collapseLabel}"> <span> <span
+					class="float-left" id="view_text">${properties.collapseLabel}</span>
+					<img src="${properties.iconPath}" class="expand_image">
+			</span></a>
+		</p>
+	</div>
+</div>
+
+<div class="parent" id="who_all_parent"
+	style="display: ${wcmmode.edit|| wcmmode.design ? 'block': 'none' @ context = 'styleToken'}">
+	<div class="child">
+		<p data-sly-test="${wcmmode.edit || wcmmode.design}"
+			class="author-note">
+			<b>Add Collapsed content under View All</b>
+		</p>
+		<sly
+			data-sly-resource="${'listing' @resourceType='/apps/hero-aem-website/components/container'}" />
+	</div>
+</div>
+</div>

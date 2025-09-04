@@ -1,0 +1,56 @@
+.btn-change-vehicle {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+.change-vehicleModal{
+    #changeVehicleLabel {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .modal-dialog {
+        max-width: 637px;
+        .change-vehicle-grid {
+            border: 2px solid #d2d1d1;
+            max-width: 160px;
+            height: auto;
+            margin-right: 30px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 0;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            p{
+                font-size: 1rem;
+                font-weight: 700;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                display: block;
+                padding: 10px 0;
+            }
+        }
+        .change-vehicle-grid:first-child {
+            margin-left: 45px;
+        }
+        .change-vehicle-grid.active{
+            border-color: #FF0000;
+            p{
+                color: #FF0000;
+            }
+        }
+    }
+    .modal-footer{
+        margin: 0 auto;
+        padding-top: 0 !important;
+        .btn-vehicle-change, .btn-vehicle-change:hover{
+            background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+            color: #fff;
+        }
+    }
+    .change-vehicle-grid-container {
+        padding: 16px 16px 5px 16px;
+    }
+}

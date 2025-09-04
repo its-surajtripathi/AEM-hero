@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Links Flyout"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-toc__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <headinginfo
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Flyout Headline"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <element
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Heading Element"
+                                                name="./element">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <h1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H1"
+                                                        value="h1"/>
+                                                    <h2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H2"
+                                                        value="h2"/>
+                                                    <h3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H3"
+                                                        value="h3"/>
+                                                    <h4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H4"
+                                                        value="h4"/>
+                                                    <h5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H5"
+                                                        value="h5"/>
+                                                    <h6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H6"
+                                                        value="h6"/>
+                                                </items>
+                                            </element>
+                                            <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Headline"
+                                                name="./heading"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </headinginfo>
+                    <links
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Product Flyout"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <servicelinks
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Add Flyout Links"
+                                                fieldLabel="Add Products"
+                                                showhidetargetvalue="">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./servicelinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <carouselconfigs
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Flyout Item"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <image
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                            fieldLabel="Select Icon"
+                                                                            name="image"
+                                                                            required="{Boolean}true"
+                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                        <text
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="Enter Link Title"
+                                                                            name="text"
+                                                                            required="{Boolean}true"/>
+                                                                        <url
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                            fieldLabel="Enter Link URL"
+                                                                            name="url"
+                                                                            required="{Boolean}true"
+                                                                            rootPath="/content/hero-aem-website"/>
+                                                                        <tags
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="Enter Tags to be highlighted"
+                                                                            name="tag"/>
+                                                                        <subtext
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="Enter Link Sub-Text"
+                                                                            name="subtext"/>
+                                                                    </items>
+                                                                </carouselconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </servicelinks>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </links>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

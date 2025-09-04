@@ -1,0 +1,360 @@
+.emi-section .emi-wrapper {
+  padding: 15px 40px 15px 40px;
+  display: flex;
+  justify-content: center;
+}
+.emi-section .emi-wrapper .emi-range-slider {
+  max-width: 625px;
+  width: 100%;
+  margin-right: 55px;
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input {
+  width: 100%;
+  position: relative;
+  padding-bottom: 30px;
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-h4 {
+  font-family: var(--font-tstar-bold);
+  font-size: var(--font-size18);
+  line-height: var(--line-height-22);
+  text-transform: capitalize;
+  color: var(--text-color-black);
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-div .input-amount .input-prise-label {
+  font-family: var(--font-tstar-regular);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: capitalize;
+  color: #303030;
+  text-align: right;
+  padding-bottom: 5px;
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-div .input-amount .form-control {
+  font-size: 12px;
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .noUi-target {
+  height: 8px;
+  border: none;
+  border-radius: 100px;
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .noUi-target .noUi-base .noUi-connects {
+  background: rgba(1, 76, 143, 0.2);
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .noUi-target .noUi-base .noUi-connects .noUi-connect {
+  background: linear-gradient(90deg, #014C8F 0%, #0094DA 94.61%);
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .noUi-target .noUi-base .noUi-origin .noUi-handle {
+  width: 30px;
+  height: 30px;
+  background: var(--background-url) no-repeat;
+  border-radius: 100%;
+  border: none;
+  top: -11px;
+  background-size: 100%;
+  box-shadow: 0px 0px 11px 0px rgba(1, 76, 143, 0.6);
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .noUi-target .noUi-base .noUi-origin .noUi-handle::before,
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .noUi-target .noUi-base .noUi-origin .noUi-handle::after {
+  content: none;
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-minmax {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-minmax .emi-range-input-p {
+  font-family: var(--font-tstar-regular);
+  font-size: var(--font-size12);
+  line-height: var(--line-height-17);
+  text-transform: capitalize;
+  color: var(--text-color-grey-label);
+}
+.emi-section .emi-wrapper .payment-section {
+  max-width: 605px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  border-radius: 8px;
+  background-color: #ECECEC;
+}
+.emi-section .emi-wrapper .payment-section .payment-div {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.emi-section .emi-wrapper .payment-section .payment-div .payment-div-h4 {
+  font-family: var(--font-tstar-regular);
+  font-size: var(--font-size37);
+  line-height: var(--line-height-44);
+  color: var(--text-color-black);
+  padding-right: 226px;
+}
+.emi-section .emi-wrapper .payment-section .payment-div .payment-div-h3 {
+  font-family: var(--font-tstar-bold);
+  font-weight: var(--font-weight-900);
+  font-size: var(--font-size52);
+  line-height: var(--line-height-62);
+  color: var(--text-color-black);
+}
+.emi-section .emi-wrapper .payment-section .payment-div .payment-div-p {
+  display: none;
+}
+.emi-section .emi-wrapper .payment-section .payment-div .payment-div-p a {
+  font-family: var(--font-tstar-bold);
+  font-size: var(--font-size18);
+  line-height: var(--line-height-22);
+  color: var(--text-color-blue);
+  text-transform: capitalize;
+}
+.emi-section .emi-wrapper .payment-section .payment-div .common-cta {
+  justify-content: flex-start;
+  display: none;
+}
+/* LG Devices Start  */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .emi-section .emi-wrapper {
+    padding: 15px 25px 15px 25px;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-h4 {
+    padding-right: 150px;
+  }
+  .emi-section .emi-wrapper .payment-section {
+    margin-left: 27px;
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div .payment-div-h4 {
+    padding-right: 150px;
+  }
+}
+/* MD Devices Start  */
+@media (max-width: 991.2px) and (min-width: 768px) {
+.emi-section .emi-wrapper .payment-section{
+    max-width:-webkit-fill-available;
+        background-size: contain;
+}
+  .emi-section .emi-wrapper {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .emi-section .emi-wrapper .emi-range-slider {
+    max-width: 786px;
+    width: 100%;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input {
+    width: 100%;
+    position: relative;
+    padding-bottom: 30px;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-h4 {
+    font-family: var(--font-tstar-bold);
+    font-size: var(--font-size16);
+    line-height: var(--line-height-22);
+    text-transform: capitalize;
+    color: var(--text-color-black);
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-minmax {
+    display: flex;
+    justify-content: space-between;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-minmax .emi-range-input-p {
+    font-family: var(--font-tstar-regular);
+    font-size: var(--font-size12);
+    line-height: var(--line-height-17);
+    text-transform: capitalize;
+    color: var(--text-color-grey-label);
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div .payment-div-h4 {
+    font-family: var(--font-tstar-regular);
+    font-size: var(--font-size28);
+    line-height: var(--line-height-32);
+    color: var(--text-color-black);
+    padding-right: 48px;
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div .payment-div-h3 {
+    font-family: var(--font-tstar-bold);
+    font-weight: var(--font-weight-900);
+    font-size: var(--font-size38);
+    line-height: var(--line-height-45);
+    color: var(--text-color-black);
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div .payment-div-p a {
+    font-family: var(--font-tstar-bold);
+    font-size: var(--font-size12);
+    line-height: var(--line-height-14);
+    color: var(--text-color-blue);
+    text-transform: capitalize;
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div .common-cta {
+    justify-content: flex-start;
+    padding: 12px 0px 31px 0px;
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div .common-cta .cta-bg {
+    font-size: var(--font-size14);
+  }
+}
+/* SM & XS Devices Start  */
+@media (max-device-width: 767px) and (min-width: 320px) {
+
+  .emi-section .cust-common-h3 {
+    padding: 18px 15px 18px 15px;
+  }
+  .emi-section .emi-wrapper {
+    padding: 0px 15px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .emi-section .emi-wrapper .emi-range-slider {
+    max-width: 625px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input {
+    width: 100%;
+    position: relative;
+    padding-bottom: 16px;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-h4 {
+    font-family: var(--font-tstar-bold);
+    font-size: var(--font-size16);
+    line-height: var(--line-height-22);
+    text-transform: capitalize;
+    color: var(--text-color-black);
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 16px;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-div .input-amount .form-control {
+    height: 21px;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-minmax {
+    display: flex;
+    justify-content: space-between;
+  }
+  .emi-section .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-minmax .emi-range-input-p {
+    font-family: var(--font-tstar-regular);
+    font-size: var(--font-size12);
+    line-height: var(--line-height-17);
+    text-transform: capitalize;
+    color: var(--text-color-grey-label);
+  }
+
+  .emi-section .emi-wrapper .payment-section{
+      max-width:-webkit-fill-available;
+          background-size: contain;
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div {
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div .payment-div-h4 {
+    font-family: var(--font-tstar-regular);
+    font-size: var(--font-size28);
+    line-height: var(--line-height-32);
+    color: var(--text-color-black);
+    padding-right: 51px;
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div .payment-div-h3 {
+    font-family: var(--font-tstar-bold);
+    font-weight: var(--font-weight-900);
+    font-size: var(--font-size38);
+    line-height: var(--line-height-45);
+    color: var(--text-color-black);
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div .payment-div-p a {
+    font-family: var(--font-tstar-bold);
+    font-size: var(--font-size12);
+    line-height: var(--line-height-14);
+    color: var(--text-color-blue);
+    text-transform: capitalize;
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div .common-cta {
+    justify-content: flex-start;
+    padding: 12px 0px 31px 0px;
+  }
+  .emi-section .emi-wrapper .payment-section .payment-div .common-cta .cta-bg {
+    font-size: var(--font-size14);
+    padding: 4px 21px !important;
+  }
+}
+/*dark theme css*/
+.emi-section.dark-theme {
+  background: var(--background-image) no-repeat center;
+  background-size: cover;
+  color: #ffffff;
+}
+.emi-section.dark-theme .common-h3 {
+  color: #ffffff;
+}
+.emi-section.dark-theme .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-h4 {
+  color: #ffffff;
+}
+.emi-section.dark-theme .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-minmax .emi-range-input-p {
+  color: #ffffff;
+}
+.emi-section.dark-theme .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-div .input-amount .input-prise-label {
+  color: #ffffff;
+}
+.emi-section.dark-theme .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .emi-range-input-div .input-amount .form-control {
+  background-color: transparent;
+  color: #ffffff;
+}
+.emi-section.dark-theme .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .noUi-target {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.emi-section.dark-theme .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .noUi-target .noUi-base .noUi-connects {
+  background: rgba(255, 255, 255, 0.02);
+}
+.emi-section.dark-theme .emi-wrapper .emi-range-slider .emi-range-amount .emi-range-input .noUi-target .noUi-base .noUi-connects .noUi-connect {
+  background: #ffffff;
+}
+.emi-section.dark-theme .emi-wrapper .payment-section {
+  background-color: #000000;
+  background-image: var(--background-url);
+}
+.emi-section.dark-theme .emi-wrapper .payment-section .payment-div-h4 {
+  color: #ffffff;
+}
+.emi-section.dark-theme .emi-wrapper .payment-section .payment-div-h3 {
+  color: #ffffff;
+}
+.emi-section.dark-theme .emi-wrapper .payment-div .common-cta {
+  display: inline-block;
+}

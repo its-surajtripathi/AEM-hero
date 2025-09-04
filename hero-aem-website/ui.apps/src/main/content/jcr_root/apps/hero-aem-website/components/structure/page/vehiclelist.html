@@ -1,0 +1,7 @@
+<sly data-sly-test.configuration="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}"
+     data-sly-use.listUse="${'/apps/hero-aem-website/utils/searchutils.js' @ path=configuration.siteRoot}"
+     data-sly-list="${listUse}">
+    <li class="font-montserrat-regular font-weight-500 " value="${item.name}" data-model-name="${item['jcr:content/pageTitle'] || item['jcr:content/jcr:title']}" data-product-path="${item.path}">
+        <a href="javascript:void(0)">${item['jcr:content/pageTitle'] || item['jcr:content/jcr:title']}</a>
+    </li>
+</sly>

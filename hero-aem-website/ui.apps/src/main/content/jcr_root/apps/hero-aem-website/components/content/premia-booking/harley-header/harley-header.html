@@ -1,0 +1,33 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>
+<div class="hd-header">
+  <a href="${properties.harleylogolink}">
+    <img src="${properties.harleylogo}" class="harley-header-logo">
+  </a>
+  <div class="hd-right-menu"
+    data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='premiaheader'}">
+    <sly data-sly-list="${listUse}">
+      <div class="menu-divider"></div>
+      <a class="menu-icon menu-text" data-sly-test="${item.properties.menu}"
+        href="${item.properties.iconurl}">${item.properties.menu}</a>
+    </sly>
+    <div data-sly-test="${properties.mailiconpath}" class="menu-divider"></div>
+    <a class="menu-icon hover-text" data-sly-test="${properties.mailiconpath}" href="mailto:${properties.mail}"><img
+        src="${properties.mailiconpath}">
+      <div class="tooltip-text bottom" data-sly-test="${properties.mailtip}"><img
+          src="/content/dam/hero-aem-website/harley-header/Polygon.svg"><span
+          class="tip-text">${properties.mailtip}</span></div>
+    </a>
+    <div data-sly-test="${properties.mobiconpath}" class="menu-divider"></div>
+    <a class="menu-icon hover-text" data-sly-test="${properties.mobiconpath}" href="tel:${properties.number}"><img
+        src="${properties.mobiconpath}">
+      <div class="tooltip-text bottom" data-sly-test="${properties.numbertip}"><img
+          src="/content/dam/hero-aem-website/harley-header/Polygon.svg"><span
+          class="tip-text">${properties.numbertip}</span></div>
+    </a>
+    <div data-sly-test="${properties.proficonpath}" class="menu-divider harley-profile-divider d-none"></div>
+    <a class="menu-icon harley-profile-icon d-none" data-sly-test="${properties.proficonpath}"
+      href="${properties.proficonurl}"><img src="${properties.proficonpath}"></a>
+  </div>
+</div>

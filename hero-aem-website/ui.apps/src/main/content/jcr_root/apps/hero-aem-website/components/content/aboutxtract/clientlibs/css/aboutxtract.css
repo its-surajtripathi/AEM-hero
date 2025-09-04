@@ -1,0 +1,86 @@
+.about-xtract-container .about-xtract-content {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  background-color: #d1a58a;
+  padding: 95px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.about-xtract-container .about-xtract-bgimg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: -webkit-fill-available;
+}
+.about-xtract-container .about-xtract-img {
+  width: 100%;
+  height: 100%;
+}
+.about-xtract-content .about-xtract {
+  width: 50%;
+  padding: 0 3.5%;
+  z-index: 1;
+  background-image: none;
+}
+.about-xtract-content .about-xtract>h3 {
+  font-family: var(--font-monumentExtended-ultrabold);
+  font-size: 32px;
+  line-height: 1.19;
+  color: #000;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.about-xtract-content .about-xtract>h2 {
+  font-family: var(--font-monumentExtended-ultrabold);
+  font-size: 72px;
+  font-weight: 500;
+  color: transparent;
+  -webkit-text-stroke: 2px #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 0.9;
+  margin-bottom: 8px;
+}
+.about-xtract-container .about-xtract-description>* {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+  padding-bottom: 8px;
+  font-weight: 500;
+  color: #282828;
+  font-family: var(--font-robotocondensed-bold);
+}
+@media (max-width: 566px) {
+  .about-xtract-container .about-xtract-content {
+    width: 100%;
+    padding: 0;
+  }
+  .about-xtract-container .about-xtract-bgimg {
+    position: relative;
+  }
+  .about-xtract-content .about-xtract {
+    padding: 0 20px;
+    width: 100%;
+    background-image: url('/content/dam/hero-aem-website/in/xtracks/bg-about-xtracks_sm.jpg');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+  }
+  .about-xtract-content .about-xtract>h3 {
+    font-size: 24px;
+    line-height: 1.17;
+    font-weight: 500;
+    margin-top: -5rem;
+  }
+  .about-xtract-content .about-xtract>h2 {
+    font-size: 36px;
+  }
+  .about-xtract-container .about-xtract-description {
+    padding: 0 0 3rem;
+  }
+  .about-xtract-container .about-xtract-description>* {
+    font-size: 16px;
+  }
+}

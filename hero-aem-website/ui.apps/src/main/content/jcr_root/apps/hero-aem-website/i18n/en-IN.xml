@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder"
+    sling:basename="[hero-aem-website]">
+    <hero.editcomponent
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Edit {0} Component"/>
+    <AP
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Andhra Pradesh"/>
+    <ARP
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Arunachal Pradesh"/>
+    <AS
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Assam"/>
+    <BH
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Bihar"/>
+    <CG
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Chhattisgarh"/>
+    <GDD
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Goa"/>
+    <GJ
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Gujarat"/>
+    <HR
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Haryana"/>
+    <HP
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Himachal Pradesh"/>
+    <JR
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Jharkhand"/>
+    <KAR
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Karnataka"/>
+    <KER
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Kerala"/>
+    <MP
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Madhya Pradesh"/>
+    <MAH
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Maharashtra"/>
+    <MPR
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Manipur"/>
+    <MGH
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Meghalaya"/>
+    <MZ
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Mizoram"/>
+    <NG
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Nagaland"/>
+    <OR
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Odisha"/>
+    <PB
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Punjab"/>
+    <RJ
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Rajasthan"/>
+    <SK
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Sikkim"/>
+    <TN
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Tamil Nadu"/>
+    <TLG
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Telangana"/>
+    <TRI
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Tripura"/>
+    <UP
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Uttar Pradesh"/>
+    <UR
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Uttarakhand"/>
+    <WB
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="West Bengal"/>
+    <AN
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Andaman and Nicobar Islands"/>
+    <CD
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Chandigarh"/>
+    <DH
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Dadra and Nagar Haveli"/>
+    <DEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Delhi"/>
+    <JK
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Jammu and Kashmir"/>
+    <LD
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Lakshadweep"/>
+    <PY
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Puducherry"/>
+    <LAD
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Ladakh"/>
+    <DD
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Daman and Diu"/>
+</jcr:root>

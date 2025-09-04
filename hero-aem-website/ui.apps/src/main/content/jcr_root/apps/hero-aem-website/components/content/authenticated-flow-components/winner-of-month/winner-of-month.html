@@ -1,0 +1,149 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note" xmlns="">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div class="winnerdetails">
+    <section data-sly-test="${properties.variation == 'banner'}">
+        <!-- Banner section HTML start  -->
+        <div class="winner-banner-container" style="background-image: url(${properties.bgImage @ context='uri'})">
+            <script type="text/html" class="getWinnerBanner">
+                <%_.each(getWinnerDataBanner, function(item, i, list) {  if(getWinnerDataBanner[i].SNO == 1){%>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 winner-banner">
+                        <div class="winner-banner-left">
+                            <img src="${properties.priceIcon @ context='uri'}" /> 
+                        </div>
+                        <div class="winning-month">
+                            <h1>${properties.winnermonthLabel @ context='scriptString'}(<%=getWinnerDataBanner[i].MONTH%>)</h1>
+                        </div>
+                        <div class="winner-banner-middle">
+                            <h1><%=getWinnerData[i].MEMBER%></h1>
+                            <div class="winner-area"><%=getWinnerDataBanner[i].DEALER_STATE%>, <%=getWinnerDataBanner[i].AREA.substring(14)%></div>
+                        </div>
+						<div class="banner-content-right banner-single">
+                                <p>${properties.wonLabel @ context='scriptString'}</p>
+                                <h2><%=getWinnerDataBanner[i].GIFT_NAME%></h2>
+                        </div>
+                        <div class="winner-banner-right view-details-link">
+                            <a href="${properties.viewdetailsLink @context='uri'}.html">
+                                <button class="">${properties.viewdetailsLabel @ context='scriptString'}</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <%}});%>
+            </script>
+        </div>
+    </section>
+
+    <section data-sly-test="${properties.variation == 'banner-details'}" class="bannerdetails">
+        <!--     Winner Banner section HTML start -->
+        <script type="text/html" class="getWinner">
+            <%  var winner_name; var winner_state; var winner_city; var winner_month; var winner_gift;colorarray=["user-circle-blue","user-circle-red","user-circle-green","user-circle-violet"];_.each(getWinnerData, function(item, i, list) {  if(getWinnerData[i].SNO == 1){ winner_name=getWinnerData[i].MEMBER; winner_state=getWinnerData[i].DEALER_STATE; winner_city=getWinnerData[i].AREA.substring(14); winner_month=getWinnerData[i].MONTH; winner_gift=getWinnerDataBanner[i].GIFT_NAME}}); %>
+            <div class="winner-banner-container" style="background-image: url(${properties.bgImage @ context='uri'})">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 winner-banner">
+                        <div class="winner-banner-left">
+                            <img src="${properties.priceIcon @ context='uri'}" />
+                        </div>
+                        <div class="winner-banner-middle">
+                            <div class="winning-month">
+                                <em><%= winner_month %> 's Winner</em>
+                            </div>
+                            <h1><%= winner_name %></h1>
+                            <div class="winner-area"><%= winner_state %>, <%= winner_city %></div>
+                        </div>
+                        <div class="winner-banner-right">
+                            <div class="banner-bike-left">
+                                <img src="${properties.bikeImage @ context='uri'}" />
+                            </div>
+                            <div class="banner-content-right">
+                                <h2>${properties.wonLabel @ context='scriptString'}</h2>
+                                <h2><%=winner_gift%></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--   Winner Banner section HTML end
+                   Winner list section HTML start -->
+            <div class="winner-list">
+                <div class="row">
+                    <!-- Left user list section HTML start -->
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 winnerLeft">
+                        <div class="user-lists">
+                            <div class="user-short-name">
+                                <div class="user-logo user-circle user-circle-red"><%= winner_name.match(/(^\S\S?|\b\S)?/g).join("").match(/(^\S|\S$)?/g).join("").toUpperCase() %></div>
+                            </div>
+                            <div class="user-name-details">
+                                <strong><%= winner_name %></strong>
+                                <p>${properties.fromLabel @ context='scriptString'} <%= winner_state %>, <%= winner_city %></p>
+                            </div>
+                            <div class="winning-date winning-date-red"><%= winner_month %></div>
+                        </div>
+                    </div>
+                    <!-- Left user list section HTML end
+                     Right user list section HTML start  -->
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                        <div class="win-user-lists">
+                            <div class="left-side-arrow">left arrow</div>
+                            <h3>${properties.detailsLabel @ context='scriptString'}</h3>
+                            <div class="details-date"><%= winner_month %></div>
+                            <div class="winner-details row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="winner-logo-right">
+                                        <div class="user-logo user-circle user-circle-red"><%= winner_name.match(/(^\S\S?|\b\S)?/g).join("").match(/(^\S|\S$)?/g).join("").toUpperCase()%></div>
+                                    </div>
+                                    <div class="winner-name-right">
+                                        <h3><%= winner_name %></h3>
+                                        <p>${properties.fromLabel @ context='scriptString'}  <%= winner_state %>, <%= winner_city %></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 won-hero-wrapper">
+                                    <div class="honda-img">
+                                        <img src="${properties.bikeIcon @ context='uri'}" />
+                                    </div>
+                                    <div class="won-hero-details">
+                                        <h3>${properties.wonLabel @ context='scriptString'}</h3>
+                                        <h2><%=winner_gift%></h2>
+                                    </div>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div class="digi-voucher"><%=getWinnerData[2].GIFT_NAME%></div>
+                            <div class="digi-voucher-winner-container row">
+                                <% _.each(getWinnerData, function(item, i, list) { if(getWinnerData[i].SNO != 1 && i%2 ==1){%>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="user-list">
+                                        <div class="user-logo user-circle <%=colorarray[i % 4] %>"><%= getWinnerData[i].MEMBER.match(/(^\S\S?|\b\S)?/g).join("").match(/(^\S|\S$)?/g).join("").toUpperCase()%></div>
+                                        <div class="user-name"><%= getWinnerData[i].MEMBER %></div>
+                                        <div class="user-add">
+                                            <label></label>
+                                            <p>${properties.fromLabel @ context='scriptString'} <%= getWinnerData[i].DEALER_STATE %>, <%= getWinnerData[i].AREA.substring(14) %></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <%}
+                                else if(getWinnerData[i].SNO != 1 && i%2 ==0) { %>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="user-list">
+                                        <div class="user-logo user-circle <%=colorarray[i % 4] %>"><%= getWinnerData[i].MEMBER.match(/(^\S\S?|\b\S)?/g).join("").match(/(^\S|\S$)?/g).join("").toUpperCase()%></div>
+                                        <div class="user-name"><%= getWinnerData[i].MEMBER %></div>
+                                        <div class="user-add">
+                                            <p>${properties.fromLabel @ context='scriptString'} <%= getWinnerData[i].DEALER_STATE %>, <%= getWinnerData[i].AREA.substring(14) %></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <%}});%>
+                            </div>
+                        </div>
+                        <div class="winner-user-list">
+
+                        </div>
+                    </div>
+                    <!-- Right user list section HTML end  -->
+                </div>
+            </div>
+            <!-- Winner list section HTML end  -->
+        </script>
+    </section>
+</div>

@@ -1,0 +1,273 @@
+.bottom-fix {
+    height: 84px;
+    padding: 16px 40px;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.bottom-sticky {
+    position: fixed;
+    bottom: -100%;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0px -1px 4px 0px rgba(140, 140, 140, 0.25), 0px -3px 6px 0px rgba(202, 202, 202, 0.25);
+    z-index: 1;
+
+    .float-section {
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        .drop-button {
+            position: absolute;
+            top: -20px;
+            height: 36px;
+            width: 36px;
+            background-color: white;
+            border: 0;
+            border-radius: 77px;
+            box-shadow: 0px -1px 4px 0px rgba(140, 140, 140, 0.25), 0px -3px 6px 0px rgba(202, 202, 202, 0.25);
+
+            .drop-icon {
+                height: 24px;
+                width: 24px;
+                position: absolute;
+                top: 4px;
+                display: flex;
+                background: url(/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-booking-site/resources/dropup.svg) no-repeat center center /cover
+            }
+        }
+    }
+
+    .bottom-navigation {
+        gap: 129px;
+        display: flex;
+
+        .detail-bar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            width: 100%;
+
+            .detail-Heading {
+                color: #303030;
+                font-size: 16px;
+                font-family: '1903Sans-Regular';
+                line-height: 20px;
+            }
+
+            .detail-content {
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+
+                .content-container {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 4px;
+
+                    .content-title {
+                        color: #303030;
+                        font-size: 18px;
+                        font-family: '1903Sans-Bold';
+                        font-weight: 700;
+                        line-height: 24px;
+                    }
+
+                    .content-desc {
+                        color: var(--primary-orange, #F26321);
+                        font-size: 18px;
+                        font-family: '1903Sans-Regular';
+                        line-height: 24px;
+                    }
+                }
+
+                .footer-div-line-mob{
+                    display: none;
+                    @media(max-width: 991px){
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        margin: 8px 0px;
+                        background: var(--border-color, #C0C0C0);
+                    }
+                }
+            }
+        }
+
+        .cat-primary-button {
+            display: flex;
+            padding: 12px 32px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            height: 52px;
+            border-radius: 4px;
+            background: var(--primary-orange, #F26321);
+            color: #FFF;
+            font-size: 18px;
+            font-family: '1903Sans-Bold';
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+            border: 1px solid #F26321;
+
+        }
+
+        .cat-primary-button:active {
+            background: #C8480E;
+        }
+
+        .cat-primary-button:hover {
+            cursor: pointer;
+        }
+
+        .cat-primary-button:disabled {
+            background: #e6e6e6;
+            opacity: 0.6;
+            border: none;
+        }
+    }
+}
+
+.slideup {
+    height: 198px;
+    padding: 25px 16px;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    transition: all 400ms linear;
+
+    .bottom-navigation {
+        display: flex;
+        flex-direction: column;
+
+        .detail-bar {
+            gap: 12px !important;
+
+            .detail-content {
+                gap: 0;
+            }
+        }
+
+        .cat-primary-button {
+            width: 100% !important;
+        }
+    }
+
+    .float-section {
+        .drop-button {
+            .drop-icon {
+                background: url(/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-booking-site/resources/dropdown.svg) no-repeat center center /cover
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .bottom-sticky {
+        .bottom-navigation {
+            gap: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 1279px) {}
+
+@media screen and (max-width: 1200px) {
+    .bottom-sticky {
+        .bottom-navigation {
+            gap: 50px;
+
+            .detail-bar {
+                .detail-content {
+                    .content-container {
+                        .content-title {
+                            font-size: 15px;
+                        }
+
+                        .content-desc {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .bottom-sticky {
+        .float-section {
+            display: flex;
+        }
+
+        .bottom-navigation {
+            gap: 10px;
+
+            .detail-bar {
+                .detail-content {
+                    flex-direction: column;
+                    width: 100%;
+
+                    .content-container {
+                        .content-title {
+                            font-size: 15px;
+                        }
+
+                        .content-desc {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-fix {
+        height: 64px;
+        padding: 14px 16px;
+    }
+
+    .bottom-sticky {
+        .bottom-navigation {
+            .detail-bar {
+                gap: 0px;
+
+                .detail-Heading {
+                    font-size: 12px;
+                }
+
+                .detail-content {
+                    .content-container {
+                        .content-title {
+                            font-size: 12px;
+                        }
+
+                        .content-desc {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .cat-primary-button {
+                height: 36px;
+                font-size: 14px;
+                width: 103px;
+            }
+
+            .cat-primary-button:disabled {
+                background: #e6e6e6;
+                opacity: 0.6;
+            }
+
+        }
+    }
+}

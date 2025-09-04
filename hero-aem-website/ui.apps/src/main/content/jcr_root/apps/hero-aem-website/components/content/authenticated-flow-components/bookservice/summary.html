@@ -1,0 +1,74 @@
+<div class="step-section summary book-serv-pages active">
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 sub-heading">
+            <div class="serv-left-right">
+                <img src="${properties.summaryIcon}" alt="image" />
+            </div>
+            <div class="serv-left-right">
+                <h5 class="service-heading">${properties.summaryLabel}</h5>
+            </div>
+        </div>
+    </div>
+    <div class="row pleasure-max-container">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 summary-text">
+            <script type="text/html" class="vehicleDataSummaryTemplate">
+                <h3><strong><%=vehicleDetails.modelName%></strong></h3>
+                <div><%=vehicleDetails.licenseNo%></div>
+            </script>
+
+        </div>
+
+    </div>
+    <div class="row summery-details">
+        <div class="col-md-4 col-lg-5 col-sm-12 col-xs-12 summary-row">
+            <div>
+                <div class="head-change-wrap">
+                    <h3 class="summary-heading">${properties.basicdetailsLabel}</h3>
+                    <div class="change-link basic-detail" href="book-serve-first">${properties.changeLabel}</div>
+                </div>
+
+
+                <div class="servicedate-selected"><span>${properties.servicedate}</span><span id="summery-date">11/11/2022 </span></div>
+                <div class="servicedate-selected"><span>${properties.servicetime}</span><span id="summery-time">8 AM -10 AM</span></div>
+                <div class="servicedate-selected"><span>${properties.servicetype}</span><span class="summary-service-type" id="service-type">Free Service</span></div>
+            </div>
+            <div class="self-jobcard-summary">
+                <div class="head-change-wrap">
+                    <h3 class="summary-heading">${properties.selfjobcard}</h3>
+                    <div class="change-link selfjobcard" href="self-jobcard-container">${properties.changeLabel}</div>
+                </div>
+
+                <!-- <div><span>${properties.tyreandbrake}</span><span>Tyre wall leakage</span></div>
+                    <div><span>${properties.fuel}</span><span>Bad fuel filter</span></div>
+                    <div><span>${properties.key}</span><span>Ignition not working</span></div> -->
+                <div id="job-details"></div>
+            </div>
+
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 summary-row">
+            <div class="head-change-wrap">
+                <h3 class="summary-heading">${properties.dealer}</h3>
+                <div class="change-link dealer-card" href="dealer-sec-container">${properties.changeLabel}</div>
+            </div>
+
+            <div class="address-card summary-add-card">
+            	<div class="summery-sub-item1"></div>
+                <div class="dealer-summary-card">
+                    <h3 id="summary-agency-name-card">M/S. RYDEX MOTO PRODUCTS</h3>
+                    <div id="summary-add-card">Shop No-1, Shah Housecon Composite No-10, Rani Sati Marg, Near W E Highway, Malad (E)</div>
+                    <div><img class="delaer-phn-icon" src="/content/dam/hero-aem-website/price-update/service-journey-assets/phone-icon.svg" alt="image"></div>
+                    <div id="summary-agency-phn">+91 8888443344</div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="dealer-button-container row">
+        <div class="summary-footer">
+        	<span class="alert-danger hidden api-error-msg">${properties.errormsg}</span>
+            <button class="btn btn-danger book-now-back-btn">${properties.backbuttonLabel}</button>
+            <button class="btn book-now-btn submit-booking">${properties.booknowLabel}</button>
+        </div>
+    </div>
+</div>

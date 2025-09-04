@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-13T11:24:25.357Z"
+        cq:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicated="{Date}2022-09-13T11:29:55.728Z"
+        cq:lastReplicated_publish="{Date}2022-09-13T11:29:55.728Z"
+        cq:lastReplicatedBy="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicatedBy_publish="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/scooter"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="MAESTRO EDGE 125"
+        jcr:uuid="d494c4ee-418f-4299-85d4-96850b3bcb94"
+        sling:resourceType="hero-aem-website/components/structure/productpage"
+        pagerank="14"
+        pageTitle="MAESTRO EDGE 125"
+        productmodel="/content/hmc/prices/in/new_maestro_edge125"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                jcr:lastModified="{Date}2022-08-23T13:24:48.592Z"
+                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/header/scooter-header"/>
+            <container
+                jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                layout="responsiveGrid">
+                <container
+                    cq:styleIds="[1660795084168]"
+                    jcr:lastModified="{Date}2022-09-07T14:35:14.272Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FEATURES"
+                    layout="responsiveGrid">
+                    <carousel_404830286_c
+                        jcr:created="{Date}2022-08-24T12:39:48.798Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T07:21:40.601Z"
+                        jcr:lastModifiedBy="d.porwal@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/carousel"
+                        carouselindicatorstyling="carousel-indicators carousel-indicators-left justify-content-start"
+                        textIsRich="[true,true]"
+                        variant="scooter">
+                        <herodetailswithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                assettype="videoasset"
+                                btnlabel1="TEST RIDE"
+                                btnlabel2="BOOK NOW"
+                                buttonalign="slide-1-content-right"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/new-maestro-edge-125.html"
+                                styling="text-right"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"
+                                video1="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/banners/mastro.mp4"
+                                video2="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/banners/mastro.mp4"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="Test Ride"
+                                btnlabel2="Book Now"
+                                buttonalign="slide-1-content-right"
+                                imageRef="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/MAE 1st Banners_1366x640.jpg"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/new-maestro-edge-125.html"
+                                mobimageRef="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/MAE 1st Banners_1366x640.jpg"
+                                styling="text-right"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="url1"
+                                urltype2="url2"/>
+                        </herodetailswithmap>
+                    </carousel_404830286_c>
+                </container>
+                <container_1990212815
+                    jcr:created="{Date}2022-08-25T09:23:40.710Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-25T09:23:40.710Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <color_switch_copy_co
+                        jcr:created="{Date}2022-08-18T17:46:15.568Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T11:24:25.321Z"
+                        jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/color-switch"
+                        background="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/MAE Web Banners_background_1366x681-16.jpg"
+                        btnlabel1="Explore"
+                        btnlabel2="Book Now"
+                        headline="Our Offerings, Your Style"
+                        imgbtn1="/content/dam/hero-aem-website/brand/design/icons/360-view-icon.svg"
+                        leftarrowpath="/content/dam/hero-aem-website/in/products/city/hf-deluxe/colorswitch/left-rotate.png"
+                        linkTo1="https://virtualshowroom.heromotocorp.com/"
+                        linkTo2="https://eshop.heromotocorp.com/new-maestro-edge-125.html"
+                        rightarrowpath="/content/dam/hero-aem-website/in/products/city/hf-deluxe/colorswitch/right-rotate.png"
+                        styling1="btn-icon btn-white"
+                        styling2="btn-red-gradient"
+                        variationtype="scooter-explore-360-main">
+                        <imagerotation
+                            jcr:lastModified="{Date}2022-08-29T07:08:02.155Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/imagerotation"/>
+                        <colors jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                color="yellow"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/yellow"
+                                colortitle="Prismatic Yellow"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                color="black"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/black"
+                                colortitle="Panther Black"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                color="candy-red"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/red"
+                                colortitle="Candy Blazing Red"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                color="blue"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/blue"
+                                colortitle="Matte Techno Blue"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                color="purple"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/purple"
+                                colortitle="Prismatic Purple"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                color="white"
+                                colorPath="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/white"
+                                colortitle="Pearl Silver White"/>
+                        </colors>
+                        <multitext jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/1black.png"
+                                title="TWO-WHEELER MANUFACTURER"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/37black.png"
+                                title="YEARS OF EXCELLENCE"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/100Mnblack.png"
+                                title="TWO-WHEELERS SOLD"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/9000black.png"
+                                title="CUSTOMER TOUCH POINTS"/>
+                        </multitext>
+                    </color_switch_copy_co>
+                </container_1990212815>
+                <container_1999514029
+                    cq:styleIds="[1660795969470]"
+                    jcr:created="{Date}2022-09-10T07:55:37.697Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-10T07:55:37.697Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <booktestride_copy_co
+                        jcr:created="{Date}2022-08-23T12:51:15.259Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:24:10.154Z"
+                        jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/booktestride"
+                        acknowledgemsg="&lt;h3>Thank You!&lt;/h3>&#xd;&#xa;"
+                        acknowledgemsgfail="&lt;h3>Sorry&lt;/h3>&#xd;&#xa;"
+                        acknowledgemsgfailsubtitle="&lt;p>An error Occured. Please try after sometime&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgsubtitle="&lt;p>We will connect with you soon.&lt;/p>&#xd;&#xa;"
+                        buttonlabel="Submit"
+                        citylabel="City"
+                        cityvalmsg="select a city"
+                        enterOtplabel="Enter OTP"
+                        ispopup="false"
+                        mobilelabel="Mobile No."
+                        mobilevalformmsg="Enter correct mobile number"
+                        mobilevalmsg="Please Enter a valid Mobile Number"
+                        name="Name"
+                        nameformvalmsg="Invalid Name"
+                        namereqvalmsg="The Name is required"
+                        otpresultmsg="Incorrect OTP"
+                        otpvalmsg="OTP is required"
+                        resendOtplabel="Resend OTP"
+                        sendOtplabel="Send OTP"
+                        statelabel="State"
+                        statevalmsg="select a state"
+                        subtitle="&lt;p>Take A Hero Ride And Experience The Thrill.&lt;/p>&#xd;&#xa;"
+                        textIsRich="[true,true,true,true,true,true,true]"
+                        title="&lt;h3>&lt;b>BOOK A TEST RIDE NOW&lt;/b>&lt;/h3>&#xd;&#xa;"
+                        variationtype="productpage"
+                        vehiclelabel="Vehicle"
+                        vehiclevalmsg="Select a vehicle"/>
+                </container_1999514029>
+                <container_1259183558
+                    jcr:created="{Date}2022-09-09T13:59:11.348Z"
+                    jcr:createdBy="d.porwal@accenture.com"
+                    jcr:lastModified="{Date}2022-09-09T13:59:11.348Z"
+                    jcr:lastModifiedBy="d.porwal@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <featurecarousel_copy
+                        jcr:created="{Date}2022-08-17T07:19:55.675Z"
+                        jcr:createdBy="sree.d.kollimarla@accenture.com"
+                        jcr:lastModified="{Date}2022-09-10T07:12:52.612Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/featurecarousel"
+                        carouselBackground="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/Plain background for circular features .jpg"
+                        carouselHeading="Maestro Edge 125 Features"
+                        textIsRich="[true,true,true,true,true,true,true,true,true,true,true,true,true]">
+                        <carouseldetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/Fully digital speedometer.png"
+                                carouselText="Fully Digital Speedometer"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/LED projector headlamps.png"
+                                carouselText="LED Projector HeadLamps"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/LED tail lamp.png"
+                                carouselText="LED Tail Lamp"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/Mobile charger and boot light.png"
+                                carouselText="Mobile Charger and Boot Light"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/Side stand indicator and low fuel indicator.png"
+                                carouselText="Side Stand and Low Fuel Indicators"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/Bluetooth connecivity with turn by turn navigation.png"
+                                carouselText="Bluetooth Connectivity with Turn by Turn Navigation"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/LED insignia.png"
+                                carouselText="LED Insignia"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/Front disk brake.png"
+                                carouselText="Front Disk Brake"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/Diamond cut alloy wheels.png"
+                                carouselText="Diamond Cut Alloy Wheels"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/Masked winkers.png"
+                                carouselText="Masked Winkers"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/Dual tone stripe pattern.png"
+                                carouselText="Dual Tone Stripe Pattern"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/Telescopic front suspension.png"
+                                carouselText="Telescopic Front Suspension"/>
+                            <item12
+                                jcr:primaryType="nt:unstructured"
+                                carouselImage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/features/Side stand engine cut off.png"
+                                carouselText="Side Stand Engine Cut Off"/>
+                        </carouseldetails>
+                    </featurecarousel_copy>
+                </container_1259183558>
+                <container_2140053336
+                    jcr:created="{Date}2022-08-25T09:24:21.223Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-09T14:10:06.763Z"
+                    jcr:lastModifiedBy="d.porwal@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="hero-connect">
+                    <image_copy
+                        jcr:created="{Date}2022-09-05T13:32:44.306Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T14:31:02.816Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/image"
+                        altValueFromDAM="true"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/heroconnectme125.jpg"
+                        imageFromPageImage="false"
+                        isDecorative="false"
+                        linkTarget="_self"
+                        linkURL="https://www.heromotocorp.com/en-in/hero-connect/"
+                        titleValueFromDAM="true"/>
+                </container_2140053336>
+                <container_1728256806
+                    cq:styleIds="[1662803750569]"
+                    jcr:created="{Date}2022-09-09T14:04:24.257Z"
+                    jcr:createdBy="d.porwal@accenture.com"
+                    jcr:lastModified="{Date}2022-09-09T14:10:31.750Z"
+                    jcr:lastModifiedBy="d.porwal@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="SPECIFICATION">
+                    <generictab_copy_copy
+                        cq:lastReplicated="{Date}2022-09-10T07:09:01.253Z"
+                        cq:lastReplicated_publish="{Date}2022-09-10T07:09:01.253Z"
+                        cq:lastReplicatedBy="aditya.l.srivastava@accenture.com"
+                        cq:lastReplicatedBy_publish="aditya.l.srivastava@accenture.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:created="{Date}2022-08-17T07:10:31.422Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-10T06:55:01.090Z"
+                        jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/generictab"
+                        specificationstext="HF Deluxe Specifications"
+                        specificationstext1="Maestro Edge 125 Specifications"
+                        textIsRich="true"
+                        variant="cityproduct">
+                        <tab-0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:00:50.814Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-11T07:35:51.144Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Engine"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/features/Engine.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Type"
+                                        value="Air cooled, 4-stroke, SI Engine"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Displacement"
+                                        value="124.6 cc"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Power"
+                                        value="6.7 kW (9 bhp) @ 7000 Revolutions per minute (rpm)"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Torque"
+                                        value="10.4 Nm @ 5500 Revolutions per minute (rpm)"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Bore x Stroke"
+                                        value="52.4 x 57.8 mm"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Compression Ratio"
+                                        value="9.9:1"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Starting"
+                                        value="Self-Start / Kick Start"/>
+                                    <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel System"
+                                        value="Fuel Injection (FI)"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-0>
+                        <tab-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:10:29.393Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-10T06:35:51.583Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Suspension"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/specifications/Suspension.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front"
+                                        value="Telescopic Hydraulic Shock Absorber"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear"
+                                        value="Unit Swing with Spring Loaded Hydraulic Damper"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-1>
+                        <tab-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:13:12.352Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-10T06:43:00.121Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Brakes"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/specifications/Brakes.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Brake Disc"
+                                        value="190 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Brake Drum"
+                                        value="130 mm"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Brake Drum"
+                                        value="130 mm"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-2>
+                        <tab-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification_322802938
+                                jcr:created="{Date}2022-08-17T08:03:30.745Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-10T06:44:30.708Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Wheels &amp; Tyres"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/specifications/Wheels and tyres.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Tyre"
+                                        value="80/100 - 18"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Tyre"
+                                        value="100/80 - 18"/>
+                                </specifications>
+                            </imagespecification_322802938>
+                        </tab-3>
+                        <tab-4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:14:35.825Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-10T09:57:53.746Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Electricals"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/specifications/Electricals.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Battery"
+                                        value="12V-4Ah ETZ5 MF Battery"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-4>
+                        <downloadbrochure
+                            jcr:lastModified="{Date}2022-09-08T11:32:50.110Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/downloadbrochure"
+                            icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/arrow-down.png"
+                            text="Download Brochures"
+                            variation="none"/>
+                        <tab-5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-17T08:16:17.306Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-10T09:58:29.937Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="Dimensions"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/specifications/Dimensions.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="city"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Length"
+                                        value="1843 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Width"
+                                        value="718 mm (Disc) | 715mm (Drum)"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Height"
+                                        value="1139 mm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Saddle Height"
+                                        value="793 mm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Wheelbase"
+                                        value="1261 mm"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Ground Clearance"
+                                        value="155 mm"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel Tank Capacity"
+                                        value="5 Litre"/>
+                                    <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Kerb Weight"
+                                        value="Disc Brake 112 Kg | Drum Brake 111 Kg"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-5>
+                        <shareicon
+                            jcr:lastModified="{Date}2022-09-07T03:42:41.061Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/shareicon"
+                            emailIcon="/content/dam/hero-aem-website/brand/design/icons/email-icon-black.svg"
+                            emailSub="Check this out..."
+                            icon="/content/dam/hero-aem-website/brand/design/icons/share-icon2.svg"
+                            linkpath="/content/dam/hero-aem-website/in/documents/product-brochures/New-Maestro-Edge-110-BS6.pdf"
+                            linkto="#"
+                            text="Hey, my rider buddy! Check out some exciting, and innovative features of HF 100 which takes it stand out. Click here to explore more!!! &#xd;&#xa;"
+                            textIsRich="true"
+                            variation="none"
+                            wpIcon="/content/dam/hero-aem-website/brand/design/icons/whatsapp-icon-black.svg"
+                            wpLink="https://api.whatsapp.com"
+                            wpText="Hey, my rider buddy! Check out some exciting, and innovative features of HF 100 which makes it stand out. Click here to explore more!!! "/>
+                        <tabitems jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-100/image-specification/icons/engine-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/engine-grey-icon.svg"
+                                title="Engine"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/suspension-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/suspension-grey-icon.svg"
+                                title="Suspension"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/brakes-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/brakes-grey-icon.svg"
+                                title="Brakes"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/wheel-tyers-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/wheel-tyers-icon.svg"
+                                title="Wheels &amp; Tyres"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/electric-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/electric-grey-icon.svg"
+                                title="Electricals"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/dimension-white-icon.svg"
+                                inactiveicon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/dimension-grey-icon.svg"
+                                title="Dimensions"/>
+                        </tabitems>
+                    </generictab_copy_copy>
+                </container_1728256806>
+                <container_315963354
+                    jcr:created="{Date}2022-09-07T12:07:53.838Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-07T12:07:53.838Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <adbanner_copy_copy
+                        jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-09T11:51:14.884Z"
+                        jcr:lastModifiedBy="d.porwal@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adbanner"
+                        background="grey-bg"
+                        bgStyle1="btn-white"
+                        bgStyle2="btn-red-gradient"
+                        button1label="REQUEST CALLBACK"
+                        button2label="BOOK NOW"
+                        fileReference="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/AdBanner400_295.png"
+                        headline="&lt;h4>EXPERIENCE THE TECHNOMAGICAL&lt;/h4>&#xd;&#xa;&lt;p>TEST DRIVE THE MAGICAL EXPERIENCE TODAY AT YOUR DOORSTEP&lt;/p>&#xd;&#xa;"
+                        imageAlt="hero ride image"
+                        imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-ride-img.svg"
+                        linkTo1="#requestCallBack"
+                        linkTo2="https://eshop.heromotocorp.com/new-maestro-edge-125.html"
+                        textIsRich="true"
+                        type1="modal1"
+                        type2="url2"/>
+                </container_315963354>
+                <container_341702571
+                    jcr:created="{Date}2022-09-09T14:12:22.304Z"
+                    jcr:createdBy="d.porwal@accenture.com"
+                    jcr:lastModified="{Date}2022-09-09T14:12:51.765Z"
+                    jcr:lastModifiedBy="d.porwal@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="PRICE">
+                    <price_info_copy_copy
+                        jcr:created="{Date}2022-08-23T12:39:22.304Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T12:28:33.140Z"
+                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/price-info"
+                        bgImage="/content/dam/hero-aem-website/in/products/city/hf-deluxe/price-info/price-bg.png"
+                        bgStyle="btn-red-gradient"
+                        buttonlabel="Book Now"
+                        buttonlink="https://eshop.heromotocorp.com/new-maestro-edge-125.html"
+                        buttonlinktype="url"
+                        citylabel="City"
+                        defaultcitylabel="City"
+                        defaultcitypath="/content/hmc/prices/in/new_maestro_edge125/mah/mumbai"
+                        defaultstatelabel="State"
+                        defaultstatepath="/content/hmc/prices/in/new_maestro_edge125/mah"
+                        desktopimage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/price/web/Frame 48097697.png"
+                        disclaimer="&lt;p>*Please contact the dealer for exact on-road prices. Local levies, Octroi, Entry tax will be extra as applicable. Price ruling at the time of delivery would be applicable. Prices are subject to change without notice. HMCL reserves the right to modify the prices at its discretion at any point of time.&lt;/p>&#xd;&#xa;"
+                        heading="NEW MAESTRO EDGE 125 PRICE "
+                        mobilemage="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/banners/Price page.png"
+                        productPath="/content/hero-aem-website/in/en-in/scooters/maestro-edge-125"
+                        showroomlabel="Ex-Showroom Price"
+                        statelabel="State"
+                        textIsRich="true"
+                        variantlabel="Variant"
+                        variationtype="scooter-price-maestro"/>
+                </container_341702571>
+                <container_2082407285
+                    jcr:created="{Date}2022-09-09T14:13:41.267Z"
+                    jcr:createdBy="d.porwal@accenture.com"
+                    jcr:lastModified="{Date}2022-09-09T14:13:41.267Z"
+                    jcr:lastModifiedBy="d.porwal@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <adbanner_copy_copy_c
+                        jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-09T11:51:44.417Z"
+                        jcr:lastModifiedBy="d.porwal@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adbanner"
+                        background="grey-bg"
+                        bgStyle1="btn-white"
+                        button1label="EXCHANGE NOW"
+                        fileReference="/content/dam/hero-aem-website/in/products/scooters/maestro/maestro-edge-125.png"
+                        headline="&lt;h4>Hero Scooter Exchange Offers&lt;/h4>&#xd;&#xa;&lt;p>Just bring your old scooter, upgrade with us and unleash your stylish and bold avatar. And ride back home the stylish Maestro edge 125.&lt;/p>&#xd;&#xa;"
+                        imageAlt="hero ride image"
+                        imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-ride-img.svg"
+                        linkTo1="http://wheelsoftrust.com/"
+                        textIsRich="true"
+                        type1="url1"
+                        type2="modal2"/>
+                </container_2082407285>
+                <container_305980260
+                    jcr:created="{Date}2022-08-25T09:21:25.415Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-25T09:21:25.415Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <container_930333100
+                        jcr:created="{Date}2022-08-25T09:27:55.909Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:29:07.745Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="PRICE"/>
+                    <container_1588656662
+                        jcr:created="{Date}2022-09-07T10:44:48.042Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-07T10:44:48.042Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"/>
+                    <container_1036136207
+                        cq:styleIds="[1660795954617]"
+                        jcr:created="{Date}2022-08-25T09:30:22.144Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:43:12.628Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="COMPARE">
+                        <productcompare_copy
+                            jcr:created="{Date}2022-08-23T12:50:29.172Z"
+                            jcr:createdBy="d.porwal@accenture.com"
+                            jcr:lastModified="{Date}2022-09-10T09:40:53.559Z"
+                            jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/productcompare"
+                            headline="Compare new Maestro edge 125 Variants "
+                            image="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/compare/web/Group 48096939.png"
+                            imageOneAlt="hero-splender-plus"
+                            imageOneMob="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/compare/mobile/Group 48096940.png"
+                            imageTwo="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/compare/web/right-compare.png"
+                            imageTwoAlt="hero-splender-plus"
+                            imageTwoMob="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/compare/mobile/right-mobile.png"
+                            productName="CAST + DISC + CONNECTED"
+                            productNameTwo="CAST + DISC"
+                            theme="compare-scooter-section"
+                            variation="normal">
+                            <specificationDetails jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    type="Projector LED Head Lamps"
+                                    valueOne="Yes"
+                                    valueTwo="Yes"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    type="LED Tail Lamps"
+                                    valueOne="Yes"
+                                    valueTwo="Yes"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    type="Fully Digital Meter"
+                                    valueOne="Yes"
+                                    valueTwo="Yes"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    type="Bluetooth Connectivity"
+                                    valueOne="Yes"
+                                    valueTwo="Yes"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    type="Hero Connect (in-built)"
+                                    valueOne="Yes"
+                                    valueTwo="No"/>
+                            </specificationDetails>
+                        </productcompare_copy>
+                    </container_1036136207>
+                    <container_832901463
+                        cq:styleIds="[1660795962763]"
+                        jcr:created="{Date}2022-08-25T09:31:16.835Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:31:16.835Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container">
+                        <bootstraplayout_copy
+                            jcr:created="{Date}2022-08-22T10:56:00.216Z"
+                            jcr:createdBy="gausiya.latif.momin@accenture.com"
+                            jcr:lastModified="{Date}2022-09-09T14:32:40.444Z"
+                            jcr:lastModifiedBy="prajwala.vemula@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/bootstraplayout"
+                            classes="container-fluid px-0"
+                            rowclasses="row">
+                            <container-item0
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-12T15:16:44.110Z"
+                                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="customer review"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/teaser/MAEcustomer-review.png"
+                                    height="420"
+                                    layoutvariation="layoutvariation2"
+                                    textIsRich="true"/>
+                            </container-item0>
+                            <container-item1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy_c
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-10T05:47:52.291Z"
+                                    jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="goodlife"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/teaser/meastro-125-goodlife.png"
+                                    height="420"
+                                    layoutvariation="layoutvariation2"
+                                    searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                    searchbtnpath="/en-in/goodlife/"
+                                    searchbtntitle="Explore Now"
+                                    textIsRich="true"/>
+                            </container-item1>
+                            <container-item2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy_c
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-10T05:48:21.092Z"
+                                    jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="accessories"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125/teaser/meastro-125-accessories.png"
+                                    height="420"
+                                    layoutvariation="layoutvariation2"
+                                    searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                    searchbtnpath="https://eshop.heromotocorp.com/accessories-miscellaneous.html"
+                                    searchbtntitle="Explore Now"
+                                    textIsRich="true"/>
+                            </container-item2>
+                            <container-item3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-06T17:52:01.277Z"
+                                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="goodlife"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/teaser/Goodlife.png"
+                                    height="420"
+                                    layoutvariation="layoutvariation2"
+                                    searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                    searchbtnpath="#"
+                                    searchbtntitle="Explore"
+                                    textIsRich="true"/>
+                            </container-item3>
+                            <container-item4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/container">
+                                <genericteaser_copy
+                                    jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                    jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                    jcr:lastModified="{Date}2022-09-06T17:52:20.639Z"
+                                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                    alt="accessories"
+                                    file="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtech/teaser/Accessories.png"
+                                    height="420"
+                                    layoutvariation="layoutvariation2"
+                                    searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                    searchbtnpath="#"
+                                    searchbtntitle="Explore"
+                                    textIsRich="true"/>
+                            </container-item4>
+                            <columnlayouts jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    large="col-lg-4"
+                                    medium="col-md-12"
+                                    small="col-12"
+                                    xlarge="col-xl-4"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    class="middle-column"
+                                    large="col-lg-4"
+                                    medium="col-md-12"
+                                    small="col-12"
+                                    xlarge="col-xl-4"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    large="col-lg-4"
+                                    medium="col-md-12"
+                                    small="col-12"
+                                    xlarge="col-xl-4"/>
+                            </columnlayouts>
+                        </bootstraplayout_copy>
+                    </container_832901463>
+                    <container_1370996405
+                        cq:styleIds="[1660795991335]"
+                        jcr:created="{Date}2022-08-25T09:35:24.744Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-25T09:44:11.967Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="find-dealer">
+                        <dealer_info_copy_cop
+                            jcr:created="{Date}2022-08-23T12:54:05.926Z"
+                            jcr:createdBy="d.porwal@accenture.com"
+                            jcr:lastModified="{Date}2022-09-12T12:32:29.740Z"
+                            jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/dealer-info"
+                            citylabel="City"
+                            dealerheading="Book appointment at your nearest experience center"
+                            defaultcity="/content/hmc/dealers/in/dlr/MAH/mumbai"
+                            statelabel="State"
+                            subtitle="Where do you live?"
+                            title="We are near you!"/>
+                    </container_1370996405>
+                    <experiencefragment_c
+                        jcr:created="{Date}2022-09-03T12:48:10.231Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-06T09:39:09.754Z"
+                        jcr:lastModifiedBy="d.porwal@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/modals/request-callback-pop-up-product"/>
+                </container_305980260>
+            </container>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/footer/master"
+                id="footer"/>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-09-13T07:59:40.061Z"
+            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

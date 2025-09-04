@@ -1,0 +1,1824 @@
+.wrapper {
+  max-width: 1366px;
+  width: 90%;
+  margin: 0 auto;
+}
+#scooterBanner {
+  margin-top: 6%;
+  @media (min-width:1440px){
+    margin-top: 4%;
+  }
+  .scooter-banner-slide {
+    position: relative;
+    .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+    }
+    .banner-img {
+      object-fit: cover;
+      object-position: center;
+    }
+    .slider-content {
+      position: absolute;
+      bottom: 100px;
+      left: 0;
+      width: 100%;
+      padding-left: 100px;
+      font-size: var(--font-size16);
+      h1 {
+        font-size: var(--font-size48);
+        font-weight: var(--font-weight-900);
+        font-family: var(--font-tstar-heavy);
+
+        line-height: 1.2;
+        margin-bottom: 10px;
+      }
+      p {
+        max-width: 280px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .carousel-indicators {
+    bottom: 40px;
+    z-index: 3;
+    margin: 0;
+    padding-left: 100px;
+    li {
+      background-color: #f5f6f7;
+      &.active {
+        background: var(--bg-color-danger);
+      }
+    }
+  }
+  .scroll-button {
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    img {
+      transition: all 300ms ease-in;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.home-main-section {
+  margin-top: 87px;
+  .carousel-indicators {  
+    bottom: 15px;
+   &.carousel-indicators-left {
+    bottom: 40px;
+    z-index: 3;
+    margin: 0;
+    padding-left: 100px;
+    li {
+      background-color: #f5f6f7;
+      &.active {
+        background: var(--bg-color-danger);
+      }
+    }
+  }
+ }
+  .carousel-inner {
+	  .slider-content {
+      position: absolute;
+      bottom: 100px;
+      left: 0;
+      width: 100%;
+      padding-left: 100px;
+      font-size: var(--font-size16);
+      h1 {
+        font-size: var(--font-size48);
+        font-weight: var(--font-weight-900);
+        font-family: var(--font-tstar-heavy);
+
+        line-height: 1.2;
+        margin-bottom: 10px;
+		.good-life{
+                    color: var(--text-color-red);
+                   }
+      }
+      .headmile {
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 80px;
+            font-weight: 900;
+            opacity: 0.7;
+            font-family: 'tstar-heavy';
+           }
+      p {
+        max-width: 280px;
+        margin-bottom: 10px;
+      }
+    }
+    .carousel-item {
+      img {
+        width: 100%;
+        height: 100%;
+        margin:auto;
+      }
+      .slide-1-content {
+        position: absolute;
+        bottom:66px;
+        left: 66px;
+        &.slide-1-content-right{
+        left: 60%;
+                }
+        &.slide-1-content-center{
+        position: absolute;
+    	left: 0;
+    	right: 0;
+   	 	margin: 0 auto;
+    	width: max-content;
+    	bottom: 66px;
+                }
+        &.text-bold{
+        font-weight: 900;
+                }
+        .slider-child-sec {
+          background-image: url("../assets/images/imgs/back-grey-rectangle.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          max-width: 555px;
+          padding: 10px 32px 17px 32px;
+        }
+        .btn {
+          border: 1px solid #EE2326;
+          padding: 12px 32px 12px 32px;
+          border-radius: 4px;
+          margin-right: 40px;
+          background: #FFFFFF;
+          font-family: var(--font-tstar-bold);
+          color: var(--text-color-red);
+          text-transform: uppercase;
+          font-size: 20px;
+          &.booknow-btn {
+            background: #EE2326;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
+// How Can We Help You section start
+.help-offer-main {
+  background: url('../resources/images/how-can-help-bg.svg') no-repeat;
+  background-position: right top;
+  background-size: 212px;
+  .help-offer-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    .help-main-wrapper {
+      padding: 32px 25px;
+      flex: 1;
+      h3 {
+        font-family: var(--font-tstar-bold);
+        font-size: var(--font-size32);
+        color: var(--text-color-black);
+        margin-bottom: 22px;
+      }
+      .help-main-box {
+        display: flex;
+        flex-wrap: wrap;
+        &.quick-link-size6{
+                 .help-box {
+                          width: 30%;
+                          }
+            }
+        .help-box {
+          width: 30%;
+          margin-bottom: 58px;
+          margin-right: 21px;
+          &:nth-last-child(-n+4) {
+            margin-bottom: 0;
+          }
+          .help-icon-box {
+            width: 110px;
+            height: 94px;
+            background: #FFFFFF;
+            border: 1px solid #DDDCDC;
+            box-shadow: 0px 8px 24px #DDDCDC;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: auto;
+            img {
+              display: block;
+              margin: auto;
+            }
+            .active-icon {
+              position: absolute;
+              opacity: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+            }
+          }
+          .help-icon-label {
+            margin-top: 18px;
+            text-align: center;
+            font-family: var(--font-tstar-bold);
+            font-weight: var(--font-weight-700);
+            font-size: var(--font-size20);
+          }
+          &:hover {
+            .help-icon-box {
+              .inactive-icon {
+                opacity: 0;
+              }
+              .active-icon {
+                opacity: 1;
+              }
+            }
+            .help-icon-label {
+              color: var(--text-color-red);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.offer-main-wrapper {
+      padding-top: 28px;
+      width: 346px;
+      max-width: 100%;
+      h3 {
+        font-family: var(--font-tstar-bold);
+        font-size: var(--font-size32);
+        color: var(--text-color-black);
+        margin-bottom: 22px;
+        text-align: center;
+      }
+      .offer-carousel {
+        .carousel-inner{
+          .carousel-item {
+            border-radius: 16px;
+            overflow: hidden;
+            img{
+				border-radius: 16px;
+			}
+          }
+        }
+        .carousel-indicators {
+          position: relative;
+          margin-top: 17px;
+        }
+        .carousel-control-prev, .carousel-control-next {
+          bottom: auto;
+          top: calc(50% - 20.5px);
+          opacity: 1;
+          left: -20px;
+        }
+        .carousel-control-next {
+          left: auto;
+          right: -20px;
+        }
+      }
+      .know-more-btn{
+			display: table;
+    		margin: 15px auto 0 auto;
+    		font-weight:400;
+		}
+		.red-fill{
+			color:#fff;
+			background-color: var(--bg-color-danger);
+		}
+		.text-bold{
+			font-weight: 900;
+		}
+		.btn-small{
+			font-size: 10px;
+    		line-height: var(--line-height-9);
+		}
+    }
+// How Can We Help You section end
+// explore-product-section
+.explore-wrapper-section {
+  padding-top: 40px;
+  background-color: var(--text-color-white);
+  .explore-products {
+    .explore-products-heading {
+      h3 {
+        font-size: var(--font-size48);
+        font-family: var(--font-tstar-bold);
+        color: var(--text-color-black);
+        background-color: var(--text-color-white);
+        text-align: center;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+          font-size: var(--font-size16);
+          font-family: var(--font-tstar-regular);
+          color: var(--text-color-black);
+          border-right: 1px solid #303030;
+          padding: 0px 12px;
+          &:last-child {
+            border: none;
+          }
+        }
+        &:last-child(1) {
+          border-radius: 0px;
+        }
+      }
+    }
+    .explore-tab-section {
+      background-image: url("../resources/images/explore-products-bg.png");
+      background-repeat: no-repeat;
+      background-position: 100% 96%;
+      background-size: 100% 43%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .explore-div {
+        display: flex;
+        justify-content: flex-end;
+
+      }
+      .bike-tab-section {
+        .bike-product-wrapper {
+          padding: 0px 20px 0 20px;
+   		  max-width: 1366px;
+	      margin: 30px auto;
+          .tab-content {
+            .tab-pane {
+              .bike-product-prant {
+                text-align: center;
+                p {
+                  font-size: var(--font-size12);
+                  color: var(--text-color-black);
+                  font-family: var(--font-tstar-bold);
+                  font-weight: var(--font-weight-900);
+                }
+                .bike-product-para {
+                  opacity: 0;
+                }
+                .bike-product-paramob {
+                  font-size: var(--font-size10);
+                  font-family: var(--font-tstar-bold);
+                  color: var(--text-color-black);
+                }
+                &:hover .bike-product-para {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// explore-product-section-end
+.joyride-main {
+  position: relative;
+  z-index: 0;
+  .joy-ride-heading {
+    font-family: var(--font-tstar-bold);
+    font-weight: var(--font-weight-900);
+    font-size: var(--font-size48);
+    line-height: var(--line-height-57);
+    color: #1B1717;
+  }
+  p,
+  .know-more {
+    font-family: var(--font-tstar-regular);
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size18);
+    line-height: var(--line-height-32);
+    color: var(--text-color-black);
+    letter-spacing: 0.03em;
+  }
+  .know-more {
+    letter-spacing: 0.02em;
+  }
+  ul.joyride-right-cards {
+    li.card {
+      width: 210px;
+      height: 180px;
+      margin-bottom: 50px;
+      background: #FCFCFC;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+      border-radius: 5px;
+      font-style: italic;
+      padding: 20px 15px 20px 15px;
+      .card-body {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h4 {
+          font-size: var(--font-size84);
+          color: var(--text-color-red);
+          line-height: var(--line-height-100);
+          font-family: var(--font-tstar-bold);
+          font-weight: var(--font-weight-900);
+          span.fs-24 {
+            font-size: var(--font-size24);
+            color: var(--text-color-red);
+          }
+        }
+        span {
+          font-size: var(--font-size18);
+          line-height: var(--line-height-24);
+          color: var(--text-color-black);
+          font-weight: var(--font-weight-400);
+          font-family: var(--font-tstar-medium);
+        }
+      }
+      &.bg-red {
+        background-color: var(--bg-color-danger);
+        height: 110px;
+        border-radius: 0;
+        box-shadow: none;
+        .card-body {
+          h4, p, span {
+            color: #fff;
+          }
+          p {
+            font-weight: var(--font-weight-400);
+          }
+        }
+      }
+      &.card:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.be-hero-main {
+  .section-heading {
+    h3 {
+      font-family: var(--font-tstar-bold);
+      font-weight: var(--font-weight-700);
+      font-size: var(--font-size48);
+      line-height: var(--line-height-58);
+      color: var(--text-color-black);
+    }
+    p {
+      font-family: var(--font-tstar-regular);
+      font-weight: var(--font-weight-400);
+      font-size: var(--font-size18);
+      line-height: var(--line-height-22);
+      color: #000;
+      letter-spacing: 0.03em;
+    }
+  }
+  .hero-bikes-img-grid {
+    li {
+      margin-right: 30px;
+      border-radius: 10px;
+      background-size: cover;
+      color: #fff;
+      &:nth-child(1) {
+        background: url(../resources/images/be-a-hero-img1.png) no-repeat;
+        height: 619px;
+        width: 528px;
+      }
+      & ul li:nth-child(1) {
+        background: url(../resources/images/be-a-hero-parts.png) no-repeat;
+        margin: 0 0 20px 0;
+        height: 299px;
+        width: 350px;
+      }
+      & ul li:nth-child(2) {
+        background: url(../resources/images/be-a-hero-img3.png) no-repeat;
+        height: 299px;
+        width: 350px;
+        margin-right: 0;
+      }
+      &:last-of-type {
+        background: url(../resources/images/be-a-hero-img4.png) no-repeat;
+        margin-right: 0;
+        height: 619px;
+        width: 350px;
+      }
+      .img-text {
+        width: 100%;
+        padding: 10px 20px 20px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+        border-radius: 0 0 8px 8px;
+        position: relative;
+        z-index: 1;
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+          width: 100%;
+          height: 96px;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.898958) 23.23%, #000000 100%);
+          opacity: 0.5;
+          border-radius: 0 0 10px 10px;
+        }
+        h4 {
+          font-family: var(--font-tstar-bold);
+          font-weight: var(--font-weight-900);
+          font-size: var(--font-size34);
+          line-height: var(--line-height-42);
+          text-transform: uppercase;
+        }
+        p {
+          font-family: var(--font-tstar-regular);
+          font-weight: var(--font-weight-400);
+          font-size: var(--font-size20);
+          line-height: var(--line-height-24);
+        }
+        .explore-more {
+          font-family: var(--font-tstar-bold);
+          font-weight: var(--font-weight-900);
+          font-size: var(--font-size16);
+        }
+      }
+    }
+  }
+}
+
+// events section start
+.events-section-main {
+  //padding: 48px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  .event-section-tabs-main {
+    margin-bottom: 57px;
+  }
+  .event-section-tab-content {
+    width: 1286px;
+    max-width: 100%;
+    margin: auto;
+    .events-main-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .events-box {
+        width: 629px;
+        height: 590px;
+        max-width: 100%;
+        position: relative;
+        border-radius: 18px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .event-box-link {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 18px;
+          overflow: hidden;
+          .event-img {
+            min-width: 100%;
+            max-width: inherit;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            position: relative;
+            top: 50%;
+            left: 50%;
+          }
+          .event-info-main {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0px;
+            width: 100%;
+            z-index: 1;
+            padding: 88px 50px 27px 50px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 23%,rgba(0,0,0,0.75) 100%);
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            .event-info {
+              h4 {
+                font-family: var(--font-tstar-bold);
+                font-weight: var(--font-weight-900);
+                font-size: var(--font-size34);
+                color: var(--text-color-white);
+                text-transform: uppercase;
+                line-height: var(--line-height-40);
+              }
+              p {
+                font-family: var(--font-tstar-medium);
+                font-weight: var(--font-weight-400);
+                font-size: var(--font-size20);
+                color: var(--text-color-white);
+              }
+            }
+            .event-explore {
+              display: flex;
+              align-items: center;
+              p {
+                margin-right: 10px;
+                font-family: var(--font-tstar-bold);
+                font-weight: var(--font-weight-900);
+                font-size: var(--font-size16);
+                color: var(--text-color-white);
+              }
+            }
+          }
+        }
+        .events-box {
+          height: 281px;
+        }
+      }
+    }
+  }
+}
+// events section end
+
+/* LG Devices Start  */
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .home-main-section {
+    margin-top: 77px;
+  }
+  // banner button config
+  .home-main-section {
+    .carousel-inner {
+      .carousel-item {
+        .slide-1-content {
+          bottom: 40px;
+          left: 52px;
+        }
+      }
+    }
+  }
+      .offer-main-wrapper {
+        .offer-carousel {
+          .carousel-control-prev {
+            left: 0;
+          }
+          .carousel-control-next {
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+  // explore-product-section start
+  .explore-tab-section {
+    .explore-div {
+      padding-top: 26px;
+    }
+    .tab-wrapper {
+      .tab-nav-tabs {
+        &::-webkit-scrollbar {
+          width: 0 !important;
+          height: 0 !important;
+        }
+      }
+    }
+  }
+  // explore-product-section end
+  .joyride-main {
+    .joy-ride-heading {
+      font-size: var(--font-size24);
+      line-height: var(--line-height-28);
+    }
+    p, .know-more {
+      font-size: var(--font-size16);
+      line-height: var(--line-height-26);
+    }
+    ul.joyride-right-cards {
+      li.card {
+        width: 150px;
+        height: 80px;
+        margin-bottom: 16px;
+        border-radius: 1px;
+        padding: 10px;
+        .card-body {
+          padding: 0;
+          h4 {
+            font-size: var(--font-size40);
+            line-height: var(--line-height-42);
+          }
+          span {
+            font-size: var(--font-size16);
+            line-height: var(--line-height-20);
+          }
+        }
+        &.bg-red {
+          width: 150px;
+          height: 80px;
+        }
+      }
+    }
+  }
+  .be-hero-main {
+    .hero-bikes-img-grid {
+      li {
+        width: 100%;
+        margin: 0 0 20px 0;
+        &:nth-child(1) {
+          width: 100%;
+          height: 450px;
+          background-size: 100%;
+          background-position-y: 25%;
+        }
+        & ul li:nth-child(1) {
+          width: 100%;
+          height: 450px;
+          margin: 0 20px 0 0;
+          background-position: center;
+          background-size: cover;
+        }
+        & ul li:nth-child(2) {
+          width: 100%;
+          height: 450px;
+          background-position: center;
+          background-size: cover;
+          margin: 0;
+        }
+        &:last-of-type {
+          width: 100%;
+          height: 450px;
+          margin-bottom: 0;
+          background-position: inherit;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+  // events section start
+  .events-section-main {
+    padding: 15px 0px;
+    .event-section-tabs-main {
+      margin-bottom: 21px;
+    }
+    .event-section-tab-content {
+      width: 100%;
+      padding: 0 16px;
+      .events-main-wrapper {
+        .events-box {
+          width: 490px;
+          height: 450px;
+          border-radius: 12px;
+          .event-box-link {
+            border-radius: 12px;
+            .event-img {
+              height: 100%;
+            }
+            .event-info-main {
+              padding: 49px 12px 12px 12px;
+              height: 100%;
+              background: linear-gradient(to bottom, rgba(0, 0, 0, 0) -10%, rgba(0, 0, 0, 0.65) 100%);
+              .event-info {
+                h4 {
+                  font-size: var(--font-size24);
+                  line-height: var(--line-height-28);
+                }
+                p {
+                  font-size: var(--font-size14);
+                }
+              }
+              .event-explore {
+                display: flex;
+                align-items: center;
+                p {
+                  font-size: var(--font-size14);
+                }
+              }
+            }
+          }
+          .events-box {
+            height: 218px;
+          }
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  // events section end
+}
+
+/* MD Devices Start  */
+
+@media (max-width: 991.2px) and (min-width: 768px) {
+  // banner btn-config
+  .home-main-section {
+    .carousel-inner {
+	    .slider-content {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        width: 100%;
+        padding-left: 100px;
+        font-size: var(--font-size16);
+        h1 {
+          font-size: var(--font-size28);
+        }
+      }
+      .carousel-item {
+        .slide-1-content {
+          bottom: 24px;
+          left: 37px;
+			&.slide-1-content-right{
+            left: 60%;
+            }
+            &.slide-1-content-center{
+            left: 25%;
+            margin: -46px 0 0 0;
+            bottom: 24px;
+            }
+        }
+      }
+    }
+	.carousel-indicators-left {
+      bottom: 40px;
+      z-index: 3;
+      margin: 0;
+      padding-left: 100px;
+      li {
+        background-color: #f5f6f7;
+        &.active {
+          background: var(--bg-color-danger);
+        }
+      }
+    }
+  }
+  .home-main-section {
+    margin-top: 77px;
+  }
+  // How Can We Help You section start
+  .help-offer-main {
+    background: none;
+    .help-offer-container {
+      .help-main-wrapper {
+        padding: 16px 0 0 0;
+        max-width: 100%;
+        overflow: hidden;
+        h3 {
+          font-size: var(--font-size24);
+          font-weight: var(--font-weight-700);
+          margin-bottom: 10px;
+        }
+        .help-main-box {
+          .slick-arrow {
+            left: -15px;
+            top: calc(50% - 10px);
+            img {
+              display: block;
+              margin: auto;
+            }
+            &::before {
+              content: none;
+            }
+            &.slick-next{
+              left: auto;
+              right: -15px;
+              img {
+                transform-origin: center;
+                transform: rotate(180deg);
+              }
+            }
+          }
+          .slick-list {
+            max-width: 100%;
+            overflow: hidden;
+          }
+          .help-box {
+            width: 98px;
+            margin-bottom: 20px;
+            &:nth-last-child(-n+4) {
+              margin-bottom: 0;
+            }
+            .help-icon-box {
+              width: 60px;
+              height: 60px;
+              img {
+                width: 69%;
+                max-height: 35px;
+              }
+            }
+            .help-icon-label {
+              margin-top: 8px;
+              text-align: center;
+              font-family: var(--font-tstar-bold);
+              font-weight: var(--font-weight-400);
+              font-size: var(--font-size12);
+            }
+            &:hover {
+              .help-icon-box {
+                .inactive-icon {
+                  opacity: 0;
+                }
+                .active-icon {
+                  opacity: 1;
+                }
+              }
+              .help-icon-label {
+                color: var(--text-color-red);
+              }
+            }
+          }
+        }
+      }
+      .offer-main-wrapper {
+        padding: 16px 0px 0 0px;
+        max-width: 100%;
+        width: 230px;
+        h3 {
+          font-size: var(--font-size24);
+          font-weight: var(--font-weight-700);
+          margin-bottom: 10px;
+          text-align: center;
+        }
+        .offer-carousel {
+          .carousel-inner {
+            .carousel-item {
+              border-radius: 16px;
+              overflow: hidden;
+            }
+          }
+          .carousel-indicators {
+            position: relative;
+            margin-top: 17px;
+          }
+          .carousel-control-prev,
+          .carousel-control-next {
+            bottom: auto;
+            top: calc(50% - 20.5px);
+            opacity: 1;
+            left: -20px;
+          }
+          .carousel-control-next {
+            left: auto;
+            right: -20px;
+          }
+        }
+      }
+    }
+  }
+  // How Can We Help You section end
+  // explore-product-section
+  .explore-wrapper-section {
+    .explore-products {
+      .explore-products-heading {
+        h3 {
+          font-size: var(--font-size24);
+          text-align: center;
+        }
+        ul {
+          li {
+            font-size: var(--font-size10);
+          }
+        }
+      }
+      .explore-tab-section {
+        .explore-div {
+          padding-top: 26px;
+        }
+      }
+    }
+  }
+  // explore-product-section-end
+  .joyride-main {
+    .hero-log {
+      height: 62px;
+    }
+    .joy-ride-heading {
+      font-size: var(--font-size24);
+      line-height: var(--line-height-28);
+    }
+    p, .know-more {
+      font-size: var(--font-size16);
+      line-height: var(--line-height-26);
+    }
+    ul.joyride-right-cards {
+      li.card {
+        width: 150px;
+        height: 80px;
+        margin-bottom: 16px;
+        border-radius: 1px;
+        padding: 10px;
+        .card-body {
+          padding: 0;
+          h4 {
+            font-size: var(--font-size32);
+            line-height: var(--line-height-32);
+            span.fs-24 {
+              font-size: var(--font-size10);
+            }
+          }
+          span {
+            font-size: var(--font-size10);
+            line-height: var(--line-height-14);
+          }
+        }
+        &.bg-red {
+          height: 80px;
+        }
+      }
+    }
+  }
+  .be-hero-main {
+    .section-heading {
+      h3 {
+        font-size: var(--font-size26);
+        line-height: var(--line-height-30);
+      }
+      p {
+        font-size: var(--font-size14);
+        line-height: var(--line-height-23);
+      }
+    }
+    .hero-bikes-img-grid {
+      li {
+        width: 100%;
+        margin: 0 0 20px 0;
+        &:nth-child(1) {
+          width: 100%;
+          height: 350px;
+          background-size: 100%;
+          background-position-y: 25%;
+        }
+        & ul li:nth-child(1) {
+          width: 100%;
+          height: 350px;
+          margin: 0 20px 0 0;
+          background-position: center;
+          background-size: cover;
+        }
+        & ul li:nth-child(2) {
+          width: 100%;
+          height: 350px;
+          background-position: center;
+          background-size: cover;
+          margin: 0;
+        }
+        &:last-of-type {
+          width: 100%;
+          height: 350px;
+          margin-bottom: 0;
+          background-position: inherit;
+          background-size: 100%;
+        }
+        .img-text {
+          padding: 20px;
+          &::before {
+            height: 100px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.898958) 41.65%, #000000 100%);
+          }
+          h4 {
+            font-size: var(--font-size26);
+            line-height: var(--line-height-32);
+          }
+          p,
+          .explore-more {
+            font-size: var(--font-size18);
+            line-height: var(--line-height-22);
+          }
+        }
+      }
+    }
+  }
+
+  // events section start
+  .events-section-main {
+    padding: 15px 0px;
+    .event-section-tabs-main {
+      margin-bottom: 21px;
+    }
+    .event-section-tab-content {
+      width: 768px;
+      padding: 25px 16px 0px 16px;
+      .events-main-wrapper {
+        .events-box {
+          width: 360px;
+          height: 342px;
+          border-radius: 12px;
+          .event-box-link {
+            border-radius: 12px;
+            .event-img {
+              height: 100%;
+            }
+            .event-info-main {
+              padding: 49px 12px 12px 12px;
+              height: 100%;
+              background: linear-gradient(to bottom, rgba(0, 0, 0, 0) -10%, rgba(0, 0, 0, 0.65) 100%);
+              .event-info {
+                h4 {
+                  font-size: var(--font-size24);
+                  line-height: var(--line-height-28);
+                }
+                p {
+                  font-size: var(--font-size14);
+                }
+              }
+              .event-explore {
+                display: flex;
+                align-items: center;
+                p {
+                  font-size: var(--font-size14);
+                }
+              }
+            }
+          }
+          .events-box {
+            width: 360px;
+            height: 165px;
+            margin: 0;
+          }
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  // events section end
+}
+
+/* SM & XS Devices Start  */
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .bike-product-paramob {
+    padding: 0px 13px;
+  }
+  .wrapper {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .home-main-section {
+    margin-top: 79px;
+    .carousel-indicators {
+      bottom: 6px;
+    }
+	.carousel-indicators-left {
+      padding-left: 15px;
+    }
+    .carousel-inner {
+	    .slider-content {
+        position: absolute;
+        bottom: 55px;
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        font-size: var(--font-size14);
+        h1 {
+          font-size: var(--font-size24);
+
+          font-family: var(--font-tstar-heavy);
+        }
+        p {
+          max-width: 250px;
+          margin-bottom: 10px;
+        }
+      }
+      .carousel-item {
+        img {
+          width: 100%;
+          height: 100%;
+          margin: auto;
+        }
+        .slide-1-content {
+          position: absolute;
+          bottom:24px;
+          left: 14px;
+        &.slide-1-content-right{
+        left: 60%;
+                }
+        &.slide-1-content-center{
+    	left: 39px;
+   	 	margin: -46px 0 0 0;
+    	bottom: 24px;
+                }
+          .slider-child-sec {
+            background-image: url("../assets/images/imgs/back-grey-rectangle.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            max-width: 555px;
+            padding: 10px 32px 17px 32px;
+          }
+          .btn {
+            border: 1px solid #EE2326;
+            padding: 4.5px 23px;
+            border-radius: 4px;
+            margin-right: 14px;
+            background: #FFFFFF;
+            font-family: var(--font-tstar-bold);
+            color: var(--text-color-red);
+            text-transform: uppercase;
+            font-size: var(--font-size14);
+            &.booknow-btn {
+              background: #EE2326;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+    &.city-bike-banner-section{
+		.carousel-inner{
+			.slider-content{
+				bottom: 18%;
+    			left: 0;
+			}
+
+		}
+	}
+  }
+  // How Can We Help You section start
+  .help-offer-main {
+    background: none;
+    .help-offer-container {
+      .help-main-wrapper {
+        padding: 65px 25px 0 25px;
+        max-width: 100%;
+        overflow: hidden;
+        h3 {
+          font-size: var(--font-size24);
+          font-weight: var(--font-weight-700);
+          margin-bottom: 10px;
+          text-align: center;
+        }
+        .help-main-box {
+          .slick-arrow {
+            left: -15px;
+            top: calc(50% - 10px);
+            img {
+              display: block;
+              margin: auto;
+            }
+            &::before {
+              content: none;
+            }
+            &.slick-next{
+              left: auto;
+              right: -15px;
+              img {
+                transform-origin: center;
+                transform: rotate(180deg);
+              }
+            }
+          }
+          .slick-list {
+            max-width: 100%;
+            overflow: hidden;
+          }
+          .help-box {
+            width: 60px;
+            margin: 0 14px;
+            &:nth-last-child(-n+4) {
+              margin-bottom: 0;
+            }
+            .help-icon-box {
+              width: 60px;
+              height: 60px;
+              img {
+                width: 69%;
+                max-height: 35px;
+              }
+            }
+            .help-icon-label {
+              margin-top: 8px;
+              text-align: center;
+              font-family: var(--font-tstar-bold);
+              font-weight: var(--font-weight-400);
+              font-size: var(--font-size12);
+            }
+            &:hover {
+              .help-icon-box {
+                .inactive-icon {
+                  opacity: 0;
+                }
+                .active-icon {
+                  opacity: 1;
+                }
+              }
+              .help-icon-label {
+                color: var(--text-color-red);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .offer-main-wrapper {
+        padding: 23px 30px 20px 30px;
+        width: 100%;
+        max-width: 100%;
+        h3 {
+          font-size: var(--font-size24);
+          font-weight: var(--font-weight-700);
+          margin-bottom: 10px;
+          margin-bottom: 22px;
+          text-align: center;
+        }
+        .offer-carousel {
+          .carousel-inner {
+            .carousel-item {
+              border-radius: 16px;
+              overflow: hidden;
+              img {
+                margin: auto;
+              }
+            }
+          }
+          .carousel-indicators {
+            position: relative;
+            margin-top: 17px;
+          }
+          .carousel-control-prev,
+          .carousel-control-next {
+            bottom: auto;
+            top: calc(50% - 20.5px);
+            opacity: 1;
+            left: -20px;
+          }
+          .carousel-control-next {
+            left: auto;
+            right: -20px;
+          }
+        }
+      }
+  // How Can We Help You section end
+  // explore-product-section
+  .explore-wrapper-section {
+    background-color: var(--text-color-white);
+    .explore-products {
+      .explore-products-heading {
+        h3 {
+          font-size: var(--font-size24);
+          text-align: center;
+        }
+        ul {
+          li {
+            font-size: var(--font-size10);
+          }
+        }
+      }
+      .explore-tab-section {
+        background-image: none;
+        overflow: hidden;
+        padding-bottom: 12px;
+        margin-bottom:0px;
+        .bike-tab-section {
+          .bike-product-wrapper {
+            margin-top: 25px;
+            padding: 0px 20px 20px 20px;
+            .tab-content {
+              .tab-pane {
+                .bike-product-prant {
+                   flex: none;
+                   width: 50%;
+                   margin-bottom: 20px;
+                  img {
+                    margin: 0 auto;
+                  }
+                  p {
+                    font-size: var(--font-size12);
+                    color: var(--text-color-black);
+                    font-family: var(--font-tstar-bold);
+                    font-weight: var(--font-weight-900);
+                  }
+                }
+              }
+              .layout-2{
+                .bike-product-prant {
+                        width: 50%;
+                        margin: 0;
+                        margin-bottom: 20px;
+                        p.bike-product-paramob{
+                            margin-top: 15px;
+                        }
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+  // explore-product-section-end
+  .joyride-main {
+    .hero-log {
+      height: 62px;
+    }
+    .joy-ride-heading {
+      font-size: var(--font-size24);
+      line-height: var(--line-height-28);
+    }
+    p {
+      font-size: var(--font-size16);
+      line-height: var(--line-height-26);
+    }
+    ul.joyride-right-cards {
+      li.card {
+        width: 85px;
+        height: 68px;
+        margin-bottom: 16px;
+        border-radius: 1px;
+        padding: 5px;
+        .card-body {
+          padding: 0;
+          h4 {
+            font-size: var(--font-size30);
+            line-height: var(--line-height-32);
+            span.fs-24 {
+              font-size: var(--font-size8);
+            }
+          }
+          span {
+            font-size: var(--font-size8);
+            line-height: var(--line-height-12);
+          }
+        }
+        &.bg-red {
+          height: 68px;
+        }
+      }
+    }
+  }
+  .be-hero-main {
+    .section-heading {
+      h3 {
+        font-size: var(--font-size24);
+        line-height: var(--line-height-28);
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: var(--font-size10);
+        line-height: var(--line-height-16);
+      }
+    }
+    .hero-bikes-img-grid {
+      li {
+        width: 100%;
+        height: 160px;
+        margin: 0 0 10px 0;
+        &:nth-child(1) {
+          width: 100%;
+          height: 160px;
+          background-size: 100%;
+          background-position-y: 16%;
+        }
+        & ul li:nth-child(1) {
+          width: 100%;
+          height: 160px;
+          margin-right: 8px;
+          background-position: center;
+          background-size: cover;
+        }
+        & ul li:nth-child(2) {
+          width: 100%;
+          height: 160px;
+          background-position: center;
+          background-size: cover;
+        }
+        &:last-of-type {
+          width: 100%;
+          height: 160px;
+          margin-bottom: 0;
+          background-position: inherit;
+          background-size: 100%;
+        }
+        .img-text {
+          padding: 10px 10px 12px 10px;
+          &::before {
+            height: 100px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.898958) 41.65%, #000000 100%);
+          }
+          h4 {
+            font-size: var(--font-size24);
+            line-height: var(--line-height-28);
+          }
+          p,
+          .explore-more {
+            font-size: var(--font-size14);
+            line-height: var(--line-height-17);
+          }
+        }
+      }
+    }
+  }
+  // events section start
+  .events-section-main {
+    padding: 15px 0px;
+    .event-section-tabs-main {
+      margin-bottom: 21px;
+    }
+    .event-section-tab-content {
+      width: 100%;
+      padding: 0 12px 0 16px;
+      .events-main-wrapper {
+        flex-direction: column;
+        .events-box {
+          width: 100%;
+          height: 162px;
+          flex-direction: row;
+          border-radius: 12px;
+          margin-top: 7px;
+          .event-box-link {
+            border-radius: 12px;
+            .event-img {
+              width: 100%;
+            }
+            .event-info-main {
+              padding: 49px 12px 12px 12px;
+              height: 100%;
+              background: linear-gradient(to bottom, rgba(0, 0, 0, 0) -10%, rgba(0, 0, 0, 0.65) 100%);
+              .event-info {
+                h4 {
+                  font-size: var(--font-size24);
+                  line-height: var(--line-height-28);
+                }
+                p {
+                  font-size: var(--font-size14);
+                }
+              }
+              .event-explore {
+                display: flex;
+                align-items: center;
+                p {
+                  font-size: var(--font-size14);
+                }
+              }
+            }
+          }
+          .events-box {
+            width: calc(50% - 4px);
+            height: 162px;
+            margin: 0;
+            .event-img {
+              width: auto;
+              height: 100%;
+            }
+            .event-info-main {
+              .event-explore {
+                display: none;
+              }
+            }
+          }
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  // events section end
+  // Service Journey Banner Starts
+  .home-main-section{
+    .service-banner{
+      .carousel-inner .carousel-item .slide-1-content {
+        position: unset;
+        padding: 12px;
+        text-align: center;
+      }
+      .carousel-indicators{
+        bottom: 67px;
+      }
+      .carousel-indicators li{
+        height: 4px;
+      }
+    }
+  }
+  // Service Journey Banner Ends
+}
+
+/* SM Devices End Add Css in this media query to set on mobile landscape device */
+
+@media (max-width: 767px) and (min-width: 576px) {
+  .home-main-section {
+      .carousel-inner {
+		.slider-content {
+        position: absolute;
+        bottom: 16%;
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        font-size: var(--font-size14);
+        z-index: 3;
+        h1 {
+          font-size: var(--font-size18);
+          font-family: var(--font-tstar-heavy);
+        }
+        p {
+          font-size: var(--font-size10);
+          max-width: 170px;
+          margin-bottom: 10px;
+        }
+      }
+        .carousel-item {
+          .slide-1-content {
+            bottom: 43px;
+            left: 24px;
+          }
+        }
+      }
+       &.city-bike-banner-section{
+		.carousel-inner{
+			.slider-content{
+    			left: 0;
+			}
+		}
+	}
+    }
+}
+
+@media (max-width: 991px) {
+  #scooterBanner {
+    .scooter-banner-slide {
+      .slider-content {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        width: 100%;
+        padding-left: 100px;
+        font-size: var(--font-size16);
+        h1 {
+          font-size: var(--font-size28);
+        }
+      }
+    }
+    .carousel-indicators {
+      bottom: 40px;
+      z-index: 3;
+      margin: 0;
+      padding-left: 100px;
+      li {
+        background-color: #f5f6f7;
+        &.active {
+          background: var(--bg-color-danger);
+        }
+      }
+    }
+    .scroll-button {
+      bottom: 20px;
+
+      img {
+        transition: all 300ms ease-in;
+        max-width: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #scooterBanner {
+    margin-top: 9%;
+    .scooter-banner-slide {
+      .slider-content {
+        position: absolute;
+        bottom: 55px;
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        font-size: var(--font-size14);
+        h1 {
+          font-size: var(--font-size24);
+
+          font-family: var(--font-tstar-heavy);
+        }
+        p {
+          max-width: 250px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .carousel-indicators {
+      padding-left: 15px;
+    }
+    .scroll-button {
+      bottom: 10px;
+      img {
+        max-width: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #scooterBanner {
+    margin-top: 17%;
+    .scooter-banner-slide {
+      .slider-content {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        font-size: var(--font-size14);
+        h1 {
+          font-size: var(--font-size18);
+          font-family: var(--font-tstar-heavy);
+        }
+        p {
+          font-size: var(--font-size10);
+          max-width: 170px;
+          margin-bottom: 10px;
+        }
+      }
+      .banner-img {
+        min-height: 320px;
+      }
+      video {
+        height: 320px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .carousel-indicators {
+      padding-left: 15px;
+      bottom: 45px;
+    }
+    .scroll-button {
+      bottom: 10px;
+      img {
+        max-width: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .home-main-section {
+    .carousel-inner {
+      .slider-content {
+        .headmile {
+          font-size: 24px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+
+// Service Journey Font code starts
+
+
+.home-main-section{
+  .service-banner{
+    .carousel-inner .carousel-item .slide-1-content .btn{
+    font-family:  var(--font-tstar-heavy);  
+  }
+}
+}
+
+.service-journey-heading-1{
+  font-size: 32px;
+  line-height: 38px;
+  font-family: var(--font-tstar-heavy)
+}
+
+.service-journey-heading-2{
+  font-size: 18px;
+  line-height: 22px;
+  font-family: var(--font-tstar-heavy);
+}
+
+@media (max-width: 760px) {
+  .service-journey-heading-1{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .service-journey-heading-2{
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.service-journey-text{
+  font-size: 18px;
+  line-height: 22px;
+  font-family: var(--font-tstar-medium);
+}
+
+@media (max-width: 760px) {
+  .service-journey-text{
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+// Service Journey Font code ends

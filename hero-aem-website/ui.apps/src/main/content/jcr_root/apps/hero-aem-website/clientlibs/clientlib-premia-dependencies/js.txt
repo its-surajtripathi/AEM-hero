@@ -1,0 +1,4 @@
+#base=js
+jquery-scroll-text.js
+lottie.min.js
+slick.min.js

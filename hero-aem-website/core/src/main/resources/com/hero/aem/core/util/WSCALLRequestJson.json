@@ -1,0 +1,26 @@
+{
+  "PWSESSIONRS": {
+    "PWPROCESSRS": {
+      "PWHEADER": {
+        "IN_PROCESS_ID": "5",
+        "APP_ID": "ONEAPP",
+        "ORG_ID": "ONEAPP",
+        "OUT_PROCESS_ID": "WSCALL",
+        "LOGIN_ID": ""
+      },
+      "PWDATA": {
+        "WSCALL": {
+          "Row": [
+            {
+              "0":"${wscall_soap_request}",
+              "1": "${wscall_soap_content_type}",
+              "2": "WSCALL_Oneapp_bookService"
+            }
+           
+          ]
+        }
+      },
+      "PWERROR": ""
+    }
+  }
+}

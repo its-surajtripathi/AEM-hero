@@ -1,0 +1,65 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<div class="countdown-banner container-fluid-width px-0">
+  <div class="date-ref-element d-none"
+    data-disable-grab-invite-date="${'yyyy-MM-dd HH:mm:ss.SSSXXX' @ format=properties.date2}"
+    data-live-stream-date="${'yyyy-MM-dd HH:mm:ss.SSSXXX' @ format=properties.date3}"></div>
+  <div class="container-fixed-width countdown-banner-container">
+    <div class="countdown-banner-header-logo-container">
+      <img data-sly-test="${properties.logoImageRef}" src="${properties.logoImageRef}" loading="lazy" alt="Hero_Logo" />
+    </div>
+    <div class="countdown-banner-header">
+      <p class="timer-count-down-teaser-header">
+        ${properties.title @ context = 'html'}
+      </p>
+    </div>
+    <div class="countdown-banner-timer-content" id="premia-countdown"
+      data-launch-date="${'yyyy-MM-dd HH:mm:ss.SSSXXX' @ format=properties.launchdate, timezone='GMT+02:00'}"
+      data-get-launch-date="${'yyyy-MM-dd HH:mm:ss.SSSXXX' @ format=properties.launchdate}"></div>
+
+    <div class="countdown-banner-image-content">
+      <div class="scroll-down-image-container">
+        <div data-sly-test="${!properties.isHomePage}" class="countdown-streaming-link d-none">
+          <!-- <a
+            href="#"
+            ref="noopener noreferer"
+            aria-label="View Streaming"
+            class="premia-btn-primary py-19 px-18"
+          >
+            <img
+              src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/play.png"
+            />
+          </a> -->
+          <div class="play-button">
+            <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/playbutton.png"
+              loading="lazy" alt="play button" />
+          </div>
+          <p class="watch-live-text pt-20 mb-0">WATCH LIVE STREAMING</p>
+        </div>
+        <div class="scroll-down-invite-section">
+          <div class="scroll-down-image">
+            <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/arrow.gif"
+              loading="lazy" alt="scroll down" />
+          </div>
+          <p class="scroll-down-text pt-24 mb-0">SCROLL DOWN</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Livestreaming modal -->
+  <div class="streaming-modal">
+    <div class="streaming-modal-close">
+      <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/close.png"
+        loading="lazy" alt="close" />
+    </div>
+    <div class="streaming-modal-content">
+      <sly data-sly-resource="${'popup' @ resourceType='wcm/foundation/components/responsivegrid' }">
+      </sly>
+    </div>
+  </div>
+  <div class="lottie-background-image" data-lottie="${properties.videoPath}">
+    <div id="lottie-container"></div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+{
+  "smtp.host": "$[env:AEM_PROXY_HOST;default=proxy.tunnel]",
+  "smtp.port":"30587",
+  "from.address":"info@heromotocorp.com",
+  "smtp.ssl": false,
+  "smtp.starttls": false,
+  "smtp.requiretls": false
+}

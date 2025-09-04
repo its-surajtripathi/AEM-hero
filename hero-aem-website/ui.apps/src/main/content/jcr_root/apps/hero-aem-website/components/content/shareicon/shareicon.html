@@ -1,0 +1,28 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<sly data-sly-test="${properties.variation != 'none'}">
+<a href="javascript:void(0)" aa-data-attr="track_cta" data-sly-test="${properties.variation == 'motorcycle'}"class="link-btn share-btn share-icon">
+  <span class="icon-box"><img loading="lazy" src="${properties.icon}" class="img-fluid" alt="Share"></span>
+</a>
+<span data-sly-test="${properties.variation == 'scooter'}" class="share-btn ml-3">
+  <img loading="lazy" src="${properties.icon}" alt="Share">
+</span>
+<div class="share-options"
+     data-sly-test.assetPath="${request.requestURL.toString @ path=properties.linkpath , extension=''}">
+   <ul class="d-flex align-items-center">
+      <li>
+         <a href="mailto:${properties.emailLink}?subject=${properties.emailSub}&body=${properties.text @context='html'}${assetPath}"
+            aa-data-attr="track_cta">
+         <img loading="lazy" src="${properties.emailIcon}" class="img-fluid" alt="Email">
+         </a>
+      </li>
+      <li>
+         <a href="${properties.wpLink}/send?&text=${properties.wpText}-${assetPath}"  target="_blank"
+            x-cq-linkchecker="valid" aa-data-attr="track_cta">
+         <img loading="lazy" src="${properties.wpIcon}" class="img-fluid" alt="Whatsapp">
+         </a>
+      </li>
+   </ul>
+</div>
+</sly>

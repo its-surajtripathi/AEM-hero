@@ -1,0 +1,123 @@
+<div class="book-serv-pages" id="book-serve-first">
+    <div class="form-container">
+        <div class="row serv-detail-header">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="serv-left-right"><img src="${properties.serviceicon}" />
+                </div>
+                <div class="serv-left-right">
+                    <h5 class="service-heading">${properties.serviceLabel}</h5>
+                </div>
+            </div>
+        </div>
+
+        <form>
+            <!-- calendar container started -->
+            <div class="rescalendar" id="my_calendar_en"></div>
+            <!-- calendar container end -->
+            <!-- Time picker container start -->
+            <div class="row selct-time-header">
+                <div class="col-md-6">
+                    <h5 class="service-sub-heading">${properties.timeLabel}</h5>
+                </div>
+                <div class="col-md-6 text-right"><span id="timePicker" data-value="08"></span></div>
+            </div>
+            <div class="row slidecontainer ">
+                <div class="first-range-time">8 AM</div>
+                <div class="range">
+                    <input type="range" min="1" max="7" steps="1" value="1">
+                    <ul class="range-labels">
+                        <li class="active selected disabled" data-value="08"><div class="time-wrap">8 AM</div></li>
+                        <li data-value='08-10'><div class="time-wrap">8AM-10AM</div></li>
+                        <li data-value='10-12'><div class="time-wrap">10AM-12PM</div></li>
+                        <li data-value='12-14'><div class="time-wrap">12PM-2PM</div></li>
+                        <li data-value='14-16'><div class="time-wrap">2PM-4PM</div></li>
+                        <li data-value='16-18'><div class="time-wrap">4PM-6PM</div></li>
+                        <li data-value='18' class="disabled"><div class="time-wrap">6 PM</div></li>
+                    </ul>
+                </div>
+                <div class="last-range-time">6 PM</div>
+            </div>
+            <!-- Time picker container end -->
+            <!-- service type container start -->
+            <div class="odemeter-container">
+                <div class="form-group odemeter-container-inner">
+                    <label class="odometerReading" for="odometerReading">${properties.odometerLabel}</label>
+                    <label class="tooltip-icon-container">
+                        <img src="${properties.odometerHelpIcon}">
+                    </label>
+                    <div class="tooltip-container">${properties.odometerHelpText}</div>
+                    <input type="text" class="form-control  col-lg-3 col-md-3 col-sm-12 col-xs-12" id="" aria-describedby="" placeholder=""
+                           onkeypress="return /[0-9]/i.test(event.key)" maxlength="6">
+                </div>
+            </div>
+            <div class="service-type-container">
+                <h5>${properties.servicetypeLabel}</h5>
+                <div class="row">
+                    <div class="col-md-4 service-type-process" data-service-tag="FSC">
+                        <div class="form-check">
+                            <label class="form-check-label service-type-form-chk">
+                                <input type="radio" class="form-check-input" name="optradio" value="FSC" disabled>
+                                <span><img src="${properties.freeserviceIcon}"></span>
+                                <span class="servicetype-label">${properties.freeserviceLabel}</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service-type-process" data-service-tag="paid">
+                        <div class="form-check">
+                            <label class="form-check-label service-type-form-chk">
+                                <input type="radio" class="form-check-input" name="optradio" value="Paid Service"
+                                       disabled>
+                                <span><img src="${properties.paidserviceIcon}"></span>
+                                <span class="servicetype-label">${properties.paidserviceLabel}</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service-type-process" data-service-tag="joyride">
+                        <div class="form-check">
+                            <label class="form-check-label service-type-form-chk">
+                                <input type="radio" class="form-check-input" name="optradio" value="Joyride" disabled>
+                                <span><img src="${properties.joyrideIcon}"></span>
+                                <span class="servicetype-label">${properties.joyrideLabel}</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- servicing progress bar start -->
+                <div class="row service-container">
+                    <script type="text/html" class="getServiceHistory">
+                        <% _.each(vehicleDetails, function(item, i, list) { %>
+                        <div class="service-wrapper">
+                            <div class=" service-types disabled">
+                                <div class="icon-left">
+                                    <img src="${properties.tickIcon @ context='uri'}" />
+                                </div>
+                                <div class="servtext-right">
+                                    <div>${properties.serviceDone @ context='scriptString'}</div>
+                                    <div><%=vehicleDetails[i].jobCardCloseDate%> ${properties.atLabel @ context='scriptString'} <%=vehicleDetails[i].odometerReading%> ${properties.kmLabel @ context='scriptString'}</div>
+                                </div>
+
+                            </div>
+                            <% if(i < vehicleDetails.length - 1){ %>
+                            <div class="line-gape">
+                                <img src="${properties.linegapIcon @ context='uri'}" />
+                            </div>
+                            <% }%>
+                        </div>
+                        <% });%>
+
+                    </script>
+                </div>
+                <!-- servicing progress bar end -->
+            </div>
+            <!-- service type container end -->
+            <!-- Button container start -->
+            <div class="row button-container">
+                <div class="col-md-12">
+                    <button type="button"
+                            class="btn book-now-btn nxt-btn float-right">${properties.nextbuttonLabel}</button>
+                </div>
+            </div>
+            <!-- Button container end -->
+        </form>
+    </div>
+</div>

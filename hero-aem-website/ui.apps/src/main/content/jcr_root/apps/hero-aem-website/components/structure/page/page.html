@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page" lang="${page.language}"
+      data-sly-use.pwa="com.adobe.cq.wcm.core.components.models.PWA"
+      data-sly-use.head="head.html"
+      data-sly-use.footer="footer.html"
+      data-sly-use.redirect="redirect.html">
+    <head data-sly-call="${head.head @ page = page, pwa = pwa}"/>
+    <input type="hidden" value="${currentPage.path}" id="defaultservlet" name="defaultservlet" />
+    <input type="hidden" value="${wcmmode}" id="wcmmode" />
+    <body class="${page.cssClassNames}"
+          id="${page.id}"
+          data-cmp-data-layer-enabled="${page.data ? true : false}">
+        <!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJW8B6"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+          
+        <sly data-sly-test.isRedirectPage="${page.redirectTarget && (wcmmode.edit || wcmmode.preview)}"
+             data-sly-call="${redirect.redirect @ redirectTarget = page.redirectTarget}"></sly>
+        <sly data-sly-test="${!isRedirectPage}">
+            <sly data-sly-include="body.skiptomaincontent.html"></sly>
+            <sly data-sly-include="body.html"></sly>
+            <sly data-sly-call="${footer.footer @ page = page, pwa = pwa}"></sly>
+        </sly>
+        <!-- Chatbot Embed -->
+          <sly data-sly-test="${pageProperties.chatbotlink}">
+            <div id="root"></div>
+            <script defer type="text/javascript" src="${pageProperties.chatbotlink}"></script>
+          </sly>
+        <!-- Chatbot Embed -->
+        <!-- Animation Scripts -->
+        <script data-sly-test="${pageProperties.enableanimation == 'true'}">
+        	AOS.init();
+    	</script>
+    	<sly data-sly-include="apiConfigs.html"></sly>
+    </body>
+    <div id="hero-loader" class="hero-loader d-none">
+    <div class="hero-loader-icon"><img src="${pageProperties.loaderImg ? pageProperties.loaderImg : inheritedPageProperties.loaderImg}"></div>
+</div>
+</html>

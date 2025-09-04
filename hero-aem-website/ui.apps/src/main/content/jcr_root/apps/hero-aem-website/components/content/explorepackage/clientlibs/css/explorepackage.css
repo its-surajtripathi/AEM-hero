@@ -1,0 +1,127 @@
+.sj-explore {
+    margin: 0px 29px;
+    background-color: #ffffff;
+  }
+  
+  .sj-explore .sj-explore-cards{
+    width: 100%;
+    display: flex;
+  }
+  
+  .sj-explore .sj-explore-cards .sj-explore-card{
+    width: 33.3%;
+    height: 478px;
+    padding: 0px 11px;
+    position: relative;
+  }
+  
+  .sj-explore .sj-explore-cards .sj-explore-card .sj-explore-bg-img{
+    width: -webkit-fill-available;
+    border-radius: 14px;
+    height: 478px;
+    position: absolute;
+    margin-right: 12px;
+  }
+  
+  .sj-explore-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  
+  .sj-explore-content .sj-header-img{
+    margin-top: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .sj-explore-line{
+    width: 101px;
+    height: 2px;
+    background: #FFFFFF;
+    border-radius: 4px;
+  }
+  
+  .sj-explore-details{
+    display: flex;
+    margin: 16px 15px 0px 26px;
+    align-items: center;
+  }
+  
+  .sj-explore-details .sj-details-icon{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .sj-explore-details .sj-details-desc p{
+    font-family: var(--font-tstar-heavy);
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin: auto 5px;
+  }
+  
+  .sj-explore-btn{
+    color:#FFFFFF;
+    text-align: center;
+  }
+  
+  .sj-details{
+    min-height: 315px;
+    width: 100%;
+  }
+  
+  @media(max-width:1000px){
+    .sj-explore .sj-explore-cards{
+      flex-direction: column;
+    }
+  
+    .sj-explore .sj-explore-cards .sj-explore-card{
+      width: 100%;
+      margin: 16px 0px;
+    }
+  }
+  
+  @media(max-width:768px){
+    .sj-details {
+      min-height: 270px;
+    }
+
+    .sj-explore {
+      margin: 1px;
+    }
+
+    .sj-explore-details{
+      margin: 16px 25px 0px 10px;
+    }
+    
+  
+    .sj-explore .sj-explore-cards .sj-explore-card{
+      width: 100%;
+      margin: 8px 0px;
+      height: 400px;
+      padding: 0px 16px;
+    }
+  
+    .sj-explore .sj-explore-cards .sj-explore-card .sj-explore-bg-img{
+      margin-right: 15px;
+      height: inherit;
+    }
+  
+    .sj-explore-content .sj-header-img{
+      width: 130px;
+      height: 50px;
+    }
+  
+    .sj-explore-details .sj-details-icon {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .sj-explore-details .sj-details-desc p{
+      font-size: 14px;
+      margin-top: 3px;
+    }
+  }

@@ -1,0 +1,716 @@
+.herobanner {
+  background: var(--bg-color-black);
+}
+
+.product-page-banner {
+  width: inherit;
+  min-height: 400px;
+  position: relative;
+
+  .product-details-wrapper {
+    width: auto;
+
+    .product-details-container {
+      position: absolute;
+      top: 23%;
+      // left: 3%;
+
+      .colored-border {
+        background-color: var(--color-trinidad);
+        height: 4px;
+        width: 40px;
+      }
+
+      .product-title {
+        color: var(--color-white);
+        font-size: var(--font-size-40);
+        font-family: var(--font-transducer);
+        font-weight: var(--font-weight-600);
+        line-height: var(--line-height-45);
+        font-style: var(--font-style-normal);
+        letter-spacing: 0px;
+        max-height: 68px;
+
+        .super-text {
+          top: -21px;
+          font-size: var(--font-size-10);
+          font-family: var(--font-transducer);
+          font-weight: var(--font-weight-600);
+          line-height: var(--line-height-45);
+        }
+
+        @media screen and (max-width: 350px) {
+          max-height: 63px !important;
+        }
+      }
+
+      .product-title-promo {
+        color: var(--color-white);
+        font-size: var(--font-size-40);
+        font-family: var(--font-transducer);
+        font-weight: var(--font-weight-600);
+        line-height: var(--line-height-45);
+        font-style: var(--font-style-normal);
+        letter-spacing: 0px;
+      }
+
+      .product-desc {
+        color: var(--color-white);
+        font-family: var(--font-optika-regular);
+        font-size: var(--font-size-18);
+        font-weight: var(--font-weight-400);
+        line-height: var(--line-height-16);
+        font-style: var(--font-style-normal);
+        letter-spacing: 0px;
+
+        .super-text-desc {
+          top: -8.6px;
+          font-size: var(--font-size-6);
+          font-family: var(--font-optika-regular);
+          font-weight: var(--font-weight-400);
+          line-height: var(--line-height-16);
+        }
+      }
+
+      .discover-more {
+        position: absolute;
+        z-index: 1;
+        border: 1px solid var(--color-white);
+        background-color: transparent;
+
+        .discover-more-link {
+          text-decoration: none;
+          color: var(--color-white);
+          font-size: var(--font-size-12);
+          font-family: var(--font-transducer);
+          font-style: var(--font-style-normal);
+          font-weight: var(--font-weight-600);
+          line-height: var(--line-height-18);
+        }
+      }
+    }
+  }
+
+  .bike-audio-trigger-section {
+    width: 200px;
+    z-index: 1;
+    right: 48%;
+    bottom: 7%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    max-width: 14%;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+
+    .start-button-animation-container {
+      cursor: pointer;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+
+      .button-round1 {
+        width: 98px;
+        height: 98px;
+        transition: all 1s;
+        transform-origin: 50% 50%;
+      }
+
+      .button-circle1.round1-hover {
+        transition-timing-function: ease;
+        transform: scale(1.15);
+        transition-duration: 1s;
+      }
+
+      .button-circle1.outer-animation {
+        animation: round1 2.5s linear infinite;
+      }
+
+      .button-round2 {
+        width: 88px;
+        height: 88px;
+        position: absolute;
+        transition: all 1s;
+        transform-origin: 50% 50%;
+      }
+
+      .button-circle2.round2-hover {
+        transition-timing-function: ease;
+        transform: scale(1.1);
+        transition-duration: 1s;
+      }
+
+      .button-circle2.middle-animation {
+        animation: round2 2.5s linear infinite;
+      }
+
+      .button-round3 {
+        width: 78px;
+        height: 78px;
+        position: absolute;
+        transition: all 1s;
+        transform-origin: 50% 50%;
+      }
+
+      .button-circle3.round3-hover {
+        transition-timing-function: ease;
+        transform: scale(1.04);
+        transition-duration: 1s;
+      }
+
+      .button-circle3.inner-animation {
+        animation: round3 2.5s linear infinite;
+      }
+
+      .eclipse-background {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+      }
+
+      .audio-power-on {
+        width: 16px;
+        height: 27px;
+        position: absolute;
+      }
+    }
+
+    .audio-trigger-text {
+      color: var(--color-white);
+      font-family: var(--font-transducer);
+      font-size: var(--font-size-18);
+      font-weight: var(--font-weight-200);
+      line-height: var(--line-height-20);
+    }
+  }
+
+  .product-video-container {
+    .product-video {
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+}
+
+.harley-features-overview-wrapper {
+  display: block;
+  background: var(--bg-color-black);
+
+  .features-overview-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .features-container {
+      display: flex;
+      // margin-top: 117px;
+      width: 538px;
+      margin-right: 76px;
+
+      .features-icon-and-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        padding-right: 76px;
+
+        &:last-child {
+          padding: 0;
+        }
+
+        .harley-feature-icon {
+          width: 96px;
+          margin-bottom: 8px;
+
+          @media (max-width: 1280px) and (min-width: 768px) {
+            width: 56px;
+          }
+
+          @media (max-width: 1440px) and (min-width: 1281px) {
+            width: 72px;
+            margin-bottom: 12px;
+          }
+        }
+
+        .harley-feature-text {
+          color: var(--color-quill-gray);
+          text-align: center;
+          font-size: var(--font-size-12);
+          font-family: var(--font-optika-regular);
+          font-weight: var(--font-weight-500);
+
+          @media (max-width: 1440px) and (min-width: 768px) {
+            font-size: var(--font-size-10);
+          }
+        }
+
+        @media (max-width: 1280px) and (min-width: 768px) {
+          padding-right: 32px;
+        }
+
+        @media (max-width: 1440px) and (min-width: 1281px) {
+          padding-right: 56px;
+        }
+      }
+    }
+
+    .overview-container {
+      display: flex;
+      margin-bottom: 80px;
+
+      .overview-inner-container {
+        margin-top: 64px;
+
+        .overview-title {
+          color: var(--color-white);
+          font-size: var(--font-size-32);
+          font-family: var(--font-transducer);
+          font-weight: var(--font-weight-600);
+          margin-bottom: 32px;
+
+          @media (max-width: 1440px) and (min-width: 768px) {
+            font-size: var(--font-size-24);
+            margin-bottom: 16px;
+          }
+        }
+
+        .overview-list-feature {
+          color: var(--color-white);
+          font-size: var(--font-size-20);
+          font-family: var(--font-optika-regular);
+          line-height: var(--line-height-22);
+          margin-bottom: 8px;
+
+          @media screen and (min-width: 1439px) {
+            margin-bottom: 16px;
+          }
+
+          @media (max-width: 1440px) and (min-width: 768px) {
+            font-size: var(--font-size-14);
+          }
+        }
+
+        ul li {
+          padding-left: 32px;
+          position: relative;
+
+          @media (max-width: 1440px) and (min-width: 768px) {
+            padding-left: 16px;
+          }
+        }
+
+        ul li:before {
+          display: block;
+          content: "";
+          position: absolute;
+          color: var(--color-trinidad);
+          font-weight: bold;
+          width: 8px;
+          height: 8px;
+          background-color: var(--bg-color-trinidad);
+          border-radius: 8px;
+          left: 0px;
+          top: 8px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes text {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+// Animations for start button round circle
+@keyframes round1 {
+  from {
+    transform: rotate(360deg) scale(1.15);
+  }
+
+  to {
+    transform: rotate(0deg) scale(1.15);
+  }
+}
+
+@keyframes round2 {
+  from {
+    transform: rotate(0deg) scale(1.1);
+  }
+
+  to {
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+
+@keyframes round3 {
+  from {
+    transform: rotate(360deg) scale(1.04);
+  }
+
+  to {
+    transform: rotate(0deg) scale(1.04);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .harley-features-overview-wrapper {
+    .features-overview-container {
+      flex-direction: column;
+      align-items: start;
+
+      .features-container {
+        margin-top: 40px;
+        margin-right: 0;
+        width: auto;
+
+        .features-icon-and-text {
+          padding-right: 22px;
+
+          .harley-feature-icon {
+            width: 48.6px;
+            margin-bottom: 7.4px;
+          }
+
+          .harley-feature-text {
+            font-size: var(--font-size-10);
+          }
+        }
+      }
+
+      .overview-container {
+        margin-bottom: 40px;
+
+        .overview-inner-container {
+          margin-top: 40px;
+
+          .overview-title {
+            font-size: var(--font-size-18);
+            margin-bottom: 16px;
+          }
+
+          .overview-list-feature {
+            font-size: var(--font-size-12);
+          }
+
+          ul li {
+            padding-left: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .product-page-banner {
+    .product-details-wrapper {
+      .product-details-container {
+        top: 60px;
+        margin: 0px;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .colored-border {
+          width: 24px;
+        }
+
+        .product-title {
+          max-height: 45px;
+          padding-top: 12px;
+          padding-bottom: 0px !important;
+          font-size: var(--font-size-22);
+          line-height: var(--line-height-26);
+          letter-spacing: 0px;
+
+          .super-text {
+            font-size: 4px;
+            top: -13px;
+          }
+        }
+
+        .product-title-promo {
+          padding-top: 3px;
+          font-size: var(--font-size-22);
+          line-height: var(--line-height-24);
+          padding-bottom: 8px;
+          letter-spacing: 0px;
+        }
+
+        .product-desc {
+          font-size: var(--font-size-14);
+          line-height: var(--line-height-16);
+          letter-spacing: 0px;
+
+          .super-text-desc {
+            top: -7.34px;
+            font-size: 4px;
+          }
+        }
+      }
+    }
+
+    .bike-audio-trigger-section {
+      right: 29%;
+      gap: 0;
+      max-width: 40%;
+      bottom: 10%;
+
+      .start-button-animation-container {
+        .button-round1 {
+          width: 77px;
+          height: 77px;
+        }
+
+        .button-round2 {
+          width: 69px;
+          height: 69px;
+        }
+
+        .button-round3 {
+          width: 61px;
+          height: 61px;
+        }
+
+        .eclipse-background {
+          width: 50px;
+          height: 50px;
+        }
+
+        .audio-power-on {
+          width: 12px;
+          height: 21px;
+        }
+      }
+
+      .audio-trigger-text {
+        font-size: var(--font-size-10);
+      }
+    }
+
+    .product-video-container {
+      margin-top: -27%;
+    }
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .bike-audio-trigger-section {
+    right: 30% !important;
+    gap: 0;
+    max-width: 40%;
+    bottom: 14% !important;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 650px) {
+  .product-page-banner {
+    .bike-audio-trigger-section {
+      bottom: 16% !important;
+      gap: 0px !important;
+      right: 34% !important;
+    }
+  }
+}
+
+@media (min-width: 650px) and (max-width: 767px) {
+  .product-page-banner {
+    .bike-audio-trigger-section {
+      bottom: 16% !important;
+      gap: 0px !important;
+      right: 37% !important;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 820px) {
+  .product-page-banner {
+    .bike-audio-trigger-section {
+      bottom: 3% !important;
+      right: 46% !important;
+    }
+
+    .product-details-wrapper {
+      .product-details-container {
+        top: 9% !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 820px) and (max-width: 880px) {
+  .product-page-banner {
+    .bike-audio-trigger-section {
+      bottom: 4% !important;
+      gap: 0px !important;
+      right: 46% !important;
+    }
+
+    .product-details-wrapper {
+      .product-details-container {
+        top: 9% !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 880px) and (max-width: 967px) {
+  .product-page-banner .bike-audio-trigger-section {
+    bottom: 3% !important;
+    gap: 6px !important;
+    right: 45% !important;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1280px) {
+  .product-page-banner {
+    .product-details-wrapper {
+      .product-details-container {
+        top: 18%;
+        margin: 0px;
+        // padding-left: 24px;
+        padding-bottom: 0px;
+        padding-top: 36px;
+
+        .colored-border {
+          width: 24px;
+        }
+
+        .product-title {
+          max-height: 38px;
+          padding-bottom: 0px !important;
+          font-size: var(--font-size-32);
+          line-height: var(--line-height-26);
+          padding-top: 12px;
+          letter-spacing: 0px;
+
+          .super-text {
+            font-size: var(--font-size-8);
+            top: -17px;
+          }
+        }
+
+        .product-title-promo {
+          padding-top: 8px;
+          font-size: var(--font-size-32);
+          line-height: var(--line-height-24);
+          padding-bottom: 16px;
+          letter-spacing: 0px;
+        }
+
+        .product-desc {
+          font-size: var(--font-size-14);
+          line-height: var(--line-height-16);
+          letter-spacing: 0px;
+
+          .super-text-desc {
+            font-size: 4px;
+            top: -7px;
+          }
+        }
+      }
+    }
+
+    .bike-audio-trigger-section {
+      gap: 8px;
+      right: 46%;
+      bottom: 7%;
+
+      .start-button-animation-container {
+      }
+
+      .audio-trigger-text {
+        font-size: var(--font-size-10);
+      }
+    }
+
+    .product-video-container {
+      margin-top: -7%;
+    }
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .product-page-banner {
+    .product-details-wrapper {
+      .product-details-container {
+        top: 20%;
+        padding: 36px 79px 47px 0;
+        // left: 3%;
+
+        .colored-border {
+          width: 24px;
+        }
+
+        .product-title {
+          max-height: 40px;
+          padding-top: 12px;
+          padding-bottom: 4px;
+          font-size: var(--font-size-32);
+          line-height: var(--line-height-38-4);
+
+          .super-text {
+            top: -17px;
+            font-size: var(--font-size-8);
+          }
+        }
+
+        .product-title-promo {
+          padding: 10px 0 24px;
+          font-size: var(--font-size-32);
+          line-height: var(--line-height-38-4);
+        }
+
+        .product-desc {
+          font-size: var(--font-size-14);
+          line-height: var(--line-height-12);
+
+          .super-text-desc {
+            top: -6px;
+          }
+        }
+      }
+    }
+
+    .bike-audio-trigger-section {
+      gap: 10px;
+      right: 45%;
+      bottom: 7%;
+    }
+
+    .product-video-container {
+      margin-top: -6%;
+    }
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .product-page-banner {
+    .product-details-wrapper {
+      .product-details-container {
+        top: 12%;
+      }
+    }
+
+    .bike-audio-trigger-section {
+      bottom: 5% !important;
+      right: 46% !important;
+    }
+  }
+}
+
+.disable-booking-btn
+  .product-page-banner
+  .product-details-wrapper
+  .product-details-container
+  .discover-more {
+  opacity: 0.3;
+  pointer-events: none;
+  text-decoration: none;
+}

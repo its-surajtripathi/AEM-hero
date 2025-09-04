@@ -1,0 +1,67 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+      format=[component.title], i18n} </sly>
+
+<div class="blog-container">
+      <div class="block">
+            <div class="first-block">
+                  <div class="first-blog">
+                        <div class="row-mobile">
+                              <div class="first-img img-hieght">
+                                    <picture>
+                                          <source media="(max-width:540px)" data-sly-test="${properties.mainimagemobile}" srcset="${properties.mainimagemobile @context='html'}">
+                                          <img class="large-img" src="${properties.mainimage @context='html'}">
+                                    </picture>
+                              </div>
+                              <div class="blog-text">
+                                    <div class="blog-header h4-heavy-heading-std">${properties.maintitle @ context='html'}</div>
+                                    <div class="blog-discription b2-text-std">${properties.maindescription @ context='html'}</div>
+                                    <div class="blog-footer">
+                                          <sly data-sly-test="${properties.mainknowmore}">
+                                                <div class="link-mobile"><a href="${properties.mainknowmore}"
+                                                            class="link-text b1-bold-text-std">Know More ></a></div>
+                                          </sly>
+                                          <div class="date-align" data-sly-test="${properties.mainblogdate}">
+                                                <img class="date-icon" src="${properties.calendaricon}">
+                                                <div class="blog-date">${properties.mainblogdate}</div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="second-block">
+                  <sly
+                        data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multiblogs'}">
+                        <sly data-sly-list="${listUse}">
+                              <div class="blog">
+                                    <div class="blog-column">
+                                          <div class="row-img img-width">
+                                                <picture>
+                                                      <source media="(max-width:540px)" data-sly-test="${item.properties.imagemobile}" srcset="${item.properties.imagemobile @context='html'}">
+                                                      <img class="small-img" src="${item.properties.image @context='html'}">
+                                                </picture>
+                                          </div>
+                                          <div class="row-text">
+                                                <div class="blog-header h4-heavy-heading-std">${item.properties.title @ context='html'}</div>
+                                                <div class="blog-discription b2-text-std">${item.properties.description @
+                                                      context='html'}</div>
+                                                <div class="blog-footer">
+                                                      <sly data-sly-test="${item.properties.knowmore}">
+                                                            <div class="link-align"><a
+                                                                        href="${item.properties.knowmore}"
+                                                                        class="link-text b1-bold-text-std">Know More ></a></div>
+                                                      </sly>
+                                                      <div class="date-align" data-sly-test="${item.properties.blogdate}">
+                                                            <img class="date-icon" src="${properties.calendaricon}">
+                                                            <div class="blog-date">${item.properties.blogdate}</div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </sly>
+                  </sly>
+            </div>
+      </div>
+</div>

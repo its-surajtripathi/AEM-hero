@@ -1,0 +1,88 @@
+<div class="dealear-state-city step-section dealer-details book-serv-pages active" id="dealer-sec-container">
+    <div class="row">
+        <div class="sub-heading col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <div class="serv-left-right">
+                <img src="${properties.dealerIcon}" alt="image" />
+            </div>
+            <div class="serv-left-right">
+                <h5 class="service-heading">${properties.dealerLabel}</h5>
+            </div>
+        </div>
+    </div>
+    <section class="item2" id="details">
+        <div class="formfield row">
+            <div class="form-group col-md-3 col-lg-3">
+                <label>${properties.stateLabel}</label>
+                <button id="dealerstateDropdown" name="dealerstatename" required class="dropdown-select form-control cust-form-control" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-validation-msg-req="${properties.statevalmsg}" data-default-label="Select State">
+                    <span class="placeholder">${properties.statePlaceholder}</span>
+                    <span class="caret">
+                        <img src="${properties.downArrow}" alt="dropdown-icon">
+                    </span>
+                </button>
+                <input type="hidden" required value="" data-validation-msg-req="${properties.statevalmsg}" name="statevalmsg" />
+                <ul class="dropdown-menu dealer-state-dropdown">
+
+                </ul>
+            </div>
+            <div class="form-group col-md-3 col-lg-3">
+                <label>${properties.cityLabel}</label>
+                <button id="dealercityDropdown" name="dealercityname" required class="dropdown-select form-control cust-form-control" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-validation-msg-req="${properties.cityvalmsg}" data-default-label="Select City">
+                    <span class="placeholder">${properties.cityPlaceholder}</span>
+                    <span class="caret">
+                        <img src="${properties.downArrow}" alt="dropdown-icon">
+                    </span>
+                </button>
+                <input type="hidden" required value="" data-validation-msg-req="${properties.cityvalmsg}" name="cityvalmsg" />
+                <ul class="dropdown-menu dealer-city-dropdown">
+
+                </ul>
+            </div>
+            <div class="form-group col-md-1 col-lg-1">
+                <p>${properties.orLabel}</p>
+            </div>
+            <div class="form-group col-md-5 col-lg-5">
+                <a href="javascript:void;" class="location-icon"><img src="${properties.locationIcon}" alt="location-icon" /> ${properties.locationLabel}</a>
+                <span class="location-error d-none">${properties.locationEnable}</span>
+            </div>
+        </div>
+    </section>
+    <div class="dealer-center ">
+        <div class="auth-desc dealer-msg d-none"><span class="dealer-count">0</span> ${properties.dealerDescription}</div>
+        <div class="auth-desc no-dealers-msg d-none">${properties.nodealermsg}</div>
+        <div class="row dealers-list">
+            <script type="text/html" class="getDealers">
+                <% _.each(vehicleDetails, function(item, i, list) { %>
+                <div class="col-md-4 col-lg-4 dealers-card" data-dealer-division="<%=vehicleDetails[i]['Dealer Division']%>">
+                    <div class="sub-item1">
+
+                    </div>
+
+                    <div class="sub-item2">
+                        <input type="checkbox" value="<%=vehicleDetails[i]['Dealer Code']%>">
+
+                        <div class="dealer-address">
+                            <h3 id="dealerName"><%=vehicleDetails[i]['Dealer Name']%></h3>
+                            <p class="dealer-address dealer-add" id="dealer-address">
+                                <%=vehicleDetails[i]['Dealer Address']%>
+                            </p>
+                            <div class="tel <%=vehicleDetails[i]['Dealer Phone No'] == null ? 'd-none' : ''%> ">
+                                <img src="${properties.phoneIcon @ context='uri'}" alt="dial-icon">
+                                <a href="tel:+91 <%=vehicleDetails[i]['Dealer Phone No']%>"><span id="dealer-phn">+91 <%=vehicleDetails[i]['Dealer Phone No']%></span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <%});	%>
+
+            </script>
+
+        </div>
+    </div>
+    <div class="dealer-button-container row">
+        <div class="foot-btn">
+            <button class="btn btn-danger book-now-back-btn">${properties.backbuttonLabel}</button>
+            <button class="btn book-now-btn nxt-btn dealer-nxt"   >${properties.nextbuttonLabel}</button>
+        </div>
+    </div>
+</div>

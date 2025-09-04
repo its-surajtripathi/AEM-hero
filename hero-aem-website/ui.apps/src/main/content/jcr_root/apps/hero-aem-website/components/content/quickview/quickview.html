@@ -1,0 +1,86 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+  <div class="popup-inner">
+            <div class="bike-info">
+              <div class="content">
+                ${properties.title @ context='html'}
+                <div class="mobile-specification-and-bike-information ${ properties.lowercase ? 'casesensitive' : ''}">
+                  <ul class="specifications-list" data-sly-use.myfeatures="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='features'}"
+                      data-sly-list="${myfeatures}">
+                    <li>
+                      <div class="icon">
+                        <img src="${item.properties.iconFileReference}" alt="${item.properties.alt}">
+                      </div>
+                      <p>${item.properties.featuretext}</p>
+                    </li>
+
+                  </ul>
+
+                  <!-- mobile display / bike-display-information  -->
+                  <div class="bike-display-information explore-360-main-blk  d-lg-none">
+                    <div class="explore-360-box tab-content display-bike">
+                      <div id="varient1" class="productmodal tab-pane fade in active show">
+                        <div class="explore-360-view varient1 sports">
+                          <img src="" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="nav nav-tabs explore-360-tab-blk bike-variants mt-0" data-category="sports-and-adventure"
+                      data-product="xtreme-200s" data-sly-use.mycolors="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='colors'}"
+                        data-sly-list="${mycolors}">
+                      <li class="nav-item">
+                        <a href="javascript:void(0);" class="nav-link " aa-data-attr="track_cta"
+                          data-color="${item.properties.colortext}" data-imagepath="${item.properties.bikeimageFileReference}">
+                          <img src="${item.properties.coloriconReference}"
+                            class="img-fluid" alt="variation1">
+                          <p>${item.properties.colortext}</p>
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <!-- mobile display  -->
+                </div>
+                <ul class="features-list" data-sly-use.myspecifications="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='specifications'}"
+                    data-sly-list="${myspecifications}">
+                  <li>
+                    <span>${item.properties.title}</span>
+                    <h4>${item.properties.value}</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- desktop / bike-display-information -->
+            <div class="explore-360-main-blk bike-display-information d-none d-lg-flex" style="background-image: url('${properties.bgimageFileReference ? properties.bgimageFileReference : 'unset' @ context='uri'}')">
+              <div class="explore-360-box tab-content display-bike">
+                <div id="varient1" class="productmodal tab-pane fade in active show" >
+                  <div class="explore-360-view varient1 ">
+                    <img src="" alt="color variants" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <ul class="nav nav-tabs explore-360-tab-blk bike-variants " data-category="sports-and-adventure"
+                data-product="xtreme-200s" data-sly-use.mycolors="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='colors'}"
+                  data-sly-list="${mycolors}">
+                <li class="nav-item">
+                  <a href="javascript:void(0);" class="nav-link${itemList.first ? ' active' : ''} " aa-data-attr="track_cta" data-color="${item.properties.colortext}" data-imagepath="${item.properties.bikeimageFileReference}">
+                    <img src="${item.properties.coloriconReference}" class="img-fluid"
+                      alt="variation1">
+                    <p>${item.properties.colortext}</p>
+                  </a>
+                </li>
+              </ul>
+              <div class="align-items-center actions d-none d-lg-flex align-items-center justify-content-center">
+                <a data-sly-test="${properties.viewtext}" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.viewlink}"
+                   href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" class="btn btn-white test-ride-btn">${properties.viewtext} </a>
+                <a data-sly-test="${properties.booknow}" href="${properties.booknowlink}" class="btn btn-danger btn-red-gradient ml-3 ml-lg-4">${properties.booknow}</a>
+              </div>
+            </div>
+            <!-- desktop / bike-display-information ends -->
+          </div>
+          <div class="d-flex align-items-center actions d-lg-none d-flex align-items-center justify-content-center">
+            <a data-sly-test="${properties.viewtext}" href="${properties.viewlink}" class="btn btn-white test-ride-btn">${properties.viewtext} </a>
+            <a data-sly-test="${properties.booknow}" href="${properties.booknowlink}" class="btn btn-danger btn-red-gradient ml-3 ml-lg-4">${properties.booknow}</a>
+          </div>

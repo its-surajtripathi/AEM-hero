@@ -1,0 +1,12 @@
+<sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='eventinfo'}">
+	<ul class="hdbcevent-container" data-sly-list="${listUse}">
+		<li>
+			<h4 class="event-contents-top">${item.properties.eventinfoValue}</h4>
+			<div class="border-line-events"></div>
+			<p class="event-contents-bottom">${item.properties.eventinfoTitle} </p>
+		</li>
+	</ul>
+</sly>
+<sly data-sly-test="${(wcmmode.edit || wcmmode.design) && !listUse }" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>

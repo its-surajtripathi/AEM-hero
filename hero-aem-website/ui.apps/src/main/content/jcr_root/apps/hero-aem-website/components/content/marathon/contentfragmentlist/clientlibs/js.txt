@@ -1,0 +1,2 @@
+#base=js
+contentfragmentlist.js

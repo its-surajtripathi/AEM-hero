@@ -1,0 +1,195 @@
+<div class="register" id="register"
+    data-component-relativePath="${currentNode.path @ addSelectors=['xtrack'],extension='json'}"
+    data-sly-test="${properties.formvariant == 'xtrackform'}">
+    <div class="register-img">
+        <img src="${properties.bgImage}" alt="" width="100%" height="100%" />
+    </div>
+    <div class="lg-container">
+        <div class="row align-items-center">
+            <div class="col-xl-4 col-lg-4">
+                <div class="register-heading">
+                    <h3 class="hm-heading">${properties.eventLabel @context='html'}</h3>
+                </div>
+            </div>
+            <div class="col-xl-5 offset-xl-3 col-lg-6 offset-lg-2">
+                <div class="registration-form hm-form">
+                    ${properties.eventTitle @context='html'}
+                    <div class="thankyou" id="tyDiv">
+                        <div class="ty-content">
+                            <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/fa-smile.png"
+                                alt="fa-smile" width="150px" height="96px">
+                            <span id="thankyou">
+                                ${properties.acknowledgemsg @context='html'}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="regform-fields">
+                        <form name="contactfrm" id="contactfrm" action="" method="post" enctype="multipart/form-data"
+                            class="formsectionH">
+                            <div class="kkt-error" id="error" style="color:red;padding-bottom:5px;"> </div>
+                            <div class="form-group">
+                                <select name="eventcategory" id="eventcategory" class="form-control forminputH" required
+                                    data-validation-msg-req="Please select the Event Category">
+                                    <option value="">Select an event to register</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input name="name" type="text" class="form-control forminputH" maxlength="75" id="name"
+                                    placeholder="Name*" value="" autocomplete="off"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '')" required
+                                    data-validation-msg-format="Please enter Characters Only" />
+                            </div>
+                            <div class="form-group">
+                                <input name="age" type="text" class="form-control forminputH" maxlength="2" id="age"
+                                    placeholder="Age*" onKeyPress="validateNumbersOnly(event)" value=""
+                                    autocomplete="off" required
+                                    data-validation-msg-req="Age should be greater than or equal to 18"
+                                    oninput="this.value = this.value.replace(/[^+\\0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                            </div>
+                            <div class="form-group">
+                                <input name="email" type="text" class="form-control forminputH" id="email"
+                                    placeholder="Email*" value="" autocomplete="off" required
+                                    data-validation-msg-format="Please enter Correct Email Address" />
+                            </div>
+                            <div class="form-group">
+                                <input name="mobile" class="form-control forminputH" type="text" id="mobile"
+                                    placeholder="Mobile No.*"
+                                    data-validation-msg-format="Please enter valid Mobile Number" value=""
+                                    maxlength="10" autocomplete="off" required
+                                    oninput="this.value = this.value.replace(/[^+\\0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                            </div>
+                            <div class="form-group">
+                                <input name="existing_vehicle" type="text" class="form-control forminputH"
+                                    maxlength="50" id="existing_vehicle" placeholder="Existing Vehicle*"
+                                    autocomplete="off" value="" required
+                                    oninput="this.value = this.value.replace(/[^\w\s]/g, '');" />
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="4" name="address" cols="50"
+                                    class="form-control forminputH comment_container" id="address" maxlength="250"
+                                    placeholder="Address* " required
+                                    oninput="this.value=this.value.replace(/[-’/`~!#*$@_%+=''.,^&(){}[\]|;:”<>?\\]/g,'');"></textarea>
+                            </div>
+                            <div class="form-group">
+                                Are you a member of any Rider Community? <br>
+                                <input name="chk_rider" type="radio" placeholder="" value="1" autocomplete="off"
+                                    class="community-check" /> <span class="boolean"> Yes</span>
+                                <input name="chk_rider" type="radio" placeholder="" value="0" checked=checked
+                                    class="right-check community-check" /> <span class="boolean"> No </span>
+                            </div>
+                            <div id="chk_name" style="display:none;">
+                                <div class="form-group">
+                                    <input type="text" class="form-control forminputH" name="rider_community_name"
+                                        id="rider_community_name" placeholder="What's the Community Name?" value=""
+                                        maxlength="75" />
+                                </div>
+                            </div>
+                            <div class="my-1">
+                                Kindly add your social media handles over here:
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input name="fb_handle" type="text" class="form-control forminputH f-fb"
+                                            maxlength="75" id="fb_handle" placeholder="" value="" autocomplete="off" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input name="tweet_handle" type="text" class="form-control forminputH f-tw"
+                                            maxlength="75" id="tweet_handle" placeholder="" value=""
+                                            autocomplete="off" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input name="insta_handle" type="text" class="form-control forminputH f-insta"
+                                            maxlength="75" id="insta_handle" placeholder="" value=""
+                                            autocomplete="off" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group cust-form-group captcha-section">
+                                <div class="captcha-field">
+                                    <div id="captcha">
+                                    </div>
+                                    <img class="refresh"
+                                        src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/refresh-32.png" />
+                                </div>
+                                <div class="captcha-input">
+                                    <input type="text" placeholder="${properties.captchainputlabel}" id="cpatchaTextBox"
+                                        name="captcha" required
+                                        class="form-control cust-form-control campaign-input ignore-validation"
+                                        maxlength="6" />
+                                    <label class="invalid-otp-message d-none">Incorrect Captcha</label>
+                                </div>
+                            </div>
+                            <div class="skw yellowBtn">
+                                <input type="button" name="Submit" value="SUBMIT" id="Submit"
+                                    class="btn-hm-primary buttonH" />
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade hm-modal" id="upcomingEvents" tabindex="-1" role="dialog" data-backdrop="static"
+    data-sly-test="${properties.formvariant == 'xtrackform'}">
+    <div class="modal-dialog modal-l modal-dialog-scrollable modal-dialog-centered" role="document">
+        <div class="modal-content" style="max-width:960px;">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Upcoming<br><span>Events</span>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="evt-row">
+                    <div class="form-row">
+                        <sly data-sly-list.events="${resource.children}">
+                            <sly data-sly-test="${events.name == 'tierItems'}">
+                                <sly data-sly-list.eventsItem="${events.children}">
+                                    <!-- col-md-6 col-lg-6 -->
+                                    <div class="">
+                                        <div class="event-list">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <div class="evt-date">
+                                                        <div class="date">${eventsItem.eventDateDay}</div>
+                                                        <span>${eventsItem.eventDateYear}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="evt-content">
+                                                        <h5>${eventsItem.eventName}</h5>
+                                                        <ul>
+                                                            <li class="time">${eventsItem.time}</li>
+                                                            <li class="location">
+                                                                ${eventsItem.location @context='html'}
+                                                            </li>
+                                                        </ul>
+                                                        <a href="javascript:void(0)"
+                                                            class="btn-register-now js-scroll-trigger event-names"
+                                                            aria-label="${eventsItem.ariaLabel}">${eventsItem.butonLabel}</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<sly data-sly-test="${properties.formvariant == 'xpulseform'}" data-sly-include="${properties.formvariant}.html"></sly>

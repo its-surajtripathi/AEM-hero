@@ -1,0 +1,42 @@
+<p
+  data-sly-test="${(wcmmode.edit || wcmmode.design) && !listUse }"
+  class="author-note"
+>
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<section class="products-compare-container">
+  <h2 class="products-compare-headline">${properties.compareheadline}</h2>
+
+  <div class="products-compare-content">
+    <div class="products-compare-variant-title">
+      <div class="variant-container">
+        <div class="variant-name-container" >
+          <h3 class="variant-name">${properties.variantNameOne}</h3>
+        </div>
+        <div class="variant-name-container" >
+          <h3 class="variant-name">${properties.variantNameTwo}</h3>
+        </div>
+        <div class="variant-name-container" >
+          <h3 class="variant-name">${properties.variantNameThree}</h3>
+        </div>
+      </div>
+
+      <sly
+        data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='specificationDetails'}"
+      >
+        <ul data-sly-list="${listUse}" class="products-compare-list">
+          <li class="products-compare-item">
+            <div class="products-compare-list-item">
+              <h4 class="specification" >${item.properties.specificationTitle}</h4>
+              <h4 class="specification" >${item.properties.specificationvalueOne}</h4>
+              <h4 class="specification" >${item.properties.specificationvalueTwo}</h4>
+              <h4 class="specification" >${item.properties.specificationvalueThree}</h4>
+            </div>
+          </li>
+        </ul>
+      </sly>
+    </div>
+    <img src="${properties.variantimage}" class="products-compare-img" alt="product-Image" />
+  </div>
+</section>

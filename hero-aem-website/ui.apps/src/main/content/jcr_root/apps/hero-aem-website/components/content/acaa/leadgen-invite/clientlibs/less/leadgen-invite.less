@@ -1,0 +1,800 @@
+.leadgen-invite-wrapper {
+  margin: auto;
+  transition: all 0.3s ease-out;
+  position: relative;
+  z-index: 1;
+
+  .leadgen-invite-wrapper-card {
+    position: relative;
+    width: calc(~"100% - 2.5625rem");
+    .container-bg-image {
+      width: 100%;
+    }
+
+    .leadgen-container {
+      position: absolute;
+      left: 0;
+      top: 1.62rem;
+      width: 100%;
+      height: 100%;
+    }
+    .leadgen-invite-wrapper-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      flex-direction: row;
+      height: 100%;
+      align-items: center;
+
+      .form-container {
+        position: relative;
+        left: 0;
+        width: 38%;
+        height: 100%;
+      }
+
+      .leadgen-invite-wrapper-content {
+        margin-right: 5.12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .heading {
+          font-size: var(--font-size-2-5-rem);
+          font-weight: var(--font-weight-700);
+          margin-left: 4.58rem;
+          max-width: 24.875rem;
+          text-transform: uppercase;
+          background: linear-gradient(
+            162deg,
+            var(--color-white) 0%,
+            var(--color-argent) 100%,
+            var(--color-argent) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-top: -21.4%;
+        }
+        .logo-wrapper {
+          margin-top: 4.19rem;
+          width: 12.5625rem;
+          height: 2.6875rem;
+          margin-left: 3.63rem;
+          img {
+            width: 100%;
+          }
+        }
+        .line-bottom-right {
+          position: absolute;
+          left: 1.125rem;
+          width: 45%;
+          top: 35%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .success-wrapper {
+        .success-container {
+          width: 100%;
+          height: 28rem;
+          background-color: var(--color-white);
+          padding: 1.5rem;
+          border-radius: 1rem 1rem 0.5rem 0;
+          position: relative;
+          .form-bottom-right-container {
+            width: 90%;
+            height: 2.5rem;
+            background-color: var(--color-white);
+            border-bottom-right-radius: 0.5rem;
+            padding: 0.53rem 2.06rem;
+            position: absolute;
+            bottom: -8%;
+            left: 0;
+            &::after {
+              content: "";
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 2.5625rem 3.125rem 0 0;
+              border-color: var(--color-white) transparent transparent;
+              transform: rotate(0deg);
+              position: absolute;
+              left: 99%;
+              top: 0;
+              border-radius: 0.5rem;
+            }
+          }
+          .state-message {
+            margin-top: 2.25rem;
+            color: var(--color-black);
+            font-family: var(--font-transducer);
+            font-size: var(--font-size-1-5-rem);
+            font-style: var(--font-style-italic);
+            font-weight: var(--font-weight-600);
+            line-height: var(--line-height-1-8-rem);
+            text-transform: uppercase;
+            max-width: 16.625rem;
+          }
+          .right-bottom-line {
+            position: absolute;
+            bottom: 0;
+            right: 5%;
+            width: 32.5%;
+            height: 30%;
+            z-index: 9;
+            img {
+              width: 100%;
+            }
+          }
+          .success-bg {
+            video {
+              width: 100%;
+              position: relative;
+              left: 0;
+              top: 0;
+              opacity: 1;
+              border-radius: 0.5rem;
+            }
+          }
+        }
+        .submit-leadgen-form {
+          width: 13.8125rem;
+          height: 2.5rem;
+          position: absolute;
+          bottom: 10.7%;
+          left: 0;
+          background-color: var(--color-moon-yellow);
+          cursor: pointer;
+          border-bottom-left-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+          .new-leadgen-btn {
+            color: var(--color-black);
+            text-align: center;
+            font-family: var(--font-transducer);
+            font-size: var(--font-size-0-875-rem);
+            font-weight: var(--font-weight-500);
+            line-height: var(--line-height-1-25-rem);
+            padding: 0.53rem 2.06rem;
+            position: relative;
+            &::after {
+              content: "";
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 2.5rem 2rem 0 0;
+              border-color: var(--color-moon-yellow) transparent transparent;
+              transform: rotate(0deg);
+              position: absolute;
+              left: 98%;
+              top: 0;
+              border-bottom-left-radius: 0.5rem;
+            }
+          }
+        }
+      }
+
+      .leadgen-invite-form {
+        width: 100%;
+        height: 28.4375rem;
+        max-height: 31.25rem;
+        border-radius: 1rem 1rem 0 0.5rem;
+        background-color: var(--color-white);
+        padding: 1.25rem 2rem;
+        position: relative;
+        .form-bottom-container {
+          padding: 1.25rem 2rem;
+          width: 94%;
+          height: 2.5rem;
+          background-color: var(--color-white);
+          position: absolute;
+          padding: 0.53rem 2.81rem;
+          border-bottom-left-radius: 0.5rem;
+          right: 0;
+          margin-top: -1.25rem;
+          &::before {
+            position: absolute;
+            bottom: 0;
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 2rem 2.5625rem 0;
+            border-color: transparent var(--color-white) transparent transparent;
+            transform: rotate(0deg);
+            right: 99%;
+            border-radius: 0.5rem;
+          }
+        }
+        .otptime-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          margin-top: 0.3125rem;
+        }
+        #otperrormessage {
+          position: relative;
+          right: 35%;
+          z-index: 99;
+        }
+        .error-message {
+          font-family: var(--font-eurostile);
+          color: var(--color-venetian-red);
+          font-size: var(--font-size-0-625-rem);
+          display: flex;
+          margin-top: 0.25rem;
+          justify-content: flex-end;
+        }
+
+        .otp-container {
+          display: flex;
+        }
+        .otp-timer {
+          color: rgba(0, 0, 0, 0.7);
+          font-family: var(--font-transducer);
+          font-size: var(--font-size-0-75-rem);
+          font-weight: var(--font-weight-400);
+          text-transform: capitalize;
+          opacity: 0.7;
+          margin-left: 33%;
+        }
+        .form-group {
+          margin-bottom: 1.875rem;
+          height: 3.75rem;
+          .phone-and-otp-wrapper {
+            position: relative;
+          }
+          label {
+            color: var(--color-black);
+            font-family: var(--font-transducer);
+            font-size: var(--font-size-1-rem);
+            line-height: var(--line-height-0-9-rem);
+            margin-bottom: 0.44rem;
+            opacity: 0.5;
+            font-style: var(--font-style-normal);
+          }
+
+          .form-control {
+            border: none;
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            border-bottom: 1px solid var(--color-gray80);
+            color: var(--color-black);
+            font-family: var(--font-transducer);
+            font-size: var(--font-size-0-875-rem);
+            font-weight: var(--font-weight-500);
+            text-transform: capitalize;
+            padding: 0 0 0.06rem 0;
+            line-height: normal;
+            border-radius: 0;
+            height: 2rem;
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+          }
+          .otpbox {
+            max-width: 2.19rem;
+            margin-right: 0.56rem;
+            background-color: transparent;
+            text-align: center;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          input[type="email"] {
+            &.form-control {
+              text-transform: lowercase;
+            }
+          }
+        }
+        .send-btn {
+          color: var(--color-black);
+          font-family: var(--font-transducer);
+          font-size: var(--font-size-0-625-rem);
+          font-weight: var(--font-weight-400);
+          text-transform: capitalize;
+          margin-top: 0.5rem;
+          position: absolute;
+          right: 0%;
+          top: 1.5rem;
+          &.disabled {
+            // cursor: not-allowed;
+            pointer-events: none;
+            color: var(--color-gray);
+          }
+          &.active {
+            cursor: pointer;
+            color: var(--color-black);
+          }
+          &.resend {
+            color: var(--color-black);
+            opacity: 0.699999988079071;
+            cursor: pointer;
+          }
+        }
+      }
+      .form-button-container {
+        max-width: 100%;
+        position: absolute;
+        bottom: 9.6%;
+        right: 0;
+        .btn-submit {
+          width: 13.8125rem;
+          height: 2.5rem;
+          background-color: var(--color-moon-yellow);
+          color: var(--color-black);
+          text-align: center;
+          font-family: var(--font-transducer);
+          font-size: var(--font-size-0-875-rem);
+          font-weight: var(--font-weight-500);
+          line-height: var(--line-height-1-25-rem);
+          text-transform: uppercase;
+          border: none;
+          position: relative;
+          padding: 0.53rem 2.81rem;
+          float: right;
+          border-bottom-right-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+          &.disabled {
+            color: var(--color-granite-gray);
+            background-color: var(--color-gray);
+            // cursor: not-allowed;
+            pointer-events: none;
+            &::before {
+              position: absolute;
+              bottom: 0;
+              content: "";
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0 2rem 2.5rem 0;
+              border-color: transparent var(--color-gray) transparent
+                transparent;
+              transform: rotate(0deg);
+              right: 98%;
+              border-bottom-right-radius: 0.5rem;
+            }
+          }
+          &.active {
+            cursor: pointer;
+          }
+          &::before {
+            position: absolute;
+            bottom: 0;
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 2rem 2.5rem 0;
+            border-color: transparent var(--color-moon-yellow) transparent
+              transparent;
+            transform: rotate(0deg);
+            right: 98%;
+            border-bottom-right-radius: 0.5rem;
+          }
+        }
+
+        .gray-plus {
+          max-width: 0.705rem;
+          max-height: 0.705rem;
+          &.right {
+            float: right;
+            margin-left: 0.38rem;
+          }
+          &.left {
+            margin-right: 1.31rem;
+          }
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// for changing default browser background color applys for input texts
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1.875rem var(--color-white) inset !important;
+}
+
+@media screen and (min-width: 1366px) {
+  .leadgen-invite-wrapper {
+    .leadgen-invite-wrapper-card {
+      width: 65.3125rem;
+      .leadgen-invite-wrapper-container {
+        .leadgen-invite-wrapper-content {
+          .heading {
+            margin-top: -20%;
+          }
+        }
+        .success-wrapper {
+          width: 80%;
+          margin: auto;
+          .submit-leadgen-form {
+            margin-left: 2.875rem;
+          }
+          .success-container {
+            height: 21.625rem;
+            border-radius: 1rem 1rem 0.5rem 0;
+            .form-bottom-right-container {
+              width: 91%;
+              height: 2.5625rem;
+              &::after {
+                border-width: 32px 37px 0 0;
+                top: 8px;
+              }
+            }
+          }
+        }
+        .form-container {
+          left: -0.75rem;
+          width: 44%;
+        }
+        .leadgen-invite-form {
+          height: 22.8125rem;
+          width: 80%;
+          margin: auto;
+          .form-bottom-container {
+            width: 95.9%;
+            margin-top: -0.375rem;
+            height: 1rem;
+            &::before {
+              border-width: 0 1.25rem 1.375rem 0;
+            }
+          }
+          .form-group {
+            margin-bottom: 0.625rem;
+            height: 3.75rem;
+            label {
+              margin-bottom: 0;
+            }
+            .form-control {
+              height: 1rem;
+            }
+          }
+          .send-btn {
+            margin-top: -0.1rem;
+          }
+        }
+        .form-button-container {
+          bottom: 2.5625rem;
+          .btn-submit {
+            left: -20.3%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .leadgen-invite-wrapper {
+    .leadgen-invite-wrapper-card {
+      .leadgen-container {
+        left: 0;
+        top: 14px;
+        margin: auto;
+      }
+      .leadgen-invite-wrapper-container {
+        flex-direction: row;
+        height: 100%;
+        .form-container {
+          left: -28px;
+          top: 6px;
+        }
+        .leadgen-invite-wrapper-content {
+          .line-bottom-right {
+            display: block;
+            left: 13px;
+            width: 45%;
+            top: 39%;
+          }
+        }
+        .leadgen-invite-form {
+          width: 100%;
+          height: 362px;
+          .form-bottom-container {
+            width: 95%;
+            margin-top: -2px;
+            &::before {
+              border-width: 0 26px 27px 0;
+            }
+          }
+          .form-group {
+            margin-bottom: 0.3rem;
+          }
+        }
+
+        .success-wrapper {
+          .submit-leadgen-form {
+            bottom: 7.4%;
+          }
+          .success-container {
+            width: 100%;
+            height: 360px;
+            .form-bottom-right-container {
+              width: 92%;
+              &::after {
+                border-width: 33px 36px 0 0;
+                top: 6px;
+              }
+            }
+          }
+        }
+        .form-button-container {
+          bottom: 8.9%;
+          left: 100%;
+          .btn-submit {
+            right: 39%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .leadgen-invite-wrapper {
+    .leadgen-invite-wrapper-card {
+      .leadgen-invite-wrapper-container {
+        .leadgen-invite-wrapper-content {
+          .heading {
+            font-size: var(--font-size-1-5-rem);
+            max-width: 14rem;
+          }
+        }
+        .success-wrapper {
+          .success-container {
+            height: 277px;
+            width: 100%;
+            .state-message {
+              margin-top: 1.25rem;
+            }
+            .right-bottom-line {
+              right: 7%;
+            }
+            .form-bottom-right-container {
+              &::after {
+                border-width: 28px 34px 0 0;
+                left: 98%;
+                top: 13px;
+              }
+            }
+          }
+          .submit-leadgen-form {
+            bottom: 7.4%;
+          }
+        }
+        .form-container {
+          left: 0px;
+          width: 42%;
+          top: 2px !important;
+        }
+        .leadgen-invite-form {
+          width: 100%;
+          height: 283px;
+          label {
+            font-size: var(--font-size-0-75-rem);
+          }
+          .form-bottom-container {
+            margin-top: 0px;
+            height: 21px;
+            width: 96%;
+            &::before {
+              border-width: 0 15px 16px 0;
+            }
+          }
+          .form-group {
+            margin-bottom: 3px;
+            height: 48px;
+            label {
+              margin-bottom: 0;
+              font-size: var(--font-size-0-75-rem);
+            }
+            .form-control {
+              height: 1rem;
+            }
+          }
+          .send-btn {
+            margin-top: 0rem;
+          }
+        }
+        .form-button-container {
+          bottom: 31px;
+          right: 8.3%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .leadgen-invite-wrapper {
+    left: 16px;
+    .leadgen-invite-wrapper-card {
+      width: 100%;
+      height: auto;
+      .container-bg-image {
+        height: 689px;
+      }
+
+      .leadgen-container {
+        left: 0;
+        top: 0;
+        margin: auto;
+      }
+      .leadgen-invite-wrapper-container {
+        flex-direction: column;
+        height: auto;
+        .form-container {
+          margin: 24px 28px;
+          left: 0;
+          width: 90%;
+        }
+
+        .leadgen-invite-wrapper-content {
+          margin-right: 0;
+          margin-bottom: 44px;
+          .heading {
+            font-size: var(--font-size-1-5-rem);
+            margin-top: 4rem;
+            margin-left: 2rem;
+            max-width: 15.25rem;
+          }
+          .logo-wrapper {
+            margin-top: 2rem;
+            margin-left: 2rem;
+            width: 12.45194rem;
+            height: 2.3125rem;
+          }
+          .line-bottom-right {
+            display: none;
+          }
+        }
+        .success-wrapper {
+          margin-top: 0;
+          .success-container {
+            width: 100%;
+            padding: 1.5rem 1rem;
+            height: 360px;
+            .form-bottom-right-container {
+              width: 90%;
+              height: 21px;
+              bottom: -6%;
+              &::after {
+                border-width: 25px 37px 0 0;
+                left: 98%;
+                top: -4px;
+              }
+            }
+            .state-message {
+              margin-top: 4.25rem;
+              max-width: 16.625rem;
+              text-align: center;
+              font-size: 22px;
+            }
+            .right-bottom-line {
+              position: absolute;
+              bottom: -1.05rem;
+              right: 0.5rem;
+            }
+            .success-bg {
+              max-width: 100%;
+            }
+          }
+          .submit-leadgen-form {
+            width: 12.8125rem;
+            bottom: -17%;
+            .new-leadgen-btn {
+              &::after {
+                left: 98%;
+              }
+            }
+          }
+        }
+
+        .leadgen-invite-form {
+          width: 100%;
+          height: 345px;
+          max-height: 23rem;
+          padding: 2rem 1.06rem;
+          label {
+            font-size: var(--font-size-0-75-rem);
+          }
+          .form-bottom-container {
+            margin-top: 0px;
+            height: 27px;
+            width: 94.2%;
+            &::before {
+              border-width: 0 18px 28px 0;
+              right: 99%;
+            }
+          }
+          #otperrormessage {
+            right: 108px;
+          }
+          .otp-timer {
+            margin-left: 4.51rem;
+          }
+          .form-group {
+            margin-bottom: 1.5rem;
+            height: 2.3rem;
+            .phone-and-otp-wrapper {
+              position: relative;
+            }
+            label {
+              margin-bottom: 0.5rem;
+            }
+
+            .form-control {
+              width: 100%;
+              max-width: 100%;
+            }
+            .otpbox {
+              max-width: 1.30856rem;
+              margin-right: 0.33rem;
+            }
+          }
+          .send-btn {
+            font-size: var(--font-size-0-75-rem);
+            margin-top: -0.1rem;
+          }
+        }
+        .form-button-container {
+          bottom: -15.8%;
+          right: 0;
+          left: 0;
+          width: 100%;
+          .btn-submit {
+            width: 9.9375rem;
+            height: 2.3125rem;
+            right: 0;
+            &.disabled {
+              color: var(--color-granite-gray);
+              background-color: var(--color-gray);
+              cursor: not-allowed;
+              &::before {
+                border-width: 0 32px 37px 0;
+                right: 97.6%;
+              }
+            }
+
+            &::before {
+              border-width: 0 32px 37px 0;
+              right: 97.6%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .leadgen-invite-wrapper {
+    left: 0;
+    .leadgen-invite-wrapper-card {
+      .leadgen-invite-wrapper-container {
+        .success-wrapper {
+          .success-container {
+            height: 341px;
+          }
+          .submit-leadgen-form {
+            bottom: -17.6%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .leadgen-invite-wrapper {
+    left: 16px;
+  }
+}

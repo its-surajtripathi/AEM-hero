@@ -1,0 +1,287 @@
+.city-bike-specifications {
+  background: url(../images/products/city-plus/specification-bg.png) no-repeat;
+  color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  background: linear-gradient(180deg, #4F4D4D 0%, #3D3D3D 100%) !important;
+}
+
+.city-bike-specifications h2 {
+  font-size: var(--font-size48);
+  font-family: var(--font-tstar-heavy);
+  margin-bottom: 25px;
+}
+
+.city-bike-specifications .sharing-wrapper {
+  margin-bottom: 10px;
+}
+
+.city-bike-specifications .sharing-wrapper .inner {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0.06%, rgba(0, 0, 0, 0.2) 99.93%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 85px;
+}
+
+.city-bike-specifications .sharing-wrapper .inner a {
+  display: flex;
+  align-items: center;
+}
+
+.city-bike-specifications .sharing-wrapper .inner a p {
+  text-decoration: underline;
+}
+
+.city-bike-specifications .sharing-wrapper .inner a+a {
+  margin-left: 50px;
+}
+
+.city-bike-specifications .sharing-wrapper .inner .share-options {
+  position: absolute;
+  background-color: #000000;
+  border-radius: 5px;
+  right: 0;
+  top: -30px;
+  padding: 5px 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease-in;
+}
+
+.city-bike-specifications .sharing-wrapper .inner .share-options ul {
+  display: flex;
+  align-items: center;
+}
+
+.city-bike-specifications .sharing-wrapper .inner .share-options.active {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+
+.city-bike-specifications .city-bike-specifications-inner {
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.city-bike-specifications .specifications-list {
+  display: flex;
+  align-items: center;
+}
+
+.city-bike-specifications .specifications-list .slider-nav {
+  flex: 0 0 250px;
+  max-width: 250px;
+}
+
+.city-bike-specifications .specifications-list .slider-nav .slick-slide {
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: var(--font-size24);
+  cursor: pointer;
+}
+
+.city-bike-specifications .specifications-list .slider-nav .slick-slide.slick-current {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: #000000;
+  color: #000000;
+}
+
+.city-bike-specifications .specifications-list .right-content {
+  flex: 0 0 calc(100% - 250px);
+  max-width: calc(100% - 250px);
+  padding-left: 20px;
+}
+
+.city-bike-specifications .specifications-list .right-content .inner-content {
+  display: flex;
+  align-items: center;
+}
+
+.city-bike-specifications .specifications-list .right-content .inner-content .info {
+  flex-grow: 1;
+  padding-left: 25px;
+}
+
+.city-bike-specifications .specifications-list .right-content .inner-content .info .info-row {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.city-bike-specifications .specifications-list .right-content .inner-content .info .info-row .info-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-bottom: 25px;
+}
+
+.city-bike-specifications .specifications-list .right-content .inner-content .info .info-row .info-col.full {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.city-bike-specifications .specifications-list .right-content .inner-content .info .info-row .info-col h4 {
+  font-size: var(--font-size18);
+  font-family: var(--font-tstar-heavy);
+  margin-bottom: 10px;
+}
+
+.city-bike-specifications .specifications-list .right-content .inner-content .info .info-row .info-col p {
+  font-size: var(--font-size26);
+}
+
+@media (max-width: 1199px) {
+  .city-bike-specifications .specifications-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .city-bike-specifications .specifications-list .slider-nav .slick-slide {
+    border-radius: 5px;
+    font-size: var(--font-size20);
+    margin-bottom: 10px;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .spec-img {
+    max-width: 300px;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .info .info-row .info-col h4 {
+    font-size: var(--font-size16);
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .info .info-row .info-col p {
+    font-size: var(--font-size22);
+  }
+}
+
+@media (max-width: 991px) {
+  .city-bike-specifications .sharing-wrapper {
+    margin-bottom: 0px;
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+  }
+
+  .city-bike-specifications .sharing-wrapper .inner {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .city-bike-specifications .custom-slider-arrows {
+    position: relative;
+    bottom: -38px;
+  }
+
+  .city-bike-specifications .specifications-list {
+    flex-wrap: wrap;
+  }
+
+  .city-bike-specifications .specifications-list .slider-nav {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .city-bike-specifications .specifications-list .slider-nav .slick-list .slick-track {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .city-bike-specifications .specifications-list .slider-nav .slick-list .slick-track .slick-slide.slick-current {
+    max-width: 500px;
+  }
+
+  .city-bike-specifications .specifications-list .right-content {
+    flex: 0 0 calc(100%);
+    max-width: calc(100%);
+    padding-left: 0;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .spec-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .spec-img img {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 767px) {
+  .city-bike-specifications {
+    background: linear-gradient(180deg, #6F6F70 0%, #4E4E4E 100%);
+  }
+
+  .city-bike-specifications h2 {
+    font-size: var(--font-size28);
+    margin-bottom: 10px;
+  }
+
+  .city-bike-specifications .custom-slider-arrows {
+    bottom: -31px;
+  }
+
+  .city-bike-specifications .specifications-list {
+    flex-wrap: wrap;
+  }
+
+  .city-bike-specifications .specifications-list .slider-nav .slick-list .slick-track .slick-slide {
+    font-size: var(--font-size18);
+    letter-spacing: 2px;
+    padding: 3px 10px;
+  }
+
+  .city-bike-specifications .specifications-list .slider-nav .slick-list .slick-track .slick-slide.slick-current {
+    max-width: 200px;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .spec-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .spec-img img {
+    display: inline-block;
+    max-width: 150px;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .info .info-row .info-col {
+    margin-bottom: 15px;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .info .info-row .info-col:nth-child(odd) {
+    padding-right: 16px;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .info .info-row .info-col h4 {
+    font-size: var(--font-size12);
+    margin-bottom: 10px;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .info .info-row .info-col p {
+    font-size: var(--font-size16);
+  }
+
+  .city-bike-specifications h2 {
+    padding: 0 15px;
+  }
+
+  .city-bike-specifications .specifications-list .right-content .inner-content .info {
+    padding-left: 0;
+  }
+
+}

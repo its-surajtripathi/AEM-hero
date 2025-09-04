@@ -1,0 +1,13 @@
+<!--/*
+Template used for link
+*/-->
+<template data-sly-template.generic="@ path='Link URL', class='Custom Class to be applied', text='Link Text'">
+    <a data-sly-test="${path}" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @linkurl=path}"
+        target="${isExternal ? '_blank' : '_self'}" href="${linkuse.value}" class="${class}">${text}</a>
+</template>
+<template
+    data-sly-template.withdataattr="@ path='Link URL', class='Custom Class to be applied', text='Link Text', dataAttr = 'Analytics Data Attribute'">
+    <a data-sly-test="${path}" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @linkurl=path}"
+        target="${isExternal ? '_blank' : '_self'}" href="${linkuse.value}" class="${class}"
+        aa-data-attr="${dataAttr}">${text}</a>
+</template>

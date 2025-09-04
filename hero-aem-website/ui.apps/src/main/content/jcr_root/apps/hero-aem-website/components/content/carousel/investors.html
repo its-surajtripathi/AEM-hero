@@ -1,0 +1,136 @@
+<section>
+    <div id="investorBanner" class="carousel slide" data-ride="carousel"
+        data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='herodetailwithmap'}">
+        <ul class="investor-indicators ${properties.invcarouselindicatorstyling}" data-sly-list="${listUse}"
+            data-sly-test="${listUse.length > 1}">
+            <li data-target="#investorBanner" data-slide-to="${itemList.index}"
+                class="${itemList.first ? 'active' : ''}"></li>
+        </ul>
+        <div class="carousel-inner" data-sly-list="${listUse}">
+            <div class="carousel-item${itemList.first ? ' active' : ''}"
+                data-interval="${item.properties.invcarouselinterval ? item.properties.invcarouselinterval : '5' }000">
+                <div class="scooter-banner-slide">
+                    <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.invimageRef, rendition='banner-web'}"
+                        src="${imagePath}" alt="${item.properties.invimageAlt}"
+                        class="d-none d-md-block banner-img w-100"
+                        data-sly-test="${item.properties.invassettype == 'imageasset'}">
+                    <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.invmobimageRef, rendition='banner-mobile'}"
+                        src="${imagePath}" alt="${item.properties.invimageAlt}"
+                        class="banner-img w-100 d-block d-md-none"
+                        data-sly-test="${item.properties.invassettype == 'imageasset'}">
+                    <input type="hidden" value="${item.properties.muteCheck}" class="video-unmute" />
+                    <video oncontextmenu="return false;" playsinline
+                        class="w-100 ${(item.properties.invvideo1mob || item.properties.invvideo2mob) ? 'd-none d-md-block' : ' d-block'}"
+                        autoplay muted loop disablePictureInPicture disableremoteplayback
+                        data-sly-test="${item.properties.invassettype == 'videoasset'}">
+                        <source src="${item.properties.invvideo1}" type="video/webm">
+                        <source src="${item.properties.invvideo2}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video oncontextmenu="return false;" playsinline class="w-100 d-block d-md-none" autoplay muted loop
+                        disablePictureInPicture disableremoteplayback
+                        data-sly-test="${item.properties.invassettype == 'videoasset' && (item.properties.invvideo1mob || item.properties.invvideo2mob)}">
+                        <source
+                            src="${item.properties.invvideo1mob ? item.properties.invvideo1mob  : item.properties.invvideo1}"
+                            type="video/webm">
+                        <source
+                            src="${ item.properties.invvideo2mob ? item.properties.invvideo2mob : item.properties.invvideo2}"
+                            type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="volume-button" data-sly-test="${item.properties.invassettype == 'videoasset'}">
+                        <div class="volume-on d-none">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_37664_16591)">
+                                    <path
+                                        d="M3.25 9.74998V16.25H7.58333L13 21.6666V4.33331L7.58333 9.74998H3.25ZM17.875 13C17.875 11.0825 16.77 9.43581 15.1667 8.63414V17.355C16.77 16.5641 17.875 14.9175 17.875 13ZM15.1667 3.49915V5.73081C18.2975 6.66248 20.5833 9.56581 20.5833 13C20.5833 16.4341 18.2975 19.3375 15.1667 20.2691V22.5008C19.5108 21.515 22.75 17.6366 22.75 13C22.75 8.36331 19.5108 4.48498 15.1667 3.49915V3.49915Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_37664_16591">
+                                        <rect width="26" height="26" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="volume-off">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_37664_16585)">
+                                    <path
+                                        d="M17.875 13C17.875 11.0825 16.77 9.43583 15.1667 8.63417V11.0283L17.8208 13.6825C17.8533 13.4658 17.875 13.2383 17.875 13V13ZM20.5833 13C20.5833 14.0183 20.3667 14.9717 19.9983 15.86L21.6342 17.4958C22.3492 16.1525 22.75 14.625 22.75 13C22.75 8.36333 19.5108 4.485 15.1667 3.49917V5.73083C18.2975 6.6625 20.5833 9.56583 20.5833 13ZM4.62583 3.25L3.25 4.62583L8.37417 9.75H3.25V16.25H7.58333L13 21.6667V14.3758L17.6042 18.98C16.8783 19.5433 16.0658 19.9875 15.1667 20.2583V22.49C16.6617 22.1542 18.0158 21.4608 19.1642 20.5292L21.3742 22.75L22.75 21.3742L13 11.6242L4.62583 3.25ZM13 4.33333L10.7358 6.5975L13 8.86167V4.33333Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_37664_16585">
+                                        <rect width="26" height="26" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="banner-headline"
+                        style="color : ${item.properties.invfontcolor @ context = 'styleToken'} !important;">
+                        <div class="banner-headline-title" style="justify-content: ${item.properties.invstyling @ context = 'styleToken'} !important;">
+                            ${item.properties.invbannerheadline @ context='html'}
+                        </div>
+                        <p class="investor-meet-date">${ 'MMM dd, yyyy' @ format=item.properties.calendardate,
+                            timezone='IST', locale='en'}</p>
+                        <div>
+                            <button data-sly-test="${item.properties.calendarbtn}" class="investor-calendar">
+                                <img src="${item.properties.calendaricon}" alt="calendar-icon" class="calendar-icon" />
+                                ${item.properties.calendarbtn}
+                            </button>
+                            <div class="investor-events-calender-wrapper-mailoptions d-none">
+                                <ul>
+                                    <li class="investor-events-mailoptions" aria-label="outlook"><img
+                                            src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/outlook.svg"
+                                            alt="calender" />Outlook Calendar</li>
+                                    <li class="investor-events-mailoptions" aria-label="ical"><img
+                                            src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/ical-black.svg"
+                                            alt="calender" />iCal Calendar</li>
+                                    <li class="investor-events-mailoptions" aria-label="gmail"><img
+                                            src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/gmail.svg"
+                                            alt="calender" />Google Calendar</li>
+                                    <li class="investor-events-mailoptions" aria-label="yahoo"><img
+                                            src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/yahoo.svg"
+                                            alt="calender" aria-label="yahoo" />Yahoo Calendar</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a data-sly-test="${item.properties.invbannerviewcta}" aa-data-attr="track_cta"
+                            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.invbannerviewcta}"
+                            href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                            class="view-all-investor">${item.properties.invbannerctalabel}
+                            <div class="view-all-arrow"></div>
+                        </a>
+                        <div data-sly-test="${item.properties.seTitle}" class="stock-container">
+                            <div class="stock-watch">${item.properties.seTitle}</div>
+                            <div class="stock-watch-buttons">
+                                <a class="btn stock-watch-btn ${item.properties.styling1}" href="${item.properties.seCTAurl @ context='uri'}"
+                                    target="_blank">
+                                    ${item.properties.seCTAlabel}</a>
+                                <a class="btn stock-watch-btn ${item.properties.styling2}" href="${item.properties.seCTAurl2 @ context='uri'}"
+                                    target="_blank">
+                                    ${item.properties.seCTAlabel2}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="investor-button ${item.properties.buttonalign}">
+                        <a aa-data-cta="${item.properties.imageAlt}" data-sly-test="${item.properties.linkTo1 && item.properties.urltype1 == 'url1'}" class="btn ${item.properties.styling1}" aa-data-attr="track_cta"
+                                    data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo1}"
+                                    href="${linkuse.value}"  target="${linkuse.isExternal ? '_blank' : '_self'}">${item.properties.btn}</a>
+                        <a aa-data-cta="${item.properties.imageAlt}" data-sly-test="${item.properties.linkTo1 && item.properties.urltype1 == 'modal1'}" class="btn ${item.properties.styling1}" aa-data-attr="track_cta" data-toggle="modal" data-target="${item.properties.linkTo1}"
+                                 data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo1}"
+                                 href="javascript:void(0)">${item.properties.btn}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="investor-banner-note-container" data-sly-test="${properties.marqueescroll}">
+    <marquee>${properties.marqueescroll @ context='html'}</marquee>
+</div>

@@ -1,0 +1,21 @@
+<div class="navbar-quick-links">
+   <ul class="navbar-nav quick-links-nav" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='headeritems'}" data-sly-list="${listUse}">
+      <li class="nav-item">
+         <a class="nav-link" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.url}"
+         href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" aa-data-attr="track_cta">${item.properties.text @context='html'}</a>
+      </li>
+   </ul>
+   <ul class="navbar-nav social-links">
+      <sly
+         data-sly-resource="${'socialicon' @ resourceType='hero-aem-website/components/content/socialicons' }">
+      </sly>
+   </ul>
+   <ul class="navbar-nav quick-links" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='linksfooter'}"
+      data-sly-list="${listUse}">
+      <li>
+         <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.footerlink}"
+         href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" aa-data-attr="track_cta">${item.properties.footertext @context='html'}</a>
+      </li>
+   </ul>
+   <p class="copyrights">${properties.copyrightText}</p>
+</div>

@@ -1,0 +1,4 @@
+#base=js
+myvehicles.js
+vehicle-cards.js
+goodlife-carousel.js

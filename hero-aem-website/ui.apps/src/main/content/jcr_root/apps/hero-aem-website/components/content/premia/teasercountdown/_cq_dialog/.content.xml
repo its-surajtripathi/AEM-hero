@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Bike Count Down Details"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.authoring.editor.hook]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <general
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Teaser Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <logo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Logo"
+                                                fileNameParameter="./logoImage"
+                                                fileReferenceParameter="./logoImageRef"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/svg+xml]"
+                                                multiple="{Boolean}false"
+                                                name="./logoImg"
+                                                title="Upload Image Asset"
+                                                useHTML5="{Boolean}true"/>
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title"
+                                                name="./title"/>
+                                            <launchdate
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                fieldLabel="Launch Date"
+                                                name="./launchdate"
+                                                type="datetime"/>
+                                            <isHomePage
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Is Home Paga"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}false"
+                                                fieldDescription="Enable the checkbox if the component is placed on Home page"
+                                                name="./isHomePage"
+                                                text="Is the compoenent is placed on Home page?"
+                                                uncheckedValue="false"
+                                                value="on"/>
+                                            <buttonLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Button Label"
+                                                name="./bnLabel"/>                                           
+                                            <bgVideo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel=" Background Lottie file Path"
+                                                name="./videoPath"/>
+                                            <date2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                fieldLabel="Disable grab invite time"
+                                                name="./date2"
+                                                type="datetime"/>
+                                            <date3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                fieldLabel="Enable live stream date"
+                                                name="./date3"
+                                                type="datetime"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </general>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

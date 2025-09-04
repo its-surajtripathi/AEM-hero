@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Statistic Tile"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <variant
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                class="cq-dialog-dropdown-showhide"
+                                                cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                                                fieldDescription="Select Tab Variant."
+                                                fieldLabel="Variant"
+                                                name="./layoutvariation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Default"
+                                                        value="default"/>
+                                                    <investor
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Investors Page"
+                                                        value="investor"/>
+                                                    <service
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Service Journey grey Bg"
+                                                        value="greybg"/>
+                                                    <withheader
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Service Journey grey Bg with Header"
+                                                        value="withheader"/>
+                                                </items>
+                                            </variant>
+                                            <investor
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="show-hide-textfield"
+                                                showhidetargetvalue="investor">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <columns
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <column
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                <datayear
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                        fieldDescription="Enter Data Year"
+                                                                        fieldLabel="Data Year"
+                                                                        name="./datayear"/>
+                                                                    <multifield
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                        composite="{Boolean}true"
+                                                                        fieldLabel="Statistic Tile Details">
+                                                                        <field
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                            name="./inNumbersInfo">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <value
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                    fieldDescription="Please add the title"
+                                                                                    fieldLabel="Enter Value"
+                                                                                    name="./inNumberValue"
+                                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                                    <rtePlugins
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                    <uiSettings
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                </value>
+                                                                                <title
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                    fieldDescription="Please add the title"
+                                                                                    fieldLabel="Enter Title"
+                                                                                    name="./inNumberTitle"
+                                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                                    <rtePlugins
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                    <uiSettings
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                </title>
+                                                                            </items>
+                                                                        </field>
+                                                                    </multifield>
+                                                                </items>
+                                                            </column>
+                                                        </items>
+                                                    </columns>
+                                                </items>
+                                            </investor>
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="show-hide-textfield"
+                                                showhidetargetvalue="default">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <columns
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <column
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <multifield
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                        composite="{Boolean}true"
+                                                                        fieldLabel="Statistic Tile Details">
+                                                                        <field
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                            name="./eventinfo">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <title
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldDescription="Please add the title"
+                                                                                    fieldLabel="Enter Title"
+                                                                                    name="./eventinfoTitle"/>
+                                                                                <value
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldDescription="Please add the title"
+                                                                                    fieldLabel="Enter Value"
+                                                                                    name="./eventinfoValue"/>
+                                                                            </items>
+                                                                        </field>
+                                                                    </multifield>
+                                                                </items>
+                                                            </column>
+                                                        </items>
+                                                    </columns>
+                                                </items>
+                                            </default>
+                                            <service
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="show-hide-textfield"
+                                                showhidetargetvalue="greybg">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <columns
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <column
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                <datayear
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                        fieldDescription="Enter Data Year"
+                                                                        fieldLabel="Data Year"
+                                                                        name="./serdatayear"/>
+                                                                    <multifield
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                        composite="{Boolean}true"
+                                                                        fieldLabel="Statistic Tile Details">
+                                                                        <field
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                            name="./serNumbersInfo">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <value
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                    fieldDescription="Please add the title"
+                                                                                    fieldLabel="Enter Value"
+                                                                                    name="./serNumberValue"
+                                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                                    <rtePlugins
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                    <uiSettings
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                </value>
+                                                                                <title
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                    fieldDescription="Please add the title"
+                                                                                    fieldLabel="Enter Title"
+                                                                                    name="./serNumberTitle"
+                                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                                    <rtePlugins
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                    <uiSettings
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                </title>
+                                                                            </items>
+                                                                        </field>
+                                                                    </multifield>
+                                                                </items>
+                                                            </column>
+                                                        </items>
+                                                    </columns>
+                                                </items>
+                                            </service>
+                                            <withheader
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="show-hide-textfield"
+                                                showhidetargetvalue="withheader">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <columns
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <column
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                <datayear
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                        fieldDescription="Enter Data Year"
+                                                                        fieldLabel="Data Year"
+                                                                        name="./serdatayear"/>
+                                                                <header
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                        fieldDescription="Enter Header"
+                                                                        fieldLabel="Red Header"
+                                                                        name="./header"/>
+                                                                <header2
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                        fieldDescription="Enter Header"
+                                                                        fieldLabel="Black Header"
+                                                                        name="./header2"/>
+                                                                    <multifield
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                        composite="{Boolean}true"
+                                                                        fieldLabel="Statistic Tile Details">
+                                                                        <field
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                            name="./NumbersInfo">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <value
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                    fieldDescription="Please add the title"
+                                                                                    fieldLabel="Enter Value"
+                                                                                    name="./serNumberValue"
+                                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                                    <rtePlugins
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                    <uiSettings
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                </value>
+                                                                                <title
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                    fieldDescription="Please add the title"
+                                                                                    fieldLabel="Enter Title"
+                                                                                    name="./serNumberTitle"
+                                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                                    <rtePlugins
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                    <uiSettings
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                </title>
+                                                                            </items>
+                                                                        </field>
+                                                                    </multifield>
+                                                                </items>
+                                                            </column>
+                                                        </items>
+                                                    </columns>
+                                                </items>
+                                            </withheader>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

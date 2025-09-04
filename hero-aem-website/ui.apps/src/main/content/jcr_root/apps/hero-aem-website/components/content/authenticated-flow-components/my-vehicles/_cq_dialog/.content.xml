@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="My Vehicles Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="General"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <variation
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                class="cq-dialog-dropdown-showhide"
+                                                cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                                                fieldLabel="Select Variation"
+                                                name="./variation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <myvehicle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="My vehicle page"
+                                                        value="myvehicle"/>
+                                                    <goodlife
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Good life page"
+                                                        value="good-life"/>
+                                                </items>
+                                            </variation>
+                                            <myvehicle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="show-hide-textfield"
+                                                showhidetargetvalue="myvehicle">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <heading
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Vehicles Heading Label"
+                                                        name="./vehiclesHeadingLabel"
+                                                        required="{Boolean}true"/>
+                                                    <subheading
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Use ${currentVehicleIndex} and ${totalVehicles} for the dynamic injestion of count and index"
+                                                        fieldLabel="Vehicles SubHeading Label"
+                                                        name="./vehiclesSubHeadingLabel"
+                                                        required="{Boolean}true"/>
+                                                    <insuranceLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Insurance Label"
+                                                        name="./insuranceLabel"
+                                                        required="{Boolean}true"/>
+                                                    <amcLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter AMC Label"
+                                                        name="./amcLabel"
+                                                        required="{Boolean}true"/>
+                                                    <validTillLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Valid Till Label"
+                                                        name="./validTillLabel"
+                                                        required="{Boolean}true"/>
+                                                </items>
+                                            </myvehicle>
+                                            <goodlife
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="show-hide-textfield"
+                                                showhidetargetvalue="good-life">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <membershiptext
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter Membership Club Text"
+                                                            name="./membershiptext"
+                                                            required="{Boolean}true"/>
+                                                    <pointsearned
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Points earned Label"
+                                                            name="./pointsearned"
+                                                            defaultText="Points Earned"
+                                                            required="{Boolean}true"/>
+                                                    <pointsremaining
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Points to the next milestone Label"
+                                                            name="./pointsremaining"
+                                                            defaultText="Points to the next milestone"
+                                                            required="{Boolean}true"/>
+                                                    <enrollmentDateLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Enrollment Date Label"
+                                                        name="./enrollmentDateLabel"
+                                                        required="{Boolean}true"/>
+                                                    <validTillLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Valid Till Label"
+                                                        name="./validtillLabel"
+                                                        required="{Boolean}true"/>
+                                                    <cardNoLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Card Number Label"
+                                                        name="./cardNoLabel"
+                                                        required="{Boolean}true"/>
+                                                    <milestoneRedeemedLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Milestone Redeemed Label"
+                                                        name="./milestoneRedeemedLabel"
+                                                        required="{Boolean}true"/>
+                                                    <accidentalInsuranceLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Accidental Insurance Label"
+                                                        name="./accidentalInsuranceLabel"
+                                                        required="{Boolean}true"/>
+                                                    <validityLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Validity Label"
+                                                        name="./validityLabel"/>
+                                                    <insuranceNomineeLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Insurance value and Nominee Label"
+                                                        name="./insuranceNomineeLabel"
+                                                        required="{Boolean}true"/>
+                                                    <viewNomineeLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter View Nominee Label"
+                                                        name="./viewNomineeLabel"
+                                                        required="{Boolean}true"/>
+                                                    <viewNomineeLinkArrow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Enter View Nominee Icon"
+                                                        name="./viewNomineeIcon"
+                                                        rootPath="/content/dam/hero-aem-website"
+                                                        required="{Boolean}true"/>
+                                                    <earningAndRedemptionLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Earning and Redemption History Label"
+                                                        name="./earningAndRedemptionLabel"
+                                                        required="{Boolean}true"/>
+                                                    <earningAndRedemptionLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Enter Earning and Redemption History Link"
+                                                        name="./earningAndRedemptionLink"
+                                                        required="{Boolean}true"/>
+                                                    <noresponseerror
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldLabel="Enter Error Msg For no Response"
+		                                                name="./apiErrorMsg"/>
+                                                </items>
+                                            </goodlife>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <docproperties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Document Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <multitext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}false"
+                                fieldLabel="Document Heading">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./docDetails">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <shortform
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Enter short form of document"
+                                            name="./shortForm"
+                                            required="{Boolean}true"/>
+                                        <fullform
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Enter full form of document"
+                                            name="./fullForm"
+                                            required="{Boolean}true"/>
+                                    </items>
+                                </field>
+                            </multitext>
+                        </items>
+                    </docproperties>
+                     <goodlifeprop
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Goodlife Card Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <multitext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}false"
+                                fieldLabel="Good Life Membership Details">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./docDetails">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <subtype
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Subscription Type"
+                                            name="./subscription"
+                                            required="{Boolean}true"/>
+                                        <subtypeimg
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="Subscription Image"
+                                            rootPath="/content/dam/hero-aem-website/"
+                                            name="./subscriptionImg"
+                                            required="{Boolean}true"/>
+                                    </items>
+                                </field>
+                            </multitext>
+                        </items>
+                    </goodlifeprop>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

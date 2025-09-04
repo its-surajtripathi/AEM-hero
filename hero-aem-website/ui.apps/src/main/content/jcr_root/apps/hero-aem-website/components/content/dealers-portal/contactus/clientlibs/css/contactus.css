@@ -1,0 +1,97 @@
+.contactUsTitle {
+    font-size: 18.66px;
+    color: #000000;
+    font-family: Open Sans;
+    font-weight: 700;
+    padding: 8px;
+    margin: 24px 0;
+    text-align: center;
+}
+.contactUsVersion {
+    display: flex;
+   
+}
+.contactUsVersion > .contactUsTitle {
+    flex: 0.4 !important;
+}
+
+.contactUsContainer {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+}
+.contactUsImage {
+    width: 164px;
+    height: 164px;
+}
+.contactUsPhoto {
+    padding: 0 14px;
+}
+.contactUsName,
+.contactUsManagerDetail {
+    text-align: center;
+    color: #0000FF;
+    font-size: 12px;
+    font-family: Open Sans;
+    font-weight: normal;
+    text-decoration: underline;
+    padding: 8px 14px 0px 14px;
+}
+.contactUsRole {
+    color: #000000;
+    font-size: 12px;
+    font-family: Open Sans;
+    font-weight: normal;
+    font-variant: normal;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 14px 8px 14px;
+}
+.contactUsArea {
+    padding: 0 22px;
+}
+.contactUsAreaOffice,
+.contactUsManagerName {
+    color: #000000;
+    font-family: Open Sans;
+    font-size: 14.66px;
+    font-weight: 700;
+}
+.contactUsAreaDetail {
+    color: #000000;
+    font-size: 14px;
+    font-family: Open Sans;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.contactUsManagerDetail {
+    font-size: 14px;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+}
+@media (max-width: 767px) {
+    .contactUsContainer,.contactUsVersion {
+        display: block !important;
+    }
+    .contactUsVersion {
+padding: 0;
+    margin-left: -35px;
+}
+    .contactUsImage {
+        margin: 0 auto;
+    }
+    .contactUsManagerDetail {
+        text-align: left !important;
+    }
+    .contactUsArea {
+        padding: 42px 24px 24px 24px !important;
+    }
+    .contactUsManager {
+        padding: 42px 24px 24px 24px !important;
+    }
+}
+.areaManagerWrapper {
+	display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,129 @@
+<div class="merbership-container goodlife-carousel">
+    <div class="membership-heading">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-3 col-3 ">
+
+                <img src="/content/dam/hero-aem-website/good-life/pltinum-logo.svg" class="membership-logo" />
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-9 col-9 membership-details">
+                <script type="text/html" class="membership-details-temp">
+                    <div class="vehicle-heading">
+                        <h3><%=vehicleDetails.MembershipClub%>${properties.membershiptext @ context='scriptString'}</h3>
+                        <div class="points-earn">
+                            <div class="points-earn-left"><%=vehicleDetails.Points_Available == null ? '0' : vehicleDetails.Points_Available%></div>
+                            <div class="points-earn-right">${properties.pointsearned @ context='scriptString'} | <%=vehicleDetails.PointsToNextMileStone%> ${properties.pointsremaining @ context='scriptString'}</div>
+                        </div>
+                    </div>
+                </script>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2 d-none d-lg-block">
+                <div class="points-earn vehicle-details">
+                    <script type="text/html" class="vehicle-details-temp">
+                        <div class="vehicle-heading">
+
+                            <h3><%=vehicleDetails.modelName%></h3>
+                            <div class="vehicle-number"><%=vehicleDetails.licenseNo%></div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="membership-content">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 membership-content-left">
+                <div class="pleasure-container inner-vehicle-details">
+                	<div class="alert-danger no-response-error hidden" >${properties.apiErrorMsg}</div>
+                    <script type="text/html" class="inner-vehicle-details-temp">
+                        <div class="vehicle-heading">
+                            <h3><%=vehicleDetails.modelName%></h3>
+                            <p><%=vehicleDetails.licenseNo%></p>
+                        </div>
+                    </script>
+                </div>
+                <div class="pleasure-details">
+                    <script type="text/html" class="goodlife-details">
+                        <div class="pleasure-content">
+                            <div class="pleasure-content-left">
+                                <strong>${properties.enrollmentDateLabel @ context='scriptString'}</strong>
+                                <p><%=vehicleDetails.Enrollment_Date%></p>
+                            </div>
+                            <div class="pleasure-content-right">
+                                <strong>${properties.validtillLabel @ context='scriptString'}</strong>
+                                <p class="valid-date"><%=vehicleDetails.Valid_Till%></p>
+                            </div>
+                        </div>
+                        <div class="pleasure-content">
+                            <div class="pleasure-content-left">
+                                <strong>${properties.cardNoLabel @ context='scriptString'}</strong>
+                                <p><%=vehicleDetails.Card_Number%></p>
+                            </div>
+                            <div class="pleasure-content-right">
+                                <strong>${properties.milestoneRedeemedLabel @ context='scriptString'}</strong>
+                                <p><%=vehicleDetails.Redeemed_Gifts%> of <%=vehicleDetails.Eligible_Gifts%></p>
+                            </div>
+                        </div>
+                        <div class="pleasure-content">
+                            <div class="pleasure-content-left">
+                                <strong>${properties.accidentalInsuranceLabel @ context='scriptString'} <span>${properties.validityLabel @ context='scriptString'}</span></strong>
+                                <p class="insurance-date"><%=convertDate(vehicleDetails.Insurance_Valid_Till)%> </p>
+                            </div>
+                            <div class="pleasure-content-right">
+                                <strong>${properties.insuranceNomineeLabel @ context='scriptString'}</strong>
+                                <div class="insurance-amount"><%=vehicleDetails.Insuranceamount%> Lakh
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#nomineeDetails" class="view-nominee choose-one-button">${properties.viewNomineeLabel @ context='scriptString'}
+										<img class="view-arrow" src="${properties.viewNomineeIcon @ context='uri'}" alt="right-arrow">
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+                <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.earningAndRedemptionLink}"
+                    href="${linkuse.value}">
+                    <button type="button"
+                        class="btn btn-earning-history">${properties.earningAndRedemptionLabel}</button>
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 membership-content-right">
+                <div class="bike-carousel-container">
+                    <div class="bike-show-container">
+                        <div class="bikes-collection">
+                            <img src="" class="vehicle-img-sel img-fluid" alt="bike-model-img" />
+
+                        </div>
+                        <div class="carousel-btn-container">
+                            <div class="model-number"><span class="current-vehicle"></span>/<span
+                                    class="total-vehicles"></span></div>
+                            <div class="myVeharrow-wrap next-vehicle-btn-container">
+                                <a href="javascript:void(0)"
+                                    class="myVehcarousel-arrow prev-vehicle btn-nxt-prev disabled">
+                                    <img class="active d-none"
+                                        src="/content/dam/hero-aem-website/brand/design/icons/myvehicles/arrow-active.png"
+                                        alt="left-arrow">
+                                    <img class="inactive "
+                                        src="/content/dam/hero-aem-website/brand/design/icons/myvehicles/arrow-disabled.png"
+                                        alt="left-arrow">
+                                </a>
+                                <a href="javascript:void(0)" class="myVehcarousel-arrow next-vehicle btn-nxt-prev">
+                                    <img class="active"
+                                        src="/content/dam/hero-aem-website/brand/design/icons/myvehicles/arrow-active.png"
+                                        alt="right-arrow">
+                                    <img class="inactive d-none"
+                                        src="/content/dam/hero-aem-website/brand/design/icons/myvehicles/arrow-disabled.png"
+                                        alt="left-arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" value="${properties.subscription}" class="goodlife-sub-type">
+                    <input type="hidden" value="${properties.subscriptionImg}" class="goodlife-sub-img">
+                    <div class="bike-display-stage">
+                        <img src="/content/dam/hero-aem-website/in/servicejourney/Tray-without-shadow.png"
+                            alt="gray-disk-noShadow" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

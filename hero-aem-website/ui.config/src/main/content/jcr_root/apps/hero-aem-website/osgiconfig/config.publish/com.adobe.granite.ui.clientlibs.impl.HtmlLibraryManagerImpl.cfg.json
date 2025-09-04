@@ -1,0 +1,35 @@
+{
+    "htmllibmanager.excluded.path.list":[
+      "/etc/commerce/classifications",
+      "/etc/commerce/collections",
+      "/etc/commerce/payment-methods",
+      "/etc/commerce/products",
+      "/etc/commerce/shipping-methods",
+      "/etc/reports/auditreport",
+      "/etc/reports/compreport",
+      "/etc/segmentation",
+      "/etc/taskmanagement",
+      "/etc/workflow/instances"
+    ],
+    "htmllibmanager.minify":true,
+    "htmllibmanager.strict.versioning":false,
+    "htmllibmanager.gzip":true,
+    "htmllibmanager.processor.js":[
+      "min:gcc"
+    ],
+    "htmllibmanager.path.list":[
+      "/apps",
+      "/libs",
+      "/etc"
+    ],
+    "htmllibmanager.clientmanager":"granite.clientlibrarymanager",
+    "htmllibmanager.processor.css":[
+      "min:yui"
+    ],
+    "htmllibmanager.longcache.patterns":[
+      "/.*;hash"
+    ],
+    "htmllibmanager.longcache.format":[
+      "lc-%s-lc"
+    ]
+}

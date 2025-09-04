@@ -1,0 +1,711 @@
+#booking__section {
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    padding-bottom: 94px;
+
+    @media(max-width: 768px) {
+        padding: 16px 0;
+    }
+
+    .booking__container {
+        width: 100%;
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+        max-width: 1366px;
+        margin: 0 auto;
+
+        @media(max-width: 768px) {
+            padding: 0 16px;
+        }
+
+        .content__wrap {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+
+            @media(max-width: 768px) {
+                flex-direction: column-reverse;
+            }
+
+            .form__wrap {
+                width: 57.64%;
+                padding: 28px;
+                border-radius: 12px;
+                margin-right: 22px;
+                border: 1px solid var(--bordercolor-border-color, #C0C0C0);
+                background: var(--textcolor-white, #FFF);
+                box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.08), 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                @media(max-width: 768px) {
+                    width: 100%;
+                    margin-right: 0;
+                    padding: 16px 10px;
+                }
+
+                .header--wrap {
+                    align-items: center;
+                    margin-bottom: 16px;
+
+                    @media(max-width: 768px) {
+                        margin-bottom: 24px;
+                    }
+
+                    img {
+                        max-width: 24px;
+                        width: 100%;
+                        height: 24px;
+                        margin-right: 12px;
+                    }
+
+                    h4 {
+                        font-size: 20px;
+                        font-family: '1903Sans-Bold';
+                        font-weight: 700;
+                        line-height: 32px;
+                        text-transform: uppercase;
+                        width: 100%;
+
+                        @media(max-width: 768px) {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+
+                .form--wrap {
+                    width: auto;
+                    margin: 0 -10px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    @media(max-width: 768px) {
+                        margin: 0;
+                    }
+
+                    .cust-form-group {
+                        position: relative;
+                        flex: 0 0 50%;
+                        padding: 0 10px;
+                        margin-bottom: 20px;
+                        margin-right: 0;
+
+                        @media(max-width: 768px) {
+                            flex: 0 0 100%;
+                            margin-bottom: 24px;
+                            padding: 0;
+
+                            &:last-child {
+                                margin-bottom: 12px;
+                            }
+                        }
+
+                        #send-otp {
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            right: 28px;
+                            font-size: 16px;
+                            font-family: '1903Sans-Regular';
+                            font-weight: 700;
+                            line-height: 24px;
+                            color: #F26321;
+
+                            @media(max-width:768px) {
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+
+                            &:hover {
+                                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+                                transition: text-shadow 0.2s ease;
+                            }
+
+                            &[disabled] {
+                                color: #A5A5A5;
+                                pointer-events: none;
+                                cursor: unset;
+                            }
+                        }
+
+                        .form-label {
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-family: '1903Sans-Regular';
+                            font-weight: var(--font-weight-600);
+                            position: absolute;
+                            top: -7px;
+                            left: 25px;
+                            background: white;
+                            color: #303030;
+                            padding: 0px 4px;
+                            cursor: context-menu;
+                            pointer-events: none;
+                            z-index: 2;
+
+                            @media(max-width: 768px) {
+                                font-size: 10px;
+                                line-height: 12px;
+                            }
+                        }
+
+                        .harley-input {
+                            width: 100%;
+                            color: #303030;
+                            padding: 12px 16px;
+                            border-radius: 7px;
+                            font-family: '1903Sans-Regular';
+                            border: 1px solid #ced4da;
+                            font-size: var(--font-size16);
+                            line-height: 20px;
+                            text-transform: inherit;
+                            border-radius: 8px;
+                            border: 1px solid #C0C0C0;
+
+                            &.otp--valid {
+                                border-color: #038252;
+                            }
+
+                            &.otp--invalid {
+                                border-color: #D30000;
+                            }
+
+                            &:focus-visible {
+                                outline: none;
+                            }
+
+                            &::placeholder {
+                                font-family: '1903Sans-Regular';
+                                color: #30303060;
+
+                                @media(max-width: 768px) {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            @media(max-width: 768px) {
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                        }
+
+                        .dropdown-select {
+                            border-radius: 8px;
+                            border: 1px solid #C0C0C0;
+                            text-align: left;
+                            padding: 12px 16px;
+                            height: 48px;
+                            font-family: '1903Sans-Regular';
+                            color: #30303066;
+                            position: relative;
+                            text-transform: capitalize;
+
+                            @media(max-width: 768px) {
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+
+                            &:focus-visible {
+                                outline: none;
+                                box-shadow: unset;
+                            }
+
+                            &:focus {
+                                outline: none;
+                                box-shadow: unset;
+                            }
+
+                            &::after {
+                                position: absolute;
+                                content: '';
+                                display: flex;
+                                width: 24px;
+                                height: 24px;
+                                right: 16px;
+                                top: 12px;
+                                background: url('/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-booking-site/resources/droparrow.svg') no-repeat center;
+                            }
+
+                            &.active {
+                                color: #303030;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bike__details {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                border-radius: 12px;
+                border: 1px solid #E8E8E8;
+                box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.08), 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+
+                @media(max-width: 768px) {
+                    margin-bottom: 24px;
+                    width: 100%;
+                }
+
+                .bike__details--top {
+                    background: #FEF8F2;
+                    padding: 12px 12px 12px 19px;
+                    display: flex;
+                    border-radius: 12px 12px 0 0;
+
+                    @media(max-width: 768px) {
+                        padding: 12px;
+                    }
+
+                    img {
+                        max-width: 139px;
+                        width: 100%;
+                        margin-right: 7px;
+                        height: 87px;
+
+                        @media(max-width: 768px) {
+                            max-width: 78px;
+                            height: 50px;
+                            margin-right: 6px;
+                            margin-top: 25px;
+                        }
+                    }
+
+                    .model__details {
+                        flex-direction: column;
+
+                        h6 {
+                            color: #303030;
+                            font-size: 18px;
+                            font-family: '1903Sans-Bold';
+                            font-weight: 700;
+                            line-height: 24px;
+                            margin-bottom: 10px;
+
+                            @media(max-width: 768px) {
+                                font-size: 16px;
+                                line-height: 20px;
+                                margin-bottom: 8px;
+                            }
+                        }
+
+                        p {
+                            color: #303030;
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-bottom: 8px;
+                            font-family: '1903Sans-Regular';
+
+                            @media(max-width: 768px) {
+                                font-size: 12px;
+                                line-height: 18px;
+                                margin-bottom: 4px;
+                            }
+
+                            span {
+                                color: #A5A5A5;
+                            }
+                        }
+
+                        .price--wrap {
+                            margin-top: 2px;
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+
+                            @media(max-width: 768px) {
+                                flex-wrap: wrap;
+                                gap: 4px;
+                            }
+
+                            .showroom--price {
+                                font-size: 18px;
+                                font-family: '1903Sans-Bold';
+                                line-height: 24px;
+                                color: #303030;
+
+                                @media(max-width: 768px) {
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            .road--price {
+                                font-size: 14px;
+                                font-family: '1903Sans-Regular';
+                                color: #303030;
+                                line-height: 20px;
+
+                                @media(max-width: 768px) {
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                            .disclaimer {
+                                font-size: 14px;
+                                font-family: '1903Sans-Regular';
+                                color: #00C7B2;
+                                line-height: 20px;
+
+                                @media(max-width: 768px) {
+                                    margin-top: 4px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .bike__details--bottom {
+                    padding: 28px 20px 22px 20px;
+                    background: white;
+                    border-radius: 12px;
+
+                    @media(max-width: 768px) {
+                        padding: 16px 11.5px;
+                    }
+
+                    .dealer__wrap {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        @media(max-width: 768px) {
+                            flex-direction: column;
+                        }
+
+                        .dealer__wrap--left {
+                            img {
+                                margin-right: 20px;
+                                width: 52px;
+                                height: 52px;
+
+                                @media(max-width: 768px) {
+                                    width: 42px;
+                                    height: 42px;
+                                    margin-right: 12px;
+                                }
+                            }
+
+                            .dealer__wrap--left-text {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: 10px;
+
+                                h6 {
+                                    font-size: 16px;
+                                    font-family: '1903Sans-Bold';
+                                    line-height: 20px;
+                                    color: #303030;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                    color: #303030;
+                                    font-family: '1903Sans-Regular';
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+
+                        .dealer__wrap--right {
+                            a {
+                                align-items: center;
+
+                                @media(max-width: 768px) {
+                                    padding-left: 0;
+                                    margin-top: 8px;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
+                                font-family: '1903Sans-Regular';
+                                color: #F26321;
+                                padding-left: 5px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .checkbox--wrap {
+            margin-top: 16px;
+            width: 57.64%;
+
+            @media(max-width: 768px) {
+                width: 100%;
+            }
+
+            a {
+                display: inline;
+                color: #F26321;
+            }
+
+            .control {
+                display: block;
+                position: relative;
+                padding-left: 30px;
+                margin-bottom: 5px;
+                padding-top: 0px;
+                font-size: 12px;
+                font-style: normal;
+                line-height: 20px;
+                color: #303030;
+                font-family: '1903Sans-Regular';
+            }
+
+            .control p {
+                display: block;
+                position: relative;
+                margin-bottom: 5px;
+                padding-top: 0px;
+                font-size: 12px;
+                font-style: normal;
+                line-height: 20px;
+                color: #303030;
+                font-family: '1903Sans-Regular';
+            }
+
+            .control input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+
+            .control_indicator {
+                cursor: pointer;
+                position: absolute;
+                top: 2px;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                background: white;
+                border: 1px solid #C0C0C0;
+                border-radius: 4px;
+            }
+
+            .control:hover input~.control_indicator,
+            .control input:focus~.control_indicator {
+                background: white;
+            }
+
+            .control input:checked~.control_indicator {
+                background: #F26321;
+            }
+
+            .control:hover input:not([disabled]):checked~.control_indicator,
+            .control input:checked:focus~.control_indicator {
+                background: #0e6647d;
+            }
+
+            .control input:disabled~.control_indicator {
+                background: #e6e6e6;
+                opacity: 0.6;
+                pointer-events: none;
+            }
+
+            .control_indicator:after {
+                box-sizing: unset;
+                content: '';
+                position: absolute;
+                display: none;
+            }
+
+            .control input:checked~.control_indicator:after {
+                display: block;
+            }
+
+            .control-checkbox .control_indicator:after {
+                left: 6px;
+                top: 3px;
+                width: 3px;
+                height: 8px;
+                border: solid #ffffff;
+                border-width: 0 3px 3px 0;
+                transform: rotate(45deg);
+            }
+
+            .control-checkbox input:disabled~.control_indicator:after {
+                border-color: #7b7b7b;
+            }
+        }
+
+        .dropdown-menu {
+            max-height: 250px;
+            overflow-y: scroll;
+            padding: 5px 16px;
+            border: 1px solid #C0C0C0;
+            border-top: none;
+            border-radius: 0 0 16px 16px;
+
+            li {
+                border-bottom: 0.1px solid #C0C0C0;
+                padding: 4px;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                a {
+                    line-height: 1.2;
+                    color: #303030;
+                    font-size: 16px;
+                    font-family: '1903Sans-Regular';
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
+    .paynow__section {
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        bottom: 0;
+        padding: 16px;
+        background: #FFF;
+        box-shadow: 0px -1px 4px 0px rgba(140, 140, 140, 0.25), 0px -3px 6px 0px rgba(202, 202, 202, 0.25);
+        width: 100%;
+
+        @media(max-width: 768px) {
+            padding: 7px 16px;
+        }
+
+        .paynow__container {
+            padding: 0 40px;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1366px;
+            margin: 0 auto;
+
+            @media(max-width: 768px) {
+                padding: 0;
+            }
+
+            .bottom-nav-header {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                h5 {
+                    font-size: 20px;
+                    font-family: '1903Sans-Bold';
+                    line-height: 28px;
+                    color: #F26321;
+                    margin-bottom: 8px;
+
+                    @media(max-width: 768px) {
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        max-width: 75%;
+                    }
+                }
+
+                p {
+                    color: #303030;
+                    font-size: 16px;
+                    font-family: '1903Sans-Regular';
+                    line-height: 20px;
+                    opacity: 0.5;
+
+                    @media(max-width: 768px) {
+                        display: none;
+                    }
+                }
+            }
+
+            button {
+                padding: 12px 32px;
+                border-radius: 4px;
+                background: #F26321;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-family: '1903Sans-Bold';
+                text-transform: uppercase;
+                font-size: 18px;
+                line-height: 24px;
+                border: none;
+
+                @media(max-width: 768px) {
+                    padding: 8px 10px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                &:disabled {
+                    background: #A5A5A5;
+                }
+            }
+        }
+    }
+
+
+    label.error {
+        margin-top: 3px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #D30000;
+        font-family: '1903Sans-Regular';
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::before {
+
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 9px;
+            height: 9px;
+            background: url('/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-booking-site/resources/error.svg') no-repeat;
+            background-size: 100%;
+
+        }
+    }
+
+    #timer,
+    .otp--sent,
+    .valid__otp,
+    .invalid__otp {
+        display: none;
+        margin-top: 3px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F26321;
+        font-family: '1903Sans-Regular';
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+
+        @media(max-width: 768px) {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+
+    .valid__otp {
+        color: #038252;
+    }
+
+    .invalid__otp {
+        color: #D30000;
+    }
+
+    #timer {
+        right: 30px;
+    }
+}

@@ -1,0 +1,350 @@
+#
+# This file contains the rewrite rules, and can be customized.
+#
+# By default, it includes just the rewrite rules. You can
+# add rewrite rules to this file but you should still include
+# the default rewrite rules.
+
+Include conf.d/rewrites/default_rewrite.rules
+
+RewriteRule ^/404.html$ https://new.heromotocorp.com/en-in/error-404.php [P]
+
+# rewrite for root redirect
+RewriteCond %{HTTP_HOST} ^heromotocorp\.com$ [NC]
+RewriteRule ^(.*)$ https://www.heromotocorp.com$1 [R=301,L]
+
+# mobile site
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(gu-in|hi-in|ta-in|bn-in|te-in|ml-in|kn-in)(.*)$ https://www.heromotocorp.com [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(hf-deluxe-bs6)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/practical/hf-deluxe.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(splendor-bs6)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(new-super-splendor)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/executive/super-splendor.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(hf-100)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/practical/hf-100.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(passion-pro-bs6)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(splendor-black-and-accent|splendor-xtec|splendor-ismart-bs6|100cc-motorcycle)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(glamour-bs6)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/executive/glamour.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(glamour-xtec|125cc-motorcycle)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/executive/glamour-xtec.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(pleasure-xtec|110cc-scooters|100cc-scooters)(.*)$ https://www.heromotocorp.com/en-in/scooters/pleasure-plus-xtec.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/mileage/scooters.html$ https://www.heromotocorp.com/en-in/scooters/pleasure-plus-xtec.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(xtreme-160r|150cc-motorcycle)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/performance/xtreme-160r.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(maestro-edge-125)(.*)$ https://www.heromotocorp.com/en-in/scooters/maestro-edge-125.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(110cc-motorcycle)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/executive/passion-xtec.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(225cc-motorcycle)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/performance/xtreme-200s.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(200cc-motorcycle)(.*)$ https://www.heromotocorp.com/en-in/motorcycles/performance/xpulse-200-4v.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/(.*)/(125cc-scooters)(.*)$ https://www.heromotocorp.com/en-in/scooters/destini-125-xtec.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/cookie-policy.php$ https://www.heromotocorp.com/en-in/cookie-policy.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/data-collection-contract.php$ https://www.heromotocorp.com/en-in/data-collection-contract.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^/rules-and-regulations.php$ https://www.heromotocorp.com/en-in/rules-and-regulations.html [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^m\.heromotocorp\.com$ [NC]
+RewriteRule ^(.*)$ https://www.heromotocorp.com [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.m\.heromotocorp\.com$ [NC]
+RewriteRule ^(.*)$ https://www.heromotocorp.com [R=301,L]
+
+RewriteRule ^/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/en-in/?$ /en-in.html [R=301,NE,L]
+
+RewriteRule ^/en-in/homepage.html/?$ /en-in.html [R=301,NE,L]
+
+#Old website 301 redirects
+RewriteRule ^/en-in/splendor-plus-xtec/?$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-bs6-98.html$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/hf-deluxe-bs6-97.html$ /en-in/motorcycles/practical/hf-deluxe.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/hf-100-105.html$ /en-in/motorcycles/practical/hf-100.html [R=301,NE,L]
+RewriteRule ^/en-in/super-splendor/?$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L]
+RewriteRule ^/en-in/glamour-xtec/?$ /en-in/motorcycles/executive/glamour-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/passion-xtec/?$ /en-in/motorcycles/executive/passion-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/passion-pro-bs6/?$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+RewriteRule ^/en-in/glamour-bs6/?$ /en-in/motorcycles/executive/glamour.html [R=301,NE,L]
+RewriteRule ^/en-in/new-glamour/?$ /en-in/motorcycles/executive/glamour-canvas.html [R=301,NE,L]
+RewriteRule ^/en-in/xtreme160r/?$ /en-in/motorcycles/performance/xtreme-160r.html [R=301,NE,L]
+RewriteRule ^/en-in/xpulse200-4v/?$ /en-in/motorcycles/performance/xpulse-200-4v.html [R=301,NE,L]
+RewriteRule ^/en-in/xtreme200s/?$ /en-in/motorcycles/performance/xtreme-200s.html [R=301,NE,L]
+RewriteRule ^/en-in/xpulse200t/?$ /en-in/motorcycles/performance/xpulse-200t.html [R=301,NE,L]
+RewriteRule ^/en-in/pleasure-plus-xtec/?$ /en-in/scooters/pleasure-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/destini-125-xtec/?$ /en-in/scooters/destini-125-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/new-maestro-edge-125-bs6/?$ /en-in/scooters/maestro-edge-125.html [R=301,NE,L]
+RewriteRule ^/en-in/new-maestro-edge-110/?$ /en-in/scooters/maestro-edge-110.html [R=301,NE,L]
+RewriteRule ^/en-in/xpulse200/?$ /en-in/motorcycles/performance/xpulse-200-4v.html [R=301,NE,L]
+RewriteRule ^/en-in/splendor-ismart-bsvi/?$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/splendor-plus-canvas/?$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/two-wheelers.html/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/the-bike/splendor-bs6-98.html/?$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/destini-125-platinum/?$ /en-in/scooters/destini-125-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/pleasure-plus-platinum/?$ /en-in/scooters/pleasure-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/the-bike/hf-deluxe-bs6-97.html/?$ /en-in/motorcycles/practical/hf-deluxe.html [R=301,NE,L]
+RewriteRule ^/two-wheeler-price/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/en-in/destini-125-bs6/?$ /en-in/scooters/destini-125-xtec.html [R=301,NE,L]
+RewriteRule ^/the-bike/super-splendor-bs6-101.html/?$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L]
+RewriteRule ^/en-in/hero-scooter-rakhi-offer/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/data-collection-contract.php/?$ /en-in/data-collection-contract.html [R=301,NE,L]
+RewriteRule ^/contact.php/?$ /en-in/reach-us/contact-us.html [R=301,NE,L]
+RewriteRule ^/en-in/reach-us.html$ /en-in/reach-us/contact-us.html [R=301,NE,L]
+RewriteRule ^/rules-and-regulations.php/?$ /en-in/rules-and-regulations.html [R=301,NE,L]
+RewriteRule ^/the-bike/hf-100-105.html/?$ /en-in/motorcycles/practical/hf-100.html [R=301,NE,L]
+RewriteRule ^/terms-of-use.php/?$ /en-in/terms-of-use.html [R=301,NE,L]
+RewriteRule ^/privacy-policy.php/?$ /en-in/privacy-policy.html [R=301,NE,L]
+RewriteRule ^/the-bike/new-super-splendor-111.html/?$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L]
+RewriteRule ^/en-in/two-wheeler-price/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/bike/125cc-motorcycle.html/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/cookie-policy.php/?$ /en-in/cookie-policy.php [R=301,NE,L]
+RewriteRule ^/en-in/maestro-edge-125-bs6/?$ /en-in/scooters/maestro-edge-125.html [R=301,NE,L]
+RewriteRule ^/disclaimer.php/?$ /en-in/disclaimer.html [R=301,NE,L]
+RewriteRule ^/mileage/scooters.html/?$ /en-in/mileage/scooters.html [R=301,NE,L]
+RewriteRule ^/about.php/?$ /en-in/about-us/overview.html [R=301,NE,L]
+RewriteRule ^/en-in/about-us.html/?$ /en-in/about-us/overview.html [R=301,NE,L]
+RewriteRule ^/media.php/?$ /en-in/media.html [R=301,NE,L]
+RewriteRule ^/en-in/hdbc/?$ /en-in/hdbc.html [R=301,NE,L]
+RewriteRule ^/en-in/sustainability.html/?$ /en-in/sustainability/overview.html [R=301,NE,L]
+RewriteRule ^/bike/100cc-motorcycle.html/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/mileage/motorcycle.html/?$ /en-in/mileage/motorcycle.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/super-splendor-bs6-101.html/?$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L]
+RewriteRule ^/en-in/teachers-gurudakshina-offer/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/en-in/maestro-edge-110-bs6/?$ /en-in/scooters/maestro-edge-110.html [R=301,NE,L]
+RewriteRule ^/bike/110cc-motorcycle.html/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/new-super-splendor-111.html/?$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L]
+RewriteRule ^/en-bd/hunk/?$ /en-bd/hunk150-r [R=301,NE,L]
+RewriteRule ^/upload-photo/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/en-in/pleasure-plus-platinum/$ /en-in.html [R=301,NE,L,QSA]
+RewriteRule ^/upload-photo/thankyou.php$ /en-in.html [R=301,NE,L,QSA]
+RewriteRule ^/en-in/scooter-bike-offers/madhya-pradesh/bhopal/2/home.html/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/two-wheeler-motorcycles.html/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/manufacturinghappiness/?$ /en-in.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/xtreme-160r-bs6-102.html/?$ /en-in/motorcycles/performance/xtreme-160r.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-xtec-116.html/?$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/pleasure-xtec-110.html/?$ /en-in/scooters/pleasure-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/xtreme-200s-94.html/?$ /en-in/motorcycles/performance/xtreme-200s.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/new-glamour-112.html/?$ /en-in/motorcycles/executive/glamour.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-black-and-accent-104.html/?$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/passion-pro-bs6-56.html/?$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/glamour-xtec-106.html/?$ /en-in/motorcycles/executive/glamour-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/xpulse-200-4v-108.html/?$ /en-in/motorcycles/performance/xpulse-200-4v.html [R=301,NE,L]
+
+
+#Redirections of 404 error page
+RewriteRule ^/en-in/the-bike/pleasure-bs6-96.html$ /en-in/scooters/pleasure-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/two-wheeler-motorcycles.html$ /en-in.html [R=301,NE,L,QSA]
+RewriteRule ^/en-in/the-bike/xtreme-200s-bs6-94.html$ /en-in/motorcycles/performance/xtreme-200s.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/glamour-canvas-112.html$ /en-in/motorcycles/executive/glamour.html [R=301,NE,L]
+RewriteRule ^/en-in/xtreme160R/?$ /en-in/motorcycles/performance/xtreme-160r.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-ibs-i3s-82.html$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/xpulse-200-4v-rally-edition/?$ /en-in/motorcycles/performance/xpulse-200-4v.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/maestro-edge-110-bs6-103.html$ /en-in/scooters/maestro-edge-110.html [R=301,NE,L]
+RewriteRule ^/en-in/splendor?$ /en-in/motorcycles/practical/splendor-plus.html
+RewriteRule ^/en-in/the-bike/maestro-edge-76.html$ /en-in/scooters/maestro-edge-125.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/new-maestro-edge-125-bs6-107.html$ /en-in/scooters/maestro-edge-125.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/new-maestro-edge-110-109.html$ /en-in/scooters/maestro-edge-110.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-ismart-bs6-69.html$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/destini-125-xtec-114.html$ /en-in/scooters/destini-125-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/xtreme-160r-bs6-102.html$ /en-in/motorcycles/performance/xtreme-160r.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/passion-pro-bs6-56.html$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/xpulse-200-bs6-92.html$ /en-in/motorcycles/performance/xpulse-200t.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/pleasure-xtec-110.html$ /en-in/scooters/pleasure-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/xpulse-200-4v-108.html$ /en-in/motorcycles/performance/xpulse-200-4v.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/passion-xtec-115.html$ /en-in/motorcycles/executive/passion-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-xtec-116.html$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/glamour-xtec-106.html$ /en-in/motorcycles/executive/glamour-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/new-glamour-112.html$ /en-in/motorcycles/executive/glamour.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/xtreme-200s-94.html$ /en-in/motorcycles/performance/xtreme-200s.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/glamour-bs6-81.html$ /en-in/motorcycles/executive/glamour.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/xpulse-200t-93.html$ /en-in/motorcycles/performance/xpulse-200t.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/passion-pro-110-56.html$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+RewriteRule ^/en-in/glamour-blaze/?$ /en-in/motorcycles/executive/glamour.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/glamour-sv-81.html$ /en-in/motorcycles/executive/glamour.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/passion-pro-79.html$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+RewriteRule ^/en-in/maestro-edge-125-bs6/?$ /en-in/scooters/maestro-edge-125.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/maestro-edge-125-bs6-100.html$ /en-in/scooters/maestro-edge-125.html [R=301,NE,L]
+RewriteRule ^/en-in/destini-125-platinum/?$ /en-in/scooters/destini-125-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/maestro-edge-110-bs6/?$ /en-in/scooters/maestro-edge-110.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-54.html$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/destini-125-89.html$ /en-in/scooters/destini-125-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/passion-xtec/NEW/?$ /en-in/motorcycles/executive/passion-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/destini-125-bs6-99.html$ /en-in/scooters/destini-125-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/destini-125-bs6/?$ /en-in/scooters/destini-125-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/Passion-Pro-110-bs6/?$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+
+RewriteRule ^/en-in/the-bike/super-splendor-57.html$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/hf-deluxe-52.html$ /en-in/motorcycles/practical/hf-deluxe.html [R=301,NE,L]
+RewriteRule ^/en-in/hfdeluxe/?$ /en-in/motorcycles/practical/hf-deluxe.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/super-splendor-57.html$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/glamour-pgm-fi-62.html$ /en-in/motorcycles/executive/glamour.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/new-super-splendor-84.html$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-plus-54.html$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/hf-deluxe-blackalloy-75.html$ /en-in/motorcycles/practical/hf-deluxe.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-pro-black-alloy-71.html$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/passion-pro-i3s-79.html$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/passion-pro-ibs-79.html$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/ismart-110-78.html$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-54.html$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/super-splendor-57.html$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L,QSA]
+RewriteRule ^/en-in/the-bike/maestro-49.html$ /en-in/scooters/maestro-edge-110.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-pro-63.html$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/super-splendor-bs6-101.html$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L,QSA]
+RewriteRule ^/en-in/the-bike/passion-xpro-ibs-47.html$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/new-super-splendor-ibs-84.html$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-ibs-54.html$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/super-splendor-bs6-101.html$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L,QSA]
+RewriteRule ^/en-in/maestro/?$ /en-in/scooters/maestro-edge-110.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/maestro-egde-125-86.html$ /en-in/scooters/maestro-edge-125.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/passion-xpro-47.html$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-i3s-82.html$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-ismart-110-78.html$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-pro-classic-73.html$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/hf-deluxe-i3s-80.html$ /en-in/motorcycles/practical/hf-deluxe.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-pro-classic-73.html$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L,QSA]
+RewriteRule ^/en-in/the-bike/maestro-edge-125-86.html$ /en-in/scooters/maestro-edge-125.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-nxg-55.html$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/splendornxg/?$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/passionxpro/?$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-pro-black-alloys-71.html$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/passion-pro-tr-72.html$ /en-in/motorcycles/executive/passion-pro.html [R=301,NE,L]
+RewriteRule ^/en-in/splendorplus/?$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-ismart-88.html$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/splendor-ibs-i3s-82.html$ /en-in/motorcycles/practical/splendor-plus.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/xtreme-64.html$ /en-in/motorcycles/performance/xtreme-160r.html [R=301,NE,L]
+RewriteRule ^/en-in/supersplendor/?$ /en-in/motorcycles/executive/super-splendor.html [R=301,NE,L]
+RewriteRule ^/en-in/splendorpro/?$ /en-in/motorcycles/practical/splendor-plus-xtec.html [R=301,NE,L]
+RewriteRule ^/en-in/the-bike/hf-deluxe-black-alloy-75.html$ /en-in/motorcycles/practical/hf-deluxe.html [R=301,NE,L]
+RewriteRule ^/en-in/campaigns/coming-soon.html$ /en-in/scooters/xoom.html [R=301,NE,L]
+
+RewriteRule ^/en-in/reach-us/query-form.html$ /en-in/reach-us/suggestions.html [R=301,NE,L]
+RewriteRule ^/en-in/reach-us/corporate-sales.html$ /en-in/reach-us/corporate-enquiry.html [R=301,NE,L]
+RewriteRule ^/en-in/reach-us/product-enquiry$ /en-in/reach-us/product-enquiry-test-ride.html [R=301,NE,L]
+
+RewriteRule ^/en-in/goodlife/$ /en-in/good-life.html [R=301,NE,L]
+RewriteRule ^/goodlife/$ /en-in/good-life.html [R=301,NE,L]
+RewriteRule ^/en-in/xclan/$ /en-in/xclan/about-xclan.html [R=301,NE,L]
+RewriteRule ^/en-in/careers/$ /en-in/careers.html [R=301,NE,L]
+
+RewriteRule ^/en-in/reach-us/find-hero-bike-dealers.html$ https://dealers.heromotocorp.com/ [R=301,NE,L]
+RewriteRule ^/en-in/about-us.php$ /en-in/about-us/overview.html [R=301,NE,L]
+RewriteRule ^/en-in/motorcycles/performance/xpulse-200t.html$ /en-in/motorcycles/performance/xpulse-200t-4v.html [R=301,NE,L]
+RewriteRule ^/en-in/daterange/ipopeng.html$ /en-in.html [R=301,NE,L]
+RewriteRule ^/en-in/csr-we-care.html$ /en-in/sustainability/csr.html [R=301,NE,L]
+RewriteRule ^/en-in/csr-we-care-chairman-md-ceo-msg.php$ /en-in/sustainability/csr.html [R=301,NE,L]
+RewriteRule ^/en-in/pdf/csr-we-care-highlights.pdf$ /en-in/sustainability/csr.html [R=301,NE,L]
+RewriteRule ^/en-in/csr-we-care-sdgs.php$ /en-in/sustainability/overview.html [R=301,NE,L]
+RewriteRule ^/en-in/csr-we-care-employee-volunteering.php$ /en-in/sustainability/csr.html [R=301,NE,L]
+RewriteRule ^/en-in/csr-awards.html$ /en-in/sustainability/csr/awards-and-accolades.html [R=301,NE,L]
+RewriteRule ^/en-in/csr-awards.html$ /en-in/sustainability/csr/awards-and-accolades.html [R=301,NE,L]
+RewriteRule ^/en-in/csr-we-care.php#VidGallery$ /en-in/sustainability/csr/videos-and-pictures.html [R=301,NE,L]
+RewriteRule ^/en-in/csr-we-care-annual-report.html$ /en-in/sustainability/csr/reports-and-more/annual-report.html [R=301,NE,L]
+RewriteRule ^/en-in/csr-we-care-newsletter.html$ /en-in/sustainability/csr/reports-and-more/newsletters.html [R=301,NE,L]
+RewriteRule ^/en-in/about-us/key-policies/corporate-social-responsibility.html$ /en-in/sustainability/csr/reports-and-more/policy.html [R=301,NE,L]
+
+RewriteRule ^/en-in/two-wheeler-price-rss-feed/(.*)/(.*)-(.*)/$ /content/${CONTENT_FOLDER_NAME}/in/en-in/two-wheeler-price-rss-feed.$1.$2_$3.html [PT,L]
+RewriteRule ^/en-in/two-wheeler-motorcycles-scooters/(.*)/(.*)-(.*)/$ /content/${CONTENT_FOLDER_NAME}/in/en-in/two-wheeler-motorcycles-scooters.$1.$2_$3.html [PT,L]
+
+RewriteRule ^/en-in/two-wheeler-price-rss-feed/(.*)/(.*)/$ /content/${CONTENT_FOLDER_NAME}/in/en-in/two-wheeler-price-rss-feed.$1.$2.html [PT,L]
+RewriteRule ^/en-in/two-wheeler-motorcycles-scooters/(.*)/(.*)/$ /content/${CONTENT_FOLDER_NAME}/in/en-in/two-wheeler-motorcycles-scooters.$1.$2.html [PT,L]
+
+RewriteRule ^/en-in.html$ /content/${CONTENT_FOLDER_NAME}/in/en-in/homepage.html [PT,L]
+
+RewriteRule ^/robots.txt$ /content/dam/${CONTENT_FOLDER_NAME}/robots.txt [NC,PT]
+
+RewriteRule ^/content/experience-fragments/${CONTENT_FOLDER_NAME}/(.*)$ /content/experience-fragments/${CONTENT_FOLDER_NAME}/(.*) [L]
+
+RewriteRule ^/en-in/hero-two-wheeler-enquiry-yono/$ /en-in/hero-two-wheeler-enquiry-yono.html [R=301,NE,L]
+
+RewriteRule ^/en-in/product-pictures.html$ /en-in/media/product-pictures.html [R=301,NE,L]
+
+RewriteRule ^/en-in/board-of-directors/pawan-munjal-profiledetails.html$ /en-in/about-us/board-of-directors/pawan-munjal-details.html [R=301,NE,L]
+
+RewriteRule ^/indigo$ /content/${CONTENT_FOLDER_NAME}/in/en-in/campaigns/indigo-campaign.html [PT,L]
+
+RewriteRule ^/indigo.html$ /indigo [R=301,NE,L]
+
+RewriteRule ^/en-in/investors/sustainability-report.html$ /en-in/investors/corporate-governance-and-sustainability/sustainability-report.html [R=301,NE,L]
+
+RewriteRule ^/en-in/investors/quarterly-results.html$ /en-in/investors/download-reports/quarterly-report.html [R=301,NE,L]
+
+RewriteRule ^/en-in/investors/annual-reports.html$ /en-in/investors/download-reports/annual-report.html [R=301,NE,L]
+
+
+# 404 Page redirect rule 
+RewriteRule ^/en-in/about-us/green-it.html$ /en-in/sustainability/overview.html [R=301,NE,L]
+RewriteRule ^/en-in/about-us/supply-chain.html$ /en-in/sustainability/overview.html [R=301,NE,L]
+RewriteRule ^/en-in/about-us/we-care-green-manufacturing.html$ /en-in/sustainability/overview.html [R=301,NE,L]
+RewriteRule ^/en-in/annual-returns.php$ /en-in/investors/download-reports/annual-report.html [R=301,NE,L]
+RewriteRule ^/en-in/av.php$ /en-in/investors/disclosures-under-regulation-46-of-the-lodr/schedule-of-analyst-call.html [R=301,NE,L]
+RewriteRule ^/en-in/bio-waste-medical-waste.html$ /en-in/sustainability/overview.html [R=301,NE,L]
+RewriteRule ^/en-in/csr-we-care.php$ /en-in/sustainability/overview.html [R=301,NE,L]
+RewriteRule ^/en-in/disclosures-under-regulation-46-of-the-lodr.php$ /en-in/investors/disclosures-under-regulation-46-of-the-lodr.html [R=301,NE,L]
+RewriteRule ^/en-in/disclosure-under-30-8-of-sebi-lodr.php$ /en-in/investors/disclosure-under-30-8-of-sebi-lodr.html [R=301,NE,L]
+RewriteRule ^/en-in/financial-information.php$ /en-in/investors/financial-information.html [R=301,NE,L]
+RewriteRule ^/en-in/investor.php$ /en-in/investors/overview.html [R=301,NE,L]
+RewriteRule ^/en-in/items-in-reg-47.php$ /en-in/investors/items-in-reg-47.html [R=301,NE,L]
+RewriteRule ^/en-in/notice-of-board-meeting.php$ /en-in/investors/notice-of-board-meeting.html [R=301,NE,L]
+RewriteRule ^/en-in/presentation-audio-video-recording-of-calls.php$ /en-in/investors/disclosures-under-regulation-46-of-the-lodr/presentation-and-audio-video-recording-of-calls.html [R=301,NE,L]
+RewriteRule ^/en-in/secretarial-compliance-report.php$ /en-in/investors/secretarial-compliance-report.html [R=301,NE,L]
+RewriteRule ^/en-in/xtracks$ /en-in/hero-rides-and-community.html [R=301,NE,L]
+RewriteRule ^/en-in/remembering-our-hero.html$ /en-in/about-us/chairman-emeritus.html [R=301,NE,L]
+RewriteRule ^/en-in/about-us/code-of-conduct.html$ /en-in/key-policies.html [R=301,NE,L]
+RewriteRule ^/en-in/about-us/committee-of-directors.html$ /en-in/investors/corporate-governance-and-sustainability/committee-of-directors.html [R=301,NE,L]
+RewriteRule ^/en-in/about-us/familiarisation-program-of-independent-directors.html$/en-in/investors/corporate-governance-and-sustainability/familiarisation-of-independent-directors.html [R=301,NE,L]
+RewriteRule ^/en-in/board-information.html$ /en-in/investors/corporate-governance-and-sustainability/board-information.html [R=301,NE,L]
+RewriteRule ^/en-in/corporate-governance-and-sustainability.html$ /en-in/investors/overview.html [R=301,NE,L]
+RewriteRule ^/en-in/credit-ratings.php$ /en-in/investors/download-reports/credit-rating.html [R=301,NE,L]
+RewriteRule ^/en-in/csr-we-care.php#VidGallery$ /en-in/sustainability/csr.html [R=301,NE,L]
+RewriteRule ^/en-in/dividend-details-pattern.html$ /en-in/investors/unclaimed-dividend-and-shares.html [R=301,NE,L]
+RewriteRule ^/en-in/faq.html$ /en-in/investors/shareholder-resources/faq.html [R=301,NE,L]
+RewriteRule ^/en-in/goodlife/how-to-enroll.html$ /en-in/good-life.html [R=301,NE,L]
+RewriteRule ^/en-in/in-the-press.html$ /en-in/media/in-the-press.html [R=301,NE,L]
+RewriteRule ^/en-in/investor-calender-and-resources.html$ /en-in/investors/investor-calendar-and-resources/quarterly-call-dates-and-invites.html [R=301,NE,L]
+RewriteRule ^/en-in/investor-codes-and-policies.html$ /en-in/investors/corporate-governance-and-sustainability/code-of-conduct.html [R=301,NE,L]
+RewriteRule ^/en-in/investor-downloads.html$ /en-in/investors/shareholder-resources/downloads.html [R=301,NE,L]
+RewriteRule ^/en-in/other-statutory-filings.php$ /en-in/investors/filing-and-reports/others.html [R=301,NE,L]
+RewriteRule ^/en-in/statutory-filings.html$ /en-in/investors/filing-and-reports/statutory-filings.html [R=301,NE,L]
+RewriteRule ^/en-in/stock-watch.html$ /en-in/investors/overview.html [R=301,NE,L]
+
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|sitemap-index.xml|sitemap.xml)$
+RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/in/$1 [PT,L]

@@ -1,0 +1,291 @@
+/*imagespecification.css*/
+.common-h3 {
+    font-size: var(--font-size28);
+    padding: 18px 0px 18px 0px;
+  }
+.common-h3 {
+  font-family: var(--font-tstar-bold);
+  font-style: italic;
+  font-weight: var(--font-weight-900);
+  font-size: var(--font-size48);
+  text-align: center;
+  color: var(--text-color-black);
+  padding: 31px 0px 31px 0px;
+}
+.common-h3x {
+  font-family: var(--font-tstar-bold);
+  font-style: italic;
+  font-weight: var(--font-weight-900);
+  font-size: var(--font-size48);
+  text-align: center;
+  color: var(--text-color-black);
+  padding: 31px 0px 31px 0px;
+}
+
+.engine-common-wrap {
+  padding-bottom: 30px;
+}
+.specifications-tabs-section {
+  padding: 0px 27px;
+}
+.imagespecification .spec-img img , .imagespecification .engine-left-img img{
+    max-width:388px;
+}
+.specifications-tabs-section .tab-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.specifications-tabs-section .tab-wrapper .common-tabs-main {
+  margin-bottom: 0px;
+}
+.specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item {
+  margin-right: 4px;
+}
+.specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link {
+  background-color: #F3F3F5;
+
+  min-width: unset;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link .stright-d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link .nav-link-p {
+  font-family: var(--font-tstar-bold);
+  font-weight: var(--font-weight-900);
+  font-size: var(--font-size18);
+  line-height: var(--line-height-22);
+  color: var(--text-color-black);
+}
+.specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link .nav-link-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 54px;
+  height: 54px;
+  transform: skewX(16deg);
+}
+.specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link:hover .nav-link-p {
+  color: #FFFFFF;
+}
+.specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link:hover {
+  background-color: #EA0000;
+  transition: 1s;
+}
+.specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link.active {
+  background-color: #EA0000;
+}
+.specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link.active .nav-link-p {
+  color: var(--text-color-white);
+}
+.specifications-tabs-section .slide-1-content {
+  position: absolute;
+  top: 86px;
+  right: 22px;
+  display: flex;
+  align-items: center;
+}
+.specifications-tabs-section .specfication-wrapper {
+  margin-top: -50px;
+  background-color: #E2E2E2;
+  padding: 144px 20px 50px 20px;
+  position: relative;
+}
+.specifications-tabs-section .specfication-wrapper .specification-div {
+  background-color: #FF0000 !important;
+}
+.specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .cust-tab-pane-img {
+  display: flex;
+  flex-direction: row;
+}
+.specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .engine-info-sec {
+  width: 100%;
+  margin-left: 77px;
+}
+.specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .engine-info-sec .engine-common-div .engine-common-h1 {
+  font-family: var(--font-tstar-bold);
+  font-style: italic;
+  font-weight: var(--font-weight-900);
+  font-size: 18px;
+  line-height: 22px;
+  color: #010101;
+}
+.specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .engine-info-sec .engine-common-div .engine-common-p {
+  font-family: var(--font-tstar-regular);
+  font-size: 26px;
+  line-height: 31px;
+  color: #010101;
+}
+.specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .engine-info-sec .engine-common-div .engine-common-wrap div {
+  padding-bottom: 20px;
+}
+.specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .engine-info-sec .engine-common-div .engine-common-wrap div p {
+  padding-bottom: 10px;
+}
+.engine-info-sec {
+  width: 100%;
+  margin-left: 77px;
+}
+.engine-left-img {
+    display:flex;
+    align-items:center;
+}
+.engine-info-sec .engine-common-div .engine-common-h1 {
+  font-family: var(--font-tstar-bold);
+  font-style: italic;
+  font-weight: var(--font-weight-900);
+  font-size: 18px;
+  line-height: 22px;
+  color: #010101;
+}
+.engine-info-sec .engine-common-div .engine-common-p {
+  font-family: var(--font-tstar-regular);
+  font-size: 18px;
+  line-height: 22px;
+  color: #010101;
+}
+.engine-info-sec .engine-common-div .engine-common-wrap div {
+  padding-bottom: 20px;
+}
+.engine-info-sec .engine-common-div .engine-common-wrap div p {
+  padding-bottom: 10px;
+}
+
+/* LG Devices Start  */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link {
+    width: 128px;
+  }
+.engine-left-img img {
+    width: 256px;
+  }
+  .specifications-tabs-section .slide-1-content {
+    top: 102px;
+  }
+  .imagespecification .engine-left-img img{
+      max-width:100%;
+  }
+}
+/* MD Devices Start  */
+@media (max-width: 991.2px) and (min-width: 768px) {
+.engine-common-div{
+    padding-left:30px;
+}
+  .specifications-tabs-section {
+    padding: 0;
+  }
+   .imagespecification .engine-left-img img{
+        max-width:100%;
+    }
+  .specifications-tabs-section .tab-wrapper .common-tabs-main .slick-arrow {
+    display: none !important;
+  }
+  .specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link.active {
+    background: #F3F3F5;
+    border-color: #303030;
+  }
+  .specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link.active .nav-link-p {
+    color: var(--text-color-black);
+  }
+
+  .specifications-tabs-section .specfication-wrapper {
+    padding-top: 100px;
+  }
+  .specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .cust-tab-pane-img {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+.engine-left-img {
+    width: 250px;
+    margin-bottom: 15px;
+    display:block;
+  }
+.engine-info-sec {
+    margin: 0;
+  }
+  .specifications-tabs-section .slide-1-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: unset;
+    right: unset;
+    justify-content: center;
+  }
+}
+/* SM & XS Devices Start  */
+@media (max-device-width: 767px) and (min-width: 320px) {
+.engine-common-div{
+    padding-left:30px;
+}
+  .specifications-tabs-section {
+    padding: 0;
+  }
+   .imagespecification .engine-left-img img{
+        max-width:100%;
+    }
+  .specifications-tabs-section .tab-wrapper .common-tabs-main .slick-arrow {
+    display: none !important;
+  }
+  .specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link.active {
+    background: #F3F3F5;
+    border-color: #303030;
+  }
+  .specifications-tabs-section .tab-wrapper .common-tabs-main .nav-item .nav-link.active .nav-link-p {
+    color: var(--text-color-black);
+  }
+
+  .specifications-tabs-section .specfication-wrapper {
+    padding-top: 100px;
+  }
+  .specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .cust-tab-pane-img {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+.engine-left-img {
+    width: 250px;
+    margin-bottom: 15px;
+  }
+.engine-info-sec {
+    margin: 0;
+  }
+  .specifications-tabs-section .slide-1-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: unset;
+    right: unset;
+    justify-content: center;
+  }
+  .specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .slide-1-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 50px;
+    bottom: -15%;
+  }
+  .specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .slide-1-content .slide-1-cta .btn {
+    padding: 12px 13px;
+    font-size: 14px;
+  }
+}
+/* SM Devices End Add Css in this media query to set on mobile landscape device */
+@media (max-width: 767px) and (min-width: 576px) {
+  .specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .slide-1-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 182px;
+    bottom: -18%;
+  }
+   .imagespecification .engine-left-img img{
+        max-width:100%;
+    }
+}

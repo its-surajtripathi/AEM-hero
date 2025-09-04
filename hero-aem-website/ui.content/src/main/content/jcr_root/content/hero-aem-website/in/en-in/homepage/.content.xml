@@ -1,0 +1,2059 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-13T11:37:01.506Z"
+        cq:lastModifiedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicated="{Date}2022-09-13T11:38:33.167Z"
+        cq:lastReplicated_publish="{Date}2022-09-13T11:38:33.167Z"
+        cq:lastReplicatedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicatedBy_publish="kiran.jaganmohan@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[hero-website:homepage/two-wheeler-company,hero-website:homepage/motorcycle-company-in-india,hero-website:homepage/best-bike-manufacturers,hero-website:homepage/best-two-wheeler-company]"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/homepage"
+        jcr:description="Hero MotoCorp is India’s leading two wheeler company with over 100 million two wheelers sold till date. Find out more about what makes Hero MotorCorp the #1 motorcycle company in India. Explore wide range of new motorcycles and scooters at heromotocorp.com"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="New Motorcycles and Scooters. Two Wheeler Manufacturers Company in India – Hero MotoCorp"
+        jcr:uuid="77e6694f-bc69-4dc9-9b3d-cd1143b9b881"
+        sling:resourceType="hero-aem-website/components/structure/homepage"
+        pageTitle="Homepage"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/header/master"
+                id="header"/>
+            <container
+                jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                layout="responsiveGrid">
+                <container
+                    cq:styleIds="[1660795084168]"
+                    jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid">
+                    <carousel
+                        jcr:lastModified="{Date}2022-09-12T14:18:23.009Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/carousel"
+                        carouselindicatorstyling="carousel-indicators"
+                        headline="Testing the heading"
+                        styling="right"
+                        textIsRich="[true,true,true,true]"
+                        variant="home">
+                        <herodetailswithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="Request Callback"
+                                btnlabel2="BOOK NOW"
+                                buttonalign="slide-1-content-left"
+                                imageAlt="xpulse4v"
+                                imageRef="/content/dam/hero-aem-website/in/banner/homepage/home-banner-1.jpg"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/xpulse-200-4v.html"
+                                mobimageRef="/content/dam/hero-aem-website/in/banner/homepage/2mob.jpg"
+                                styling="text-left"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="Request Callback"
+                                btnlabel2="BOOK NOW"
+                                buttonalign="slide-1-content-left"
+                                imageAlt="pleasure"
+                                imageRef="/content/dam/hero-aem-website/in/banner/homepage/home-banner-3.jpg"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/pleasure-plus-bs6.html"
+                                mobimageRef="/content/dam/hero-aem-website/in/banner/homepage/4mob.jpg"
+                                styling="text-left"
+                                styling1="text-bold"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="REQUEST CALLBACK"
+                                btnlabel2="BOOK NOW"
+                                buttonalign="slide-1-content-left"
+                                imageAlt="xpulse4v"
+                                imageRef="/content/dam/hero-aem-website/in/banner/homepage/home-banner-4.jpg"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/xpulse-200-4v.html"
+                                mobimageRef="/content/dam/hero-aem-website/in/banner/homepage/5mob.jpg"
+                                styling="text-left"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="REQUEST CALLBACK"
+                                btnlabel2="BOOK NOW"
+                                buttonalign="slide-1-content-left"
+                                imageAlt="boomwalifeeling"
+                                imageRef="/content/dam/hero-aem-website/in/banner/Desktop-Boombali-Corrected.png"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/xtreme-160r-bs6.html"
+                                mobimageRef="/content/dam/hero-aem-website/in/banner/Mobile-BoomWaaliFeeling.png"
+                                styling="text-left"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"/>
+                        </herodetailswithmap>
+                    </carousel>
+                </container>
+                <container_768148806
+                    cq:styleIds="[1660795119891]"
+                    jcr:created="{Date}2022-08-18T12:59:50.440+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-08-19T07:35:18.577Z"
+                    jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    addtnclass="container help-offer-container"
+                    layout="simple">
+                    <quicklink
+                        jcr:created="{Date}2022-08-08T07:47:36.611Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-10T07:39:29.364Z"
+                        jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/quicklink"
+                        headline="How Can We Help You?">
+                        <quicklinkdetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                imageAlt="book now"
+                                imageIconRef="/content/dam/hero-aem-website/brand/design/icons/tab-book-now-icon.svg"
+                                imageRef="/content/dam/hero-aem-website/brand/design/icons/tab-book-now-icon.svg"
+                                linkTo="https://eshop.heromotocorp.com/?utm_source=CWS&amp;utm_medium=Paid"
+                                quickLinkText="BOOK NOW"
+                                urltype="url"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                imageAlt="Configure Now"
+                                imageIconRef="/content/dam/hero-aem-website/brand/design/icons/tab-confiure-now-icon.svg"
+                                imageRef="/content/dam/hero-aem-website/brand/design/icons/tab-confiure-now-icon.svg"
+                                linkTo="https://virtualshowroom.heromotocorp.com/"
+                                quickLinkText="CONFIGURE NOW"
+                                urltype="url"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                imageAlt="request callback"
+                                imageIconRef="/content/dam/hero-aem-website/brand/design/icons/tab-request-callback-icon.svg"
+                                imageRef="/content/dam/hero-aem-website/brand/design/icons/tab-request-callback-icon.svg"
+                                linkTo="#requestCallBack"
+                                quickLinkText="REQUEST CALLBACK"
+                                urltype="modal"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                imageAlt="test ride"
+                                imageIconRef="/content/dam/hero-aem-website/brand/design/icons/tab-test-drive-icon.svg"
+                                imageRef="/content/dam/hero-aem-website/brand/design/icons/tab-test-drive-icon.svg"
+                                linkTo="#book-test-drive-nav"
+                                quickLinkText="TEST RIDE"
+                                urltype="url"
+                                wrapperclass="home-book-test-drive-btn"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                imageAlt="Exchange Bike"
+                                imageIconRef="/content/dam/hero-aem-website/brand/design/icons/tab-exchange-bike-icon.svg"
+                                imageRef="/content/dam/hero-aem-website/brand/design/icons/tab-exchange-bike-icon.svg"
+                                linkTo="https://www.wheelsoftrust.com/"
+                                quickLinkText="EXCHANGE BIKE"
+                                urltype="url"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                imageAlt="find a dealer"
+                                imageIconRef="/content/dam/hero-aem-website/brand/design/icons/tab-delear-icon.svg"
+                                imageRef="/content/dam/hero-aem-website/brand/design/icons/tab-delear-icon.svg"
+                                linkTo="/en-in/reach-us/find-hero-bike-dealers.html"
+                                quickLinkText="FIND A DEALER"
+                                urltype="url"/>
+                        </quicklinkdetails>
+                    </quicklink>
+                    <adcarousel
+                        jcr:created="{Date}2022-08-09T19:01:25.132Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-11T06:17:54.598Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adcarousel"
+                        check="true"
+                        heading="OFFERS">
+                        <adbean jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                bgStyle="btn-white"
+                                btnlabel="KNOW MORE"
+                                imageAlt="wheeloftrust"
+                                imageRef="/content/dam/hero-aem-website/in/banner/Frame 4img3.png"
+                                linkTo1="https://www.wheelsoftrust.com/"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                bgStyle="btn-white"
+                                btnlabel="KNOW MORE"
+                                imageAlt="wheels of trust"
+                                imageRef="/content/dam/hero-aem-website/in/banner/Frame 3img2.png"
+                                linkTo1="https://www.wheelsoftrust.com/"/>
+                        </adbean>
+                    </adcarousel>
+                </container_768148806>
+                <container_1466830229
+                    cq:styleIds="[1660795121046]"
+                    jcr:created="{Date}2022-08-18T12:53:18.431+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-08-18T13:26:26.593+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <generictab
+                        jcr:created="{Date}2022-07-27T10:22:08.284+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-06T11:45:04.247Z"
+                        jcr:lastModifiedBy="palak.paisal@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/generictab"
+                        explorebgimg="/content/dam/hero-aem-website/in/products/explore-products/explore-products-bg.png"
+                        tabheading="&lt;h3>Explore Our Products&lt;/h3>&#xd;&#xa;&lt;p style=&quot;text-align: center;&quot;>Checkout a range of our two wheelers comprising scooters and bikes with exciting features and latest technology.&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                        textIsRich="true"
+                        variant="home">
+                        <tab-0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagebanner
+                                jcr:created="{Date}2022-07-27T10:24:53.820+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-09-13T07:50:29.272Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagebanner">
+                                <imageitems jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="PASSION XTEC"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/new-releases/01.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/new-release/1.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/executive/passion-xtec"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="XPULSE 200 4V"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/new-releases/2.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/new-release/2.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/performance/xpulse-200-4v"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="DESTINI 125 XTEC"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/new-releases/3.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/new-release/3.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/scooters/destini-125-xtec"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="GLAMOUR XTEC"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/new-releases/4.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/new-release/4.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/executive/glamour-xtec"/>
+                                </imageitems>
+                            </imagebanner>
+                        </tab-0>
+                        <tab-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <image
+                                jcr:created="{Date}2022-07-28T10:50:52.474+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-07-28T10:52:12.495+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/image"
+                                alt="hotspot"
+                                altValueFromDAM="false"
+                                displayPopupTitle="true"
+                                fileReference="/content/dam/hero-aem-website/in/hotspot/xpulse-200-4v-feature.png"
+                                imageMap="\[circle(579,454,20)&quot;https://techveduat.com/Hero-Motocorop-html/xpulse-200-4v.html&quot;|&quot;&quot;|&quot;wheels&quot;][circle(489,254,20)&quot;https://techveduat.com/Hero-Motocorop-html/xpulse-200-4v.html&quot;|&quot;&quot;|&quot;headlight&quot;][circle(603,401,20)&quot;https://techveduat.com/Hero-Motocorop-html/xpulse-200-4v.html&quot;|&quot;&quot;|&quot;spokes&quot;][circle(343,425,20)&quot;https://techveduat.com/Hero-Motocorop-html/xpulse-200-4v.html&quot;|&quot;&quot;|&quot;engine&quot;]"
+                                isDecorative="false"
+                                titleValueFromDAM="true"/>
+                            <imagebanner_copy
+                                jcr:created="{Date}2022-07-27T10:24:53.820+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-09-13T08:38:00.524Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagebanner">
+                                <imageitems jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="XTREME 200S"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/performance/2.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/performacne/2.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/performance/xtreme-200s"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="XTREME 160R"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/new-releases/160R.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/performacne/1.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/performance/xtreme-160r"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="XPULSE 200 4V"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/performance/4.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/performacne/4.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/performance/xpulse-200-4v"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="XPULSE 200T"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/performance/5.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/performacne/5.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/performance/xpulse-200t"/>
+                                </imageitems>
+                            </imagebanner_copy>
+                        </tab-3>
+                        <tab-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagebanner_copy
+                                jcr:created="{Date}2022-07-27T10:24:53.820+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-09-11T08:22:27.128Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagebanner">
+                                <imageitems jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="SPLENDOR+"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/practical/2.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/practical/2.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/practical/splendor-plus"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="SPLENDOR+ XTEC"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/practical/1.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/practical/1.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/practical/splendor-plus-xtec"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="HF DELUXE"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/practical/HF Deluxe.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/city/explore-products/HFDeluxeflipmob.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/practical/hf-deluxe"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="HF 100"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/practical/HF 100.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/practical/6.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/practical/hf-100"/>
+                                </imageitems>
+                            </imagebanner_copy>
+                        </tab-1>
+                        <tab-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagebanner_copy_877488102
+                                jcr:created="{Date}2022-07-27T10:24:53.820+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-09-12T05:25:48.103Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagebanner">
+                                <imageitems jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="GLAMOUR"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/executive/3.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/executive/3.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/executive/glamour"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="GLAMOUR CANVAS"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/executive/2.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/executive/2.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/executive/glamour-canvas"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="PASSION XTEC"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/executive/Passion XTEC with Shadow.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/executive/1.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/executive/passion-xtec"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="SUPER SPLENDOR"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/executive/4.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/executive/4.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/executive/super-splendor"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="PASSION PRO"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/executive/5.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/executive/5.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/executive/passion-pro"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="GLAMOUR XTEC"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/executive/6.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/executive/6.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/motorcycles/executive/glamour-xtec"/>
+                                </imageitems>
+                            </imagebanner_copy_877488102>
+                        </tab-2>
+                        <tab-4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <imagebanner_copy
+                                jcr:created="{Date}2022-07-27T10:24:53.820+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-09-13T08:41:07.249Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagebanner">
+                                <imageitems jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="Maestro Edge 110"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/scooter/1.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/scooter/1.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/scooters/maestro-edge-110.html"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="Pleasure+ Xtec"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/scooter/2.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/scooter/2.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/scooters/pleasure-plus-xtec"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="Destini 125 Xtec"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/scooter/3.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/scooter/3.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/scooters/destini-125-xtec"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        bikename="Maestro Edge 125"
+                                        desktopimage="/content/dam/hero-aem-website/in/products/explore-products/new-releases/Maestro110.png"
+                                        mobileimage="/content/dam/hero-aem-website/in/products/explore-products/mobile/scooter/4.png"
+                                        redirectionurl="/content/hero-aem-website/in/en-in/scooters/maestro-edge-125"/>
+                                </imageitems>
+                            </imagebanner_copy>
+                        </tab-4>
+                        <tabitems jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                title="new release"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                title="PRACTICAL"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                title="EXECUTIVE"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                title="PERFORMANCE"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                title="Scooters"/>
+                        </tabitems>
+                    </generictab>
+                </container_1466830229>
+                <container_1351549374
+                    cq:styleIds="[1660795122094]"
+                    jcr:created="{Date}2022-08-17T04:26:54.883Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-17T04:27:50.345Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="book-test-drive-nav">
+                    <booktestride
+                        jcr:created="{Date}2022-08-08T07:10:29.353Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:45:00.912Z"
+                        jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/booktestride"
+                        acknowledgemsg="&lt;h3>Thank You!&lt;/h3>&#xd;&#xa;&lt;p>&lt;img src=&quot;/content/dam/hero-aem-website/brand/design/icons/thankyou-icon.svg&quot; alt=&quot;&quot; />&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgfail="&lt;h3>Sorry&lt;/h3>&#xd;&#xa;"
+                        acknowledgemsgfailsubtitle="&lt;p>An error Occured. Please try after sometime&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgsubtitle="&lt;p>We will connect with you soon.&lt;/p>&#xd;&#xa;"
+                        buttonlabel="Submit"
+                        citylabel="Select City"
+                        cityvalmsg="select a city"
+                        defaultproduct="/content/hero-aem-website/in/en-in/motorcycles/practical/hf-100"
+                        enterOtplabel="Enter OTP"
+                        ispopup="false"
+                        loadimgpath="/content/dam/hero-aem-website/brand/design/icons/form-submit-loader.svg"
+                        mobilelabel="Mobile No."
+                        mobilevalformmsg="Enter correct mobile number"
+                        mobilevalmsg="Please Enter a valid Mobile Number"
+                        name="Name"
+                        nameformvalmsg="Invalid Name"
+                        namereqvalmsg="The Name is required"
+                        otpresultmsg="Incorrect OTP"
+                        otpvalmsg="OTP is required"
+                        resendOtplabel="Resend OTP"
+                        sendOtplabel="Send OTP"
+                        statelabel="Select State"
+                        statevalmsg="select a state"
+                        subtitle="&lt;p>Take A Hero Ride And Experience The Thrill.&lt;/p>&#xd;&#xa;"
+                        textIsRich="[true,true,true,true,true,true,true]"
+                        title="&lt;h3>BOOK A TEST RIDE NOW&lt;/h3>&#xd;&#xa;"
+                        variationtype="homepage"
+                        vehiclelabel="Vehicle"
+                        vehiclevalmsg="Select a vehicle"/>
+                </container_1351549374>
+                <container_2013716975
+                    cq:styleIds="[1660795123209]"
+                    jcr:created="{Date}2022-08-18T12:59:50.440+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-08-18T12:59:50.440+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <bootstraplayout
+                        jcr:created="{Date}2022-08-10T09:08:31.205Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-19T12:10:49.575Z"
+                        jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/bootstraplayout"
+                        classes="wrapper">
+                        <container-item0
+                            jcr:lastModified="{Date}2022-08-20T04:51:21.530Z"
+                            jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container"
+                            addtnclass="d-flex flex-md-column flex-row align-items-md-start mb-3 mb-md-0"
+                            layout="simple">
+                            <bootstraplayout
+                                jcr:created="{Date}2022-08-23T01:48:21.397Z"
+                                jcr:createdBy="kiran.jaganmohan@accenture.com"
+                                jcr:lastModified="{Date}2022-08-23T01:48:55.966Z"
+                                jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/bootstraplayout">
+                                <columnlayouts jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-12"
+                                        medium="col-md-12"
+                                        small="col-12"
+                                        xlarge="col-xl-12"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-12"
+                                        medium="col-md-12"
+                                        small="col-12"
+                                        xlarge="col-xl-12"/>
+                                </columnlayouts>
+                                <container-item1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <text
+                                        jcr:created="{Date}2022-08-10T09:10:49.930Z"
+                                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-29T13:44:12.748Z"
+                                        jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/text"
+                                        text="&lt;p>Leading with innovation, Hero MotoCorp is at the forefront of providing mobility to the aspirations of millions around the world.&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                                        textIsRich="true"/>
+                                    <button
+                                        jcr:created="{Date}2022-08-23T02:43:29.241Z"
+                                        jcr:createdBy="kiran.jaganmohan@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-25T11:25:52.905Z"
+                                        jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Know More "
+                                        sling:resourceType="hero-aem-website/components/content/button"
+                                        addtnclass="d-md-flex align-item-center know-more"
+                                        imagepath="/content/dam/hero-aem-website/brand/design/icons/href-right-icon.svg"
+                                        linkTarget="_self"
+                                        linkURL="/en-in/about-us.php"/>
+                                </container-item1>
+                                <container-item0
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <textimage
+                                        jcr:created="{Date}2022-08-23T01:49:24.851Z"
+                                        jcr:createdBy="kiran.jaganmohan@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-29T13:43:46.713Z"
+                                        jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/textimage"
+                                        addtnclass="hero-log img-fluid mb-0 mr-3 mr-md-0 mb-md-3"
+                                        addtntitleclass="joy-ride-heading mb-0 mb-md-3"
+                                        alt="History"
+                                        altValueFromDAM="false"
+                                        displayPopupTitle="true"
+                                        fileReference="/content/dam/hero-aem-website/in/design/icons/hero-symbol-icon.svg"
+                                        imageFromPageImage="false"
+                                        isDecorative="false"
+                                        linkTarget="_self"
+                                        title="Manufacturing Happiness Since 1985"
+                                        titleValueFromDAM="true"
+                                        type="h3"/>
+                                </container-item0>
+                            </bootstraplayout>
+                        </container-item0>
+                        <bootstraplayout
+                            jcr:created="{Date}2022-08-19T12:13:39.464Z"
+                            jcr:createdBy="kiran.jaganmohan@accenture.com"
+                            jcr:lastModified="{Date}2022-08-19T12:13:39.464Z"
+                            jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/bootstraplayout"/>
+                        <container-item1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container"
+                            addtnclass="d-flex align-items-center justify-content-center">
+                            <statsdata_copy
+                                jcr:created="{Date}2022-08-04T10:09:32.690Z"
+                                jcr:createdBy="aditya.l.srivastava@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T14:42:37.975Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/statsdata"
+                                descriptionText="Hero MotoCorp is India's leading two wheeler company, which has been providing customers with an excellent range of two wheelers that ensure both style and comfort. "
+                                headingText="Providing Joyride Since 1884"
+                                knowmoreText="Know More"
+                                logo="/content/dam/hero-aem-website/in/design/icons/hero-symbol-icon.svg"
+                                righticon="/content/dam/hero-aem-website/in/design/icons/href-right-icon.svg"
+                                sdimage="/content/dam/hero-aem-website/in/design/icons/joy-ride-img.png"
+                                textIsRich="[true,true,true,true,true,true,true,true,true,true,true,true]">
+                                <quicklinkdetails jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        bgcolor="nofill btn-white"
+                                        titleText="&lt;h4>#1&lt;/h4>&#xd;&#xa;"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        bgcolor="nofill btn-white"
+                                        subheading="COUNTRIES"
+                                        titleText="40+"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        bgcolor="nofill btn-white"
+                                        subheading="SATISFIED CUSTOMERS&lt;br />&#xd;&#xa;"
+                                        titleText="&lt;h4>&lt;span class=&quot;decrease-font&quot;>100 MN&lt;/span>&lt;/h4>&#xd;&#xa;"/>
+                                </quicklinkdetails>
+                                <column2 jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        bgcolor="bg-red"
+                                        subheading1="TWO-WHEELER MANUFACTURER"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        bgcolor="nofill btn-white"
+                                        subheading1="CUSTOMER TOUCH POINTS"
+                                        titleText1="9000"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        bgcolor="nofill btn-white"
+                                        subheading1="YEARS OF&lt;br />&#xd;&#xa;EXCELLENT SERVICE"
+                                        titleText1="37"/>
+                                </column2>
+                            </statsdata_copy>
+                            <image
+                                jcr:created="{Date}2022-08-10T09:11:45.103Z"
+                                jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:lastModified="{Date}2022-08-10T09:13:11.337Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/image"
+                                alt="joy-ride"
+                                altValueFromDAM="false"
+                                displayPopupTitle="true"
+                                fileReference="/content/dam/hero-aem-website/in/design/icons/joy-ride-img.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                titleValueFromDAM="true"/>
+                        </container-item1>
+                        <columnlayouts jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                class="joy-ride-heading"
+                                large="col-lg-4"
+                                medium="col-md-4"
+                                small="col-12"
+                                xlarge="col-xl-4"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                large="col-lg-8"
+                                medium="col-md-8"
+                                small="col-12"
+                                xlarge="col-xl-8"/>
+                        </columnlayouts>
+                    </bootstraplayout>
+                </container_2013716975>
+                <container_1815841645
+                    cq:styleIds="[1660795283944]"
+                    jcr:created="{Date}2022-08-06T21:20:44.202Z"
+                    jcr:createdBy="kiran.jaganmohan@accenture.com"
+                    jcr:lastModified="{Date}2022-08-18T16:16:26.194+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    addtnclass="container-fluid">
+                    <bootstraplayout
+                        jcr:created="{Date}2022-08-10T07:38:04.331Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-12T10:37:04.202Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/bootstraplayout"
+                        classes="be-hero-main py-4 mb-lg-4">
+                        <container-item0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <text
+                                jcr:created="{Date}2022-08-10T07:46:59.332Z"
+                                jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:lastModified="{Date}2022-08-10T13:57:43.678Z"
+                                jcr:lastModifiedBy="preeti.nalawade@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/text"
+                                text="&lt;h3 style=&quot;text-align: center;&quot;>&lt;span class=&quot;font-size-35&quot;>&lt;/span>Be a HERO with a HERO&lt;/h3>&#xd;&#xa;&lt;p style=&quot;text-align: center;&quot;>Hero means passion, passion for excellence, passion for great rides, and we always strive to give you best.&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"/>
+                        </container-item0>
+                        <columnlayouts jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                class="section-heading"
+                                large="col-lg-12"
+                                medium="col-md-12"
+                                small="col-12"
+                                xlarge="col-xl-12"/>
+                        </columnlayouts>
+                    </bootstraplayout>
+                    <bootstraplayout_copy
+                        jcr:created="{Date}2022-08-09T13:52:06.291Z"
+                        jcr:createdBy="aditya.l.srivastava@accenture.com"
+                        jcr:lastModified="{Date}2022-08-24T16:36:27.591Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/bootstraplayout"
+                        classes="container">
+                        <container-item0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <tileteaser_copy
+                                jcr:created="{Date}2022-08-04T09:30:13.009Z"
+                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                jcr:lastModified="{Date}2022-09-13T05:21:28.624Z"
+                                jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                fileReference="/content/dam/hero-aem-website/in/teaser/goodlife/Glhome.jpg"
+                                height="620"
+                                layoutvariation="layoutvariation1"
+                                linkto="/en-in/goodlife/"
+                                subtitle="&lt;p>Specialized Loyality Program&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"
+                                title="GOODLIFE"/>
+                        </container-item0>
+                        <container-item1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <bootstraplayout_copy
+                                jcr:created="{Date}2022-08-11T12:56:42.317Z"
+                                jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:lastModified="{Date}2022-08-22T17:58:48.195Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/bootstraplayout">
+                                <container-item0
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <tileteaser_copy
+                                        jcr:created="{Date}2022-08-04T09:37:01.795Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-09-10T12:11:47.533Z"
+                                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                        fileReference="/content/dam/hero-aem-website/in/teaser/geniune-parts/G-prt-2.png"
+                                        height="300"
+                                        layoutvariation="layoutvariation1"
+                                        linkto="https://eshop.heromotocorp.com/spares.html"
+                                        subtitle="&lt;p>Be Smart. Buy Genuine&lt;/p>&#xd;&#xa;"
+                                        textIsRich="true"
+                                        title="GENIUNE PARTS"/>
+                                </container-item0>
+                                <container-item1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <tileteaser_81905252_
+                                        jcr:created="{Date}2022-08-04T09:39:56.958Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-09-10T12:06:14.701Z"
+                                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                        fileReference="/content/dam/hero-aem-website/in/teaser/geniune-parts/accessories-helmet.jpg"
+                                        height="300"
+                                        layoutvariation="layoutvariation1"
+                                        linkto="https://eshop.heromotocorp.com/accessories-miscellaneous.html"
+                                        subtitle="&lt;p>Ride Your Style&lt;/p>&#xd;&#xa;"
+                                        textIsRich="true"
+                                        title="ACCESSORIES"/>
+                                </container-item1>
+                                <columnlayouts jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        class="mb-4 tileteaser2"
+                                        large="col-lg-12"
+                                        medium="col-md-6"
+                                        small="col-6"
+                                        xlarge="col-xl-12"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        class="mb-4 tileteaser3"
+                                        large="col-lg-12"
+                                        medium="col-md-6"
+                                        small="col-6"
+                                        xlarge="col-xl-12"/>
+                                </columnlayouts>
+                            </bootstraplayout_copy>
+                        </container-item1>
+                        <container-item2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <tileteaser_copy_copy
+                                jcr:created="{Date}2022-08-04T09:41:57.704Z"
+                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                jcr:lastModified="{Date}2022-09-12T07:14:08.319Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                fileReference="/content/dam/hero-aem-website/in/teaser/joyride-program/joyride-home-2.png"
+                                height="620"
+                                layoutvariation="layoutvariation1"
+                                linkto="/en-in/hero-joyride/"
+                                subtitle="&lt;p>Experience The Care&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"
+                                title="JOYRIDE PROGRAM"/>
+                        </container-item2>
+                        <tileteaser_copy
+                            jcr:created="{Date}2022-08-04T09:41:57.704Z"
+                            jcr:createdBy="gausiya.latif.momin@accenture.com"
+                            jcr:lastModified="{Date}2022-08-04T09:42:42.731Z"
+                            jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/tileteaser"
+                            fileReference="/content/dam/hero-aem-website/in/teaser/be-a-hero-img4.png"
+                            height="619"
+                            layoutvariation="layoutvariation1"
+                            linkto="#"
+                            subtitle="&lt;p>Innovation&amp;nbsp;Innovation&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"
+                            title="SUSTAINABILITY"/>
+                        <columnlayouts jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                large="col-lg-5"
+                                medium="col-md-12"
+                                small="col-12"
+                                xlarge="col-xl-5"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                class="flex-row"
+                                large="col-lg-3"
+                                medium="col-md-12"
+                                small="col-12"
+                                xlarge="col-xl-3"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                class="less-top-margin"
+                                large="col-lg-4"
+                                medium="col-md-12"
+                                small="col-12"
+                                xlarge="col-xl-4"/>
+                        </columnlayouts>
+                    </bootstraplayout_copy>
+                </container_1815841645>
+                <container_1863073360
+                    cq:styleIds="[1660795290818]"
+                    jcr:created="{Date}2022-08-18T13:02:43.720+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-08-18T13:02:43.720+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <generictab
+                        jcr:created="{Date}2022-08-10T08:01:32.784Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-11T12:51:20.385Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/generictab"
+                        textIsRich="true"
+                        variant="home">
+                        <tab-0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <bootstraplayout_copy
+                                jcr:created="{Date}2022-08-09T14:30:01.110Z"
+                                jcr:createdBy="aditya.l.srivastava@accenture.com"
+                                jcr:lastModified="{Date}2022-08-19T08:27:39.697Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/bootstraplayout"
+                                classes="event-section-tab-content">
+                                <container-item0
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <tileteaser_copy
+                                        jcr:created="{Date}2022-08-04T09:58:35.053Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-09-11T10:17:52.206Z"
+                                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                        fileReference="/content/dam/hero-aem-website/in/teaser/media/CIT.jpg"
+                                        height="620"
+                                        layoutvariation="layoutvariation2"
+                                        linkto="/en-in/in-the-press.html"
+                                        subtitle="&lt;p>In the Press&lt;/p>&#xd;&#xa;"
+                                        textIsRich="true"
+                                        title="COMPANY NEWS"/>
+                                </container-item0>
+                                <container-item1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <bootstraplayout_copy
+                                        jcr:created="{Date}2022-08-11T17:04:30.888Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-09-09T05:55:23.721Z"
+                                        jcr:lastModifiedBy="prajwala.vemula@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/bootstraplayout">
+                                        <container-item0
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-11T10:13:19.779Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/media/LatestDevelopments.jpg"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/press-releases.html"
+                                                styleclass="new-release-tile"
+                                                subtitle="&lt;p>Press Release&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="LATEST DEVELOPMENT">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item0>
+                                        <container-item1
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_9519
+                                                jcr:created="{Date}2022-08-04T10:03:26.009Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-07T09:11:44.559Z"
+                                                jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/media/Hero_Media_Multimedia.png"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/product-pictures.html"
+                                                styleclass="new-release-tile-2"
+                                                subtitle="&lt;p>Product Pictures &amp;amp; Videos&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="MULTIMEDIA"/>
+                                        </container-item1>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="12"/>
+                                        </cq:responsive>
+                                        <columnlayouts jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding "
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                        </columnlayouts>
+                                    </bootstraplayout_copy>
+                                </container-item1>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="NaN"
+                                        width="NaN"/>
+                                </cq:responsive>
+                                <columnlayouts jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-6"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-6"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-6"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-6"/>
+                                </columnlayouts>
+                            </bootstraplayout_copy>
+                        </tab-0>
+                        <tab-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <bootstraplayout_copy
+                                jcr:created="{Date}2022-08-09T14:30:01.110Z"
+                                jcr:createdBy="aditya.l.srivastava@accenture.com"
+                                jcr:lastModified="{Date}2022-08-19T08:26:56.968Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/bootstraplayout"
+                                classes="event-section-tab-content">
+                                <container-item0
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <tileteaser_copy
+                                        jcr:created="{Date}2022-08-04T09:58:35.053Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-09-10T10:53:53.194Z"
+                                        jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                        fileReference="/content/dam/hero-aem-website/in/teaser/investors/Pic1 - IR Landing Page  -Xtreme Stealth 160R_W Rider_02.tif"
+                                        height="620"
+                                        layoutvariation="layoutvariation2"
+                                        linkto="/en-in/investors.html"
+                                        subtitle="&lt;p>Explore Hero Investor Zone&lt;/p>&#xd;&#xa;"
+                                        textIsRich="true"
+                                        title="INVESTOR RELATIONS"/>
+                                </container-item0>
+                                <container-item1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <bootstraplayout_copy
+                                        jcr:created="{Date}2022-08-11T17:04:30.888Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-19T10:06:16.710Z"
+                                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/bootstraplayout">
+                                        <container-item0
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-12T09:43:14.925Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                addtnclass="teaser-test-more"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/investors/Pic2 - FInancial Repprts Page HeroXpulse_4v.tif"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/investors/quarterly-results.html"
+                                                styleclass="new-release-tile more-text"
+                                                subtitle="&lt;p>Explore Annual Reports, Quarterly&amp;nbsp; Reports &amp;amp; Presentations&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="Financial Results &amp; Presentations">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item0>
+                                        <container-item1
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_9519
+                                                jcr:created="{Date}2022-08-04T10:03:26.009Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-10T10:54:17.378Z"
+                                                jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/investors/Pic 3 - New Releases.JPG"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/investors/annual-reports.html"
+                                                styleclass="new-release-tile-2"
+                                                subtitle="&lt;p>Explore FY21-22 and previous years Annual Reports&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="Annual Reports"/>
+                                            <container
+                                                jcr:created="{Date}2022-08-16T12:34:18.944Z"
+                                                jcr:createdBy="preeti.nalawade@accenture.com"
+                                                jcr:lastModified="{Date}2022-08-16T12:34:18.944Z"
+                                                jcr:lastModifiedBy="preeti.nalawade@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/container">
+                                                <generic_text
+                                                    jcr:created="{Date}2022-08-16T12:34:24.400Z"
+                                                    jcr:createdBy="preeti.nalawade@accenture.com"
+                                                    jcr:lastModified="{Date}2022-08-16T12:34:33.947Z"
+                                                    jcr:lastModifiedBy="preeti.nalawade@accenture.com"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="hero-aem-website/components/content/generic-text"
+                                                    text="&lt;p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/p>&#xd;&#xa;"
+                                                    textIsRich="true"/>
+                                            </container>
+                                        </container-item1>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="12"/>
+                                        </cq:responsive>
+                                        <columnlayouts jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                        </columnlayouts>
+                                    </bootstraplayout_copy>
+                                </container-item1>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="12"/>
+                                </cq:responsive>
+                                <columnlayouts jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-6"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-6"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-6"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-6"/>
+                                </columnlayouts>
+                            </bootstraplayout_copy>
+                        </tab-1>
+                        <tab-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <bootstraplayout_copy_569733169
+                                jcr:created="{Date}2022-08-09T14:30:01.110Z"
+                                jcr:createdBy="aditya.l.srivastava@accenture.com"
+                                jcr:lastModified="{Date}2022-08-17T10:52:00.702Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/bootstraplayout"
+                                classes="event-section-tab-content">
+                                <container-item0
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <bootstraplayout_copy
+                                        jcr:created="{Date}2022-08-11T17:04:30.888Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-17T10:44:59.101Z"
+                                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/bootstraplayout">
+                                        <container-item0
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-06T11:47:42.391Z"
+                                                jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                displayPopupTitle="false"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/sustainability/hero-diversity-equity-Inclusion.jpg"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkTarget="_self"
+                                                linkto="/en-in/investors/sustainability-report.html"
+                                                styleclass="new-release-tile"
+                                                textIsRich="true"
+                                                title="Diversity, Equity &amp; Inclusion"
+                                                titleValueFromDAM="false">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item0>
+                                        <container-item1
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_9519
+                                                jcr:created="{Date}2022-08-04T10:03:26.009Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-06T11:48:10.693Z"
+                                                jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                displayPopupTitle="false"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/sustainability/hero-climate-change.png"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkTarget="_self"
+                                                linkto="/en-in/investors/sustainability-report.html"
+                                                styleclass="new-release-tile-2"
+                                                textIsRich="true"
+                                                title="Climate Change"
+                                                titleValueFromDAM="false"/>
+                                        </container-item1>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="12"/>
+                                        </cq:responsive>
+                                        <columnlayouts jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                        </columnlayouts>
+                                    </bootstraplayout_copy>
+                                </container-item0>
+                                <container-item1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <bootstraplayout_copy
+                                        jcr:created="{Date}2022-08-11T17:04:30.888Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-24T16:37:01.406Z"
+                                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/bootstraplayout">
+                                        <container-item0
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-06T11:47:53.171Z"
+                                                jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                displayPopupTitle="false"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/sustainability/hero-heath-safety-well-being.jpg"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkTarget="_self"
+                                                linkto="/en-in/investors/sustainability-report.html"
+                                                styleclass="new-release-tile"
+                                                textIsRich="true"
+                                                title="Safety &amp; Well-being"
+                                                titleValueFromDAM="false">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item0>
+                                        <container-item1
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_9519
+                                                jcr:created="{Date}2022-08-04T10:03:26.009Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-06T11:48:19.714Z"
+                                                jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                displayPopupTitle="false"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/sustainability/ValueChainSustainability.jpg"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkTarget="_self"
+                                                linkto="/en-in/investors/sustainability-report.html"
+                                                styleclass="new-release-tile-2"
+                                                textIsRich="true"
+                                                title="Value chain sustainability"
+                                                titleValueFromDAM="false"/>
+                                        </container-item1>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="12"/>
+                                        </cq:responsive>
+                                        <columnlayouts jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding less-top-margin"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding less-top-margin"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                        </columnlayouts>
+                                    </bootstraplayout_copy>
+                                    <container
+                                        jcr:created="{Date}2022-08-16T12:30:57.849Z"
+                                        jcr:createdBy="preeti.nalawade@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-16T12:30:57.849Z"
+                                        jcr:lastModifiedBy="preeti.nalawade@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/container">
+                                        <generic_text
+                                            jcr:created="{Date}2022-08-16T12:31:27.099Z"
+                                            jcr:createdBy="preeti.nalawade@accenture.com"
+                                            jcr:lastModified="{Date}2022-08-16T12:31:36.209Z"
+                                            jcr:lastModifiedBy="preeti.nalawade@accenture.com"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/content/generic-text"
+                                            text="&lt;p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                                            textIsRich="true"/>
+                                    </container>
+                                </container-item1>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="12"/>
+                                </cq:responsive>
+                                <columnlayouts jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-6"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-6"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-6"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-6"/>
+                                </columnlayouts>
+                            </bootstraplayout_copy_569733169>
+                        </tab-3>
+                        <tab-4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <bootstraplayout_copy
+                                jcr:created="{Date}2022-08-09T14:30:01.110Z"
+                                jcr:createdBy="aditya.l.srivastava@accenture.com"
+                                jcr:lastModified="{Date}2022-08-30T07:30:51.802Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/bootstraplayout"
+                                classes="event-section-tab-content">
+                                <container_item1_copy
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <bootstraplayout_copy
+                                        jcr:created="{Date}2022-08-11T17:04:30.888Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-19T10:09:31.973Z"
+                                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/bootstraplayout">
+                                        <container-item0
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-08-19T10:09:12.756Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                explore="Explore"
+                                                fileIcon="/content/dam/hero-aem-website/brand/design/icons/white-right-icon.svg"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/event-2.jpg"
+                                                height="315"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/csr-awards.html"
+                                                styleclass="new-release-tile"
+                                                subtitle="&lt;p>Know about latest launch&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="CSR AWARDS">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item0>
+                                        <container-item1
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_9519
+                                                jcr:created="{Date}2022-08-04T10:03:26.009Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-08-19T10:09:21.095Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                explore="Explore"
+                                                fileIcon="/content/dam/hero-aem-website/brand/design/icons/white-right-icon.svg"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/event-3.jpg"
+                                                height="312"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/csr-we-care.php#VidGallery"
+                                                styleclass="new-release-tile-2"
+                                                subtitle="&lt;p>Find out upcoming program&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="CSR Gallery"/>
+                                        </container-item1>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="12"/>
+                                        </cq:responsive>
+                                        <columnlayouts jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                        </columnlayouts>
+                                    </bootstraplayout_copy>
+                                </container_item1_copy>
+                                <container-item0
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <bootstraplayout_copy
+                                        jcr:created="{Date}2022-08-11T17:04:30.888Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-09-09T05:53:10.720Z"
+                                        jcr:lastModifiedBy="prajwala.vemula@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/bootstraplayout">
+                                        <container-item0
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-11T10:14:24.637Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/csr/wecare.jpg"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/csr-we-care.html"
+                                                styleclass="new-release-tile"
+                                                textIsRich="true"
+                                                title="#BeARoadHero Campaign">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item0>
+                                        <container-item1
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-09T04:47:11.040Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/csr/HeroForHumanity.jpg"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/csr-we-care.html"
+                                                styleclass="new-release-tile-2"
+                                                textIsRich="true"
+                                                title="Hero For Humanity">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item1>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="12"/>
+                                        </cq:responsive>
+                                        <container-item2
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-07T08:38:55.207Z"
+                                                jcr:lastModifiedBy="palak.paisal@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/csr/BioDiversity.jpg"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/csr-we-care.html"
+                                                styleclass="new-release-tile"
+                                                textIsRich="true"
+                                                title=" Aravalli BioDiversity Park, Gurgaon">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item2>
+                                        <container-item3
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-09T04:47:18.266Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/csr/Delhipolice.jpg"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/csr-we-care.html"
+                                                styleclass="new-release-tile-2"
+                                                textIsRich="true"
+                                                title=" Mobility Support">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item3>
+                                        <columnlayouts jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-6"
+                                                medium="col-md-6"
+                                                small="col-6"
+                                                xlarge="col-xl-6"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding "
+                                                large="col-lg-6"
+                                                medium="col-md-6"
+                                                small="col-6"
+                                                xlarge="col-xl-6"/>
+                                            <item2
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding less-top-margin"
+                                                large="col-lg-6"
+                                                medium="col-md-6"
+                                                small="col-6"
+                                                xlarge="col-xl-6"/>
+                                            <item3
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding less-top-margin"
+                                                large="col-lg-6"
+                                                medium="col-md-6"
+                                                small="col-6"
+                                                xlarge="col-xl-6"/>
+                                        </columnlayouts>
+                                    </bootstraplayout_copy>
+                                </container-item0>
+                                <container-item1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <bootstraplayout_copy
+                                        jcr:created="{Date}2022-08-11T17:04:30.888Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-24T16:41:25.739Z"
+                                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/bootstraplayout">
+                                        <container-item0
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-08-22T09:20:13.859Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                explore="Explore"
+                                                fileIcon="/content/dam/hero-aem-website/brand/design/icons/white-right-icon.svg"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/csr/Image-2- Hero For Humanity.jpg"
+                                                height="315"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/csr-we-care.html"
+                                                styleclass="new-release-tile"
+                                                subtitle="&lt;p>Supporting Covide affected families&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="Hero For Humanity">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item0>
+                                        <container-item1
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_9519
+                                                jcr:created="{Date}2022-08-04T10:03:26.009Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-08-22T09:21:44.428Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                explore="Explore"
+                                                fileIcon="/content/dam/hero-aem-website/brand/design/icons/white-right-icon.svg"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/csr/Image-4-Handing over Scooters to Delhi police.jpg"
+                                                height="312"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="/en-in/csr-we-care.html"
+                                                styleclass="new-release-tile-2"
+                                                subtitle="&lt;p>providing&amp;nbsp; mobility support to Various Govt. Agencies&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="Mobility Support"/>
+                                        </container-item1>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="12"/>
+                                        </cq:responsive>
+                                        <columnlayouts jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding less-top-margin"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding less-top-margin"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                        </columnlayouts>
+                                    </bootstraplayout_copy>
+                                </container-item1>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="NaN"
+                                        width="NaN"/>
+                                </cq:responsive>
+                                <columnlayouts jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-12"
+                                        medium="col-md-12"
+                                        small="col-12"
+                                        xlarge="col-xl-12"/>
+                                </columnlayouts>
+                            </bootstraplayout_copy>
+                        </tab-4>
+                        <tab-5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <bootstraplayout_copy
+                                jcr:created="{Date}2022-08-09T14:30:01.110Z"
+                                jcr:createdBy="aditya.l.srivastava@accenture.com"
+                                jcr:lastModified="{Date}2022-08-19T08:28:39.221Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/bootstraplayout"
+                                classes="event-section-tab-content">
+                                <container-item0
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <tileteaser_copy
+                                        jcr:created="{Date}2022-08-04T09:58:35.053Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-18T13:01:51.276Z"
+                                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                        explore="Explore"
+                                        fileIcon="/content/dam/hero-aem-website/brand/design/icons/white-right-icon.svg"
+                                        fileReference="/content/dam/hero-aem-website/in/teaser/event-1.jpg"
+                                        height="650"
+                                        layoutvariation="layoutvariation2"
+                                        linkto="#"
+                                        subtitle="&lt;p>Join our events for extra fun&lt;/p>&#xd;&#xa;"
+                                        textIsRich="true"
+                                        title="COMMUNITY &amp; EVENTS"/>
+                                </container-item0>
+                                <container-item1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <bootstraplayout_copy
+                                        jcr:created="{Date}2022-08-11T17:04:30.888Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-19T10:10:18.792Z"
+                                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/bootstraplayout">
+                                        <container-item0
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-08-19T10:10:51.080Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                explore="Explore"
+                                                fileIcon="/content/dam/hero-aem-website/brand/design/icons/white-right-icon.svg"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/event-2.jpg"
+                                                height="315"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="#"
+                                                styleclass="new-release-tile"
+                                                subtitle="&lt;p>Know about latest launch&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="NEW RELEASES">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item0>
+                                        <container-item1
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_9519
+                                                jcr:created="{Date}2022-08-04T10:03:26.009Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-08-19T10:10:59.724Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                explore="Explore"
+                                                fileIcon="/content/dam/hero-aem-website/brand/design/icons/white-right-icon.svg"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/event-3.jpg"
+                                                height="312"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="#"
+                                                styleclass="new-release-tile-2"
+                                                subtitle="&lt;p>Find out upcoming program&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="SOCIAL PROGRAM"/>
+                                        </container-item1>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="12"/>
+                                        </cq:responsive>
+                                        <columnlayouts jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                        </columnlayouts>
+                                    </bootstraplayout_copy>
+                                </container-item1>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="NaN"
+                                        width="NaN"/>
+                                </cq:responsive>
+                                <columnlayouts jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-6"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-6"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-6"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-6"/>
+                                </columnlayouts>
+                            </bootstraplayout_copy>
+                        </tab-5>
+                        <tab-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <bootstraplayout_copy
+                                jcr:created="{Date}2022-08-09T14:30:01.110Z"
+                                jcr:createdBy="aditya.l.srivastava@accenture.com"
+                                jcr:lastModified="{Date}2022-09-09T05:49:05.527Z"
+                                jcr:lastModifiedBy="prajwala.vemula@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/bootstraplayout"
+                                classes="event-section-tab-content">
+                                <container-item0
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <bootstraplayout
+                                        jcr:created="{Date}2022-09-02T05:41:44.502Z"
+                                        jcr:createdBy="aditya.l.srivastava@accenture.com"
+                                        jcr:lastModified="{Date}2022-09-09T05:45:52.839Z"
+                                        jcr:lastModifiedBy="prajwala.vemula@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/bootstraplayout">
+                                        <container-item0
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_9519
+                                                jcr:created="{Date}2022-08-04T10:03:26.009Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-09T04:45:51.992Z"
+                                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/career/Hero_Career_Women_in_Leadership_Batch_5.jpg"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="https://jobs.heromotocorp.com/"
+                                                styleclass="new-release-tile"
+                                                subtitle="&lt;p>Batch 5 Convocation Ceremony&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="Women in Leadership"/>
+                                        </container-item0>
+                                        <container-item1
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="hero-aem-website/components/container">
+                                            <tileteaser_copy_copy
+                                                jcr:created="{Date}2022-08-04T10:01:25.743Z"
+                                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                                jcr:lastModified="{Date}2022-09-12T12:39:02.187Z"
+                                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                                fileReference="/content/dam/hero-aem-website/in/teaser/Campus_to_Corporate_resized.png"
+                                                height="300"
+                                                layoutvariation="layoutvariation2"
+                                                linkto="https://jobs.heromotocorp.com/"
+                                                styleclass="new-release-tile-2"
+                                                subtitle="&lt;p>Inducting MTs, GETs, PGETs&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"
+                                                title="Campus to Corporate">
+                                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        offset="1"
+                                                        width="11"/>
+                                                </cq:responsive>
+                                            </tileteaser_copy_copy>
+                                        </container-item1>
+                                        <columnlayouts jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                class="mb-4 no-padding"
+                                                large="col-lg-12"
+                                                medium="col-md-12"
+                                                small="col-6"
+                                                xlarge="col-xl-12"/>
+                                        </columnlayouts>
+                                    </bootstraplayout>
+                                </container-item0>
+                                <container-item1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <tileteaser_copy_copy
+                                        jcr:created="{Date}2022-08-04T09:58:35.053Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-09-12T14:13:37.476Z"
+                                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/tileteaser"
+                                        fileReference="/content/dam/hero-aem-website/in/teaser/career/career home page-21.png"
+                                        height="620"
+                                        layoutvariation="layoutvariation2"
+                                        linkto="https://jobs.heromotocorp.com/viewalljobs"
+                                        subtitle="&lt;p>Join The Team&lt;/p>&#xd;&#xa;"
+                                        textIsRich="true"
+                                        title="Explore New Openings"/>
+                                </container-item1>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="NaN"
+                                        width="NaN"/>
+                                </cq:responsive>
+                                <columnlayouts jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-6"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-6"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        class="less-top-margin"
+                                        large="col-lg-6"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-6"/>
+                                </columnlayouts>
+                            </bootstraplayout_copy>
+                        </tab-2>
+                        <tabitems jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                title="Media"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                title="Investors"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                title="Careers"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                title="SUSTAINABILITY"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                title="CSR"/>
+                        </tabitems>
+                    </generictab>
+                </container_1863073360>
+                <experiencefragment
+                    jcr:created="{Date}2022-08-12T07:07:41.699Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-12T07:07:58.723Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/request-callback-pop-up/master"/>
+                <experiencefragment_121212
+                    jcr:created="{Date}2022-08-14T17:46:40.935Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-14T17:47:01.835Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/modal/master"/>
+            </container>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/footer/master"
+                id="footer"/>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-09-11T06:13:07.909Z"
+            jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+</jcr:root>

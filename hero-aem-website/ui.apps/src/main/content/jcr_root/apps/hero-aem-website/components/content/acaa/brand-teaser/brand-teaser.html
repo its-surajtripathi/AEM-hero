@@ -1,0 +1,59 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<div class="brand-teaser-page cursor-none">
+  <div class="bg-music-controller-wrapper">
+    <div class="bg-music-controller d-none">
+      <div class="mouse-cursor-button muted">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <span class="cursor-desc-text mute-btn-text" data-mute-text="${properties.muteText}"
+        data-unmute-text="${properties.unmuteText}">${properties.unmuteText}</span>
+    </div>
+  </div>
+
+  <audio id="pageBgMusic" loop preload="auto">
+    <source src="${properties.pgbgMusic}" type="audio/mpeg" />
+  </audio>
+  <audio id="hoverMusic" preload="auto">
+    <source src="${properties.hoverMusic}" type="audio/mpeg" />
+  </audio>
+  <audio id="clickMusic" preload="auto">
+    <source src="${properties.clickMusic}" type="audio/mpeg" />
+  </audio>
+
+
+  <div id="container">
+    <div class="acaa-bg-loop-video-wrapper brand-bg-video-wrapper">
+      <video class="acaa-bg-loop-video brand-bg-video" height="100%" width="100%" autoplay muted loop>
+        <!-- <source src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/video/bike_intro_loop.mov"> -->
+        <source src="${properties.bgloopVideo}">
+      </video>
+    </div>
+    <div class="on-its-way d-none">
+      <div class="on-its-way-txt">
+        ${properties.text}
+      </div>
+    </div>
+    <div class="acaa-bg-video-wrapper brand-bg-video-wrapper">
+      <video class="acaa-bg-video brand-bg-video" height="100%" width="100%" muted
+        data-sly-test="${properties.bgVideo}">
+        <!-- <source src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/video/bike_intro_video.mov"> -->
+        <source src="${properties.bgVideo}">
+      </video>
+    </div>
+    <div class="acaa-bg-mobile-video-wrapper brand-bg-video-wrapper">
+      <video class="acaa-bg-mobile-video brand-bg-video" height="100%" width="100%" autoplay muted loop playsinline>
+        <!-- <source src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/video/bike_intro_loop_mobile.mov"> -->
+        <source src="${properties.bgmobileVideo}">
+      </video>
+    </div>
+    <sly data-sly-resource="${'container' @ resourceType='wcm/foundation/components/responsivegrid' }">
+    </sly>
+  </div>
+</div>

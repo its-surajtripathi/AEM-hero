@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Book Service"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <service
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <servicefields
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Service Details"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <serviceLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Service Label"
+                                                                name="./serviceLabel"
+                                                                required="{Boolean}true"/>
+                                                            <serviceIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Service Icon"
+                                                                name="./serviceicon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <timeLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Time Label"
+                                                                name="./timeLabel"
+                                                                required="{Boolean}true"/>
+                                                            <odometerLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Odometer Label"
+                                                                name="./odometerLabel"
+                                                                required="{Boolean}true"/>
+                                                            <odometerHelpText
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                                fieldLabel="Odometer Help Text"
+                                                                name="./odometerHelpText"
+                                                                required="{Boolean}true"/>
+															<odometerHelpIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Help Icon"
+                                                                name="./odometerHelpIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <servicetypeLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Service Type Label"
+                                                                name="./servicetypeLabel"
+                                                                required="{Boolean}true"/>
+                                                            <freeserviceLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Free Service Label"
+                                                                name="./freeserviceLabel"
+                                                                required="{Boolean}true"/>
+                                                            <freeserviceIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Free Service Icon"
+                                                                name="./freeserviceIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <paidserviceLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Paid Service Label"
+                                                                name="./paidserviceLabel"
+                                                                required="{Boolean}true"/>
+                                                            <paidserviceIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Paid Service Icon"
+                                                                name="./paidserviceIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <joyrideLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Joyride Label"
+                                                                name="./joyrideLabel"
+                                                                required="{Boolean}true"/>
+                                                            <joyrideIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Joyride Icon"
+                                                                name="./joyrideIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <serviceDone
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Service Done Label"
+                                                                name="./serviceDone"
+                                                                required="{Boolean}true"/>
+                                                            <atLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter At Label"
+                                                                name="./atLabel"
+                                                                required="{Boolean}true"/>
+                                                            <kmLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Km Label"
+                                                                name="./kmLabel"
+                                                                required="{Boolean}true"/>
+                                                            <tickIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Green Tick Icon"
+                                                                name="./tickIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <linegapIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Line Gap Icon"
+                                                                name="./linegapIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <nextbuttonLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Next Button Label"
+                                                                name="./nextbuttonLabel"
+                                                                required="{Boolean}true"/>
+                                                        </items>
+                                                    </servicefields>
+                                                </items>
+                                            </service>
+                                            <dealer
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <dealerfields
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Dealer "
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <dealerLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Dealer Label"
+                                                                name="./dealerLabel"
+                                                                required="{Boolean}true"/>
+                                                            <dealerIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Dealer Icon"
+                                                                name="./dealerIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <dealerDescription
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Dealer Description"
+                                                                name="./dealerDescription"
+                                                                required="{Boolean}true"/>
+                                                            <stateLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter State Label"
+                                                                name="./stateLabel"
+                                                                required="{Boolean}true"/>
+                                                            <statePlaceholder
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter State Placeholder"
+                                                                name="./statePlaceholder"
+                                                                required="{Boolean}true"/>
+                                                            <statevalmsg
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter State Validation Message"
+                                                                name="./statevalmsg"
+                                                                required="{Boolean}true"/>
+                                                            <cityLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter City Label"
+                                                                name="./cityLabel"
+                                                                required="{Boolean}true"/>
+                                                            <cityPlaceholder
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter City Placeholder"
+                                                                name="./cityPlaceholder"
+                                                                required="{Boolean}true"/>
+                                                            <cityvalmsg
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter City Validation Message"
+                                                                name="./cityvalmsg"
+                                                                required="{Boolean}true"/>
+															<downArrow
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Down Arrow Icon"
+                                                                name="./downArrow"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <orLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter or Label"
+                                                                name="./orLabel"
+                                                                required="{Boolean}true"/>
+                                                            <locationLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Current Location Label"
+                                                                name="./locationLabel"
+                                                                required="{Boolean}true"/>
+                                                            <locationIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Location Icon"
+                                                                name="./locationIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <locationEnable
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Location Enable  Message"
+                                                                name="./locationEnable"
+                                                                required="{Boolean}true"/>
+                                                            <nodealermsg
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter No Dealer Message"
+                                                                name="./nodealermsg"
+                                                                required="{Boolean}true"/>
+                                                            <phoneIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Phone Icon"
+                                                                name="./phoneIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <backbuttonLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Back Button Label"
+                                                                name="./backbuttonLabel"
+                                                                required="{Boolean}true"/>
+                                                        </items>
+                                                    </dealerfields>
+                                                </items>
+                                            </dealer>
+                                            <selfjobcard
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <selfjobcardfields
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Self Job Card"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <selfjobcardLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Self Job Card Label"
+                                                                name="./selfjobcardLabel"
+                                                                required="{Boolean}true"/>
+                                                            <selfjobcardDescription
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Self Job Card Description"
+                                                                name="./selfjobcardDescription"
+                                                                required="{Boolean}true"/>
+                                                            <selfjobcardIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Self Job Card Icon"
+                                                                name="./selfjobcardIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <tyreandbrakeIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Tyre and Brake Icon"
+                                                                name="./tyreandbrakeIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <tyreandbrakeLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Tyre and Brake Label"
+                                                                name="./tyreandbrakeLabel"
+                                                                required="{Boolean}true"/>
+                                                            <fuelIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Fuel Icon"
+                                                                name="./fuelIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <fuelLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Fuel Label"
+                                                                name="./fuelLabel"
+                                                                required="{Boolean}true"/>
+                                                            <keyIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Key Icon"
+                                                                name="./keyIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <keyLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Key Label"
+                                                                name="./keyLabel"
+                                                                required="{Boolean}true"/>
+                                                            <otherissuesLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Other Issues Label"
+                                                                name="./otherissuesLabel"
+                                                                required="{Boolean}true"/>
+                                                            <otherissuePlaceholder
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Other Issues Placeholder"
+                                                                name="./otherissuesPlaceholder"
+                                                                required="{Boolean}true"/>
+                                                        </items>
+                                                    </selfjobcardfields>
+                                                </items>
+                                            </selfjobcard>
+                                            <summary
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <summaryfields
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Summary"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <summaryLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Summary Label"
+                                                                name="./summaryLabel"
+                                                                required="{Boolean}true"/>
+                                                            <summaryIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Select Summary Icon"
+                                                                name="./summaryIcon"
+                                                                required="{Boolean}true"
+                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                            <basicdetailsLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Basic Details Label"
+                                                                name="./basicdetailsLabel"
+                                                                required="{Boolean}true"/>
+                                                            <servicedate
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Service Date Label"
+                                                                name="./servicedate"
+                                                                required="{Boolean}true"/>
+                                                            <servicetime
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Service Time Label"
+                                                                name="./servicetime"
+                                                                required="{Boolean}true"/>
+                                                            <servicetype
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Service Type Label"
+                                                                name="./servicetype"
+                                                                required="{Boolean}true"/>
+                                                            <selfjobcard
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Self Job Card Label"
+                                                                name="./selfjobcard"
+                                                                required="{Boolean}true"/>
+                                                            <dealerLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Dealer  Label"
+                                                                name="./dealer"
+                                                                required="{Boolean}true"/>
+                                                            <tyreandbrake
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Tyre and Brake Label"
+                                                                name="./tyreandbrake"
+                                                                required="{Boolean}true"/>
+                                                            <fuel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Fuel Label"
+                                                                name="./fuel"
+                                                                required="{Boolean}true"/>
+                                                            <key
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Key Label"
+                                                                name="./key"
+                                                                required="{Boolean}true"/>
+                                                            <changeLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Change Label"
+                                                                name="./changeLabel"
+                                                                required="{Boolean}true"/>
+                                                            <booknowLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Book Now Label"
+                                                                name="./booknowLabel"
+                                                                required="{Boolean}true"/>
+                                                            <apiError
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter API Error Message"
+                                                                name="./errormsg"
+                                                                required="{Boolean}true"/>
+                                                        </items>
+                                                    </summaryfields>
+                                                </items>
+                                            </summary>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

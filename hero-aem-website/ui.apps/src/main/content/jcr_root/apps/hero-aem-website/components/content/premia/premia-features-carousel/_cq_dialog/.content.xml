@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Premia Feature Carousel Details"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[hero-aem-website.multifield]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <field
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="icontext details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <mainTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter main title"
+                                                name="./mainTitle"/>
+                                            <autoplay
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Autoplay"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}false"
+                                                fieldDescription="Check to enable autoplay"
+                                                name="./autoplay"
+                                                text="Enable autoplay for Carousel?"
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                            <duration
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                fieldLabel="Enter the autoplay duration in milliseconds(ms) "
+                                                name="./duration"/> 
+                                            <speed
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                fieldLabel="Animation duration"
+                                                name="./speed"/>
+                                            <staticText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter static text title"
+                                                name="./staticText"/> 
+
+                                            <multifield
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Provide details"
+                                                validation="multifield-max-7">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./iconTextItems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <text
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter text"
+                                                            name="./title"/>
+                                                        <description
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter Description"
+                                                            name="./featureDescription"/>
+                                                        <image
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            fieldLabel="Image Asset"
+                                                            fileNameParameter="./logoName"
+                                                            fileReferenceParameter="./imageRef"
+                                                            multiple="{Boolean}false"
+                                                            name="./image"
+                                                            title="Upload Image Asset"
+                                                            useHTML5="{Boolean}true"/>
+                                                        <tabTitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter Tab Title"
+                                                            name="./tabTitle"/>
+                                                    </items>
+                                                </field>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    fieldlimit="3"/>
+                                            </multifield>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </field>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

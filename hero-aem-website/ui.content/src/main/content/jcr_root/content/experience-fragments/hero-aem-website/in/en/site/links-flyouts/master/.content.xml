@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-08-10T05:31:27.700Z"
+        cq:lastModifiedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicated="{Date}2022-08-10T05:38:35.503Z"
+        cq:lastReplicated_publish="{Date}2022-08-10T05:38:35.503Z"
+        cq:lastReplicatedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicatedBy_publish="kiran.jaganmohan@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="communities-and-events"
+        jcr:uuid="7480cbad-f3c8-417d-9c87-388839077413"
+        sling:resourceType="hero-aem-website/components/structure/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <secondarynavigation_
+                jcr:created="{Date}2022-07-24T16:15:56.707+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-07-25T19:47:52.914+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/structure/secondarynavigation"
+                textIsRich="true"
+                variation="megamenu-link-wrapper">
+                <flyouts
+                    jcr:lastModified="{Date}2022-07-24T16:27:57.982+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid">
+                    <linkflyout
+                        jcr:created="{Date}2022-07-25T19:48:01.732+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-07-25T19:51:17.730+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/structure/secondarynavigation/linkflyout"
+                        element="h4"
+                        heading="Stay updated with all the happenings &amp; ride along with like-minded people!">
+                        <servicelinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/community-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="COMMUNITY"
+                                url="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/events-icon.svg"
+                                subtext="Attend all riding events &amp; never miss anything!"
+                                tag="2 Upcoming events"
+                                text="Events"
+                                url="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/x-mag-magazine-icon.svg"
+                                subtext="Check out the latest featured press releases &amp; always stay updated."
+                                text="X MAG Magazine"
+                                url="#"/>
+                        </servicelinks>
+                    </linkflyout>
+                </flyouts>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                </cq:responsive>
+            </secondarynavigation_>
+        </root>
+    </jcr:content>
+</jcr:root>

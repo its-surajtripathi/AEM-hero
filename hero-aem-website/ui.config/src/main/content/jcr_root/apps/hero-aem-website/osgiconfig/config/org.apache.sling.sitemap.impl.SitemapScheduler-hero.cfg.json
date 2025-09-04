@@ -1,0 +1,6 @@
+{
+    "scheduler.name": "Hero Sitemaps",
+    "scheduler.expression": "0 0 2 1/1 * ? *",
+    "searchPath": "/content/hero-aem-website/in/en-in"
+  }
+  

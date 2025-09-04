@@ -1,0 +1,35 @@
+#
+# This file contains the rewrite rules, and can be customized.
+#
+# By default, it includes just the rewrite rules. You can
+# add rewrite rules to this file but you should still include
+# the default rewrite rules.
+
+Include conf.d/rewrites/default_rewrite.rules
+
+RewriteRule ^/404.html$ https://new.heromotocorp.com/en-in/error-404.php [P]
+
+# rewrite for root redirect
+RewriteCond %{HTTP_HOST} ^harley-davidsonX440\.com$ [NC]
+RewriteRule ^(.*)$ https://www.harley-davidsonX440.com$1 [R=301,L]
+
+# RewriteRule ^/?$ /order-booking.html [R=301,NE,L]
+
+
+RewriteRule ^/content/experience-fragments/${CONTENT_FOLDER_NAME}/(.*)$ /content/experience-fragments/${CONTENT_FOLDER_NAME}/(.*) [L]
+
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|sitemap-index.xml|sitemap.xml)$
+
+RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/in/en-in/hd/$1 [PT,L]
+
+RewriteRule ^/$ /content/${CONTENT_FOLDER_NAME}/in/en-in/hd/x440.html [PT,L]

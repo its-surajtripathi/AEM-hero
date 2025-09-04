@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="HDBC Image Gallery"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <container
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <variant
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                                        class="cq-dialog-dropdown-showhide"
+                                                        cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                                                        fieldDescription="Select Tab Variant."
+                                                        fieldLabel="Variant"
+                                                        name="./galleryvariant">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <galleryhover
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Gallery with hover section"
+                                                                value="galleryhover"/>
+                                                            <galleryradio
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Gallery with radio clips"
+                                                                value="galleryradio"/>
+                                                            <maintainschedule
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Service Maintainance Schedule"
+                                                                value="maintainschedule"/>
+                                                        </items>
+                                                    </variant>
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/container"
+                                                        class="show-hide-textfield"
+                                                        showhidetargetvalue="default">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <multitext
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldLabel="Click on add button to add Gallery Items">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                    name="./hdbcgallery">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <field1
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <multigallery
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                    composite="{Boolean}true"
+                                                                                    fieldLabel="click on add button to add Images">
+                                                                                    <field
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                        name="./galleryitems">
+                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                            <desktopthumbnailpath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter thumbnail image path for dekstop view"
+                                                                                                name="./desktopthumbnailpath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                            <desktopimagepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter full view image for desktop view"
+                                                                                                name="./desktopimagepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                            <mobilethumbnailpath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter thumbnail image path for mobile view"
+                                                                                                name="./mobilethumbnailpath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                            <mobileimagepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter full view image for mobile view"
+                                                                                                name="./mobileimagepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                        </items>
+                                                                                    </field>
+                                                                                </multigallery>
+                                                                            </items>
+                                                                        </field1>
+                                                                    </items>
+                                                                </field>
+                                                            </multitext>
+                                                        </items>
+                                                    </default>
+                                                    <galleryhover
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/container"
+                                                        class="show-hide-textfield"
+                                                        showhidetargetvalue="galleryhover">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <multitexthover
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldLabel="Click on add button to add Gallery Items">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                    name="./hdbcgalleryhover">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <field1
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <multigalleryhover
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                    composite="{Boolean}true"
+                                                                                    fieldLabel="click on add button to add Images">
+                                                                                    <field
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                        name="./galleryitems">
+                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                            <title
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                                fieldLabel="Enter Image Title"
+                                                                                                name="./gallerytitle"
+                                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                                <rtePlugins
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                                <uiSettings
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                            </title>
+                                                                                            <imagepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter image path for Image Gallery"
+                                                                                                name="./imagepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                            <mobileimagepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter mobile image path for Image Gallery"
+                                                                                                name="./mobileimagepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                            <description
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                                fieldLabel="Enter Image Description"
+                                                                                                name="./gallerydesc"
+                                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                                <rtePlugins
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                                <uiSettings
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                            </description>
+                                                                                            <ctalabel
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                fieldDescription="Enter CTA Label"
+                                                                                                fieldLabel="Enter CTA Label"
+                                                                                                name="./hdbcctalabel"/>
+                                                                                            <ctaurl
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldDescription="Enter CTA URL"
+                                                                                                fieldLabel="Enter CTA URL"
+                                                                                                name="./hdbcctaurl"
+                                                                                                rootPath="/content/hero-aem-website"/>
+                                                                                        </items>
+                                                                                    </field>
+                                                                                </multigalleryhover>
+                                                                            </items>
+                                                                        </field1>
+                                                                    </items>
+                                                                </field>
+                                                            </multitexthover>
+                                                        </items>
+                                                    </galleryhover>
+                                                    <galleryradio
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/container"
+                                                        class="show-hide-textfield"
+                                                        showhidetargetvalue="galleryradio">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <multitextradio
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldLabel="Click on add button to add Gallery Items">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                    name="./hdbcradio">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <field1
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <multiradio
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                    composite="{Boolean}true"
+                                                                                    fieldLabel="click on add button to add Files">
+                                                                                    <field
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                        name="./galleryradioitems">
+                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                            <title
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                                fieldLabel="Enter Radio Title"
+                                                                                                name="./galleryradiotitle"
+                                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                                <rtePlugins
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                                <uiSettings
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                            </title>
+                                                                                            <imagepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter radio image path for desktop view"
+                                                                                                name="./radioimagepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                            <mobileimagepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter radio image path for mobile view"
+                                                                                                name="./radiomobileimagepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                            <audiofilepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter audio file path for radio tile"
+                                                                                                name="./audiofilepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                        </items>
+                                                                                    </field>
+                                                                                </multiradio>
+                                                                            </items>
+                                                                        </field1>
+                                                                    </items>
+                                                                </field>
+                                                            </multitextradio>
+                                                        </items>
+                                                    </galleryradio>
+                                                    <maintainschedule
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/container"
+                                                        class="show-hide-textfield"
+                                                        showhidetargetvalue="maintainschedule">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <multitextschedule
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldLabel="Click on add button to add Maintenance Items">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                    name="./maintenanceschedule">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <field1
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <multischedule
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                    composite="{Boolean}true"
+                                                                                    fieldLabel="click on add button to add Maintenance Files">
+                                                                                    <field
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                        name="./maintainscheduleitems">
+                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                            <title
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                                fieldLabel="Enter Maintenance Title"
+                                                                                                name="./maintenancetitle"
+                                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                                <rtePlugins
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                                <uiSettings
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                            </title>
+                                                                                            <imagepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter desktop image path for Image Maintenance"
+                                                                                                name="./maintenanceimagepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                            <mobileimagepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter mobile image path for Image Maintenance"
+                                                                                                name="./maintenancemobileimagepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                            <docfilepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Enter document path for Maintenance File"
+                                                                                                name="./docfilepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                        </items>
+                                                                                    </field>
+                                                                                </multischedule>
+                                                                            </items>
+                                                                        </field1>
+                                                                    </items>
+                                                                </field>
+                                                            </multitextschedule>
+                                                        </items>
+                                                    </maintainschedule>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </container>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

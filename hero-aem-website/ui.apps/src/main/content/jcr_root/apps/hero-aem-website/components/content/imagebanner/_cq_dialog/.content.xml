@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Image Banner"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem_cmp_tableofcontents_v1">
+    <content
+            granite:class="cmp-toc__editor"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <imageBanner
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Image Banner"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <theme
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    class="cq-dialog-dropdown-showhide"
+                                                    cq-dialog-dropdown-showhide-target=".tab-show-hide"
+                                                    fieldDescription="Select Page Type"
+                                                    fieldLabel="Select Theme"
+                                                    name="./theme">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <home
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Home Page"
+                                                            checked="{Boolean}true"
+                                                            value="home"/>
+                                                    <others
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Others"
+                                                            value="others"/>
+                                                    </items>
+                                            </theme>
+                                            <imagemulti
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldDescription="Add images for Desktop and Mobile"
+                                                    fieldLabel="Add Image Details"
+                                                    validation="multifield-max-6"
+                                                    showhidetargetvalue="">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./imageitems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <bannerconfigs
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        jcr:title="Image Items"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <desktopimage
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                fieldLabel="Enter Desktop Image path"
+                                                                                name="./desktopimage"
+                                                                                required="{Boolean}true"
+                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                        <mobileimage
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                fieldLabel="Enter Mobile Image path"
+                                                                                name="./mobileimage"
+                                                                                required="{Boolean}true"
+                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                        <bikename
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                            fieldLabel="Enter Bike Name"
+                                                                            name="./bikename"
+                                                                            useFixedInlineToolbar="{Boolean}true">
+                                                                            <rtePlugins
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                            <uiSettings
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                            <htmlRules jcr:primaryType="nt:unstructured">
+                                                                                <blockHandling
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    removeSingleParagraphContainer="{Boolean}true"/>
+                                                                            </htmlRules>
+                                                                        </bikename> 
+                                                                        <redirectionurl
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                fieldLabel="Enter Redirection URL"
+                                                                                name="./redirectionurl"
+                                                                                rootPath="/content/hero-aem-website"/>
+                                                                        <name
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="Enter Name (Field to be Used for Static Pages)"
+                                                                                name="./name"/>
+                                                                        <designation
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="Enter Designation (Field to be Used for Static Pages)"
+                                                                                name="./designation"/>
+                                                                    </items>
+                                                                </bannerconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </imagemulti>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </imageBanner>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

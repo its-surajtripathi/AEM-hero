@@ -1,0 +1,13 @@
+#
+# This file contains the list of virtual hosts (or domain names) that the dispatcher
+# will handle.
+#
+# By default, it includes the default list of virtual hosts.
+#
+
+"*.heromotocorp.com"
+"*.bahadurchandinvestments.com"
+"*.harley-davidsonX440.com"
+"*.adobeaemcloud.com"
+"*.adobeaemcloud.net"
+"localhost"

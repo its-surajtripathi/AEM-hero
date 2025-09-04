@@ -1,0 +1,39 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hhm="http://siebel.com/HHMLInterface/">
+  <soapenv:Header>
+ <UsernameToken xmlns="http://siebel.com/webservices">WSUSER</UsernameToken>
+<PasswordText xmlns="http://siebel.com/webservices">WSUSER_1</PasswordText>
+<SessionType xmlns="http://siebel.com/webservices">None</SessionType>
+</soapenv:Header>
+   <soapenv:Body>
+      <hhm:CWS_spcCustomer_spcComplaint_Input>
+         <hhm:SubCategory>${subcategory}</hhm:SubCategory>
+         <hhm:SRNumber></hhm:SRNumber>
+         <hhm:MalfunctionDate>${date}</hhm:MalfunctionDate>
+         <hhm:FirstName>${firstname}</hhm:FirstName>
+         <hhm:BriefAboutComplaint>${complaint}</hhm:BriefAboutComplaint>
+         <hhm:VehicleRegistrationNumber></hhm:VehicleRegistrationNumber>
+         <hhm:Status>Open</hhm:Status>
+         <hhm:Address></hhm:Address>
+         <hhm:SubSubCategory></hhm:SubSubCategory>
+         <hhm:SRType></hhm:SRType>
+         <hhm:OwnedById>${ownerid}</hhm:OwnedById>
+         <hhm:OdometerReading></hhm:OdometerReading>
+         <hhm:Model></hhm:Model>
+         <hhm:EmailAddress></hhm:EmailAddress>
+         <hhm:AreaOffice></hhm:AreaOffice>
+         <hhm:CompRepFlag></hhm:CompRepFlag>
+         <hhm:HomePhone></hhm:HomePhone>
+         <hhm:HHMLVINNumber>${vin}</hhm:HHMLVINNumber>
+         <hhm:PartnerName></hhm:PartnerName>
+         <hhm:LastName>${lastname}</hhm:LastName>
+         <hhm:ReportedDate></hhm:ReportedDate>
+         <hhm:CustomerAddress></hhm:CustomerAddress>
+         <hhm:CellularPhone>${mobile}</hhm:CellularPhone>
+         <hhm:Source>WEB</hhm:Source>
+         <hhm:Priority>3-Medium</hhm:Priority>
+         <hhm:Location></hhm:Location>
+         <hhm:DealerCode>${dealercode}</hhm:DealerCode>
+         <hhm:Category>${category}</hhm:Category>
+      </hhm:CWS_spcCustomer_spcComplaint_Input>
+   </soapenv:Body>
+</soapenv:Envelope>

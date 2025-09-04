@@ -1,0 +1,533 @@
+.media--forms,
+.corporate--enquiries,
+.test--ride {
+    padding: 35px 0 50px;
+}
+
+.media--forms .contact--details .query--para {
+    font-size: 16px;
+    color: #303030;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-tstar-regular);
+    line-height: 22.4px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.media--forms .contact--details .addressPan,
+.corporate--enquiries .contact--details .addressPan,
+.test--ride .contact--details .addressPan {
+    width: 100%;
+    margin: 0 0 50px 0;
+    padding: 20px 0 0 0;
+    border-top: #dddddd 1px solid;
+    border-left: none;
+}
+
+span.section--top-text {
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+span.section--top-text a {
+    color: #ee0000;
+    padding-left: 2px;
+}
+
+span sup {
+    color: #FF0000;
+}
+
+.terms-text a {
+    padding-left: 2px;
+}
+
+.terms-text a:nth-child(2) {
+    padding-right: 2px;
+}
+
+.terms-text a:hover,
+.terms-text a:focus {
+    color: #ee0000;
+}
+
+.addressPan .cust-form-group .campaign-input[type="date"] {
+    text-transform: unset;
+}
+
+input#campaign-reset-btn {
+    margin-right: 25px;
+}
+
+.addressPan .form--wrap {
+    max-width: 100%;
+    display: flex;
+}
+
+.addressPan .content--wrap {
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.addressPan .cust-form-group {
+    margin-bottom: 32px;
+    position: relative;
+    margin-right: 16px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.addressPan .cust-form-group .error--message,
+.addressPan .cust-form-group .validate--msg {
+    font-family: var(--font-tstar-bold);
+    font-size: var(--font-size12);
+    color: #ee2326;
+    padding-left: 16px;
+    position: absolute;
+    bottom: -15px;
+    left: 3px;
+    display: none;
+}
+
+.enq-error--message {
+    font-family: var(--font-tstar-bold);
+    font-size: var(--font-size12);
+    color: #ee2326;
+    padding-left: 16px;
+    position: absolute;
+    bottom: -15px;
+    left: 3px;
+    display: none;
+}
+
+.addressPan .cust-form-group:last-child {
+    margin-right: 0;
+}
+
+.addressPan .cust-form-group .input-img1 {
+    top: 18px;
+    position: absolute;
+    right: 17px;
+    opacity: 0.5;
+}
+
+.addressPan .cust-form-group .input-img2 {
+    top: 18px;
+    position: absolute;
+    right: 17px;
+}
+
+.addressPan .cust-form-group .form-span,
+.addressPan .cust-form-group .select-p {
+    font-size: var(--font-size16);
+    line-height: var(--line-height-16);
+    font-weight: var(--font-weight-600);
+    position: absolute;
+    top: -7px;
+    left: 15px;
+    background: #FFFFFF;
+    color: rgba(48, 48, 48);
+    padding: 0px 4px;
+    cursor: context-menu;
+    pointer-events: none;
+}
+
+.addressPan .cust-form-group .campaign-input {
+    color: #303030;
+    padding: 0px 17px;
+    height: 49px;
+    border-radius: 7px;
+    font-family: var(--font-tstar-regular);
+    border: 1px solid #ced4da;
+    font-size: var(--font-size16);
+    line-height: var(--line-height-18);
+    text-transform: capitalize;
+}
+
+.addressPan .cust-form-group #email,
+#email-enquiries {
+    text-transform: none;
+}
+
+.addressPan .cust-form-group .campaign-input:focus {
+    box-shadow: none !important;
+}
+
+.addressPan .cust-form-group .campaign-input::placeholder {
+    color: rgba(48, 48, 48, 0.3);
+}
+
+.addressPan .cust-form-group label {
+    font-family: var(--font-tstar-bold);
+    font-size: var(--font-size12);
+    color: #ee2326;
+    display: block;
+    padding-left: 16px;
+    position: relative;
+}
+
+.addressPan .cust-form-group label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 4.5px);
+    width: 9px;
+    height: 9px;
+    background: url("/apps/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/error.svg") no-repeat;
+    background-size: 100%;
+}
+
+.addressPan .cust-form-group .limit-number {
+    font-size: var(--font-size16);
+    line-height: var(--line-height-18);
+    font-weight: var(--font-weight-400);
+    text-decoration: none;
+    cursor: unset;
+    position: absolute;
+    top: 17px;
+    right: 51px;
+    z-index: 1;
+    background: #FFFFFF;
+    color: rgba(48, 48, 48, 0.3);
+    text-decoration: underline;
+    display: none;
+}
+
+.addressPan .cust-form-group .sent-otp.show {
+    display: block;
+}
+
+.addressPan .cust-form-group .btn-drop {
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #ced4da;
+    height: 49px;
+    border-radius: 7px;
+    padding: 0px 17px;
+    text-transform: capitalize;
+    display: block;
+    width: 100%;
+    color: rgba(48, 48, 48, 0.38);
+    font-family: var(--font-tstar-regular);
+    font-size: var(--font-size16);
+    line-height: var(--line-height-18);
+    background-color: #fff;
+}
+
+.addressPan .cust-form-group .btn-drop.active {
+    color: rgba(48, 48, 48);
+    background: transparent;
+    border: 1px solid #ced4da;
+}
+
+.addressPan .cust-form-group .btn-drop::after {
+    content: url("/apps/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/select-icon.svg");
+    border: none;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+
+.addressPan .cust-form-group .campaign-dropdown {
+    top: 10px !important;
+    max-height: 250px;
+    overflow-y: auto;
+    margin: 0;
+    border: none;
+    border-radius: 0 0 16px 16px;
+    width: 100%;
+    z-index: 2;
+    padding: 5px 16px;
+    transform: translate3d(0px, 41px, 0px) !important;
+    text-transform: capitalize;
+}
+
+.addressPan .cust-form-group .campaign-dropdown li {
+    border-bottom: 1px solid rgba(235, 235, 235, 0.85);
+    font-size: 12px;
+    font-family: var(--font-tstar-medium);
+}
+
+.addressPan .cust-form-group .campaign-dropdown li:last-child{
+    border-bottom: none;
+}
+
+.addressPan .cust-form-group .campaign-dropdown li a {
+    padding: 10px 0 6px 0;
+    font-family: var(--font-tstar-regular);
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size16);
+    color: #303030;
+}
+
+.campaign-btn {
+    font-size: var(--font-size18);
+    font-family: var(--font-tstar-heavy);
+    line-height: var(--line-height-16);
+    height: 45px;
+    margin-top: 12px;
+    border-radius: 4px;
+    gap: 10px;
+}
+
+.contact--details .sub-text,
+.contact--details .query--para {
+    font-size: 17px;
+    color: #303030;
+    text-transform: none;
+    font-weight: 500;
+    line-height: 18.2px;
+    font-family: var(--font-tstar-medium);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-input {
+    width: auto;
+    float: left;
+}
+
+.checkbox-label {
+    margin: 10px 0 0 20px;
+}
+
+.formText {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #303030;
+    vertical-align: top;
+}
+
+.form--wrap .cust-form-group .max--char {
+    position: absolute;
+    right: -48%;
+    font-weight: bold;
+    color: #303030;
+    font-size: 14px;
+}
+
+p.terms-text {
+    font-family: inherit;
+}
+
+.terms-text {
+    font-size: small;
+    line-height: normal;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+
+.terms-text:last-child {
+    margin-bottom: 0;
+}
+
+.form--wrap .show>.btn-primary.dropdown-toggle:focus,
+.form--wrap .btn-primary:focus,
+.form--wrap .btn-primary:not(:disabled):not(.disabled).active:focus,
+.form--wrap .btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+}
+
+.form--wrap .btn-primary:not(:disabled):not(.disabled):active {
+    background-color: unset;
+    color: rgba(48, 48, 48, 0.38);
+    border-color: #ced4da;
+}
+
+.term-align {
+    color: #ee0000;
+    text-decoration: none;
+}
+
+button[name='complaintcategory']~ul li {
+    display: none;
+}
+
+button[name='complaintcategory']~ul li.show {
+    display: block;
+}
+
+.top--button-wrap {
+    margin: 0 auto 20px auto;
+    display: flex;
+    max-width: 70%;
+}
+
+.top--button-wrap a {
+    margin-top: 0;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.top--button-wrap a:last-child {
+    margin-right: 0;
+}
+
+.form--wrap .form-group textarea {
+    padding: 5px;
+    border: 1px solid #ced4da;
+}
+
+.form--wrap .form-group .checkbox-label {
+    font-size: 16px;
+    color: #303030;
+    font-size: var(--font-size16);
+    line-height: var(--line-height-16);
+    font-weight: var(--font-weight-600);
+    padding: 0px 4px;
+    font-family: var(--font-tstar-regular);
+}
+
+
+#media--forms textarea:focus-visible {
+    outline: none;
+}
+
+#media--forms input[type='checkbox'].form-control:focus {
+    outline: 0;
+    box-shadow: none;
+    border-color: unset;
+}
+
+.form--note {
+    margin-bottom: 20px;
+}
+
+input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
+#ticketNo,
+.signature {
+    font-family: var(--font-tstar-bold);
+}
+
+.server-success-msg,
+.server-fail-msg {
+    max-width: 45%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+input#firstname,
+input#lastname,
+input#first-name,
+input#last-name {
+    padding-right: 33px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.media-loader-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.media-loader-div img{
+    max-width: 100%;
+    height: auto;
+}
+
+.addressPan .cust-form-group .campaign-input[type="date"]{
+    display: flex;
+    align-items: center;
+}
+
+.addressPan .cust-form-group .campaign-input[type="date"]::-webkit-date-and-time-value {
+    text-align: left;
+    vertical-align: middle;
+}
+
+@media (max-width: 769px) {
+    .addressPan .content--wrap {
+        width: 75% !important;
+    }
+
+    .top--button-wrap {
+        flex-direction: column;
+    }
+
+    .top--button-wrap a {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .top--button-wrap a:last-child {
+        margin-bottom: 0;
+    }
+
+    .form--wrap .cust-form-group .max--char {
+        right: 1% !important;
+        bottom: -11%;
+        font-size: 12px;
+    }
+
+    .server-success-msg,
+    .server-fail-msg {
+        max-width: 90%;
+    }
+
+    .addressPan .form--wrap {
+        flex-wrap: wrap;
+    }
+
+    .addressPan .cust-form-group {
+        margin-right: 0;
+    }
+
+    input#campaign-reset-btn {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .addressPan .content--wrap {
+        width: 100%;
+    }
+    
+    #media--forms input::placeholder {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .form--wrap .cust-form-group .max--char {
+        right: -62%;
+    }
+
+    .top--button-wrap {
+        max-width: 90%;
+    }
+
+    .addressPan .content--wrap {
+        width: 75%;
+    }
+}

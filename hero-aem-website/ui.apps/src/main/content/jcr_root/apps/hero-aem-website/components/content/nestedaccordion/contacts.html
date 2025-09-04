@@ -1,0 +1,108 @@
+<sly data-sly-list.contactMultifield="${resource.getChildren}">
+
+    <sly data-sly-test="${contactMultifield.name == 'investorcontacts'}">
+
+		<section class="investors-contacts-section">
+			<div class="contact-desktop-view">
+			  <div class="investors-contact-wrapper">
+				<div class="left--invs-contacts">
+						<sly data-sly-list.contacts="${contactMultifield.getChildren}">
+
+							<sly data-sly-test="${contactsList.index==0}">
+								<div class="submenu-contact-tile contact-button-active">
+									${contacts.contactstitle @ context='html'}
+									
+									<span class="investor-left-contact-arrow"></span>
+								</div>
+							</sly>
+					
+							<sly data-sly-test="${contactsList.index!=0}">
+								<div class="submenu-contact-tile">
+									${contacts.contactstitle @ context='html'}
+									
+									<span class="investor-left-contact-arrow"></span>
+								</div>
+							</sly>
+						</sly>
+					</div>
+					
+					<div class="right--contact-section">
+						<sly data-sly-list.contacts="${contactMultifield.getChildren}">
+							
+								<!--/* Get all child resources */-->
+								<sly data-sly-list.contactItem="${contacts.getChildren}">
+									
+										<div class="contact--slider-wrap">
+											<sly data-sly-test="${contactItem.name == 'multicontactdetails'}">
+												<sly data-sly-list.contactitems="${contactItem.getChildren}">
+													<div class="contacts-accord-tile">
+														
+														${contactitems.contactname @ context='html'}
+														<div class="contacts-card-body-desktop">
+																<span>${contactitems.contactaddress @ context='html'}</span>
+														</div>
+													</div>
+                                                </sly>
+											</sly>
+										</div>	
+									
+								</sly>
+						</sly>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact-mobile-view">
+				<div class="investors-contact-wrapper">
+  
+				  <div class="right--contact-section" id="contactAccordMob">
+					  <sly data-sly-list.contacts="${contactMultifield.getChildren}">
+						  
+						  <!--/* Get all child resources */-->
+						  <sly data-sly-list.contactItem="${contacts.getChildren}">
+								  
+							  <div class="card">
+									  
+								  <div class="card-head-mobile" id="heading${contactsList.index}">
+									  <h2 class="mb-0 d-flex justify-content-between contact-accord-heading" data-toggle="collapse" data-target="#collapse${contactsList.index}" aria-expanded="true" aria-controls="collapse${contactsList.index}">
+										  <sly data-sly-test="${contactsList.index==0}">
+											  <div class="submenu-contact-tile">
+				  
+												${contacts.contactstitle @ context='html'}
+												  
+											  </div>
+										  </sly>
+				  
+										  <sly data-sly-test="${contactsList.index!=0}">
+											  <div class="submenu-contact-tile">
+			  
+												${contacts.contactstitle @ context='html'}
+												  
+											  </div>
+										  </sly>
+										  <span class="investor-contact-arrows"></span>
+									  </h2>
+								  </div>
+								  <div class="contact--slider-wrap accordion" id="collapse${contactsList.index}" class="collapse" aria-labelledby="heading${contactsList.index}" data-parent="#contactAccordMob">
+									  
+										<sly data-sly-test="${contactItem.name == 'multicontactdetails'}">
+											<sly data-sly-list.contactitems="${contactItem.getChildren}">
+													  
+											  <div class="contacts-accord-mob-tile">
+												${contactitems.contactname @ context='html'}
+												  <div class="contacts-card-body-mobile">
+													  <span>${contactitems.contactaddress @ context='html'}</span>
+												  </div>
+											  </div>
+										  </sly>
+									  </sly>
+								  </div>	
+							  </div>
+						  </sly>
+					  </sly>
+				  </div>
+				</div>
+			  </div>
+		</section>
+	</sly>	
+</sly>

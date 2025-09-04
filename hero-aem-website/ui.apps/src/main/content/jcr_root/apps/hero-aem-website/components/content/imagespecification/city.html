@@ -1,0 +1,38 @@
+<div class="cust-tab-pane-img">
+    <div class="engine-left-img"
+        data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+        data-sly-test="${image.src}"
+        data-cmp-dmimage="${image.dmImage}"
+        data-asset-id="${image.uuid}"
+        id="${image.id}"
+        data-cmp-data-layer="${image.data.json}"
+        itemscope itemtype="http://schema.org/ImageObject">
+        <img srcset="${image.srcset}" src="${image.src}"
+            loading="${image.lazyEnabled ? 'lazy' : ''}"
+            class="img-fluid"
+            itemprop="contentUrl"
+            alt="${image.alt || true}" title="${image.displayPopupTitle && image.title}"/>
+    </div>
+    <div class="engine-info-sec">
+        <div class="engine-common-div">
+            <div class="container p-0">
+                <div class="row" data-sly-use.specifications="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='specifications'}">
+                    <sly data-sly-list="${specifications}">
+                        <div data-sly-test=${itemList.odd} class="col-5 col-md-5">
+                            <div class="engine-common-wrap d-flex flex-column">
+                                <p class="engine-common-h1 b1-heavy-text-std">${item.properties.title}</p>
+                                <p class="engine-common-p h4-medium-heading-std">${item.properties.value}</p>
+                            </div>
+                        </div>
+                        <div data-sly-test=${itemList.even} class="col-5 col-md-5">
+                            <div class="engine-common-wrap d-flex flex-column">
+                                <p class="engine-common-h1 b1-heavy-text-std">${item.properties.title}</p>
+                                <p class="engine-common-p h4-medium-heading-std">${item.properties.value}</p>
+                            </div>
+                        </div>
+                    </sly>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

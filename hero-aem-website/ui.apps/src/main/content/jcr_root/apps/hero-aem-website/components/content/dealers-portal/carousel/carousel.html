@@ -1,0 +1,13 @@
+
+<sly data-sly-list.carouselItems="${resource.getChildren}">
+    <sly data-sly-test="${carouselItems.name == 'carouselItems'}">
+        <div id="dealer-carousel">
+            <div class="arrow left-arrow"></div>
+        
+            <sly data-sly-list.item="${carouselItems.getChildren}">
+                <img class="dealer-slider-image" src="${item.imagePath}" alt="${item.imageAlt}">
+            </sly>
+            <div class="arrow right-arrow"></div>
+        </div>
+    </sly>
+</sly>

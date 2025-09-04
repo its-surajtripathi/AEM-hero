@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product Compare Three Variants"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <headline
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="Enter Headline"
+                        fieldLabel="Headline"
+                        name="./compareheadline"/>
+                    <bgImage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Enter Image path for background"
+                        fieldLabel="Select Background Image"
+                        name="./comparebgImage"
+                        rootPath="/content/dam/hero-aem-website"/>
+                    <productNameOne
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Enter Product Name"
+                        fieldLabel="Variant One Product Name"
+                        name="./variantNameOne"
+                        required="{Boolean}true"/>
+                    <productNameTwo
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Enter Product Name"
+                        fieldLabel="Variant Two Product Name"
+                        name="./variantNameTwo"
+                        required="{Boolean}true"/>
+                    <productNameThree
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Enter Product Name"
+                        fieldLabel="Variant Three Product Name"
+                        name="./variantNameThree"
+                        required="{Boolean}true"/>
+                    <imageone
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Enter Product variant Image path"
+                        fieldLabel="Product variant Image path"
+                        name="./variantimage"
+                        rootPath="/content/dam/hero-aem-website"/>
+                    <details
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel=" Normal page Specification Details">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./specificationDetails">
+                            <items jcr:primaryType="nt:unstructured">
+                                <type
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    emptyText="Enter  Specification type"
+                                    name="./specificationTitle"/>
+                                <valueone
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    emptyText="Enter Specification value for variant one"
+                                    name="./specificationvalueOne"/>
+                                <valuetwo
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    emptyText="Enter Specification value for variant two"
+                                    name="./specificationvalueTwo"/>
+                                <valuethree
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    emptyText="Enter Specification value for variant three"
+                                    name="./specificationvalueThree"/>
+                            </items>
+                        </field>
+                    </details>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

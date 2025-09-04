@@ -1,0 +1,8 @@
+<sly data-sly-use.configObj="com.hero.aem.core.services.osgiconfigs.HeroAPIEndPointsConfigurations"/>
+<script>
+	window.aemConfigs = {
+            apiEndpoints : ${configObj.getApiValueAsString @ context = 'unsafe'}
+        };
+</script>
+
+        

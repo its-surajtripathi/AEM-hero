@@ -1,0 +1,63 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+
+
+<div class="login-signup-content">
+   <!-- login and sign up tab -->
+   <ul class="nav nav-tabs cust-nav-tabs justify-content-between">
+      <li class="active">
+         <a data-toggle="tab" class="nav-tab-link active" href="#LogIn">${properties.loginHeading}</a>
+      </li>
+   </ul>
+   <div class="tab-content">
+      <!-- login content start-->
+      <div id="LogIn" class="tab-pane fade in active show">
+         <!-- login form -->
+         <form class="login-form campaign-form" id="loginForm">
+            <div class="form-group cust-form-group">
+               <span class="form-span">${properties.mobileLabel}</span>
+               <input type="tel" class="form-control campaign-input cust-form-control mobile-number-login" id="number"
+                  data-validation-msg-req="${properties.mobileRequired}" data-validation-msg-val="${properties.mobileValidation}"
+                  required placeholder="${properties.mobilePlaceholder}" name="loginMobileNo" maxLength="10">
+               <a href="javascript:void(0)" class="test-drive-otp-link send-otp-btn-one sent-otp">${properties.sendOtpLabel}</a>
+               <label class="invalid-mobile-message" style="display: none;">${properties.mobilenotFound}</label>
+               <label class="api-failure-msg" style="display: none;">${properties.serverdownMsg}</label>
+            </div>
+            <div class="form-group  cust-form-group">
+               <a href="javascript:void(0)" class="test-drive-otp-link resend-otp resend-otp-btn-one">${properties.resendOtpLabel}</a>
+               <span class="form-span">${properties.otpLabel}</span>
+               <input type="tel" class="form-control campaign-input cust-form-control otp-field" id="otp" required
+                  placeholder="${properties.otpPlaceholder}" name="loginOtp" data-validation-msg-req="${properties.otpRequired}"
+                  data-validation-msg-val="${properties.otpValidation}"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                  maxlength="6">
+               <label class="invalid-otp-message" style="display: none;">${properties.incorrectOtp}</label>
+            </div>
+            <p class="campaign-p">${properties.disclaimer  @ context = 'html'}
+            </p>
+            <input type="hidden" value="${properties.afterloginpath @ extension = 'html'}" name="pageAfterLogin" />
+            <input type="hidden" value="${properties.afterlogin @ extension = 'html'}" name="loggedInPage" />
+            
+            <button type="submit" class="campaign-btn btn-red-gradient btn w-100" id="loginBtn">${properties.loginLabel}</button>
+         </form>
+      </div>
+      <!-- login content end-->
+   </div>
+</div>
+<div class="login-right-container">
+   <h3 class="login-right-header">${properties.headingtext}</h3>
+   <div class="multi-thingh-container" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='tileItems'}"
+		data-sly-list="${listUse}">
+      <div class="multi-thingh">
+         <div class="multi-thingh-left">
+            <img src="${item.properties.iconPath}" title="book-service">
+         </div>
+         <div class="multi-thingh-right">
+            <h4>${item.properties.tileTitle}</h4>
+         </div>
+      </div>
+   </div>
+   <div class="user-manual">${properties.disclaimerRight @ context='html'}</div>
+</div>

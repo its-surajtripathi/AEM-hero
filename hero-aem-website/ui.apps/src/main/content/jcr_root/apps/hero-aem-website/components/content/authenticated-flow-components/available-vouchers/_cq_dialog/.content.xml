@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Available Vouchers Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="General"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Heading"
+                                                name="./heading"/>
+                                            <bgImage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Enter Image path for background"
+                                                fieldLabel="Select Background Image"
+                                                name="./bgImage"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <milestoneIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select Milestone Icon"
+                                                name="./milestoneIcon"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <voucherIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select Voucher Icon"
+                                                name="./voucherIcon"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <giftIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select Gift Icon"
+                                                name="./giftIcon"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <heroIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select Hero Icon"
+                                                name="./heroIcon"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <myntraIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select Myntra Icon"
+                                                name="./myntraIcon"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <dashedlineImg
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select Dashed Line Image"
+                                                name="./dashedlineImg"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <milestoneofferLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Milestone Offer Label"
+                                                name="./milestoneLabel"/>
+                                            <typetochooseLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Types to choose Label"
+                                                name="./typetochooseLabel"/>
+                                            <chooseoneButtonLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Choose one button Label"
+                                                name="./chooseoneLabel"/>
+                                            <reedemButtonLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Reedem button Label"
+                                                name="./reedemLabel"/>
+                                             <novouchersmsg
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter No Vouchers Msg"
+                                                name="./noVoucherMsg"/>
+                                             <noresponseerror
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Error Msg For no Response"
+                                                name="./apiErrorMsg"/>
+                                             <giftredeemmsg
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Gift Redemption Msg"
+                                                name="./giftRedemptionMsg"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <pop-up
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Pop-up Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <serviceVoucherLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Service Voucher Label"
+                                                name="./serviceVoucherLabel"/>
+                                            <giftVoucherLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Gift Voucher Label"
+                                                name="./giftVoucherLabel"/>
+                                            <howtoavailLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter How to Avail Label"
+                                                name="./howtoavailLabel"/>
+                                            <voucherInstruction
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Enter Voucher Instruction"
+                                                name="./voucherInstruction"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                <htmlRules jcr:primaryType="nt:unstructured">
+                                                    <blockHandling
+                                                        jcr:primaryType="nt:unstructured"
+                                                        removeSingleParagraphContainer="{Boolean}true"/>
+                                                </htmlRules>
+                                            </voucherInstruction>
+                                            <amountLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Amount Label"
+                                                name="./amountLabel"/>
+                                            <vouchericonRootPath
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select E-Commerce Icon Root path"
+                                                name="./voucherIconPath"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <milestoneofferLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Milestone offer Label"
+                                                name="./milestoneofferLabel"/>
+                                            <availLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Avail description Label"
+                                                name="./availLabel"/>
+                                            <yourTotalLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter your total Label"
+                                                name="./yourTotalLabel"/>
+                                            <totalworthLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Vouchers total worth Label"
+                                                name="./totalworthLabel"/>
+                                            <smsvoucherbuttonLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter sms voucher button Label"
+                                                name="./smsvoucherbuttonLabel"/>
+                                            <amountexceederrorMsg
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Amount exceed error message"
+                                                name="./amountexceederrorMsg"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </pop-up>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

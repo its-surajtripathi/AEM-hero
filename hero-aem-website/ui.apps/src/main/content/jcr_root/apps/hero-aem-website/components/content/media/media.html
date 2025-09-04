@@ -1,0 +1,205 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @ format=[component.title], i18n} </p>
+
+<sly data-sly-test="${properties.variation == 'inthepress'}">
+<div class="inthepress-container" data-inthepress-component-realtivePath="${currentNode.path @ addSelectors=['inthepress'], extension='json'}">
+    <section class="in-press-section">
+        <div class="container">
+        <div class="selectpress">
+            <p class="h4-heavy-heading-std">
+                Select Period
+            </p>
+            <div class="dropdown--wrap">
+                <div class="select-dropdown">
+                    <button data-toggle="dropdown" id="year--btn" type="button"></button>
+                    <ul class="dropdown--menu" id="year--ul">
+                    </ul>
+                    <span class="select--para">
+                        Select Year
+                    </span>
+                </div>
+
+                <div class="select-dropdown">
+                    <button data-toggle="dropdown" id="month--btn" type="button"></button>
+                    <ul class="dropdown--menu" id="month--ul">
+                    </ul>
+                    <span class="select--para">
+                        Select Month
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="mediacontent">
+            <div class="mediacontent--wrap">
+                <div class="pressyearBox">
+                    <img src="${properties.iconpath}" alt="">
+                    <p class="year h3-heavy-heading-std">
+                    </p>
+                    <p class="month h4-bold-heading-std"> 
+                    </p>
+                </div>
+                <div class="pressList">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</div>
+</sly>
+
+<sly data-sly-test="${properties.variation == 'pressreleases'}">
+<div class="pressreleases-container" data-inthepress-component-realtivePath="${currentNode.path @ addSelectors=['pressreleases'], extension='json'}">
+    <section class="in-press-section">
+        <div class="container">
+        <div class="selectpress">
+            <p class="h4-heavy-heading-std">
+                Select Period
+            </p>
+            <div class="dropdown--wrap">
+                <div class="select-dropdown">
+                    <button data-toggle="dropdown" id="year--btn" type="button"></button>
+                    <ul class="dropdown--menu" id="year--ul">
+                    </ul>
+                    <span class="select--para">
+                        Select Year
+                    </span>
+                </div>
+
+                <div class="select-dropdown">
+                    <button data-toggle="dropdown" id="month--btn" type="button"></button>
+                    <ul class="dropdown--menu" id="month--ul">
+                    </ul>
+                    <span class="select--para">
+                        Select Month
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="mediacontent">
+            <div class="mediacontent--wrap">
+                <div class="pressyearBox">
+                    <img src="${properties.iconpath}" alt="">
+                    <p class="year h3-heavy-heading-std">
+                    </p>
+                    <p class="month h4-bold-heading-std"> 
+                    </p>
+                </div>
+                <div class="pressList">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</div>
+</sly>
+
+<sly data-sly-test="${properties.variation == 'newsletter'}">
+    <div class="newsletter-container" data-inthepress-component-realtivePath="${currentNode.path @ addSelectors=['newsletters'], extension='json'}">
+        <section class="in-press-section summary-reports" id="newsletter">
+            <div class="container">
+            <div class="header-wrap">
+                <h2>
+                    TAKE A LOOK AT THE COMPANY'S CSR Newsletters
+                </h2>
+            </div>
+            <div class="selectpress">
+                <p>
+                    Select Period
+                </p>
+                <div class="dropdown--wrap">
+                    <div class="select-dropdown">
+                        <button data-toggle="dropdown" id="year--btn" type="button"></button>
+                        <ul class="dropdown--menu" id="year--ul">
+                        </ul>
+                        <span class="select--para">
+                            Select Year
+                        </span>
+                    </div>
+    
+                    <div class="select-dropdown">
+                        <button data-toggle="dropdown" id="month--btn" type="button"></button>
+                        <ul class="dropdown--menu" id="month--ul">
+                        </ul>
+                        <span class="select--para">
+                            Select Quarter
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mediacontent">
+                <div class="mediacontent--wrap">
+                    <div class="pressyearBox">
+                        <img src="${properties.iconpath}" alt="">
+                        <p class="year">
+                        </p>
+                        <p class="month"> 
+                        </p>
+                    </div>
+                    <div class="pressList">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+</sly>
+
+<sly data-sly-test="${properties.variation == 'annualreport'}">
+    <div class="annualreport-container" data-inthepress-component-realtivePath="${currentNode.path @ addSelectors=['annualreports'], extension='json'}">
+        <section class="in-press-section summary-reports" id="annual-report">
+            <div class="container">
+            <div class="header-wrap">
+                <h2>
+                    TAKE A LOOK AT THE COMPANY'S CSR ANNUAL SUMMARY REPORTS
+                </h2>
+            </div>
+            <div class="selectpress">
+                <p>
+                    Select Period
+                </p>
+                <div class="dropdown--wrap">
+                    <div class="select-dropdown">
+                        <button data-toggle="dropdown" id="year--btn" type="button"></button>
+                        <ul class="dropdown--menu" id="year--ul">
+                        </ul>
+                        <span class="select--para">
+                            Select Year
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mediacontent">
+                <div class="mediacontent--wrap">
+                    <div class="pressyearBox">
+                        <img src="${properties.iconpath}" alt="">
+                        <p class="year">
+                        </p>
+                        <p class="month"> 
+                        </p>
+                    </div>
+                    <div class="pressList">
+                        <ul>
+                            <li>
+                                <div class="img-wrapper">
+                                    <img src="/content/dam/hero-aem-website/in/icons/newsletter.png" alt="">
+                                </div>
+                                <div class="content-wrapper">
+                                    <h3>
+                                        Volume V - Issue 1
+                                    </h3>
+                                    <a href="">April – June 2019 <span><img src="/content/dam/hero-aem-website/in/icons/board-nav-arrow.png" alt=""></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+</sly>

@@ -1,0 +1,1325 @@
+.book-service-wrapper {
+    .heading {
+        font-size: 28px;
+    }
+
+    .step-section {
+        display: none;
+        padding: 1rem 2rem;
+        background: #fff;
+
+        &.active {
+            display: block;
+        }
+
+        &.dealer-details {
+            .sub-item1 {
+                width: 112px;
+                height: 30px;
+                background-color: #FF0000;
+                color: white;
+                position: absolute;
+                right: 32px;
+                top: -14px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 5px;
+                z-index: 1;
+                border-bottom-right-radius: 24px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 8px;
+            }
+
+            .dealers-card {
+                .sub-item2 {
+                    background: #FFFFFF;
+                    border: 1px solid #E8E8E8;
+                    box-shadow: 0px 6px 26px rgba(40, 40, 40, 0.16);
+                    border-radius: 8px;
+                    padding: 10px 15px;
+                    margin-bottom: 1rem;
+                    min-height: 207px;
+
+                    input[type="checkbox"] {
+                        width: 24px;
+                        height: 24px;
+                        border: 1px solid #8C8C8C;
+                        border-radius: 8px;
+                        accent-color: red;
+                    }
+
+                    div.dealer-address {
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: rgba(51, 51, 51, 0.8);
+                        margin-top: 5px;
+                    }
+
+                    p.dealer-address {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #6A737D;
+                        margin-top: 5px;
+                        font-family: "tstar-medium";
+                    }
+                    h3{
+                         font-family: var( --font-tstar-bold);
+                    }
+
+                    .tel {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        display: flex;
+                        align-items: center;
+                        color: rgba(51, 51, 51, 0.8);
+                        margin-top: 1rem;
+                        gap: 1rem;
+                        position:relative;
+                        bottom:15%;
+                    }
+                }
+            }
+        }
+
+        .next-back-nav {
+            display: flex;
+            gap: 16px;
+            position: relative;
+            left: 35%;
+
+
+            .bk,
+            .nt {
+                width: 99px;
+                height: 38px;
+                background: #FFFFFF;
+                border: 1px solid #EE2326;
+                border-radius: 4px;
+                text-align: center;
+                box-sizing: border-box;
+                padding-top: 9px;
+                color: #FF0000;
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 19px;
+                text-transform: uppercase;
+            }
+        }
+
+        &.selfjobcard {
+
+            h6 {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: rgba(51, 51, 51, 0.8);
+            }
+
+            .textarea-container {
+                h5 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: rgba(51, 51, 51, 0.8);
+                    margin-top: 1rem;
+                }
+
+                textarea.self-job-card-text-area {
+                    margin-top: 0.5rem;
+                    resize: none;
+                    min-height: 206px;
+                }
+
+                textarea::placeholder {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #B8C1CB;
+                }
+
+                .form-group {
+                    margin: 0;
+                }
+
+                #the-count {
+                    float: right;
+                    padding: 0.1rem 0 0 0;
+                    font-size: 0.875rem;
+                    color: #999999;
+                }
+            }
+
+            .issue-types input {
+                accent-color: red;
+                width: 25px;
+                height: 20px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .issue-types input:checked+label {
+                font-weight: bold;
+                color: black
+            }
+
+            .issue-types label {
+                font-style: normal;
+                margin-left: 15px;
+                text-align: center;
+                font-weight: lighter;
+                color: gray;
+            }
+
+            .issue {
+                width: 100%;
+                height: 70px;
+                border: 1px gray solid;
+                border-radius: 10px;
+            }
+
+            .toright {
+                float: right;
+            }
+
+            .self-job-card {
+                border-bottom: 1px gray solid;
+                border-top: 1px gray solid;
+                padding-top: 15px;
+                padding-bottom: 15px;
+
+            }
+
+            .issue-detail {
+                padding-top: 20px;
+            }
+
+            .issue-detail h4 {
+                font-weight: 500;
+                color: black;
+            }
+
+        }
+    }
+}
+
+// Calendar style script added
+.row.serv-detail-header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 25px;
+    @media (max-width: 991px) {
+        margin:0;
+        margin-bottom: 1rem;
+
+    }
+     @media (max-width: 991px) {
+        .col-md-12.col-lg-12.col-sm-12.col-xs-12{
+            padding:0;
+        }
+    }
+}
+
+.serv-left-right {
+    float: left;
+    padding: 0 0 7px 0;
+}
+
+
+
+/* rescalendar */
+.rescalendar_controls {
+    margin-left: 65px;
+    padding: 0;
+    float: left;
+    margin-bottom: 11px;
+    display: inline-block;
+    width: 94%;
+    @media (max-width: 991px) {
+        margin-bottom: 1rem;
+    }
+}
+
+.rescalendar_controls input {
+    text-align: center;
+}
+
+.rescalendar_table {
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.rescalendar_table .firstColumn {
+    width: 100px;
+    text-align: left;
+}
+
+.rescalendar_day_cells span {
+    display: block;
+    padding: 0 2px 0px;
+    font-size: 14px;
+}
+
+.rescalendar_day_cells span.day {
+    display: block;
+    width: 30px;
+}
+
+.rescalendar_day_cells td.today {
+    background: #FF0000;
+    color: #fff;
+
+    &.disabled {
+        background: none;
+        color: #000;
+    }
+}
+
+.rescalendar td a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.rescalendar td .hasEvent {
+    background: yellow;
+}
+
+.error_wrapper {
+    width: 100;
+    text-align: center;
+    background: red;
+    color: #fff;
+    padding: 15px;
+}
+
+/* hero styles added */
+.day_cell span {
+    background: #F9F7F7;
+    padding: 5px;
+    margin: 0 3px;
+
+}
+
+.day_cell span.dia {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px 5px 0 5px;
+    text-align: center;
+}
+
+.day_cell span.dia_semana {
+    padding: 5px 5px 10px 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+}
+
+.middleDay.day_cell {
+
+    span.dia_semana,
+    span.dia {
+        background-color: red;
+        color: #fff;
+    }
+
+    &.disabled span {
+        background-color: inherit;
+        color: #ccc;
+    }
+}
+
+.next-button {
+    position: absolute;
+    right: 35px;
+    top: 46%;
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+        right: 8px;
+    }
+}
+
+.rescalendar.my_calendar_en_wrapper {
+    position: relative;
+}
+
+.previous-button {
+    position: absolute;
+    top: 46%;
+    left: 36px;
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+        left: 7px;
+    }
+}
+
+.calendar-slider-dontainer {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    clear: both;
+    overflow: hidden;
+
+    table {
+        margin: 1rem auto !important;
+        width: 90%;
+    }
+}
+
+.calendar-slider-dontainer input.month-selection {
+    border: transparent;
+    font-weight: 900;
+
+    @media (max-width: 991px) {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        color: #333333;
+    }
+}
+
+.rescalendar_controls input {
+    float: right;
+    border: transparent;
+    font-weight: 900;
+    background: transparent;
+}
+
+button.move_to_yesterday {
+    border: transparent;
+    background: transparent;
+    color: #ddd;
+}
+
+button.move_to_tomorrow {
+    border: transparent;
+    background: transparent;
+    color: #ddd;
+}
+
+.select-date {
+    /* width: 50%; */
+    float: left;
+    position: absolute;
+    left: 0;
+}
+
+.form-check-label.service-type-form-chk {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    input[type=radio] {
+        accent-color: red;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 14px;
+        top: -1px;
+    }
+}
+
+.row.button-container {
+    padding: 10px;
+}
+
+/* hero styles added */
+/* Slider time picker start */
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #FF0000;
+    color: #FF0000;
+}
+
+.slider::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border: 0;
+    cursor: pointer;
+    background-color: #FF0000;
+    color: #FF0000;
+    border-radius: 50%;
+}
+
+.slidecontainer {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 12px 0;
+    padding: 30px 15px 30px 15px;
+    @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    padding: 40px 10px;
+}
+
+    .first-range-time {
+        width: 10%;
+        text-align: right;
+        padding-right: 10px;
+        margin-top: -8px;
+        font-weight: 700;
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+            display: none;
+        }
+    }
+
+    .last-range-time {
+        position: relative;
+        left: -40px;
+        top: -9px;
+        font-weight: 700;
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+            display: none;
+        }
+    }
+}
+
+.icon-left {
+    float: left;
+}
+
+.selct-time-header {
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    @media (max-width: 991px) {
+        padding: unset;
+        flex-wrap: nowrap;
+    }
+    #timePicker{
+        font-weight: 900;
+    }
+}
+
+.odemeter-container {
+    padding: 15px 0;
+    @media (max-width: 991px) {
+        padding: unset;
+    }
+
+    .odemeter-container-inner {
+        position: relative;
+
+        .tooltip-icon-container {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+
+        .tooltip-icon-container:hover+.tooltip-container {
+            display: block;
+            z-index: 1;
+        }
+
+        .tooltip-container {
+            position: absolute;
+            height: 77px;
+            width: 200px;
+            background: #fff;
+            box-shadow: 1px 1px 6px 3px #ddd;
+            padding: 5px 10px;
+            border-radius: 4px;
+            left: 235px;
+            top: 19px;
+            display: none;
+        }
+    }
+}
+
+/* Slider time picker end */
+
+/*Section 2 styles start*/
+.sub-heading {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.item2 {
+    margin-top: 1rem;
+
+    .formfield {
+        align-items: end;
+
+        .form-group {
+            position: relative !important;
+
+            &:has(p){
+                display: flex;
+            }
+
+            .dropdown-menu {
+                z-index: 2;
+                width: 88%;
+            }
+        }
+    }
+
+    #dealerstateDropdown,
+    #dealercityDropdown {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: none;
+        border-bottom: 2px solid #333333;
+        padding: unset;
+        border-radius: unset;
+
+        .placeholder {
+            border: none;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: rgba(51, 51, 51, 0.8);
+        }
+    }
+
+    #dealercityDropdown.disabled {
+        pointer-events: none;
+    }
+
+    .dealer-state-dropdown,
+    .dealer-city-dropdown {
+        text-transform: capitalize;
+        position: relative;
+        max-height: 250px;
+        overflow-y: auto;
+        max-width: -webkit-fill-available;
+        z-index: 1;
+        border-radius: 0 0 16px 16px;
+
+        li {
+            padding: 8px 8px;
+            border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+            font-size: 12px;
+            font-family: "tstar-medium";
+        }
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #333333;
+        margin: 0 auto;
+    }
+
+    .location-icon {
+        display: flex;
+        gap: 0.5rem;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: #FF0000;
+        padding: 3px 0;
+    }
+}
+
+.auth-desc {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin: 1rem 0;
+    padding-bottom: 20px;
+}
+
+.dealer-summary-card {
+    h3#dealerName{
+        font-family: 'tstar-heavy';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: #333333;
+        margin-bottom: 6px;
+    }
+    p.dealer-address{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #6A737D;
+    }
+    .tel{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 1rem;
+        color: rgba(51, 51, 51, 0.8);
+    }
+}
+
+.dealer-button-container {
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+    justify-content: flex-end;
+     align-items: center;
+    @media (max-width: 991px) {
+        border: none;
+    }
+    .foot-btn {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: end;
+        width: 99%;
+    }
+
+    .summary-footer{
+        display: flex;
+        gap: 1rem;
+        justify-content: end;
+        .api-error-msg{
+        @media (max-width:991px){
+            position: absolute;
+             bottom: -11px;
+             }
+        }
+    }
+}
+
+/*Section 2 styles end*/
+/*Section 5 styles start*/
+.address-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    box-shadow: 0px 6px 26px rgba(40, 40, 40, 0.16);
+    border-radius: 8px;
+    padding: 1rem;
+    //width: 315px;
+    width: 100%;
+    position: relative;
+    margin-bottom:20px;
+    .summery-sub-item1{
+    	width: 112px;
+		height: 30px;
+		background-color: red;
+		color: white;
+		position: absolute;
+		right: 32px;
+		top: -14px;
+		text-align: center;
+		box-sizing: border-box;
+		z-index: 1;
+		border-bottom-right-radius: 24px;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 8px;
+    }
+}
+
+.kilometer-range {
+    width: 112px;
+    height: 30px;
+    background-color: #FF0000;
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: -12px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    z-index: 1;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 8px;
+}
+
+/*Section 5 styles end*/
+/* Component reuseable styles start */
+.book-now-btn,
+.book-now-btn:hover {
+    background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+    border-radius: 4px;
+    width: 152px;
+    height: 48px;
+    padding: 0;
+    color: #fff;
+
+    &.disabled {
+        background: 0;
+        color: #ccc;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+.book-now-back-btn,
+.book-now-back-btn:hover {
+    border: 1px solid #EE2326;
+    margin-right: 9px;
+    height: 48px;
+    width: 108px;
+    box-shadow: 1px 1px 1px 0px #ee2326 !important;
+    font-weight: bold !important;
+    background-color: transparent;
+}
+
+.service-sub-heading {
+    //font-family: 'T-Star Pro';
+    //font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #333333;
+
+    @media (max-width: 991px) {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.page-title span {
+    float: left;
+}
+
+/* Component reuseable styles end*/
+/* book service pages styles start*/
+.page-heading {
+    padding: 10px 0;
+
+    .service-heading {
+        font-size: 28px;
+        padding: 0 6px;
+        font-weight: 700;
+    }
+
+    span:first-child {
+        padding: 3px 0;
+    }
+}
+
+.book-serv-pages {
+    background: #fff;
+    margin: 0 15px 0 0;
+    @media (max-width: 991px) {
+        margin: 1rem;
+    }
+
+    .service-heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        @media (max-width: 991px) {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #303030;
+        }
+    }
+
+    .form-container {
+        .rescalendar {
+            .rescalendar_table {
+                tr.rescalendar_day_cells {
+                    background-color: transparent !important;
+
+                    td.day_cell {
+                        padding: 0 !important;
+                        cursor: pointer;
+
+                        &.disabled {
+                            pointer-events: none;
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+
+        padding: 15px;
+
+        .service-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 5px 0px 0 5px;
+
+            @media (max-width: 991px) {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                color: #303030;
+                padding-top: 8%;
+            }
+
+            .serv-left-right {
+                float: left;
+                margin: 7px 0;
+            }
+        }
+    }
+
+    .odometerReading {
+        font-size: 20px;
+        font-weight: 400;
+        padding: 10px 0;
+        @media (max-width: 991px) {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .service-type-container {
+        h5 {
+            font-size: 20px;
+            padding: 10px 0;
+            @media (max-width: 991px) {
+                padding-bottom: 1rem;
+            }
+        }
+
+
+
+
+        .col-md-4.service-type-process {
+            padding: 10px;
+            max-width: 28%;
+            margin: 0 15px;
+            height: 52px;
+            border: 1px solid #BABABA;
+
+
+            border-radius: 5px;
+            box-shadow: 1px 1px 4px 2px #ddd;
+            padding: 13px 0 0 18px;
+            font-weight: 900;
+
+                color:#000;
+                &.disabled{
+                  pointer-events:none;
+                  cursor:not-allowed;
+                  color: #BABABA;
+                }
+                .active {
+                    border: 1px solid #FF0000 !important;
+                    box-shadow: 1px 1px 3px 2px #ddd;
+
+                }
+
+
+            @media screen and (max-width:991px) {
+                max-width: inherit;
+                margin-bottom: 15px;
+            }
+
+        }
+
+        .service-type-process .form-check input[type=radio] {
+            left: 4px;
+        }
+
+        .service-type-process:last-child .form-check input[type=radio] {
+            top: -4px;
+        }
+
+        .service-container {
+            padding: 25px 0;
+            border-bottom: 1px solid #cccccc;
+            margin: 0;
+            @media (max-width: 991px) {
+                gap: 1rem;
+                border: none;
+            }
+            .service-wrapper{
+                display: flex;
+                margin-right:10px;
+             @media (max-width: 991px) {
+                    position: relative;
+                    gap: 10px;
+                    margin-bottom: 20px;
+                    }
+            .service-types.disabled {
+                color: #cccccc;
+            }
+
+            .service-types {
+                padding: 0;
+                gap: 10px;
+                display:flex;
+                .icon-left{
+                @media (max-width: 991px) {
+                    margin-right: 20px;
+                    margin-bottom: 25px;
+                    }
+                    }
+                .servtext-right {
+                    float: left;
+                    max-width: 130px;
+                    font-size: 12px;
+                    @media  (max-width:991px){
+                        max-width: inherit;
+                        font-size: 16px;
+                    }
+                }
+
+
+            }
+            .line-gape {
+                float: left;
+                padding: 22px 0 0 4px;
+                @media (max-width:991px){
+                    transform: rotate(90deg);
+                        position: absolute;
+                        bottom: -20%;
+                        left: 2%;
+                }
+            }
+            }
+        }
+    }
+    .range {
+        position: relative;
+        width: 85%;
+        height: 5px;
+        //margin: 30px auto;
+        @media only screen
+      and (min-device-width: 320px)
+      and (max-device-width: 480px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        width: 100%;
+    }
+    @media (max-width:991px){
+    margin-left: 10%;
+    }
+    }
+}
+
+/* book service pages styles end*/
+
+
+.range input {
+    width: 92%;
+    position: absolute;
+    top: 2px;
+    left:10px;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    width: 88%;
+  }
+  @media (max-width:991px){
+    width: 88%;
+  }
+}
+
+.range input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    margin: -8px 0 0;
+    border-radius: 50%;
+    background: #EE2326;
+    cursor: pointer;
+    border: 0 !important;
+}
+
+.range input::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    margin: -8px 0 0;
+    border-radius: 50%;
+    background: #EE2326;
+    cursor: pointer;
+    border: 0 !important;
+}
+
+.range input::-ms-thumb {
+    width: 18px;
+    height: 18px;
+    margin: -8px 0 0;
+    border-radius: 50%;
+    background: #EE2326;
+    cursor: pointer;
+    border: 0 !important;
+}
+
+.range input::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: #b2b2b2;
+}
+
+.range input::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: default;
+    background: #b2b2b2;
+}
+
+.range input::-ms-track {
+    width: 100%;
+    height: 2px;
+    cursor: default;
+    background: #b2b2b2;
+}
+
+.range input:focus {
+    background: none;
+    outline: none;
+}
+
+.range input::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.range-labels {
+    margin: 17px -44px 0;
+    padding: 0;
+    list-style: none;
+    @media (max-width:991px){
+        margin:-30px -12px 0;
+    }
+}
+
+.range-labels li {
+    position: relative;
+    float: left;
+    width: 14%;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    text-indent: -9999px;
+     &.disabled{
+        cursor:not allowed;
+        pointer-events:none;
+     }
+    .start-time,
+    .end-time {
+        position: relative;
+        left: 6px;
+        top: -23px;
+    }
+
+    .start-time {
+        left: -42px;
+    }
+
+    .end-time {
+        right: 6px;
+    }
+}
+
+.range-labels li::before {
+    position: absolute;
+    top: -23px;
+    right: 0;
+    left: -19px;
+    content: "";
+    margin: 0 auto;
+    width: 2px;
+    height: 15px;
+    background: #b2b2b2;
+    border-radius: 50%;
+    @media (max-width: 991px) {
+        left: 0px;
+        top:23px;
+    }
+}
+
+.range-labels li:last-child:before {
+    left: -2.2rem;
+    @media (max-width: 991px) {
+        left: -1rem; 
+    }
+}
+
+.range-labels .active.selected {
+    text-indent: initial;
+    font-weight: 700;
+    border-radius: 10px;
+
+    &::before {
+        //display: none;
+        z-index: -1;
+
+    }
+
+    .time-wrap {
+        white-space: nowrap;
+        width: fit-content;
+        padding-inline: 8px;
+        border-radius: 8px;
+        background: #FDEFEF;
+    }
+}
+
+.summary-heading {
+    font-size: 20px;
+    font-weight: 900;
+    display: inline-block;
+    font-family: 'tstar-heavy';
+    margin-block: 1rem;
+}
+
+.change-link {
+    display: inline;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.summary-row {
+    line-height: 30px;
+
+    .head-change-wrap{
+        display: flex;
+        align-items: center;
+        @media (max-width:991px) {
+            justify-content: space-between;
+        }
+    }
+}
+
+.servicedate-selected {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    #summery-date,
+    #summery-time,
+    #service-type {
+        font-weight: bold;
+    }
+}
+
+.pleasure-max-container {
+    padding-top: 2rem;
+    h3{
+        font-family: 'tstar-heavy';
+    }
+}
+
+.summery-details {
+    justify-content: space-between;
+    @media (max-width: 991px) {
+        flex-direction: column-reverse;
+    }
+}
+
+#job-details label {
+    display: block;
+}
+
+.job-card-check-box {
+    column-count: 3;
+    column-gap: 5rem;
+    padding: 1rem;
+
+    @media (max-width: 991px) {
+        column-count: unset;
+    }
+
+    @media (min-width: 1440px) {
+        column-gap: 13rem;
+        padding: 2rem;
+    }
+
+    .form-check {
+
+        input.form-check-input[type="checkbox"] {
+            height: 24px;
+            width: 24px;
+            accent-color: red;
+            border: red;
+            margin-top: 1rem;
+        }
+
+        .form-check-label {
+            margin: 6px 14px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 138.02%;
+            color: rgba(51, 51, 51, 0.8);
+            margin-left: 1rem;
+            margin-top: 1rem;
+        }
+
+        input:checked+label {
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 138.02%;
+            color: rgba(51, 51, 51, 0.8);
+            font-family: 'tstar-heavy';
+        }
+    }
+}
+// Media query for mobile view
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .odemeter-container .odemeter-container-inner .tooltip-icon-container{
+        left: 2px;
+        float: right;
+    }
+    .odemeter-container .odemeter-container-inner .tooltip-container{
+        left: 44% !important;
+    }
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .odemeter-container .odemeter-container-inner .tooltip-icon-container{
+        left: 2px;
+        float: right;
+    }
+    .odemeter-container .odemeter-container-inner .tooltip-container{
+        left: 67% !important;
+        top: -87% !important;
+        z-index: 1;
+    }
+}

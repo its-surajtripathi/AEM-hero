@@ -1,0 +1,83 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} ' @ format=[component.title], i18n}
+</p>
+<!-- 360section -->
+<section class="explore-360-main next-section ${properties.variationtype} ${properties.variationtype == 'scooter-explore-360-main' ? properties.classforscooter : ''}"  id="specification"
+  style="background-image: url('${properties.background ? properties.background : 'unset' @ context='styleString'}')">
+  <div class="explore-360-wrapper">
+    <div class="explore-360-menu-main">
+      <h4 class="bike-rotate-color-h4 h4-bold-heading-std" data-sly-test="${properties.variationtype != 'sports'}">
+        ${properties.leftheading}</h4>
+      <ul class="nav nav-tabs explore-360-tab" data-category="city" data-product="hf-delux"
+        data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='colors'}"
+        data-sly-list="${listUse}">
+        <li class="nav-item">
+          <a href="javascript:void(0);"
+            class="nav-link ${itemList.first ? 'active' : ''} ${ properties.variationtype == 'scooter-explore-360-main' ? item.properties.color : ''}"
+            aa-data-attr="track_cta" data-color="${item.properties.colorPath}" id="colorID">
+            <img class="img-fluid" src="${item.properties.colorimagepath}"
+              alt="${item.properties.colortitle  @ context = 'html'}"
+              data-sly-test="${properties.variationtype != 'scooter-explore-360-main'}" />
+            <p class="common-bike-rotate-p b1-text-std">${item.properties.colortitle @ context = 'html'}</p>
+          </a>
+        </li>
+      </ul>
+      <div class="engine-sound" data-sly-test="${properties.variationtype == 'sports' && properties.engsound}">
+        <a href="javascript:void(0)" aa-data-attr="track_cta" data-audio-path="${properties.engaudio}">
+          <div class="icon-box">
+            <img
+              src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/engine-sound-icon.svg"
+              class="img-fluid" alt="Engine Sound">
+            <img
+              src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/engine-sound-icon.gif"
+              class="img-fluid icon-2" alt="Engine Sound">
+          </div>
+          <p>${properties.engsound}</p>
+        </a>
+      </div>
+    </div>
+    <div class="explore-360-wrapper-main">
+      <h3 class="prise-h3 common-h3 h2-heading-std text-to-uppercase"
+        data-sly-test="${properties.variationtype != 'sports'}">${properties.headline}</h3>
+      <div class="explore-360-box tab-content">
+        <div id="varient1" class="tab-pane fade in active show">
+          <div class="left-rotate-arrow">
+            <img src="${properties.leftarrowpath}" class="img-fluid" alt="rotate 360 arrow">
+          </div>
+          <div class="right-rotate-arrow">
+            <img src="${properties.rightarrowpath}" class="img-fluid" alt="rotate 360 arrow">
+          </div>
+          <div class="loader-div  d-none">
+            <img src="${properties.loaderimg}" class="img-fluid loader" alt="Loading">
+          </div>
+          <sly
+            data-sly-resource="${'imagerotation' @ resourceType='hero-aem-website/components/content/imagerotation' }">
+          </sly>
+        </div>
+      </div>
+    </div>
+    <div class="explore-360-features-main" data-sly-test="${properties.variationtype != 'sports'}">
+      <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multitext'}"
+        data-sly-list="${listUse}">
+        <div class="rotate-bike-div ${item.properties.rightimage ? '' : 'without-img'}">
+          <img src="${item.properties.rightimage}" alt="img1" class="rotate-bike-img"
+            data-sly-test="${item.properties.rightimage}" />
+          <p class="rotate-bike-p b1-text-std">${item.properties.title}</p>
+        </div>
+      </sly>
+    </div>
+    <sly data-sly-test="${properties.variationtype == 'sports'}" data-sly-include="sportsfeatures.html">
+
+  </div>
+  <div class="explore-360-btn-main">
+    <a data-sly-test="${properties.btnlabel1}" aa-data-attr="track_cta" aa-data-cta="${component.title}"
+      data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkTo1}"
+      href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+      class="btn ${properties.styling1}">${properties.btnlabel1}
+      <img src="${properties.imgbtn1}" class="img-fluid" alt="360 View" /></a>
+    <a data-sly-test="${properties.btnlabel2}" aa-data-attr="track_cta" aa-data-cta="${component.title}"
+      data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkTo2}"
+      href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+      class="btn ${properties.styling2}">${properties.btnlabel2}</a>
+  </div>
+</section>

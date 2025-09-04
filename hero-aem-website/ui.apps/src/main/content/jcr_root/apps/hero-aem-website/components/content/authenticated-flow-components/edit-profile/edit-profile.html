@@ -1,0 +1,68 @@
+<form class="editprofileForm">
+    <div class="container-fluid rounded bg-white">
+        <div class="alert-danger type-error hidden" > ${properties.imagetypeerror}</div>
+
+        <div class="alert-danger size-error hidden" > ${properties.imagesizeerror}</div>
+        <div class="row edit-personalDetails">
+
+            <div class="col-md-3 col-12 edit-personalImg">
+                <div class="edit-Img-heading">${properties.personalDetails}</div>
+                <div class="image-container">
+                    <input type="file" name="" class="fileInput" class="file-input" hidden>
+                    <div class="fetch-image">
+                        <script type="text/html" class="getProfileic">
+                            <img class="profile-roundPic" src="<%=vehicleDetails.profile_pic_path%>?<%=atob(JSON.parse(atob(getCookie('data'))).mediaToken)%>">
+                        </script>
+
+
+
+                        <div class="initials">   </div>
+                    </div>
+                    <div class="upload-image">
+                        <img src="${properties.camIcon}" alt="cam-icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 col-12">
+                <div class="field-wrap">
+                <div class="edit-Img-heading-mobile">${properties.personalDetails}</div>
+                    <sly data-sly-resource="${'containerone' @ resourceType='hero-aem-website/components/container' }">
+                    </sly>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row edit-Address">
+
+            <div class="col-md-3 col-12">
+                <h4 class="edit-address-heading">${properties.editAddress}</h4>
+            </div>
+
+            <div class="col-md-9 col-12">
+                <div class="edit-fields">
+                    <sly data-sly-resource="${'containertwo' @ resourceType='hero-aem-website/components/container' }"></sly>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="edit-action-btns text-right">
+                	<div class="alert-danger api-error hidden">${properties.apierror}</div>
+                    <a href="${properties.cancelLink @ extension='html'}">
+                       <button class="btn btn-primary profile-button" type="button">${properties.cancelLabel}</button>
+                    </a>
+                    <button class="save-btn" type="button">${properties.saveProfile}</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</form>

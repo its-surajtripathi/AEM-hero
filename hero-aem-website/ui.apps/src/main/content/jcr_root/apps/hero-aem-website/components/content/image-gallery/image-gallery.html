@@ -1,0 +1,14 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+
+
+<div class="accordion" id="accordionExample">
+    <div data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multitext'}" data-sly-list="${listUse}">
+        <div class="card productpic">
+            <div class="card-header" id="headingOne">
+                <img src="${item.properties.productimages}">
+            </div>
+        </div>
+    </div>
+</div>

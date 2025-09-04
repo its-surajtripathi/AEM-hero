@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Fjalla One";
+  src: url("../resources/fonts/fjalla-one/FjallaOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../resources/fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../resources/fonts/open-sans/OpenSans-Bold.ttf") format("truetype");
+}
+
+.font-fjalla {
+  font-family: "Fjalla One";
+}
+
+.font-open-sans {
+  font-family: "Open Sans";
+}
+
+.font-open-sans-bold {
+  font-family: "Open Sans Bold";
+}
+
+.hero-breadcrumb {
+  position: relative;
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 99;
+}
+
+.bread-crumbs-section {
+  position: absolute;
+  top: 35px;
+  right: 0px;
+}
+
+.bread-crumbs-section .breadcrumb {
+  background-color: transparent;
+  padding-right: 0;
+}
+
+.bread-crumbs-section .breadcrumb li {
+  display: flex
+}
+
+.bread-crumbs-section .breadcrumb li::after {
+  content: '>';
+  display: inline;
+  font-size: 12px;
+  font-family: 'Open Sans';
+  padding: 0 4px;
+}
+
+.bread-crumbs-section .breadcrumb li:last-child::after {
+  display: none;
+}
+
+.bread-crumbs-section .breadcrumb a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #000000;
+  font-size: 12px;
+  font-family: 'Open Sans';
+  display: flex;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  display: none;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+  padding: 0;
+}
+
+.bread-crumbs-section .breadcrumb-item.active {
+  color: #000000;
+  font-size: 12px;
+  font-family: 'Open Sans';
+}
+
+@media screen and (max-width: 992px) {
+  .bread-crumbs-section {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-breadcrumb {
+    width: 90%;
+  }
+
+  .bread-crumbs-section nav {
+    background-color: transparent;
+  }
+
+  .bread-crumbs-section .breadcrumb{
+    padding-left: 30px;
+  }
+
+}

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Sustainability Governance"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <container
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <variant
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                                        class="cq-dialog-dropdown-showhide"
+                                                        cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                                                        fieldDescription="Select Tab Variant."
+                                                        fieldLabel="Variant"
+                                                        name="./incvariant">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <default
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Default"
+                                                                value="default"/>
+                                                            <investors
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Investors Page"
+                                                                value="investors"/>
+                                                        </items>
+                                                    </variant>
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/container"
+                                                        class="show-hide-textfield"
+                                                        showhidetargetvalue="default">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <multitext
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldLabel="click on add button to add Governance Structure Menu Items">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                    name="./governancemulti">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <title
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                            fieldLabel="Enter Menu Title"
+                                                                            name="./title"
+                                                                            useFixedInlineToolbar="{Boolean}true">
+                                                                            <rtePlugins
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                            <uiSettings
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                        </title>
+                                                                        <field1
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <multipersons
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                    composite="{Boolean}true"
+                                                                                    fieldLabel="click on add button to add Committee/Team Members">
+                                                                                    <field
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                        name="./multipersons">
+                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                            <name
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                                fieldLabel="Enter Name"
+                                                                                                name="./personname"
+                                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                                <rtePlugins
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                                <uiSettings
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                            </name>
+                                                                                            <designation
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                                fieldLabel="Enter Designation"
+                                                                                                name="./designation"
+                                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                                <rtePlugins
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                                <uiSettings
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                            </designation>
+                                                                                            <imagepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Choose image path"
+                                                                                                name="./imagepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                        </items>
+                                                                                    </field>
+                                                                                </multipersons>
+                                                                            </items>
+                                                                        </field1>
+                                                                    </items>
+                                                                </field>
+                                                            </multitext>
+                                                        </items>
+                                                    </default>
+                                                    <investors
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/container"
+                                                        class="show-hide-textfield"
+                                                        showhidetargetvalue="investors">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <multitext
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldLabel="click on add button to add Governance Structure Menu Items">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                    name="./ingovernancemulti">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <title
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                            fieldLabel="Enter Menu Title"
+                                                                            name="./intitle"
+                                                                            useFixedInlineToolbar="{Boolean}true">
+                                                                            <rtePlugins
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                            <uiSettings
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                        </title>
+                                                                        <pdftitle
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldDescription="Enter title of References"
+                                                                            fieldLabel="Enter title of References PDF"
+                                                                            name="./reftitle"/>
+                                                                        <pdfpath
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="Choose PDF path"
+                                                                            name="./inpdfpath"
+                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                        <iconpath
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="Choose PDF Icon"
+                                                                            name="./inpdficon"
+                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                        <field1
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <multipersons
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                    composite="{Boolean}true"
+                                                                                    fieldLabel="click on add button to add Committee/Team Members">
+                                                                                    <field
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                        name="./inmultipersons">
+                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                            <name
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                                fieldLabel="Enter Name"
+                                                                                                name="./inpersonname"
+                                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                                <rtePlugins
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                                <uiSettings
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                            </name>
+                                                                                            <designation
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                                fieldLabel="Enter Designation"
+                                                                                                name="./indesignation"
+                                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                                <rtePlugins
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                                <uiSettings
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                            </designation>
+                                                                                            <imagepath
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Choose image path"
+                                                                                                name="./inimagepath"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                            <profilepage
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldLabel="Choose Profile page Path"
+                                                                                                name="./inprofilepageurl"
+                                                                                                rootPath="/content/hero-aem-website"/>
+                                                                                        </items>
+                                                                                    </field>
+                                                                                </multipersons>
+                                                                            </items>
+                                                                        </field1>
+                                                                    </items>
+                                                                </field>
+                                                            </multitext>
+                                                        </items>
+                                                    </investors>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </container>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

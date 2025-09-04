@@ -1,0 +1,6 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+${properties.text @context= 'html'}
+<a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkTo1}"
+    href="${linkuse.value}">${properties.CTAlabel1}</a>

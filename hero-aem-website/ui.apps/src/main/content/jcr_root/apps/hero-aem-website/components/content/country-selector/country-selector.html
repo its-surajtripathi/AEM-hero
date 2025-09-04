@@ -1,0 +1,17 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+     ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div>
+     <h2>${properties.heading}</h2>
+     <ul data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='countries'}"
+          data-sly-list="${listUse}">
+          <li>
+               <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.countrypagepath}"
+                    href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" x-cq-linkchecker="valid"
+                    aa-data-attr="track_cta">
+                    <img loading="lazy" src="${item.properties.countryicon}" alt="${item.properties.countryname}" />
+                    ${item.properties.countryname}
+               </a>
+          </li>
+     </ul>
+</div>

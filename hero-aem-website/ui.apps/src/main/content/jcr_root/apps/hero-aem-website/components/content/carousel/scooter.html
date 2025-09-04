@@ -1,0 +1,140 @@
+<div id="scooterBanner" class="carousel slide position-relative" data-ride="carousel"
+    data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='herodetailswithmap'}">
+    <ul class="${properties.carouselindicatorstyling}" data-sly-list="${listUse}" data-sly-test="${listUse.length > 1}">
+        <li data-target="#scooterBanner" data-slide-to="${itemList.index}" class="${itemList.first ? 'active' : ''}">
+        </li>
+    </ul>
+    <div class="carousel-inner" data-sly-list="${listUse}">
+        <div class="carousel-item${itemList.first ? ' active' : ''}"
+            data-interval="${item.properties.carouselinterval ? item.properties.carouselinterval : '5' }000">
+            <div class="scooter-banner-slide">
+                <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.imageRef, rendition='banner-web'}"
+                    src="${imagePath}" alt="${item.properties.imageAlt}" class="d-none d-md-block banner-img w-100"
+                    data-sly-test="${item.properties.assettype == 'imageasset'}">
+                <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.mobimageRef, rendition='banner-mobile'}"
+                    src="${imagePath}" alt="${item.properties.imageAlt}" class="banner-img w-100 d-block d-md-none"
+                    data-sly-test="${item.properties.assettype == 'imageasset'}">
+                <video oncontextmenu="return false;" playsinline
+                    class="w-100 ${(item.properties.video1mob || item.properties.video2mob) ? 'd-none d-md-block' : ' d-block'}"
+                    autoplay muted loop disablePictureInPicture disableremoteplayback
+                    data-sly-test="${item.properties.assettype == 'videoasset'}">
+                    <source src="${item.properties.video1}" type="video/webm">
+                    <source src="${item.properties.video2}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video oncontextmenu="return false;" playsinline class="w-100 d-block d-md-none" autoplay muted loop
+                    disablePictureInPicture disableremoteplayback
+                    data-sly-test="${item.properties.assettype == 'videoasset' && (item.properties.video1mob || item.properties.video2mob)}">
+                    <source src="${item.properties.video1mob ? item.properties.video1mob  : item.properties.video1}"
+                        type="video/webm">
+                    <source src="${ item.properties.video2mob ? item.properties.video2mob : item.properties.video2}"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="volume-button" data-sly-test="${item.properties.assettype == 'videoasset'}">
+                    <div class="volume-on d-none">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_37664_16591)">
+                                <path
+                                    d="M3.25 9.74998V16.25H7.58333L13 21.6666V4.33331L7.58333 9.74998H3.25ZM17.875 13C17.875 11.0825 16.77 9.43581 15.1667 8.63414V17.355C16.77 16.5641 17.875 14.9175 17.875 13ZM15.1667 3.49915V5.73081C18.2975 6.66248 20.5833 9.56581 20.5833 13C20.5833 16.4341 18.2975 19.3375 15.1667 20.2691V22.5008C19.5108 21.515 22.75 17.6366 22.75 13C22.75 8.36331 19.5108 4.48498 15.1667 3.49915V3.49915Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_37664_16591">
+                                    <rect width="26" height="26" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="volume-off">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_37664_16585)">
+                                <path
+                                    d="M17.875 13C17.875 11.0825 16.77 9.43583 15.1667 8.63417V11.0283L17.8208 13.6825C17.8533 13.4658 17.875 13.2383 17.875 13V13ZM20.5833 13C20.5833 14.0183 20.3667 14.9717 19.9983 15.86L21.6342 17.4958C22.3492 16.1525 22.75 14.625 22.75 13C22.75 8.36333 19.5108 4.485 15.1667 3.49917V5.73083C18.2975 6.6625 20.5833 9.56583 20.5833 13ZM4.62583 3.25L3.25 4.62583L8.37417 9.75H3.25V16.25H7.58333L13 21.6667V14.3758L17.6042 18.98C16.8783 19.5433 16.0658 19.9875 15.1667 20.2583V22.49C16.6617 22.1542 18.0158 21.4608 19.1642 20.5292L21.3742 22.75L22.75 21.3742L13 11.6242L4.62583 3.25ZM13 4.33333L10.7358 6.5975L13 8.86167V4.33333Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_37664_16585">
+                                    <rect width="26" height="26" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="slider-content text-white ${item.properties.styling} d-md-block d-none">
+                    ${item.properties.headline @ context='html'}
+                    <div class="slide-1-content ${item.properties.buttonalign}" id="scooter-banner-slide">
+                        <a aa-data-cta="${item.properties.imageAlt}"
+                            data-sly-test="${item.properties.linkTo1 && item.properties.urltype1 == 'url1'}"
+                            class="btn btn-white test-ride-btn" aa-data-attr="track_cta"
+                            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo1}"
+                            href="${linkuse.value}"
+                            target="${linkuse.isExternal ? '_blank' : '_self'}">${item.properties.btnlabel1}</a>
+                        <a aa-data-cta="${item.properties.imageAlt}"
+                            data-sly-test="${item.properties.linkTo1 && item.properties.urltype1 == 'modal1'}"
+                            class="btn btn-white test-ride-btn" aa-data-attr="track_cta" data-toggle="modal"
+                            data-target="${item.properties.linkTo1}"
+                            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo1}"
+                            href="javascript:void(0)">${item.properties.btnlabel1}</a>
+                        <a aa-data-cta="${item.properties.imageAlt}"
+                            data-sly-test="${item.properties.linkTo2 && item.properties.urltype2 == 'url2'}"
+                            class="btn btn-red-gradient ml-3 ml-lg-4" aa-data-attr="track_cta"
+                            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo2}"
+                            href="${linkuse.value}"
+                            target="${linkuse.isExternal ? '_blank' : '_self'}">${item.properties.btnlabel2}</a>
+                        <a aa-data-cta="${item.properties.imageAlt}"
+                            data-sly-test="${item.properties.linkTo2 && item.properties.urltype2 == 'modal2'}"
+                            class="btn btn-red-gradient ml-3 ml-lg-4" aa-data-attr="track_cta" data-toggle="modal"
+                            data-target="${item.properties.linkTo2}"
+                            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo2}"
+                            href="javascript:void(0)">${item.properties.btnlabel2}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="scroll-button bg-transparent position-absolute border-0 scroll-down-btn"
+        data-sly-test="${properties.scrollicon}">
+        <img src="${properties.scrollicon}" alt="arrrow scroll button">
+    </button>
+    <sly data-sly-list.parent="${resource.children}">
+        <sly data-sly-test="${parent.name == 'herodetailswithmap'}">
+            <sly data-sly-list.child="${parent.children}">
+                <sly data-sly-test="${childList.index == 0}">
+                    <div class="slider-content text-white ${child.styling} d-md-none d-block">
+                        ${child.headline @ context='html'}
+                        <div class="slide-1-content ${child.buttonalign} d-flex w-100" id="scooter-banner-slide-mob">
+                            <a aa-data-cta="${child.imageAlt}"
+                                data-sly-test="${child.linkTo1 && child.urltype1 == 'url1'}"
+                                class="btn test-ride-btn ${child.styling1 == 'booknow-btn' ?'btn-red-gradient': 'btn-white' }"
+                                aa-data-attr="track_cta"
+                                data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=child.linkTo1}"
+                                href="${linkuse.value}"
+                                target="${linkuse.isExternal ? '_blank' : '_self'}">${child.btnlabel1}</a>
+                            <a aa-data-cta="${child.imageAlt}"
+                                data-sly-test="${child.linkTo1 && child.urltype1 == 'modal1'}"
+                                class="btn  ${child.styling1 == 'booknow-btn' ?  'btn-red-gradient' : 'btn-white' } test-ride-btn"
+                                aa-data-attr="track_cta" data-toggle="modal" data-target="${child.linkTo1}"
+                                data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=child.linkTo1}"
+                                href="javascript:void(0)">${child.btnlabel1}</a>
+                            <a aa-data-cta="${child.imageAlt}"
+                                data-sly-test="${child.linkTo2 && child.urltype2 == 'url2'}"
+                                class="btn  ${child.styling2 == 'booknow-btn' ? 'btn-red-gradient' : 'btn-white'} ml-3 ml-lg-4"
+                                aa-data-attr="track_cta"
+                                data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=child.linkTo2}"
+                                href="${linkuse.value}"
+                                target="${linkuse.isExternal ? '_blank' : '_self'}">${child.btnlabel2}</a>
+                            <a aa-data-cta="${child.imageAlt}"
+                                data-sly-test="${child.linkTo2 && child.urltype2 == 'modal2'}"
+                                class="btn ${child.styling2 == 'booknow-btn' ? 'btn-red-gradient' : 'btn-white'}  ml-3 ml-lg-4"
+                                aa-data-attr="track_cta" data-toggle="modal" data-target="${child.linkTo2}"
+                                data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=childlinkTo2}"
+                                href="javascript:void(0)">${child.btnlabel2}</a>
+                        </div>
+                    </div>
+                </sly>
+            </sly>
+        </sly>
+    </sly>
+    </sly>
+</div>

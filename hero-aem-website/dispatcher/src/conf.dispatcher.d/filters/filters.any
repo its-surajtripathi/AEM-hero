@@ -1,0 +1,79 @@
+#
+# This file contains the filter ACL, and can be customized.
+#
+# By default, it includes the default filter ACL.
+#
+
+$include "./default_filters.any"
+
+/0006 { /type "allow" /extension '(mp3)' /path "/content/*" }
+/0007 { /type "allow" /extension '(zip)' /path "/content/*" }
+/0008 { /type "allow" /extension '(doc)' /path "/content/*" }
+/0009 { /type "allow" /extension '(docx)' /path "/content/*" }
+
+# Allow Geolocation JSON model
+/0100 { /type "allow" /extension "json" /selectors "getlocation" /path "/content/*" }
+
+# Allow components JSON model
+/0101 { /type "allow" /extension "json" /selectors "model" /path "/content/*" }
+
+# Allow manifest.webmanifest files located in the content
+/0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
+
+# Allow Press Releases JSON model
+/0103 { /type "allow" /extension "json" /selectors "pressreleases" /path "/content/*" }
+
+# Allow In the Press JSON model
+/0104 { /type "allow" /extension "json" /selectors "inthepress" /path "/content/*" }
+
+# Allow  html model
+/0105 { /type "allow" /selectors "suggestions" /path "/content/*" }
+
+/0118 { /type "allow" /selectors "statecitylist" /extension "json" /path "/content/*" }
+
+# Allow Geolocation JSON model
+/0106 { /type "allow"  /selectors "productEnquiry" /path "/content/*" }
+
+# Allow Geolocation JSON model
+/0107 { /type "allow"  /selectors "corporateEnquiry" /path "/content/*" }
+
+# Allow newsletters JSON model
+/0109 { /type "allow" /extension "json" /selectors "newsletters" /path "/content/*" }
+
+# Allow annualreports JSON model
+/0110 { /type "allow" /extension "json" /selectors "annualreports" /path "/content/*" }
+
+# Allow  html model
+/0111 { /type "allow" /selectors "investors" /path "/content/*" }
+/0112 { /type "allow" /selectors "investors" /extension "html" /path "/content/*" }
+
+/0113 { /type "allow" /selectors "xtrack" /extension "json" /path "/content/*" }
+/0114 { /type "allow" /selectors "xtrack" /path "/content/*" }
+
+# Allow Apache Sling Sitemap selectors: sitemap, sitemap-index, sitemap.any-nested-or-named-sitemap
+/0200 { /type "allow" /method "GET" /path "/content/*" /selectors 'sitemap(-index)?' /extension "xml" }
+
+# Allow robots.txt
+/0201 { /type "allow" /path "/content/*/robots" /extension "txt"}
+
+/0202 { /type "allow" /method "POST" /url "*.postPaymentData.html" }
+
+# Allow Investors JSON model
+/0204 { /type "allow" /extension "json" /selectors "investors" /path "/content/*" }
+
+# Allow Xpulse JSON model
+/0205 { /type "allow" /selectors "xpulse" /extension "json" /path "/content/*" }
+
+# Allow JSON for Lotte Files
+/0206 { /type "allow" /method "GET" /path "/content/dam/hero-aem-website/in/en-in/premia/x440/*" /extension "json" }
+
+# Allow Xpulse JSON model
+/0207 { /type "allow" /selectors "decryptservlet" /extension "json" /path "/content/*" }
+
+# Allow NPS FEed JSON model
+/0208 { /type "allow" /extension "json" /selectors "npsfeedback" /path "/content/*" }
+
+# Allow Investors JSON model
+/0209 { /type "allow" /extension "json" /selectors "safetyprogram" /path "/content/*" }
+
+/0210 { /type "allow" /extension "json" /selectors "mocktest" /path "/content/*" }

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Edit Timeline component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <type
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                class="cq-dialog-dropdown-showhide"
+                                                cq-dialog-dropdown-showhide-target=".variation-show-hide"
+                                                fieldLabel="Select variation"
+                                                name="./timelinevariation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <single
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Single Value per year"
+                                                        value="single"/>
+                                                    <multiple
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Multiple Values per year"
+                                                        value="multiple"/>
+                                                </items>
+                                            </type>
+                                            <yearlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Mobile Year Label"
+                                                name="./yearLabel"
+                                                required="{Boolean}true"/>
+                                            <maxnumberslide
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter MAX year on first slide"
+                                                name="./maxNumberSlide"/>
+                                            <singlecontainer
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="variation-show-hide"
+                                                showhidetargetvalue="single">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <singlevaluetimeline
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        class="variation-show-hide"
+                                                        composite="{Boolean}true"
+                                                        fieldDescription="Add Details"
+                                                        fieldLabel="Add Timeline Details"
+                                                        showhidetargetvalue="single">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./timelinesingle">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <configurations
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <singletimeline
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            jcr:title="Timeline Items"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <year
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldLabel="Enter Year"
+                                                                                    name="./yearvalue"
+                                                                                    required="{Boolean}true"/>
+                                                                                <image
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                    fieldLabel="Enter Image path"
+                                                                                    name="./imagepath"
+                                                                                    required="{Boolean}true"
+                                                                                    rootPath="/content/dam/hero-aem-website"/>
+                                                                                <personaldetails
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                    fieldLabel="Enter Personal Details"
+                                                                                    name="./personaldetails"
+                                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                                    <rtePlugins
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                    <uiSettings
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                    <htmlRules jcr:primaryType="nt:unstructured">
+                                                                                        <blockHandling
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            removeSingleParagraphContainer="{Boolean}true"/>
+                                                                                    </htmlRules>
+                                                                                </personaldetails>
+                                                                                <parentsdetails
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                    fieldLabel="Enter Parents Details"
+                                                                                    name="./parentsdetails"
+                                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                                    <rtePlugins
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                    <uiSettings
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                    <htmlRules jcr:primaryType="nt:unstructured">
+                                                                                        <blockHandling
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            removeSingleParagraphContainer="{Boolean}true"/>
+                                                                                    </htmlRules>
+                                                                                </parentsdetails>
+                                                                            </items>
+                                                                        </singletimeline>
+                                                                    </items>
+                                                                </configurations>
+                                                            </items>
+                                                        </field>
+                                                    </singlevaluetimeline>
+                                                </items>
+                                            </singlecontainer>
+                                            <multiplecontainer
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="variation-show-hide"
+                                                showhidetargetvalue="multiple">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <class
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Heading"
+                                                        name="./heading"/>
+                                                    <multiplevaluetimeline
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        fieldDescription="Add Details"
+                                                        fieldLabel="Add Timeline Details ">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./timelinemultiple">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <configurations
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <singletimeline
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            jcr:title="Timeline Items - Year Details"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <year
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldLabel="Enter Year"
+                                                                                    name="./yearvalue"
+                                                                                    required="{Boolean}true"/>
+                                                                                <bgimage
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                    fieldLabel="Enter Background Image path"
+                                                                                    name="./bgimagepath"
+                                                                                    rootPath="/content/dam/hero-aem-website"/>
+                                                                                <singlevaluetimeline
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                    composite="{Boolean}true"
+                                                                                    fieldDescription="Add Details"
+                                                                                    fieldLabel="Add Timeline Details - Individual items">
+                                                                                    <field
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                        name="./timelinesingle">
+                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                            <configurations
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                                    <singletimeline
+                                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                                        jcr:title="Timeline Items"
+                                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                                            <image
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                                fieldLabel="Enter Image path"
+                                                                                                                name="./imagepath"
+                                                                                                                required="{Boolean}true"
+                                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                                            <class
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                                fieldLabel="Image alt Text"
+                                                                                                                name="./imagealt"/>
+                                                                                                            <description
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                                                fieldLabel="Enter Details"
+                                                                                                                name="./description"
+                                                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                                                <rtePlugins
+                                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                                                <uiSettings
+                                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                                            </description>
+                                                                                                        </items>
+                                                                                                    </singletimeline>
+                                                                                                </items>
+                                                                                            </configurations>
+                                                                                        </items>
+                                                                                    </field>
+                                                                                </singlevaluetimeline>
+                                                                            </items>
+                                                                        </singletimeline>
+                                                                    </items>
+                                                                </configurations>
+                                                            </items>
+                                                        </field>
+                                                    </multiplevaluetimeline>
+                                                </items>
+                                            </multiplecontainer>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

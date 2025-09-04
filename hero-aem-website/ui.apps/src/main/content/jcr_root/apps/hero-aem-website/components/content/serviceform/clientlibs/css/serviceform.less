@@ -1,0 +1,388 @@
+#service-form {
+  @media(max-width:768px) {
+    position: relative;
+  }
+
+  input[type="date"].error {
+    margin-top: 0;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  input.error {
+    margin-top: 0;
+  }
+
+  .error {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D30000;
+    font-family: var(--font-tstar-regular);
+    position: relative;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 9px;
+      height: 9px;
+      background: url("/etc.clientlibs/hero-aem-website/clientlibs/clientlib-campaign/resources/icons/error.svg") no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  .service-form-wrap {
+    padding: 24px;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+    @media(max-width:768px) {
+      padding: 16px;
+    }
+
+    h6 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      font-family: var(--font-tstar-bold);
+      color: #1A1A1A;
+      margin-bottom: 16px;
+      text-transform: capitalize;
+
+      @media(max-width:768px) {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: left;
+        align-self: flex-start;
+      }
+    }
+
+    .two-tab-wrap {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+      width: 33.33%;
+
+      p.service-form-tab {
+        font-family: var(--font-tstar-regular);
+        margin: 0 11px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        width: 150px;
+        text-align: center;
+        color: #303030;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #A5A5A5;
+        cursor: pointer;
+
+        @media(max-width:768px) {
+          font-size: 18px;
+          line-height: 22px;
+          width: 155px;
+        }
+
+        &.tab-active {
+          font-family: var(--font-tstar-heavy);
+          color: #EE2326;
+          border-color: #EE2326;
+        }
+      }
+    }
+
+    .input-form-wrap {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+
+      @media(max-width:768px) {
+        padding-bottom: 64px;
+      }
+
+      .form-row-wrap {
+        margin: 0 -11px;
+        flex-wrap: wrap;
+
+        .cust-form-group {
+          width: 33.33%;
+          padding: 0 11px;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 32px;
+
+          @media(max-width:768px) {
+            width: 100%;
+            margin-bottom: 16px;
+          }
+
+          .dropdown {
+            button {
+              color: #A5A5A5;
+              max-height: 35px;
+              display: flex;
+              align-items: center;
+
+              &.btn--active {
+                color: #303030 !important;
+              }
+
+              &:focus,
+              &:focus-visible {
+                outline: 0;
+                box-shadow: none;
+              }
+
+              &::after {
+                position: absolute;
+                content: '';
+                right: 0;
+                height: 16px;
+                width: 16px;
+                background: url(/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/polygonblack.svg) center no-repeat;
+              }
+            }
+
+            ul {
+              max-height: 200px;
+              overflow-y: scroll;
+
+              li {
+                padding: 8px 8px;
+                border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+                font-size: 12px;
+                font-family: "tstar-medium";
+
+                &:last-child {
+                  padding-bottom: 0;
+                  border-bottom: 0;
+                }
+
+                a {
+                  font-size: 12px;
+                  line-height: 1.2;
+                  color: #303030;
+                }
+              }
+            }
+          }
+
+          .control {
+            display: block;
+            position: relative;
+            padding-left: 36px;
+            margin-bottom: 0px;
+            padding-top: 6px;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            font-family: var(--font-tstar-regular);
+            color: #303030;
+
+            &:first-child {
+              margin-right: 54px;
+            }
+          }
+
+          .control input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+          }
+
+          .control_indicator {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background: #ffffff;
+            border: 1px solid #8C8C8C;
+          }
+
+          .control:hover input~.control_indicator,
+          .control input:focus~.control_indicator {
+            background: white;
+          }
+
+          .control input:checked~.control_indicator {
+            background: #ff0000;
+            border-color: #B50000;
+          }
+
+          .control:hover input:not([disabled]):checked~.control_indicator,
+          .control input:checked:focus~.control_indicator {
+            background: #ff0000;
+          }
+
+          .control input:disabled~.control_indicator {
+            background: #e6e6e6;
+            opacity: 0.6;
+            pointer-events: none;
+          }
+
+          .control_indicator:after {
+            box-sizing: unset;
+            content: '';
+            position: absolute;
+            display: none;
+          }
+
+          .control input:checked~.control_indicator:after {
+            display: block;
+          }
+
+          .control-radio .control_indicator {
+            border-radius: 50%;
+          }
+
+          .control-radio .control_indicator:after {
+            left: 6px;
+            top: 6px;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background: #ffffff;
+            transition: background 250ms;
+          }
+
+          .control-radio input:disabled~.control_indicator:after {
+            background: #7b7b7b;
+          }
+        }
+
+        .form-label {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          font-family: var(--font-tstar-medium);
+          margin-bottom: 7px;
+        }
+
+        input[type="date"] {
+          text-transform: none;
+        }
+
+        .cust-form-control {
+          width: 100%;
+          border: 0;
+          border-bottom: 2px solid #A5A5A5;
+          background-color: transparent;
+          border-radius: 0;
+          color: #303030;
+          font-size: var(--font-size18);
+          font-family: var(--font-tstar-regular);
+          position: relative;
+          padding: 0;
+          padding-bottom: 11px;
+          text-transform: capitalize;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+
+          &:focus-visible {
+            outline: 0;
+          }
+
+          &::placeholder {
+            color: #A5A5A5;
+          }
+
+          &:-ms-input-placeholder {
+            color: #A5A5A5;
+          }
+
+          &::-ms-input-placeholder {
+            color: #A5A5A5;
+          }
+        }
+      }
+    }
+  }
+
+  .submit-button {
+    @media(max-width:768px) {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 16px;
+      background: white;
+      box-shadow: 0px -6px 12px -6px rgba(24, 39, 75, 0.12), 0px -8px 24px -4px rgba(24, 39, 75, 0.08);
+    }
+
+    .custom-btn {
+      width: 150px;
+      margin-top: 0;
+
+      @media(max-width:768px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .thank-you-success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    h4{
+      font-size: 24px;
+      line-height: 1.333;
+      font-family: var(--font-tstar-bold);
+      color: #303030;
+      font-weight: 700;
+      @media(max-width:768px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+#serviceEnroll {
+  .modal-dialog {
+    border-radius: 16px;
+    position: relative;
+    @media (min-width: 768px) {
+      max-width: 78% !important;
+      width: 100% !important;
+    }
+    .modal-header{
+      padding: 0;
+      border: 0;
+      height: 24px;
+      width: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 24px;
+      top: 24px;
+      z-index: 3;
+      @media (max-width:768px){
+        top: 16px;
+        right: 16px;
+      }
+      .close{
+        margin: 0;
+        padding: 0;
+        opacity: 1;
+        font-size: 32px;
+      }
+    }
+    .modal-body{
+      padding: 0px;
+    }
+  }
+}

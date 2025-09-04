@@ -1,0 +1,192 @@
+.alert-danger{
+    display:none;
+    padding:15px;
+    font-size:18px;
+}
+
+.editprofileForm{
+     @media (max-width: 767px){
+        margin-top:-10px;
+     }
+    .edit-personalDetails{
+        border-bottom: 2px dashed #CCCCCC;
+        .formfield .form-group .radio-item{
+           float:left;
+        }
+
+        @media (max-width: 767px){
+            border-bottom: none;
+        }
+
+        .field-wrap{
+            padding-top: 3rem;
+
+            @media (max-width: 767px){
+                border-block: 1px solid #CCCCCC;
+                margin: unset;
+                padding-top: 1rem;
+            }
+        }
+
+        .edit-Img-heading-mobile {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #303030;
+            padding-bottom: 20px;
+
+            @media (min-width: 767px) {
+                display: none;
+            }
+        }
+
+        .edit-personalImg{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            @media (max-width: 767px) {
+                margin-top: 1rem;
+            }
+
+            .edit-Img-heading {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                color: #303030;
+                padding: 10px;
+
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+
+            .image-container{
+                .fetch-image{
+                    border-radius: 50%;
+                    border: 1px solid red;
+                    width: 158px;
+                    height: 158px;
+
+                    .profile-roundPic{
+                        width: 156px;
+                        height: 156px;
+                        border-radius:50%;
+                        padding: 10px;
+                    }
+                    .initials{
+                        font-size: 50px;
+                         width: 60px;
+                    }
+
+                }
+                .upload-image{
+                    float: right;
+                    position: relative;
+                    bottom: 25%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .edit-Address{
+        border-bottom: 1px solid #CCCCCC;
+        margin-top: 1rem;
+
+        @media (max-width: 767px) {
+            border-bottom: none;
+        }
+
+        .edit-address-heading{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #303030;
+            padding-bottom: 20px;
+            text-align: center;
+
+            @media (max-width: 767px) {
+                text-align: initial;
+            }
+        }
+
+        .edit-fields{
+            margin-top: 2rem;
+            @media (max-width: 767px){
+                margin-top: unset;
+            }
+        }
+    }
+
+    .edit-action-btns{
+        margin: 2rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: end;
+        @media (max-width: 767px) {
+
+            justify-content: space-around; 
+        }
+
+        .save-btn {
+            width: 186px;
+            height: 47px;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #F5F5F7;
+            background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+            border-radius: 4px;
+            border:none;
+
+            @media (max-width: 767px) {
+
+                font-size:16px;
+
+            }
+        }
+        .profile-button{
+            height:47px;
+        }
+		a {
+            display: inline-block;
+        }
+    }
+}
+
+/*-- Container Class --*/
+.edit-myProfile-wrapper{
+    .service-main-heading{
+        h2{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #303030;
+        }
+    }
+
+    .formfield .form-group input, .formfield .form-group select{
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    .accordion{
+        &:first-child{
+            @media (max-width: 767px){
+                margin-bottom: 0rem;
+            }
+        }
+        &:last-child{
+            @media (max-width: 767px){
+                border-radius: 0 !important;
+                    border-bottom: none !important;
+            }
+        }
+    }
+}

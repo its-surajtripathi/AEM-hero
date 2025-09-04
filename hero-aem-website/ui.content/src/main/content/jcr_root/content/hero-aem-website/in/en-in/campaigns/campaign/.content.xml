@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-13T06:46:08.859Z"
+        cq:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicated="{Date}2022-09-13T06:46:17.080Z"
+        cq:lastReplicated_publish="{Date}2022-09-13T06:46:17.080Z"
+        cq:lastReplicatedBy="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicatedBy_publish="jadhav.shruthi.laya@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/campaign-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Campaign"
+        jcr:uuid="b6388af0-a367-4f36-85a5-9d4905ed66c3"
+        sling:resourceType="hero-aem-website/components/structure/page"
+        pageTitle="Campaign"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                layout="responsiveGrid">
+                <container
+                    cq:styleIds="[1661878255649]"
+                    jcr:created="{Date}2022-08-29T22:10:39.389+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-08-29T22:10:39.389+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <bootstraplayout
+                        jcr:created="{Date}2022-08-29T22:10:49.291+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-08-29T22:37:32.840+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/bootstraplayout"
+                        classes="campaign-container"
+                        rowclasses="campaign-wrapper">
+                        <container-item0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <image
+                                jcr:created="{Date}2022-08-29T22:13:12.970+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-08-29T22:13:39.514+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/image"
+                                alt="campaign-hero"
+                                altValueFromDAM="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/campaign/campaign-main-img.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                titleValueFromDAM="false"/>
+                            <campaign_multitext
+                                jcr:created="{Date}2022-08-29T22:30:07.393+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-08-29T22:34:04.873+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/campaign-multitext">
+                                <multitext jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        image="/content/dam/hero-aem-website/in/campaign/1.png"
+                                        title="TWO-WHEELER MANUFACTURER"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        image="/content/dam/hero-aem-website/in/campaign/37.png"
+                                        title="YEARS OF EXCELLENCE"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        image="/content/dam/hero-aem-website/in/campaign/2M.png"
+                                        title="TWO-WHEELERS MANUFACTURED"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        image="/content/dam/hero-aem-website/in/campaign/9k.png"
+                                        title="CUSTOMER TOUCH POINTS"/>
+                                </multitext>
+                            </campaign_multitext>
+                        </container-item0>
+                        <columnlayouts jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                class="campaign-left-content"
+                                large="col-lg-8"
+                                medium="col-md-12"
+                                small="col-12"
+                                xlarge="col-xl-8"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                class="campaign-right-content"
+                                large="col-lg-4"
+                                medium="col-md-12"
+                                small="col-12"
+                                xlarge="col-xl-4"/>
+                        </columnlayouts>
+                        <container-item1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <booktestride
+                                jcr:created="{Date}2022-08-31T11:47:42.310Z"
+                                jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:lastModified="{Date}2022-09-13T06:46:08.840Z"
+                                jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/booktestride"
+                                acknowledgemsg="&lt;p>&lt;span class=&quot;thanks-msg&quot;>Thank you. We will connect with you soon.&lt;/span>&lt;/p>&#xd;&#xa;"
+                                acknowledgemsgfail="&lt;p>Sorry an Error occurred. Please try again later.&lt;/p>&#xd;&#xa;"
+                                buttonlabel="Submit your form"
+                                citylabel="Select Your City"
+                                cityvalmsg="Select a city"
+                                defaultproduct="/content/hero-aem-website/in/en-in/motorcycles/practical/hf-100"
+                                enterOtplabel="Enter OTP"
+                                ispopup="false"
+                                mobilelabel="Mobile"
+                                mobilevalformmsg="Enter correct mobile number"
+                                mobilevalmsg="Please Enter a valid Mobile Number"
+                                modelName="HF 100"
+                                name="Name"
+                                nameformvalmsg="Invalid Name"
+                                namereqvalmsg="Name is required"
+                                otpresultmsg="Incorrect OTP"
+                                otpvalmsg="OTP is required"
+                                privacypolicy="By Clicking Submit, I Agree To The &lt;span class=&quot;d-inline&quot;>&lt;a title=&quot;motot&quot; href=&quot;https://www.heromotocorp.com&quot; target=&quot;_blank&quot;>T&amp;amp;C&lt;/a>&lt;/span> and &lt;span class=&quot;d-inline&quot;>&lt;a title=&quot;img&quot; href=&quot;https://www.heromotocorp.com&quot; target=&quot;_blank&quot;>Privacy Policy&lt;/a>&lt;/span>"
+                                resendOtplabel="Resend OTP"
+                                sendOtplabel="Send OTP"
+                                statelabel="Select Your State"
+                                statevalmsg="Select a state"
+                                textIsRich="[true,true,true,true,true,true,true]"
+                                title="&lt;h3>FOR OFFER DETAILS, REQUEST A CALL BACK&lt;/h3>&#xd;&#xa;"
+                                variationtype="campaignpage"
+                                vehiclelabel="Vehicle"
+                                vehiclevalmsg="Select a vehicle"/>
+                        </container-item1>
+                    </bootstraplayout>
+                    <container
+                        jcr:created="{Date}2022-08-29T23:04:24.114+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-08-29T23:04:46.578+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        addtnclass="campaign-container">
+                        <imagespecification
+                            jcr:created="{Date}2022-08-29T23:00:54.209+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-09-10T11:51:26.524Z"
+                            jcr:lastModifiedBy="kiran.jaganmohan@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/imagespecification"
+                            alt="Campaign"
+                            altValueFromDAM="false"
+                            altValueFromPageImage="false"
+                            displayPopupTitle="false"
+                            headingtext="&lt;span class=&quot;exteme&quot;>XTREME &lt;/span>&lt;span class=&quot;r160&quot;>160R &lt;/span>"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            subtitle="Experience new dimensions with the Xtreme 160R that is ready to take on the urban race."
+                            textIsRich="true"
+                            theme="campaign"
+                            titleValueFromDAM="false"
+                            viewlink="/content/hero-aem-website/in/en-in/motorcycles/performance/xtreme-160r"
+                            viewtext="View Details">
+                            <specifications jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    icon="/content/dam/hero-aem-website/in/campaign/meter.png"
+                                    title="4.5 sec"
+                                    value="Air cooled, 4 Stroke 2 Valve Single cylinder OHC"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    icon="/content/dam/hero-aem-website/in/campaign/abs.png"
+                                    title="Double Disc"
+                                    value="Petal Disc with Single Channel ABS"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    icon="/content/dam/hero-aem-website/in/campaign/usb.png"
+                                    title="USB"
+                                    value="New USB Charger"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    icon="/content/dam/hero-aem-website/in/campaign/piston.png"
+                                    title="15.2 PS"
+                                    value="Engine power"/>
+                            </specifications>
+                        </imagespecification>
+                    </container>
+                </container>
+            </container>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-08-31T12:41:20.168Z"
+            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

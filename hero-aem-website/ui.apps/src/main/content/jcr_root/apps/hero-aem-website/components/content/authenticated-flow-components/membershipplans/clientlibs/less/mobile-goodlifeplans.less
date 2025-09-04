@@ -1,0 +1,327 @@
+.mobile-good-life-plans-wrapper {
+	margin-top: 20px;
+	background-color: #fff;
+
+	ul.term-list li.more {
+		font-family: 'tstar-bold';
+		font-size: 16px;
+		font-weight: 700;
+		text-align: center;
+		color: #ff0000;
+        padding-bottom: 0px;
+	}
+     ul.term-list li.more::after {
+        content: "\276F";
+        transform: rotate(90deg);
+        font-weight: normal;
+        font-size: 1rem;
+        position: absolute;
+        margin-left:8px;
+    }
+
+	ul.term-list li:first-child {
+		/* border-bottom: 0px solid #fff; */
+	}
+    ul.term-list li:nth-last-child(-n+2) {
+		border-bottom: none;
+    }
+
+	ul.term-list li.less {
+		font-family: 'tstar-bold';
+		font-size: 16px;
+		font-weight: 700;
+		text-align: center;
+		color: #ff0000;
+	}
+	ul.term-list li:before {
+		border : 0 !important;
+	}
+    ul.term-list li.less::after {
+        transform: rotate(-90deg) translate(0, 3px);
+    }
+
+	.shadow {
+		box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+		margin-bottom: 15px;
+	}
+
+	.tick-icon {
+		margin: 20px;
+	}
+
+	.card-header .img {
+		height: 50%;
+		width: 80%;
+		margin-right: 10px;
+	}
+	card-header:first-child {
+		border-radius: 4px 4px 0 0;
+	}
+
+	.card-header .round-bg {
+		background-color: #fff;
+		border-radius: 50%;
+		height: 50px;
+		width: 50px;
+		/* margin-left: 10px; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+        margin: 0 auto;
+		@media only screen 
+		and (min-device-width: 320px) 
+		and (max-device-width: 480px)
+		and (-webkit-min-device-pixel-ratio: 2) {
+			justify-content: center;
+		}
+	}
+
+	.up {
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
+		border: solid #ff0000;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 3px;
+	}
+
+	.down {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		border: solid #ff0000;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 3px;
+	}
+
+	.container {
+		background-color: #fff;
+	}
+
+    .text_black{
+        color: #303030;
+        font-weight: bold;
+    }
+    .text_red {
+        color: red;
+        font-weight: bold;
+    }
+    .plan-amt{
+        color: #303030;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 250%;
+    }
+
+	.platinumbg {
+		background: linear-gradient(85.8deg, #5c5c5c 3.51%, #181816 15.64%, #413e3c 52.52%, #54514f 84.55%, #24211d 96.69%), #d9d9d9;
+		height: 156px;
+
+		.header-txt {
+			color: #fff;
+			font-size: 15px;
+		}
+
+		.header-txt1 {
+			color: #fff;
+			font-size: 24px;
+			font-weight: bold;
+		}
+	}
+
+	.goldbg {
+		background: linear-gradient(85.8deg, #C48423 3.51%, #A97428 15.64%, #D39721 52.52%, #D7B830 84.55%, #BF7C17 96.69%), linear-gradient(85.8deg, #5C5C5C 3.51%, #181816 15.64%, #413E3C 52.52%, #54514F 84.55%, #24211D 96.69%), #D9D9D9;
+
+		.header-txt {
+			color: #000;
+			font-size: 15px;
+			font-weight: 700;
+		}
+
+		.gold-icon {
+			height: 70%;
+			width: 50%;
+			margin: 0px 12px;
+			position: relative;
+			padding-top: 10px;
+		}
+
+		.header-txt1 {
+			color: #000;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.header-card-txt {
+			color: #000;
+			font-size: 10px;
+			font-weight: 400;
+		}
+
+		.card-second-row {
+			margin-top: 20px;
+
+		}
+	}
+
+	.silverbg {
+		background: linear-gradient(85.8deg, #DADADA 3.51%, #969696 15.64%, #D3D3D3 52.52%, #E0E0E0 84.55%, #A6A4A4 96.69%);
+
+		.gold-icon {
+			height: 70%;
+			width: 50%;
+			margin: 0px 12px;
+			position: relative;
+			padding-top: 10px;
+		}
+
+		.header-txt {
+			color: #000;
+			font-size: 15px;
+			font-weight: 700;
+		}
+
+		.header-txt1 {
+			color: #000;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.header-card-txt {
+			color: #000;
+			font-size: 10px;
+			font-weight: 400;
+		}
+
+		.card-second-row {
+			margin-top: 20px;
+
+		}
+
+	}
+
+	.probg {
+		background: linear-gradient(85.8deg, #A65C18 3.51%, #FFBB7A 15.64%, #C4803F 52.52%, #FDDF9E 84.55%, #8E5013 96.69%);
+
+		.header-txt {
+			color: #000;
+			font-size: 15px;
+			font-weight: 700;
+		}
+
+		.gold-icon {
+			height: 70%;
+			width: 50%;
+			margin: 0px 12px;
+			position: relative;
+			padding-top: 10px;
+		}
+
+		.header-txt1 {
+			color: #000;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.header-card-txt {
+			color: #000;
+			font-size: 10px;
+			font-weight: 400;
+		}
+
+		.card-second-row {
+			margin-top: 20px;
+
+		}
+
+	}
+
+	.card-body {
+		ul li {
+			margin: 24px 0 0 0;
+			border-bottom: 1px solid #D2D2D2;
+            padding-bottom: 14px;
+		}
+
+		ul li:nth-child(11),
+		ul li:nth-child(10) {
+			border-bottom: none;
+			margin: 0px 0px;
+		}
+
+		.img {
+			width: auto;
+			margin-bottom: 20px;
+            float: right;
+		}
+	}
+
+	.heading-goodlifeplans {
+		color: #303030;
+		font-size: 24px;
+		font-style: italic;
+		font-weight: 900;
+		line-height: 58px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+
+	.select-plans {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 20px 0px 20px 0px;
+
+		.select-plan-button {
+			// padding: 12px 32px;
+			gap: 10px;
+			width: 170px;
+			height: 30px;
+			background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+			border-radius: 4px;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 12px;
+			line-height: 24px;
+			//text-transform: uppercase;            
+			color: #F5F5F7;
+			border: none;
+
+			@media all and(max-width:768px) {
+				padding: 9px 23px;
+				gap: 10px;
+				min-width: 132px;
+				height: 38px;
+				background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+				border-radius: 4px;
+				font-family: 'tstar-bold';
+				font-style: normal;
+				font-weight: 900;
+				font-size: 14px;
+				line-height: 17px;
+				text-transform: uppercase;
+				color: #F5F5F7;
+				border: none;
+
+			}
+		}
+	}
+
+	.member-left {
+		li {
+			border-bottom: 1px solid #ddd;
+			margin: 15px 0;
+			padding-bottom: 20px;
+		}
+
+		img {
+			width: 49px;
+			height: 38px;
+		}
+	}
+	.banner_btn_correct{
+		padding-top : 24px;
+		padding-bottom : 10px;
+	}
+
+}

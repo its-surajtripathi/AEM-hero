@@ -1,0 +1,15 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<header class="acaa-header">
+  <div class="acaa-header-main container-fixed-width">
+    <div class="acaa-header-logo-wrapper">
+      <sly data-sly-resource="${'logo' @ resourceType='hero-aem-website/components/content/logo' }"></sly>
+    </div>
+    <div class="acaa-header-button-wrapper">
+      <sly data-sly-resource="${'buttons-right' @ resourceType='wcm/foundation/components/responsivegrid' }">
+      </sly>
+    </div>
+  </div>
+</header>

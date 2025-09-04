@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <rep:policy/>
+    <hero-aem-website jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <container jcr:primaryType="nt:unstructured">
+                <policy_1680507237064
+                    jcr:lastModified="{Date}2023-04-03T13:04:37.674+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="dealers-portal-policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="group:Hero MotoCorp - Content"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1680507237064>
+                <policy_265592359288699
+                    jcr:lastModified="{Date}2023-04-03T13:19:34.175+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="dealers-portal-policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundColorEnabled="true"
+                    backgroundImageEnabled="true"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_265592359288699>
+            </container>
+            <structure jcr:primaryType="nt:unstructured">
+                <page-dealers-portal jcr:primaryType="nt:unstructured">
+                    <policy_1680507286884
+                        jcr:lastModified="{Date}2023-04-07T15:05:02.204+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="dealers-portal-policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="[hero-aem-website.dependencies,dealers-portal-aem-website.site,hero-aem-website.authenticatedpages,hero-aem-website.staticpages]"
+                        clientlibsAsync="false">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1680507286884>
+                </page-dealers-portal>
+            </structure>
+        </components>
+    </hero-aem-website>
+</jcr:root>

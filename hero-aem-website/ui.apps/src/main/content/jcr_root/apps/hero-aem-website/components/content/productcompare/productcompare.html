@@ -1,0 +1,86 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+
+<!-- products-comparision-section of Normal page -->
+<section data-sly-test="${properties.variation == 'normal'}" class="compare-bike-section ${properties.theme} ${properties.textColor ? 'text-white' : ''}"
+         style="background-image: url(${properties.bgImage ? properties.bgImage : 'unset' @ context='uri'})">
+   <div class=" compare-bike-wrappper">
+      <div class="bike-compare-div">
+         <div class="compare-bike-img">
+            <img loading="lazy" src="${properties.image}" alt="${properties.imageOneAlt}" class="img-fluid " />
+         </div>
+         <div class="compare-bike-info">
+            <h3 class="compare-bike-header common-h3 h2-heading-std text-to-uppercase">${properties.headline}</h3>
+            <div class="compare-bike-common-div variant">
+               <p class="compare-bike-common-p h3-heavy-heading-std">${properties.productName}</p>
+               <p class="compare-bike-common-p right h3-heavy-heading-std">${properties.productNameTwo}</p>
+            </div>
+            <div class="compare-bike-mob-div">
+               <img loading="lazy" src="${properties.imageOneMob}" alt="${properties.imageOneAlt}" class="img-fluid " />
+               <img loading="lazy" src="${properties.imageTwoMob}" alt="${properties.imageTwoAlt}" class="img-fluid " />
+            </div>
+            <sly data-sly-list.textMultifield="${resource.getChildren}">
+               <sly data-sly-test="${textMultifield.name == 'specificationDetails'}">
+                  <sly data-sly-repeat.child="${textMultifield.getChildren}">
+                     <div data-sly-test="${child}" class="compare-bike-common-div">
+                        <p class="compare-bike-common-p left h4-heavy-heading-std">${child.valueOne}</p>
+                        <p class="compare-bike-common-middle-p h4-bold-heading-std compare-bike-middle-text">${child.type}</p>
+                        <p class="compare-bike-common-p right h4-heavy-heading-std">${child.valueTwo}</p>
+                     </div>
+                  </sly>
+               </sly>
+            </sly>
+         </div>
+         <div class="compare-bike-img">
+            <img loading="lazy" src="${properties.imageTwo}" alt="${properties.imageTwoAlt}" class="img-fluid " />
+         </div>
+      </div>
+      <div class="common-cta" data-sly-test="${properties.ctaLabel}">
+         <button class="btn cta-bg"><span class="btn-span">${properties.ctaLabel}</span></button>
+      </div>
+   </div>
+</section>
+
+
+<!-- products-comparision-section of premium page -->
+<section style="background-image: url(${properties.bgImage ? properties.bgImage : 'unset' @ context='uri'})"
+   data-sly-test="${properties.variation == 'premium'}" class="products-comparison-section" id="compare">
+   <div class="products-comparison-head-main">
+      <div class="products-comparison-head left">
+         <h2>${properties.productName}</h2>
+      </div>
+      <div class="products-comparison-head right">
+         <h2>${properties.productNameTwo}</h2>
+      </div>
+   </div>
+   <div class="products-comparison-wrapper">
+      <div class="products-comparison-img">
+         <img loading="lazy" src="${properties.image}" class="img-fluid" alt="${properties.imageOneAlt}">
+      </div>
+      <div class="products-comparison-main">
+         <sly data-sly-list.textMultifield="${resource.getChildren}">
+            <sly data-sly-test="${textMultifield.name == 'premiumSpecificationDetailsTwo'}">
+               <sly data-sly-repeat.child="${textMultifield.getChildren}">
+                  <div data-sly-test="${child}" class="products-comparison-row">
+                     <ul>
+                        <li><img src="${child.iconOne}" alt="fist_icon"></li>
+                        <li>
+                           <h4>${child.specificationType}</h4>
+                        </li>
+                        <li><img src="${child.iconTwo}" alt="fist_icon"></li>
+                     </ul>
+                  </div>
+               </sly>
+            </sly>
+         </sly>
+      </div>
+      <div class="products-comparison-img">
+         <img src="${properties.imageTwo}" class="img-fluid" alt="${properties.imageTwoAlt}">
+      </div>
+   </div>
+   <a aa-data-attr="track_cta" aa-data-cta="${component.title}" class="btn btn-red-gradient mx-auto d-table"
+      data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.ctaLink}"
+      href="${linkuse.value}" data-sly-test="${properties.ctaLabel}">${properties.ctaLabel}</a>
+</section>

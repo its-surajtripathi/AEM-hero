@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Merchandise Product Category"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <id
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Please add the href ID"
+                                                fieldLabel="Enter ID of this Component"
+                                                name="./categoryID"/>
+                                            <multifield
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Merchandise Product Category"
+                                                validation="multifield-max-2">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./mpcategory">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Please add the title"
+                                                            fieldLabel="Enter Product Category Title"
+                                                            name="./categoryTitle"/>
+                                                        <viewall
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Please add sub text"
+                                                            fieldLabel="Enter CTA Label"
+                                                            name="./categoryView"/>
+                                                        <viewurl
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Please enter CTA url(If the redirection is for same URL use # and mention ID)"
+                                                            fieldLabel="Enter CTA URL"
+                                                            name="./viewUrl"
+                                                            rootPath="/content/hero-aem-website"/>
+                                                        <imagepath
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Choose image path"
+                                                            name="./categoryImage"
+                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                        <imageurl
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Choose Redirection URL for image"
+                                                            name="./catImageurl"
+                                                            rootPath="/content/hero-aem-website"/>
+                                                    </items>
+                                                </field>
+                                            </multifield>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

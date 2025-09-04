@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-07-08T09:57:41.283+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-08-08T04:41:01.050Z"
+        cq:lastReplicated_publish="{Date}2022-08-08T04:41:01.050Z"
+        cq:lastReplicatedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicatedBy_publish="kiran.jaganmohan@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[]"
+        cq:template="/libs/cq/experience-fragments/components/experiencefragment/template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Header"
+        jcr:uuid="19cb39a4-a139-4dcd-afac-07c77fb6f007"
+        sling:resourceType="cq/experience-fragments/components/experiencefragment"/>
+    <master/>
+</jcr:root>

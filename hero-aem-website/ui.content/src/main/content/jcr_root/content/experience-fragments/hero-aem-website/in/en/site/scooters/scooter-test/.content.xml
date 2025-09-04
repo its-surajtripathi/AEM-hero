@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-08-05T09:53:07.029Z"
+        cq:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/xf-web-variation"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="scooter-test"
+        sling:resourceType="hero-aem-website/components/structure/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <secondarynavigation
+                jcr:created="{Date}2022-07-25T00:43:51.058+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-07-25T18:30:42.369+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/structure/secondarynavigation"
+                helptext="&lt;p>Don't know which bike to choose?&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;/content/hero-aem-website/in/en/homepage.html&quot;>Help me choose&lt;/a>&lt;/p>&#xd;&#xa;"
+                textIsRich="true"
+                variation="scooters-megamenu-wrapper">
+                <flyouts
+                    jcr:lastModified="{Date}2022-07-25T00:45:13.467+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid">
+                    <productflyout
+                        jcr:created="{Date}2022-07-25T00:45:20.304+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-07-25T00:54:32.027+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/structure/secondarynavigation/productflyout"
+                        element="h4"
+                        exploretext="Explore"
+                        exploreurl="/content/hero-aem-website/in/en/homepage"
+                        heading="Pick your favourite scooter &amp; ride on"
+                        linkhead="false">
+                        <products jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/scooters/pleasure-plus-xtec.png"
+                                spec="110 CC"
+                                tag="New"
+                                text="PLEASURE+ XTECH"
+                                url="/content/hero-aem-website/in/en/scooters"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-110.png"
+                                spec="110 CC"
+                                text="MAESTRO EDGE 110"
+                                url="/content/hero-aem-website/in/en/scooters"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/scooters/maestro-edge-125.png"
+                                spec="125 CC"
+                                text="MAESTRO EDGE 125"
+                                url="/content/hero-aem-website/in/en/scooters"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/scooters/destini-125.png"
+                                spec="120 CC"
+                                text="DESTINI 125"
+                                url="/content/hero-aem-website/in/en/scooters"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/in/products/scooters/destini-125-xtec.png"
+                                spec="125 CC"
+                                tag="TRENDING"
+                                text="DESTINI 125 XTECH"
+                                url="/content/hero-aem-website/in/en/scooters"/>
+                        </products>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                    </productflyout>
+                    <adcarousel_copy
+                        jcr:created="{Date}2022-08-04T05:45:53.933Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-04T06:09:00.428Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adcarousel">
+                        <adbean jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                imageRef="/content/dam/hero-aem-website/in/products/scooters/sliders/scooty-slider-img1.png"
+                                linkTo1="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                imageRef="/content/dam/hero-aem-website/in/products/scooters/sliders/scooty-slider-img1.png"
+                                linkTo1="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                imageRef="/content/dam/hero-aem-website/in/products/scooters/sliders/scooty-slider-img1.png"/>
+                        </adbean>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </adcarousel_copy>
+                </flyouts>
+            </secondarynavigation>
+        </root>
+    </jcr:content>
+</jcr:root>

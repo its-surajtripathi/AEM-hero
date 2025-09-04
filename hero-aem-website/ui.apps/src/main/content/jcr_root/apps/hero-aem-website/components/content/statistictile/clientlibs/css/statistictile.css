@@ -1,0 +1,279 @@
+.hdbcevent-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #292929;
+    padding: 44px 44px 43px 44px;
+}
+
+.event-contents-top {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: var(--font-tstar-medium);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 51px;
+}
+
+.event-contents-top-grey{
+    color: #303030 !important;
+}
+
+.event-contents-bottom-grey{
+    color: #303030 !important;
+    opacity: 0.6;
+}
+
+.event-contents-bottom {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: var(--font-tstar-bold);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.border-line-events {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    margin: 0.4rem 0 0.8rem 0;
+}
+
+.border-line-grey{
+    border-color: #303030 !important;
+    opacity: 0.6;
+}
+
+.statistitc-wrapper {
+    background-color: #292929;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 20px -4px rgba(24, 39, 75, 0.14);
+    border-radius: 12px;
+}
+
+.statistitc-grey-wrapper{
+    background-color: #EDEDED;
+}
+
+.statistitc-grey-wrapper .overview-heading{
+    padding-top: 16px;
+}
+
+.statistictile .hdbcevent-container-variation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 54px 124px;
+}
+
+.statistictile .hdbcevent-container-variation li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-statistics {
+    padding: 0 40px;
+    position: relative;
+}
+
+.container-statistics p.data-time-para {
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 18px;
+    opacity: 1;
+    font-family: var(--font-tstar-heavy);
+    text-transform: uppercase;
+    margin-bottom: -35px;
+    padding-top: 15px;
+}
+
+.hdbcevent-container-variation .statistic-price {
+    font-size: 42px;
+    line-height: 1.22;
+    font-weight: 800;
+    font-family: var(--font-montserrat-alt);
+    font-style: italic;
+}
+
+.hdbcevent-container-variation .statistic-price span.statistic-price-span {
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: var(--font-tstar-heavy);
+    font-weight: 900;
+}
+
+.hdbcevent-container-variation .event-contents-bottom p {
+    font-size: inherit;
+    opacity: 0.6;
+    font-family: var(--font-tstar-heavy);
+    font-style: normal;
+}
+
+#service-overview-stat .hdbcevent-container-variation .event-contents-bottom p {
+    opacity: 1;
+}
+
+.hdbcevent-container-variation .border-line-events-variation {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    margin: 0.4rem 0 0.8rem 0;
+    opacity: 0.6;
+    width: 115%;
+}
+
+.service-stages .statistictile .hdbcevent-container-variation {
+    padding: 54px 30px;
+}
+
+.service-stages .hdbcevent-container-variation .border-line-events-variation {
+    width: 100%;
+}
+
+@media (max-width: 1250px){
+    .hdbcevent-container-variation .statistic-price {
+        font-size: 18px;
+    }
+
+    .hdbcevent-container-variation .statistic-price span.statistic-price-span {
+        font-size: 12px;
+    }
+
+    .service-stages .event-contents-bottom {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:950px) {
+    .hdbcevent-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: #292929;
+        padding: 16px;
+    }
+
+    .container-statistics p.data-time-para {
+        bottom: 0%;
+        font-size: 9px;
+        margin-bottom: -5px;
+        padding-top: 10px;
+    }
+
+    .event-contents-top {
+        color: #FFFFFF;
+        text-align: center;
+        font-family: var(--font-tstar-medium);
+        font-style: italic;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .event-contents-top span {
+        font-size: 8px;
+        line-height: 9.6px;
+    }
+
+    .event-contents-bottom {
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 22px;
+        text-transform: uppercase;
+        min-height: 20px;
+        font-family: var(--font-tstar-bold);
+        font-style: italic;
+        font-weight: 900;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .border-line-events {
+        border-style: solid;
+        border-width: 0.4px;
+        border-color: #FFFFFF;
+        margin: 0.2rem 0 0.4rem 0;
+    }
+
+    .container-statistics {
+        padding: 0 16px;
+    }
+
+    .statistictile .hdbcevent-container-variation {
+        padding: 11px;
+        border-radius: 6px;
+    }
+
+    .hdbcevent-container-variation .statistic-price {
+        font-size: 14px;
+    }
+
+    .hdbcevent-container-variation .statistic-price span.statistic-price-span {
+        font-size: 8px;
+    }
+
+    .hdbcevent-container-variation .border-line-events-variation {
+        margin: 4px 0;
+    }
+
+    .hdbcevent-container-variation li {
+        padding: 0 8px;
+    }
+
+    .hdbcevent-container-variation li:first-child {
+        padding-left: 0;
+    }
+
+    .hdbcevent-container-variation li:last-child {
+        padding-right: 0;
+    }
+
+    .service-stages .event-contents-bottom {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 400px){
+    .hdbcevent-container-variation .statistic-price {
+        font-size: 12px;
+    }
+}
+
+.statistictile .withheader{
+    padding: 35px 30px !important;
+}
+
+@media (max-width:786px){
+    .statistictile .withheader {
+        padding: 20px 10px !important;
+    }
+    
+    .service-stages .statistictile .hdbcevent-container-variation {
+        padding: 20px 10px;
+        align-items: flex-start;
+    }
+
+    .statistitc-grey-wrapper .overview-heading{
+        padding-top: 0px;
+    }
+}
+
+@media (max-width:569px){
+    .service-stages .event-contents-bottom {
+        font-size: 7px;
+    }
+}
+
+@media (max-width:569px){
+    .service-stages .event-contents-bottom {
+        font-size: 7px;
+    }
+}

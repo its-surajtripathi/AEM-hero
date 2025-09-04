@@ -1,0 +1,87 @@
+#
+# This file contains the cache rules, and can be customized.
+#
+# By default, it includes the default rules.
+#
+
+$include "./default_rules.any"
+/0201 {
+    /glob "*.bookatestride.html"
+    /type "deny"
+}
+/0202 {
+    /glob "*.requestcallback.html"
+    /type "deny"
+}
+/0203 {
+    /glob "*.generatelead.html"
+    /type "deny"
+}
+/0204 {
+    /glob "*.getlocation.json"
+    /type "deny"
+}
+/0205 {
+    /glob "*.sendotp.json"
+    /type "deny"
+}
+/0206 {
+    /glob "*profile*.html"
+    /type "deny"
+}
+/0207 {
+    /glob "*captcha*.html"
+    /type "deny"
+}
+/0208 {
+    /glob "*bookservice*.html"
+    /type "deny"
+}
+/0209 {
+    /glob "*getMMIDetails*.html"
+    /type "deny"
+}
+/0210 {
+    /glob "*submitFeedback*.html"
+    /type "deny"
+}
+/0211 {
+    /glob "*getGoodLifeResponse*.html"
+    /type "deny"
+}
+/0212 {
+    /glob "*getPaymentUrl*.html"
+    /type "deny"
+}
+/0213 {
+    /glob "*.investors.json"
+    /type "deny"
+}
+/0214 {
+    /glob "*xtrack*.html"
+    /type "deny"
+}
+/0220 {
+    /glob "*.premiainvite.json"
+    /type "deny"
+}
+
+/0221 {
+    /glob "*.premiainvite.html"
+    /type "deny"
+}
+
+/0222 {
+    /glob "*.decryptservlet.html"
+    /type "deny"
+}
+
+/0223 {
+    /glob "*.harleydealersdata*.html"
+    /type "deny"
+}
+
+/0224 {
+    /glob "*.harleycities*.html"
+    /type "deny"
+}

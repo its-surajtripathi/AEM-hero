@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-08-12T07:21:12.006Z"
+        cq:lastModifiedBy="preeti.nalawade@accenture.com"
+        cq:lastReplicated="{Date}2022-08-12T07:54:33.042Z"
+        cq:lastReplicated_publish="{Date}2022-08-12T07:54:33.042Z"
+        cq:lastReplicatedBy="c.vishwa.prakash.s@accenture.com"
+        cq:lastReplicatedBy_publish="c.vishwa.prakash.s@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="request-callback-pop-up"
+        jcr:uuid="3c2fb2c0-fdab-4ca7-88ac-6e1e4e9983e2"
+        sling:resourceType="hero-aem-website/components/structure/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <modal_comp
+                jcr:created="{Date}2022-08-12T07:06:49.139Z"
+                jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                jcr:lastModified="{Date}2022-08-12T07:07:05.866Z"
+                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/content/modal-comp"
+                modalId="requestCallBack">
+                <responsivegrid
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <generic_text
+                        jcr:created="{Date}2022-08-12T07:07:17.367Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-12T07:21:11.913Z"
+                        jcr:lastModifiedBy="preeti.nalawade@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/generic-text"
+                        text="&lt;p>Pop up Working as expected&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                </responsivegrid>
+            </modal_comp>
+        </root>
+    </jcr:content>
+</jcr:root>

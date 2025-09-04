@@ -1,0 +1,960 @@
+.left-section{
+    width:100%;
+    height: 100%;
+    background-color: lightgrey;
+    margin-right: 0px;
+    background-color: white;
+}
+.profile-pic img{
+    border-radius: 50%;
+    height:150px;
+    width:150px;
+}
+.profile-pic{
+    text-align: center;
+}
+.profilesection{
+    background-color: white;
+}
+.icons{
+    height: 30px;
+    width:30px;
+}
+.profile-pic h4{
+    font-weight: bold;
+}
+.profile-pic p{
+    color: gray;
+    text-align: center;
+}
+.profile-pic a{
+    color:red;
+    text-decoration: none;
+    font-weight: bold;
+}
+.profile-completion{
+    display: inline-block;
+    background-color: bisque;
+    border: 1px bisque solid;
+    border-radius: 10px;
+    width: fit-content;
+}
+.completion-status{
+    float: left;
+}
+.percentage{
+    float:right;
+}
+.verticalmenu{
+    background-color: white;
+    color:black;
+    width: 100%;
+}
+.menus{
+    height:5%;
+    color:rgb(69, 67, 67);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 120%;
+}
+.menus a{
+    text-decoration: none;
+    color:rgb(46, 43, 43);
+    font-size: medium;
+    border-bottom: 1px lightgray solid;
+    width: 120%;
+}
+.menus img{
+    height:40px;
+    width: 40px;
+}
+.right-section{
+    width:100%;
+    height: 100%;
+    background-color: lightgray;
+}
+.heading{
+    color:black;
+    font-size:x-large;
+    border-bottom: 1px gray solid ;
+    padding:10px;
+}
+.vehicle-nav{
+    color: gray;
+    font-size: large;
+    padding:10px;
+    display:inline-block;
+}
+
+.left{
+    border-radius: 50%;
+    border-color: 2px black solid;
+    font-size: large;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color:gray
+}
+.right{
+    border-radius: 50%;
+    border-color: 2px black solid;
+    font-size: large;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color:gray
+}
+.left:hover,.right:hover{
+    color:red;
+}
+.vehicle-name{
+    font-size: larger;
+    padding: 10px;
+}
+.vehicle-name span{
+    font-weight: bold;
+}
+
+.vehicle{
+    float: left;
+    width:max-content;
+    height: max-content;
+}
+.vehicle-image{
+    height:300px;
+    width:500px;
+    float:right;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+.insurance-type{
+    width: max-content;
+    display: inline-block;
+    padding: 10px;
+}
+.insurances{
+    padding: 10px;
+    border-radius: 1px gray solid;
+}
+.service-type{
+    width:24%;
+    height: 125px;
+    border: 2px rgb(8, 1, 1) solid;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: white;
+}
+.service-info{
+    h4,p,a {
+        float:left;
+    }
+}
+.service-type:hover{
+    border-color: red;
+}
+.service-info h4{
+    font-weight: bold;
+}
+.service-info a{
+    color: red;
+    font-weight: bold;
+    font-size:medium;
+}
+.service-info p{
+    color: gray;
+    font-size: small;
+}
+.service-icon{
+    float: right;
+}
+.service-icon img{
+    height: 30px;
+    width: 20px;
+}
+.services{
+    padding: 10px;
+    margin-top: -30px;
+}
+.tiles{
+    display: inline-block;
+    height: 200px;
+    transform: skew(-14deg);
+    padding: 0px;
+    width: max-content;
+}
+.tiles img{
+    display: inline-block;
+    height:350px;
+    width: 330px;
+    padding: 10px;
+}
+.image-tiles{
+    margin:10px;
+}
+#details-section{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border-bottom: 2px solid #CCCCCC;
+    .card-header p{
+        float: right;
+        color: red;
+        font-size: larger;
+    }
+    .card-header img{
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    .document-title{
+        display:inline;
+    }
+    .document-title p{
+        font-weight: bold;
+    }
+    .document img{
+        height:100px;
+        width:100%;
+    }
+    .document-title img{
+        height: 30px;
+        width: 40px;
+    }
+    .document-name p{
+        color:gray;
+    }
+    .document{
+        width:auto;
+        border: 1px black solid;
+        padding:10px;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        display: inline-block;
+        margin:10px;
+        box-shadow: 2px 2px 2px 2px rgb(171, 170, 170);
+    }
+    .document a{
+        color:red;
+        font-size: medium;
+    }
+    .document p{
+        color: black;
+        font-weight: bold;
+    }
+    .document-title img, .document-title p{
+        display: inline-block;
+    }
+    .document-type{
+        float:left;
+    }
+    .document-icon{
+        float: left;
+    }
+
+    .arrow-icon{
+        height: 5px;
+        width:20px;
+        float:right;
+    }
+    .card-header .arrow-icon{
+        transition: .3s transform ease-out;
+    }
+
+}
+@media (max-width:768px){
+.edit-myProfile-wrapper .accordion:last-child#details-section{
+    border-bottom:none;
+}
+}
+#details-section button{
+    border:none;
+    background-color:whitesmoke;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+.detailed-info{
+    display: flex;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+.details{
+    display: flex;
+    padding: 20px;
+    gap: 1rem;
+    flex-direction: column;
+    h4{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #303030;
+    }
+    p{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #303030;
+    }
+    a{
+        color:red;
+        span{
+            img{
+                display:inline;
+                position:absolute;
+                margin-left:7px;
+            }
+        }
+    }
+}
+
+
+
+/*=== My Vehicle ===*/
+.unset-rule(){
+    padding: unset;
+    margin: unset;
+}
+
+.myVeh-wrapper{
+    margin-right: 30px;
+    margin-top  :30px;
+
+    @media all and (max-width:767px) {
+        margin: 30px;
+
+    }
+     @media (min-width:768px) and (max-width:991px) {
+            margin: 30px;
+            margin-left:50px;
+        }
+
+    // heading
+    .myVehHed {
+       // font-family: 'T-Star Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: #303030;
+    }
+
+    .separatorLine {
+        margin-top: 6px;
+        border: 1px solid #CCCCCC;
+        background-color: #cccccc;
+    }
+    .my-vehicle-card{
+        flex:1;
+        &:hover{
+            border: 1px solid #FF0000;
+            border-radius: 8px;
+        }
+    }
+    // Info & Bike 
+    .myCarousel {
+        display: flex;
+        gap: 5%;
+        justify-content: space-between;
+        @media all and (max-width:768px) {
+            flex-direction: column-reverse;
+        }
+
+        .myVehicle{
+            margin-top: 2rem;
+            
+            .myVehicle-nav {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                @media all and (max-width:768px) {
+                    flex-direction: column;
+                }
+                
+                .myVehicle-nav-txt {
+                    //font-family: 'T-Star Pro';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #8E8E8E;
+                    white-space: nowrap;
+
+                    @media all and (max-width:768px){
+                        //font-family: 'T-Star Pro';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 12px;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: #BFBFBF;
+                    }
+                }
+
+                .myVeharrow-wrap {
+                    display: flex;
+                    gap: 15px;
+                    .myVehcarousel-arrow {
+                        .unset-rule;
+                        margin: unset;
+                            background: #fff;
+                            border-radius: 50%;
+                            padding: 10px;
+                        &.disabled{
+							cursor:default;
+                            pointer-events:none;
+                        }
+                            &.prev-vehicle{
+                                img{
+
+                                    &.active{
+                                        transform:rotate(180deg);
+                                    }
+                                    // &.inactive{
+
+                                    // }
+                                }
+                            }
+                            &.next-vehicle{
+                                img{
+                                    &.active{
+                                        transform:rotate(0deg);
+                                    }
+                                    &.inactive{
+                                        transform:rotate(180deg);
+                                    }
+                                }
+
+                            }
+                    }
+                }
+            }
+
+            .myVehicle-name {
+                margin-top: 30px;
+                @media (max-width: 767px) {
+                    text-align: center;
+                }
+                .myVehicle-modal {
+                    display: block;
+                   // font-family: 'T-Star Pro';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 28px;
+                    line-height: 34px;
+                    color: #303030;
+                }
+    
+                .myVehicle-number {
+                    display: block;
+                   // font-family: 'T-Star Pro';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.01em;
+                    color: #303030;
+                }
+            }
+
+            .myInsurance {
+                margin: 30px 0px;
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                .myInsurace-title {
+                  //  font-family: 'T-Star Pro';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #303030;
+                }
+                .myInsurance-subTitle {
+                    display: contents;
+                    //font-family: 'T-Star Pro';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 0.01em;
+                    color: #303030;
+                }
+            }
+        }
+
+        .myVehImg {
+            .bike-img{
+                position: relative;
+                top: 2rem;
+                margin: 0 auto;
+                width:225px;
+
+            }
+        }
+    }
+
+    // mini-cards
+    .cardTiles {
+        display: flex;
+        gap: 15px;
+        justify-content: space-around;
+        margin: 20px 0px;
+        @media all and (max-width:768px) {
+            flex-direction: column;
+        }
+
+        .card {
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            min-height:150px;
+            .sub-item1{
+			    height: 30px;
+			    background-color: #FF0000;
+			    color: white;
+			    position: absolute;
+			    right: 5px;
+			    top: -14px;
+			    text-align: center;
+			    box-sizing: border-box;
+			    padding: 5px;
+			    z-index: 1;
+			    border-bottom-right-radius: 24px;
+			    border-top-right-radius: 10px;
+			    border-top-left-radius: 5px;
+			    border-bottom-left-radius: 8px;
+            }
+            .cardBody {
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                background: linear-gradient(-250deg, #ffffff 50%, #fff1e4 40%);
+                border-top-right-radius: 8px;
+                border-top-left-radius: 8px;
+                padding-bottom:0;
+                .cardTitle {
+                    display: flex;
+                    flex-direction: column;
+                //    font-family: 'T-Star Pro';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #333333;
+
+                    img {
+                        display: inline;
+                        width: 18px;
+                        height: 18px;
+                        vertical-align: bottom;
+                    }
+                }
+                .cardSubtitle {
+                 //   font-family: 'T-Star Pro';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #8C8C8C;
+                    padding-top:5px;
+                }
+
+                img {
+                    height: 68px;
+                }
+            }
+            .cardFooter {
+                padding: 15px;
+                display: flex;
+                gap: 6px;
+                margin: unset;
+                cursor: pointer;
+
+                .cardFootLink {
+                    white-space: nowrap;
+               //     font-family: 'T-Star Pro';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: #FF0000;
+                }
+            }
+        }
+    }
+
+    // IMG Carousels
+    .myVehcarousel-wrapper {
+        margin: 30px 0px;
+        .carousel-item {
+            a {
+                .unset-rule;
+                margin-right: -6%;
+            }
+        }
+
+        .carousel-control-prev-icon {
+            background-image: url("/content/dam/hero-aem-website/service-journey-assets/Left-Grey-Arrow.svg");
+            width: 42px;
+            height: 42px;
+            position: relative;
+            left: -45%;
+        }
+
+        .carousel-control-next-icon {
+            background-image: url("/content/dam/hero-aem-website/service-journey-assets/Right-Grey-Arrow.svg");
+            width: 42px;
+            height: 42px;
+            position: relative;
+            right: -45%;
+        }
+
+        .carousel-indicators {
+            bottom: -10%;
+            li{
+                width: 31px;
+                height: 4px;
+                &::marker{
+                    font-size: 0px;
+                }
+            }
+        }
+    }
+
+    // Animation
+    .moving-img{
+        animation: myVeh-wrapper 10s linear;
+    }
+    .image-tray{
+		margin-top:-20px;
+    }
+
+    /*==== FADE IN RIGHT ===*/
+    @keyframes myVeh-wrapper {
+        from {
+            transform: translateX(50px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+}
+
+.myVehicles-wrapper{
+    margin-right: 2rem;
+    @media (max-width: 991px) {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+/*=== Popups ===*/
+.popup-btn {
+    padding: 12px 32px;
+    //font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #F5F5F7;
+    background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+    border-radius: 4px;
+    border: none;
+}
+#submitPopupQWK, #submitPopupHSV, #submitPopupHSL{
+	.modal-dialog{
+		max-width: 50% !important;
+	}
+	.info-popup-body-title{
+        white-space: initial !important;
+    	font-size: 24px !important;
+    	line-height: 32px !important;
+    }
+}
+#submitPopup, #editBooking, #submitPopupQWK, #submitPopupHSV, #submitPopupHSL {
+
+    .modal-content {
+        border-radius: 10px;
+
+        .modal-body{
+            
+            .cmp-container{
+                display: grid;
+                justify-items: center;
+            }
+            .cmp-text{
+                text-align: center;
+            }
+            .popup-body-img{
+                width: 64px;
+                height: 64px;
+                margin: 30px auto;
+            }
+            .info-popup-body-title{
+
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 38px;
+                text-align: center;
+                color: #000000;
+                white-space: nowrap;
+                padding: 1rem;
+                @media (max-width: 767px) {
+                    font-size: 20px;
+                }
+            }
+
+            .hero-button{
+                margin-top: 30px;
+            }
+            .info-ft-btn-txt{
+                padding: 12px 32px;
+            //    font-family: 'T-Star Pro';
+                font-weight: var(--font-weight-900);
+                font-size: var(--font-size20);
+                line-height: var(--line-height-24);
+                text-transform: uppercase;
+                color: #F5F5F7;
+                background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+                border-radius: 4px;
+                border: 1px solid #EE2326;
+            }
+        }
+    }
+}
+
+#cancelBooking {
+
+    .modal-content {
+        border-radius: 10px;
+
+        .modal-body{
+            
+            .megamenu-option-wrapper{
+                margin-top: 10%;
+            }
+            .cmp-text {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                align-items: center;
+            }
+            .hero-button{
+                display: inline-block;
+                margin: 20px
+            }
+            .popup-body-img {
+                width: 64px;
+                height: 64px;
+                margin: 10px auto;
+            }
+            .info-popup-body-title {
+              //  font-family: 'T-Star Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 38px;
+                text-align: center;
+                color: #000000;
+            }
+            .info-popup-body-txt {
+           //     font-family: 'T-Star Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                color: #5F5A5A;
+            }
+
+            .info-ft-btn-txt {
+                padding: 12px 32px;
+                //font-family: 'T-Star Pro';
+                font-weight: var(--font-weight-900);
+                font-size: var(--font-size20);
+                line-height: var(--line-height-24);
+                text-transform: uppercase;
+                color: #F5F5F7;
+                background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+                border-radius: 4px;
+                border: 1px solid #EE2326;
+            }
+        }
+    }
+}
+
+#booknowPopup {
+
+    .modal-content {
+        border-radius: 10px;
+        width: fit-content;
+
+        .modal-body{
+            width: 328px;
+            height: auto;
+            
+            .megamenu-option-wrapper{
+                margin-top: 10%;
+
+                .cmp-container {
+                    .text:has(.btn):last-child {
+                        position: relative;
+
+                    }
+                }
+            }
+
+
+			.share-whatsapp-modal{
+				font-weight: 700;
+			    font-size: 14px;
+			    line-height: 30px;
+			    letter-spacing: 0.01em;
+			    color: #FF0000;
+			    .whatsapp-img{
+			    	 height: 16px;
+					 display: inline;
+					 width: auto;
+			    }
+			    .share-img{
+			    	height: 16px;
+				    display: inline;
+				    width: auto;
+			    }
+			}
+            .cmp-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                width: 100%;
+                h2{
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #333333;
+                    font-family: 'tstar-heavy';
+                }
+                p{
+                    b{
+                        font-family: 'tstar-heavy';
+                    }
+                }
+                .pop-text-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            .info-popup-body-title {
+             //   font-family: 'T-Star Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 38px;
+                text-align: center;
+                color: #000000;
+            }
+            .info-popup-body-txt {
+               // font-family: 'T-Star Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                color: #2C2A2A;
+            }
+            
+            .checkbox-item{
+                margin: unset;
+                span{
+                    font-size: var(--font-size18);
+                    color: #5F5A5A;
+                }
+            }
+
+            .hero-button{
+                display: inline-block;
+                margin-left: 30%;
+            }
+            .info-ft-btn-txt {
+                padding: 12px 32px;
+                font-family: 'T-Star Pro';
+                font-weight: var(--font-weight-900);
+                font-size: var(--font-size20);
+                line-height: var(--line-height-24);
+                text-transform: uppercase;
+                color: #F5F5F7;
+                background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+                border-radius: 4px;
+                border: 1px solid #EE2326;
+            }
+
+        }
+    }
+}
+
+#logoutPopup {
+
+    .modal-content {
+        border-radius: 10px;
+
+        .modal-body{
+            
+            .megamenu-option-wrapper{
+                margin-top: 10%;
+            }
+            .cmp-text {
+                text-align: center;
+            }
+            .popup-body-img {
+                width: 64px;
+                height: 64px;
+                margin: 30px auto;
+            }
+            .info-popup-body-title {
+               // font-family: 'T-Star Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 38px;
+                text-align: center;
+                color: #000000;
+            }
+
+            .hero-button{
+                display: inline-block;
+                margin-left: 50px;
+                margin-top: 50px;
+            }
+            .info-ft-btn-txt {
+                padding: 12px 32px;
+              //  font-family: 'T-Star Pro';
+                font-weight: var(--font-weight-900);
+                font-size: var(--font-size20);
+                line-height: var(--line-height-24);
+                text-transform: uppercase;
+                color: #F5F5F7;
+                background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+                border-radius: 4px;
+                border: 1px solid #EE2326;
+            }
+        }
+    }
+}
+
+.myvehilce-row{
+    background-color: #EDEDED;
+    @media (max-width: 767px) {
+        margin-top: -1rem;
+    }
+}

@@ -1,0 +1,68 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div class="profilesection">
+    <script type="text/html" class="bookaserviceData">
+        <div class="container-fluid">
+
+            <div class="row profile-summary-block">
+                <div class="col-12">
+                    <div class="editprofile">
+                        <a href="${properties.linkto @ context='uri',extension='html'}"><h4>${properties.editprofilelabel @context='scriptString'}</h4><span><img src="${properties.editprofileicon @ context='uri'}"></span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="profile-pic">
+                        <div class="fetch-image">
+                            <img class="profile-roundPic"  src="<%=vehicleDetails.profile_pic_path%>?<%=atob(JSON.parse(atob(getCookie('data'))).mediaToken)%>" class="center">
+                            <div class="initials">   </div>
+                        </div>
+
+                        <h5><%=vehicleDetails.user_name%></h5>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9 row profile-details-wrap">
+                    <div class="col-6 col-lg-3 profile-field">
+                        <div class="mobile">
+                            <div>
+                                <h5>${properties.mobilelabel @context='scriptString'}</h5>
+                                <p><%=vehicleDetails.mobile_no%></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 profile-field">
+                        <div class="dob">
+
+                            <h5>${properties.doblabel @context='scriptString'}</h5>
+                            <p><%=vehicleDetails.dob%></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 profile-field">
+                        <div class="email">
+                            <h5>${properties.emaillabel @context='scriptString'}</h5>
+                            <p><%=vehicleDetails.email%></p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 profile-field">
+                        <div class="gender">
+                            <h5>${properties.genderlabel @context='scriptString'}</h5>
+                            <p><%=vehicleDetails.gender%></p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 profile-field">
+                        <div class="bloodgrp">
+                            <h5>${properties.bloodgrplabel @context='scriptString'}</h5>
+                            <p><%=vehicleDetails.blood_group%></p>
+                        </div>
+                    </div>
+					<div class="col-12 col-lg-3 profile-field">
+                        <div class="Addrs">
+                            <h5>${properties.addresslabel @context='scriptString'}</h5>
+                            <p><%=vehicleDetails.address_line1%> <%=vehicleDetails.state%> <%=vehicleDetails.city%> <%=vehicleDetails.pin_code%></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+</div>

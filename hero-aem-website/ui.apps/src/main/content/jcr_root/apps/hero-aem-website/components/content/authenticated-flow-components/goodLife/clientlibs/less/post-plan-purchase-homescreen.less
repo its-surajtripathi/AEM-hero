@@ -1,0 +1,747 @@
+.post-loging-header-container {
+    .generic-text {
+        padding: 0 0 20px 40px;
+        margin-top: 0 !important;
+        @media (max-width:768px){
+            padding:15px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 900;
+
+            .good-life {
+                color: #FF0000;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+.merbership-container {
+    background: #fff;
+    margin: 0 42px 42px 42px;
+
+
+    .membership-heading {
+        background: linear-gradient(85.8deg, #5C5C5C 3.51%, #181816 15.64%, #413E3C 52.52%, #54514F 84.55%, #24211D 96.69%), #343434;
+        color: #fff;
+        padding: 25px 40px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+         @media (max-width:991px){
+            padding: 15px;
+         }
+        .membership-logo{
+            @media (max-width:991px){
+                width: 100%;
+                object-fit: contain;
+                height: 90px;
+            }
+        }
+    }
+    .vehicle-heading{
+        h3{
+            font-size:32px;
+            @media (max-width:768px){
+                font-size:24px;
+            }
+        }
+    }
+
+    .points-earn {
+    margin-top:13px;
+        .points-earn-left {
+            float: left;
+            margin-right: 5px;
+            font-size:32px;
+            line-height:12px;
+            @media (max-width:991px){
+                font-size:24px;
+                line-height:16px;
+            }
+        }
+        .points-earn-right{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+
+    .membership-content {
+        @media (max-width:768px) {
+            .row {
+                flex-direction: column-reverse;
+            }
+
+        }
+
+        .membership-content-left {
+            padding: 50px;
+            @media (max-width:991px) {
+                padding: 15px 30px;
+            }
+            .pleasure-container {
+                h3 {
+                    font-size: 1.75rem;
+                    font-weight: 900;
+                }
+            }
+            a{
+                @media (max-width:768px){
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .pleasure-details {
+                margin-bottom: 50px;
+                display: inline-block;
+                width: 100%;
+                @media (max-width:768px){
+                    margin-bottom: 10px;
+                }
+                .pleasure-content {
+                    .pleasure-content-left {
+                        float: left;
+                        width: 50%;
+
+                        @media (max-width:768px) {
+                            float: none;
+                            width: 100%;
+                        }
+
+                        strong {
+                            display: block;
+                        }
+                    }
+
+                    .pleasure-content-right {
+                        float: left;
+                        width: 50%;
+
+                        @media (max-width:768px) {
+                            float: none;
+                            width: 100%;
+                        }
+
+                        strong {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .btn-earning-history {
+                background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+                color: #fff;
+                min-width: 367px;
+                height: 48px;
+            }
+        }
+
+        .membership-content-right {
+            .bike-carousel-container {
+                padding: 50px 0 0 0;
+                position:relative;
+                @media (max-width:768px) {
+                    margin-bottom:30px;
+                }
+
+                .bike-show-container {
+                    position: relative;
+                    z-index: 1;
+
+                    .bikes-collection {
+                        max-width: 316px;
+                        max-height: 316px;
+                        display: flex;
+                        vertical-align: middle;
+                        margin: 5px 0 0 113px;
+
+                        @media (max-width:768px) {
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .carousel-btn-container {
+                        position: absolute;
+                        top: 25%;
+                        right: 10%;
+
+                        @media (max-width:768px) {
+                            position: unset;
+                        }
+
+                        .btn-nxt-prev {
+                            border-radius: 50%;
+                            box-shadow: 0px 4px 4px #ddd !important;
+                            border: transparent;
+                            padding: 0;
+                            display: flex;
+                            justify-content: center;
+                            padding: 13px;
+                            width: 45px;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+                .bike-display-stage {
+                    position: absolute;
+                    bottom: -15%;
+
+                    @media (max-width:768px) {
+                        position: relative;
+                        bottom: 50px;
+                    }
+
+                    img {
+                        @media (max-width:768px) {
+                            object-fit: fill;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .model-number {
+                    transform: rotate(-90deg);
+                    position: relative;
+                    left: 39px;
+                    bottom: 48px;
+                    font-size: 1.5rem;
+                    color: #BFBFBF;
+
+                    @media (max-width:768px) {
+                        position: absolute;
+                        right: 0;
+                        bottom: unset;
+                        left: unset;
+                        top: 10%;
+                    }
+                }
+
+                .next-vehicle-btn-container {
+                    bottom: -65%;
+                    position: absolute;
+                    left: -15px;
+                     @media (max-width:768px) {
+                        bottom:-35%;
+                        left:35%;
+                     }
+                }
+            }
+        }
+
+    }
+
+}
+
+.insurance-carousel {
+    width: 346px;
+
+    .carousel-inner {
+        width: auto;
+    }
+
+    .carousel-indicators {
+        bottom: -15px;
+
+        .carousel-indicator {
+            list-style: none;
+
+        }
+    }
+}
+
+/*-----------Complete profile and reward section start-------------*/
+.profile-and-rewards {
+
+    padding: 0 40px 40px 40px;
+
+
+    .complete-profile {
+        display: flex;
+        background: #FFF1E4;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14);
+        border-radius: 4px;
+        padding: 10px;
+        margin: 0;
+        .view-arrow {
+            width: 24px;
+            height: 24px;
+            padding-left: 10px;
+            padding-top: 6px;
+
+            @media all and(max-width:768px) {
+                width: 16px;
+                height: 20px;
+                padding-left: 5px;
+                padding-top: 0px;
+            }
+        }
+
+        .img-profile {
+            width: 135px;
+            height: 130px;
+
+            @media all and(max-width:768px) {}
+        }
+
+
+        a {
+            padding-top: 20px;
+            display: flex;
+            @media all and(max-width:768px) {
+                font-size: 14px !important;
+            }
+        }
+
+
+
+        .title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+            color: #303030;
+
+            @media all and(max-width:768px) {
+                font-size: 24px;
+            }
+        }
+
+        .subtext {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+            color: #303030;
+
+            @media all and(max-width:768px) {
+                font-size: 14px !important;
+            }
+        }
+
+        .points {
+            color: #333333;
+        }
+
+        .red-text-view {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: 0.001em;
+            color: #FF0000;
+
+            @media all and(max-width:768px) {
+                font-size: 14px !important;
+            }
+        }
+
+        .complete-profile-subtext {
+            padding-top: 20px;
+
+            @media all and(max-width:768px) {}
+        }
+    }
+
+    .welcome-reward {
+        display: flex;
+        padding: 3px;
+        background: linear-gradient(160.69deg, #201F1F 22.35%, #454141 68.47%, #000000 114.59%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14);
+        border-radius: 4px;
+        color: white;
+
+        .view-arrow {
+            width: 24px;
+            height: 24px;
+            padding-top: 4px;
+            padding-left: 10px;
+
+            @media all and(max-width:768px) {
+                width: 16px;
+                height: 20px;
+                padding-top: 0px;
+                padding-left: 5px;
+            }
+        }
+
+        .img-reward {
+            width: 215px;
+            height: 144px;
+
+            @media all and(max-width:768px) {}
+        }
+
+        a {
+            padding-top: 20px;
+            display: flex;
+            @media all and(max-width:768px) {
+                font-size: 14px;
+            }
+        }
+
+
+
+        .title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+            color: #FFFFFF;
+
+            @media all and(max-width:768px) {
+                font-size: 24px;
+            }
+        }
+
+        .subtext {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            color: #FFFFFF;
+
+            @media all and(max-width:768px) {}
+        }
+
+        .white-text {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: 0.001em;
+            color: #FFFFFF;
+
+            @media all and(max-width:768px) {
+                font-size: 14px !important;
+            }
+        }
+
+        .welcome-reward-subtext {
+            padding-top: 20px;
+
+            @media all and(max-width:768px) {}
+        }
+
+    }
+}
+
+/*-----------Complete profile and reward section end-------------*/
+/*Voucher available css start*/
+
+.vouchers-available-wrapper {
+    margin: 0 40px;
+
+    .voucher-title {
+        h3 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+    }
+
+    .row {
+        margin: 0;
+
+        .voucher-white-card {
+            width: 25%;
+        }
+
+        .voucher-white-card:last-child {
+            margin-right: 0;
+        }
+
+        .voucher-title {
+            p {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 32px;
+                color: #343434;
+
+            }
+
+        }
+
+        .voucher-tab {
+
+            height: 300px;
+            padding: 10px;
+            margin: 10px 0px 10px 0px;
+            //background-image: url("/content/dam/hero-aem-website/good-life/Subtract.svg");
+            background-repeat: no-repeat;
+
+            .vouchers {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 15px;
+
+                .milestonevoucher-image {
+                    border: 1px solid;
+                    border-radius: 50%;
+
+                    img {
+                        height: 60px;
+                        width: 60px;
+                    }
+
+                    .offer-text {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 12px;
+                        color: #5C5B5B;
+                        padding: 10px;
+
+                        span {
+                            color: #303030;
+                        }
+                    }
+                }
+
+                .type-text,
+                .service-text {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #8C8C8C;
+                    padding: 10px;
+                }
+
+                .icons-tab .giftimage {
+                    display: flex;
+
+
+                    img {
+                        height: 60px;
+                        width: 60px;
+                        padding: 5px;
+                    }
+
+                }
+
+
+            }
+
+            .dashed-border {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 150px;
+
+                }
+
+            }
+
+            .service-vouchers {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 15px;
+
+                .offer-text {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 12px;
+                    color: #5C5B5B;
+                    padding: 10px;
+
+                    span {
+                        color: #303030;
+                    }
+                }
+
+                .offer-rupee {
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 34px;
+                    line-height: 32px;
+                    /* identical to box height, or 94% */
+                    padding: 10px;
+                    text-align: center;
+
+                    color: #FF0808;
+                }
+
+                .service-text {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    white-space: nowrap;
+                    color: #5C5B5B;
+                    padding: 10px;
+
+                }
+
+            }
+
+            .choose-one {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding-top: 15px;
+
+                .choose-one-button {
+                    padding: 12px 32px;
+                    width: 217px;
+                    height: 48px;
+                    background: #FFFFFF;
+                    border: 1px solid #EE2326;
+                    border-radius: 4px;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 20px;
+                    line-height: 24px;
+                    align-items: center;
+                    text-transform: uppercase;
+                    background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    //text-fill-color: transparent;
+
+                }
+
+            }
+
+            .reddem-one {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding-top: 15px;
+
+                .reddem-button {
+
+                    padding: 12px 32px;
+                    width: 217px;
+                    height: 48px;
+                    background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+                    border: 1px solid #EE2326;
+                    border-radius: 4px;
+                    /*----*/
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 20px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+                    color: #F5F5F7;
+                }
+
+            }
+        }
+    }
+}
+
+/*---------------------Voucher available css ends------------------*/
+/*------------------------Privilege available start---------------*/
+.privilege-available {
+
+    .prev-header {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    .privilege-six-container {
+        .privilege-container {
+            width: 33%;
+            float: left;
+            text-align: center;
+
+            .privilege-img {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .insurance-container {
+        width: 346px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        box-shadow: 0px 7px 11px 1px #ddd;
+        padding: 20px;
+
+        .insurance-img {
+            img {
+                width: 100%;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+        }
+
+        .insurance-content {
+            .insurance-container-left {
+                float: left;
+                width: 20%;
+                padding: 6px;
+            }
+
+            .insurance-container-right {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .prev-header-container {
+        text-align: center;
+    }
+}
+
+/*------------------------Privilege available end---------------*/
+/*------------Refer friend start------------------*/
+.refer-friend-container {
+    background: #EE2326;
+    height: 201px;
+    position: relative;
+
+    .refer-friend-img {
+        position: relative;
+        min-height: 201px;
+
+        img {
+            position: absolute;
+            bottom: 5px;
+        }
+    }
+
+    .refer-friend-content {
+        color: #fff;
+        padding: 40px 0;
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.75rem;
+        }
+    }
+
+    .refer-friend-button {
+        padding: 70px 0;
+    }
+}
+
+/*------------Refer friend end------------------*/

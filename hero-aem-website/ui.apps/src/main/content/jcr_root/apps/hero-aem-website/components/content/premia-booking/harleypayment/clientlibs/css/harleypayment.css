@@ -1,0 +1,341 @@
+.harley-payment-layout {
+    margin: 40px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.10), 0px 6px 12px -6px rgba(24, 39, 75, 0.10);
+}
+
+.harley-payment-layout .hp-main-section {
+    display: flex;
+}
+
+.harley-payment-layout .left-hp-section {
+    width: 55%;
+}
+
+.harley-payment-layout .div-hp-line {
+    width: 1px;
+    opacity: 0.5;
+    background: linear-gradient(180deg, rgba(153, 153, 153, 0.00) 0%, #999 46.15%, rgba(153, 153, 153, 0.00) 100%);
+}
+
+.harley-payment-layout .right-hp-section {
+    width: 43%;
+}
+
+.harley-payment-layout .left-hp-section .payment-success-img,
+.harley-payment-layout .left-hp-section .payment-failure-img {
+    margin: auto;
+    width: 122px;
+    margin-top: -25px;
+}
+
+.harley-payment-layout .left-hp-section .payment-success-msg,
+.harley-payment-layout .left-hp-section .payment-failure-msg {
+    font-family: '1903Sans-Bold';
+    font-size: 32px;
+    text-align: center;
+    line-height: 48px;
+    padding: 0px 75px;
+}
+
+.harley-payment-layout .left-hp-section .payment-success-msg {
+    color: #038252;
+}
+
+.harley-payment-layout .left-hp-section .payment-failure-msg {
+    color: #D30000;
+}
+
+.harley-payment-layout .left-hp-section .payment-bike-img {
+    width: 356px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.payment-bike-img-disk {
+    margin: auto;
+    margin-top: -100px;
+}
+
+.harley-payment-layout .left-hp-section .payment-order-no {
+    font-family: '1903Sans-Bold';
+    font-size: 24px;
+    color: #A5A5A5;
+    text-align: center;
+    padding: 20px;
+}
+
+.harley-payment-layout .left-hp-section .payment-order-no span {
+    color: #000000;
+}
+
+.harley-payment-layout .left-hp-section .payment-x-liine {
+    height: 1px;
+    opacity: 0.5;
+    background: linear-gradient(90deg, rgba(153, 153, 153, 0.00) 0%, #999 46.15%, rgba(153, 153, 153, 0.00) 100%);
+}
+
+.harley-payment-layout .left-hp-section .harley-product-details {
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.harley-payment-layout .left-hp-section .harley-product-details .pd-section {
+    display: flex;
+    padding: 8px 18px;
+}
+
+.harley-payment-layout .left-hp-section .harley-product-details .pd-section .pd-key {
+    font-family: '1903Sans-bold';
+    font-size: 18px;
+    line-height: 24px;
+    min-width: 60px;
+    padding-right: 15px;
+}
+
+.harley-payment-layout .left-hp-section .harley-product-details .pd-section .pd-value {
+    font-family: '1903Sans-Regular';
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.harley-payment-layout .pd-link {
+    font-family: '1903Sans-bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: #F26321;
+    padding-right: 5px;
+}
+
+.harley-payment-layout .hp-back-link {
+    display: flex;
+    justify-content: end;
+    margin: 24px;
+    position: relative;
+    top: 25px;
+}
+
+.harley-payment-layout .hp-next-steps-box {
+    border-radius: 12px;
+    background: #FEF8F2;
+    margin: 21px 0px 21px 21px;
+}
+
+.harley-payment-layout .hp-next-steps-box .hp-next-steps {
+    padding: 32px 16px 10px 53px;
+}
+
+.harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-next-steps-header {
+    font-family: '1903Sans-bold';
+    font-size: 24px;
+    line-height: 34px;
+    padding-bottom: 10px;
+}
+
+.harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-step {
+    display: flex;
+    min-height: 100px;
+}
+
+.harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-step .hp-step-text,
+.harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-step .hp-step-text p {
+    font-family: '1903Sans-Regular';
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0px 20px 0px 6px;
+}
+
+.harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-step .hp-step-logo img {
+    width: 15px;
+    margin: 11px;
+}
+
+.harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-step .hp-step-logo {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-step .hp-step-active-logo {
+    border: solid 2px;
+    animation: beat 1s infinite;
+    border-color: orange;
+}
+
+.harley-payment-layout .hp-step-line {
+    width: 8px;
+    height: 60px;
+    background: white;
+    margin-left: 15px;
+}
+
+.harley-payment-layout .harley-contact {
+    border: solid 1px rgba(192, 192, 192, 1);
+    border-radius: 12px;
+    margin: 32px 0px 32px 21px;
+}
+
+.harley-payment-layout .harley-contact .harley-contact-header {
+    font-family: '1903Sans-bold';
+    font-size: 24px;
+    line-height: 34px;
+    padding: 24px 16px 10px 24px;
+}
+
+.harley-payment-layout .harley-contact-details {
+    padding: 0px 24px 10px 24px;
+}
+
+.harley-payment-layout .hc-contact-wrap {
+    display: flex;
+}
+
+.harley-payment-layout .harley-contact .hc-contact {
+    font-family: '1903Sans-Regular';
+    font-size: 18px;
+    line-height: 24px;
+    color: #A5A5A5;
+}
+
+.harley-payment-layout .hc-contact-number {
+    padding: 5px;
+    font-family: '1903Sans-Regular';
+    font-size: 18px;
+}
+
+@media(max-width: 768px) {
+    .harley-payment-layout {
+        margin: 16px;
+    }
+
+    .harley-payment-layout .hp-back-link {
+        margin: 16px;
+        top: 16px;
+    }
+
+    .harley-payment-layout .hp-main-section {
+        flex-direction: column;
+    }
+
+    .harley-payment-layout .left-hp-section {
+        width: 100%;
+    }
+
+    .harley-payment-layout .right-hp-section {
+        width: 100%;
+    }
+
+    .harley-payment-layout .left-hp-section .payment-success-img,
+    .harley-payment-layout .left-hp-section .payment-failure-img {
+        width: 97.6px;
+        margin-top: 0px;
+    }
+
+    .harley-payment-layout .left-hp-section .payment-success-msg,
+    .harley-payment-layout .left-hp-section .payment-failure-msg {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 0px 15px;
+    }
+
+    .harley-payment-layout .left-hp-section .payment-bike-img {
+        width: 132px;
+        margin-top: 50px;
+    }
+
+    .payment-bike-img-disk {
+        width: 200px;
+        margin-top: -75px;
+    }
+
+    .harley-payment-layout .left-hp-section .payment-order-no {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .harley-payment-layout .left-hp-section .harley-product-details {
+        display: block;
+        padding: 16px;
+    }
+
+    .harley-payment-layout .left-hp-section .harley-product-details .pd-section {
+        width: 100%;
+        padding: 8px 0px;
+    }
+
+    .harley-payment-layout .left-hp-section .harley-product-details .pd-section .pd-value {
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+        text-align: right;
+    }
+
+    .harley-payment-layout .left-hp-section .harley-product-details .pd-section .pd-key {
+        font-size: 16px;
+        line-height: 20px;
+        float: left;
+        width: inherit;
+    }
+
+    .harley-payment-layout .hp-next-steps-box {
+        margin: 0px 16px 10px 16px;
+    }
+
+    .harley-payment-layout .hp-next-steps-box .hp-next-steps {
+        padding: 16px 16px 16px 16px;
+    }
+
+    .harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-next-steps-header {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-step .hp-step-text,
+    .harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-step .hp-step-text p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-step {
+        min-height: 60px;
+    }
+
+    .harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-step .hp-step-logo {
+        width: 30px;
+        height: 30px
+    }
+
+    .harley-payment-layout .hp-next-steps-box .hp-next-steps .hp-step .hp-step-logo img {
+        width: 12px;
+        margin: 6px 8px;
+    }
+
+    .harley-payment-layout .hp-step-line {
+        width: 4px;
+        height: 40px;
+        margin-left: 12px;
+        margin-top: -2px;
+    }
+
+    .harley-payment-layout .harley-contact {
+        margin: 16px;
+    }
+
+    .harley-payment-layout .harley-contact .harley-contact-header {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .harley-payment-layout .harley-contact .hc-contact {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .harley-payment-layout .hc-contact-number {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,10 @@
+<sly data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}"
+     data-sly-test.state="${request.requestPathInfo.selectors[1]}"
+     data-sly-test.city="${request.requestPathInfo.selectors[2]}"
+     data-sly-test.parentPath="${[pageconfig.dealerRootPath,'harleycallcenter',state,city] @ join='/'}"
+     data-sly-use.listUse="${'/apps/hero-aem-website/utils/getdropdownvalues.js' @ parentPath=parentPath}"
+     data-sly-list="${listUse}">
+   <li class="font-montserrat-regular font-weight-500 active" value="${item.properties.dealer_no}">
+      <a href="javascript:void(0)">${item.properties.dealer_name.toLowerCase @ i18n}</a>
+   </li>
+</sly>

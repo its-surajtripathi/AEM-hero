@@ -1,0 +1,16 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<sly data-sly-test="${properties.variation == 'btn callback-btn'}">
+   <a href="${properties.link}" class="${properties.variation}" aa-data-attr="track_cta">${properties.text}</a>
+</sly>
+
+<sly data-sly-test="${properties.variation == 'link-btn download-btn'}">
+   <a href="${properties.link}" class="${properties.variation}" aa-data-attr="track_cta">
+      <p>${properties.text}</p>
+       <span class="icon-box ml-3">
+        <img src="${properties.icon}" class="img-fluid" alt="Download Brochure">
+       </span>
+   </a>
+</sly>

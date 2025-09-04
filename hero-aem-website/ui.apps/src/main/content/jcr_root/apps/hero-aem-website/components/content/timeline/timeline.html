@@ -1,0 +1,114 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+  <!-- remembering our hero section start -->
+    <div class="container-fluid  pt-md-3 mt-md-3 range timeline-form">
+            <input type="hidden" value="${properties.maxNumberSlide}" id="maxNumberSlide">
+            <div data-sly-test="${properties.timelinevariation == 'single'}" data-sly-resource="${'genericheadingtimeline' @resourceType='hero-aem-website/components/content/genericheading'}"></div>
+             
+			<div class=" form group cust-form-group">
+                    <div class=" select-dropdown btn-drop-v1">
+
+                        <div class="dropdown journey-dropdown  form group cust-form-group d-block d-md-none mt-3 ">
+                            <button type="button" class="btn  dropdown-toggle  w-100 text-left  " data-toggle="dropdown">
+                                Dropdown button
+                            </button>
+
+                            <div class="dropdown-menu text-right"></div>
+
+                        </div>
+
+                        <span class="select-p  d-block d-md-none">${properties.yearLabel}</span>
+                    </div>
+            </div>
+               <div class="row"  data-sly-test="${properties.timelinevariation == 'multiple'}">
+                    <div class="col-sm-12">
+                        <h1 class="text-center font-weight-bolder remembering-year hero-year">
+                            <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/year-bg.png"> <span class="image_alt headaward" id="headaward">
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+            <div class="row mt-3" id="timeline-slider"  data-sly-test="${properties.timelinevariation == 'single'}">
+                <div class="col-lg-8 offset-lg-2 col-md-offset-0 ">
+                    <div class="slider-wrapper" data-sly-use.listitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='timelinesingle'}"
+                         data-sly-list="${listitems}">
+                    
+                    
+	                        <div class=" mt-4 mb-4 slider-data-main ${itemList.first ? 'show'  : ''}" data-year="${item.properties.yearvalue}">
+	                            <div class="row">
+	                            <div class="col-lg-6 col-md-6 col-sm-6  space">
+	                                <div class="herorange">
+	                                    <img src="${item.properties.imagepath}"  width="100%">
+	                                </div>
+	                                <div class="lines my-2"  >
+	                                    <h2 id="li" >${item.properties.yearvalue}</h2>
+	                                </div>
+	                            </div>
+	                            <div class="col-lg-6 col-md-6 col-sm-6 space ">
+	                                <div class="info mt-md-5">
+	                                	${item.properties.personaldetails @ context='html'}
+	                                </div>
+	                                <div class="info mt-3">
+	                                	${item.properties.parentsdetails @ context='html'}
+	                                </div>
+	                            </div>
+	                        </div>
+	                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-sly-test="${properties.timelinevariation == 'multiple'}" id="timeline-slider" class="multi-value-timeline">
+            <div class="row" id="row-one" data-sly-use.listitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='timelinemultiple'}"
+                         data-sly-repeat="${listitems}">
+                        <div class="col-12" >
+                            <div class="multiple">
+                             
+                                <div class="center-slider slider-data slider-data-main" data-year="${item.properties.yearvalue}">
+                                    <sly data-sly-list.outermultifield="${item.getChildren}">
+	                                    <sly data-sly-list.inner="${outermultifield.getChildren}" >
+		                                    <div class="text-center inner_carousal" data-count="${  inner.length}" style="padding:0px !important;">
+                                                <img src="${item.properties.bgimagepath}" class="timeline-bg-img">
+		                                        <div class="card-body px-0 px-0" style="position: relative;height: 100%;">
+		                                            <img src="${inner.properties.imagepath}" alt="${inner.properties.imagealt}">
+                                                    <div class="timeline-text-bg">
+                                                        ${inner.properties.description @ context = 'html'}
+                                                    </div>
+		                                        </div>
+		                                    </div>
+	                                    </sly>
+	                                 </sly>
+                                  </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+			<div class="container-fluid arrow d-none d-md-block">
+            <section class="our-hero-section mt-4 mb-5">
+
+                <div class="our-hero-wrapper">
+                    <div class="our-hero-range-slider">
+                        <div class="our-hero-range-input  ">
+                            <div class="d-flex justify-content-between align-items-center hide">
+                                <button class="previous-btn"  id="stepback"> < </button>
+                                        <div class="slider-main " id="values-slider" ></div>
+                                        <button class="next-btn" id="stepforward">></button>
+
+                            </div>
+
+
+                            <!-- <div id="slider-value"></div> -->
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+</div>
+
+ 

@@ -1,0 +1,103 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div class="harley-payment-layout">
+  <input type="hidden" value="${resource.path}" id="payment-decrypt-servlet" />
+  <a class="hp-back-link" href="${properties.backlink}">
+    <div class="pd-link">${properties.backlinktext}</div>
+    <img class="pd-download" src="${properties.linktextarrow}">
+  </a>
+  <div class="hp-main-section">
+    <div class="left-hp-section">
+      <img class="payment-success-img d-none" src="${properties.successicon}">
+      <img class="payment-failure-img d-none" src="${properties.failureicon}">
+      <div class="payment-success-msg d-none">${properties.successmsg}</div>
+      <div class="payment-failure-msg d-none">${properties.failuremsg}</div>
+      <img class="payment-bike-img" src="${properties.bikeimage}">
+      <img class="payment-bike-img-disk" src="${properties.bikeimagedisk}">
+      <div class="payment-order-no">Your Order Number: <span>45878979497</span></div>
+      <div class="payment-x-liine"></div>
+      <div class="harley-product-details">
+        <div>
+          <div class="pd-section">
+            <div class="pd-key">Model</div>
+            <div class="pd-value" id="modelName">Harley-Davidson X<sup>TM</sup>440 Denim</div>
+          </div>
+          <div class="pd-section">
+            <div class="pd-key">Color</div>
+            <div class="pd-value" id="modelColor">Mustard Denim</div>
+          </div>
+        </div>
+      <div>
+        <div class="pd-section">
+          <div class="pd-key">Ex Showroom Price</div>
+          <div class="pd-value" id="modelPrice">₹ 1,36,000</div>
+        </div>
+        <a class="pd-section d-none">
+          <div class="pd-link">Download Invoice</div>
+          <img class="pd-download" src="/content/dam/hero-aem-website/harley-header/Downloadicon.svg">
+        </a>
+      </div>
+       
+      </div>
+    </div>
+    <div class="div-hp-line">
+    </div>
+    <div class="right-hp-section">
+      <div class="hp-next-steps-box d-none" id="successStep">
+        <div class="hp-next-steps">
+          <div class="hp-next-steps-header">${properties.stepheader}</div>
+          <div class="hp-step">
+            <div class="hp-flow-icon">
+              <div class="hp-step-logo hp-step-active-logo"><img src="${properties.firststepicon}"></div>
+              <div class="hp-step-line"></div>
+            </div>
+            <div class="hp-step-text">${properties.firststeptext @context='html'}
+            </div>
+          </div>
+          <div class="hp-step">
+            <div class="hp-step-logo"><img src="${properties.secondstepicon}"></div>
+            <div class="hp-step-text">${properties.secondsteptext @context='html'}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hp-next-steps-box d-none" id="failureStep">
+        <div class="hp-next-steps">
+          <div class="hp-next-steps-header">${properties.stepheader}</div>
+          <div class="hp-step">
+            <div class="hp-flow-icon">
+              <div class="hp-step-logo hp-step-active-logo"><img src="${properties.firststepiconfailure}"></div>
+              <div class="hp-step-line"></div>
+            </div>
+            <div class="hp-step-text">${properties.firststeptextfailure @context='html'}
+            </div>
+          </div>
+          <div class="hp-step">
+            <div class="hp-step-logo"><img src="${properties.secondstepiconfailure}"></div>
+            <div class="hp-step-text">${properties.secondsteptextfailure @context='html'}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="harley-contact">
+        <div class="harley-contact-header">${properties.contactheader}</div>
+        <div class="harley-contact-details">
+          <div class="hc-contact">${properties.helpdesk}</div>
+          <div class="hc-contact-wrap">
+            <img src="${properties.helpdeskicon}">
+            <a class="hc-contact-number" href="tel:${properties.helpdesknumber}">${properties.helpdesknumber}</a>
+          </div>
+        </div>
+
+        <div class="harley-contact-details">
+          <div class="hc-contact">${properties.localbranch}</div>
+          <div class="hc-contact-wrap">
+            <img src="${properties.localbranchicon}">
+            <a class="hc-contact-number" href="tel: ${properties.localbranchnumber}">${properties.localbranchnumber}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

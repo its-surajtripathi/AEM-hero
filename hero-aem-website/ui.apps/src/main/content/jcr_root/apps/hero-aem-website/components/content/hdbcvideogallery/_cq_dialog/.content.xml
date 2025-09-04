@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="HDBC Video Gallery"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+         <items jcr:primaryType="nt:unstructured">
+            <columns
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                margin="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <videos
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <multigallery
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="click on add button to add Videos">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./hdbcvidmulti">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <thumbnailpath
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Enter thumbnail image path for Video "
+                                                            name="./hdbcvidthumb"
+                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                        <videolink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Enter YouTube link"
+                                                            name="./hdbcvidUrl"
+                                                            rootPath="/content/hero-aem-website"/>
+                                                        <caption
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                            fieldLabel="Enter Caption for Video"
+                                                            name="./hdbcvidcaption"
+                                                            useFixedInlineToolbar="{Boolean}true">
+                                                            <rtePlugins
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                            <uiSettings
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                        </caption>
+                                                    </items>
+                                                </field>
+                                            </multigallery>
+                                        </items>
+                                    </videos>
+                                </items>
+                            </container>
+                        </items>
+                    </column>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,27 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<!--  splendor feature slider -->
+<section class="marathon-feature-section">
+  <div class=" splendor-feature-section-content">
+    <div class=" splendor-feature-row row">
+      <div class=" splendor-feature-col col-12 p-0 m-0">
+        <div class="splendor-feature-wrapper text-center">
+            <div class="splender-feature-slider">
+              <sly
+                data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='carouseldetails'}"
+                data-sly-list="${listUse}">
+                <div class="splendor-image-slide text-center">
+                  <img loading="lazy" class="semicircle-bg-img"
+                    data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.carouselImage, rendition='feature-carousel', extension='png'}"
+                    src="${imagePath}" alt="${item.properties.carouselHeading}">
+                  <h3 class="splendor-feature-h3 text-center">${item.properties.carouselText @
+                    context='html'}</h3>
+                </div>
+              </sly>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

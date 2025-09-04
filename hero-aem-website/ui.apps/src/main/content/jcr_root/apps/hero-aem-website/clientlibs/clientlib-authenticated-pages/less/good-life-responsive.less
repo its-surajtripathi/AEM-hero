@@ -1,0 +1,700 @@
+/*Good life ui issue fixed with integration start*/
+.winner-banner-container {
+    .row {
+        .winning-month {
+            color: #fff;
+            width: 20%;
+            h1 {
+                font-weight: 900;
+                font-size: 2.1rem !important;
+            }
+
+            @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+                width: 70%;
+                margin: 0;
+                padding: 51px 0 0 0;
+
+                h1 {
+                    font-weight: 900;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .winner-banner-middle {
+            padding-left: 0;
+
+            h1 {
+                font-size: 28px;
+                font-family: tstar-heavy;
+            }
+
+            @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+                width: 100% !important;
+                padding-top: 0 !important;
+
+                h1 {
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+
+        .winner-banner-right {
+            width: 20% !important;
+            margin-top: 37px;
+
+            button {
+                background: #FFFFFF;
+                color: #EE2326;
+                width: 178px;
+                height: 48px;
+                font-size: 1.25rem;
+                font-weight: 900;
+                border: none;
+                border-radius: 5px;
+            }
+
+            @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+                width: 100% !important;
+                text-align: center !important;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+    .good-life-carousel {
+        .hero-carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .slide-1-content {
+                        bottom: 24px;
+                        left: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .good-life-carousel {
+        .hero-carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .slider-content {
+                        padding-left: 65px;
+                        p {
+                            color: rgba(48, 48, 48, 0.6);
+                            font-size: 1.300rem;
+                            max-width: 495px;
+                            margin-top:20px;
+                        }
+                    }
+                }
+            }
+            .carousel-indicators {
+                width: 80%;
+            }
+        }
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 479px) {
+    .good-life-carousel {
+        .hero-carousel .carousel-inner .carousel-item .slider-content {
+            bottom: 0;
+            padding-left: 20px;
+            top: 25px;
+        }
+
+        .hero-carousel .carousel-inner .carousel-item .slider-content h2 {
+            font-size: 0.875rem;
+        }
+
+        .hero-carousel .carousel-inner .carousel-item .slider-content p {
+            display: none;
+        }
+
+        .hero-carousel .carousel-inner .carousel-item .text-left h1 {
+            font-size: 2rem;
+            display: grid;
+        }
+
+        .hero-carousel .carousel-inner .carousel-item .slide-1-content {
+            bottom: 20px;
+        }
+
+        .carousel-inner .carousel-item .slide-1-content .btn {
+            margin-right: 0;
+            padding: 4.5px 14px;
+        }
+
+        .hero-carousel .carousel-indicators {
+            width: 50%;
+        }
+    }
+}
+@media only screen and (max-width : 991px){
+    .hero-carousel .carousel-inner .carousel-item .text-left h1 {
+        font-size: 5rem;
+        display: grid;
+    }
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .hero-carousel .carousel-inner .carousel-item .text-left h1 {
+        font-size: 5rem;
+    }
+}
+@media (min-width:992px) {
+    .good-life-carousel .carousel-inner .carousel-item .slide-1-content {
+        bottom: 40px;
+    }
+    
+}
+
+@media (max-width:767px) {
+
+	.good-life-carousel .carousel-inner .carousel-item .slider-content {
+        z-index:0 !important;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 640px) {
+    .good-life-carousel {
+        .hero-carousel .carousel-inner .carousel-item .slider-content {
+            bottom: 69px;
+            padding-left: 20px;
+        }
+    }
+
+
+}
+
+.explor-good-life-container {
+    .common-tabs-main {
+        margin: 0 auto;
+        display: inline;
+        .nav-item{
+            display: inline-flex;
+            gap: 25px;
+            @media (min-width: 767px) and (max-width: 991px){
+                  gap: 5px;
+                        }
+            @media only screen 
+            and (min-device-width: 320px) 
+            and (max-device-width: 480px)
+            and (-webkit-min-device-pixel-ratio: 2) {
+                //display: inherit !important;
+                gap: 0;
+            }
+        }
+    }
+
+    .explor-good-life {
+        padding: 0 30px 30px 30px;
+        display: inline-block;
+        background: rgba(48, 48, 48, 0.04);
+        border-radius: 8px;
+        margin-top: 50px;
+        min-height: 350px;
+        height: auto;
+        @media only screen and (min-width: 360px) 
+                   and (max-width: 740px) 
+                   and (orientation: portrait){
+                    display: flex;
+                    flex-wrap: wrap;
+                   }
+        .textwithimage {
+            width: 33%;
+            float: left;
+            //min-height: 150px;
+            height: auto;
+            //background: #3030300A;
+            @media only screen 
+            and (min-device-width: 320px) 
+            and (max-device-width: 480px)
+            and (-webkit-min-device-pixel-ratio: 2){
+                border-radius: 8px;
+            }
+            .serv-perk{
+                background: transparent !important;
+            }
+            @media only screen 
+            and (min-device-width: 320px) 
+            and (max-device-width: 480px)
+            and (-webkit-min-device-pixel-ratio: 2) {
+                width: 50%;
+                //min-height: 120px;
+            }
+        }
+    }
+
+}
+
+.view-plan-container {
+    //margin-top: 40px;
+    padding: 20px;
+    background: #FFFFFF;
+
+    .text {
+        text-align: left;
+        margin-bottom:10px;
+        .good-life a{
+          display:inline;
+        }
+        @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 480px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+            h2{
+                font-size: 24px !important;
+                font-weight: 900;
+            }
+            p{
+                font-size: 1rem;
+                margin-top: 5px;
+            }
+        }
+        h2{
+            font-size: 40px;
+            font-family: "tstar-heavy";
+        }
+    }
+    .text:last-child{
+        text-align: center;
+    }
+}
+
+.membership-plans-responsive .platinum-content {
+    color: #ffffff;
+}
+.platinum-content .membership-plan .platinum-content {
+    color: #ffffff;
+    text-align: center;
+}
+.membership_bg .platinum-content .pricetag {
+    font-size: 32px;
+    @media (max-width : 768px){
+        font-size: 24px;
+    }
+}
+.membership_bg .platinum-content span{
+    font-weight: 700;
+}
+.good-life-plans-wrapper .membership-plan {
+    text-align: center;
+}
+.plan-description-row1 .term-list .paln-amt {
+    font-size: 1.248rem;
+    font-weight: 700;
+}
+/*-------------------Points earning and Redemption responsive start---------------------*/
+// .city-main-banner-section .generic-text {
+//     margin-top: 50px !important;
+// }
+.points-redemption-wrap{
+    .container-first{
+        .bg{
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+    }
+    .tier-third {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        .separator hr {
+            margin: 0;
+        }
+    }
+    .points-redemption{
+        background: #fff !important;
+        padding: 0 0 10px 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        .bg{
+            width: 100%;
+        }
+        .points{
+            .con-header-left {
+                width: 25%;
+                border: none;
+                float: left;
+            }
+            .con-header-right {
+                width: 75%;
+                float: left;
+            }
+        }
+    }
+    .points-earned .generic-text {
+        padding: 0px 25px 10px 25px;
+    }
+    .con-content {
+        //margin: 4px 45px;
+        border-bottom: 1px dotted #ddd;
+        padding-bottom: 15px;
+    }
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .points-redemption-wrap{
+        .points-redemption-heading{
+            .generic-text{
+                h1{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .points-redemption-wrap .points-redemption .bg{
+        background: #333;
+    }
+    .points-redemption-wrap .bg h1{
+        font-size: 1rem;
+        margin-top: 0;
+    //padding: 25px 0;
+    }
+    .points-redemption-wrap .bg span{
+        font-size: 0.75rem;
+        padding: 28px;
+    }
+    .points-redemption .con-content {
+        margin: 10px 0 0 0;
+    }
+    .points-redemption .con-header {
+        width: 30%;
+        float: left;
+        height: 40px;
+        font-size: 0.75rem;
+    }
+    .points-redemption .container ul li:before{
+        height: 40px;
+        margin-top: 41px;
+        margin-left: 24px;
+    }
+}
+
+/*-------------------Points earning and Redemption responsive end---------------------*/
+/*Good life ui issue fixed with integration end*/
+/*-------------------Good life post login page start---------------------*/
+.refer-friend-banner{
+    .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-img{
+        max-width: initial;
+    }
+    .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-img img{
+        max-height: 275px;
+        width: auto;
+    }
+    .hero-exchange .hero-exchange-wrapper .hero-exchange-content .hero-exchange-head-content .hero-exchange-btn-main{
+        justify-content: end;
+        .btn{
+            position: relative;
+            top: -77px;
+            @media (max-width:820px){
+                position: inherit;
+                margin: 0 auto !important;
+            }
+        }
+    }
+}
+.plan-renew {
+    padding: 30px;
+    @media (max-width:768px){
+        padding: 15px;
+    }
+    .text:last-child{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    h2{
+        @media (max-width:768px){
+            font-size: 24px;
+            font-weight: 900;
+            font-family: tstar-heavy;
+        }
+    }
+    p{
+        @media (max-width:768px){
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width:768px){
+    .post-loging-header-container{
+            .generic-text{
+                margin-top: 0 !important;
+                padding: 0 15px;
+                h2{
+                    font-size: 1.5rem;
+                }
+            }
+}
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.post-loging-header-container{
+        .generic-text{
+            margin-top: 0 !important;
+            padding: 0 15px;
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+        .my-vehicles{
+            .merbership-container{
+                margin: 10px;
+                .membership-content{
+                    .btn-earning-history{
+                        min-width: 295px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .rewards-container{
+        .profile-and-rewards{
+            padding: 0;
+            .complete-profile{
+               display: block;
+                margin: 10px 10px;
+                padding-bottom: 15px;
+            }
+            .welcome-reward{
+                display: block;
+                margin: 10px 10px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+    .view-plan-container .bootstraplayout .generic-text h5 b {
+        font-size: 14px;
+    }
+    .view-plan-container .bootstraplayout .generic-text {
+        margin: -8px 0 14px 0;
+    }
+    .available-vouchers{
+        display: flex;
+        justify-content: left;
+        .vouchers-available-wrapper {
+            margin: 0 25px;
+            @media (max-width : 768px){
+                width: 100%;
+            }
+            .voucher-title{
+                margin-bottom: 0;
+                @media (max-width : 768px){
+                    margin-bottom: 10px;
+                }
+                h2{
+                    @media (max-width : 768px){
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-------------------Good life post login page end---------------------*/
+
+/*---------------------Thank you page css start------------------*/
+#payment-result-page .text p{
+font-size: 20px;
+    line-height: 40px;
+    padding: 0 15%;
+    }
+/*---------------------Thank you page css end------------------*/
+.earning-and-redemption-history{
+    margin: 0 5px;
+    @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	margin: 0 10px;
+}
+}
+/*---------------------earning-and-redemption-history css start------------------*/
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hf-main-container{
+        margin-right: -15px;
+        margin-left: -15px;
+        .banner-icon{
+            .hf-left-container{
+                width: 25%;
+                float: left;
+                padding: 10px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    max-width: 67px;
+                    float: left;
+                    max-height: 59px;
+                }
+            }
+            .hf-center-container{
+                float: left;
+                width: 45%;
+                padding: 0;
+                .hf-num-right{
+                    display: none;
+                }
+                .hf-num-left{
+                    padding-top: 10px;
+                    width: 100%;
+                    h3 {
+                        font-size: 24px;
+                        margin-bottom: 7px;
+                    }
+                    .bike-number {
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .hf-right-container{
+                width: 30%;
+                float: left;
+                min-height: 100%;
+                padding: 0;
+                img{
+                    margin: 0 auto;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+  }
+    @media only screen and (max-width: 380px) {
+      .points-redemption-wrap .bg span {
+          padding:15px;
+      }
+    }
+
+/*---------------------earning-and-redemption-history css end------------------*/
+/*-----------------Final UI issue fixed start-----------------*/
+.explore-good-life-tabs-container {
+    padding-bottom: 49px;
+    @media (max-width : 768px){
+    	.tab-wrapper{
+    		padding-top : 5px;
+    	}
+    }
+}
+/*-----------------Final UI issue fixed end-----------------*/
+.bike-product-wrapper{
+    .events-conatiner{
+       // padding-top: 51px;
+        .events-conatiner-child{
+            .tile-teaser{
+                height: 347px !important;
+                @media (max-width:767px){
+                    height:auto !important;
+                    overflow: hidden;
+                }
+            }
+            .event-last-image{
+                margin-top: -11px;
+                .tile-teaser {
+                    height: 172px !important;
+                    @media (max-width:767px){
+                        height:auto !important;
+                    }
+                }
+            }
+            .tileteaser2,.tileteaser3{
+                @media (max-width:767px){
+                    margin-bottom:0 !important;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width : 991px) {
+    .good-life-plans-wrapper .select-plans {
+        position: inherit;
+    }
+    .good-life-plans-wrapper .select-plans .container ul li:before {
+        margin-top: 0;
+    }
+    .good-life-plans-wrapper .select-plans .container ul li:last-child:before, .good-life-plans-wrapper .select-plans .container ul li:nth-last-child(2):before {
+    border: 0;
+    }
+}
+.xclan-unset-img .text-icon {
+    width: unset;
+}
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.explor-good-life-container .bike-tab-section .common-tabs-main .service-tabs:first-child .explore-text{
+    padding: 0 40px 5px 28px;
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 820px) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    .tier-sec .tier-top a {
+        position: absolute;
+        top: 90% !important;
+        left: 38%;
+        margin-bottom: 14px;
+    }
+    .earning-and-redemption-banner .tier-sec{
+        position: relative;
+    }
+}
+#xclan-banner-wrapper{
+	#scooterBanner{
+		margin-top: 0%;
+	}
+}
+@media only screen and (max-width : 820px){
+    .good-life-home-page{
+        .winner-banner-container .row .winning-month h1{
+            font-size: 28px !important;
+            font-weight: 900;
+        }
+        .winner-banner-container .row .winner-banner .winner-banner-middle{
+            width: 100% !important; 
+            h1{
+                padding-top: 0;
+            }
+        }
+        .winner-banner-container .row .winner-banner .winner-banner-middle{
+            padding-top: 0 !important;
+        }
+        .winner-banner-container .row .winner-banner .winner-banner-middle .winner-area{
+            font-size: 20px;
+        }
+        .winner-banner-container .row .winner-banner .banner-content-right.banner-single{
+            display: inline-block;
+            p{
+                font-size: 16px !important;
+            }
+            h2{
+                font-size: 24px;
+                font-weight: 900;
+            }
+        }
+        .winner-banner-container .row .winning-month{
+            padding-top: 0 !important;
+        }
+        .winner-banner-container .row .winner-banner .winner-banner-left{
+            padding-top: 0px;
+        }
+    }
+    
+}

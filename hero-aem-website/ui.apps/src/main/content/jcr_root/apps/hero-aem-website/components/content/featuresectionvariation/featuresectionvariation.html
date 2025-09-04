@@ -1,0 +1,172 @@
+<sly data-sly-test="${(wcmmode.edit || wcmmode.design) && !listUse }" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>
+<sly data-sly-test="${properties.featurevariation=='front-lights'}">
+  <section id="${properties.featurevariation}" style="background-image: url('${properties.flbgimage ? properties.flbgimage : 'unset' @ context='uri'}'); background-repeat: no-repeat; background-size: cover;">
+  
+    <div class="xoom-big-wrapper zoom-lights-wrapper-mobile">
+      <div class="xoom-lights-heading-wrapper xoom-lights-alt-heading-wrapper"><h3>${properties.flTitle}</h3></div>
+      <div class="d-flex xoom-lights-contents">
+        <div class="lights-image-wrapper">
+          <img class="lights-ellipse-image" src="/content/dam/hero-aem-website/products/xoom/xoom-ellipse-images.png" alt="Ellipse Image"/>
+          <img class="lights-off-image" src="${properties.floffimg}" alt="Off Image"/>
+          <img class="lights-on-image" src="${properties.flonimg}" alt="On Image"/>
+        </div>
+        <div class="light-text-wrapper">
+          <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='flmultitext'}">
+            <ul class="light-lists-wrapper li-list-width" data-sly-list="${listUse}">
+                <li>
+                  ${item.properties.flfeature @ context='html'}
+              </li>
+            </ul>
+          </sly>
+          <div class="xoom-toggle-switch-wrapper">
+            <div class="xoom-toggle-switch-text">OFF</div>
+            <label class="switch">
+              <input type="checkbox" id="xoomswitchButton">
+              <span class="xoom-slider-switch round"></span>          
+            </label>
+            <div class="xoom-toggle-switch-text">ON</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</sly>
+<sly data-sly-test="${properties.featurevariation=='rear-lights'}">
+  <section id="${properties.featurevariation}">
+    <div>
+      <img src="${properties.rlbgimage}" alt="BG Image"/>
+      <div>
+        <div>
+          <h3>${properties.rlTitle}</h3>
+          <img src="${properties.rloffimg}" alt="Off Image"/>
+          <img src="${properties.rlonimg}" alt="On Image"/>
+          <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='rlmultitext'}">
+            <ul data-sly-list="${listUse}">
+              <li>
+                ${item.properties.rlfeature @ context='html'}
+              </li>
+            </ul>
+        </sly>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+        </div>
+      </div>
+    </div>
+  </section>
+</sly>
+<sly data-sly-test="${properties.featurevariation=='engine'}">
+  <section id="${properties.featurevariation}">
+    <div>
+      <img src="${properties.engbgimage}" alt="BG Image"/>
+      <div>
+        <div>
+          <h3>${properties.engTitle}</h3>
+          <img src="${properties.enggifimg}" alt="Gif Image"/>
+          <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='engmultitext'}">
+            <ul data-sly-list="${listUse}">
+              <li>
+                ${item.properties.engfeature @ context='html'}
+              </li>
+            </ul>
+        </sly>
+        </div>
+      </div>
+    </div>
+  </section>
+</sly>
+<sly data-sly-test="${properties.featurevariation=='tyres'}">
+  <section id="${properties.featurevariation}" style="background-image: url('${properties.tyrebgimage ? properties.tyrebgimage : 'unset' @ context='uri'}'); background-repeat: no-repeat; background-size: cover;">
+    
+    <div class="xoom-big-wrapper">
+      <div class="xoom-tyres-heading-wrapper"><h3>${properties.tyreTitle}</h3></div>
+      <div class="d-flex xoom-lights-contents xoom-container-invert-horz">
+        <div class="tyres-image-wrapper">
+          <img class="tyres-ellipse-image" src="/content/dam/hero-aem-website/products/xoom/xoom-ellipse-images.png" alt="Ellipse Image"/>
+          <img class="tyres-default-image" src="${properties.tyreimg}" alt="Off Image"/>
+        </div>
+        <div class="tyres-text-wrapper">
+          <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='tyremultitext'}">
+            <ul class="tyres-lists-wrapper" data-sly-list="${listUse}">
+                <li>
+                  ${item.properties.tyrefeature @ context='html'}
+              </li>
+            </ul>
+          </sly>
+        </div>
+      </div>
+    </div>
+  </section>
+</sly>
+<sly data-sly-test="${properties.featurevariation=='utility'}">
+  <section id="${properties.featurevariation}" style="background-image: url('${properties.utbgimage ? properties.utbgimage : 'unset' @ context='uri'}'); background-repeat: no-repeat; background-size: cover;">
+    
+    <div class="xoom-big-wrapper">
+      <div class="xoom-lights-heading-wrapper xoom-lights-alt-heading-wrapper"><h3>${properties.utTitle}</h3></div>
+      <div class="d-flex xoom-lights-contents">
+        <div class="lights-image-wrapper">
+          <img class="tech-ellipse-image utility-ellipse-extras" src="/content/dam/hero-aem-website/products/xoom/xoom-ellipse-images.png" alt="Ellipse Image"/>
+          <img class="tech-default-image utility-image-extras" src="${properties.utilityimg}" alt="Off Image"/>
+        </div>
+        <div class="tech-text-wrapper">
+          <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='utmultitext'}">
+            <ul class="light-lists-wrapper utility-lists-extras" data-sly-list="${listUse}">
+                <li>
+                  ${item.properties.utfeature @ context='html'}
+              </li>
+            </ul>
+          </sly>
+        </div>
+      </div>
+    </div> 
+  </section>
+</sly>
+<sly data-sly-test="${properties.featurevariation=='tech'}">
+  <section id="${properties.featurevariation}" style="background-image: url('${properties.techbgimage ? properties.techbgimage : 'unset' @ context='uri'}'); background-repeat: no-repeat; background-size: cover;">
+
+    <div class="xoom-big-wrapper">
+      <div class="xoom-lights-heading-wrapper xoom-lights-alt-heading-wrapper"><h3>${properties.techTitle}</h3></div>
+      <div class="d-flex xoom-lights-contents">
+        <div class="lights-image-wrapper">
+          <img class="tech-ellipse-image" src="/content/dam/hero-aem-website/products/xoom/xoom-ellipse-images.png" alt="Ellipse Image"/>
+          <img class="tech-default-image" src="${properties.techimg}" alt="Off Image"/>
+        </div>
+        <div class="tech-text-wrapper">
+          <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='techmultitext'}">
+            <ul class="light-lists-wrapper tech-lists-extras" data-sly-list="${listUse}">
+                <li>
+                  ${item.properties.techfeature @ context='html'}
+              </li>
+            </ul>
+          </sly>
+        </div>
+      </div>
+    </div>  
+  </section>
+</sly>
+<sly data-sly-test="${properties.featurevariation=='style'}">
+  <section id="${properties.featurevariation}" style="background-image: url('${properties.stylebgimage ? properties.stylebgimage : 'unset' @ context='uri'}'); background-repeat: no-repeat; background-size: cover;">
+    
+    <div class="xoom-big-wrapper">
+      <div class="xoom-tyres-heading-wrapper"><h3>${properties.styleTitle}</h3></div>
+      <div class="d-flex xoom-lights-contents xoom-container-invert-horz">
+        <div class="style-image-wrapper">
+          <img class="tyres-ellipse-image" src="/content/dam/hero-aem-website/products/xoom/xoom-ellipse-images.png" alt="Ellipse Image"/>
+          <img class="tyres-default-image" src="${properties.styleimg}" alt="style Image"/>
+        </div>
+        <div class="tyres-text-wrapper">
+          <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='stylemultitext'}">
+            <ul class="tyres-lists-wrapper style-lists-extras" data-sly-list="${listUse}">
+                <li>
+                  ${item.properties.stylefeature @ context='html'}
+              </li>
+            </ul>
+          </sly>
+        </div>
+      </div>
+    </div>
+  </section>
+</sly>

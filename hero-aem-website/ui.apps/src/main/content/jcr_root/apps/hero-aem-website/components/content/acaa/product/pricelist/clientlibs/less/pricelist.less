@@ -1,0 +1,929 @@
+// bike prise
+// bike prise
+.prise-section {
+  background: white;
+  .prise-wrapper {
+    display: flex;
+    align-items: flex-end;
+
+    .prise-right-div {
+      padding-top: 58px;
+      max-width:550px;
+    }
+
+    .prise-left-div {
+      .prise-h3 {
+        text-align: left;
+      }
+
+      max-width: 744px;
+      width: 100%;
+
+      .prise-form {
+        .prise-form-dropdown-div {
+          display: flex;
+
+          .cust-form-group {
+            width: 100%;
+            box-shadow: 0px 4px 8px rgba(184, 184, 184, 0.18);
+            border-radius: 8px;
+            margin-right: 20px;
+            background: #FFFFFF;
+
+            .cust-drop-down {
+              padding: 11px 26px 11px 26px;
+
+              .prise-label {
+                font-weight: var(--font-weight-400);
+                font-size: var(--font-size14);
+                color: var(--text-color-black);
+                font-family: var(--font-tstar-regular);
+              }
+
+              .cust-dropdown-menu {
+                // position: absolute;
+                // transform: translate3d(0px, -88px, 0px);
+                // top: 0px;
+                // left: 0px;
+                // will-change: transform;
+                // z-index: 1;
+                // text-transform: capitalize;
+                // max-height: 250px;
+                overflow-y: scroll;
+                // min-width: -webkit-fill-available;
+                // margin: 0 26px 0 -26px;
+                // padding: 0 20px;
+                height: 200px;
+                @media (max-width: 767px) and (min-width: 320px) {
+                    margin: 0 10px 0 -10px;
+                }
+              }
+
+              .cust-dropdown-menu li {
+                padding: 8px 8px;
+                border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+                font-size: 12px;
+                font-family: "tstar-medium";
+
+                a {
+                  color: #303030;
+
+                  &:hover {
+                    color: #EA0000;
+                  }
+                }
+              }
+
+              .cust-form-control {
+                border: none;
+                border-bottom: 1px solid #F5F5F7;
+                border-radius: 0px;
+                font-weight: var(--font-weight-400);
+                font-size: var(--font-size18);
+                color: var(--text-color-black);
+                font-family: var(--font-tstar-regular);
+                padding-left: 0px;
+                text-transform: capitalize;
+
+                &::after {
+                  content: url("/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/dropdrown-arrow-black-icon.svg");
+                  position: absolute;
+                  right: 28px;
+                  top: 44px;
+                  pointer-events: none;
+                }
+
+                &:focus {
+                  box-shadow: none;
+                }
+              }
+            }
+          }
+        }
+
+        .prise-form-info {
+          display: flex;
+          justify-content: space-between;
+          max-width: 100%;
+          padding-left: 28px;
+
+          .prise-form-content {
+			ul{
+				max-height: 350px;
+    			overflow-y: auto;
+			}
+            h4 {
+              font-weight: var(--font-weight-400);
+              font-size: var(--font-size20);
+              color: var(--text-color-black);
+              font-family: var(--font-tstar-bold);
+              padding: 25px 0px 10px 0px;
+            }
+
+            p {
+              font-weight: var(--font-weight-400);
+              font-size: var(--font-size16);
+              color: var(--text-color-black);
+              font-family: var(--font-tstar-medium);
+              padding: 15px 0px;
+            }
+          }
+        }
+
+        .prise-form-cta {
+          display: flex;
+
+          .prise-form-cta-img {
+            display: none;
+          }
+
+          .common-cta {
+            justify-content: flex-start;
+            padding: 44px 0px 44px 28px;
+          }
+        }
+
+      }
+    }
+  }
+  &.dark-theme {
+    background: url(../images/products/city-plus/pricing-bg.png) no-repeat center;
+    background: linear-gradient(180deg, #4F4D4D 0%, #3D3D3D 100%) !important;
+    background-size: cover !important;
+    color: #ffffff;
+
+    .prise-wrapper {
+      .prise-left-div {
+        .prise-h3 {
+          color: #ffffff;
+          font-family: var(--font-tstar-heavy);
+          text-transform: capitalize;
+        }
+
+        .prise-form {
+          .prise-form-dropdown-div {
+            .cust-form-group {
+              background: rgba(255, 255, 255, 0.7);
+
+              box-shadow: 0px 4px 8px rgba(184, 184, 184, 0.18);
+              border-radius: 8px;
+
+              .form-control {
+                background: transparent;
+                border-bottom: 1px solid rgba(61, 61, 61, 0.2);
+              }
+            }
+          }
+
+          .prise-form-info {
+            max-width: 100%;
+
+            .prise-form-content {
+              .common-cta {
+                padding-bottom: 20px;
+              }
+
+              h4,
+              p {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.scooter-price-maestro {
+    background: url(../images/products/scooter/pricing-bg.png) no-repeat center;
+    background-image: url(/content/dam/hero-aem-website/in/products/scooters/scooters-bg-img.png) !important;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    .prise-wrapper {
+      align-items: flex-start;
+      .prise-right-div {
+        padding-top: 0;
+        line-height: 0;
+        margin: 0;
+      }
+      .prise-left-div {
+        padding: 18px 0 10px 30px;
+        max-width: 900px;
+        h2 {
+          font-family: var(--font-tstar-heavy);
+          color: var(--text-color-black);
+        }
+        .prise-h3 {
+          padding-top: 0;
+        }
+        .prise-form {
+          .prise-form-info {
+            .prise-form-content {
+              h4 {
+                color: var(--text-color-black);
+              }
+              p {
+                color: var(--text-color-black);
+                font-size: var(--font-size14);
+                padding: 15px 0;
+              }
+              .common-cta {
+                padding: 0;
+                margin-bottom:25px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .prise-form-content {
+      .common-cta {
+        padding: 30px 0px;
+      }
+    }
+  }
+  &.sports-section {
+  background: white;
+  background-size: cover;
+  .prise-wrapper {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+    .prise-right-div {
+      padding-top: 58px;
+      margin-right: 80px;
+    }
+
+    .prise-left-div {
+      .prise-h3 {
+        text-align: left;
+        color: var(--text-color-white);
+      }
+
+      max-width: 744px;
+      width: 100%;
+
+      .prise-form {
+        .prise-form-dropdown-div {
+          display: flex;
+
+          .cust-form-group {
+            width: 100%;
+            box-shadow: 0px 4px 8px rgba(184, 184, 184, 0.18);
+            border-radius: 8px;
+            margin-right: 20px;
+            background: #FFFFFF;
+
+            .cust-drop-down {
+              padding: 11px 26px 11px 26px;
+
+              .prise-label {
+                font-weight: var(--font-weight-400);
+                font-size: var(--font-size14);
+                color: var(--text-color-black);
+                font-family: var(--font-tstar-regular);
+              }
+
+              // .cust-dropdown-menu {
+              //   // position: absolute;
+              //   // transform: translate3d(0px, -88px, 0px);
+              //   // top: 0px;
+              //   // left: 0px;
+              //   // will-change: transform;
+              //   // z-index: 1;
+              //   // text-transform: capitalize;
+              // }
+
+              .cust-dropdown-menu li {
+                padding: 8px 8px;
+                border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+                font-size: 12px;
+                font-family: "tstar-medium";
+
+                a {
+                  color: #303030;
+
+                  &:hover {
+                    color: #EA0000;
+                  }
+                }
+              }
+
+              .cust-form-control {
+                border: none;
+                border-bottom: 1px solid #F5F5F7;
+                border-radius: 0px;
+                font-weight: var(--font-weight-400);
+                font-size: var(--font-size18);
+                color: var(--text-color-black);
+                font-family: var(--font-tstar-regular);
+                padding-left: 0px;
+				text-transform: capitalize;
+                &::after {
+                  content: url("/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/dropdrown-arrow-black-icon.svg");
+                  position: absolute;
+                  right: 28px;
+                  top: 44px;
+                  pointer-events: none;
+                }
+
+                &:focus {
+                  box-shadow: none;
+                }
+              }
+            }
+          }
+        }
+
+        .prise-form-info {
+          display: flex;
+          justify-content: space-between;
+          max-width: 100%;
+          padding-left: 28px;
+
+          .prise-form-content {
+
+            h4 {
+              font-weight: var(--font-weight-400);
+              font-size: var(--font-size20);
+              color: var(--text-color-white);
+              font-family: var(--font-tstar-bold);
+              padding: 25px 0px 10px 0px;
+            }
+
+            p {
+              font-weight: var(--font-weight-400);
+              font-size: var(--font-size16);
+              color: var(--text-color-white);
+              font-family: var(--font-tstar-regular);
+              padding: 15px 0px;
+            }
+
+            .common-cta {
+              margin-top: 25px;
+              margin-bottom: 25px;
+            }
+          }
+        }
+
+        .prise-form-cta {
+          display: flex;
+
+          .prise-form-cta-img {
+            display: none;
+          }
+
+          .common-cta {
+            justify-content: flex-start;
+            padding: 44px 0px 44px 28px;
+          }
+        }
+
+      }
+    }
+  }
+  &.left-aligned {
+    .prise-wrapper {
+      justify-content: flex-start;
+      padding-right: 140px;
+    }
+    .prise-right-div {
+      width: 760px;
+      max-width: 100%;
+    }
+  }
+}
+}
+
+@media (max-width: 767px) {
+.prise-section {
+    &.dark-theme {
+      background-size: 100% 100%;
+
+      .prise-wrapper {
+        .prise-left-div {
+          .prise-form {
+            .prise-form-info {
+              .prise-form-content {
+                .common-cta {
+                  margin-top: 40px;
+                  left: 0;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .prise-form-dropdown-div {
+            display: flex;
+            flex-direction: column;
+            }
+
+}
+
+/* MD Devices Start  */
+
+@media (max-width: 991.2px) and (min-width: 768px) {
+	// bike prise
+  .prise-section {
+    .prise-wrapper {
+      display: flex;
+
+      .prise-right-div {
+        display: none;
+      }
+
+      .prise-left-div {
+        .prise-h3 {
+          text-align: center;
+        }
+
+        max-width: 744px;
+        width: 100%;
+
+        .prise-form {
+          padding: 0px 15px;
+
+          .prise-form-dropdown-div {
+            display: flex;
+            flex-direction: column;
+
+            .cust-form-group {
+              width: 100%;
+              box-shadow: 0px 4px 8px rgba(184, 184, 184, 0.18);
+              border-radius: 8px;
+              margin-right: 20px;
+
+              .cust-drop-down {
+                padding: 11px 26px 11px 26px;
+
+                .prise-label {
+                  font-weight: var(--font-weight-400);
+                  font-size: var(--font-size14);
+                  color: var(--text-color-black);
+                  font-family: var(--font-tstar-regular);
+                }
+
+                .cust-form-control {
+                  border: none;
+                  border-bottom: 1px solid #F5F5F7;
+                  border-radius: 0px;
+                  font-weight: var(--font-weight-400);
+                  font-size: var(--font-size18);
+                  color: var(--text-color-black);
+                  font-family: var(--font-tstar-regular);
+                  padding-left: 0px;
+
+                  &::after {
+                    content: url("/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/dropdrown-arrow-black-icon.svg");
+                    position: absolute;
+                    right: 28px;
+                    top: 44px;
+                    pointer-events: none;
+                  }
+
+                  &:focus {
+                    box-shadow: none;
+                  }
+                }
+
+              }
+            }
+          }
+
+          .prise-form-info {
+            padding: 0px;
+
+            .prise-form-content {
+              h4 {
+                font-size: var(--font-size14);
+                padding: 25px 0px 10px 0px;
+              }
+
+              p {
+                font-size: var(--font-size12);
+                padding: 15px 0px;
+              }
+            }
+          }
+
+          .prise-form-cta {
+            display: flex;
+            align-items: center;
+
+            .prise-form-cta-img {
+              display: inline-block;
+              width: 50%;
+              padding: 0 8px;
+            }
+
+            .common-cta {
+              justify-content: flex-start;
+              padding: 0px 8px;
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    &.scooter-price-maestro {
+      max-width: 1400px;
+
+      .prise-wrapper {
+        flex-direction: column;
+        .prise-right-div {
+          padding-top: 0;
+        }
+        .prise-left-div {
+          padding: 25px 15px;
+
+          h2 {
+            font-size: var(--font-size32);
+          }
+          .prise-h3 {
+            padding-top: 0;
+          }
+        }
+      }
+      .prise-form-content {
+        .prise-form-cta {
+          flex-direction: column-reverse;
+        }
+        .common-cta {
+          padding: 15px 0px;
+        }
+      }
+    }
+    &.sports-section {
+    .prise-wrapper {
+      display: flex;
+
+      .prise-right-div {
+        display: none;
+      }
+
+      .prise-left-div {
+        .prise-h3 {
+          text-align: center;
+        }
+
+        max-width: 744px;
+        width: 100%;
+
+        .prise-form {
+          padding: 0px 15px;
+
+          .prise-form-dropdown-div {
+            display: flex;
+            flex-direction: column;
+
+            .cust-form-group {
+              width: 100%;
+              box-shadow: 0px 4px 8px rgba(184, 184, 184, 0.18);
+              border-radius: 8px;
+              margin-right: 20px;
+
+              .cust-drop-down {
+                padding: 11px 26px 11px 26px;
+
+                .prise-label {
+                  font-weight: var(--font-weight-400);
+                  font-size: var(--font-size14);
+                  color: var(--text-color-black);
+                  font-family: var(--font-tstar-regular);
+                }
+
+                .cust-form-control {
+                  border: none;
+                  border-bottom: 1px solid #F5F5F7;
+                  border-radius: 0px;
+                  font-weight: var(--font-weight-400);
+                  font-size: var(--font-size18);
+                  color: var(--text-color-black);
+                  font-family: var(--font-tstar-regular);
+                  padding-left: 0px;
+
+                  &::after {
+                    content: url("/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/dropdrown-arrow-black-icon.svg");
+                    position: absolute;
+                    right: 28px;
+                    top: 44px;
+                    pointer-events: none;
+                  }
+
+                  &:focus {
+                    box-shadow: none;
+                  }
+                }
+
+              }
+            }
+          }
+
+          .prise-form-info {
+            padding: 0px;
+
+            .prise-form-content {
+              h4 {
+                font-size: var(--font-size20);
+                padding: 25px 0px 10px 0px;
+              }
+
+              p {
+                font-size: var(--font-size16);
+                padding: 15px 0px;
+              }
+            }
+          }
+
+          .prise-form-cta {
+            display: flex;
+            align-items: center;
+
+            .prise-form-cta-img {
+              display: inline-block;
+              width: 50%;
+              padding: 0 8px;
+            }
+
+            .common-cta {
+              justify-content: flex-start;
+              padding: 0px 8px;
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    &.left-aligned {
+      .prise-wrapper {
+        padding: 0;
+        justify-content: center;
+      }
+    }
+  }
+    }
+
+  }
+
+ .prise-section .prise-wrapper .prise-left-div .prise-form .prise-form-cta {
+    display: flex;
+    justify-content: space-around;
+  }
+
+/* SM & XS Devices Start  */
+
+@media (max-width: 767px) and (min-width: 320px) {
+ // bike prise
+  .prise-section {
+    .prise-wrapper {
+      display: flex;
+      .prise-left-div {
+        max-width: 744px;
+        width: 100%;
+        .prise-h3 {
+          text-align: center;
+        }
+        .prise-form {
+          .prise-form-dropdown-div {
+            padding: 0px 15px;
+            display: flex;
+            flex-direction: column;
+            .cust-form-group {
+              width: 100%;
+              box-shadow: 0px 4px 8px rgba(184, 184, 184, 0.18);
+              border-radius: 8px;
+              margin-right: 20px;
+              .cust-drop-down {
+                padding: 11px 26px 11px 26px;
+                .prise-label {
+                  font-weight: var(--font-weight-400);
+                  font-size: var(--font-size14);
+                  color: var(--text-color-black);
+                  font-family: var(--font-tstar-regular);
+                }
+                .cust-form-control {
+                  border: none;
+                  border-bottom: 1px solid #F5F5F7;
+                  border-radius: 0px;
+                  font-weight: var(--font-weight-400);
+                  font-size: var(--font-size18);
+                  color: var(--text-color-black);
+                  font-family: var(--font-tstar-regular);
+                  padding-left: 0px;
+                  &::after {
+                    content: url("/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/dropdrown-arrow-black-icon.svg");
+                    position: absolute;
+                    right: 28px;
+                    top: 44px;
+                    pointer-events: none;
+                  }
+                  &:focus {
+                    box-shadow: none;
+                  }
+                }
+              }
+            }
+          }
+          .prise-form-info {
+            padding: 0px 15px;
+            display: flex;
+            justify-content: unset;
+            .prise-form-content {
+              h4 {
+                font-size: var(--font-size14);
+                padding: 25px 0px 10px 0px;
+              }
+              p {
+                font-size: var(--font-size12);
+                padding: 15px 0px;
+              }
+              &:nth-child(1) {
+                width: 160px;
+              }
+              &:nth-child(2) {
+                margin-left: 30px;
+              }
+            }
+          }
+          .prise-form-cta {
+            display: flex;
+            .prise-form-cta-img {
+              display: inline-block;
+              width: 164px;
+            }
+            .common-cta {
+              margin-top: 40px;
+              margin-left: 10px;
+              padding: 0px 0px 0px 0px;
+              &.prise-cust-common-cta .btn {
+                padding: 6px 23px;
+              }
+            }
+          }
+        }
+      }
+      .prise-right-div {
+        display: none;
+      }
+    }
+    &.scooter-price-maestro {
+      .prise-wrapper {
+        .prise-right-div {
+          flex: 0 0 100%;
+          max-width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+
+        .prise-left-div {
+          padding: 25px 15px;
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding-bottom: 0;
+
+          h2 {
+            font-size: var(--font-size28);
+          }
+
+          .prise-form {
+            .prise-form-info {
+              padding: 0;
+              width: 100%;
+              
+              .common-cta {
+                margin: 0 auto 25px auto;
+              }
+              .prise-form-content:nth-child(2) {
+                margin-left: auto;
+              }
+            }
+            .prise-form-dropdown-div {
+              padding: 0;
+              .cust-form-group {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+      .prise-form-content {
+		.prise-form-cta {
+		    flex-direction: column-reverse;
+			.common-cta {
+	          padding: 15px 0px;
+	        }
+	    }
+      }
+    }
+    &.sports-section {
+    .prise-wrapper {
+      display: flex;
+      .prise-left-div {
+        max-width: 744px;
+        width: 100%;
+        .prise-h3 {
+          text-align: center;
+        }
+        .prise-form {
+          .prise-form-dropdown-div {
+            padding: 0px 15px;
+            display: flex;
+            flex-direction: column;
+            .cust-form-group {
+              width: 100%;
+              box-shadow: 0px 4px 8px rgba(184, 184, 184, 0.18);
+              border-radius: 8px;
+              margin-right: 20px;
+              .cust-drop-down {
+                padding: 11px 26px 11px 26px;
+                .prise-label {
+                  font-weight: var(--font-weight-400);
+                  font-size: var(--font-size14);
+                  color: var(--text-color-black);
+                  font-family: var(--font-tstar-regular);
+                }
+                .cust-form-control {
+                  border: none;
+                  border-bottom: 1px solid #F5F5F7;
+                  border-radius: 0px;
+                  font-weight: var(--font-weight-400);
+                  font-size: var(--font-size18);
+                  color: var(--text-color-black);
+                  font-family: var(--font-tstar-regular);
+                  padding-left: 0px;
+                  &::after {
+                    content: url("/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/dropdrown-arrow-black-icon.svg");
+                    position: absolute;
+                    right: 28px;
+                    top: 44px;
+                    pointer-events: none;
+                  }
+                  &:focus {
+                    box-shadow: none;
+                  }
+                }
+              }
+            }
+          }
+          .prise-form-info {
+            padding: 0px 15px;
+            display: flex;
+            justify-content: unset;
+            .prise-form-content {
+              h4 {
+                font-size: var(--font-size16);
+                padding: 25px 0px 10px 0px;
+              }
+              p {
+                font-size: var(--font-size14);
+                padding: 15px 0px;
+              }
+              &:nth-child(1) {
+                width: 160px;
+              }
+              &:nth-child(2) {
+                margin-left: 30px;
+              }
+            }
+          }
+          .prise-form-cta {
+            display: flex;
+            flex-direction: column-reverse;
+            .prise-form-cta-img {
+              display: inline-block;
+              width: 164px;
+            }
+            .common-cta {
+              margin-top: 40px;
+              margin-left: 10px;
+              padding: 0px 0px 0px 0px;
+              &.prise-cust-common-cta .btn {
+                padding: 6px 23px;
+              }
+            }
+          }
+        }
+      }
+      .prise-right-div {
+        display: none;
+      }
+    }
+    &.left-aligned {
+      .prise-wrapper {
+        padding: 0;
+        justify-content: center;
+      }
+    }
+  }
+  }
+
+}

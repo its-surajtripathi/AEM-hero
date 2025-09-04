@@ -1,0 +1,106 @@
+.hd-header {
+  display: flex;
+  padding: 10px 40px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  height: 66px;
+  position: fixed;
+  width: 100%;
+  /* background: rgba(255, 255, 255, 1); */
+  z-index: 99;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.hd-header .hd-right-menu {
+  text-align: right;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  color: #fff;
+}
+
+.hd-header .hd-right-menu .menu-icon {
+  margin: auto 18px;
+  text-decoration: none;
+}
+
+.hd-header .hd-right-menu .menu-text {
+  font-family: '1903Sans-Regular';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.hd-header .hd-right-menu .menu-divider {
+  background: rgba(192, 192, 192, 1);
+  width: 1px;
+  margin: 12px 0px;
+  height: 18px;
+  padding: 0.5px;
+}
+
+.hd-header .hd-right-menu .menu-divider:first-child {
+  display: none;
+}
+
+.hd-header .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+}
+
+.hd-header .hover-text:hover .tooltip-text {
+  visibility: visible;
+}
+
+.hd-header .bottom {
+  top: 25px;
+}
+
+.hd-header .hover-text {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.hd-header .tip-text {
+  font-family: var(--font-tstar-medium);
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  background-color: #192733;
+  padding: 20px;
+  border-radius: 14px;
+  position: relative;
+  right: 250px;
+  display: inline-block;
+  width: 300px;
+}
+
+.harley-header-logo {
+  height: 40px;
+}
+
+@media(max-width: 786px) {
+  .hd-header {
+    height: 52px;
+    padding: 10px 8px;
+    align-items: center;
+  }
+
+  .hd-header .hd-right-menu .menu-divider {
+    margin: 7px 0px;
+  }
+
+  .hd-header .hd-right-menu .menu-icon {
+    margin: auto 8px;
+  }
+
+  .harley-header-logo {
+    height: 25px;
+  }
+
+  .hd-header .hd-right-menu .menu-text {
+    font-size: 12px;
+  }
+}

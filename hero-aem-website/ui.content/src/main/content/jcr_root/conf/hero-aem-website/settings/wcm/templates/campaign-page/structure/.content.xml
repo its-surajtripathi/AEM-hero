@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2022-08-29T22:10:11.219+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/campaign-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="hero-aem-website/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/header/campaign-header"/>
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                editable="{Boolean}true"
+                layout="responsiveGrid"/>
+            <experiencefragment
+                jcr:created="{Date}2022-08-29T22:09:57.607+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-08-29T22:10:11.215+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/footer/master"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <xsmall
+                    jcr:primaryType="nt:unstructured"
+                    title="XSmall"
+                    width="{Long}576"/>
+                <small
+                    jcr:primaryType="nt:unstructured"
+                    title="Small"
+                    width="{Long}768"/>
+                <medium
+                    jcr:primaryType="nt:unstructured"
+                    title="Medium"
+                    width="{Long}992"/>
+                <large
+                    jcr:primaryType="nt:unstructured"
+                    title="Large"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,31 @@
+.bcipl-footerHolder {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #232323;
+}
+
+.bcipl-footerHolder .bcipl-footer {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.bcipl-footerHolder .bcipl-footer .bcipl-footerLinks {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 580px;
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+@media screen and  (max-width: 1249px) {
+    .bcipl-footerHolder .bcipl-footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bcipl-footerHolder .bcipl-footer .bcipl-footerLinks { 
+        width: 100%;
+        padding: 0;
+    }
+    
+}

@@ -1,0 +1,24 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hmc="http://siebel.com/HMCLServiceRequestWS/">
+   <soapenv:Header>
+ <UsernameToken xmlns="http://siebel.com/webservices">WSUSER</UsernameToken>
+<PasswordText xmlns="http://siebel.com/webservices">WSUSER_1</PasswordText>
+<SessionType xmlns="http://siebel.com/webservices">None</SessionType>
+</soapenv:Header>
+   <soapenv:Body>
+      <hmc:ServiceBooking_Input>
+         <hmc:Comments>${comment}</hmc:Comments>
+         <hmc:Booking_spcSlot>${booking_slot}</hmc:Booking_spcSlot>
+         <hmc:ExpressService>${express_service}</hmc:ExpressService>
+         <hmc:ServiceCategory>${service_category}</hmc:ServiceCategory>
+         <hmc:TempComFstName>${first_name}</hmc:TempComFstName>
+         <hmc:Nature_spcOf_spcJob>${job}</hmc:Nature_spcOf_spcJob>
+         <hmc:Loc>${location}</hmc:Loc>
+         <hmc:Dealer_spcCode>${dealer_code}</hmc:Dealer_spcCode>
+         <hmc:VIN>${vin}</hmc:VIN>
+         <hmc:LoanerVehicle>${loan_vehicle}</hmc:LoanerVehicle>
+         <hmc:Source>${source}</hmc:Source>
+         <hmc:TempComMobNum>${mobile_number}</hmc:TempComMobNum>
+         <hmc:TempComLastName>${last_name}</hmc:TempComLastName>
+      </hmc:ServiceBooking_Input>
+   </soapenv:Body>
+</soapenv:Envelope>

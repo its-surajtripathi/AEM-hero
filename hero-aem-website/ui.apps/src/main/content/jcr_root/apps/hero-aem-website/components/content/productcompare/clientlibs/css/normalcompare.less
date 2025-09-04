@@ -1,0 +1,230 @@
+// Compare bike section
+
+.compare-bike-section {
+  background-color: var(--bg-color-white);
+
+  .compare-bike-wrappper {
+    .compare-bike-header {
+    }
+
+    .bike-compare-div {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .compare-bike-img {
+        display: inline-block;
+        max-width:283px;
+      }
+
+      .compare-bike-info {
+        max-width: 760px;
+        width: 100%;
+
+        .compare-bike-mob-div {
+          display: none;
+        }
+
+        .compare-bike-common-div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 17px 0px;
+          &.variant p{
+            font-size:30px;
+
+            @media (max-device-width: 767px) and (min-width: 320px){
+                font-size:18px;
+                max-width:117px;
+            }
+          }
+
+          .compare-bike-common-p {
+            font-family: var(--font-tstar-bold);
+            font-weight: var(--font-weight-900);
+            font-size: var(--font-size24);
+            color: var(--text-color-black);
+
+            width: 30%;
+            text-align:left;
+            &.right{
+                text-align:right;
+            }
+
+          }
+          .compare-bike-common-middle-p {
+            font-family: var(--font-tstar-regular);
+            font-size: var(--font-size20);
+            color: var(--text-color-black);
+          }
+        }
+      }
+
+      .compare-bike-img {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.compare-bike-section {
+  .compare-bike-wrappper {
+    .compare-bike-header {
+    }
+
+    .bike-compare-div {
+      .compare-bike-info {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.common-h3 {
+  font-family: var(--font-tstar-bold);
+  font-style: italic;
+  font-weight: var(--font-weight-900);
+  font-size: var(--font-size48);
+  text-align: center;
+  color: var(--text-color-black);
+  padding: 31px 0px 31px 0px;
+  display:block;
+}
+
+.text-white .common-h3 {
+  color: var(--text-color-white);
+}
+
+.common-cta {
+  display: flex;
+  justify-content: center;
+  padding: 44px 0px 44px 0px;
+}
+.common-cta .cta-bg {
+  background: linear-gradient(
+    95.69deg,
+    #ac0000 0%,
+    #ff0000 26.35%,
+    #ff3b3b 50.83%,
+    #ff0000 72.71%,
+    #ff0000 100%
+  ) !important;
+  border-radius: 4px;
+}
+.common-cta .cta-bg .btn-span {
+  font-weight: var(--font-weight-900);
+  font-size: var(--font-size20);
+  line-height: var(--line-height-24);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #f5f5f7;
+}
+
+
+
+
+
+
+// compare-bike-section
+/* SM & XS Devices Start  */
+
+@media (max-device-width: 767px) and (min-width: 320px) {
+  .compare-bike-section {
+    .compare-bike-wrappper {
+      .compare-bike-header {
+      }
+
+      .bike-compare-div {
+        .compare-bike-info {
+          width: 100%;
+
+          .compare-bike-mob-div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                max-width:100px;
+            }
+          }
+
+          .compare-bike-common-div {
+            text-align: center;
+            padding: 10px 16px;
+            align-items: flex-start;
+
+            .compare-bike-common-p {
+              font-size: var(--font-size18);
+              width: 25%;
+
+             &:last-child{
+                text-align:right;
+             }
+            }
+
+            .compare-bike-common-middle-p {
+              font-size: var(--font-size16);
+            }
+          }
+        }
+
+        .compare-bike-img {
+          display: none !important;
+        }
+      }
+
+      .common-cta {
+        display: flex;
+        justify-content: center;
+        padding: 44px 0px 44px 0px;
+
+        .cta-bg {
+          background: linear-gradient(
+            95.69deg,
+            #ac0000 0%,
+            #ff0000 26.35%,
+            #ff3b3b 50.83%,
+            #ff0000 72.71%,
+            #ff0000 100%
+          );
+          border-radius: 4px;
+          padding: 8px 24px;
+
+          .btn-span {
+            font-weight: var(--font-weight-900);
+            font-size: var(--font-size20);
+            line-height: var(--line-height-24);
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #f5f5f7;
+          }
+        }
+      }
+    }
+  }
+  .compare-bike-section {
+    .compare-bike-wrappper {
+      .compare-bike-header {
+      }
+
+      .bike-compare-div {
+        .compare-bike-info {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .common-h3 {
+    font-size: var(--font-size28);
+    padding: 18px 0px 18px 0px;
+  }
+}
+
+.text-white .compare-bike-common-p {
+  color: var(--text-color-white) !important;
+}
+
+.text-white .compare-bike-common-middle-p {
+  color: var(--text-color-white) !important;
+}

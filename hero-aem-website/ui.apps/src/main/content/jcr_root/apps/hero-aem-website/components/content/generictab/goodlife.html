@@ -1,0 +1,41 @@
+<h3 style="text-align: center;"></h3>
+<div class="red-banner row">
+    <div class="red-bg-color">
+        <div class="left-bike red-bg-content">
+            <img src="${properties.leftimage}">
+        </div>
+        <div class="center-content">
+            <div class="banner-text">${properties.goodlifeheading @ context = 'html'}</div>
+        </div>
+        <div class="right-side-bike red-bg-content">
+            <img src="${properties.rightimage}">
+        </div>
+    </div>
+</div>
+<div class="explor-good-life-container" >
+    <div class="good-life-tab-header">
+        ${properties.tabheading @ context = 'html'}
+    </div>
+    <div class="bike-tab-section"
+         data-sly-use.tabitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='tabitems'}">
+        <div class="tab-wrapper">
+            <ul class="nav nav-tabs common-tabs-main" data-sly-list="${tabitems}">
+                <li class="nav-item service-tabs goodlife-tab-${itemList.index}">
+                    <img loading="lazy" data-sly-test="${item.properties.icon}" src="${item.properties.icon}" alt="${item.properties.title}"
+                         class="img-fluid nav-link-img active-img ${itemList.first ? '' : 'd-none'} explore-img" />
+                    <img data-sly-test="${item.properties.inactiveicon}" src="${item.properties.inactiveicon}" alt="${item.properties.title}"
+                         class="img-fluid nav-link-img  inactive-img explore-img ${itemList.first ? 'd-none' : ''}" />
+                    <a data-toggle="tab" aa-data-attr="track_cta" href="#menu${item.path.hashCode}"
+                       class="explore-text nav-link${itemList.first ? ' active' : ''}">${item.properties.title}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bike-product-wrapper">
+            <div class="tab-content" data-sly-list="${tabitems}">
+                <div id="menu${item.path.hashCode}" class="tab-pane fade show${itemList.first ? ' active' : ''}"
+                     data-sly-resource="${['tab',itemList.index] @ join='-' , resourceType='wcm/foundation/components/responsivegrid'}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

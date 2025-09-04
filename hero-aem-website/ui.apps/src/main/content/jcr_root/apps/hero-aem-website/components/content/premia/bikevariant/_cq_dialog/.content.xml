@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Bike Variant Details"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.authoring.editor.hook,hero-aem-website.multifield]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <general
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="General Bike Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <preTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Title"
+                                                name="./preTitle"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                                    <format
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="bold,italic" />
+                                                    <justify
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <links
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="modifylink,unlink" />
+                                                    <lists
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <misctools
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <paraformat
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <formats jcr:primaryType="nt:unstructured">
+                                                            <default_p
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Paragraph"
+                                                                tag="p" />
+                                                            <default_h1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 1"
+                                                                tag="h1" />
+                                                            <default_h2
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 2"
+                                                                tag="h2" />
+                                                            <default_h3
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 3"
+                                                                tag="h3" />
+                                                            <default_h4
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 4"
+                                                                tag="h4" />
+                                                            <default_h5
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 5"
+                                                                tag="h5" />
+                                                            <default_h6
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 6"
+                                                                tag="h6" />
+                                                            <default_blockquote
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Quote"
+                                                                tag="blockquote" />
+                                                            <default_pre
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Preformatted"
+                                                                tag="pre" />
+                                                            <span
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Span"
+                                                                tag="span" />
+                                                        </formats>
+                                                    </paraformat>
+                                                    <tracklinks
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <styles
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <styles jcr:primaryType="nt:unstructured">
+                                                            <font-40
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="fs-40"
+                                                                text="Font size 40" />
+                                                            <font-20
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="fs-20"
+                                                                text="Font size 20" />
+                                                            <font-24
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="fs-24"
+                                                                text="Font size 24" />
+                                                            <tab-home-heading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="explore-products-h3"
+                                                                text="Tab home heading" />
+                                                            <newtag
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="badge"
+                                                                text="New Tag" />
+                                                            <btn-white
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn btn-white"
+                                                                text="White Button" />
+                                                            <btn-red
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn btn-red-gradient"
+                                                                text="Red Button" />
+                                                            <feature-span
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="feature-span"
+                                                                text="Feature Span" />
+                                                            <font-italic
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="font-italic"
+                                                                text="Font Italic" />
+                                                            <text-danger
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text-danger"
+                                                                text="Text Danger" />
+                                                            <sub-text
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="sub-text"
+                                                                text="Sub Text" />
+                                                            <text-uppercase
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text-uppercase"
+                                                                text="Uppercase Text" />
+                                                            <mb-4
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="mb-md-4"
+                                                                text="Margin bottom 4" />
+                                                            <customerreview
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="common-h3"
+                                                                text="Customer review heading" />
+                                                            <exteme
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="exteme"
+                                                                text="XTREME" />
+                                                            <r160
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="r160"
+                                                                text="R160" />
+                                                            <specification
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="specification ml-md-0 ml-2"
+                                                                text="Campaign Specification" />
+                                                            <thanks-msg
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="thanks-msg"
+                                                                text="Thanks heading" />
+                                                            <privacypolicy
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="d-inline"
+                                                                text="Privacy Policy" />
+                                                            <decreasefont
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="decrease-font"
+                                                                text="Decrease Stat Font" />
+                                                            <text
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text"
+                                                                text="Text" />
+                                                            <readmore
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="read-more"
+                                                                text="Read More Link for other pages" />
+                                                            <hidecontent
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="collapse hide-content-mobile"
+                                                                text="Hide Content under Read More" />
+                                                            <readmoremobile
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn-read read-more-mobile"
+                                                                text="Read More link to hide content" />
+                                                            <readlessmobile
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn-read d-none read-less-mobile"
+                                                                text="Read Less link to hide content" />
+                                                            <desktoptitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="d-none d-md-block"
+                                                                text="Heading in Desktop" />
+                                                            <mobiletitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="d-block d-md-none chairman-headline mobile"
+                                                                text="Heading in Mobile" />
+                                                            <profiles-heading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="profileheading"
+                                                                text="Profiles Heading " />
+                                                            <profiles-paragraph
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="profileparagraph"
+                                                                text="Profiles Paragraph " />
+                                                            <profiles-subpara
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="profilesubpara"
+                                                                text="Profiles Sub Paragraph" />
+                                                            <milestones-heading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="headmile"
+                                                                text="Milestones Banner Heading " />
+                                                            <red-links
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="red-link"
+                                                                text="Red Link" />
+                                                            <contact-metrology
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="contact-metrology"
+                                                                text="contact metrology" />
+                                                            <spacer
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="spacer"
+                                                                text="spacer" />
+                                                            <hero-app
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="hero-app"
+                                                                text="No Border Buttons" />
+                                                            <pop-up-title
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="info-popup-body-title"
+                                                                text="Pop up title" />
+                                                            <pop-up-subtitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="info-popup-body-txt"
+                                                                text="Pop up subtitle" />
+                                                            <good-life
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="good-life"
+                                                                text="Good Life Text" />
+                                                            <point-redemption
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="end_text1"
+                                                                text="Point Redemption End Text" />
+                                                            <banner-big-font
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="xClan-banner-insur-yrs"
+                                                                text="Banner - Bold font" />
+                                                            <membershipmainheading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="heading2_align"
+                                                                text="Membership Plan-Heading" />
+                                                            <membershipheading1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="heading1_align"
+                                                                text="Membership Plan-Heading 1" />
+                                                            <membershipsubheading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="plans_head2"
+                                                                text="Membership Plan-Sub-Heading" />
+                                                            <booknowservice
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="pop-text-wrap"
+                                                                text="Book Now Service Text" />
+                                                            <voucher-description
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="voucher-description"
+                                                                text="Voucher Description" />
+                                                        </styles>
+                                                    </styles>
+                                                    <sourceedit
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <table
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <hiddenHeaderConfig
+                                                            jcr:primaryType="nt:unstructured"
+                                                            hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                                                            hiddenHeaderEditingCSS="cq-RichText-hiddenHeader--editing" />
+                                                    </table>
+                                                </rtePlugins>
+                                                <uiSettings jcr:primaryType="nt:unstructured">
+                                                    <cui jcr:primaryType="nt:unstructured">
+                                                        <inline
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[format#bold,format#italic,format#underline,#justify,#lists,links#modifylink,links#unlink,#paraformat,#styles,misctools#sourceedit,table#createoredit]">
+                                                            <popovers
+                                                                jcr:primaryType="nt:unstructured">
+                                                                <justify
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="[justify#justifyleft,justify#justifycenter,justify#justifyright,justify#justifyjustify]"
+                                                                    ref="justify" />
+                                                                <lists
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                                    ref="lists" />
+                                                                <paraformat
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                                    ref="paraformat" />
+                                                                <styles
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="styles:getStyles:styles-pulldown"
+                                                                    ref="styles" />
+                                                            </popovers>
+                                                        </inline>
+                                                        <tableEditOptions
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[table#insertcolumn-before,table#insertcolumn-after,table#removecolumn,-,table#insertrow-before,table#insertrow-after,table#removerow,-,table#mergecells-right,table#mergecells-down,table#mergecells,table#splitcell-horizontal,table#splitcell-vertical,-,table#selectrow,table#selectcolumn,-,table#ensureparagraph,-,table#modifytableandcell,table#removetable,-,undo#undo,undo#redo,-,table#exitTableEditing,-]" />
+                                                    </cui>
+                                                </uiSettings>
+                                            </preTitle>
+                                            <preTitleMobile
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Title - Mobile (Add with HTML script)"
+                                                name="./preTitleMobile"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                                    <format
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="bold,italic" />
+                                                    <justify
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <links
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="modifylink,unlink" />
+                                                    <lists
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <misctools
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <paraformat
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <formats jcr:primaryType="nt:unstructured">
+                                                            <default_p
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Paragraph"
+                                                                tag="p" />
+                                                            <default_h1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 1"
+                                                                tag="h1" />
+                                                            <default_h2
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 2"
+                                                                tag="h2" />
+                                                            <default_h3
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 3"
+                                                                tag="h3" />
+                                                            <default_h4
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 4"
+                                                                tag="h4" />
+                                                            <default_h5
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 5"
+                                                                tag="h5" />
+                                                            <default_h6
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 6"
+                                                                tag="h6" />
+                                                            <default_blockquote
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Quote"
+                                                                tag="blockquote" />
+                                                            <default_pre
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Preformatted"
+                                                                tag="pre" />
+                                                            <span
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Span"
+                                                                tag="span" />
+                                                        </formats>
+                                                    </paraformat>
+                                                    <tracklinks
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <styles
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <styles jcr:primaryType="nt:unstructured">
+                                                            <font-40
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="fs-40"
+                                                                text="Font size 40" />
+                                                            <font-20
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="fs-20"
+                                                                text="Font size 20" />
+                                                            <font-24
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="fs-24"
+                                                                text="Font size 24" />
+                                                            <tab-home-heading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="explore-products-h3"
+                                                                text="Tab home heading" />
+                                                            <newtag
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="badge"
+                                                                text="New Tag" />
+                                                            <btn-white
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn btn-white"
+                                                                text="White Button" />
+                                                            <btn-red
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn btn-red-gradient"
+                                                                text="Red Button" />
+                                                            <feature-span
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="feature-span"
+                                                                text="Feature Span" />
+                                                            <font-italic
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="font-italic"
+                                                                text="Font Italic" />
+                                                            <text-danger
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text-danger"
+                                                                text="Text Danger" />
+                                                            <sub-text
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="sub-text"
+                                                                text="Sub Text" />
+                                                            <text-uppercase
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text-uppercase"
+                                                                text="Uppercase Text" />
+                                                            <mb-4
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="mb-md-4"
+                                                                text="Margin bottom 4" />
+                                                            <customerreview
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="common-h3"
+                                                                text="Customer review heading" />
+                                                            <exteme
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="exteme"
+                                                                text="XTREME" />
+                                                            <r160
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="r160"
+                                                                text="R160" />
+                                                            <specification
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="specification ml-md-0 ml-2"
+                                                                text="Campaign Specification" />
+                                                            <thanks-msg
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="thanks-msg"
+                                                                text="Thanks heading" />
+                                                            <privacypolicy
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="d-inline"
+                                                                text="Privacy Policy" />
+                                                            <decreasefont
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="decrease-font"
+                                                                text="Decrease Stat Font" />
+                                                            <text
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text"
+                                                                text="Text" />
+                                                            <readmore
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="read-more"
+                                                                text="Read More Link for other pages" />
+                                                            <hidecontent
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="collapse hide-content-mobile"
+                                                                text="Hide Content under Read More" />
+                                                            <readmoremobile
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn-read read-more-mobile"
+                                                                text="Read More link to hide content" />
+                                                            <readlessmobile
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn-read d-none read-less-mobile"
+                                                                text="Read Less link to hide content" />
+                                                            <desktoptitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="d-none d-md-block"
+                                                                text="Heading in Desktop" />
+                                                            <mobiletitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="d-block d-md-none chairman-headline mobile"
+                                                                text="Heading in Mobile" />
+                                                            <profiles-heading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="profileheading"
+                                                                text="Profiles Heading " />
+                                                            <profiles-paragraph
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="profileparagraph"
+                                                                text="Profiles Paragraph " />
+                                                            <profiles-subpara
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="profilesubpara"
+                                                                text="Profiles Sub Paragraph" />
+                                                            <milestones-heading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="headmile"
+                                                                text="Milestones Banner Heading " />
+                                                            <red-links
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="red-link"
+                                                                text="Red Link" />
+                                                            <contact-metrology
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="contact-metrology"
+                                                                text="contact metrology" />
+                                                            <spacer
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="spacer"
+                                                                text="spacer" />
+                                                            <hero-app
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="hero-app"
+                                                                text="No Border Buttons" />
+                                                            <pop-up-title
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="info-popup-body-title"
+                                                                text="Pop up title" />
+                                                            <pop-up-subtitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="info-popup-body-txt"
+                                                                text="Pop up subtitle" />
+                                                            <good-life
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="good-life"
+                                                                text="Good Life Text" />
+                                                            <point-redemption
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="end_text1"
+                                                                text="Point Redemption End Text" />
+                                                            <banner-big-font
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="xClan-banner-insur-yrs"
+                                                                text="Banner - Bold font" />
+                                                            <membershipmainheading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="heading2_align"
+                                                                text="Membership Plan-Heading" />
+                                                            <membershipheading1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="heading1_align"
+                                                                text="Membership Plan-Heading 1" />
+                                                            <membershipsubheading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="plans_head2"
+                                                                text="Membership Plan-Sub-Heading" />
+                                                            <booknowservice
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="pop-text-wrap"
+                                                                text="Book Now Service Text" />
+                                                            <voucher-description
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="voucher-description"
+                                                                text="Voucher Description" />
+                                                        </styles>
+                                                    </styles>
+                                                    <sourceedit
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <table
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <hiddenHeaderConfig
+                                                            jcr:primaryType="nt:unstructured"
+                                                            hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                                                            hiddenHeaderEditingCSS="cq-RichText-hiddenHeader--editing" />
+                                                    </table>
+                                                </rtePlugins>
+                                                <uiSettings jcr:primaryType="nt:unstructured">
+                                                    <cui jcr:primaryType="nt:unstructured">
+                                                        <inline
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[format#bold,format#italic,format#underline,#justify,#lists,links#modifylink,links#unlink,#paraformat,#styles,misctools#sourceedit,table#createoredit]">
+                                                            <popovers
+                                                                jcr:primaryType="nt:unstructured">
+                                                                <justify
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="[justify#justifyleft,justify#justifycenter,justify#justifyright,justify#justifyjustify]"
+                                                                    ref="justify" />
+                                                                <lists
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                                    ref="lists" />
+                                                                <paraformat
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                                    ref="paraformat" />
+                                                                <styles
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="styles:getStyles:styles-pulldown"
+                                                                    ref="styles" />
+                                                            </popovers>
+                                                        </inline>
+                                                        <tableEditOptions
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[table#insertcolumn-before,table#insertcolumn-after,table#removecolumn,-,table#insertrow-before,table#insertrow-after,table#removerow,-,table#mergecells-right,table#mergecells-down,table#mergecells,table#splitcell-horizontal,table#splitcell-vertical,-,table#selectrow,table#selectcolumn,-,table#ensureparagraph,-,table#modifytableandcell,table#removetable,-,undo#undo,undo#redo,-,table#exitTableEditing,-]" />
+                                                    </cui>
+                                                </uiSettings>
+                                            </preTitleMobile>
+                                            <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Description"
+                                                name="./description"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                                    <format
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="bold,italic" />
+                                                    <justify
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <links
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="modifylink,unlink" />
+                                                    <lists
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <misctools
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <paraformat
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <formats jcr:primaryType="nt:unstructured">
+                                                            <default_p
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Paragraph"
+                                                                tag="p" />
+                                                            <default_h1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 1"
+                                                                tag="h1" />
+                                                            <default_h2
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 2"
+                                                                tag="h2" />
+                                                            <default_h3
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 3"
+                                                                tag="h3" />
+                                                            <default_h4
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 4"
+                                                                tag="h4" />
+                                                            <default_h5
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 5"
+                                                                tag="h5" />
+                                                            <default_h6
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 6"
+                                                                tag="h6" />
+                                                            <default_blockquote
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Quote"
+                                                                tag="blockquote" />
+                                                            <default_pre
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Preformatted"
+                                                                tag="pre" />
+                                                            <span
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Span"
+                                                                tag="span" />
+                                                        </formats>
+                                                    </paraformat>
+                                                    <tracklinks
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <styles
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <styles jcr:primaryType="nt:unstructured">
+                                                            <font-40
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="fs-40"
+                                                                text="Font size 40" />
+                                                            <font-20
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="fs-20"
+                                                                text="Font size 20" />
+                                                            <font-24
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="fs-24"
+                                                                text="Font size 24" />
+                                                            <tab-home-heading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="explore-products-h3"
+                                                                text="Tab home heading" />
+                                                            <newtag
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="badge"
+                                                                text="New Tag" />
+                                                            <btn-white
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn btn-white"
+                                                                text="White Button" />
+                                                            <btn-red
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn btn-red-gradient"
+                                                                text="Red Button" />
+                                                            <feature-span
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="feature-span"
+                                                                text="Feature Span" />
+                                                            <font-italic
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="font-italic"
+                                                                text="Font Italic" />
+                                                            <text-danger
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text-danger"
+                                                                text="Text Danger" />
+                                                            <sub-text
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="sub-text"
+                                                                text="Sub Text" />
+                                                            <text-uppercase
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text-uppercase"
+                                                                text="Uppercase Text" />
+                                                            <mb-4
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="mb-md-4"
+                                                                text="Margin bottom 4" />
+                                                            <customerreview
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="common-h3"
+                                                                text="Customer review heading" />
+                                                            <exteme
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="exteme"
+                                                                text="XTREME" />
+                                                            <r160
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="r160"
+                                                                text="R160" />
+                                                            <specification
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="specification ml-md-0 ml-2"
+                                                                text="Campaign Specification" />
+                                                            <thanks-msg
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="thanks-msg"
+                                                                text="Thanks heading" />
+                                                            <privacypolicy
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="d-inline"
+                                                                text="Privacy Policy" />
+                                                            <decreasefont
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="decrease-font"
+                                                                text="Decrease Stat Font" />
+                                                            <text
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text"
+                                                                text="Text" />
+                                                            <readmore
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="read-more"
+                                                                text="Read More Link for other pages" />
+                                                            <hidecontent
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="collapse hide-content-mobile"
+                                                                text="Hide Content under Read More" />
+                                                            <readmoremobile
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn-read read-more-mobile"
+                                                                text="Read More link to hide content" />
+                                                            <readlessmobile
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="btn-read d-none read-less-mobile"
+                                                                text="Read Less link to hide content" />
+                                                            <desktoptitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="d-none d-md-block"
+                                                                text="Heading in Desktop" />
+                                                            <mobiletitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="d-block d-md-none chairman-headline mobile"
+                                                                text="Heading in Mobile" />
+                                                            <profiles-heading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="profileheading"
+                                                                text="Profiles Heading " />
+                                                            <profiles-paragraph
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="profileparagraph"
+                                                                text="Profiles Paragraph " />
+                                                            <profiles-subpara
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="profilesubpara"
+                                                                text="Profiles Sub Paragraph" />
+                                                            <milestones-heading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="headmile"
+                                                                text="Milestones Banner Heading " />
+                                                            <red-links
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="red-link"
+                                                                text="Red Link" />
+                                                            <contact-metrology
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="contact-metrology"
+                                                                text="contact metrology" />
+                                                            <spacer
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="spacer"
+                                                                text="spacer" />
+                                                            <hero-app
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="hero-app"
+                                                                text="No Border Buttons" />
+                                                            <pop-up-title
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="info-popup-body-title"
+                                                                text="Pop up title" />
+                                                            <pop-up-subtitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="info-popup-body-txt"
+                                                                text="Pop up subtitle" />
+                                                            <good-life
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="good-life"
+                                                                text="Good Life Text" />
+                                                            <point-redemption
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="end_text1"
+                                                                text="Point Redemption End Text" />
+                                                            <banner-big-font
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="xClan-banner-insur-yrs"
+                                                                text="Banner - Bold font" />
+                                                            <membershipmainheading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="heading2_align"
+                                                                text="Membership Plan-Heading" />
+                                                            <membershipheading1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="heading1_align"
+                                                                text="Membership Plan-Heading 1" />
+                                                            <membershipsubheading
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="plans_head2"
+                                                                text="Membership Plan-Sub-Heading" />
+                                                            <booknowservice
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="pop-text-wrap"
+                                                                text="Book Now Service Text" />
+                                                            <voucher-description
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="voucher-description"
+                                                                text="Voucher Description" />
+                                                        </styles>
+                                                    </styles>
+                                                    <sourceedit
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*" />
+                                                    <table
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <hiddenHeaderConfig
+                                                            jcr:primaryType="nt:unstructured"
+                                                            hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                                                            hiddenHeaderEditingCSS="cq-RichText-hiddenHeader--editing" />
+                                                    </table>
+                                                </rtePlugins>
+                                                <uiSettings jcr:primaryType="nt:unstructured">
+                                                    <cui jcr:primaryType="nt:unstructured">
+                                                        <inline
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[format#bold,format#italic,format#underline,#justify,#lists,links#modifylink,links#unlink,#paraformat,#styles,misctools#sourceedit,table#createoredit]">
+                                                            <popovers
+                                                                jcr:primaryType="nt:unstructured">
+                                                                <justify
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="[justify#justifyleft,justify#justifycenter,justify#justifyright,justify#justifyjustify]"
+                                                                    ref="justify" />
+                                                                <lists
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                                    ref="lists" />
+                                                                <paraformat
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                                    ref="paraformat" />
+                                                                <styles
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="styles:getStyles:styles-pulldown"
+                                                                    ref="styles" />
+                                                            </popovers>
+                                                        </inline>
+                                                        <tableEditOptions
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[table#insertcolumn-before,table#insertcolumn-after,table#removecolumn,-,table#insertrow-before,table#insertrow-after,table#removerow,-,table#mergecells-right,table#mergecells-down,table#mergecells,table#splitcell-horizontal,table#splitcell-vertical,-,table#selectrow,table#selectcolumn,-,table#ensureparagraph,-,table#modifytableandcell,table#removetable,-,undo#undo,undo#redo,-,table#exitTableEditing,-]" />
+                                                    </cui>
+                                                </uiSettings>
+                                            </description>
+                                            <description2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Description 2"
+                                                name="./description2" />
+                                            <description3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Price Text"
+                                                name="./description3" />
+                                            <currency
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Currency Text"
+                                                name="./currency" />
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </general>
+                    <variant1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Variant 1"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured">
+                                            <variantName1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Variant Name"
+                                                name="./variantName1" />
+                                            <icon1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Icon Asset"
+                                                fileNameParameter="./iconName"
+                                                fileReferenceParameter="./iconPath1"
+                                                multiple="{Boolean}false"
+                                                name="./icon"
+                                                title="Upload Icon Asset"
+                                                useHTML5="{Boolean}true" />
+                                            <price1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Price 1"
+                                                name="./price1" />
+                                            <pricedesc1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Price Description 1"
+                                                name="./priceDesc1" />
+                                            <colourName1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Colour Name for this variant"
+                                                name="./colourName1" />
+                                            <colourCode1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Colour Code for this variant"
+                                                name="./colourCode1" />
+                                            <mainImage1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Image Asset for color 1"
+                                                fileNameParameter="./imageName1"
+                                                fileReferenceParameter="./imagePath1"
+                                                multiple="{Boolean}false"
+                                                name="./image1"
+                                                title="Upload Icon Asset"
+                                                useHTML5="{Boolean}true" />                                          
+                                            <imagesfolder
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="360 Images Folder"
+                                                name="./imagesFolderPath1"
+                                                rootPath="/content/dam/hero-aem-website" />
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </variant1>
+                    <variant2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Variant 2"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <variantName2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Variant Name"
+                                                name="./variantName2" />
+                                            <icon2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Icon Asset"
+                                                fileNameParameter="./iconName2"
+                                                fileReferenceParameter="./iconPath2"
+                                                multiple="{Boolean}false"
+                                                name="./icon2"
+                                                title="Upload Icon Asset"
+                                                useHTML5="{Boolean}true" />
+                                            <price2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Price 2"
+                                                name="./price2" />
+                                            <pricedesc2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Price Description 2"
+                                                name="./priceDesc2" />
+                                            <colourName21
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Colour Name 1 for this variant"
+                                                name="./colourName21" />
+                                            <colourCode21
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Colour Code 1 for this variant"
+                                                name="./colourCode21" />
+                                            <colourName22
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Colour Name 2 for this variant"
+                                                name="./colourName22" />
+                                            <colourCode22
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Colour Code 2 for this variant"
+                                                name="./colourCode22" />
+                                            <mainImage21
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Image Asset for color 1"
+                                                fileNameParameter="./imageName21"
+                                                fileReferenceParameter="./imagePath21"
+                                                multiple="{Boolean}false"
+                                                name="./image21"
+                                                title="Upload Icon Asset"
+                                                useHTML5="{Boolean}true" />
+                                            <mainImage22
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Image Asset for color 2"
+                                                fileNameParameter="./imageName22"
+                                                fileReferenceParameter="./imagePath22"
+                                                multiple="{Boolean}false"
+                                                name="./image22"
+                                                title="Upload Icon Asset"
+                                                useHTML5="{Boolean}true" />                                           
+                                            <imagesfolderVariant21
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="360 Images Folder 1"
+                                                name="./imagesFolderPathVar21"
+                                                rootPath="/content/dam/hero-aem-website" />
+                                            <imagesfolderVariant22
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="360 Images Folder 2"
+                                                name="./imagesFolderPathVar22"
+                                                rootPath="/content/dam/hero-aem-website" />
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </variant2>
+                    <variant3
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Variant 3"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <variantName3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Variant Name"
+                                                name="./variantName3" />
+                                            <icon3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Icon Asset"
+                                                fileNameParameter="./iconName3"
+                                                fileReferenceParameter="./iconPath3"
+                                                multiple="{Boolean}false"
+                                                name="./icon3"
+                                                title="Upload Icon Asset"
+                                                useHTML5="{Boolean}true" />
+                                            <price3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Price 3"
+                                                name="./price3" />
+                                            <pricedesc3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Price Description 3"
+                                                name="./priceDesc3" />
+                                            <colourName3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Colour Name for this variant"
+                                                name="./colourName3" />
+                                            <colourCode3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Colour Code for this variant"
+                                                name="./colourCode3" />
+                                            <mainImage3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Image Asset for color 3"
+                                                fileNameParameter="./imageName3"
+                                                fileReferenceParameter="./imagePath3"
+                                                multiple="{Boolean}false"
+                                                name="./image3"
+                                                title="Upload Icon Asset"
+                                                useHTML5="{Boolean}true" />                                            
+                                            <imagesfolderVariant3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="360 Images Folder"
+                                                name="./imagesFolderPathVar3"
+                                                rootPath="/content/dam/hero-aem-website" />
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </variant3>
+                    <advanced
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Variant"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <variants
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Bike variant Details"
+                                                validation="multifield-max-3">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./bikeVariant">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <variantName
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Variant Name"
+                                                            name="./variantName" />
+                                                        <icon
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            fieldLabel="Icon Asset"
+                                                            fileNameParameter="./iconName"
+                                                            fileReferenceParameter="./iconPath"
+                                                            multiple="{Boolean}false"
+                                                            name="./icon"
+                                                            title="Upload Icon Asset"
+                                                            useHTML5="{Boolean}true" />
+                                                        <colourVariant
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                            composite="{Boolean}true"
+                                                            fieldLabel="Bike Colour Details"
+                                                            validation="multifield-max-3">
+                                                            <field
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                name="./bikeColour">
+                                                                <items
+                                                                    jcr:primaryType="nt:unstructured">
+                                                                    <colourName
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldLabel="Colour Name"
+                                                                        name="./colourName" />
+                                                                    <colourCode
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldLabel="Colour Code"
+                                                                        name="./colourCode" />
+                                                                    <mainImage
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                                        fieldLabel="Image Asset"
+                                                                        fileNameParameter="./imageName"
+                                                                        fileReferenceParameter="./imagePath"
+                                                                        multiple="{Boolean}false"
+                                                                        name="./image"
+                                                                        title="Upload Icon Asset"
+                                                                        useHTML5="{Boolean}true" />
+                                                                    <is360View
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                        checked="${false}"
+                                                                        fieldDescription="Check the box if the image has a 360 degree view."
+                                                                        name="./checkBox"
+                                                                        text="Check the box if the image has a 360 degree view."
+                                                                        uncheckedValue="false"
+                                                                        value="{Boolean}true" />
+                                                                    <imagesfolder
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                        fieldLabel="360 Images Folder"
+                                                                        name="./imagesFolderPath"
+                                                                        rootPath="/content/dam/hero-aem-website" />
+                                                                </items>
+                                                            </field>
+                                                        </colourVariant>
+                                                    </items>
+                                                </field>
+                                            </variants>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </advanced>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,209 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<sly data-sly-list.connectMultifield="${resource.getChildren}">
+    <sly data-sly-test="${connectMultifield.name == 'heroconnectitems'}">
+        <section id="hero-connected">
+            <div class="custom-container">
+                <h2 class="main-heading">
+                    ${properties.heroconnectheading @ context = 'html'}
+                </h2>
+                <div class="benefits--section">
+                    <div class="mobile-img-section position-relative">
+                        <div class="bg-gif position-absolute">
+                            <img src="${properties.heroconnectbackground}" alt="">
+                        </div>
+                        <div class="phone-img position-absolute">
+                            <div class="img--content-wrap position-relative">
+                                <img src="${properties.heroconnectmobileimg}" alt="">
+
+                                <div class="phone--content position-absolute">
+                                    <div class="presents-img">
+                                        <img src="${properties.heroconnectlogo}" alt="">
+                                    </div>
+                                    <sly data-sly-list.connectouter="${connectMultifield.getChildren}">
+                                        <!--/*for getting children details*/-->
+                                        <sly data-sly-list.connectItem="${connectouter.getChildren}">
+                                            <sly data-sly-test="${connectouterList.index==0}">
+                                                <div class="feature--wrap">
+                                                    <!--/*for looping inner children details*/-->
+                                                    <sly data-sly-test="${connectItem.name == 'connectInnerDetails'}">
+                                                        <sly data-sly-list.connectitems="${connectItem.getChildren}">
+                                                            <div class="feature-tile">
+                                                                <img src="${connectitems.connectImageIcon}"
+                                                                    alt="image" />
+                                                                <p>
+                                                                    ${connectitems.connectmiddleheading @
+                                                                    context='html'}
+                                                                </p>
+                                                            </div>
+                                                        </sly>
+                                                    </sly>
+                                                </div>
+                                            </sly>
+
+                                            <sly data-sly-test="${connectouterList.index!=0}">
+                                                <div class="feature--wrap fade-out">
+                                                    <!--/*for looping inner children details*/-->
+                                                    <sly data-sly-test="${connectItem.name == 'connectInnerDetails'}">
+                                                        <sly data-sly-list.connectitems="${connectItem.getChildren}">
+                                                            <div class="feature-tile">
+                                                                <img src="${connectitems.connectImageIcon}"
+                                                                    alt="image" />
+                                                                <p>
+                                                                    ${connectitems.connectmiddleheading @
+                                                                    context='html'}
+                                                                </p>
+                                                            </div>
+                                                        </sly>
+                                                    </sly>
+                                                </div>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </div>
+                            </div>
+                        </div>
+                        <sly data-sly-list.connectouter="${connectMultifield.getChildren}">
+                            <!--/*for getting children details*/-->
+                            <sly data-sly-list.connectItem="${connectouter.getChildren}">
+                                <sly data-sly-test="${connectouterList.index==0}">
+                                    <div class="text-tile-wrap">
+                                        <!--/*for looping inner children details*/-->
+                                        <sly data-sly-test="${connectItem.name == 'connectInnerDetails'}">
+                                            <sly data-sly-list.connectitems="${connectItem.getChildren}">
+                                                <sly data-sly-test="${connectItemList.index==0}">
+                                                    <div class="text-tile">
+                                                        <h3>
+                                                            ${connectitems.connectmiddleheading @ context='html'}
+                                                        </h3>
+                                                        <p>
+                                                            ${connectitems.connectmiddletext @ context='html'}
+                                                        </p>
+                                                    </div>
+                                                </sly>
+                                                <sly data-sly-test="${connectItemList.index!=0}">
+                                                    <div class="text-tile fade-out">
+                                                        <h3>
+                                                            ${connectitems.connectmiddleheading @ context='html'}
+                                                        </h3>
+                                                        <p>
+                                                            ${connectitems.connectmiddletext @ context='html'}
+                                                        </p>
+                                                    </div>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </div>
+                                </sly>
+                            </sly>
+                        </sly>
+                        <sly data-sly-list.connectouter="${connectMultifield.getChildren}">
+                            <!--/*for getting children details*/-->
+                            <sly data-sly-list.connectItem="${connectouter.getChildren}">
+                                <sly data-sly-test="${connectouterList.index!=0}">
+                                    <div class="text-tile-wrap fade-out">
+                                        <!--/*for looping inner children details*/-->
+                                        <sly data-sly-test="${connectItem.name == 'connectInnerDetails'}">
+                                            <sly data-sly-list.connectitems="${connectItem.getChildren}">
+                                                <sly data-sly-test="${connectItemList.index==0}">
+                                                    <div class="text-tile">
+                                                        <h3>
+                                                            ${connectitems.connectmiddleheading @ context='html'}
+                                                        </h3>
+                                                        <p>
+                                                            ${connectitems.connectmiddletext @ context='html'}
+                                                        </p>
+                                                    </div>
+                                                </sly>
+                                                <sly data-sly-test="${connectItemList.index!=0}">
+                                                    <div class="text-tile fade-out">
+                                                        <h3>
+                                                            ${connectitems.connectmiddleheading @ context='html'}
+                                                        </h3>
+                                                        <p>
+                                                            ${connectitems.connectmiddletext @ context='html'}
+                                                        </p>
+                                                    </div>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </div>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </div>
+                    <div class="benefit-selector d-flex">
+                        <h4 class="d-md-block d-none">
+                            ${properties.connectRightTitle}
+                        </h4>
+                        <h2 class="d-md-block d-none">${properties.connectRightSubitle}
+                            <span class="text-red">${properties.connectRedTitle}</span>
+                        </h2>
+
+                        <div class="btn--wrap">
+                            <div class="button-slider">
+                                <sly data-sly-list.connectouter="${connectMultifield.getChildren}">
+                                    <button>
+                                        ${connectouter.tileData @ context ='html'}
+                                    </button>
+                                </sly>
+                            </div>
+                        </div>
+
+                        <sly data-sly-list.connectouter="${connectMultifield.getChildren}">
+                            <!--/*for getting children details*/-->
+                            <sly data-sly-list.connectItem="${connectouter.getChildren}">
+
+                                <div class="indv-features--wrap">
+                                    <!--/*for looping inner children details*/-->
+                                    <sly data-sly-test="${connectItem.name == 'connectInnerDetails'}">
+
+                                        <sly data-sly-list.connectitems="${connectItem.getChildren}">
+                                            <sly data-sly-test="${connectItemList.index==0}">
+                                                <div class="indv-feature">
+                                                    <h3>
+                                                        ${connectitems.connectmiddleheading @ context='html'}
+                                                    </h3>
+                                                </div>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </div>
+
+                            </sly>
+                        </sly>
+                        <sly data-sly-list.connectouter="${connectMultifield.getChildren}">
+                            <!--/*for getting children details*/-->
+                            <sly data-sly-list.connectItem="${connectouter.getChildren}">
+
+                                <div class="indv-features--wrap fade-out">
+                                    <!--/*for looping inner children details*/-->
+                                    <sly data-sly-test="${connectItem.name == 'connectInnerDetails'}">
+                                        <sly data-sly-list.connectitems="${connectItem.getChildren}">
+                                            <sly data-sly-test="${connectItemList.index!=0}">
+                                                <div class="indv-feature">
+
+                                                    <h3 class="feature--active">
+                                                        ${connectitems.connectmiddleheading @ context='html'}
+                                                    </h3>
+
+                                                </div>
+                                            </sly>
+                                            <div class="indv-feature">
+                                                <h3>
+                                                    ${connectitems.connectmiddleheading @ context='html'}
+                                                </h3>
+                                            </div>
+                                        </sly>
+                                    </sly>
+                                </div>
+                            </sly>
+                        </sly>
+    </sly>
+    </div>
+    </div>
+    </div>
+    </section>
+</sly>
+</sly>

@@ -1,0 +1,28 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+
+<div class="sj-storage-tips">
+    <div class="sj-st-header" data-sly-test="${properties.servehicletipheader}">
+        ${properties.servehicletipheader @context='html'}
+      </div>
+    <div class="sj-bike-container ${properties.alignvariation=='right' ? 'sj-scooter-container' : ''}">
+        <div class="sj-bike-img">
+            <picture>
+                <source media="(max-width:1150px)" srcset="${properties.serbikeimgmob}">
+                <img src="${properties.serbikeimgdesk}">
+            </picture>
+        </div>
+        <div class="sj-st-content" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='sertipsmultitext'}"
+        data-sly-list="${listUse}">
+            <div class="sj-st-details ${itemList.last && itemList.odd ? 'sj-st-details-odd':''}">
+                <div class="sj-st-details-icon">
+                    <img src="${item.properties.tipicon}">
+                </div>
+                <div class="sj-st-details-desc">
+                    ${item.properties.servehicletip @context='html'}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

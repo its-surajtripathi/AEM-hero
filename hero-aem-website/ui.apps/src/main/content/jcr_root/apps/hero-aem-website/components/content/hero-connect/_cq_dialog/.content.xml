@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Hero Connect"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <container
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <heroconnectheading
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        fieldLabel="Enter Heading"
+                                                        name="./heroconnectheading"
+                                                        useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                        <uiSettings
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                        <htmlRules jcr:primaryType="nt:unstructured">
+                                                            <blockHandling
+                                                                jcr:primaryType="nt:unstructured"
+                                                                removeSingleParagraphContainer="{Boolean}true"/>
+                                                        </htmlRules>
+                                                    </heroconnectheading>
+                                                    <background
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Choose Background Image"
+                                                        name="./heroconnectbackground"
+                                                        required="{Boolean}true"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <mblbackground
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Choose Mobile Image"
+                                                        name="./heroconnectmobileimg"
+                                                        required="{Boolean}true"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <connectlogo
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Choose heroconnect logo"
+                                                        name="./heroconnectlogo"
+                                                        required="{Boolean}true"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <rightsidetitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Right Side Heading"
+                                                        name="./connectRightTitle"/>
+                                                    <rightsidesubtitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Right Side Sub Heading"
+                                                        name="./connectRightSubitle"/>
+                                                    <rightsideredtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Right Side Red color Heading"
+                                                        name="./connectRedTitle"/>
+                                                    <multitext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        fieldLabel="Add Hero Connect items">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./heroconnectitems">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <field1
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <tilename
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="Enter tile Name"
+                                                                            name="./tileData"/>
+                                                                        <field1
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <connectmultidetails
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                    composite="{Boolean}true"
+                                                                                    fieldLabel="click on add button to add connect sub Details">
+                                                                                    <field
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                        name="./connectInnerDetails">
+                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                            <middleheading
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                                fieldLabel="Enter Middle Heading"
+                                                                                                name="./connectmiddleheading"
+                                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                                <rtePlugins
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                                <uiSettings
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                                <htmlRules jcr:primaryType="nt:unstructured">
+                                                                                                    <blockHandling
+                                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                                        removeSingleParagraphContainer="{Boolean}true"/>
+                                                                                                </htmlRules>
+                                                                                            </middleheading>
+                                                                                            <middletext
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                                fieldLabel="Enter Middle Text"
+                                                                                                name="./connectmiddletext"
+                                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                                                <rtePlugins
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                                <uiSettings
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                                <htmlRules jcr:primaryType="nt:unstructured">
+                                                                                                    <blockHandling
+                                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                                        removeSingleParagraphContainer="{Boolean}true"/>
+                                                                                                </htmlRules>
+                                                                                            </middletext>
+                                                                                            <image
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                fieldDescription="Choose Image path"
+                                                                                                fieldLabel="Select Image"
+                                                                                                name="./connectImageIcon"
+                                                                                                rootPath="/content/dam/hero-aem-website"/>
+                                                                                        </items>
+                                                                                    </field>
+                                                                                </connectmultidetails>
+                                                                            </items>
+                                                                        </field1>
+                                                                    </items>
+                                                                </field1>
+                                                            </items>
+                                                        </field>
+                                                    </multitext>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </container>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

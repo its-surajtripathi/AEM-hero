@@ -1,0 +1,39 @@
+<div class="form-group cust-form-group" id="enquiry-form">
+   <div class="dropdown cust-drop-down">
+      <button id="stateDropdown2"  name="statename" required
+         class="dropdown-select form-control cust-form-control font-size-18 line-height-24 font-montserrat-regular font-weight-500 text-color-white bg-color-danger text-left"
+         type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+         data-validation-msg-req="${properties.statevalmsg}" data-default-label="${properties.statelabel}">
+      ${properties.statelabel}
+      <span class="caret"></span>
+      </button>
+      <input type="hidden" required value="" data-validation-msg-req="${properties.statevalmsg}" name="stateNameVal"/>
+      <ul class="dropdown-menu cust-dropdown-menu" aria-labelledby="stateDropdown2"
+         style="">
+      </ul>
+   </div>
+</div>
+<div class="form-group cust-form-group">
+   <div class="dropdown cust-drop-down">
+      <button id="cityDropdown2" name="cityname" required
+         class="dropdown-select form-control cust-form-control font-size-18 line-height-24 font-montserrat-regular font-weight-500 text-color-white bg-color-danger text-left"
+         type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-validation-msg-req="${properties.cityvalmsg}" data-default-label="${properties.citylabel}">
+      ${properties.citylabel}
+      <span class="caret"></span>
+      </button>
+      <input type="hidden" required value="" data-validation-msg-req="${properties.cityvalmsg}" name="cityNameVal"/>
+      <ul class="dropdown-menu cust-dropdown-menu" aria-labelledby="cityDropdown2"
+         style="">
+      </ul>
+   </div>
+</div>
+<div class="book-test-drive-cta text-center mt-md-3 w-100 pb-5">
+   <input type="hidden" value="${properties.variationtype}" name="pageType" />
+   <input type="hidden" value="${properties.ispopup}" name="isPopup" />
+   <input type="hidden" value="${properties.modelName || currentPage.pageTitle}" name="modelName" />
+   <input type="hidden" value="${properties.defaultproduct || currentPage.path}" name="productpath" />
+   <input type="hidden" value="${[resource.path, 'requestcallback.html'] @ join='.'}" name="action_url" />
+   <input type="hidden" value="${[resource.path, 'statecitylist.json'] @ join='.'}" name="statecitylist_url" />
+   <input type="button" value="${properties.buttonlabel}" name="submit" id="subbtn"
+      class="callback-btn common-slider-cta font-size-20 line-height-24 text-color-danger-red font-tstar-bold bg-color-white px-3 py-2 book-test-submit">
+</div>

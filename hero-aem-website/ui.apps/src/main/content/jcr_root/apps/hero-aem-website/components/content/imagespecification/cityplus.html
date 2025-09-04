@@ -1,0 +1,27 @@
+<div class="slider inner-content">
+    <div class="spec-img"
+        data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+        data-sly-test="${image.src}"
+        data-cmp-dmimage="${image.dmImage}"
+        data-asset-id="${image.uuid}"
+        id="${image.id}"
+        data-cmp-data-layer="${image.data.json}"
+        itemscope itemtype="http://schema.org/ImageObject">
+        <img srcset="${image.srcset}" src="${image.src}"
+            loading="${image.lazyEnabled ? 'lazy' : ''}"
+            itemprop="contentUrl"
+            alt="${image.alt || true}" title="${image.displayPopupTitle && image.title}"/>
+    </div>
+    <div class="info" data-sly-use.specifications="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='specifications'}">
+        <div class="info-row" data-sly-list.spec="${specifications}">
+            <div class="info-col  ${specifications.length < 3 ? ' full' : ''}" data-sly-test="${specList.even}">
+                <h4 class="font-italic b1-heavy-text-std"> ${spec.properties.title} </h4>
+                <p class="h4-medium-heading-std">${spec.properties.value}</p>
+            </div>
+            <div class="info-col  ${specifications.length < 3 ? ' full' : ''}" data-sly-test="${specList.odd}">
+                <h4 class="font-italic b1-heavy-text-std"> ${spec.properties.title} </h4>
+                <p class="h4-medium-heading-std">${spec.properties.value}</p>
+            </div>
+        </div>
+    </div>
+</div>

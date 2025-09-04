@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Interactive top Banner"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-author_editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <multifieldwithmap
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Multifield With Map"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                fieldLabel="Hero Banner Details">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <bannerdetails
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <landingvideo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Choose Landing Banner video Path"
+                                                name="./landingvideobanner"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <moblandingvideo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Mobile Landing Banner video Path"
+                                                name="./moblandingvideobanner"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <bannerposter
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Banner Poster Image Path"
+                                                name="./bannerposter"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <multibannerdetails
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Hero Interactive Banner"
+                                                fieldLabel="Hero Interactive Banner"
+                                                required="{Boolean}false">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    emptyText="Hero Interactive Banner Details"
+                                                    name="./interactivebanner">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <bannerconfigs
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Banner Items"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <imgicon
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="Image Icon Path"
+                                                                            name="./bannericonimg"
+                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                        <txtimgicon
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="Image Text Icon Path"
+                                                                            name="./bannertxticonimg"
+                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                        <isbooknow
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                            name="./isbooknow"
+                                                                            text="Check this if it is a Book Now CTA"
+                                                                            uncheckedValue="false"
+                                                                            value="true"/>
+                                                                        <sepimg
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="DeskTop Separator Image Path"
+                                                                            name="./sepdeskimg"
+                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                        <mobsepimg
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="Mobile Separator Image Path"
+                                                                            name="./mobsepdeskimg"
+                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                        <videopath
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="Video Path"
+                                                                            name="./bannervideo"
+                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                        <mobvideopath
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="Mobile Video Path"
+                                                                            name="./mobbannervideo"
+                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                    </items>
+                                                                </bannerconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </multibannerdetails>
+                                        </items>
+                                    </bannerdetails>
+                                </items>
+                            </well>
+                        </items>
+                    </multifieldwithmap>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

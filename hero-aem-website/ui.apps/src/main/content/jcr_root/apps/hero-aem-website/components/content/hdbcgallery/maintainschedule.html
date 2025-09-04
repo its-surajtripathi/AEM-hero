@@ -1,0 +1,53 @@
+<sly data-sly-list.galleryMultifield="${resource.getChildren}">
+
+    <sly data-sly-test="${galleryMultifield.name == 'maintenanceschedule'}">
+
+        <section class="service-maintenance-container">
+            <div class="service-maintenance-wrapper">
+
+                <sly data-sly-list.galleries="${galleryMultifield.getChildren}">
+
+                    <!--/* Get all child resources */-->
+                    <sly data-sly-list.itemsMultifield="${galleries.getChildren}">
+
+                        <div class="content-maintain--slider-wrap">
+                            <sly data-sly-test="${itemsMultifield.name == 'maintainscheduleitems'}">
+                                <sly data-sly-list.galleryitem="${itemsMultifield.getChildren}">
+                                    <div class="service-maintain-tile">
+                                        <sly data-sly-test="${galleryitem.maintenanceimagepath}">
+                                            <img class="maintain-desk-img" src="${galleryitem.maintenanceimagepath}"
+                                                alt="Image desktop view">
+                                        </sly>
+                                        <sly data-sly-test="${galleryitem.maintenancemobileimagepath}">
+                                            <img class="maintain-mob-img"
+                                                src="${galleryitem.maintenancemobileimagepath}" alt="Image Mobile view">
+                                        </sly>
+                                        <div class="maintain-title">
+
+                                            ${galleryitem.maintenancetitle @ context='html'}
+
+                                        </div>
+                                        <a class="d-flex align-items-center"
+                                            href="${galleryitem.docfilepath}" target="_blank" download>
+                                            <div class="maintain-download-wrapper">
+                                                <div><img class="download-maintenance-img"
+                                                        src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/download_music.png"
+                                                        alt="download-maintenance">
+                                                </div>
+                                                <div class="download-maintenance-text">Download</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </sly>
+                            </sly>
+
+
+                        </div>
+
+                    </sly>
+                </sly>
+            </div>
+        </section>
+    </sly>
+</sly>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Generic Teaser"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <layoutVariation
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Layout Variation of Generic Teaser"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <layoutvariation
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Select Layout Varialtion"
+                                                fieldLabel="Layout Variation"
+                                                name="./layoutvariation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <layoutvariation1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Teaser Variation 1 - Teaser with Icon"
+                                                        value="layoutvariation1"/>
+                                                    <layoutvariation2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Teaser Variation 2 for Customer Review"
+                                                        value="layoutvariation2"/>
+                                                </items>
+                                            </layoutvariation>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </layoutVariation>
+                    <teaserimage
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Teaser Image"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Enter an Image path"
+                                                name="./imagemain"
+                                                required="{Boolean}true"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <alt
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Alt Text of Image"
+                                                name="./alt"
+                                                required="{Boolean}true"/>
+                                            <height
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/numberfield"
+                                                fieldLabel="Enter height for image"
+                                                name="./height"/>
+                                            <anchor
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                name="./anchor"
+                                                text="Enable checkbox to make image as a link"
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                            <subtitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Enter the Description Text"
+                                                name="./subtitle"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                <htmlRules jcr:primaryType="nt:unstructured">
+                                                    <blockHandling
+                                                        jcr:primaryType="nt:unstructured"
+                                                        removeSingleParagraphContainer="{Boolean}true"/>
+                                                </htmlRules>
+                                            </subtitle>
+                                            <arrowimage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Provide Image path for arrow Image"
+                                                name="./arrowimage"
+                                                required="{Boolean}true"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <linktext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Provide Link Text "
+                                                name="./linktext"
+                                                required="{Boolean}true"/>
+                                            <eshopicon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Provide Text for Eshop,Good-Life Icon"
+                                                name="./eshopicon"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <classtext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Class Name for a Div section"
+                                                name="./classtext"
+                                                required="{Boolean}true"/>
+                                            <linkfield
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Provide Link"
+                                                name="./linkfield"
+                                                required="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </teaserimage>
+                    <imageIconGroup
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Image Icon Group"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <iconmultifield
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Image Icon details">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./imageicondetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <imagetitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Title for Image Icon "
+                                                            name="./titleicon"/>
+                                                        <imageicon
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Enter a Image Icon Path"
+                                                            name="./iconimagepath"
+                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                        <imagelink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Enter an URL"
+                                                            name="./iconimagelink"/>
+                                                    </items>
+                                                </field>
+                                            </iconmultifield>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </imageIconGroup>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

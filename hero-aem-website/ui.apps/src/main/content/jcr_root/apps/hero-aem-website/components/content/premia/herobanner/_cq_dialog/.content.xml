@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Hero Banner Details"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.authoring.editor.hook]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <section_1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Bike Intro Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <biketitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Bike Title"
+                                                name="./bikeTitle"/>
+                                            <bikepromo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Promo Title"
+                                                name="./titlePromo"/>
+                                            <subText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Description"
+                                                name="./bikeDescription"/>
+                                            <audio
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Audio Path"
+                                                name="./audioPath"/>
+                                            <startEngine
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Start Engine Text"
+                                                name="./startEngine"/>
+                                            <stopEngine
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Stop Engine Text"
+                                                name="./stopEngine"/>
+                                            <bgvideo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Background Video"
+                                                name="./bgVideo"
+                                                required="{Boolean}true"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <bgvideoMobile
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Background Mobile Video"
+                                                name="./bgVideoMobile"
+                                                required="{Boolean}true"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <buttonLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Button Label"
+                                                name="./buttonLabel"/>
+                                            <buttonLink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Button Link"
+                                                name="./buttonLink"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </section_1>
+                    <section_2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Overview Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <bikedetails
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Bike Details">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./bikeDetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <logo_1
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            fieldLabel="Logo - 1"
+                                                            fileNameParameter="./img_1"
+                                                            fileReferenceParameter="./logoimg_1"
+                                                            mimeTypes="[image/gif,image/jpeg,image/png,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./logo_1"
+                                                            title="Upload Image Asset"
+                                                            useHTML5="{Boolean}true"/>
+                                                        <description_1
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Description - 1"
+                                                            name="./description_1"/>
+                                                        <logo_2
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            fieldLabel="Logo - 2"
+                                                            fileNameParameter="./img_2"
+                                                            fileReferenceParameter="./logoimg_2"
+                                                            mimeTypes="[image/gif,image/jpeg,image/png,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./logo_2"
+                                                            title="Upload Image Asset"
+                                                            useHTML5="{Boolean}true"/>
+                                                        <description_2
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Description - 2"
+                                                            name="./description_2"/>
+                                                        <logo_3
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            fieldLabel="Logo - 3"
+                                                            fileNameParameter="./img_3"
+                                                            fileReferenceParameter="./logoimg_3"
+                                                            mimeTypes="[image/gif,image/jpeg,image/png,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./logo_3"
+                                                            title="Upload Image Asset"
+                                                            useHTML5="{Boolean}true"/>
+                                                        <description_3
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Description - 3"
+                                                            name="./description_3"/>
+                                                    </items>
+                                                </field>
+                                            </bikedetails>
+                                            <overviewTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Overview Title"
+                                                name="./ovTitle"/>
+                                            <text_1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Text - 1"
+                                                name="./text_1"/>
+                                            <text_2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Text - 2"
+                                                name="./text_2"/>
+                                            <text_3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Text - 3"
+                                                name="./text_3"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </section_2>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

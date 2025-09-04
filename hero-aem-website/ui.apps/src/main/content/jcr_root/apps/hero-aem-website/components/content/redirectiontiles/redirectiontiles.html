@@ -1,0 +1,35 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+	format=[component.title], i18n} </sly>
+
+<sly data-sly-list.redirectMultifield="${resource.getChildren}">
+	<sly data-sly-test="${redirectMultifield.name == 'redirectiontile'}">
+		<section id="redirection-tiles">
+			<div class="redirection-container">
+				<div class="tiles--wrapper">
+					<sly data-sly-list.tile="${redirectMultifield.getChildren}">
+						<div class="tile-cmp">
+							<div class="tile-img position-relative">
+								<img src="${tile.bannerimage}" alt="tilebanner">
+								<div class="slide-header position-absolute">
+									${tile.tileheading @ context='html'}
+								</div>
+							</div>
+							<sly data-sly-list.intile="${tile.getChildren}">
+								<sly data-sly-test="${intile.name=='multitiles'}">
+									<div class="tile-content">
+										<ul data-sly-list.intileurls="${intile.getChildren}">
+											<li>
+												<a aa-data-attr="track_cta" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=intileurls.redirecturl}"
+												href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}">${intileurls.redirectiontitle @ context='html'}</a>
+											</li>
+										</ul>
+									</div>
+								</sly>
+							</sly>
+						</div>
+					</sly>
+				</div>
+			</div>
+		</section>
+	</sly>
+</sly>

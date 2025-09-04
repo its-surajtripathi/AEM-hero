@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Author Feature Carousel Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-author_editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <multifieldwithmap
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Multifield With Map"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                fieldLabel="Hero Details">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <variant
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        class="cq-dialog-dropdown-showhide"
+                                        cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                                        fieldDescription="Select Tab Variant."
+                                        fieldLabel="Variant"
+                                        name="./featurevariant">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Default"
+                                                value="default"/>
+                                        </items>
+                                    </variant>
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container"
+                                        class="show-hide-textfield"
+                                        showhidetargetvalue="default">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <carouselDetails
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Carousel Details"
+                                                fieldLabel="Carousel Details"
+                                                required="{Boolean}false">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    emptyText="Hero Carousel Details"
+                                                    name="./carouseldetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <carouselconfigs
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Carousel Items"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <carouselText
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                            fieldLabel="Carousel Text"
+                                                                            name="./carouselText"
+                                                                            useFixedInlineToolbar="{Boolean}true">
+                                                                            <rtePlugins
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                            <uiSettings
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                            <htmlRules jcr:primaryType="nt:unstructured">
+                                                                                <blockHandling
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    removeSingleParagraphContainer="{Boolean}true"/>
+                                                                            </htmlRules>
+                                                                        </carouselText>
+                                                                        <carouselImage
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="Carousel Image"
+                                                                            name="./carouselImage"
+                                                                            rootPath="/content/dam"/>
+                                                                    </items>
+                                                                </carouselconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </carouselDetails>
+                                        </items>
+                                    </default>
+                                    <hovervideos
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container"
+                                        class="show-hide-textfield"
+                                        showhidetargetvalue="hovervideo">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <featureHeading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Feature Section Heading"
+                                                name="./videofeatureHeading"/>
+                                            <vidfeatureDetails
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Video Features Details"
+                                                fieldLabel="Video Feature Details"
+                                                required="{Boolean}false">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    emptyText="Hover Video Feature Details"
+                                                    name="./hovervideodetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <carouselconfigs
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Video Hover Items"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <thumbnailText
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                            fieldLabel="Thumbnail Text"
+                                                                            name="./featurethumbnailText"
+                                                                            useFixedInlineToolbar="{Boolean}true">
+                                                                            <rtePlugins
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                            <uiSettings
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                            <htmlRules jcr:primaryType="nt:unstructured">
+                                                                                <blockHandling
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    removeSingleParagraphContainer="{Boolean}true"/>
+                                                                            </htmlRules>
+                                                                        </thumbnailText>
+                                                                        <alignthumb
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                            fieldDescription="Align Thumbnail Text"
+                                                                            fieldLabel="Thumbnail text alignment"
+                                                                            name="./alignthumbnail">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <topleft
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="Top Left"
+                                                                                    value="top-left"/>
+                                                                                <bottomleft
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="Bottom Left"
+                                                                                    value="bottom-left"/>
+                                                                                <largebottomleft
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="Large overlay Bottom Left"
+                                                                                    value="top-left adj-width bottom-mob"/>
+                                                                                <largetopright
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="Large overlay Top Right"
+                                                                                    value="top-right adj-width-align-right"/>
+                                                                            </items>
+                                                                        </alignthumb>
+                                                                        <thumbnailimg
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="Feature Thumbnail Image"
+                                                                            name="./featurethumbnailImg"
+                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                        <hovertitle
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                            fieldLabel="On Hover Title"
+                                                                            name="./featurehovertitle"
+                                                                            useFixedInlineToolbar="{Boolean}true">
+                                                                            <rtePlugins
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                            <uiSettings
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                            <htmlRules jcr:primaryType="nt:unstructured">
+                                                                                <blockHandling
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    removeSingleParagraphContainer="{Boolean}true"/>
+                                                                            </htmlRules>
+                                                                        </hovertitle>
+                                                                        <hovertext
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                            fieldLabel="On Hover Text"
+                                                                            name="./featurehovertext"
+                                                                            useFixedInlineToolbar="{Boolean}true">
+                                                                            <rtePlugins
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                            <uiSettings
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                            <htmlRules jcr:primaryType="nt:unstructured">
+                                                                                <blockHandling
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    removeSingleParagraphContainer="{Boolean}true"/>
+                                                                            </htmlRules>
+                                                                        </hovertext>
+                                                                        <aligntext
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                            fieldDescription="Align On Hover Text"
+                                                                            fieldLabel="On Hover text alignment"
+                                                                            name="./alignhovertext">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <left
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="Left"
+                                                                                    value="flex-row-reverse"/>
+                                                                                <right
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="Right"
+                                                                                    value="flex-row"/>
+                                                                                <bottom
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="Bottom"
+                                                                                    value="flex-column"/>
+                                                                            </items>
+                                                                        </aligntext>
+                                                                        <hovervideo
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                            fieldLabel="Feature on hover Gif or Image path"
+                                                                            name="./featurehovervideo"
+                                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                                    </items>
+                                                                </carouselconfigs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </vidfeatureDetails>
+                                        </items>
+                                    </hovervideos>
+                                </items>
+                            </well>
+                        </items>
+                    </multifieldwithmap>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,41 @@
+<sly data-sly-test="${(wcmmode.edit || wcmmode.design) && !listUse }" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>
+<section id="${properties.socialfeedID}" class="xtracks-social">
+  <picture class="bg-img position-absolute">
+      <img src="${properties.socialfeedBGImg}" alt="social-feed-bg-img">
+  </picture>
+  <div class="lg-container">
+      <div class="row align-items-center">
+          <div class="col-lg-auto">
+              <div class="social-heading">
+                  <h3>
+                    ${properties.socialfeedTitle}
+                  </h3>
+              </div>
+          </div>
+          <div class="col-lg" style="overflow: hidden;">
+            <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='socialfeedmulti'}">
+              <div data-sly-list="${listUse}" class="slider--wrap">
+                  <div class="item">
+                      <a href="${item.properties.socialfeedUrl}" target="_blank">
+                          <div class="social-list ${item.properties.SFbgselect @ context='unsafe'} ${item.properties.SFbgselect == 'Red' ? 'bg-red' : (item.properties.SFbgselect == 'White' ? 'bg-white' : (item.properties.SFbgselect == 'Black' ? 'bg-black' : ''))}">
+                              <div class="sf-icon">
+                                  <img src="${item.properties.socialiconImg}" alt="social-media-icon">
+                              </div>
+                              <div class="social-img">
+                                  <img src="${item.properties.socialfeedImg}" alt="social-feed-img">
+                              </div>
+                              <div class="social-text">
+                                ${item.properties.socialfeedDesc @ context='html'}
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+            </sly>
+          </div>
+      </div>
+  </div>
+</section>
+<div class="xtrack-scrollToTop"></div>

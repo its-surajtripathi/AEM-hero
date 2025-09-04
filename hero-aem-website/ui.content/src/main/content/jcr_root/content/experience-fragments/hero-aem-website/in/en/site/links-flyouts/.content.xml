@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-07-25T22:38:45.529+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-08-10T05:38:24.311Z"
+        cq:lastReplicated_publish="{Date}2022-08-10T05:38:24.311Z"
+        cq:lastReplicatedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicatedBy_publish="kiran.jaganmohan@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[]"
+        cq:template="/libs/cq/experience-fragments/components/experiencefragment/template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="links-flyouts"
+        jcr:uuid="7abb5626-29fc-4e10-8047-b60b4930d484"
+        sling:resourceType="cq/experience-fragments/components/experiencefragment"/>
+    <master/>
+    <master1/>
+    <master2/>
+    <master3/>
+    <master5/>
+</jcr:root>

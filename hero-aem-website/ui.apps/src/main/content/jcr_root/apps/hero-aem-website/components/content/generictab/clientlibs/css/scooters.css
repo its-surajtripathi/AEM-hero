@@ -1,0 +1,288 @@
+.scooter-specifications .inner .content {
+  padding: 50px 40px;
+}
+.scooter-specifications .inner .content h2 {
+  font-size: var(--font-size48);
+  font-weight: var(--font-weight-900);
+  font-family: var(--font-tstar-heavy);
+}
+.scooter-specifications .inner .content h2 .text-danger {
+  color: var(--text-color-danger-red) !important;
+}
+.scooter-specifications .inner .content .sub-text {
+  font-size: var(--font-size18);
+  max-width: 480px;
+}
+.scooter-specifications .inner .content .specifications-list {
+  margin: 30px 0;
+}
+.scooter-specifications .inner .content .specifications-list li {
+  flex: 0 0 33%;
+  margin-bottom: 30px;
+  font-size: var(--font-size14);
+}
+.scooter-specifications .inner .content .specifications-list li h4 {
+  font-size: var(--font-size20);
+}
+.scooter-specifications .inner .content .specifications-list li .icon-box {
+  margin-right: 10px;
+}
+.scooter-specifications .inner .content .action {
+  position: relative;
+}
+.scooter-specifications .inner .content .action .share-btn {
+  cursor: pointer;
+}
+.scooter-specifications .inner .content .action .share-options {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 300ms ease-in;
+  visibility: hidden;
+  opacity: 0;
+}
+.scooter-specifications .inner .content .action .share-options.active {
+  opacity: 1;
+  visibility: visible;
+  top: -100%;
+  transition: all 300ms ease-in;
+}
+.scooter-specifications .inner .img-box {
+  flex: 0 0 45%;
+  max-width: 38%;
+  margin-bottom: -7px;
+}
+.scooter-specifications .inner .img-box img {
+  max-width: 100%;
+}
+.product-highlighted-features {
+  padding: 50px 0;
+}
+.product-highlighted-features .nav-tabs {
+  border-bottom: 0;
+  margin-bottom: 50px;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+.product-highlighted-features .nav-tabs .nav-item {
+  flex-grow: 1;
+}
+.product-highlighted-features .nav-tabs .nav-item .nav-link {
+  background-color: var(--text-color-white);
+  border-radius: 16px;
+  width: 100%;
+  display: flex;
+  font-weight: var(--font-weight-700);
+  text-align: left;
+  align-items: center;
+  color: var(--text-color-black);
+  white-space: nowrap;
+}
+.product-highlighted-features .nav-tabs .nav-item .nav-link .icon {
+  margin-right: 10px;
+}
+.product-highlighted-features .nav-tabs .nav-item .nav-link.active,
+.product-highlighted-features .nav-tabs .nav-item .nav-link:hover {
+  background: rgba(112, 169, 40, 0.4);
+  font-family: var(--font-tstar-heavy);
+  color: var(--text-color-black);
+}
+.product-highlighted-features .tab-inner {
+  display: flex;
+  align-items: center;
+}
+.product-highlighted-features .tab-inner .info-panel {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.product-highlighted-features .tab-inner .info-panel h4 {
+  font-size: var(--font-size28);
+}
+.product-highlighted-features .tab-inner .info-panel h2 {
+  font-size: var(--font-size52);
+  font-family: var(--font-tstar-heavy);
+  max-width: 400px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.product-highlighted-features .tab-inner .info-panel p {
+  font-size: var(--font-size24);
+  max-width: 500px;
+}
+.product-highlighted-features .tab-inner .img-panel {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.product-highlighted-features .tab-inner .img-panel img {
+  display: inline-block;
+  max-width: 320px;
+}
+@media (max-width: 991px) {
+  .scooter-specifications .inner .content {
+    padding: 50px 40px;
+  }
+  .scooter-specifications .inner .content h2 {
+    font-size: var(--font-size28);
+  }
+  .scooter-specifications .inner .content .sub-text {
+    font-size: var(--font-size16);
+  }
+  .scooter-specifications .inner .content .specifications-list {
+    margin: 50px 0;
+  }
+  .scooter-specifications .inner .content .specifications-list li {
+    flex: 0 0 49%;
+    margin-bottom: 30px;
+    font-size: var(--font-size14);
+  }
+  .scooter-specifications .inner .content .specifications-list li h4 {
+    font-size: var(--font-size16);
+  }
+  .product-highlighted-features {
+    padding: 50px 0;
+  }
+  .product-highlighted-features .tab-inner {
+    display: flex;
+    align-items: center;
+  }
+  .product-highlighted-features .tab-inner .info-panel {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .product-highlighted-features .tab-inner .info-panel h4 {
+    font-size: var(--font-size20);
+  }
+  .product-highlighted-features .tab-inner .info-panel h2 {
+    font-size: var(--font-size32);
+  }
+  .product-highlighted-features .tab-inner .info-panel p {
+    font-size: var(--font-size20);
+  }
+  .product-highlighted-features .tab-inner .img-panel {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+}
+@media (max-width: 767px) {
+    .scooter-specifications .inner .content .action {
+
+      display: flex !important;
+          justify-content: center;
+    }
+  .scooter-specifications .inner .content {
+    padding: 30px 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 2;
+  }
+  .scooter-specifications .inner .content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  .scooter-specifications .inner .content .sub-text {
+    font-size: var(--font-size14);
+    text-align: center;
+  }
+  .scooter-specifications .inner .content .specifications-list {
+    margin: 25px 0;
+  }
+  .scooter-specifications .inner .content .specifications-list li {
+    font-size: var(--font-size12);
+    align-items: flex-start !important;
+  }
+  .scooter-specifications .inner .content .specifications-list li h4 {
+    font-size: var(--font-size18);
+  }
+  .scooter-specifications .inner .content .specifications-list li .icon-box {
+    margin-right: 10px;
+  }
+  .scooter-specifications .inner .content .specifications-list li .icon-box img {
+    max-width: 30px;
+  }
+  .scooter-specifications .inner .action .share-btn img {
+    max-width: 34px;
+  }
+  .scooter-specifications .inner .img-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 1;
+  }
+  .scooter-specifications .inner .img-box img {
+    width: 100%;
+  }
+  .product-highlighted-features {
+    padding: 50px 0;
+  }
+  .product-highlighted-features .nav-tabs {
+    margin-bottom: 25px;
+  }
+  .product-highlighted-features .nav-tabs .nav-item {
+    flex-grow: 1;
+  }
+  .product-highlighted-features .nav-tabs .nav-item .nav-link {
+    font-size: var(--font-size14);
+  }
+  .product-highlighted-features .nav-tabs .nav-item .nav-link .icon {
+    margin-right: 10px;
+  }
+  .product-highlighted-features .nav-tabs .nav-item .nav-link .icon img {
+    max-width: 40px;
+  }
+  .product-highlighted-features .nav-tabs .nav-item .nav-link.active,
+  .product-highlighted-features .nav-tabs .nav-item .nav-link:hover {
+    background: rgba(112, 169, 40, 0.4);
+    font-family: var(--font-tstar-heavy);
+    color: var(--text-color-black);
+  }
+  .product-highlighted-features .tab-inner {
+    flex-wrap: wrap;
+  }
+  .product-highlighted-features .tab-inner .info-panel {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .product-highlighted-features .tab-inner .info-panel h4 {
+    font-size: var(--font-size18);
+    margin-bottom: 15px;
+  }
+  .product-highlighted-features .tab-inner .info-panel h2 {
+    font-size: var(--font-size28);
+  }
+  .product-highlighted-features .tab-inner .info-panel p {
+    font-size: var(--font-size16);
+  }
+  .product-highlighted-features .tab-inner .img-panel {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .product-highlighted-features .tab-inner .img-panel img {
+    max-width: 250px;
+  }
+}
+@media (max-width: 576px) {
+  .product-highlighted-features {
+    padding: 50px 0 10px;
+  }
+  .product-highlighted-features .tab-inner {
+    flex-wrap: wrap;
+  }
+  .product-highlighted-features .tab-inner .info-panel h4 {
+    font-size: var(--font-size16);
+  }
+  .product-highlighted-features .tab-inner .info-panel h2 {
+    font-size: var(--font-size28);
+  }
+  .product-highlighted-features .tab-inner .info-panel p {
+    font-size: var(--font-size14);
+  }
+  .product-highlighted-features .tab-inner .img-panel img {
+    max-width: 200px;
+  }
+}

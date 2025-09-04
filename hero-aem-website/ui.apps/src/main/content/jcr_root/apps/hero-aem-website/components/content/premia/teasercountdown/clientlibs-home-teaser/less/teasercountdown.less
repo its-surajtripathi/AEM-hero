@@ -1,0 +1,451 @@
+.countdown-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-black);
+  padding-top: 94px !important;
+  position: relative;
+
+  @media screen and (max-width: 1440px) {
+    padding-top: 32px !important;
+  }
+
+  .countdown-banner-container {
+    width: 100%;
+    position: relative;
+
+    .countdown-banner-header-logo-container {
+      margin: 0 auto 56px;
+      width: 25%;
+
+      @media screen and (max-width: 1280px) {
+        margin-bottom: 48px;
+      }
+      @media screen and (max-width: 1440px) {
+        margin: 0 auto 30px;
+      }
+    }
+
+    .countdown-banner-header {
+      display: flex;
+      justify-content: center;
+
+      p {
+        span {
+          color: var(--color-trinidad);
+        }
+      }
+    }
+
+    .countdown-banner-timer-content {
+      display: flex;
+      justify-content: center;
+      gap: 134px;
+      margin: 80px auto 96px;
+
+      @media screen and (max-width: 1440px) {
+        // margin: 32px auto 56px;
+        margin: 20px auto 35px;
+      }
+    }
+  }
+
+  .countdown-banner-image-content {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+
+    @media screen and (max-width: 767px) {
+      bottom: 0;
+    }
+
+    .scroll-down-image-container {
+      .streaming-modal {
+        display: flex;
+        justify-content: center;
+
+        .streaming-modal-fade-container {
+          z-index: 3;
+          display: none;
+          position: fixed;
+          left: 0;
+          top: 10%;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: var(--bg-dusty-gray-1);
+          backdrop-filter: blur(10px);
+
+          .streaming-modal-container {
+            margin: auto;
+            background: var(--bg-color-black);
+            position: relative;
+            outline: 0;
+            width: 76%;
+
+            .streaming-modal-close {
+              display: flex;
+              width: 100%;
+              justify-content: end;
+              cursor: pointer;
+
+              .streaming-modal-close-container {
+                width: 3%;
+              }
+            }
+          }
+        }
+      }
+
+      .countdown-streaming-link {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        a,
+        .play-button {
+          width: 75px;
+          height: 75px;
+          @media screen and (max-width: 1440px) {
+            width: 64px;
+            height: 64px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .watch-live-text {
+          background: var(--teaser-count-down-danner-scroll-down-text);
+          font-size: var(--font-size-18);
+          font-family: var(--font-sans-regular);
+          line-height: var(--line-height-16);
+          letter-spacing: var(--letter-spacing-1);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          @media screen and (max-width: 1440px) {
+            font-size: var(--font-size-18);
+          }
+        }
+      }
+
+      .scroll-down-invite-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .streaming-invite-description {
+          line-height: var(--line-height-24);
+          font-family: var(--font-sans-regular);
+          font-size: var(--font-size-14);
+          color: var(--color-dusty-gray-2);
+          font-weight: var(--font-weight-400);
+          text-align: center;
+        }
+
+        .scroll-down-image {
+          width: 36px;
+          height: 36px;
+          cursor: pointer;
+        }
+
+        .scroll-down-text {
+          background: var(--teaser-count-down-danner-scroll-down-text);
+          font-size: var(--font-size-13);
+          font-family: var(--font-sans-regular);
+          line-height: var(--line-height-16);
+          letter-spacing: var(--letter-spacing-2);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+
+  .streaming-modal {
+    background: linear-gradient(180deg, #101010 0%, #040404 100%);
+    width: 75%;
+    padding: 30px;
+    max-height: 870px;
+    position: relative;
+    display: none;
+    z-index: 1;
+
+    @media screen and (max-width: 767px) {
+      padding: 16px 0;
+    }
+
+    @media screen and (max-width: 1440px) {
+      margin-top: 25px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 60vh;
+
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        height: 48vh;
+      }
+
+      @media screen and (max-width: 767px) {
+        height: auto;
+      }
+    }
+
+    .streaming-modal-close {
+      cursor: pointer;
+      position: absolute;
+      top: -50px;
+      right: 0;
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  .lottie-background-image {
+    width: 100%;
+    min-height: 500px;
+    margin-top: -3%;
+  }
+
+  // Styling for banner timer
+  .transition {
+    -webkit-transition: top 400ms linear;
+    -moz-transition: top 400ms linear;
+    -ms-transition: top 400ms linear;
+    -o-transition: top 400ms linear;
+    transition: top 400ms linear;
+  }
+
+  .timeTo {
+    font-family: var(--font-transducer);
+    line-height: 108%;
+    font-weight: var(--font-weight-700);
+
+    figure:first-child {
+      width: auto !important;
+    }
+
+    figure {
+      div {
+        ul {
+          left: -2px !important;
+        }
+      }
+    }
+
+    figure,
+    figcaption {
+      display: block;
+    }
+
+    span {
+      display: none;
+    }
+
+    figure {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+
+      div {
+        width: 96px !important;
+        margin-right: 0 !important;
+      }
+    }
+
+    figcaption {
+      padding-right: 14px !important;
+      text-align: center;
+      font-family: var(--font-transducer);
+      color: var(--color-boulder);
+      font-size: var(--font-size-32) !important;
+      font-weight: var(--font-weight-400);
+      line-height: var(--line-height-38);
+      font-style: var(--font-style-italic);
+    }
+
+    div {
+      position: relative;
+      display: inline-block;
+      width: 25px;
+      height: 30px;
+      overflow: hidden;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      left: 3px;
+      width: 100%;
+
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background: var(--teaser-count-down-banner-timer-gradient);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: var(--font-transducer);
+        font-style: var(--font-style-italic);
+        font-weight: var(--font-weight-600);
+      }
+    }
+  }
+
+  &.live-streaming-enabled {
+    position: relative;
+
+    .countdown-banner-image-content,
+    .countdown-banner-container {
+      display: none !important;
+    }
+
+    .streaming-modal {
+      display: block;
+    }
+
+    .lottie-background-image {
+      position: absolute;
+      bottom: -25%;
+      filter: blur(5px);
+    }
+
+    .cmp-embed__youtube {
+      padding-bottom: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .countdown-banner {
+    padding: 50px 0 !important;
+
+    .countdown-banner-container {
+      position: static;
+      .countdown-banner-header-logo-container {
+        margin-bottom: 24px;
+      }
+
+      .countdown-banner-header {
+        .timer-count-down-teaser-header {
+          font-size: var(--font-size-12) !important;
+          letter-spacing: var(--letter-spacing-1-2) !important;
+          line-height: var(--line-height-14) !important;
+        }
+      }
+
+      .countdown-banner-timer-content {
+        gap: 5%;
+        max-height: 60px;
+        font-size: var(--font-size-36) !important;
+        margin-top: 10px !important;
+        margin-bottom: 44px !important;
+      }
+    }
+
+    .countdown-banner-image-content {
+      .scroll-down-image-container {
+        .countdown-streaming-link {
+          a {
+            padding: 8px !important;
+            width: 46px;
+            height: 46px;
+          }
+
+          .watch-live-text {
+            font-size: var(--font-size-13);
+            letter-spacing: var(--letter-spacing-0-7);
+            font-family: var(--font-transducer);
+          }
+        }
+
+        .scroll-down-invite-section {
+          display: none;
+        }
+      }
+    }
+
+    .lottie-background-image {
+      min-height: 200px;
+      margin-top: 0% !important;
+    }
+
+    .timeTo {
+      figure {
+        div {
+          height: 36px !important;
+          width: 30px !important;
+          margin-right: 0 !important;
+        }
+      }
+
+      figcaption {
+        font-size: var(--font-size-12) !important;
+        max-width: 80%;
+        line-height: var(--line-height-14) !important;
+        padding-right: 0px !important;
+      }
+
+      ul {
+        top: -38px !important;
+
+        li {
+          font-size: var(--font-size-36);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  .countdown-banner {
+    .countdown-banner-container {
+      .timer-count-down-teaser-header {
+        font-size: var(--font-size-16);
+        letter-spacing: var(--letter-spacing-6);
+      }
+      .countdown-banner-timer-content {
+        gap: 102px;
+        font-size: var(--font-size-90) !important;
+      }
+      .countdown-banner-image-content {
+        .scroll-down-invite-section {
+          .scroll-down-text {
+            font-size: var(--font-size-10);
+          }
+        }
+      }
+    }
+    .timeTo {
+      figcaption {
+        font-size: var(--font-size-20) !important;
+      }
+      figure {
+        div {
+          height: 98px !important;
+          width: 72px !important;
+        }
+      }
+      ul {
+        top: -89px !important;
+      }
+    }
+  }
+}

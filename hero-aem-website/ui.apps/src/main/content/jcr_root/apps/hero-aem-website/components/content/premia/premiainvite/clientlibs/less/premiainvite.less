@@ -1,0 +1,754 @@
+.premia-invite {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .pr-76 {
+      padding-right: 20px;
+    }
+    .pl-70 {
+      padding-left: 30px;
+    }
+  }
+  // background-color: var(--bg-color-chinese-black);
+  @media screen and (max-width: 767px) {
+    padding: 204px 0 !important;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 60px 0 !important;
+  }
+  &.black-background {
+    background-color: var(--bg-color-black2);
+    .premia-invite-container {
+      visibility: hidden;
+    }
+  }
+
+  .premia-invitation-form {
+    .heading {
+      margin-bottom: 8px;
+    }
+    .form-desc-text {
+      font-size: var(--font-size-10);
+      margin-bottom: 16px;
+      font-family: var(--font-optika-regular);
+      line-height: var(--line-height-12);
+      // color: var(--color-gray);
+      color: #5F5F5F;
+      @media screen and (min-width: 768px) {
+        font-size: var(--font-size-16);
+        margin-bottom: 46px;
+        line-height: normal;
+      }
+    }
+  }
+
+  .premia-invite-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .scroll-down {
+      cursor: pointer;
+      width: 20px;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    .premia-invite-header {
+      font-family: var(--font-transducer);
+      font-style: var(--font-style-italic);
+      font-weight: var(--font-weight-600);
+      font-size: var(--font-size-120);
+      line-height: var(--line-height-108);
+      background: var(--teaser-premia-invite);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      span {
+        display: block;
+      }
+      @media screen and (min-width: 768px) {
+        width: 999px;
+      }
+      @media (max-device-width: 1440px) and (min-width: 768px) {
+        font-size: 96px;
+      }
+    }
+    .premia-invite-header-body {
+      color: var(--color-white);
+      text-align: center;
+      font-size: var(--font-size-18);
+      font-family: var(--font-sans-regular);
+      line-height: var(--line-height-22);
+      opacity: 0.6;
+      max-width: 50%;
+      @media screen and (min-width: 768px) {
+        width: 519px;
+      }
+      @media (max-device-width: 1440px) and (min-width: 768px) {
+        font-size: var(--font-size-16);
+      }
+    }
+    .premia-invite-image-wrapper {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      // opacity: 0;
+
+      .premia-invite-image-wrapper-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .premia-invite-image-container {
+          transform: rotate(-2.584deg);
+          width: 463px;
+        }
+      }
+      @keyframes slide-in-bottom {
+        from {
+          transform: translateY(150px);
+          opacity: 0;
+        }       
+        to{
+          transform: translateY(-42px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .premia-invite-circle {
+    position: absolute;
+    transform: rotate(2.726deg);
+    flex-shrink: 0;
+    min-width: 198px;
+    min-height: 198px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    top: 72px;
+    cursor: pointer;
+    animation: fadeIn 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  @keyframes fadeIn {
+    from{
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .premia-invite-circle-text {
+    position: absolute;
+    background: var(--teaser-invite-anchor);
+    transform: rotate(2.73deg);
+    border-radius: 50%;
+    text-align: center;
+    min-width: 146px;
+    min-height: 146px;
+    background-size: cover;
+    border-radius: 50%;
+    filter: contrast(1.5);
+
+    .premia-invite-invitaion {
+      display: block;
+      font-family: var(--font-sans-regular);
+      font-weight: var(--font-weight-800);
+      font-size: var(--font-size-28);
+      line-height: var(--line-height-39);
+      background: var(--teaser-premia-invite-btn);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: rotate(2.73deg);
+      cursor: pointer;
+      margin-top: -5px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: -15px;
+      }
+
+      span {
+        text-transform: uppercase;
+      }
+    }
+    .premia-invite-get-your-label {
+      font-family: var(--font-transducer);
+      font-weight: var(--font-weight-400);
+      font-size: var(--font-size-12);
+      line-height: var(--line-height-14);
+      color: var(--color-Jet);
+      transform: rotate(2.73deg);
+      text-decoration: none;
+    }
+  }
+  .premia-invite-circle-circle-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-sans-regular);
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-8);
+    line-height: var(--line-height-11);
+    color: var(--color-white);
+    letter-spacing: var(--letter-spacing-3);
+    word-spacing: var(--word-spacing-3);
+    width: 100%;
+    height: 100%;
+
+    span {
+      position: absolute;
+      left: 50%;
+      transform-origin: 0 100px;
+      font-size: var(--font-size-8);
+    }
+  }
+  .premia-invite-scrolling-animation-anti-clock {
+    animation: rotatetextanticlock 30s linear infinite;
+  }
+  .premia-invite-scrolling-animation {
+    animation: rotatetextclock 30s linear infinite;
+  }
+  @keyframes rotatetextclock {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes rotatetextanticlock {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  .form-button-container {
+    background-color: var(--bg-color-black2);
+    display: flex;
+    justify-content: flex-end;
+    .btn-submit {
+      width: 311px;
+      height: 71px;
+      background-color: var(--color-alizarin-crimson);
+      text-align: center;
+      font-size: var(--font-size-18);
+      font-family: var(--font-transducer);
+      font-weight: var(--font-weight-500);
+      letter-spacing: var(--letter-spacing-1-08);
+      text-transform: uppercase;
+      color: var(--color-white);
+      border: none;
+      position: relative;
+      padding-left: 5%;
+      &.disabled {
+        color: var(--color-quill-gray);
+        cursor: not-allowed;
+      }
+      &.active {
+        cursor: pointer;
+      }
+      &::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border: 36px solid transparent;
+        border-bottom-color: var(--bg-color-black2);
+        border-left-color: var(--bg-color-black2);
+        content: "";
+      }
+    }
+  }
+  .invite-modal {
+    display: flex;
+    justify-content: center;
+    .invite-modal-fade-container {
+      z-index: 3;
+      display: none;
+      position: fixed;
+      width: max-content;
+      height: auto;
+      overflow: hidden;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: max-content;
+      .invite-modal-container {
+        margin: auto;
+        background-color: var(--color-white);
+        position: relative;
+        outline: 0;
+        width: 100%;
+        background-color: var(--color-white);
+        .invite-modal-close {
+          display: flex;
+          width: 100%;
+          justify-content: end;
+          cursor: pointer;
+          .invite-modal-close-container {
+            width: 48px;
+          }
+        }
+      }
+      @media screen and (max-device-width: 1023px) {
+        width: 95%;
+      }
+    }
+  }
+  .unreveal-envelope {
+    @media screen and (min-width: 768px) {
+      transform: translateY(150px);
+    }
+  }
+  .reveal-envelope {
+    @media screen and (min-width: 768px) {
+      animation: slide-in-bottom 1.8s ease-out forwards;
+    }
+  }
+}
+.premia-invitation-form {
+  .premia-invisible {
+    visibility: hidden;
+  }
+  .error-message {
+    font-family: var(--font-optika-regular);
+    color: var(--color-boulder);
+    font-size: var(--font-size-12);
+    display: flex;
+    justify-content: end;
+    margin-top: 9px;
+  }
+  .heading {
+    color: var(--color-black);
+    font-size: var(--font-size-34);
+    font-family: var(--font-transducer);
+    font-weight: var(--font-weight-500);
+  }
+  .otp-timer {
+    color: var(--color-boulder);
+    text-align: right;
+    font-size: var(--font-size-14);
+    font-family: var(--font-optika-regular);
+    line-height: var(--line-height-22);
+    letter-spacing: var(--letter-spacing-2-8);
+  }
+  .premia-contactno-wrapper {
+    position: relative;
+    @media screen and (min-width: 1024px) {
+      min-width: 360px;
+    }
+    .countrycode {
+      position: absolute;
+      top: 4%;
+      color: var(--color-granite-gray);
+      font-size: var(--font-size-24);
+      font-family: var(--font-transducer);
+      letter-spacing: var(--letter-spacing-0);
+    }
+    .mobilenumber-box {
+      text-indent: 50px;
+    }
+    a {
+      position: absolute;
+      right: 0;
+      top: 12px;
+      min-width: max-content;
+      font-size: var(--font-size-14);
+      font-family: var(--font-optika-regular);
+      line-height: var(--line-height-23);
+      letter-spacing: var(--letter-spacing-2);
+      text-transform: uppercase;
+      text-decoration: none;
+      &.disabled {
+        color: var(--color-quill-gray);
+        cursor: not-allowed;
+      }
+      &.active {
+        color: var(--color-alizarin-crimson);
+        cursor: pointer;
+      }
+    }
+  }
+  .premia-row {
+    display: flex;
+  }
+  .premia-col-6 {
+    width: 50%;
+    float: left;
+  }
+  .premia-form-group {
+    label {
+      color: var(--color-black);
+      font-size: var(--font-size-14);
+      font-family: var(--font-optika-regular);
+      line-height: var(--line-height-23);
+      letter-spacing: var(--letter-spacing-2);
+      text-transform: uppercase;
+      &.disabled {
+        color: var(--color-quill-gray);
+      }
+    }
+    .premia-form-control {
+      color: var(--color-black);
+      font-size: var(--font-size-24);
+      font-family: var(--font-transducer);
+      letter-spacing: var(--letter-spacing-0);
+      display: block;
+      width: 100%;
+      border-style: solid;
+      border-width: 0 0 1px 0;
+      border-image-slice: 1;
+      &:focus {
+        outline: none;
+      }
+    }
+    .otp-container {
+      display: flex;
+      align-items: center;
+      .tick {
+        @media screen and (min-width: 768px) {
+          position: absolute;
+          right: 59px;
+        }
+      }
+
+      input {
+        border-color: var(--color-black);
+      }
+
+      &.disable-input input {
+        cursor: default;
+        border-color: var(--color-quill-gray);
+        pointer-events: none;
+      }
+    }
+    .otpbox {
+      border-width: 1px;
+      width: 45px;
+      height: 45px;
+      text-align: center;
+      margin-right: 7px;
+      &:focus {
+        border: 1px solid var(--color-alizarin-crimson);
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media screen and (max-width: 374px) {
+        width: 32px !important;
+        height: 32px !important;
+      }
+    }
+  }
+}
+
+.premia-invite-success-container {
+  max-width: 100%;
+  margin-top: 150px;
+}
+
+/* SM & XS Devices Start  */
+
+@media (max-device-width: 767px) and (min-width: 320px) {
+  .m-invisible {
+    display: none;
+  }
+  .premia-invitation-form {
+    .premia-invisible {
+      visibility: visible;
+    }
+    .heading {
+      font-size: var(--font-size-20);
+    }
+    .premia-contactno-wrapper {
+      position: relative;
+      .countrycode {
+        font-size: var(--font-size-14);
+        letter-spacing: var(--letter-spacing-0-56);
+      }
+      .mobilenumber-box {
+        text-indent: 50px;
+      }
+      a {
+        font-size: var(--font-size-10);
+        letter-spacing: var(--letter-spacing-2);
+        top: 3px;
+      }
+    }
+    .premia-row {
+      flex-direction: column;
+    }
+    .premia-col-6 {
+      width: 100%;
+      float: none;
+    }
+    .premia-form-group {
+      label {
+        font-size: var(--font-size-10);
+      }
+      .premia-form-control {
+        font-size: var(--font-size-14);
+        letter-spacing: var(--letter-spacing-0-56);
+      }
+      .otpbox {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .premia-invite {
+    .premia-invite-container {
+      .premia-invite-header {
+        text-align: center;
+        font-size: var(--font-size-36);
+        line-height: var(--line-height-36);
+      }
+      .premia-invite-header-body {
+        font-size: var(--font-size-12);
+        line-height: var(--line-height-14);
+      }
+      .premia-invite-image-wrapper {
+        // top: 60px;
+        margin-top: 40px;
+        .premia-invite-image-wrapper-container {
+          .premia-invite-image-container {
+            transform: rotate(3deg);
+            width: 80%;
+          }
+        }
+      }
+    }
+    .premia-invite-circle {
+      // left: 20%;
+      top: 20px;
+      box-shadow: none;
+      transform: rotate(360deg);
+    }
+    .premia-invite-circle-text {
+      min-width: 72px;
+      max-width: 72px;
+      min-height: 72px;
+      max-height: 72px;
+      transform: rotate(360deg);
+      .premia-invite-invitaion {
+        font-size: var(--font-size-14);
+        cursor: pointer;
+        text-transform: uppercase;
+        transform: rotate(360deg);
+      }
+      .premia-invite-get-your-label {
+        font-size: var(--font-size-6);
+        transform: rotate(360deg);
+        padding: 20px 10px;
+      }
+    }
+    .premia-invite-circle-circle-text {
+      font-size: var(--font-size-4);
+      p {
+        span {
+          transform-origin: 0 65px;
+          top: 17%;
+          font-size: var(--font-size-4);
+        }
+      }
+    }
+    .invite-modal {
+      display: flex;
+      justify-content: center;
+      .invite-modal-fade-container {
+        .invite-modal-container {
+          .invite-modal-close {
+            display: flex;
+            width: 100%;
+            justify-content: end;
+            cursor: pointer;
+            .invite-modal-close-container {
+              width: 24px;
+            }
+          }
+        }
+      }
+    }
+    .form-button-container {
+      .btn-submit {
+        width: 163px;
+        height: 37px;
+        font-size: var(--font-size-10);
+        letter-spacing: var(--letter-spacing-0-6);
+        &::before {
+          border: 19px solid transparent;
+          border-bottom-color: var(--bg-color-black2);
+          border-left-color: var(--bg-color-black2);
+        }
+      }
+    }
+  }
+}
+
+// Launch event info section styles starts
+.launch-event-info-container {
+  background-color: var(--bg-color-black2);
+  padding: 169px 0 350px;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+
+  &.animate-content {
+    .launch-event-text-wrapper .text-style {
+      transform: scale(1);
+      transition: all 2s;
+    }
+
+    .separator-line,
+    .time {
+      animation: showText 0s 5s forwards;
+    }
+
+    .image-wrapper {
+      animation: fadeInBottom 1.5s linear 2s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes showText {
+      to {
+        visibility: visible;
+      }
+    }
+
+    @keyframes fadeInBottom {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 150px 0 166px;
+  }
+
+  .launch-event-text-wrapper {
+    text-align: center;
+    font-family: var(--font-transducer);
+    position: relative;
+    z-index: 1;
+
+    .text-style {
+      color: var(--color-white);
+      font-size: var(--font-size-24);
+      letter-spacing: var(--letter-spacing-9-6);
+      margin-bottom: 12px;
+      transform: scale(0.8);
+      text-transform: uppercase;
+
+      @media screen and (max-width: 1023px) {
+        font-size: var(--font-size-12);
+        margin-bottom: 30px;
+      }
+    }
+    .month,
+    .time {
+      font-size: var(--font-size-120);
+      font-style: var(--font-style-italic);
+      font-weight: var(--font-weight-600);
+      background: -webkit-linear-gradient(
+        var(--color-white),
+        var(--color-gray)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media screen and (max-width: 1023px) {
+        font-size: var(--font-size-51);
+      }
+
+      .date {
+        color: var(--color-trinidad);
+        -webkit-text-fill-color: var(--color-trinidad);
+      }
+    }
+
+    .time {
+      visibility: hidden;
+      font-size: var(--font-size-40);
+      @media screen and (max-width: 1023px) {
+        font-size: var(--font-size-18);
+        margin-top: 15px;
+      }
+      span {
+        font-size: var(--font-size-18);
+      }
+    }
+
+    .separator-line {
+      width: 102px;
+      height: 1px;
+      background-color: var(--bg-color-trinidad);
+      margin: 52px auto 0;
+      visibility: hidden;
+
+      @media screen and (max-width: 1023px) {
+        margin-top: 22px;
+      }
+    }
+
+    .bike-logo {
+      width: 320px;
+      margin: 0 auto 100px;
+      @media screen and (max-width: 1023px) {
+        width: 160.5px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .bike-description {
+      max-width: 574px;
+      margin: 0 auto 20px;
+      @media screen and (max-width: 1023px) {
+        font-size: var(--font-size-10);
+        letter-spacing: var(--letter-spacing-3-98);
+      }
+    }
+  }
+
+  .image-wrapper {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  .countdown-invite-text {
+    opacity: 0.5;
+    font-size: var(--font-size-24);
+    font-family: var(--font-transducer);
+    letter-spacing: var(--letter-spacing-9-6);
+    color: var(--color-white);
+    line-height: var(--line-height-39);
+    margin-top: 90px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 50px;
+      font-size: var(--font-size-10);
+      letter-spacing: var(--letter-spacing-3-98);
+      line-height: var(--line-height-16);
+    }
+  }
+}
+
+// Launch event info section styles ends
+
+// for changing default browser background color applys for input texts
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--color-white) inset !important;
+}

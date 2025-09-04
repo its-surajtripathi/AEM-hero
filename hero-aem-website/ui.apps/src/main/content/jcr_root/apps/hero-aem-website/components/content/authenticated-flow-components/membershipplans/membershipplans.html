@@ -1,0 +1,150 @@
+<div class="good-life-plans-wrapper d-none d-lg-block">
+
+            <div class="row plans-card">
+                <div class="col-xs-15 ">
+                    <div class="membership-plan">
+                        <div class="bg-white">
+                            <div class="heading-row" style="background-image: url(${properties.bgimage @ context='uri'})">
+                                <img class="member-icon" src="${properties.logo}" alt="Platinum-Membership">
+                                <div class="plan-first-tab"><img class="member-icon1" src="${properties.goodlifelogo}" alt="Platinum-Membership">
+                                </div>
+                            </div>
+                            <div class="plan-description specs">
+                                <ul class="member-left" data-sly-use.legendList="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='legend'}" data-sly-list.category="${legendList}">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-3"><img src="${category.properties.planicon}"></div>
+                                            <div class="col-9">${category.properties.plantext @ context='html'}</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='memberships'}" data-sly-list.membership="${listUse}">
+                    <div class="col-xs-15">
+                        <div class="membership-plan ${membership.properties.addtnClass}">
+                            <div class="membership-plan" style="background-image: url(${membership.properties.image @ context='uri'})">
+
+                                <div><img class="banner_btn" src="${membership.properties.bannerimage}" alt="Platinum-Membership">
+                                </div>
+                                <div class="${membership.properties.addtnClass}">
+                                    <div>
+                                        <span class="memebershipname">${membership.properties.name}</span></br>
+                                        <span class="memebershipvalue">${membership.properties.amount}</span>
+										<div class="banner-select-plans">
+                                          <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=membership.properties.selectbuttonlink}" href="${linkuse.value}">
+                                            <input type="button" id="${membership.properties.addtnClass}" value="${membership.properties.selectbutton}" class="select-plan-button">
+                                          </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select-plans">
+                                    <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=membership.properties.selectbuttonlink}" href="${linkuse.value}">
+                                        <input type="button" id="${membership.properties.addtnClass}" value="${membership.properties.selectbutton}" class="select-plan-button">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="plan-description-row4 specs">
+                                <ul>
+                                    <li>${membership.properties.offersamount}</li>
+                                    <li>${membership.properties.welcomepoints}</li>
+                                    <li>${membership.properties.selfreferralpoints}</li>
+                                    <li>${membership.properties.twowheelerreferralpoints}</li>
+                                    <li>${membership.properties.pucpoints}</li>
+                                    <li>${membership.properties.specialoffer}</li>
+                                    <li>
+                                        ${membership.properties.insurancecover}
+                                        <div>
+                                            <img data-sly-test="${!membership.properties.insurancecover}" class="banner_btn_wrong" src="${membership.properties.cross}">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img data-sly-test="${!membership.properties.exclusiveoppt}" class="banner_btn_wrong" src="${membership.properties.cross}">
+                                            <img data-sly-test="${membership.properties.exclusiveoppt}" class="banner_btn_correct" src="${membership.properties.tick}">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="select-plans">
+                                <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=membership.properties.selectbuttonlink}" href="${linkuse.value}">
+                                    <input type="button" id="${membership.properties.addtnClass}" value="${membership.properties.selectbutton}" class="select-plan-button">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</div>
+<div class="mobile-good-life-plans-wrapper d-block d-lg-none">
+    <div class="container-fluid" data-sly-use.membershipvalues="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='memberships'}"  data-sly-list.membership="${membershipvalues}">
+        <div class="row plans-card ${membership.properties.addtnClass}" >
+            <div class="container">
+                <div class="card shadow">
+                    <div class="card-header" style="background-image: url(${membership.properties.image @ context='uri'})">
+                        <div class="row">
+                            <div class="col membership-img">
+                                <div><img class="img" src="${membership.properties.bannerimage}" alt="${membership.properties.name}"> </div>
+                            </div>
+                            <div class="col membership-desc">
+                                <span class="header-txt"> ${membership.properties.name}</span></br>
+                                <span class="header-txt1">${membership.properties.amount}</span>
+                            </div>
+                        </div>
+                        <div class="row card-second-row" data-sly-use.legendvalues="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='legend'}">
+                            <sly data-sly-repeat.category="${legendvalues}">
+                                <div class="col" data-sly-test="${category.properties.featuretext}">
+                                    <div class="round-bg"><img class="gold-icon" src="${category.properties.planicon}" alt="Gold-Membership">
+                                    </div>
+                                    <span class="header-card-txt">${category.properties.featuretext}</span></br>
+                                    <span class="header-txt1">${membership.properties[category.properties.type]}</span>
+                                </div></sly>
+
+
+                            <div class="col-12">
+                                <div class="select-plans">
+                                    <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=membership.properties.selectbuttonlink}" href="${linkuse.value}">
+                                        <input type="button" value="${membership.properties.selectbutton}" class="select-plan-button">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="plan-description-row1 specs">
+                            <ul class="term-list" data-sly-use.legendvalues="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='legend'}">
+                                <li data-sly-repeat.category="${legendvalues}">
+                                    <div class="row">
+                                        <div class="col-3"><img class="img" src="${category.properties.planicon}"></div>
+                                        <div class="col-9">${category.properties.plantext @ context='html'}
+                                        <div class="plan-amt" data-sly-test="${category.properties.type == 'insurancecover'}">
+                                            <img data-sly-test="${!membership.properties.insurancecover}" class="banner_btn_wrong"src="${membership.properties.cross}">
+                                            <sly data-sly-test="${membership.properties.insurancecover}">${membership.properties.insurancecover}</sly>
+                                        </div>
+                                        <sly data-sly-test="${category.properties.type == 'exclusiveoppt'}">
+                                            <div><img data-sly-test="${!membership.properties.exclusiveoppt}" class="banner_btn_wrong"src="${membership.properties.cross}">
+                                                <img data-sly-test="${membership.properties.exclusiveoppt}" class="banner_btn_correct"src="${membership.properties.tick}">
+                                            </div>
+                                        </sly>
+                                        <div class="plan-amt" data-sly-test="${category.properties.type != 'insurancecover' && category.properties.type != 'exclusiveoppt'}">${membership.properties[category.properties.type]}</div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-plans">
+                                        <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=membership.properties.selectbuttonlink}" href="${linkuse.value}">
+                                            <input type="button" value="${membership.properties.selectbutton}" class="select-plan-button">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

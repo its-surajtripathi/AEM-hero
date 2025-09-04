@@ -1,0 +1,134 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<section class="video-hero-section position-relative bg-white" id="overview" data-sly-test="${properties.variation != 'categorypage'}">
+  <div class="overlay">
+  </div>
+  <!--/* Video Section Starts Here */-->
+  <div class="hero-section-video">
+    <video oncontextmenu="return false;" playsinline class="w-100 d-block" autoplay="" muted="" loop="" disablepictureinpicture="" disableremoteplayback="" data-sly-test="${properties.prodvideo}">
+      <source src="${properties.prodvideo @context='html'}" type="video/webm">
+      <source src="${properties.prodvideo @context='html'}" type="video/mp4">
+    </video>
+    <img loading="lazy" data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=properties.prodimage, rendition='banner-web'}" 
+            src="${imagePath}" alt="banner-image" data-sly-test="${properties.prodimage}"/>
+  </div>
+  <!--/* display banner bike img */ -->
+  <div class="display-bike-img xpulse-200-banner"
+    data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+    data-sly-test="${image.src}"
+    data-cmp-dmimage="${image.dmImage}"
+    data-asset-id="${image.uuid}"
+    id="${image.id}"
+    data-cmp-data-layer="${image.data.json}"
+    itemscope itemtype="http://schema.org/ImageObject">
+    <img srcset="${image.srcset}" src="${image.src}"
+        loading="${image.lazyEnabled ? 'lazy' : ''}"
+        class="img-fluid"
+        itemprop="contentUrl"
+        alt="${image.alt || true}" title="${image.displayPopupTitle && image.title}"/>
+  </div>
+  <!--/* display banner bike img ends */ -->
+</section>
+<section class="bg-dark-2 booking-testRide">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-3 col-lg-3">
+        <div class="bike-logo text-center text-lg-left mb-4 mb-lg-0">
+          <img loading="lazy" src="${properties.prodlogo @context='html'}" class="img-fluid mx-auto" alt="xpluse-200-logo">
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-5">
+        <ul class="bike-specifications text-white d-flex align-items-center justify-content-center"
+          data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='specdetails'}"
+          data-sly-list="${listUse}">
+          <li>
+            <p class="text-uppercase b2-text-std">${item.properties.specification @ context='html'}</p>
+            <h4 class="h4-heavy-heading-std">${item.properties.valuetext}</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="actions d-flex align-items-center justify-content-center justify-content-lg-between mt-5 mt-lg-0">
+          <!-- Acutal HTML for button from TechVed-->
+          <a data-sly-test="${properties.cta1link && properties.urltype1 == 'url'}" aa-data-attr="track_cta" 
+            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.cta1link}"
+            href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" aa-data-cta="${component.title}" >
+            <button class="btn btn-white test-ride-btn">${properties.cta1label}</button>
+          </a>
+          <a data-sly-test="${properties.cta1link && properties.urltype1 == 'modal'}"
+           href="javascript:void(0)" data-toggle="modal" aa-data-attr="track_cta" 
+            data-target="${properties.cta1link}" aa-data-cta="${component.title}" >
+            <button class="btn btn-white test-ride-btn">${properties.cta1label}</button>
+          </a>
+          <a data-sly-test="${properties.cta2link && properties.urltype2 == 'url'}" aa-data-attr="track_cta" 
+           data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.cta2link}"
+            href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" aa-data-cta="${component.title}" > 
+            <button class="btn btn-danger btn-red-gradient ml-4 ml-lg-2">${properties.cta2label}</button>
+          </a>
+          <a data-sly-test="${properties.cta2link && properties.urltype2 == 'modal'}"
+             href="javascript:void(0)" data-toggle="modal" aa-data-attr="track_cta" 
+            data-target="${properties.cta2link}" aa-data-cta="${component.title}" >
+            <button class="btn btn-danger btn-red-gradient ml-4 ml-lg-2">${properties.cta2label}</button>
+          </a>
+        </div>
+      </div>
+      <div class="text-center col-12 scroll-down-btn-wrapper d-none d-lg-block">
+        <a href="javascript:void(0)" aa-data-attr="track_cta"
+          class="scroll-down-btn mx-auto p-0 bg-transparent border-0">
+          <img loading="lazy" src="${properties.downimage @context='html'}" alt="arrow icons">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<div class="pbanner-capage" data-sly-test="${properties.variation == 'categorypage'}">
+    
+    <div style="--background-url: url(${properties.backgroundimage @ context='uri'});">
+        
+        <div class="banner-video">
+            
+            <div class="overlay"></div>
+            
+            <video class="w-100 d-block" autoplay="" muted="" loop="" disablepictureinpicture="" disableremoteplayback="">
+                <source src="${properties.backprodvideo @context='html'}" type="video/webm">
+                <source src="${properties.backprodvideo @context='html'}" type="video/mp4">
+            </video>
+            
+        </div>
+        
+        <div class="banner-content">
+            <div class="container">
+                <h1 class="banner-heading">${properties.headingtext @context='html'}</h1>
+                <p class="banner-sub-heading">${properties.subheadingtext @context='html'}</p>
+                
+                <div class="banner-bikes">
+                    <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='bikedetails'}" data-sly-list="${listUse}">
+                        
+                        
+                        <div class="bike">
+                            <div class="bike-img">
+                                <img src="${item.properties.bikeimage @context='html'}" alt="xtreme-220s">
+                            </div>
+                            <div class="content">
+                                <h2>${item.properties.biketitle @context='html'}</h2>
+                                <p>${item.properties.bikesubtitle}</p>
+                                <div class="hover-content ">
+                                    <ul class="actions d-flex align-items-center justify-content-center text-capitalize">
+                                        <li class="ml-3 btn-modal-open" data-toggle="modal" data-target="${item.properties.linkTo2}">
+                                            ${item.properties.quicktext}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                        
+                    </sly>
+                </div>                
+            </div>
+        </div>        
+    </div>
+</div>

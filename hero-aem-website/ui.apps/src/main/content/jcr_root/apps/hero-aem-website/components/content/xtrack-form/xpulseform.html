@@ -1,0 +1,136 @@
+<div class="register xpulse-form-wrapp" id="register" data-component-relativePath="${currentNode.path @ addSelectors=['xpulse'],extension='json'}">
+    <div class="lg-container">
+        <div class="row align-items-center justify-content-center">
+            <div>
+                <div class="registration-form hm-form">
+                    ${properties.eventTitle @context='html'}
+                    <div class="thankyou" id="tyDiv">
+                        <div class="ty-content">
+                            <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/fa-smile.png"
+                                alt="fa-smile" width="150px" height="96px">
+                            <span id="thankyou">
+                                ${properties.acknowledgemsg @context='html'}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="regform-fields">
+                        <form name="contactfrm" id="contactfrm" action="" method="post" enctype="multipart/form-data"
+                            class="formsectionH">
+                            <div class="kkt-error" id="error" style="color:red;padding-bottom:5px;"> </div>
+                            <div class="form-group">
+                                <input name="name" type="text" class="form-control forminputH" maxlength="75" id="name"
+                                    placeholder="Full Name*" value="" autocomplete="off"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '')" required
+                                    data-validation-msg-format="Please enter Characters Only" />
+                            </div>
+                            <div class="form-group">
+                                <input name="mobile" class="form-control forminputH" type="text" id="mobile"
+                                    placeholder="Contact Number*"
+                                    data-validation-msg-format="Please enter valid Mobile Number" value=""
+                                    maxlength="10" autocomplete="off" required
+                                    oninput="this.value = this.value.replace(/[^+\\0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="4" name="address" cols="50"
+                                    class="form-control forminputH comment_container" id="address" maxlength="250"
+                                    placeholder="Address* " required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input name="city" type="text" class="form-control forminputH" maxlength="20" id="city"
+                                    placeholder="City*" value=""
+                                    autocomplete="off" oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '')" required
+                                    data-validation-msg-format="Please enter Characters Only" />
+                            </div>
+                            <div class="form-group">
+                                <select name="eventcategory" id="eventcategory" class="form-control forminputH" required
+                                    data-validation-msg-req="Please select the Event Category">
+                                    <option value="">Select your Program</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                    <input name="datepulse" type="date" class="form-control forminputH textBox datePicker-xtrack" id="date" 
+                                        placeholder="mm/dd/yyyy" autocomplete="off" required
+                                        data-validation-msg-req="Please enter valid Date">
+                            </div>
+                            <div class="form-group cust-form-group captcha-section">
+                                <div class="captcha-field">
+                                    <div id="captcha">
+                                    </div>
+                                    <img class="refresh"
+                                        src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/refresh-32.png" />
+                                </div>
+                                <div class="captcha-input">
+                                    <input type="text" placeholder="${properties.captchainputlabel}" id="cpatchaTextBox"
+                                        name="captcha" required
+                                        class="form-control cust-form-control campaign-input ignore-validation"
+                                        maxlength="6" />
+                                    <label class="invalid-otp-message d-none">Incorrect Captcha</label>
+                                </div>
+                            </div>
+                            <div class="skw yellowBtn">
+                                <input type="button" name="Submit" value="REGISTER" id="Submit"
+                                    class="btn-hm-primary buttonH" />
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade hm-modal" id="upcomingEvents" tabindex="-1" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-l modal-dialog-scrollable modal-dialog-centered" role="document">
+        <div class="modal-content" style="max-width:960px;">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Upcoming<br><span>Events</span>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="evt-row">
+                    <div class="form-row">
+                        <sly data-sly-list.events="${resource.children}">
+                            <sly data-sly-test="${events.name == 'tierItems'}">
+                                <sly data-sly-list.eventsItem="${events.children}">
+                                    <!-- col-md-6 col-lg-6 -->
+                                    <div class="">
+                                        <div class="event-list">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <div class="evt-date">
+                                                        <div class="date">${eventsItem.eventDateDay}</div>
+                                                        <span>${eventsItem.eventDateYear}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="evt-content">
+                                                        <h5>${eventsItem.eventName}</h5>
+                                                        <ul>
+                                                            <li class="time">${eventsItem.time}</li>
+                                                            <li class="location">
+                                                                ${eventsItem.location @context='html'}
+                                                            </li>
+                                                        </ul>
+                                                        <a href="javascript:void(0)"
+                                                            class="btn-register-now js-scroll-trigger event-names"
+                                                            aria-label="${eventsItem.ariaLabel}">${eventsItem.butonLabel}</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

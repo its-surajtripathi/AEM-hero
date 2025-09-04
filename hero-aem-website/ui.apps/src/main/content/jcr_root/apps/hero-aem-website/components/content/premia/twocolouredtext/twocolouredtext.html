@@ -1,0 +1,8 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<div class="two-coloured-text-container">
+  <h3 class="text">${properties.text @context='html'}</h3>
+  <div class="coloured-text">${properties.colouredText}</div>
+</div>

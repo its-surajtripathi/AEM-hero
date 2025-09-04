@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Book Test Tide"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <content
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Content"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <variant
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                class="cq-dialog-dropdown-showhide"
+                                                cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                                                fieldDescription="Select Tab Variant."
+                                                fieldLabel="Variant"
+                                                name="./formvariant">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <xtrackform
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Xtrack Form Section"
+                                                        value="xtrackform"/>
+                                                    <xpulseform
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Xpulse Form Section"
+                                                        value="xpulseform"/>
+                                                </items>
+                                            </variant>
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Event Heading"
+                                                name="./eventTitle"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                            </title>
+                                            <successmsgtitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Acknowledge Message on Success - Heading"
+                                                name="./acknowledgemsg"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                            </successmsgtitle>
+                                            <eventLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Event Label"
+                                                name="./eventLabel"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                            </eventLabel>
+                                            <bgImage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Background Image"
+                                                name="./bgImage"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </content>
+                    <details
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Form Registration Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <tierItems
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Tier Items">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./tierItems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <eventDate
+			                                                jcr:primaryType="nt:unstructured"
+			                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+			                                                fieldLabel="Enter Event Date Day"
+			                                                name="./eventDateDay"/>
+                                                        <eventDateYear
+			                                                jcr:primaryType="nt:unstructured"
+			                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+			                                                fieldLabel="Enter Event Date Year"
+			                                                name="./eventDateYear"/>
+                                                        <eventName
+			                                                jcr:primaryType="nt:unstructured"
+			                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+			                                                fieldLabel="Enter Event Name"
+			                                                name="./eventName"/>
+			                                            <time
+			                                                jcr:primaryType="nt:unstructured"
+			                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+			                                                fieldLabel="Enter Event Time"
+			                                                name="./time"/>
+                                                        <location
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                            fieldLabel="Event Location"
+                                                            name="./location"
+                                                            useFixedInlineToolbar="{Boolean}true">
+                                                            <rtePlugins
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                            <uiSettings
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                        </location>
+                                                        <button
+			                                                jcr:primaryType="nt:unstructured"
+			                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+			                                                fieldLabel="Enter Event Button Label"
+			                                                name="./butonLabel"/>
+                                                        <aria
+			                                                jcr:primaryType="nt:unstructured"
+			                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+			                                                fieldLabel="Enter Button Aria Label"
+			                                                name="./ariaLabel"/>
+                                                    </items>
+                                                </field>
+                                            </tierItems>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </details>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

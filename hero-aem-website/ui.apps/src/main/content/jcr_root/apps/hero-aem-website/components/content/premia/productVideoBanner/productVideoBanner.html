@@ -1,0 +1,30 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<div class="prodictVideoBannerContainer">
+  <p class="prodictVideoBannerTitle">${properties.title @context='html'}</p>
+  <p class="prodictVideoBannerButtonWrapper" data-sly-test="${properties.buttonLink && properties.buttonLabel}">
+    <a class="prodictVideoBannerButton" href="${properties.buttonLink}">
+      ${properties.buttonLabel}
+    </a>
+  </p>
+
+  <p class="tooltipWrapper"><span class="info-container tooltiptext">${inheritedPageProperties.bookNowToolTipText1
+      @context='html'}</span></p>
+  <video id="my-video" class="productVideoBannerVideo" playsinline muted loop>
+    <source src="${properties.bgVideo}" type="video/mp4" />
+  </video>
+  <img id="play-button" class="control-button"
+    src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/play.png" loading="lazy"
+    alt="play">
+  <img id="pause-button" class="control-button"
+    src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/pause.png" loading="lazy"
+    alt="pause">
+  <img id="unmute-button" class="control-button"
+    src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/unmute.png" loading="lazy"
+    alt="mute">
+  <img id="mute-button" class="control-button"
+    src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/mute.png" loading="lazy"
+    alt="unmute">
+</div>

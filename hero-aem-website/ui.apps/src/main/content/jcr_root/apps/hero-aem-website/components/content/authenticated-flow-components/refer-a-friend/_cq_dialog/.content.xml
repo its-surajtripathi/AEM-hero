@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Refer a Friend"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+				    <variation
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Select Referral Type"
+                        name="./referralType">
+                        <items jcr:primaryType="nt:unstructured">
+                            <vehicle
+                                jcr:primaryType="nt:unstructured"
+                                text="Vehicle Referral"
+                                value="Yes"/>
+                            <goodlife
+                                jcr:primaryType="nt:unstructured"
+                                text="Good Life Referral"
+                                value="good-life"/>
+                        </items>
+                    </variation>
+                    <privacypolicy
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                        fieldLabel="Enter Terms and Condition message"
+                        name="./privacypolicy"
+                        useFixedInlineToolbar="{Boolean}true">
+                        <rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                        <uiSettings
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <blockHandling
+                                jcr:primaryType="nt:unstructured"
+                                removeSingleParagraphContainer="{Boolean}true"/>
+                        </htmlRules>
+                    </privacypolicy>
+                    <label
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Enter Button Label"
+                        name="./label"/>
+                    <linktype
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Link Type"
+                        name="./urlType">
+                        <items jcr:primaryType="nt:unstructured">
+                            <url
+                                jcr:primaryType="nt:unstructured"
+                                text="URL"
+                                value="url"/>
+                            <modal
+                                jcr:primaryType="nt:unstructured"
+                                text="Modal"
+                                value="modal"/>
+                        </items>
+                    </linktype>
+                    <link
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="URL"
+                        name="./url"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

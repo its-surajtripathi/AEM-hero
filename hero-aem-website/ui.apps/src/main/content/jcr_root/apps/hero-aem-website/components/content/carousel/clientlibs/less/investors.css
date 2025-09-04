@@ -1,0 +1,409 @@
+#investorBanner {
+  position: relative;
+  margin-top: 58px;
+}
+
+#investorBanner ul.investor-indicators.carousel-indicators {
+  bottom: 37px;
+}
+
+#investorBanner .banner-headline {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  padding-left: 40px;
+}
+
+#investorBanner .banner-headline .banner-headline-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#investorBanner .banner-headline .banner-headline-title>* {
+  font-size: 52px;
+  line-height: 1.2;
+  width: 85%;
+  font-family: var(--font-tstar-heavy);
+  text-align: center;
+}
+
+#investorBanner .banner-headline .view-all-investor {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: var(--font-tstar-bold);
+  margin-top: 32px;
+}
+
+#investorBanner .banner-headline .view-all-investor .view-all-arrow {
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-left: 8px;
+}
+
+#investorBanner .stock-container {
+  position: absolute;
+  right: 40px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: fit-content;
+}
+
+#investorBanner .stock-container .stock-watch {
+  font-family: var(--font-fjalla-one), sans-serif;
+  font-size: 52px;
+  color: #ffffff;
+  padding: 10px 0 23px 23px;
+  background: url(https://www.heromotocorp.com/en-in/images/main-heading-bg.png) no-repeat left top;
+  line-height: 100%;
+  margin: 0;
+  width: max-content;
+  text-transform: uppercase;
+}
+
+#investorBanner .stock-container .stock-watch-buttons {
+  display: flex;
+  align-items: center;
+}
+
+#investorBanner .stock-container .stock-watch-buttons .stock-watch-btn {
+  width: fit-content;
+  margin-right: 10px;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#investorBanner .stock-container .stock-watch-buttons .stock-watch-btn:hover,
+#investorBanner .stock-container .stock-watch-buttons .stock-watch-btn:focus,
+#investorBanner .stock-container .stock-watch-buttons .stock-watch-btn:active {
+  background-color: #ffffff;
+  color: #ff0000;
+}
+
+.investor-banner-note-container {
+  background-color: #303030;
+  padding: 20px 0 20px 40px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.investor-banner-note-container marquee p {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+#investorBanner .investors-banner-img {
+  position: relative;
+}
+
+#investorBanner .investor-button {
+  position: absolute;
+  left: 40px;
+  bottom: 66px;
+}
+
+#investorBanner .btn.booknow-btn {
+  background: #ee2326;
+  color: #fff;
+}
+
+#investorBanner .investor-button.slide-1-content-right {
+  right: 40px !important;
+}
+
+@media (max-width: 1320px) and (min-width: 1150px) {
+  #investorBanner .banner-headline {
+    top: 90px;
+  }
+}
+
+@media (max-width: 1150px) and (min-width: 900px) {
+  #investorBanner .banner-headline {
+    top: 70px;
+  }
+
+  #investorBanner .stock-container {
+    top: 20px;
+    right: 25px;
+  }
+
+  #investorBanner .banner-headline .view-all-investor {
+    margin-top: 18px;
+  }
+
+  #investorBanner .investor-button {
+    position: absolute;
+    left: 40px;
+    bottom: 66px;
+  }
+
+  #investorBanner .investor-button.slide-1-content-right {
+    right: 40px !important;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 767px) {
+  #investorBanner .banner-headline {
+    top: 80px;
+    padding-left: 15px;
+  }
+
+  #investorBanner .investor-button {
+    position: absolute;
+    left: 15px;
+    bottom: 45px;
+  }
+
+  #investorBanner .investor-button.slide-1-content-right {
+    right: 15px !important;
+  }
+
+  #investorBanner .banner-headline .view-all-investor {
+    margin-top: 18px;
+  }
+
+  #investorBanner .banner-headline .banner-headline-title>* {
+    font-size: 40px;
+    line-height: 44px;
+    width: 100%;
+    padding-top: 0 !important;
+  }
+
+  #investorBanner .banner-headline .investor-calendar {
+    margin: 20px 0;
+  }
+
+  #investorBanner .banner-headline .investor-calendar .calendar-icon {
+    margin-right: 12px;
+  }
+
+  #investorBanner .investor-events-calender-wrapper-mailoptions {
+    height: 60px;
+    width: 184px;
+    top: 77.5%;
+  }
+
+  #investorBanner .stock-container {
+    top: 18px;
+    right: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  #investor-banner .carousel-indicators {
+    display: none;
+  }
+
+  #investorBanner .investor-button {
+    position: absolute;
+    left: 15px;
+    bottom: 55px;
+  }
+
+  #investorBanner .investor-button.slide-1-content-right {
+    right: 15px !important;
+  }
+
+  #investorBanner .banner-headline {
+    top: 74px;
+    padding-left: 15px;
+  }
+
+  #investorBanner .banner-headline .banner-headline-title>* {
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 50%;
+  }
+
+  #investorBanner .stock-container .stock-watch {
+    font-size: 26px;
+    line-height: 1.1;
+    padding: 12px 12px 18px 18px;
+    background-size: 10px;
+  }
+
+  #investorBanner .banner-headline .view-all-investor {
+    margin-top: 20px;
+  }
+
+  #investorBanner .stock-container {
+    right: 5px;
+  }
+
+  #investorBanner .stock-container .stock-watch-buttons .stock-watch-btn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 425px) {
+  #investorBanner .banner-headline .banner-headline-title>* {
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 425px) {
+  #investorBanner .banner-headline .banner-headline-title>* {
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 400px) {
+  #investorBanner .stock-container .stock-watch {
+    font-size: 22px;
+  }
+}
+
+.red-banner-text {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  text-align: center !important;
+  padding-left: 0px !important;
+}
+
+.red-banner-text h1 {
+  font-family: var(--font-tstar-heavy);
+  font-weight: 700 !important;
+  font-size: 52px !important;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.red-banner-text p {
+  font-family: var(--font-tstar-medium);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  max-width: 100% !important;
+}
+
+@media(max-width:786px) {
+  .red-banner-text {
+    top: 30%;
+  }
+
+  .red-banner-text h1 {
+    font-size: 24px;
+  }
+
+  .red-banner-text p {
+    font-size: 14px;
+  }
+}
+
+@media(max-width:450px) {
+  .red-banner-text {
+    top: 20%;
+  }
+}
+
+
+#harley-carousel .harley-banner-img {
+  position: relative;
+}
+
+#harley-carousel .scroll-down-btn-wrapper {
+  height: 0px;
+}
+
+#harley-carousel .scroll-down-btn {
+  position: relative;
+  top: -26px;
+  height: 0;
+}
+
+#harley-carousel .scroll-down-btn img {
+  padding-top: 10px;
+  height: 40px;
+  width: 20px;
+}
+
+#harley-carousel .text-center {
+  padding-bottom: 20px;
+}
+
+#harley-carousel .icon-bg-color {
+  width: 46px;
+  height: 46px;
+  background: rgba(242, 99, 33, 1);
+  border-radius: 26px;
+  margin: auto;
+}
+
+.harley-carousel-indicators {
+  bottom: 65px !important;
+}
+
+.harley-carousel-indicators .harley-carousel-indicator {
+  height: 8px !important;
+}
+
+.harley-carousel-indicators li.active {
+  background: rgba(242, 99, 33, 1) !important;
+}
+
+#harley-carousel .slide-1-content {
+  position: absolute;
+  bottom: 66px;
+  left: 66px;
+}
+
+#harley-carousel .slide-1-content .btn {
+  margin-right: 15px;
+  font-family: '1903Sans-Regular';
+  font-size: 18px;
+}
+
+#harley-carousel .slide-1-content .callback-btn {
+  color: #F26321;
+  border: 1px solid #D30000;
+}
+
+#harley-carousel .slide-1-content .booknow-btn {
+  color: #fff;
+  background: #F26321;
+  border: 1px solid #D30000;
+}
+
+@media(max-width: 786px) {
+
+  #harley-carousel .scroll-down-btn {
+    top: -16px;
+  }
+
+  #harley-carousel .icon-bg-color {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+  }
+
+  #harley-carousel .scroll-down-btn img {
+    padding-top: 5px;
+    height: 25px;
+    width: 15px;
+  }
+
+  #harley-carousel .slide-1-content {
+    bottom: 35px;
+    left: 14px;
+  }
+
+  #harley-carousel .slide-1-content .btn {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,378 @@
+<div class="modal fade" id="serviceEnroll" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <section id="service-form" class="position-relative"
+                    data-component-relativePath="${currentNode.path @ addSelectors=['safetyprogram'],extension='json'}">
+                    <div class="service-form-wrap d-flex">
+                        <h6>
+                            Enroll For Safety Program
+                        </h6>
+                        <div class="two-tab-wrap d-flex">
+                            <p class="service-form-tab">
+                                Individual
+                            </p>
+                            <p class="service-form-tab">
+                                Group
+                            </p>
+                        </div>
+                        <div class="input-form-wrap w-100" id="individual-form">
+                            <form action="" class="w-100 service-enrollment-form" id="individual">
+                                <div class="form-row-wrap w-auto d-flex">
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Full Name <sup>*</sup>
+                                        </span>
+                                        <input type="text" required class="cust-form-control "
+                                            placeholder="Enter your full name"
+                                            data-validation-msg-req="Please enter name"
+                                            oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '')"
+                                            data-validation-msg-format="Please enter valid full name" name="fullname">
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Mobile No.<sup>*</sup>
+                                        </span>
+                                        <input type="tel" class="cust-form-control mobile-number" required
+                                            placeholder="Enter your mobile no." autocomplete="off" id="mobile-service"
+                                            data-validation-msg-req="Please enter Contact Number" name="mobileno"
+                                            data-validation-msg-format="Please enter valid contact number"
+                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                            maxlength="10">
+                                        <a href="javascript:void(0)" aa-data-attr="track_cta"
+                                            class="test-drive-otp-link send-otp-btn">${properties.sendOtplabel}</a>
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Email ID<sup>*</sup>
+                                        </span>
+                                        <input type="text" required class="cust-form-control "
+                                            placeholder="Enter your Email" data-validation-msg-req="Please enter email"
+                                            data-validation-msg-format="Please enter valid email" name="email">
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Enrollment Type<sup>*</sup>
+                                        </span>
+                                        <div class="dropdown cust-drop-down">
+                                            <button id="enrollment-type" name="enrollmentname"
+                                                class="dropdown-select form-control cust-form-control font-size-18 line-height-24 font-montserrat-regular font-weight-500 text-color-white bg-color-danger text-left"
+                                                type="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" data-validation-msg-req="">
+                                                Select Enrollment Type
+                                            </button>
+                                            <input type="hidden" required value=""
+                                                data-validation-msg-req="Please select enrollment"
+                                                name="enrollmentNameVal" />
+                                            <ul class="dropdown-menu cust-dropdown-menu"
+                                                aria-labelledby="enrollmentDropdown" style="width: 100%;">
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="Ride Safe Program">
+                                                    <a href="javascript:void(0)">Ride Safe Program</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="Ride Safe Awareness Program">
+                                                    <a href="javascript:void(0)">Ride Safe Awareness Program</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="Learn To Ride">
+                                                    <a href="javascript:void(0)">Learn To Ride</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="cust-form-group" id="drive-check">
+                                        <span class="form-label">
+                                            Please confirm that you know how to ride a two wheeler? <sup>*</sup>
+                                        </span>
+                                        <div class="control-group d-flex">
+                                            <label class="control control-radio">
+                                                <input type="radio" name="drive-radio" value="yes" />
+                                                <div class="control_indicator"></div>
+                                                Yes
+                                            </label>
+                                            <label class="control control-radio">
+                                                <input type="radio" name="drive-radio" value="no" />
+                                                <div class="control_indicator"></div>
+                                                No
+                                            </label>
+                                        </div>
+                                        <input type="hidden" value="" name="hiddenDriveValue"
+                                            data-validation-msg-req="Please select that you know how to ride a two wheeler?">
+                                    </div>
+                                    <div class="cust-form-group" id="license-check">
+                                        <span class="form-label">
+                                            Please confirm that you have a valid two wheeler license?
+                                        </span>
+                                        <div class="control-group d-flex">
+                                            <label class="control control-radio">
+                                                <input type="radio" name="license-radio" value="yes" />
+                                                <div class="control_indicator"></div>
+                                                Yes
+                                            </label>
+                                            <label class="control control-radio">
+                                                <input type="radio" name="license-radio" value="no" />
+                                                <div class="control_indicator"></div>
+                                                No
+                                            </label>
+                                        </div>
+                                        <input type="hidden" value="" name="hiddenLicenseValue"
+                                            data-validation-msg-req="Please select that you have a valid two wheeler license?"
+                                            data-condition-msg="It is mandatory for you to know how to ride a two wheeler."
+                                            data-condition2-msg="It is mandatory for you to have a valid two wheeler license">
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Date <sup>*</sup>
+                                        </span>
+                                        <input type="date" class="cust-form-control" placeholder="Select Date" required
+                                            name="dateEnroll" data-validation-msg-req="Please select date">
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Training Centre<sup>*</sup>
+                                        </span>
+                                        <div class="dropdown cust-drop-down">
+                                            <button id="ttcenter-type" name="ttcenter"
+                                                class="dropdown-select form-control cust-form-control font-size-18 line-height-24 font-montserrat-regular font-weight-500 text-color-white bg-color-danger text-left"
+                                                type="button" disabled data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" data-validation-msg-req="">
+                                                Select Training Centre
+                                            </button>
+                                            <input type="hidden" required value=""
+                                                data-validation-msg-req="Please select training center"
+                                                name="ttcenterNameVal" />
+                                            <ul class="dropdown-menu cust-dropdown-menu"
+                                                aria-labelledby="ttcenterDropdown" style="width: 100%;">
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="Traffic Safety Park, Gurgaon" class="show-on-condition">
+                                                    <a href="javascript:void(0)">Traffic Safety Park, Gurgaon</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="TT Park New Delhi" class="show-on-condition">
+                                                    <a href="javascript:void(0)">TT Park New Delhi</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="TT Park Lucknow">
+                                                    <a href="javascript:void(0)">TT Park Lucknow</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="TT Park Rourkela">
+                                                    <a href="javascript:void(0)">TT Park Rourkela</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="TT Park Hyderabad">
+                                                    <a href="javascript:void(0)">TT Park Hyderabad</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="TT Park Nagpur">
+                                                    <a href="javascript:void(0)">TT Park Nagpur</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="submit-button">
+                                <input type="button" class="custom-btn campaign-btn btn-red-gradient btn"
+                                    id="enroll-indv-sub-btn" value="submit" name="submit">
+                            </div>
+                        </div>
+
+                        <div class="input-form-wrap w-100" id="group-form">
+                            <form action="" class="w-100 service-enrollment-form--group" id="group">
+                                <div class="form-row-wrap w-auto d-flex">
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Oranisation/Institution Name <sup>*</sup>
+                                        </span>
+                                        <input type="text" required class="cust-form-control "
+                                            placeholder="Enter your organisation name"
+                                            data-validation-msg-req="Please enter organization/institute name"
+                                            oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '')"
+                                            data-validation-msg-format="Please enter valid organisation name"
+                                            name="organisationfullname">
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            No. of Participants<sup>*</sup>
+                                        </span>
+                                        <input type="text"
+                                            data-condition-msg="Please enter valid number of participants."
+                                            data-validation-msg-req="Please enter number of participants"
+                                            class="cust-form-control" name="participantsNo" required
+                                            placeholder="Enter the no. of participants"
+                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Contact Person <sup>*</sup>
+                                        </span>
+                                        <input type="text" required class="cust-form-control "
+                                            placeholder="Enter your contact person name"
+                                            oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '')"
+                                            data-validation-msg-req="Please enter full name" name="contactpersonname"
+                                            maxlength="20">
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Contact Number<sup>*</sup>
+                                        </span>
+                                        <input type="tel" class="cust-form-control mobile-number" required
+                                            placeholder="Enter your mobile no."
+                                            data-validation-msg-req="Please enter Contact Number" name="mobileno"
+                                            data-validation-msg-format="Please enter valid contact number"
+                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                            maxlength="10">
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Email ID<sup>*</sup>
+                                        </span>
+                                        <input type="text" required class="cust-form-control "
+                                            placeholder="Enter your Email" data-validation-msg-req="Please enter email"
+                                            data-validation-msg-format="Please enter valid email" name="email">
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Enrollment Type<sup>*</sup>
+                                        </span>
+                                        <div class="dropdown cust-drop-down">
+                                            <button id="enrollment-type" name="enrollmentname"
+                                                class="dropdown-select form-control cust-form-control font-size-18 line-height-24 font-montserrat-regular font-weight-500 text-color-white bg-color-danger text-left"
+                                                type="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" data-validation-msg-req="">
+                                                Select Enrollment Type
+                                            </button>
+                                            <input type="hidden" required value="" data-validation-msg-req=""
+                                                name="enrollmentNameVal" />
+                                            <ul class="dropdown-menu cust-dropdown-menu"
+                                                aria-labelledby="enrollmentDropdown" style="width: 100%;">
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="Ride Safe Program">
+                                                    <a href="javascript:void(0)">Ride Safe Program</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="Ride Safe Awareness Program">
+                                                    <a href="javascript:void(0)">Ride Safe Awareness Program</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="Learn To Ride">
+                                                    <a href="javascript:void(0)">Learn To Ride</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="cust-form-group" id="drive-check">
+                                        <span class="form-label">
+                                            Please confirm that the group know how to ride a two wheeler? <sup>*</sup>
+                                        </span>
+                                        <div class="control-group d-flex">
+                                            <label class="control control-radio">
+                                                <input type="radio" name="drive-radio--group" value="yes" />
+                                                <div class="control_indicator"></div>
+                                                Yes
+                                            </label>
+                                            <label class="control control-radio">
+                                                <input type="radio" name="drive-radio--group" value="no" />
+                                                <div class="control_indicator"></div>
+                                                No
+                                            </label>
+                                        </div>
+                                        <input type="hidden" value="" name="hiddenDriveValue"
+                                            data-validation-msg-req="Please select that you know how to ride a two wheeler?">
+                                    </div>
+                                    <div class="cust-form-group" id="license-check">
+                                        <span class="form-label">
+                                            Please confirm that the group have a valid
+                                            two wheeler license?
+                                        </span>
+                                        <div class="control-group d-flex">
+                                            <label class="control control-radio">
+                                                <input type="radio" name="license-radio--group" value="yes" />
+                                                <div class="control_indicator"></div>
+                                                Yes
+                                            </label>
+                                            <label class="control control-radio">
+                                                <input type="radio" name="license-radio--group" value="no" />
+                                                <div class="control_indicator"></div>
+                                                No
+                                            </label>
+                                        </div>
+                                        <input type="hidden" value="" name="hiddenLicenseValue"
+                                            data-validation-msg-req="Please select that you have a valid two wheeler license?"
+                                            data-condition-msg="It is mandatory for you to know how to ride a two wheeler."
+                                            data-condition2-msg="It is mandatory for you to have a valid two wheeler license">
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Date <sup>*</sup>
+                                        </span>
+                                        <input type="date" class="cust-form-control" placeholder="Select Date" required
+                                            name="dateEnroll" data-validation-msg-req="Please select date">
+                                    </div>
+                                    <div class="cust-form-group">
+                                        <span class="form-label">
+                                            Training Centre<sup>*</sup>
+                                        </span>
+                                        <div class="dropdown cust-drop-down">
+                                            <button id="ttcenter-type" name="ttcenter"
+                                                class="dropdown-select form-control cust-form-control font-size-18 line-height-24 font-montserrat-regular font-weight-500 text-color-white bg-color-danger text-left"
+                                                type="button" disabled data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" data-validation-msg-req="">
+                                                Select Training Centre
+                                            </button>
+                                            <input type="hidden" required value="" data-validation-msg-req="Please select training
+                                        center" name="ttcenterNameVal" />
+                                            <ul class="dropdown-menu cust-dropdown-menu"
+                                                aria-labelledby="ttcenterDropdown" style="width: 100%;">
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="Traffic Safety Park, Gurgaon" class="show-on-condition">
+                                                    <a href="javascript:void(0)">Traffic Safety Park, Gurgaon</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="TT Park New Delhi" class="show-on-condition">
+                                                    <a href="javascript:void(0)">TT Park New Delhi</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="TT Park Lucknow">
+                                                    <a href="javascript:void(0)">TT Park Lucknow</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="TT Park Rourkela">
+                                                    <a href="javascript:void(0)">TT Park Rourkela</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="TT Park Hyderabad">
+                                                    <a href="javascript:void(0)">TT Park Hyderabad</a>
+                                                </li>
+                                                <li class="font-montserrat-regular font-weight-500 "
+                                                    value="TT Park Nagpur">
+                                                    <a href="javascript:void(0)">TT Park Nagpur</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="submit-button">
+                                <input type="button" class="custom-btn campaign-btn btn-red-gradient btn"
+                                    id="enroll-group-sub-btn" value="submit" name="submit">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thank-you-success d-none position-absolute">
+                        <h4>
+                            Thank You
+                        </h4>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

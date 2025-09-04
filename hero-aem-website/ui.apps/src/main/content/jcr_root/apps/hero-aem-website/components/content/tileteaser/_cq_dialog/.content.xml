@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Tile Teaser"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured"
+                    sling:hideChildren="[metadata]">
+                    <asset
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Asset"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="[imageFromPageImage,pageImageThumbnail,alternativeGroup,decorative]">
+                                            <height
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                fieldDescription="select option to change the height of the teaser"
+                                                fieldLabel="Teaser Height"
+                                                name="./height"
+                                                sling:orderBefore="alternativeGroup">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <full
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="2 X"
+                                                        value="620"/>
+                                                    <half
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="1 X"
+                                                        value="300"/>
+                                                </items>
+                                            </height>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </asset>
+                    <textGroup
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Text"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <layoutvariation
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+												class="cq-dialog-dropdown-showhide"
+                                                cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                                                fieldDescription="Select Layout Varialtion"
+                                                fieldLabel="Layout Variation"
+                                                name="./layoutvariation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <layoutvariation1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Teaser With Background"
+                                                        value="layoutvariation1"/>
+                                                    <layoutvariation2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Teaser With Image"
+                                                        value="layoutvariation2"/>
+													<servicepage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Service Page"
+                                                        value="layoutvariation3"/>
+													<goodlife
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Good life Page"
+                                                        value="layoutvariation4"/>
+                                                    <glcompleteprofile
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Good life Page - Complete Profile"
+                                                            value="layoutvariation5"/>
+                                                    <glrewards
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Good life Page - Your Rewards"
+                                                            value="layoutvariation6"/>
+                                                </items>
+                                            </layoutvariation>
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A Teaser's title desc"
+                                                fieldLabel="Title"
+                                                name="./title"/>
+                                            <titlepresent
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title - Post Booking"
+                                                name="./titlePost"/>
+                                            <titlepost
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title -  Ongoing Booking"
+                                                name="./titlePresent"/>
+                                            <text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="A description for the teaser."
+                                                fieldLabel="Subtitle"
+                                                name="./subtitle"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                            </text>
+                                            <subtitlepresent
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="SubTitle - Post Booking"
+                                                name="./subtitlePost"/>
+                                            <subtitlepost
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Sub Title -  Ongoing Booking"
+                                                name="./subtitlePresent"/>
+                                            <linkto
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Link To"
+                                                name="./linkto"
+                                                rootPath="/content"/>
+                                            <file-icon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Explore Icon"
+                                                rootPath="/content/dam/hero-aem-website"
+                                                name="./fileIcon"/>
+                                            <explorebtn
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Button label"
+                                                name="./explore"/>
+                                            <arrow-icon
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Right Arrow Icon"
+                                                    rootPath="/content/dam/hero-aem-website"
+                                                    name="./arrowIcon"/>
+                                            <styleclass
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Additional classes to be added"
+                                                name="./styleclass"/>
+                                            <duedatelabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Due Date label"
+                                                name="./duedatelabel"/>
+											<servicepage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="show-hide-textfield"
+                                                showhidetargetvalue="layoutvariation3">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <serviceType
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                                        fieldLabel="Select Service Type"
+                                                        name="./serviceType">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <bookservice
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Book Service"
+                                                                value="book-service"/>
+                                                            <joyride
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Joy Ride"
+                                                                value="joyride"/>
+                                                            <goodlife
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Goodlife"
+                                                                value="goodlife"/>
+                                                            <rsa
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="RSA"
+                                                                value="rsa"/>
+                                                            <xclan
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="X Clan"
+                                                                value="xclan"/>
+                                                        </items>
+                                                    </serviceType>
+                                                    <serviceLogo
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Select Service Logo"
+                                                        name="./serviceLogo"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <serviceIcon
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Select Service Icon"
+                                                        name="./serviceIcon"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <postLabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Post Submission Label"
+                                                        name="./postLabel"/>
+                                                    <postLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        rootPath="/content/hero-aem-website"
+                                                        fieldLabel="Post Subscription Link"
+                                                        name="./postSubLink"/>
+                                                </items>
+                                            </servicepage>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </textGroup>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

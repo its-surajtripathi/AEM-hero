@@ -1,0 +1,8 @@
+<sly data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}"
+    data-sly-test.parentPath="${[pageconfig.dealerRootPath,'harley'] @ join='/'}"
+    data-sly-use.listUse="${'/apps/hero-aem-website/utils/getdropdownvalues.js' @ parentPath=parentPath}"
+    data-sly-list="${listUse}">
+    <li class="font-montserrat-regular font-weight-500 " value="${item.name}">
+        <a href="javascript:void(0)">${item.properties.state_name @ i18n}</a>
+    </li>
+</sly>

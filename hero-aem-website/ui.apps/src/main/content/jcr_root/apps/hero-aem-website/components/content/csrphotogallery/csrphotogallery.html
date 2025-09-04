@@ -1,0 +1,24 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+
+<sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='csrphotogallery'}">
+	<div class="photo-gallery-container" >
+		<div class="photo-header-wrapper">
+			<img class="photo-header-icon" src="/content/dam/hero-aem-website/in/icons/hero-arrow.png" alt="gallery header" />
+			<h2>CSR Photo Gallery</h2>
+		</div>
+		<ul class="photo-gallery-sub-container" data-sly-list="${listUse}">
+
+			<li class="photo-gallery-tags">
+				<div class="gallery">
+					<a href="${item.properties.viewimage}">
+						<img class="photo-gallery-images" src="${item.properties.thumbnile}" alt="photo gallery" title="${item.properties.imagecaption @ context='html'}">
+						</a>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+
+</sly>

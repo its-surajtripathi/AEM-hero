@@ -1,0 +1,77 @@
+<section class="investors-faq-section">
+	<div class="generic-faq-wrap investors-content-wrap">
+		<div data-sly-use.tabitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='tabitems'}"
+			class="generic-left-faq-wrap left--invs-faqs">
+			<div data-sly-list="${tabitems}">
+				<div data-toggle="tab" aa-data-attr="track_cta" href="#menu${item.path.hashCode}"
+					class="submenu-faq-tile ${itemList.index == 0 ? 'faq-button-active active' : ''}">
+					<div class="faq-click-tile">
+
+						<p>${item.properties.title}</p>
+
+						<div class="investor-left-faq-arrow">
+							<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/right-arrow-grey.svg"
+								class="faq-inactive-arrows" alt="Right Arrow Grey" />
+							<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/right-arrow-red.svg"
+								class="faq-active-arrows" alt="Right Arrow Red" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="right--faq-section" id="accordDeskFaqs">
+			<div class="tab-content" data-sly-list="${tabitems}">
+				<div id="menu${item.path.hashCode}" class="tab-pane fade show${itemList.index == 0 ? ' active' : ''}"
+					data-sly-resource="${['tab',itemList.index] @ join='-' , resourceType='wcm/foundation/components/responsivegrid'}">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="investors-contact-mobile">
+		<div class="right--mob-content-section" id="outerFaqAccordMob"
+			data-sly-use.tabitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='tabitems'}">
+			<div id="innerFaqAccordMob">
+				<div data-sly-list="${tabitems}">
+					<div class="card outer-faq-card">
+
+						<div class="mob-head-faq-mobile" id="headingMob${itemList.index}">
+							<div class="faq-mob-generic" data-toggle="tab" aa-data-attr="track_cta"
+								href="#menuMob${item.path.hashCode}">
+								<h2 class="mb-0 d-flex justify-content-between mob-heading-faqs" data-toggle="collapse"
+									data-target="#collapseMob${itemList.index}" aria-expanded="true"
+									aria-controls="collapseMob${itemList.index}">
+									<div
+										class="submenu--mob-faq-tile ${itemList.index == 0 ? 'faq-button-active-mob' : ''}">
+
+										${item.properties.title}
+
+									</div>
+									<div class="mob-arrow-wrap-faq">
+										<div class="invs-faq-arrows-mob">
+											<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/down-arrow-grey.svg"
+												class="faq-inactive-arrows" alt="Down Arrow Grey" />
+											<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/up-arrow-red.svg"
+												class="faq-active-arrows" alt="Up Arrow Red" />
+										</div>
+									</div>
+								</h2>
+							</div>
+						</div>
+						<div class="faq--slider-wrap-mob" id="collapseMob${itemList.index}" class="collapse"
+							aria-labelledby="headingMob${itemList.index}" data-parent="#outerFaqAccordMob">
+							<div class="tab-content" data-sly-list="${tabitems}">
+								<div id="menuMob${item.path.hashCode}"
+									class="tab-pane fade show${itemList.index == 0 ? ' active' : ''}"
+									data-sly-resource="${['tab',itemList.index] @ join='-' , resourceType='wcm/foundation/components/responsivegrid'}">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

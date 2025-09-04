@@ -1,0 +1,24 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+
+<header>
+    <nav class="marathon-header-wrapper">
+        <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.redirect}"
+            href="${linkuse.value}">
+            <img class="marathon-header-logo" src="${properties.icon}" alt="hero-logo" />
+        </a>
+        <ul class="marathon-header-links-wrapper ${properties.mobileenable == 'true' ? '' : 'd-none'} d-lg-flex">
+            <sly data-sly-list.parent="${resource.children}">
+                <sly data-sly-test="${parent.name == 'headeritems'}">
+                    <sly data-sly-list.child="${parent.children}">
+                        <li class="marathon-header-links ${properties.mobileenable == 'true' ? 'active' : ''}">
+                            <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=child.url}"
+                                href="${linkuse.value}">${child.text}</a>
+                        </li>
+                    </sly>
+                </sly>
+            </sly>
+        </ul>
+    </nav>
+</header>

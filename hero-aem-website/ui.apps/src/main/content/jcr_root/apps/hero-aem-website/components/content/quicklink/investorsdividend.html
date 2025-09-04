@@ -1,0 +1,72 @@
+<section id="quicklink-dividents">
+    <div class="quick-link-container">
+        <sly data-sly-list.mainql="${resource.getChildren}">
+            <sly data-sly-test="${mainql.name == 'divquicklinksmulti'}">
+                <div class="row-wrapper">
+                    <div class="divident-col">
+                        <sly data-sly-list.mainqlitems="${mainql.getChildren}">
+                            <div data-sly-test="${mainqlitemsList.index!=2}"
+                                class="${mainqlitems.divqlvariant == 'red' ? 'inner-field-1 variation half-tile' : (mainqlitems.divqlvariant == 'silver' ? 'inner-field-4 variation half-tile black' : '')}">
+                                <div class="inner-info-field">
+                                    <div class="card-name">
+                                        ${mainqlitems.divqltitle @ context='html'}
+                                    </div>
+                                    <sly data-sly-list.subitems="${mainqlitems.getChildren}">
+                                        <sly data-sly-test="${subitems.name == 'divmultiquicklinks'}">
+                                            <sly data-sly-list.subqlitems="${subitems.getChildren}">
+                                                <div>
+                                                    <div class="card-heading">
+                                                        ${subqlitems.divqltitle @ context='html'}
+                                                    </div>
+                                                    <div class="first-card-link card-link">
+                                                        <a aa-data-attr="track_cta"
+                                                            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=subqlitems.divqlctaurl}"
+                                                            href="${linkuse.value}" x-cq-linkchecker="valid"
+                                                            target="${linkuse.isExternal ? '_blank' : '_self'}">${subqlitems.divqlctalabel}
+                                                            <i class="right-arrow"></i></a>
+                                                    </div>
+                                                </div>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </div>
+                            </div>
+                        </sly>
+                    </div>
+                    <sly data-sly-list.mainqlitems="${mainql.getChildren}">
+                        <div data-sly-test="${mainqlitemsList.index==2}" class="divident-col">
+                            <div
+                                class="${mainqlitems.divqlvariant == 'black' ? 'inner-field-2 variation full-tile': ''}">
+                                <div class="inner-info-field">
+                                    <div class="card-name">
+                                        ${mainqlitems.divqltitle @ context='html'}
+                                    </div>
+                                    <sly data-sly-list.subitems="${mainqlitems.getChildren}">
+                                        <sly data-sly-test="${subitems.name == 'divmultiquicklinks'}">
+                                            <sly data-sly-list.subqlitems="${subitems.getChildren}">
+                                                <div data-sly-test="${subqlitemsList.index==1}" class="border-line-separator">
+                                                </div>
+                                                <div class="spec-height">
+                                                    <div class="card-heading">
+                                                        ${subqlitems.divqltitle @ context='html'}
+                                                    </div>
+                                                    <div class="first-card-link card-link">
+                                                        <a aa-data-attr="track_cta"
+                                                            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=subqlitems.divqlctaurl}"
+                                                            href="${linkuse.value}" x-cq-linkchecker="valid"
+                                                            target="${linkuse.isExternal ? '_blank' : '_self'}">${subqlitems.divqlctalabel}
+                                                            <i class="right-arrow"></i></a>
+                                                    </div>
+                                                </div>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </div>
+                            </div>
+                        </div>
+                    </sly>
+                </div>
+            </sly>
+        </sly>
+    </div>
+</section>

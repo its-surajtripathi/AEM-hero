@@ -1,0 +1,222 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+  </p>
+  
+  <button
+    type="button"
+    class="btn btn-info btn-lg"
+    data-toggle="modal"
+    data-target="#myModal"
+  >
+    ${properties.buttnText}
+  </button>
+  <div class="modal fade" id="myModal" role="dialog" data-sly-list.tabMultifield="${resource.getChildren}">
+    <div class="modal-dialog modal-dialog-scrollable modal-cont-mw modal-xl" >
+      <div class="modal-content specification-container">
+        <div class="modal-header">
+          <div class="spec-header">
+            <div class="divider"></div>
+            ${properties.modalTitle}
+          </div>
+          <button type="button" class="close" data-dismiss="modal">
+            <div class="specification-container-close">
+              <img
+                src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/close-black.png"
+                alt="close"
+              />
+            </div>
+          </button>
+        </div>
+        <ul class="nav nav-tabs" id="harley-specs" data-sly-list.outertab1="${tabMultifield.getChildren}">
+          <li class="tab-text active">
+            <a class="active" href="#${outertab1.id}">${outertab1.title}</a>
+          </li>
+          <!-- <li class="tab-text"><a href="#engines">Engine</a></li>
+          <li class="tab-text"><a href="#performance">Performance</a></li>
+          <li class="tab-text"><a href="#chassis">Chassis</a></li>
+          <li class="tab-text"><a href="#electric">Electric</a></li>
+          <li class="tab-text"><a href="#infotainment">Infotainment</a></li>
+          <li class="tab-text"><a href="#rse">Rider Safety Enhancements</a></li> -->
+        </ul>
+        <div class="tab-content modal-body" data-sly-list.outertab="${tabMultifield.getChildren}">
+          <div id="${outertab.id}" class="tab-div tab-pane fade active" data-sly-list.inneritems="${outertab.getChildren}">
+            <table data-sly-list.innertab="${inneritems.getChildren}">
+              <tr class="${innertabList.odd ? 'even' : 'odd'}">
+                <td class="main-text"><div>${innertab.specskey}</div></td>
+                <td class="main-desc">
+                  <div>${innertab.specsvalue}</div>
+                </td>
+              </tr>
+              <!-- <tr class="odd">
+                <td class="main-text"><div>Seat Height, Unladen</div></td>
+                <td class="main-desc">805mm</td>
+              </tr>
+              <tr class="even">
+                <td class="main-text"><div>Ground Clearance</div></td>
+                <td class="main-desc">170mm</td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Wheelbase</div></td>
+                <td class="main-desc">1,418mm</td>
+              </tr>
+              <tr class="even">
+                <td class="main-text"><div>Tires, Front Specification</div></td>
+                <td class="main-desc">100/90 X 18</td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Tires, Rear Specification</div></td>
+                <td class="main-desc">140/70 X 17</td>
+              </tr>
+              <tr class="even">
+                <td class="main-text"><div>Tire, Type</div></td>
+                <td class="main-desc">MRF Zapper Hyke</td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Fuel Capacity</div></td>
+                <td class="main-desc">13.5 l</td>
+              </tr>
+              <tr class="even">
+                <td class="main-text"><div>Weight, In Running Order</div></td>
+                <td class="main-desc">190.5</td>
+              </tr> -->
+            </table>
+          </div>
+          <!-- <div id="engines" class="tab-div tab-pane fade">
+            <table>
+              <tr class="even">
+                <td class="main-text"><div>Engine</div></td>
+                <td class="main-desc">
+                  440cc Single Cylinder, Air-Oil Cooled, Long Stroke Engine
+                </td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Bore</div></td>
+                <td class="main-desc">79.6 mm</td>
+              </tr>
+              <tr class="even">
+                <td class="main-text"><div>Stroke</div></td>
+                <td class="main-desc">88.4 mm</td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Displacement</div></td>
+                <td class="main-desc">440cc</td>
+              </tr>
+              <tr class="even">
+                <td class="main-text"><div>Compression Ratio</div></td>
+                <td class="main-desc">9.5:1</td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Fuel System</div></td>
+                <td class="main-desc">Fi</td>
+              </tr>
+            </table>
+          </div>
+          <div id="performance" class="tab-div tab-pane fade">
+            <table>
+              <tr class="even">
+                <td class="main-text"><div>Engine Torque</div></td>
+                <td class="main-desc">38 Nm</td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Engine Torque (rpm)</div></td>
+                <td class="main-desc">4000</td>
+              </tr>
+              <tr class="even">
+                <td class="main-text"><div>Horsepower</div></td>
+                <td class="main-desc">27 bhp @ 6,000</td>
+              </tr>
+            </table>
+          </div>
+          <div id="chassis" class="tab-div tab-pane fade">
+            <table>
+              <tr class="even">
+                <td class="main-text"><div>Front Fork</div></td>
+                <td class="main-desc">USD 43mm Double Cartridge Forks</td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Rear Shocks</div></td>
+                <td class="main-desc">
+                  Gas filled Twin Shocks, 7-step preload adjustable
+                </td>
+              </tr>
+              <tr class="even">
+                <td class="main-text">
+                  <div>Wheels, Optional Style Type</div>
+                </td>
+                <td class="main-desc">Spoke and Cast Wheels</td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Wheels, Front Type</div></td>
+                <td class="main-desc">Spoke and Cast Wheels</td>
+              </tr>
+              <tr class="even">
+                <td class="main-text"><div>Wheels, Rear Type</div></td>
+                <td class="main-desc">Spoke and Cast Wheels</td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Brakes, Rotor Type</div></td>
+                <td class="main-desc">Front: Disc 320mm Rear: Disc, 240mm</td>
+              </tr>
+            </table>
+          </div>
+          <div id="electric" class="tab-div tab-pane fade">
+            <table>
+              <tr class="even">
+                <td class="main-text">
+                  <div>Lights (as per country regulation)</div>
+                </td>
+                <td class="main-desc">
+                  All LED Headlamp with Multi-Projectors and Signature DRL, LED
+                  Winkers and LED Tail Lamp
+                </td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Gauges</div></td>
+                <td class="main-desc">TFT Display</td>
+              </tr>
+            </table>
+          </div>
+          <div id="infotainment" class="tab-div tab-pane fade">
+            <table>
+              <tr class="even">
+                <td class="main-text">
+                  <div>H-D<sup>™</sup> Connect Service</div>
+                </td>
+                <td class="main-desc">
+                  Connected Package with TCU functionality
+                </td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>Type</div></td>
+                <td class="main-desc">TFT Display</td>
+              </tr>
+              <tr class="even">
+                <td class="main-text"><div>Screen Size</div></td>
+                <td class="main-desc">3.5</td>
+              </tr>
+              <tr class="odd">
+                <td class="main-text"><div>USB</div></td>
+                <td class="main-desc">Yes, 2A - QC 3.0 standard</td>
+              </tr>
+              <tr class="even">
+                <td class="main-text"><div>Bluetooth Connectivity</div></td>
+                <td class="main-desc">
+                  Yes with Call Answer/Reject, Music Control and TbT Navigation
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="rse" class="tab-div tab-pane fade">
+            <table>
+              <tr class="even">
+                <td class="main-text">
+                  <div>Anti-lock Brake System (ABS)</div>
+                </td>
+                <td class="main-desc">Dual Channel ABS</td>
+              </tr>
+            </table>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>

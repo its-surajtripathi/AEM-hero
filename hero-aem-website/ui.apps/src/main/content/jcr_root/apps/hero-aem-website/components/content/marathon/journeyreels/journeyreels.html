@@ -1,0 +1,35 @@
+<div id="journey-slider">
+    <div class="slider-container">
+        <sly data-sly-list.parent="${resource.children}">
+            <div class="slider-row" data-sly-test="${parent.name == 'firstsectionitems'}">
+                <sly data-sly-list.child="${parent.children}">
+                    <div class="journey-slide">
+                        <img src="${child.desktopImage}" class="d-md-block d-none" alt="">
+                        <img src="${child.mobileImage}" class="d-block d-md-none" alt="">
+                    </div>
+                </sly>
+            </div>
+        </sly>
+        <sly data-sly-list.parent="${resource.children}">
+            <div class="slider-row reverse-animation" data-sly-test="${parent.name == 'secondsectionitems'}">
+                <sly data-sly-list.child="${parent.children}">
+                    <div class="journey-slide">
+                        <img src="${child.desktopImage}" class="d-md-block d-none" alt="">
+                        <img src="${child.mobileImage}" class="d-block d-md-none" alt="">
+                    </div>
+                </sly>
+            </div>
+        </sly>
+        <sly data-sly-list.parent="${resource.children}">
+            <div class="slider-row to-left" data-sly-test="${parent.name == 'thirdsectionitems'}">
+                <sly data-sly-list.child="${parent.children}">
+                    <div class="journey-slide">
+                        <img src="${child.desktopImage}" class="d-md-block d-none" alt="">
+                        <img src="${child.mobileImage}" class="d-block d-md-none" alt="">
+                    </div>
+                </sly>
+            </div>
+        </sly>
+
+    </div>
+</div>

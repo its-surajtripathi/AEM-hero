@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[hero-aem-website.marathon.site]"
+    cssProcessor="[default:none,min:yui]"
+    embed="[hero-aem-website.marathonheader,hero-aem-website.heroforever,hero-aem-website.journeyreels,hero-aem-website.contentfragmentlist,hero-aem-website.herofamilyconnect,marathon-our-initiatives,hero-aem-website.feature-marathon-carousel]"
+    jsProcessor="[default:none,min:gcc]"/>

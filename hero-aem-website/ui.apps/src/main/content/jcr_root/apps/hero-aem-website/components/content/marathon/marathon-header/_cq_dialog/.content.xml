@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page Header"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <info
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Hero Logo Marathon"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <redirect
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Redirection Link"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Redirection Link"
+                                                name="./redirect"/>
+                                            <image
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Logo"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Logo"
+                                                name="./icon"/>
+                                            <mobileenable
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}false"
+                                                fieldDescription="Enable the checkbox to show the link section in mobile"
+                                                name="./mobileenable"
+                                                text="Enable the checkbox to show the link section in mobile"
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </info>
+                    <headeritems
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Header Items"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldDescription="Click 'Add Field' to add a  status."
+                        fieldLabel="Header Items"
+                        showhidetargetvalue="">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./headeritems">
+                            <items jcr:primaryType="nt:unstructured">
+                                <configurations
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <carouselconfigs
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Header Item"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <text
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Link Text"
+                                                    name="./text"/>
+                                                <mobtext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Mobile Link Text"
+                                                    name="./mobtext"/>
+                                                <link
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="URL"
+                                                    name="./url"/>
+                                            </items>
+                                        </carouselconfigs>
+                                    </items>
+                                </configurations>
+                            </items>
+                        </field>
+                    </headeritems>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

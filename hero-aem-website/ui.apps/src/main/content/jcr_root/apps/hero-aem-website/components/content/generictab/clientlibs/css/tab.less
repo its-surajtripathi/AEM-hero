@@ -1,0 +1,84 @@
+ .explore-tab-section {
+      background-repeat: no-repeat;
+      background-position: 100% 96%;
+      background-size: 100% 43%;
+      margin-top: 30px;
+      .bike-product-prant{
+        a{
+            text-align:center;
+        }
+      }
+      .explore-div {
+        display: flex;
+        justify-content: flex-end;
+      }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	
+	// explore-product-section start
+  .explore-tab-section {
+    .explore-div {
+      padding-top: 26px;
+    }Init
+    .tab-wrapper {
+      .tab-nav-tabs {
+        &::-webkit-scrollbar {
+          width: 0 !important;
+          height: 0 !important;
+        }
+      }
+    }
+  }
+  // explore-product-section end
+}
+@media (max-width: 991.2px) and (min-width: 768px) {
+	.explore-tab-section {
+        .explore-div {
+          padding-top: 26px;
+        }
+      }
+}	
+@media (max-width: 767px) and (min-width: 320px) {
+	 .explore-tab-section {
+        background-image: none !important;
+        overflow: hidden;
+        .explore-div {
+          padding-top: 26px;
+        }
+        .bike-tab-section {
+          .bike-product-wrapper {
+            margin-top: 30px;
+            .tab-content {
+              .tab-pane {
+                .bike-product-prant {
+                  display: block;
+                  flex-direction: column;
+                  align-items: center;
+                  flex: none;
+                  width:30%;
+                  a{
+
+                    img.bike-product-img{
+                        margin:0 auto;
+                    }
+                  }
+                  p {
+                    font-size: var(--font-size12);
+                    color: var(--text-color-black);
+                    font-family: var(--font-tstar-bold);
+                    font-weight: var(--font-weight-900);
+                  }
+                }
+                .layout-2 {
+                  .bike-product-prant {
+                    width: 30%;
+                    margin: 0 22px 15px 22px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        }
+}

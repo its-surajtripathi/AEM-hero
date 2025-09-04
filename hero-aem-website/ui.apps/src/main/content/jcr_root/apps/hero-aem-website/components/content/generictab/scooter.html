@@ -1,0 +1,31 @@
+<div class="product-highlighted-features">
+    <div class="container" data-sly-use.tabitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='tabitems'}">
+        <ul class="nav nav-tabs" id="highlightedFeatures" role="tablist" data-sly-list="${tabitems}">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link${itemList.first ? ' active' : ''}" id="highlightedFeatures${itemList.count}-tab" data-toggle="tab"
+                        data-target="#highlightedFeatures${itemList.count}" type="button" role="tab" aria-controls="highlightedFeatures${itemList.count}"
+                        aria-selected="true">
+              <span class="icon">
+                <img loading="lazy" src="${item.properties.icon}" alt="tail-light">
+              </span>
+                    <span>${item.properties.title}<br>
+                ${item.properties.subtitle}</span>
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="highlightedFeaturesContent" data-sly-list="${tabitems}">
+            <div class="tab-pane fade show${itemList.first ? ' active' : ''}" id="highlightedFeatures${itemList.count}" role="tabpanel"
+                 aria-labelledby="highlightedFeatures${itemList.count}-tab">
+                <div class="tab-inner">
+                    <div class="info-panel"
+                         data-sly-resource="${['tabdetails',itemList.count] @ join='-' , resourceType='wcm/foundation/components/responsivegrid'}">
+                    </div>
+                    <div class="img-panel text-center text-md-right"
+                         data-sly-resource="${['tabimage',itemList.count] @ join='-' , resourceType='wcm/foundation/components/image'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

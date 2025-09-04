@@ -1,0 +1,28 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+
+<sly  data-sly-test="${properties.layoutvariation == 'default' || properties.layoutvariation != 'xoom'}">
+<div class="explore-360-features-main ${ properties.lowercase ? 'casesensitive' : ''} ${ properties.campaignBackground=='true' ? 'camp-xoom-bg' : ''} "
+	data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multitext'}"
+	data-sly-list="${listUse}">
+	<div class="rotate-bike-div">
+		<img class="img-fluid" src="${item.properties.image}" alt="${item.properties.imagealt}">
+		<p class="compaign-p">${item.properties.title}</p>
+	</div>
+</div>
+</sly>
+
+<sly  data-sly-test="${properties.layoutvariation == 'xoom'}">
+<section id="campaign-xoom-container">
+        <h4 class="h2-heading-std text-center text-uppercase" id="campaign-xoom-title">${properties.campaignXoomMainTitle}</h4>
+        <div class="campaign-xoom-content-wrapper" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multitextforxoom'}"
+	data-sly-list="${listUse}">
+            <div class="campaign-xoom-text-wrapper">
+                <h4 class="h3-heavy-heading-std" id="campaign-xoom-subtitle">${item.properties.campaignXoomSubTitle @ context='html'}</h4>
+                <p class="campaign-xoom-content b2-text-std">${item.properties.campaignXoomTextContent @ context='html'}</p>
+            </div>
+            <div class="break-line"></div>
+        </div>
+    </section>
+</sly>

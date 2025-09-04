@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+	<filter root="/conf/hero-aem-website/settings/wcm/templates/hero-premium" mode="replace"/>
+	<filter root="/conf/hero-aem-website/settings/wcm/templates/premia" mode="replace"/>
+	<filter root="/conf/hero-aem-website/settings/wcm/templates/homepage" mode="replace"/>
+    <filter root="/conf/hero-aem-website/settings/wcm/templates/hero-marathon-website-template" mode="replace"/>
+    <filter root="/conf/hero-aem-website/settings/wcm/policies" mode="replace"/>
+    <filter root="/conf/hero-aem-website/settings/dam/cfm/models" mode="replace"/>
+    <filter root="/conf/global/settings/workflow/launcher/config/hmc-dealer-ingestion-in" mode="merge"/>
+    <filter root="/conf/global/settings/workflow/launcher/config/hmc-price-ingestion-in" mode="merge"/>
+    <filter root="/conf/global/settings/workflow/models/city-ingestion" mode="merge"/>
+    <filter root="/conf/global/settings/workflow/models/dealer-ingestion" mode="merge"/>
+    <filter root="/conf/global/settings/workflow/models/price-ingestion" mode="merge"/>
+    <filter root="/conf/global/settings/dam/processing/carousel"/>
+    <filter root="/conf/global/settings/dam/processing/explore-products"/>
+    <filter root="/conf/global/settings/dam/processing/hero-banner"/>
+    <filter root="/conf/global/settings/dam/processing/hero-generic-profile"/>
+    <filter root="/conf/global/settings/dam/processing/navigation"/>
+    <filter root="/conf/global/settings/dam/processing/360-image"/>
+	<filter root="/conf/global/settings/dam/adminui-extension"/>
+    <filter root="/conf/bcipl/settings/wcm/templates/page-content" mode="replace"/>
+    <filter root="/conf/bcipl/settings/wcm/policies" mode="replace"/>
+    <filter root="/conf/bcipl/settings/wcm/template-types" mode="replace"/>
+    <!-- <filter root="/content/experience-fragments/hero-aem-website" mode="merge"/> -->
+    <filter root="/conf/premia-booking"/>
+</workspaceFilter>

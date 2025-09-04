@@ -1,0 +1,21 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+    format=[component.title], i18n} </p>
+
+<div>
+    <div class="hero-forever-heading">${properties.titleHeader @ context = 'html'}</div>
+    <div class="hero-forever-wrapper">
+        <img src="${properties.image}" alt="leadership-image" class="hero-forever-image">
+        <div class="hero-forever-vision-container">
+            <sly data-sly-list.parent="${resource.children}">
+                <sly data-sly-test="${parent.name == 'multifield'}">
+                    <sly data-sly-list.child="${parent.children}">
+                        <div class="hero-forever-vision-box">
+                            <h4 class="hero-forever-vision-heading">${child.title @context='html'}</h4>
+                            <p class="hero-forever-vision-description">${child.description @ context = 'html'}</p>
+                        </div>
+                    </sly>
+                </sly>
+            </sly>
+        </div>
+    </div>
+</div>

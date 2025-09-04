@@ -1,0 +1,16 @@
+<section id="${properties.aboutxtrackID}" class="about-xtract-container">
+	<div  class="about-xtract-content" >
+        <picture class="about-xtract-bgimg">
+         <source media="(max-width:650px)" srcset="${properties.xtrackmbbgimg}">
+         <img src="${properties.xtrackbgimg @ context='uri'}" class="about-xtract-img" >
+        </picture>
+
+        <div class="about-xtract">
+            ${properties.xtrackTitle @ context='html'}
+            <div class="about-xtract-description" >${properties.xtrackText @ context='html'}</div>
+         </div>
+	</div>
+</section>
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>

@@ -1,0 +1,508 @@
+.specifications-tabs-section {
+  padding: 0px 27px;
+}
+.specifications-tabs-section .tab-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main {
+  width: max-content;
+  justify-content: flex-start;
+  border: none;
+  margin: 0 auto;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item {
+
+  margin-right: 4px;
+  transform: skewX(-16deg);
+  overflow: hidden;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link {
+  background-color: #F3F3F5;
+  min-width: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 0;
+  border: none;
+  width:unset;
+  min-width:140px;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .stright-d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .stright-d .nav-link-p {
+  font-family: var(--font-tstar-bold);
+  font-weight: var(--font-weight-900);
+  font-size: var(--font-size18);
+  line-height: var(--line-height-22);
+  color: var(--text-color-black);
+  text-transform: capitalize;
+  font-style: italic;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .nav-link-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 54px;
+  height: 54px;
+  transform: skewX(16deg);
+}
+
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active .nav-link-img.active {
+    display:inline-block;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active .nav-link-img.inactive {
+    display:none;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .nav-link-img.active {
+    display:none;
+}
+
+
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .nav-link-img.inactive {
+    display:inline-block;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover .nav-link-p {
+  color: #FFFFFF;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover .nav-link-img.active {
+  display:inline-block;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover .nav-link-img.inactive {
+  display:none;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover {
+  background-color: #EA0000;
+  transition: 1s;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active {
+  background-color: #EA0000;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active .nav-link-p {
+  color: var(--text-color-white);
+}
+
+.specifications-tabs-section .slide-1-content {
+  position: absolute;
+  top: 86px;
+  right: 22px;
+  display: flex;
+  align-items: center;
+}
+.specifications-tabs-section .slide-1-content .share-icon {
+  padding-left: 15px;
+}
+.specifications-tabs-section .slide-1-content .share-options {
+  position: absolute;
+  right: 0px;
+  bottom: 55px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.specifications-tabs-section .slide-1-content .share-options ul {
+  display: flex;
+  width: max-content;
+}
+.specifications-tabs-section .slide-1-content .share-options ul li {
+  margin: 0 5px;
+}
+.specifications-tabs-section .slide-1-content .share-options.active {
+  visibility: visible;
+  height: 32px;
+  transition: 0.5s;
+}
+.specifications-tabs-section .specfication-wrapper {
+  margin-top: -50px;
+  background-color: #E2E2E2;
+  padding: 144px 20px 50px 20px;
+  position: relative;
+}
+.specifications-tabs-section .specfication-wrapper .specification-div {
+  background-color: #FF0000 !important;
+}
+
+/* LG Devices Start  */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link{
+    min-width: 110px;
+  }
+  .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .stright-d .nav-link-p {
+    font-size: var(--font-size14);
+  }
+  .specifications-tabs-section .specfication-wrapper .tab-content .tab-pane .engine-left-img img {
+    width: 256px;
+  }
+  .specifications-tabs-section .slide-1-content {
+    top: 75px;
+  }
+}
+/* MD Devices Start  */
+@media (max-width: 991.2px) and (min-width: 768px) {
+  .specifications-tabs-sectionx {
+    padding: 0;
+  }
+  .specifications-tabs-sectionx .tab-wrapper .cust-common-tabs-main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .specifications-tabs-sectionx .tab-wrapper .cust-common-tabs-main .slick-arrow {
+    display: none !important;
+  }
+  .specifications-tabs-sectionx .tab-wrapper .cust-common-tabs-main .slick-list {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .specifications-tabs-sectionx .tab-wrapper .cust-common-tabs-main .nav-item .nav-link {
+    min-width: 70px;
+    width: auto;
+    padding: 5px 10px;
+  }
+  .specifications-tabs-sectionx .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .stright-d .nav-link-img {
+    width: 26px;
+    height: 26px;
+    background-size: 100% !important;
+  }
+  .specifications-tabs-sectionx .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .stright-d .nav-link-p {
+    font-size: 10px;
+    color: var(--text-color-black);
+  }
+  .specifications-tabs-sectionx .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active {
+    border-color: #303030;
+  }
+  .specifications-tabs-sectionx .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active .stright-d .nav-link-img {
+    width: 26px;
+    height: 26px;
+    background-size: 100% !important;
+  }
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active:hover{
+    background-color:#EA0000;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active:hover .nav-link-p {
+   color: #fff;
+ }
+ .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active:hover .nav-link-img.active {
+   display:inline-block;
+ }
+ .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active:hover .nav-link-img.inactive {
+   display:none;
+ }
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover .nav-link-p {
+  color: #000;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover .nav-link-img.active {
+  display:none;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover .nav-link-img.inactive {
+  display:inline-block;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover {
+  background-color: #F3F3F5;
+  transition: 1s;
+}
+
+  .specifications-tabs-sectionx .specfication-wrapper {
+    padding-top: 100px;
+  }
+  .specifications-tabs-sectionx .specfication-wrapper .tab-content .tab-pane .cust-tab-pane-img {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .specifications-tabs-sectionx .specfication-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-left-img {
+    width: 250px;
+    margin-bottom: 15px;
+  }
+  .specifications-tabs-sectionx .specfication-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-info-sec {
+    margin: 0;
+  }
+  .specifications-tabs-sectionx .slide-1-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: unset;
+    right: unset;
+    justify-content: center;
+    width: max-content;
+    margin: auto;
+  }
+  .specifications-tabs-sectionx .slide-1-content .share-options {
+    right: auto;
+    left: 100%;
+    bottom: 10px;
+    height: 32px;
+    width: 0px;
+  }
+  .specifications-tabs-sectionx .slide-1-content .share-options.active {
+    width: 84px;
+    height: 32px;
+  }
+  .specification-section {
+    padding: 0;
+  }
+  .specification-section .specification-wrapper {
+    padding-top: 15px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section {
+    padding: 0;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main {
+
+    margin: 0 auto;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .slick-arrow {
+    display: none !important;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .slick-list {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link {
+    min-width: 70px;
+    width: auto;
+    padding: 5px 10px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .stright-d .nav-link-img {
+    width: 26px;
+    height: 26px;
+    background-size: 100% !important;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .stright-d .nav-link-p {
+    font-size: 10px;
+
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active {
+    border-color: #303030;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active .stright-d .nav-link-img {
+    width: 26px;
+    height: 26px;
+    background-size: 100% !important;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active .stright-d .nav-link-p {
+    font-size: 10px;
+
+     color: var(--text-color-white);
+  }
+
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper {
+    margin-top: -30px;
+    padding: 40px 15px 15px 15px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-left-img {
+    width: 145px;
+    margin-bottom: 15px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-info-sec {
+    margin: 0;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-info-sec .engine-common-div .engine-common-wrap {
+    padding-bottom: 25px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-info-sec .engine-common-div .engine-common-wrap .engine-common-h1 {
+    font-size: 12px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-info-sec .engine-common-div .engine-common-wrap .engine-common-p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .slide-1-cta .btn {
+    padding: 12px 13px;
+    font-size: 14px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-icon {
+    padding-left: 10px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-icon img {
+    width: 20px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-options {
+    right: auto;
+    left: calc(100% + 3px);
+    bottom: 7px;
+    height: 30px;
+    width: 0px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-options ul li {
+    margin: 0;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-options ul li img {
+    width: 30px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-options.active {
+    width: 60px;
+    height: 30px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .callback-btn {
+    padding: 8px 24px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+/* SM & XS Devices Start  */
+@media (max-width: 767px) and (min-width: 320px) {
+  .specification-section {
+    padding: 0;
+  }
+  .specification-section .specification-wrapper {
+    padding-top: 15px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section {
+    padding: 0;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .slick-arrow {
+    display: none !important;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .slick-list {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link {
+    min-width: 70px;
+    width: auto;
+    padding: 5px 10px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .stright-d .nav-link-img {
+    width: 26px;
+    height: 26px;
+    background-size: 100% !important;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link .stright-d .nav-link-p {
+    font-size: 10px;
+
+  }
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active:hover{
+    background-color:#EA0000;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active:hover .nav-link-p {
+   color: #fff;
+ }
+ .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active:hover .nav-link-img.active {
+   display:inline-block;
+ }
+ .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active:hover .nav-link-img.inactive {
+   display:none;
+ }
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover .nav-link-p {
+  color: #000;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover .nav-link-img.active {
+  display:none;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover .nav-link-img.inactive {
+  display:inline-block;
+}
+.specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link:hover {
+  background-color: #F3F3F5;
+  transition: 1s;
+}
+
+  .specification-section .specification-wrapper .specifications-tabs-section .tab-wrapper .cust-common-tabs-main .nav-item .nav-link.active .stright-d .nav-link-img {
+    width: 26px;
+    height: 26px;
+    background-size: 100% !important;
+  }
+
+
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper {
+    margin-top: -30px;
+    padding: 40px 15px 15px 15px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-left-img {
+    width: 145px;
+    margin-bottom: 15px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-info-sec {
+    margin: 0;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-info-sec .engine-common-div .engine-common-wrap {
+    padding-bottom: 25px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-info-sec .engine-common-div .engine-common-wrap .engine-common-h1 {
+    font-size: 12px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .tab-content .tab-pane .cust-tab-pane-img .engine-info-sec .engine-common-div .engine-common-wrap .engine-common-p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .slide-1-cta .btn {
+    padding: 12px 13px;
+    font-size: 14px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-icon {
+    padding-left: 10px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-icon img {
+    width: 20px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-options {
+    right: auto;
+    left: calc(100% + 3px);
+    bottom: 7px;
+    height: 30px;
+    width: 0px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-options ul li {
+    margin: 0;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-options ul li img {
+    width: 30px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .share-options.active {
+    width: 60px;
+    height: 30px;
+  }
+  .specification-section .specification-wrapper .specifications-tabs-section .bike-product-wrapper .slide-1-content .callback-btn {
+    padding: 8px 24px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.home-main-section.city-bike-banner-section .carousel-inner .slider-content{
+        bottom: 16%;
+        left: -30px;
+}

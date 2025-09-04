@@ -1,0 +1,65 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<section data-sly-test="${properties.qlvariant == 'default'}">
+    <h3 class="h2-heading-std text-to-uppercase text-italic">${properties.headline}</h3>
+    <div class="help-main-box ${listUse.length == 6 ? 'quick-link-size6' : ''}"
+        data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='quicklinkdetails'}"
+        data-sly-list="${listUse}" id="quicklink">
+        <a class="help-box ${item.properties.wrapperclass}" aa-data-attr="track_cta"
+            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo}"
+            href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+            data-sly-test="${item.properties.urltype == 'url'}">
+            <div class="help-icon-box">
+                <img loading="lazy" src="${item.properties.imageRef}" class="img-fluid inactive-icon"
+                    alt="${item.properties.imageAlt}">
+                <img loading="lazy" src="${item.properties.imageIconRef}" class="img-fluid active-icon"
+                    alt="${item.properties.imageAlt}">
+            </div>
+            <p class="help-icon-label h4-bold-heading-std">${item.properties.quickLinkText}</p>
+        </a>
+        <a class="help-box ${item.properties.wrapperclass}" aa-data-attr="track_cta" href="javascript:void(0)"
+            data-toggle="modal" data-target="${item.properties.linkTo}"
+            data-sly-test="${item.properties.urltype == 'modal'}">
+            <div class="help-icon-box">
+                <img loading="lazy" src="${item.properties.imageRef}" class="img-fluid inactive-icon"
+                    alt="${item.properties.imageAlt}">
+                <img loading="lazy" src="${item.properties.imageIconRef}" class="img-fluid active-icon"
+                    alt="${item.properties.imageAlt}">
+            </div>
+            <p class="help-icon-label h4-bold-heading-std">${item.properties.quickLinkText}</p>
+        </a>
+    </div>
+</section>
+
+<section data-sly-test="${properties.qlvariant == 'investors'}">
+    <div class="quick-link-container">
+        <sly data-sly-list.mainql="${resource.getChildren}">
+            <sly data-sly-test="${mainql.name == 'quicklinksmulti'}">
+                <sly data-sly-list.mainqlitems="${mainql.getChildren}">
+                    <div
+                        class="${mainqlitems.qlvariant == 'red' ? 'inner-field-1' : (mainqlitems.qlvariant == 'black' ? 'inner-field-2' : (mainqlitems.qlvariant == 'grey' ? 'inner-field-3' : (mainqlitems.qlvariant == 'silver' ? 'inner-field-4 black' : (mainqlitems.qlvariant == 'lightgrey' ? 'inner-field-5 black' : ''))))}">
+                        <div class="inner-info-field">
+                            <div class="card-name">${mainqlitems.qltitle @ context='html'}</div>
+                            <sly data-sly-list.subitems="${mainqlitems.getChildren}">
+                                <sly data-sly-test="${subitems.name == 'submultiquicklinks'}">
+                                    <sly data-sly-list.subqlitems="${subitems.getChildren}">
+                                        <div class="border-line" data-sly-test="${subqlitemsList.index==1}"></div>
+                                        <div>
+                                            <div class="card-heading">${subqlitems.subqltitle @ context='html'}</div>
+                                            <div class="first-card-link card-link"><a aa-data-attr="track_cta" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=subqlitems.qlctaurl}" href="${linkuse.value}" x-cq-linkchecker="valid" target="${linkuse.isExternal ? '_blank' : '_self'}">${subqlitems.qlctalabel} <i class="right-arrow"></i></a>
+                                            </div>
+                                        </div>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </div>
+                    </div>
+                </sly>
+            </sly>
+        </sly>
+    </div>
+</section>
+
+
+<sly data-sly-test="${properties.qlvariant == 'investorsdividend'}" data-sly-include="${properties.qlvariant}.html"></sly>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-06T05:41:15.537Z"
+        cq:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+        cq:lastReplicated="{Date}2022-09-13T11:38:27.766Z"
+        cq:lastReplicated_publish="{Date}2022-09-13T11:38:27.766Z"
+        cq:lastReplicatedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicatedBy_publish="kiran.jaganmohan@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[hero-website:homepage/two-wheeler-company,hero-website:homepage/motorcycle-company-in-india,hero-website:homepage/best-bike-manufacturers,hero-website:homepage/best-two-wheeler-company]"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/page-content"
+        jcr:description="Hero MotoCorp is India’s leading two wheeler company with over 100 million two wheelers sold till date. Find out more about what makes Hero MotorCorp the #1 motorcycle company in India. Explore wide range of new motorcycles and scooters at heromotocorp.com"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
+        jcr:uuid="fbbc7d52-4793-4157-bb60-59764ce72880"
+        sling:resourceType="hero-aem-website/components/structure/page"
+        pageTitle="New Motorcycles and Scooters. Two Wheeler Manufacturers Company in India – Hero MotoCorp"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid"/>
+            </container>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-09-06T05:41:15.507Z"
+            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+    <scooters/>
+    <motorcycles/>
+    <homepage/>
+    <hero-campaigns/>
+</jcr:root>

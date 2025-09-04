@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Navigation"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <variation
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        class="cq-dialog-dropdown-showhide"
+                        cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                        fieldLabel="Select Variation"
+                        name="./variation"
+                        required="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <user-menu
+                                jcr:primaryType="nt:unstructured"
+                                text="User Menu"
+                                value="user-menu"/>
+                            <progress-bar
+                                jcr:primaryType="nt:unstructured"
+                                text="Show User Progress"
+                                value="user-progress"/>
+                        </items>
+                    </variation>
+                    <user-menu
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="show-hide-textfield"
+                        showhidetargetvalue="user-menu">
+                        <items jcr:primaryType="nt:unstructured">
+                            <viewaccountLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="View Account Label"
+                                name="./accountLabel"
+                                required="{Boolean}true"/>
+                            <viewaccountLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldLabel="View Account Link"
+                                name="./accountLink"
+                                required="{Boolean}true"/>
+							<pencilIcon
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldLabel="Select Pencil Icon"
+                                name="./pencilIcon"
+                                required="{Boolean}true"
+                                rootPath="/content/dam/hero-aem-website"/>
+                            <editaccountLink
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                    fieldLabel="Edit Account Link"
+                                    name="./editaccountLink"
+                                    required="{Boolean}true"/>
+                            <menuLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Enter Menu Label for mobile mode"
+                                name="./menuLabel"
+                                required="{Boolean}true"/>
+                            <menuIcon
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldLabel="Select Menu Icon for mobile mode"
+                                name="./menuIcon"
+                                required="{Boolean}true"
+                                rootPath="/content/dam/hero-aem-website"/>
+                            <navItems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Navigation Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./navItems">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Title"
+                                            name="./navTitle"
+                                            required="{Boolean}true"/>
+                                        <activeIcon
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="Select Active Icon"
+                                            name="./activeIcon"
+                                            required="{Boolean}true"
+                                            rootPath="/content/dam/hero-aem-website"/>
+                                        <inactiveIcon
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="Select In Active Icon"
+                                            name="./inactiveIcon"
+                                            required="{Boolean}true"
+                                            rootPath="/content/dam/hero-aem-website"/>
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="Link"
+                                            name="./navLink"
+                                            required="{Boolean}true"/>
+                                    </items>
+                                </field>
+                            </navItems>
+                        </items>
+                    </user-menu>
+                    <progress-bar
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="show-hide-textfield"
+                        showhidetargetvalue="user-progress">
+                        <items jcr:primaryType="nt:unstructured">
+                            <bgImage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldLabel="Select Background Image"
+                                name="./bgImage"
+                                required="{Boolean}true"
+                                rootPath="/content/dam/hero-aem-website"/>
+                            <navItems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Navigation Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./progressbarItems">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <id
+			                                jcr:primaryType="nt:unstructured"
+			                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+			                                fieldLabel="Unique ID for this step"
+			                                name="./id"/>
+                                        <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Title"
+                                            name="./navTitle"
+                                            required="{Boolean}true"/>
+                                        
+                                        <activeIcon
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="Select Active Icon"
+                                            name="./activeIcon"
+                                            required="{Boolean}true"
+                                            rootPath="/content/dam/hero-aem-website"/>
+                                        <inactiveIcon
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="Select In Active Icon"
+                                            name="./inactiveIcon"
+                                            required="{Boolean}true"
+                                            rootPath="/content/dam/hero-aem-website"/>
+                                    </items>
+                                </field>
+                            </navItems>
+                        </items>
+                    </progress-bar>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

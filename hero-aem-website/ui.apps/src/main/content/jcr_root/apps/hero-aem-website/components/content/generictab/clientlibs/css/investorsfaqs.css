@@ -1,0 +1,13 @@
+.investors-faq-section .investors-contact-mobile {
+    display: none;
+}
+
+@media (max-width: 569px) {
+    .investors-faq-section .generic-faq-wrap {
+        display: none;
+    }
+
+    .investors-faq-section .investors-contact-mobile {
+        display: block;
+    }
+}

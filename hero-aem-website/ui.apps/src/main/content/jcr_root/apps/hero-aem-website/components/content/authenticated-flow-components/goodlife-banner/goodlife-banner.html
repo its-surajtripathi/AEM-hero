@@ -1,0 +1,157 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+
+<div class="good-life-banner-wrapper" style="background-image: url(${properties.bgImage @ context='uri'})"
+    data-sly-test="${properties.bannervariation == 'icon-link'}">
+    <div class="col-sm-6 col-lg-12">
+        <div class="header-container">
+            <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multiItems'}"
+                data-sly-list="${listUse}">
+                <div class="col-sm-2">
+                    <div class="img-inline">
+                        <img src="${item.properties.icon}">
+                        <p class="col-sm-12 header-content">${item.properties.heading @ context='html'}</p>
+                    </div>
+                </div>
+            </sly>
+            <div class="col-sm-4">
+                <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.buttonLink}"
+                    href="${linkuse.value}" data-sly-test="${properties.buttonLabel}">
+                    <button class="btn-details">${properties.buttonLabel}</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- xClan banner start -->
+<div class="xClan-banner-container" data-sly-test="${properties.bannervariation == 'img-vehicle'}">
+    <div class="xClan-banner-left">
+        <img src="${properties.imagePath}" alt="platinum-ban-pic">
+        <div class="xClan-banner-textLeft">
+            <P class="xClan-banner-title">${properties.headingtxt}</P>
+            <P class="xClan-banner-price">${properties.subheading}</P>
+            <P class="xClan-banner-insurance">
+                ${properties.description @ context = 'html'}
+            </P>
+        </div>
+    </div>
+    <div class="xClan-banner-right">
+        <script type="text/html" class="selvehicleData">
+            <img src="<%=vehicleDetails.imagePath%>" alt="motorbike-ban-pic" class="xclan-banner-imgRight">
+            	<div class="xClan-banner-textRight">
+                	<p class="xClan-banner-biketitle"><%=vehicleDetails.modelName%></p>
+                	<p class="xClan-banner-numPlate"><%=vehicleDetails.licenseNo%></p>
+					<a href="javascript:void(0)" aa-data-attr="track_cta" data-toggle="modal" data-target="#changeVehicleModal">
+                		<p class="xClan-banner-link d-none">
+                    		<span>${properties.linkLabel @ context = 'scriptString'}</span>
+                    		<img src="${properties.linkIcon @ context = 'uri'}" alt="rightArrow-red" class="img-fluid">
+                		</p>
+					</a>
+            	</div>
+        </script>
+    </div>
+</div>
+<div class="modal fade change-vehicleModal" id="changeVehicleModal" tabindex="-1" role="dialog"
+    aria-labelledby="changeVehicleModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="change-vehicle-header ${properties.addnclass}">
+                    <div class="vehicle-header-logo">
+                        <img src="${properties.imagePath}" alt="plan-img"/>
+                    </div>
+                    <div class="vehicle-header-title">
+                        <h5>${properties.headingtxt}</h5>
+                        <h3>${properties.subheading}</h3>
+                    </div>
+                    <button type="button" class="close close-vehicle-modal" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal-body change-vehicle-grid-container">
+                <!-- <h5 class="modal-title select-vehicle" id="changeVehicleLabel">${properties.selectvehicleheading}</h5> -->
+                <h5 class="modal-title select-vehicle" id="changeVehicleLabel">Select the vehicle for this plan</h5>
+                <div class="row vehicle-list">
+                    <script type="text/html" class="vehicleDetailsTemp">
+				<%_.each(vehicleDetails, function(item, i, list) { %>
+            		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 change-vehicle-grid <%if(vehicleDetails[i].vinNO == JSON.parse(atob(getCookie('selectedVehicleData'))).vinNO){%><%='active'%><%}%>" data-vinnoindex="<%=i%>">
+                		<img src="<%=vehicleDetails[i].imagePath%>"/>
+                		<p><%=vehicleDetails[i].modelName%></p>
+		            </div>
+				<% });%>
+            </script>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button"
+                    class="btn btn-primary btn-vehicle-change">${properties.changevehiclelabel}</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- xClan banner end -->
+
+<!-- HF 100 banner start -->
+<div class="hf-main-container" data-sly-test="${properties.bannervariation == 'icon-vehicle'}">
+    <div class="row hf-bg-container banner-icon">
+        <script type="text/html" class="selvehicleData">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 hf-left-container">
+            <img src="<%=vehicleDetails.imagePath%>" class="img-fluid"/>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 hf-center-container">
+            <div class="hf-num-left">
+                <h3><%=vehicleDetails.modelName%></h3>
+                <div class="bike-number"><%=vehicleDetails.licenseNo%></div>
+            </div>
+            <div class="hf-num-right">
+                <h1><%=vehicleDetails.modelName%></h1>
+            </div>
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 hf-right-container">
+            <img src="${properties.iconPath @ context = 'uri'}" class="img-fluid"/>
+        </div>
+		</script>
+    </div>
+</div>
+<!-- HF 100 banner end -->
+
+<!-- Refer a friend banner start -->
+<div class="row" data-sly-test="${properties.bannervariation == 'refer-a-friend'}">
+    <div class="friend_bg_img" style="background-image: url(${properties.bgImage @ context='uri'})">
+        <div class="align-heading col-md-4 offset-md-4 col-xl-4 offset-xl-4">
+            <p class="friend_heading">${properties.headingtxt}</p>
+            <br>
+            <p class="friend-heading-2nd">
+                ${properties.description @ context = 'html'}
+            </p>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
+<!-- Refer a friend banner start -->
+
+<!-- Banner link start -->
+<div class="refer-banner container-fluid" data-sly-test="${properties.bannervariation == 'banner-link'}">
+    <div class="refer-card">
+        <div class="row refer">
+            <div class="col-sm-7 col-7">
+                <p class="heading">${properties.headingtxt}</p>
+                <div class="subtext">${properties.subheading}</div>
+                <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.buttonLink}"
+                    href="${linkuse.value}">
+                    <button class="bt_refer refer-yourself-btn">${properties.buttonLabel}</button>
+                </a>
+            </div>
+            <div class="col-sm-5 col-5"> <img src="${properties.imagePath}" class="img_position" /></div>
+        </div>
+    </div>
+</div>
+
+<!-- Banner link end -->

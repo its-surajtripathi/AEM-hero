@@ -1,0 +1,109 @@
+.hero-forever-heading h3 {
+  margin: 0 auto;
+  width: 77.5%;
+  max-width: 1366px;
+  background-image: linear-gradient(#df7900, #edcc1e);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 38px;
+  font-family: "gothamnarrow-bold";
+  font-weight: 600;
+  line-height: 1.473;
+}
+
+.hero-forever-wrapper {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 32px;
+  max-width: 1366px;
+}
+
+.hero-forever-wrapper .hero-forever-image {
+  height: 572px;
+}
+
+.hero-forever-wrapper .hero-forever-vision-container {
+  padding: 0 40px 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-forever-wrapper .hero-forever-vision-box {
+  max-width: calc(50% - 20px);
+  padding: 30px 12px;
+  box-shadow: 0px 3px 32px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  margin-right: 40px;
+  margin-bottom: 36px;
+}
+
+.hero-forever-wrapper .hero-forever-vision-box:nth-child(even) {
+  margin-right: 0;
+}
+
+.hero-forever-wrapper .hero-forever-vision-heading {
+  background-image: linear-gradient(#df7900, #edcc1e);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 24px;
+  font-family: "gothamnarrow-bold";
+  padding-bottom: 8px;
+}
+
+.hero-forever-wrapper .hero-forever-vision-description {
+  text-align: center;
+  font-size: 18px;
+  font-family: "gothamnarrow-book";
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .hero-forever-heading h3 {
+    width: 100%;
+    font-size: 24px;
+    padding: 0 16px;
+  }
+
+  .hero-forever-wrapper .hero-forever-image {
+    display: none;
+  }
+
+  .hero-forever-wrapper {
+    margin-top: 22px;
+  }
+
+  .hero-forever-wrapper .hero-forever-vision-container {
+    padding: 0 16px;
+  }
+
+  .hero-forever-wrapper .hero-forever-vision-box {
+    padding: 16px 8px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: calc(50% - 8px);
+  }
+
+  .hero-forever-wrapper .hero-forever-vision-box:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .hero-forever-wrapper .hero-forever-vision-heading {
+    font-size: 16px;
+  }
+
+  .hero-forever-wrapper .hero-forever-vision-description {
+    font-size: 14px;
+  }
+
+  .hero-forever-wrapper .hero-forever-vision-heading span {
+    display: block;
+  }
+}

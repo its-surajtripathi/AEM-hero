@@ -1,0 +1,91 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'hero.editcomponent' @ format=[component.title], i18n}
+  </p>
+  <section class="prise-section ${properties.variationtype}" id="price-link"
+    style="background-image: url(${properties.bgImage ? properties.bgImage : 'unset' @ context='uri'})">
+    <div class="prise-wrapper">
+      <div class="prise-right-div">
+        <img loading="lazy" src="${properties.desktopimage}" alt="prise" class="img-fluid">
+      </div>
+      <div class="prise-left-div">
+        <h3 class="prise-h3 common-h3 h2-heading-std text-to-uppercase" data-sly-element="${properties.variationtype != 'scooter-price-maestro'  ? 'h3' : 'h2'}">${properties.heading}</h3>
+        <form class="prise-form ">
+          <div class="prise-form-dropdown-div">
+            <div class="form-group cust-form-group">
+              <div class="dropdown cust-drop-down">
+                <label class="prise-label">${properties.statelabel}</label>
+                <button id="stateDropdown" name="statename" data-sly-use.default="${'/apps/hero-aem-website/utils/getProperty.js' @ parentPath=properties.defaultstatepath}"
+                  class="dropdown-select form-control cust-form-control font-size-18 line-height-24 font-montserrat-regular font-weight-500 text-color-white bg-color-danger text-left"
+                  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-default-stateName="${default.properties.state_code @ i18n}" data-default-label="${properties.defaultstatelabel}" data-default-state="${default.name}">
+                        ${default.properties.state_code @ i18n}
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu cust-dropdown-menu" aria-labelledby="stateDropdown">
+                </ul>
+              </div>
+            </div>
+            <div class="form-group cust-form-group">
+              <div class="dropdown cust-drop-down">
+                <label class="prise-label">${properties.citylabel}</label>
+                <button id="" name="cityname"
+                  class="dropdown-select form-control cust-form-control font-size-18 line-height-24 font-montserrat-regular font-weight-500 text-color-white bg-color-danger text-left"
+                  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-default-label="${properties.defaultcitylabel}" data-default-city="${default.name}" 
+                  data-sly-use.default="${'/apps/hero-aem-website/utils/getProperty.js' @ parentPath=properties.defaultcitypath}">
+                        ${default.properties.city @ i18n}
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu cust-dropdown-menu" aria-labelledby="cityDropdown">
+                    <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/getdropdownvalues.js' @ parentPath=properties.defaultstatepath}" data-sly-list="${listUse}">
+                        <li class="font-montserrat-regular font-weight-500 " value="${item.name}">
+                          <a href="javascript:void(0)">${item.properties.city.toLowerCase}</a>
+                      </li>
+                    </sly>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="prise-form-info flex-wrap">
+            <div class="prise-form-content w-auto">
+                <ul class="d-flex w-100 flex-wrap pricedata">
+                    <li class="w-50 px-2 px-lg-0">
+                      <h4 class="h4-heavy-heading-std">${properties.variantlabel}</h4>
+                    </li>
+                    <li class="w-50 px-2 px-lg-3">
+                      <h4 class="h4-heavy-heading-std">${properties.showroomlabel}</h4>
+                    </li>
+              </ul>
+              <div class="prise-form-cta">
+                <div class="prise-form-cta-img">
+                  <img loading="lazy" src="${properties.mobilemage}" alt="prise" class="img-fluid">
+                </div>
+                <div class="common-cta prise-cust-common-cta w-auto d-lg-none mt-4 d-inline-block position-static
+                  ${properties.variationtype == 'scooter-price-maestro' ? ' justify-content-center justify-content-lg-start' : '' }
+                  ${properties.variationtype == 'sports-section' ? 'common-cta d-flex justify-content-center justify-content-lg-start' : '' }">
+                    <a href="${linkuse.value}"  target="${linkuse.isExternal ? '_blank' : '_self'}"
+                          data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.buttonlink}"
+                          aa-data-attr="track_cta" data-sly-test="${properties.buttonlinktype == 'url' && properties.buttonlabel}"
+                          class="btn ${properties.bgStyle} ${properties.bgSize}">${properties.buttonlabel}</a>
+                    <a href="javascript:void(0)" aa-data-attr="track_cta" aa-data-cta="${component.title}" data-sly-test="${properties.buttonlinktype == 'modal' && properties.buttonlabel}"
+                      class="btn ${properties.bgStyle} ${properties.bgSize}" data-toggle="modal" data-target="${properties.buttonlink}">${properties.buttonlabel}</a>
+                </div>
+              </div>
+              <div class="common-cta d-none d-lg-inline-block">
+                <a href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                  data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.buttonlink}"
+                  aa-data-attr="track_cta" aa-data-cta="${component.title}" data-sly-test="${properties.buttonlinktype == 'url' && properties.buttonlabel}"
+                  class="btn ${properties.bgStyle} ${properties.bgSize}">${properties.buttonlabel}
+                </a>
+                <a href="javascript:void(0)" aa-data-attr="track_cta" aa-data-cta="${component.title}" data-sly-test="${properties.buttonlinktype == 'modal' && properties.buttonlabel}"
+                  class="btn ${properties.bgStyle} ${properties.bgSize}" data-toggle="modal" data-target="${properties.buttonlink}">${properties.buttonlabel}
+                </a>
+              </div>
+              ${properties.disclaimer @ context='html'}
+            </div>
+          </div>
+          <input type="hidden" value="${properties.productPath || currentPage.path}" name="productpath" />
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  

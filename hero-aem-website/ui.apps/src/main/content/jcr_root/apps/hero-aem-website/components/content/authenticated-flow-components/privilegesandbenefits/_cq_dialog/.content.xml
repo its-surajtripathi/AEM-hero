@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Privileges and Benefits Component"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem_cmp_tableofcontents_v1">
+    <content
+            granite:class="cmp-toc__editor"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <privileges
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Privileges"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <privilegeheading
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Heading for Privilege Section"
+                                                    name="./privilegeheading"
+                                                    required="{Boolean}true"/>
+                                            <privilegedetails
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldLabel="Add Privileges">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./privilegedetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <privilegeicon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Configure Icon path"
+                                                                name="./privilegeicon"
+                                                                rootPath="/content/dam"/>
+                                                        <privilegediscount
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Privilege Discount"
+                                                                name="./privilegediscount"/>
+                                                        <privilegecontent
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Privilege Content"
+                                                                name="./privilegecontent"/>
+                                                    </items>
+                                                </field>
+                                            </privilegedetails>
+                                            <strikingbenefitsheading
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Heading for Striking Benefits Section"
+                                                    name="./strikingbenefitsheading"/>
+                                            <benefitsdetails
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldLabel="Add Benefits">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./benefitsdetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <benefitsimage
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Configure Benefits Carousel Image path"
+                                                                name="./benefitsimage"
+                                                                rootPath="/content/dam"/>
+                                                        <benefitsicon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Configure Benefits Icon path"
+                                                                name="./benefitsicon"
+                                                                rootPath="/content/dam"/>
+                                                        <benefitscontent
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Benefits Content"
+                                                                name="./benefitscontent"/>
+                                                    </items>
+                                                </field>
+                                            </benefitsdetails>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </privileges>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

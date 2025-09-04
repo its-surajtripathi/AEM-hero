@@ -1,0 +1,58 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='bikeCollage'}">
+</sly>
+
+<section class="section-styles align-vertical-center container-full-height enable-scroll-snap"
+  id="testimonial-container">
+  <div class="testimonial-section align-vertical-center container-fixed-width">
+    <div class="testimonial-section-text-container">
+      <div class="title-line mb-1-rem"></div>
+      <!-- <h2 class="acaa-section-heading mb-2-rem">
+				DESCENDED FROM A <span class="color-gold">LEGENDARY</span> BLOODLINE
+			</h2> -->
+      <h2 class="acaa-section-heading mb-2-rem" id="testimonial-heading">
+        ${properties.title @context="html"}
+      </h2>
+      <!-- <p class="acaa-description">${properties.description @context="html"}</p> -->
+      <div class="acaa-description" id="testimonial-description">
+        ${properties.description @context="html"}
+      </div>
+    </div>
+      <div class="testimonial-section-image-container">
+        <div class="plus-icon-relative-wrapper">
+        <div class="plus-icon-wrapper">
+          <img class="plus-icon-image"
+          src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/images/plus_whiteLogo.svg" alt="plus icon">
+        </div>
+      </div>
+        <div class="slick-container">
+          <sly data-sly-list.items="${listUse}">
+            <div class="testimonial-section-image-item">
+              <div class="relative-container">
+                <div class="img-wrapper">
+                  <video data-sly-test="${items.properties.cardvideo }" autoplay muted loop>
+                    <source src="${items.properties.cardvideo}" alt="video">
+                  </video>
+                  <img data-sly-test="${items.properties.cardImageRef && !items.properties.cardvideo}"
+                    src="${items.properties.cardImageRef}" alt="img" />
+                </div>
+                <div class="txt-container">
+                  <div class="txt-container-top">
+                    <div class="txt-container-top-text">
+                      <h3>${items.properties.title @context='html'}</h3>
+                    </div>
+                  </div>
+                  <div class="txt-container-bottom">
+                    ${items.properties.description @context='html'}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </sly>
+        </div>
+      </div>
+  </div>
+</section>

@@ -1,0 +1,158 @@
+#redirection-tiles .redirection-container {
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+#redirection-tiles .tiles--wrapper {
+    padding: 40px 0 20px;
+    display: flex;
+    margin: 0 -11px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#redirection-tiles .tile-cmp {
+    margin: 0 11px 20px;
+    width: calc(33.333% - 22px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 10.5263px 39.4737px rgba(120, 120, 120, 0.15);
+    backdrop-filter: blur(6.57895px);
+    border-radius: 12px;
+}
+
+#redirection-tiles .tile-cmp .tile-content {
+    padding: 16px 22px;
+    width: 100%;
+}
+
+#redirection-tiles .tile-cmp .tile-content ul li {
+    margin-bottom: 14px;
+}
+
+#redirection-tiles .tile-cmp .tile-content ul li:last-child {
+    margin-bottom: 0;
+}
+
+#redirection-tiles .tile-cmp .tile-content ul li a:hover,
+#redirection-tiles .tile-cmp .tile-content ul li a:focus {
+    font-family: var(--font-tstar-heavy);
+    font-weight: 900;
+    color: #EE2326;
+}
+
+#redirection-tiles .tile-cmp .tile-content ul li a:hover::before,
+#redirection-tiles .tile-cmp .tile-content ul li a:focus::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 18px;
+    height: 6px;
+    background: url('/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/rec1.svg');
+}
+
+#redirection-tiles .tile-cmp .tile-content ul li a {
+    width: fit-content;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #303030;
+    font-family: var(--font-tstar-medium);
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+#redirection-tiles .tile-cmp .tile-content ul li a > *{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+#redirection-tiles .tile-cmp .tile-content ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 18px;
+    height: 6px;
+    background: url('/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/rec2.svg');
+}
+
+#redirection-tiles .tile-img {
+    width: 100%;
+}
+
+#redirection-tiles .tile-img img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+#redirection-tiles .slide-header {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+}
+
+#redirection-tiles .slide-header p {
+    font-family: var(--font-tstar-heavy);
+    font-weight: 900;
+    line-height: 1.2;
+    font-size: 34px;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    #redirection-tiles .redirection-container {
+        padding: 0 16px;
+    }
+
+    #redirection-tiles .tiles--wrapper {
+        padding: 16px 0;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    #redirection-tiles .tile-cmp {
+        width: 100%;
+        margin: 0 0 16px;
+    }
+
+    #redirection-tiles .tile-cmp:last-child {
+        margin-bottom: 0;
+    }
+
+    #redirection-tiles .tile-img {
+        height: 85px;
+    }
+
+    #redirection-tiles .tile-cmp .tile-content {
+        padding: 14px;
+    }
+
+    #redirection-tiles .tile-cmp .tile-content ul li {
+        margin-bottom: 8px;
+    }
+
+    #redirection-tiles .tile-cmp .tile-content ul li a {
+        font-size: 14px;
+    }
+
+    #redirection-tiles .slide-header p {
+        font-size: 24px;
+    }
+}

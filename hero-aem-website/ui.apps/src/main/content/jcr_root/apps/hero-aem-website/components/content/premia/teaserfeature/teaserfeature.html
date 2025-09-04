@@ -1,0 +1,24 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<div class="teaser-feature-container">
+  <div class="container-fixed-width">
+    <div class="teaser-feature-image-container apply-scroll-animation">
+      <img data-sly-test="${properties.featureImgRef}" src="${properties.featureImgRef}" loading="lazy"
+        alt="feature_teaser_image" />
+    </div>
+    <div class="teaser-feature-progressbar"></div>
+    <div class="teaser-feature-text-container">
+      <div class="teaser-feature-line"></div>
+      <div class="teaser-feature-verticalline">
+        <h4 class="teaser-feature-title">${properties.title @context='html'}</h4>
+        <p class="teaser-feature-description">
+          ${properties.featureDescription @context='html'}
+        </p>
+      </div>
+    </div>
+    <sly data-sly-resource="${'button' @ resourceType='hero-aem-website/components/content/premia/button' }">
+    </sly>
+  </div>
+</div>

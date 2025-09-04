@@ -1,0 +1,384 @@
+
+@color_1: gray;
+@color_2: red;
+@color_3: black;
+@color_4: rgb(69, 67, 67);
+@color_5: rgb(46, 43, 43);
+@background_color_1: lightgrey;
+@background_color_2: white;
+@background_color_3: bisque;
+@background_color_4: lightgray;
+@background_color_5: whitesmoke;
+@border_color_1: 2px black solid;
+@border_color_2: red;
+
+
+// SIDE-NAVBAR STYLING
+.sideNav-text-fontStyle() {
+	//font-family: 'T-Star Pro';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.sideNavbar{
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+	position: absolute;
+}
+
+.sideNav-btn-animate() {
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-duration: 300ms;
+}
+
+.sideNav-toggle-btn {
+	width: 12px;
+    height: 64px;
+	position: absolute;
+	left: 0rem;
+    top: 10rem;
+    background-color: red;
+    padding: 13px 9px;
+	.sideNav-text-fontStyle;
+	line-height: 15px;
+    font-weight: 900;
+	box-sizing: content-box;
+
+	.sideNav-ham-icon {
+		width: 16px;
+    	height: 13px;
+		margin-top: 10px;
+	}
+
+	.sideNav-btn-title {
+		color: #FFFFFF;
+		transform: rotate(180deg);
+		writing-mode: tb;
+	}
+}
+.step-wrapper{
+    background:#fff;
+    width:100%;
+	@media	(min-width:992px) {
+		height: 41rem;
+	}
+    
+	@media	(max-width:991px) {
+		background: transparent;
+	}
+}
+.sideNavbar-links {
+	position: absolute;
+    width: 90%;
+	height: 100%;
+	margin-right: 0px;
+	background-color: @background_color_2;
+	min-width: 232px;
+	@media only screen 
+	and (min-device-width: 768px) 
+	and (max-device-width: 1024px) 
+	and (-webkit-min-device-pixel-ratio: 1) {
+		height: 100vh !important;
+	}
+	@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-width: 480px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		height: 100vh !important;
+	}
+	@media (max-width: 991x)  {
+		width: 230px;
+		height: 103rem;
+	}
+	@media (min-width: 768px) and (max-width: 819px){
+		width: 230px;
+		height: 105rem;
+	}
+	@media (min-width: 820px) and (max-width: 991px) {
+		width: 230px;
+		height: 68rem;
+	}
+	.profile-update{
+	    display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        //margin-top: 20px;
+		padding-top: 20px;
+	}
+	.myvehicle-profile-pic {
+	    position:relative;
+	    .fetch-image{
+            margin:0 auto;
+            width:95px;
+            height:95px;
+			img {
+				padding: unset;
+				width:94px;
+				height:94px;
+			}
+			.initials{
+			    width:40px;
+			    font-size:38px;
+			}
+	    }
+		text-align: center;
+		.upload-image{
+           position:absolute;
+           right:1%;
+           bottom:50%;
+           cursor:pointer;
+        }
+		h4 {
+		    padding-top:10px;
+			font-family: var(--font-tstar-bold);
+		}
+		p {
+			color: @color_1;
+			text-align: center;
+			font-size:18px;
+		}
+		a {
+			color: @color_2;
+			text-decoration: none;
+			font-weight: bold;
+			margin-top:5px;
+		}
+	}
+
+	.profilesection {
+		background-color: @background_color_2;
+		//margin-top: 20px;
+	}
+
+	.icons {
+		height: 30px;
+		width: 30px;
+	}
+
+	.sideNav-vertical {
+		background-color: @background_color_2;
+		color: @color_3;
+		width: 100%;
+		margin-top:21px;
+		@media only screen 
+		and (min-device-width: 320px) 
+		and (max-device-width: 480px)
+		and (-webkit-min-device-pixel-ratio: 2) {
+			margin-top: 0;
+		}
+		@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+			margin-top: 0;
+		}
+		.sideNav-menu {
+			color: @color_4;
+			padding: 16px;
+			display:flex;
+			align-items: center;
+			border-bottom: 1px lightgray solid;
+			&:first-child {
+				border-top: 1px solid lightgray;
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+
+			a {
+				text-decoration: none;
+				color: @color_5;
+				font-size: medium;
+				margin: unset;
+    			padding: unset;
+    			display:flex;
+                &.active{
+                    color:red;
+                }
+				img {
+					display:inline-block;
+					height: 24px;
+					width: 24px;
+				}
+                &.active{
+                .sideNav-title{
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 20px;
+					color: #FF0000;
+                }
+				.activeIcon{
+					display:block;
+				}
+				}
+			}
+			
+
+			.sideNav-title {
+				.sideNav-text-fontStyle;
+				font-weight: 400;
+				color: #303030;
+				margin-left:16px;
+			}
+
+			.sideNav-title-active {
+				.sideNav-title;
+				font-weight: 700;
+				color: @color_2;
+			}
+			
+		}
+	}
+}
+
+/*=== User-Progress ===*/
+.navUserProg {
+	width: 100%;
+
+	.hero-image {
+		background-size: 100% 310px;
+		background-repeat: no-repeat;
+
+		.hero-text {
+			display: flex;
+			flex-direction: column;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			padding-left: 18px;
+			.bikeName {
+				//font-family: 'T-Star Pro';
+				font-style: italic;
+				font-weight: 900;
+				font-size: 32px;
+				line-height: 38px;
+				text-transform: uppercase;
+				color: #FFFFFF;
+			}
+
+			.plateNum {
+				//font-family: 'T-Star Pro';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 19px;
+				letter-spacing: 0.01em;
+				color: rgba(255, 255, 255, 0.5);
+			}
+		}
+		
+		.moving-img{
+			//animation: hero-image 10s linear;
+			margin: 0 auto;
+			width: 200px;
+
+			@media all and (max-width:991px) {
+				position: relative;
+    			top: -1rem;
+			}
+		}
+		
+		/*==== FADE IN RIGHT ===*/
+		@keyframes hero-image {
+			from {
+				transform: translateX(180px);
+			}
+			to {
+				transform: translateX(0px);
+			}
+		}
+
+	}
+
+	.StepProgress {
+		padding: 16px;
+		font-size: 14px;
+		@media screen and (max-width: 991px) {
+			display: flex;
+			padding: 10px;
+			justify-content: space-between;
+		}
+
+		.StepProgress-item {
+			.stepLinks {
+				display: flex;
+				gap: 10px;
+				align-items: center;
+				text-align: center;
+				//font-family: 'T-Star Pro';
+
+				font-size: 18px;
+				line-height: 22px;
+				color: rgba(51, 51, 51, 0.5);
+
+				@media  (max-width: 991px) {
+					flex-direction: column;
+					width: 4rem;
+					//font-weight: 700;
+					font-size: 12px;
+					line-height: 14px;
+					color: rgba(51, 51, 51, 0.5);
+				}
+
+				.linkSubtext {
+					@media (max-width: 991px) {
+						display: block;
+						text-align: center;
+						font-size: 12px;
+						line-height: 14px;
+					}
+				}
+			}
+			&.next-item{
+			    .stepLinks {
+			        font-weight:bold;
+			        color:#000;
+			    }
+			}
+			&.first-item{
+			    .stepLinks {
+                    font-weight:bold;
+                    color:#000;
+                }
+			}
+			&.active{
+			    .stepLinks {
+
+                    color:#333;
+                }
+			}
+			
+		}
+
+		.progressBar {
+			margin-left: 1.1rem;
+			display: block;
+			width: 4px;
+			height: 31px;
+			transform: skewY(50deg);
+			margin-block: 0.4rem;
+			background: red;
+			background: #EAEAEB;
+			@media (max-width: 991px) {
+				width: 40px;
+				height: 4px;
+				transform: skewX(-50deg);
+				margin: unset;
+    			margin-top: 1.1rem;
+			}
+
+			&:last-child{
+				display: none;
+			}
+		}
+
+	}
+}
+
+/*=== MENU BTN Icon ===*/
+.navbar-light .navbar-toggler-icon {
+    background-image: url('/apps/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/menu.svg');
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Dealer Info Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <content
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Content"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <variation
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                fieldLabel="Select Theme"
+                                                name="./theme">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <cityscooter
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Light"
+                                                        value=""/>
+                                                    <sports
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Dark"
+                                                        value="dark-theme"/>
+                                                    <cityplus
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Light Dark"
+                                                        value="city-plus-theme dark-theme"/>
+                                                </items>
+                                            </variation>
+                                            <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Title"
+                                                name="./title"
+                                                required="{Boolean}true"/>
+                                            <subheading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter SubTitle"
+                                                name="./subtitle"
+                                                required="{Boolean}true"/>
+                                            <state
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter State Label"
+                                                name="./statelabel"
+                                                required="{Boolean}true"/>
+                                            <city
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter City Label"
+                                                name="./citylabel"
+                                                required="{Boolean}true"/>
+                                            <dealerheading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Dealer Info Heading"
+                                                name="./dealerheading"
+                                                required="{Boolean}true"/>
+                                            <showroom
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Dealer Image Text"
+                                                name="./dealerimgtext"/>
+                                            <defaultcity
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Select Default Dealer"
+                                                name="./defaultcity"
+                                                rootPath="/content/hmc/dealers"/>
+                                            <image1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Select Dealer Image-1"
+                                                name="./dealerimg1"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <image2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Select Dealer Image-2"
+                                                name="./dealerimg2"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <image3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Select Dealer Image-3"
+                                                name="./dealerimg3"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </content>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

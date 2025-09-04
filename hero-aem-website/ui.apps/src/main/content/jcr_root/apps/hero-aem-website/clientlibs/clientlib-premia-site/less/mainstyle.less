@@ -1,0 +1,249 @@
+@import "./reset.less";
+@import "./variables.less";
+@import "./spacing.less";
+
+body {
+  background-color: var(--bg-color-black) !important;
+}
+
+/* Container-classes */
+.container-fixed-width {
+  max-width: 1627px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container-fixed-width {
+    max-width: 85%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-fixed-width {
+    padding: 20px;
+  }
+}
+
+.container-fluid-width {
+  width: 100%;
+  padding: 0 24px;
+}
+
+/* Styling for buttons*/
+.primary-anchor-button {
+  min-width: 238px;
+  background: var(--color-trinidad);
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-sans-regular);
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size14);
+  line-height: var(--line-height-16);
+  color: var(--color-white);
+
+  &:hover {
+    color: var(--color-white);
+  }
+}
+
+/* Styling for teaser count down header */
+.timer-count-down-teaser-header {
+  color: var(--color-white);
+  font-family: var(--font-sans-regular);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-24);
+  line-height: var(--line-height-40-8);
+  margin: 0;
+  letter-spacing: var(--letter-spacing-9-6);
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.position-relative {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+// Button style starts
+.premia-btn-primary {
+  color: var(--color-white);
+  border-radius: 50px;
+  background: var(--teaser-count-down-banner-streaming-link-gradient);
+  border: 1px solid var(--color-melanzane);
+  text-decoration: none;
+  font-family: var(--font-transducer);
+  font-size: var(--font-size-18);
+  line-height: var(--line-height-22);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-1-08);
+  padding: 20px 25px 20px;
+  display: inline-block;
+
+  @media screen and (max-width: 1440px) {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-16);
+    letter-spacing: var(--letter-spacing-0-84);
+    padding: 15px 16px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: var(--font-size-12);
+    padding: 5px 16px;
+    letter-spacing: var(--letter-spacing-0-7);
+  }
+
+  &:hover {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+}
+
+.button-base-styles {
+  padding: 11px 48px;
+  font-family: var(--font-transducer);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-600);
+  line-height: var(--line-height-18);
+  border: none;
+  @media screen and (max-width: 767px) {
+    font-size: var(--font-size-12);
+    padding: 7px 14px;
+  }
+}
+
+.premia-btn-secondary {
+  .button-base-styles();
+  background-color: var(--bg-color-white);
+  color: var(--color-black);
+}
+
+.premia-btn-tertiary {
+  .button-base-styles();
+  background-color: transparent;
+  color: var(--color-white);
+}
+// Button style ends
+
+// Navigation button variations starts
+.primary-btn-wrapper button {
+  .premia-btn-primary();
+}
+
+.secondary-btn-wrapper button {
+  .premia-btn-secondary();
+}
+
+.tertiary-btn-wrapper button {
+  .premia-btn-tertiary();
+}
+
+.color-white {
+  button,
+  a {
+    color: var(--color-white) !important;
+  }
+}
+
+.color-black {
+  button,
+  a {
+    color: var(--color-black) !important;
+  }
+}
+
+.color-theme {
+  button,
+  a {
+    color: var(--color-trinidad) !important;
+  }
+}
+
+.bg-white button {
+  background-color: var(--bg-color-white);
+}
+
+.bg-transparent button {
+  background-color: transparent;
+}
+
+.bg-theme-color button {
+  background-color: var(--bg-color-trinidad);
+}
+// Navigation button variations ends
+
+// Navigation Logo css
+.premia-header {
+  .desktop-logo {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .mobile-logo {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.info-container {
+  padding: 6px 8px 6px 30px;
+  font-family: var(--font-optika-regular);
+  font-size: var(--font-size-12);
+  line-height: var(--line-height-18);
+  color: var(--color-black);
+  background-color: var(--bg-color-white);
+  display: flex;
+  position: relative;
+  align-items: center;
+  @media only screen and (max-width: 767px) {
+    font-size: var(--font-size-10);
+  }
+  &::after {
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid var(--bg-color-white);
+    position: absolute;
+    top: -6px;
+    right: 10%;
+  }
+  img {
+    display: inline-block;
+    margin-right: 8px;
+    max-width: 18px;
+  }
+  .dateTime {
+    font-family: var(--font-optika-bold);
+    margin-left: 4px;
+  }
+}
+.tooltiptext {
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    object-fit: fill;
+    background-image: url("/apps/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/disableInfo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+    left: 6px;
+  }
+
+  b {
+    font-family: var(--font-optika-bold);
+  }
+}

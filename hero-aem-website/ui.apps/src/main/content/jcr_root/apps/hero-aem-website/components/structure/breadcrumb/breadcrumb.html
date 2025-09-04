@@ -1,0 +1,85 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div class="bread-crumbs-section ${properties.theme}">
+    <!-- Mobile dropdown -->
+    <div class="dropdown mobile-nav-dropdown custom-dropdown mob-dropdown ${properties.hidesecBreadcrumb == '1' ? 'hide-breadcrumb' : ''}" data-sly-test="${properties.secBreadcrumb == '1' && properties.submenu == 'default'}">
+	    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+	        ${currentPage.title}
+	    </button>
+	    <div class="dropdown-menu dropdown-menu-right">
+	        <sly data-sly-list.child="${currentPage.getParent.listChildren}">
+	            <a href="${child.path}.html" class="dropdown-item${currentPage.title == child.title ? ' active' : ''}" aa-data-attr="track_cta">${child.title}</a>
+	        </sly>
+	    </div>
+	</div>
+    <nav aria-label="breadcrumb navbar" class="newsabhead ${properties.hidesecBreadcrumb == '1' ? 'hide-breadcrumb' : ''}" data-sly-test="${properties.secBreadcrumb == '1' && properties.submenu == 'default'}">
+        <ul class="breadcrumb align-items-center" data-sly-list.child="${currentPage.getParent.listChildren}">
+            <li class="breadcrumb-item smallnavbar ${currentPage.title == child.title ? 'active' : 'overnav'}">
+                <a href="${child.path}.html" aa-data-attr="track_cta">${child.title}</a>
+            </li>
+        </ul>
+    </nav>
+	<!-- Manual Mobile dropdown -->
+    <div class="dropdown mobile-nav-dropdown custom-dropdown mob-dropdown" data-sly-test="${properties.secBreadcrumb == '1' && properties.submenu == 'manual'}">
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                ${currentPage.title}
+            </button>
+            <div data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='subnavlinks'}" class="dropdown-menu dropdown-menu-right">
+                <sly data-sly-list="${listUse}">
+					<sly data-sly-test="${item.properties.tabtarget=='1'}">
+							<a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkUrl}" 
+							href="${linkuse.value}" target="_blank" x-cq-linkchecker="skip" class="dropdown-item${currentPage.title == item.properties.linkTitle ? ' active' : ''}" 
+							aa-data-attr="track_cta">${item.properties.linkTitle}</a>
+					</sly>
+
+					<sly data-sly-test="${item.properties.tabtarget=='0'}">
+						<a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkUrl}" 
+						href="${linkuse.value}" target="_self" x-cq-linkchecker="skip" class="dropdown-item${currentPage.title == item.properties.linkTitle ? ' active' : ''}" 
+						aa-data-attr="track_cta">${item.properties.linkTitle}</a>
+					</sly>
+				</sly>
+            </div>
+    </div>
+
+	<!-- Manual submenu -->
+	<sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='subnavlinks'}">
+        <nav aria-label="breadcrumb navbar" class="newsabhead" data-sly-test="${properties.secBreadcrumb == '1' && properties.submenu == 'manual'}">
+            <ul class="breadcrumb align-items-center" data-sly-list="${listUse}">
+                <li class="breadcrumb-item smallnavbar ${currentPage.title == item.properties.linkTitle ? 'active' : 'overnav'}">
+					<sly data-sly-test="${item.properties.tabtarget=='1'}">
+                    	<a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkUrl}" 
+							href="${linkuse.value}" target="_blank" x-cq-linkchecker="skip" aa-data-attr="track_cta">${item.properties.linkTitle}</a>
+					</sly>
+
+					<sly data-sly-test="${item.properties.tabtarget=='0'}">
+						<a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkUrl}" 
+						href="${linkuse.value}" target="_self" x-cq-linkchecker="skip" aa-data-attr="track_cta">${item.properties.linkTitle}</a>
+					</sly>
+                </li>
+            </ul>
+        </nav>
+    </sly>
+
+
+    <nav data-sly-use.breadcrumb="com.adobe.cq.wcm.core.components.models.Breadcrumb"
+         data-sly-use.template="core/wcm/components/commons/v1/templates.html" id="${breadcrumb.id}" class="cmp-breadcrumb"
+         aria-label="${'Breadcrumb' @ i18n}" data-sly-test="${breadcrumb.items.size > 0}"
+         data-cmp-data-layer="${breadcrumb.data.json}">
+        <ul class="breadcrumb align-items-center" itemscope itemtype="http://schema.org/BreadcrumbList"
+            data-sly-list.navItem="${breadcrumb.items}">
+            <li class="breadcrumb-item ${properties.theme} ${navItem.active ? ' cmp-breadcrumb__item--active active' : ''}"
+                aria-current="${navItem.active ? 'page' : false}" data-cmp-data-layer="${navItem.data.json}"
+                itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a data-sly-attribute="${navItem.link.htmlAttributes}" class="cmp-breadcrumb__item-link" itemprop="item"
+                   data-cmp-clickable="${breadcrumb.data ? true : false}"
+                   data-sly-unwrap="${navItem.active || !navItem.link.valid}" aa-data-attr="track_cta">
+                    <span itemprop="name">${navItem.title}</span>
+                </a>
+                <meta itemprop="position" content="${navItemList.count}" />
+            </li>
+        </ul>
+    </nav>
+    <sly data-sly-call="${template.placeholder @ isEmpty=breadcrumb.items.size == 0, classAppend='cmp-breadcrumb'}">
+    </sly>
+</div>

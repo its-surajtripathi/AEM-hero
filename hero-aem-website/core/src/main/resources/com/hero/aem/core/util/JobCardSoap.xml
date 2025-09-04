@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hmc="http://siebel.com/HMCLSelfJobCardProcessFromMobileApp/">
+  <soapenv:Header>
+ <UsernameToken xmlns="http://siebel.com/webservices">WSUSER</UsernameToken>
+<PasswordText xmlns="http://siebel.com/webservices">WSUSER_1</PasswordText>
+<SessionType xmlns="http://siebel.com/webservices">None</SessionType>
+</soapenv:Header>
+   <soapenv:Body>
+      <hmc:HMCL_spcJob_spcCard_spcProcess_spcfrom_spcCustomer_Input>
+         <hmc:ComplaintCode9>${cc9}</hmc:ComplaintCode9>
+         <hmc:ComplaintCode8>${cc8}</hmc:ComplaintCode8>
+         <hmc:ComplaintCode4>${cc4}</hmc:ComplaintCode4>
+         <hmc:ComplaintCode10>${cc10}</hmc:ComplaintCode10>
+         <hmc:SRId>${SR_ID}</hmc:SRId>
+         <hmc:ComplaintCode5>${cc5}</hmc:ComplaintCode5>
+         <hmc:ComplaintCode1>${cc1}</hmc:ComplaintCode1>
+         <hmc:CustomerComplaints>${customercomments}</hmc:CustomerComplaints>
+         <hmc:CustomerAdded5>${ca5}</hmc:CustomerAdded5>
+         <hmc:CustomerAdded1>${ca1}</hmc:CustomerAdded1>
+         <hmc:ComplaintCode3>${cc3}</hmc:ComplaintCode3>
+         <hmc:ComplaintCode2>${cc2}</hmc:ComplaintCode2>
+         <hmc:CustomerAdded2>${ca2}</hmc:CustomerAdded2>
+         <hmc:VIN>${vin}</hmc:VIN>
+         <hmc:CustomerAdded4>${ca4}</hmc:CustomerAdded4>
+         <hmc:CustomerAdded3>${ca3}</hmc:CustomerAdded3>
+         <hmc:ComplaintCode7>${cc7}</hmc:ComplaintCode7>
+         <hmc:ComplaintCode6>${cc6}</hmc:ComplaintCode6>
+      </hmc:HMCL_spcJob_spcCard_spcProcess_spcfrom_spcCustomer_Input>
+   </soapenv:Body>
+</soapenv:Envelope>

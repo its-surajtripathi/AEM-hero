@@ -1,0 +1,287 @@
+.cmp-carousel {
+  .cmp-carousel__content {
+    background: var(--teaser-feature-background-gradient);
+    padding: 20px 0 168px;
+
+    @media screen and (max-width: 1023px) {
+      padding-bottom: 52px;
+    }
+
+    .cmp-carousel__actions {
+      text-align: right;
+      // max-width: 1627px;
+      // margin: 0 auto;
+      // padding-right: 98px;
+
+      button:first-child {
+        margin-right: 16px;
+      }
+
+      @media screen and (max-width: 767px) {
+        padding: 6px 24px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .cmp-carousel__action {
+        &--play,
+        &--pause,
+        &-text {
+          display: none;
+        }
+
+        &--previous,
+        &--next {
+          width: 58px;
+          height: 58px;
+          border-radius: 58px;
+          border: 1px solid var(--color-white);
+          background-color: transparent;
+
+          @media screen and (max-width: 1536px) {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        &-icon {
+          border: solid white;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 6px;
+          @media screen and (max-width: 1536px) {
+            padding: 4px;
+          }
+        }
+
+        &--previous .cmp-carousel__action-icon {
+          margin-right: -6px;
+          transform: rotate(135deg);
+        }
+
+        &--next .cmp-carousel__action-icon {
+          margin-left: -6px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    .cmp-carousel__indicators {
+      margin-top: -25px;
+      @media screen and (min-width: 1024px) {
+        margin-top: -20px;
+      }
+
+      li.cmp-carousel__indicator {
+        width: 24px;
+        height: 4px;
+        background-color: var(--color-dusty-gray-2);
+        border-radius: initial;
+        margin: 0 4px;
+        // pointer-events: none;
+
+        &--active {
+          background: var(--color-dusty-gray-2);
+          width: 42px;
+
+          p {
+            height: 4px;
+            width: 0px;
+            position: absolute;
+            background-color: var(--bg-color-trinidad);
+            left: -1px;
+            top: 0;
+            animation: progressBar linear both;
+          }
+        }
+      }
+    }
+  }
+
+  &__item {
+    &--active {
+      .apply-scroll-animation {
+        animation: anim-fade-in-up;
+        animation-duration: 1.2s;
+        animation-fill-mode: both;
+        animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+      }
+    }
+  }
+
+  .floating-text-container {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+  }
+}
+
+@keyframes anim-fade-in-up {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateX(85%);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes progressBar {
+  from {
+    width: 0px;
+    background-color: var(--bg-color-trinidad);
+  }
+
+  to {
+    background-color: var(--bg-color-trinidad);
+    width: 43px;
+  }
+}
+
+// @keyframes progressBars {
+//   0% {
+//     width: 0px;
+//     background-color: var(--bg-color-trinidad);
+//   }
+
+//   100% {
+//     background-color: var(--bg-color-trinidad);
+//     width: 43px;
+//   }
+// }
+
+// Variant 2nd Css
+.key-feature {
+  .key-feature-line {
+    width: 24px;
+    height: 4px;
+    background-color: var(--bg-color-trinidad);
+    margin: 21px 0 8px;
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 16px;
+      width: 40px;
+    }
+  }
+
+  .key-feature-heading {
+    font-size: var(--font-size-22);
+    color: var(--color-white);
+    font-family: var(--font-transducer);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-44);
+    @media screen and (min-width: 768px) {
+      font-size: var(--font-size-32);
+    }
+    @media screen and (min-width: 1440px) {
+      font-size: var(--font-size-40);
+    }
+  }
+  .cmp-button {
+    text-decoration: none;
+    display: inline-block;
+
+    .cmp-button__text {
+      font-size: var(--font-size-14);
+      color: var(--bg-color-trinidad);
+      font-family: var(--font-transducer);
+      font-weight: var(--font-weight-400);
+      display: flex;
+      align-items: center;
+      @media screen and (min-width: 1441px) {
+        font-size: var(--font-size-18);
+      }
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        object-fit: fill;
+        background-image: url("/apps/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/chevron_right.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 2px;
+        @media screen and (min-width: 1441px) {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+
+  .cmp-carousel {
+    .cmp-carousel__content {
+      padding: 20px 0 48px;
+      .cmp-carousel__actions {
+        // margin: 0 auto;
+        @media screen and (max-width: 767px) {
+          margin-bottom: 60px;
+        }
+      }
+      .cmp-carousel__indicators {
+        position: relative;
+        border-image: url("/apps/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/indicator.png")
+          50% round;
+        width: 50%;
+        height: 2px;
+        margin: 0 auto;
+        background: linear-gradient(
+          270deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.5) 14.29%,
+          rgba(255, 255, 255, 0.5) 85.73%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+        li.cmp-carousel__indicator {
+          background-color: transparent;
+          width: 20%;
+          .carousel-indicator-title {
+            text-indent: 0;
+            color: var(--bg-color-white);
+            opacity: 0.5;
+            font-size: var(--font-size-12);
+            font-family: var(--font-transducer);
+            font-weight: var(--font-weight-500);
+            margin: 0;
+            position: absolute;
+            top: -39px;
+            cursor: pointer;
+          }
+          &--active {
+            background: transparent;
+            outline: none;
+            .carousel-indicator-title {
+              content: none;
+              border-bottom: 2px solid var(--bg-color-trinidad);
+              padding-bottom: 21px;
+              opacity: 1;
+              color: var(--bg-color-white);
+              background-color: transparent;
+              height: auto;
+              width: auto;
+              animation: none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .variant-two {
+      .teaser-feature-verticalline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+      }
+      .cmp-button {
+        padding-left: 0;
+      }
+    }
+  }
+}

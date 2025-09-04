@@ -1,0 +1,144 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+	format=[component.title], i18n} </sly>
+
+
+
+<div class="bcipl-container">
+	<div class="bcipl-header-container">
+		<div class="bcipl-header ">
+			<div class="logoPan">
+				<a href="${properties.logourl}.html" x-cq-linkchecker="valid" style="text-decoration: none; color: red;">
+					<h3>${properties.logotitle}</h3>
+				</a>
+			</div>
+			<sly data-sly-list.mainmenu="${resource.getChildren}">
+
+				<sly data-sly-test="${mainmenu.name == 'bciplnavitem'}">
+					<div id="siteMnuBtn"></div>
+					<div class="bcipl-navPan">
+						<ul data-sly-list.navitems="${mainmenu.getChildren}" class="outer--ul">
+							<sly data-sly-test="${navitemsList.index==0}">
+								<li
+									class="${pageProperties.active.toLowerCase == navitems.navheading.toLowerCase ? 'activeNav' : ''}">
+									<a href="${navitems.navurl}.html" x-cq-linkchecker="valid">${navitems.navheading}</a>
+									<sly date-sly-test="${navitems.listChildren && navitems.listChildren.hasNext}">
+										<sly data-sly-list.secnavitems="${navitems.listChildren}">
+											<sly data-sly-test="${secnavitems.name=='subnavitems'}">
+												<ul data-sly-list.secondnavitems="${secnavitems.getChildren}" class="second-level-ul">
+
+													<li>
+														<a
+															href="${secondnavitems.subnavurl}.html" x-cq-linkchecker="valid">${secondnavitems.subnavheading}</a>
+														<sly
+															data-sly-test="${secondnavitems.listChildren && secondnavitems.listChildren.hasNext}">
+
+															<sly data-sly-list.level3="${secondnavitems.listChildren}">
+
+																<sly
+																	date-sly-test="${level3.name=='secondsubnavitems'}">
+
+																	<ul
+																		data-sly-list.level3kids="${level3.getChildren}" class="third-level-ul">
+																		<li>
+																			<a
+																				href="${level3kids.secondsubnavurl}.html" x-cq-linkchecker="valid">${level3kids.secondsubnavheading}</a>
+																			<sly
+																				data-sly-test="${level3kids.listChildren && level3kids.listChildren.hasNext}">
+
+																				<sly
+																					data-sly-list.level4="${level3kids.listChildren}">
+
+																					<sly
+																						date-sly-test="${level4.name=='thirdsubnavitems'}">
+																						<ul
+																							data-sly-list.level4kids=${level4.getChildren} class="fourth-level-ul">
+																							<li>
+																								<a
+																									href="${level4kids.thirdsubnavurl}" x-cq-linkchecker="valid">${level4kids.thirdsubnavheading}</a>
+																							</li>
+																						</ul>
+																					</sly>
+																				</sly>
+																			</sly>
+																		</li>
+																	</ul>
+																</sly>
+
+															</sly>
+
+														</sly>
+													</li>
+
+												</ul>
+											</sly>
+										</sly>
+									</sly>
+								</li>
+							</sly>
+							<sly data-sly-test="${navitemsList.index!=0}">
+								<li
+									class="${pageProperties.active.toLowerCase == navitems.navheading.toLowerCase ? 'activeNav' : ''}">
+									<a href="${navitems.navurl}.html" x-cq-linkchecker="valid">${navitems.navheading}</a>
+									<sly date-sly-test="${navitems.listChildren && navitems.listChildren.hasNext}">
+										<sly data-sly-list.secnavitems="${navitems.listChildren}">
+											<sly data-sly-test="${secnavitems.name=='subnavitems'}">
+												<ul data-sly-list.secondnavitems="${secnavitems.getChildren}" class="second-level-ul">
+
+													<li>
+														<a
+															href="${secondnavitems.subnavurl}.html" x-cq-linkchecker="valid">${secondnavitems.subnavheading}</a>
+														<sly
+															data-sly-test="${secondnavitems.listChildren && secondnavitems.listChildren.hasNext}">
+
+															<sly data-sly-list.level3="${secondnavitems.listChildren}">
+
+																<sly
+																	date-sly-test="${level3.name=='secondsubnavitems'}">
+
+																	<ul
+																		data-sly-list.level3kids="${level3.getChildren}"  class="third-level-ul">
+																		<li>
+																			<a
+																				href="${level3kids.secondsubnavurl}.html" x-cq-linkchecker="valid">${level3kids.secondsubnavheading}</a>
+																			<sly
+																				data-sly-test="${level3kids.listChildren && level3kids.listChildren.hasNext}">
+
+																				<sly
+																					data-sly-list.level4="${level3kids.listChildren}">
+
+																					<sly
+																						date-sly-test="${level4.name=='thirdsubnavitems'}">
+																						<ul
+																							data-sly-list.level4kids=${level4.getChildren} class="fourth-level-ul">
+																							<li>
+																								<a
+																									href="${level4kids.thirdsubnavurl}" x-cq-linkchecker="valid">${level4kids.thirdsubnavheading}</a>
+																							</li>
+																						</ul>
+																					</sly>
+																				</sly>
+																			</sly>
+																		</li>
+																	</ul>
+																</sly>
+
+															</sly>
+
+														</sly>
+													</li>
+
+												</ul>
+											</sly>
+										</sly>
+									</sly>
+								</li>
+							</sly>
+						</ul>
+					</div>
+		</div>
+		</sly>
+		</sly>
+	</div>
+</div>
+
+</div>

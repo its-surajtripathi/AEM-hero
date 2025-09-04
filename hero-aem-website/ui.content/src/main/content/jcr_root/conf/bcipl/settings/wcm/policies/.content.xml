@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <rep:policy/>
+    <hero-aem-website jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <structure jcr:primaryType="nt:unstructured">
+                <page-bcipl jcr:primaryType="nt:unstructured">
+                    <policy_1675864220537
+                        jcr:lastModified="{Date}2023-02-08T19:23:57.648+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="bcipl page policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="[hero-aem-website.dependencies,hero-aem-website.staticpages,bcipl-aem-website.site]"
+                        clientlibsAsync="false">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1675864220537>
+                </page-bcipl>
+            </structure>
+            <container jcr:primaryType="nt:unstructured">
+                <policy_1675864528539
+                    jcr:lastModified="{Date}2023-02-08T19:25:45.394+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="BCIPL Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="group:Hero MotoCorp - Content"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1675864528539>
+            </container>
+        </components>
+    </hero-aem-website>
+</jcr:root>

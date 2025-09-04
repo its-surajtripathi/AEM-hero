@@ -1,0 +1,14 @@
+// Configuration created by Apache Sling JCR Installer
+{
+    "middleWareAPI" : "$[env:ONEAPP_ENDPOINT]",
+    "getBookServiceAPI" : "/content/hero-aem-website/in/en-in/homepage/jcr:content/root/container/container_1351549374.bookservice.html",
+    "getMMIAccessTokenAPI" : "/content/hero-aem-website/in/en-in/homepage/jcr:content/root/container/container_1351549374.getMMIDetails.html",
+    "getLocationDetails" : "https://apis.mappls.com/advancedmaps/v1/{token}/rev_geocode",
+    "getDistanceAPI" : "https://apis.mappls.com/advancedmaps/v1/{token}/distance_matrix/biking/",
+    "geteLocAPI" : "https://atlas.mappls.com/api/places/geocode",
+    "getListingAPI" : "https://geoanalytics.mappls.com/listingapi",
+    "getSubmitFeedbackAPI" : "/content/hero-aem-website/in/en-in/homepage.submitFeedback.html",
+    "getGoodLifeAPI" : "/content/hero-aem-website/in/en-in/homepage.getGoodLifeResponse.html",
+    "paymentGateWay" : "$[env:PAYMENT_GATEWAY_URL]",
+    "getReqForPayment" : "/content/hero-aem-website/in/en-in/homepage.getPaymentUrl.html"
+}

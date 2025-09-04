@@ -1,0 +1,136 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<sly data-sly-test="${properties.layoutvariation == 'layoutvariation1'}">
+    <section class="news-n-blogs bg-black">
+        <div class="event-blog-box text-white">
+            <div class="img-wrapper" style=" height:${properties.height @context= 'styleString'}px;">
+                <img loading="lazy" src="${properties.file}" alt="${properties.alt}" height="${properties.height}"
+                    class="${properties.anchor ? 'animate' : ''}">
+            </div>
+            <div class="content">
+                <h4 class="font-weight-bold">${properties.subtitle @context= 'html'}</h4>
+                <h2 class="h2-heading-std">${properties.teasertitle}</h2>
+                <h5 class="h4-heavy-heading-std">${properties.teaserdescription @context= 'html'}</h5>
+                <ul class="featured-users d-flex align-items-center">
+                    <sly data-sly-list.item="${resource.getChildren}">
+                        <sly data-sly-test="${item.name=='imageicondetails'}">
+                            <sly data-sly-list.link="${item.getChildren}">
+
+                                <li class="text-center ${linkList.first ? ' ' : 'ml-3 ml-lg-4'}">
+                                    <a href="${link.iconimagelink @ extension = 'html'}" aa-data-attr="track_cta">
+                                        <img loading="lazy" src="${link.iconimagepath}" alt="${link.iconalt}">
+                                    </a>
+                                    <p>${link.titleicon}</p>
+                                </li>
+                            </sly>
+                        </sly>
+                    </sly>
+                </ul>
+                <sly data-sly-test="${!properties.anchor}">
+                    <p class="text-right">
+                        <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                            data-sly-test="${properties.searchbtntitle}"
+                            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.searchbtnpath}"
+                            href="${linkuse.value}" class="d-inline-flex align-items-center view-btn b1-bold-text-std">
+                            ${properties.searchbtntitle}
+                            <img loading="lazy" class="ml-2" src="${properties.searchbtn}" alt="arrow-right">
+                        </a>
+                    </p>
+                </sly>
+            </div>
+            <sly data-sly-test="${properties.anchor}">
+                <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                    data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.searchbtnpath}"
+                    href="${linkuse.value}" class="image-link"></a>
+            </sly>
+        </div>
+    </section>
+</sly>
+<sly data-sly-test="${properties.layoutvariation == 'layoutvariation2'}">
+    <div class="customer-review-div">
+        <div class="customer-review-common" style="width: 100%; height:${properties.height @ context='styleToken'}px;">
+            <div class="customer-image-background ${properties.anchor ? 'animate' : ''}"
+                style="background-image: url(${properties.file ? properties.file :'unset' @ context='uri'});">
+
+            </div>
+            <div class="${properties.teasertitle || properties.customerreview ? 'customer-review-content-bg ' : '' }">
+                <div class="customer-review-pic"
+                    data-sly-test="${properties.iconimagepathcr || properties.explanationicon}">
+                    <img loading="lazy" src="${properties.iconimagepathcr}" alt="${properties.iconaltcr}"
+                        class="img-fluid" data-sly-test="${properties.iconimagepathcr}">
+                    <img loading="lazy" src="${properties.explanationicon}" alt="img" class="img-fluid"
+                        data-sly-test="${properties.explanationicon}">
+                </div>
+                <div class="customer-review-info">
+                    <h3 class="customer-info-h3 h2-heading-std">${properties.teasertitle}</h3>
+                    <p class="customer-info-p h4-medium-heading-std">${properties.subtitle @context='html'}</p>
+                </div>
+                <div class="customer-review-content">
+                    <p class="customer-review-p font-italic b2-text-std">${properties.customerreview}</p>
+                    <p class="customer-review-p b2-text-std">${properties.teaserdescription}</p>
+                </div>
+                <sly data-sly-test="${!properties.anchor}">
+                    <div class="customer-review-explore-div ${properties.ctabuttoncheck == 'true' ? 'btn-black-ctabg' : ''}"
+                        data-sly-test="${properties.searchbtntitle}">
+                        <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.searchbtnpath}"
+                            href="${linkuse.value}" class="customer-review-explore-a"> ${properties.searchbtntitle}</a>
+                    </div>
+                </sly>
+            </div>
+            <sly data-sly-test="${properties.anchor}">
+                <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                    data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.searchbtnpath}"
+                    href="${linkuse.value}" class="image-link"></a>
+            </sly>
+        </div>
+    </div>
+
+</sly>
+
+<div class="card explore-card" data-sly-test="${properties.layoutvariation == 'layoutvariation3'}">
+    <div data-sly-test="${properties.animation == '1'}" data-aos="${properties.animationType}"
+        data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+        <img src="${properties.file}" class="card-img-top" alt="${properties.alt}">
+        <div class="card-body">
+            <h5 class="card-title title">${properties.teasertitle}</h5>
+            <p class="card-text">${properties.teaserdescription}</p>
+            <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.searchbtnpath}"
+                href="${linkuse.value}" class="d-flex mt-5">${properties.searchbtntitle}&nbsp;&nbsp;<img
+                    src="${properties.searchbtn}" alt="right-arrow" class="img-fluid"></a>
+        </div>
+    </div>
+    <div data-sly-test="${properties.animation == '0'}">
+        <img src="${properties.file}" class="card-img-top" alt="${properties.alt}">
+        <div class="card-body">
+            <h5 class="card-title title h4-heavy-heading-std">${properties.teasertitle}</h5>
+            <p class="card-text b2-text-std" style="min-height: 60px;">${properties.teaserdescription}</p>
+            <sly data-sly-test="${properties.searchbtnpath}">
+                <a aa-data-attr="track_cta" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                    data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.searchbtnpath}"
+                    href="${linkuse.value}"
+                    class="d-flex mt-5 b1-bold-text-std">${properties.searchbtntitle}&nbsp;&nbsp;<img
+                        src="${properties.searchbtn}" alt="right-arrow" class="img-fluid"></a>
+            </sly>
+        </div>
+    </div>
+</div>
+
+<div class="card xpulse-programs xpulse-exp-content-wrap" data-aos="slide-up"
+    data-sly-test="${properties.layoutvariation == 'layoutvariation4'}">
+
+    <div class="exp_data">
+        <div class="exp_type">
+            ${properties.teasertitle}
+            <div class="exp_sub_type">${properties.teaserlevel}</div>
+        </div>
+        ${properties.subtitle @context='html'}
+        <div class="exp_det">
+            <span>${properties.teasersubscription} </span>
+            <!--<span>Batch Size: 20</span>-->
+            <span>${properties.teaserduration}</span>
+        </div>
+    </div>
+</div>

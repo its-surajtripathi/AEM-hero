@@ -1,0 +1,22 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<header class="premia-header">
+  <div class="premia-header-main container-fixed-width">
+    <div class="premia-header-hero-logo-wrapper">
+      <sly data-sly-resource="${'logo' @ resourceType='hero-aem-website/components/content/logo' }"></sly>
+    </div>
+    <div class="premia-header-home-button-wrapper">
+      <sly data-sly-resource="${'buttons-right' @ resourceType='wcm/foundation/components/responsivegrid' }">
+      </sly>
+      <p class="tooltipWrapper" id="tooltipWrapper" style="right: ${properties.rightPosition @ context='styleToken'}">
+        <span class="info-container tooltiptext">${inheritedPageProperties.bookNowToolTipText1 @ context='html'}
+        </span>
+        <img id="close_icon" class="control-close"
+          src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/closeInfo.png"
+          loading="lazy" alt="close" />
+      </p>
+    </div>
+  </div>
+</header>

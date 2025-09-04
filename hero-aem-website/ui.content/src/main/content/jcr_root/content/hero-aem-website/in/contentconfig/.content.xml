@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-08-03T11:29:15.909+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/homepage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="contentconfig"
+        sling:resourceType="hero-aem-website/components/structure/homepage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container">
+                <contentconfigs
+                    jcr:created="{Date}2022-08-03T11:29:15.891+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-08-03T11:29:15.891+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/content/contentconfigs"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

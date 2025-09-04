@@ -1,0 +1,189 @@
+#dealer-screen-page {
+    color: #323030;
+    letter-spacing: 1px;
+}
+
+#dealer-screen-page,
+.slide--wrap {
+    width: 100%;
+    height: 100%;
+}
+
+#dealer-screen-page .slide--wrap {
+    height: 100vh;
+    padding: 15px;
+    pointer-events: none;
+}
+
+#dealer-screen-page .main-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#dealer-screen-page .main-img img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#dealer-screen-page .slick-track,
+#dealer-screen-page .slick-list {
+    height: 100%;
+}
+
+#dealer-screen-page .type-text {
+    max-width: 60%;
+    padding-right: 6px;
+    color: black;
+    font-weight: 600;
+}
+
+#dealer-screen-page .content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dealer-screen-page .hero-logo {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+#dealer-screen-page .hero-logo img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#dealer-screen-page .hero-logo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ed1c24;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+
+#dealer-screen-page .main-heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0.5rem 0 26px;
+    font-family: var(--font-tstar-heavy);
+}
+
+#dealer-screen-page .pricelist-wrap {
+    width: 100%;
+}
+
+#dealer-screen-page .item-wrap {
+    pointer-events: none;
+}
+
+.item-wrap .slick-list {
+    margin: 0 -10px;
+}
+
+#dealer-screen-page .pricelist-wrap .item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+#dealer-screen-page .pricelist-wrap .item .bike-thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(224, 224, 224, 1) 0%, rgba(224, 224, 224, 1) 80%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 1) 100%);
+}
+
+#dealer-screen-page .pricelist-wrap .item .bike-thumbnail img {
+    max-width: 100%;
+}
+
+#dealer-screen-page .pricelist-wrap .item .bike-thumbnail h2 {
+    font-size: 1.0rem;
+    min-height: 60px;
+    padding: 0.75rem 0.3rem;
+    margin: 0 0.6rem;
+    color: #323030;
+    font-weight: 700;
+}
+
+#dealer-screen-page .pricelist-wrap .item .bike-thumbnail .avg-price {
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 11px;
+    font-weight: 600;
+    color: black;
+}
+
+#dealer-screen-page .vehicle-variants {
+    width: 100%;
+}
+
+#dealer-screen-page .vehicle-variants .variant-heading {
+    color: #fff;
+    background: #2b2829;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+#dealer-screen-page .vehicle-variants .price-content-wrap {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+#dealer-screen-page .vehicle-variants .price-content-wrap .price-content {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #2b2829;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dealer-screen-page .vehicle-variants .price-content-wrap .price-content .price-text {
+    font-size: 1.55rem;
+    font-weight: 900;
+    color: #ed1c24;
+    text-align: right;
+    margin: 0;
+}
+
+#dealer-screen-page .disclaimer-text {
+    position: absolute;
+    color: #ed1c24;
+    font-weight: 600;
+    width: fit-content;
+    top: 140px;
+    right: 5px;
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: var(--font-tstar-regular);
+}
+
+#dealer-screen-page .slide-item {
+    position: relative;
+}
+
+@media (max-width: 1400px) {
+    #dealer-screen-page .type-text {
+        max-width: 50%;
+    }
+
+    #dealer-screen-page .slide--wrap {
+        padding: 5px;
+    }
+
+    .item-wrap .slick-list {
+        margin: 0 -8px;
+    }
+}

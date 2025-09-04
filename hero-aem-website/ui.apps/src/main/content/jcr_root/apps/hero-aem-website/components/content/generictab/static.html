@@ -1,0 +1,79 @@
+<!--Mobile View -->
+<section class="explore-wrapper-section hide_thisinlarge section-tab-mob">
+    <div class="p-40">
+        <div class="headerbackground pb-md-3 mt-md-3 text-center">
+            <h2 class="overview-heading new ">
+                ${properties.specificationstext1}
+            </h2>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="explore-products">
+            <!-- tab section -->
+            <div class="explore-tab-section">
+                <div class="bike-tab-section common-tabs-section"
+                     data-sly-use.tabitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='tabitems'}">
+                    <div class="tab-wrapper">
+                        <ul class="nav nav-tabs common-tabs-main" data-sly-list="${tabitems}">
+                            <li class="nav-item">
+                                <a class="nav-link ${itemList.first ? ' active' : ''}" data-toggle="tab" href="#sustainability_${item.path.hashCode}"
+                                   aa-data-attr="track_cta">${item.properties.title} ${item.properties.subtitle}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bike-product-wrapper">
+                        <div class="tab-content" data-sly-list="${tabitems}">
+                            <div id="sustainability_${item.path.hashCode}" class="tab-pane fade${itemList.first ? ' active' : ''} show">
+                                <div class="row">
+                                    <div
+                                            class="col-md-12 col-12 d-flex justify-content-center flex-wrap flex-md-nowrap layout-2">
+                                        <div data-sly-resource="${['tabdetails',itemList.count] @ join='-' , resourceType='wcm/foundation/components/responsivegrid'}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+<!--Desktop View-->
+<section class="p-40 governance-section d-none">
+    <div class="headerbackground  mt-md-3 mb-md-5 text-center">
+        <h2 class="overview-heading new">${properties.specificationstext1}
+        </h2>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="row" data-sly-use.tabitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='tabitems'}">
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                         aria-orientation="vertical" data-sly-list="${tabitems}">
+                        <button class="nav-link ${itemList.first ? ' active' : ''}" id="v-pills-${item.path.hashCode}-tab" data-toggle="pill"
+                                data-target="#v-pills-${item.path.hashCode}" type="button" role="tab" aria-controls="v-pills-${item.path.hashCode}"
+                                aria-selected="true"><span class="tab-dot"></span>${item.properties.title}<br>${item.properties.subtitle}
+                        </button>
+                    </div>
+                </div>
+                <div class="col-9" >
+                    <div class="tab-content" id="v-pills-tabContent"  data-sly-list="${tabitems}">
+                        <div class="tab-pane fade show ${itemList.first ? ' active' : ''}" id="v-pills-${item.path.hashCode}" role="tabpanel"
+                             aria-labelledby="v-pills-${item.path.hashCode}-tab"
+                             data-sly-resource="${['tabdetails',itemList.count] @ join='-' , resourceType='wcm/foundation/components/responsivegrid'}">
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--end governance section start here-->

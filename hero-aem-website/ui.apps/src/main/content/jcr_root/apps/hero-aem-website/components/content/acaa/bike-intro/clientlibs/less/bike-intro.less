@@ -1,0 +1,306 @@
+.acc-banner-container {
+  position: relative;
+  height: 100vh;
+  // z-index: -1;
+  display: flex;
+  justify-content: center;
+  // align-items: end;
+
+  @media screen and (max-width: 767px) {
+    .brand-reveal-bg {
+      display: none;
+    }
+  }
+
+  .mouse-cursor-follow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: translate(-30px, 15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cursor-desc-text {
+      width: 6.5rem;
+      text-align: center;
+      margin-top: 0.45rem;
+    }
+  }
+
+  .intro-parent-text-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    position: absolute;
+
+    .intro-primary-text-wrapper {
+      transform-style: preserve-3d;
+      animation-name: intro_primary_text_zoom;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      position: absolute;
+      transform: scale(500%);
+
+      .intro-primary-text {
+        color: var(--color-white);
+        font-family: var(--font-transducer);
+        font-size: var(--font-size-1-5-rem);
+        font-style: var(--font-style-italic);
+        font-weight: var(--font-weight-600);
+        margin: 0;
+      }
+    }
+
+    .intro-secondary-text-wrapper {
+      transform-style: preserve-3d;
+      animation-name: intro_secondary_text_zoom;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-delay: 2s;
+      transform: scale(300%);
+      opacity: 0;
+
+      .intro-secondary-text {
+        color: var(--color-moon-yellow);
+        font-family: var(--font-transducer);
+        font-size: var(--font-size-1-5-rem);
+        font-style: var(--font-style-italic);
+        font-weight: var(--font-weight-600);
+        margin: 0;
+      }
+    }
+  }
+
+  .intro-karizma-video-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    .intro-karizma-video {
+      width: 50%;
+      height: 35%;
+      object-fit: cover;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+        height: 10%;
+      }
+    }
+  }
+
+  .bike-intro-text-container {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      margin: 0rem 0rem 4rem 0rem;
+    }
+
+    .intro-logo-quote-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition-duration: 0.5s;
+      position: fixed;
+      top: 58%;
+
+      .bike-intro-logo-img-wrapper {
+        margin: 0rem 0rem 0.75rem 0rem;
+        transform: translateY(-200%) scale(125%);
+        transition: all 1s ease-out;
+
+        @media screen and (max-width: 991px) {
+          width: 303px;
+          height: 54px;
+          margin-bottom: 28px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .bike-intro-description-text-wrapper {
+        transform: translateY(5rem);
+        transition: transform 1s ease-out;
+        opacity: 0;
+
+        .bike-intro-description-text {
+          color: var(--color-white);
+          font-family: var(--font-acumin-pro-condensed);
+          font-size: var(--font-size-1-rem);
+          font-style: var(--font-style-italic);
+          font-weight: var(--font-weight-700);
+          letter-spacing: var(--letter-spacing-0-3);
+        }
+      }
+    }
+
+    .bike-intro-scroll-text-content {
+      display: flex;
+      justify-content: center;
+      transition-duration: 0.5s;
+      position: fixed;
+      bottom: 5%;
+      @media screen and (max-width: 991px) {
+        z-index: 2;
+      }
+
+      .bike-intro-static-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(5rem);
+        transition: transform 1s ease-out;
+        opacity: 0;
+
+        .bike-intro-scroll-text-wrapper {
+          margin: 4.5rem 0rem 1.25rem 0rem;
+
+          @media screen and (max-width: 767px) {
+            margin: 3.5rem 0rem 1.25rem 0rem;
+          }
+
+          .bike-intro-scroll-text {
+            color: var(--color-white);
+            font-family: var(--font-acumin-pro-condensed);
+            font-size: var(--font-size-0-625-rem);
+            font-weight: var(--font-weight-400);
+            letter-spacing: var(--letter-spacing-0-0625);
+            line-height: 120%;
+
+            /* 0.75rem */
+            @media screen and (max-width: 767px) {
+              font-size: var(--font-size-0-875-rem);
+            }
+          }
+        }
+
+        .bike-intro-scroll-img-wrapper {
+          // width: 0.5rem;
+          max-width: 15%;
+          cursor: pointer;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    &.animate-content {
+      .bike-intro-logo-img-wrapper,
+      .bike-intro-description-text-wrapper,
+      .bike-intro-static-container {
+        transform: none;
+        opacity: 1;
+      }
+    }
+  }
+
+  .line-anime-container {
+    left: 0;
+    bottom: 4%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+    opacity: 1;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    position: fixed;
+    z-index: -1;
+
+    @media screen and (max-width: 767px) {
+      bottom: 12%;
+    }
+
+    .banner-brand-reveal-line {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+  
+      &.reverse {
+        transform: scaleX(-1);
+      }
+  
+      img {
+        width: 60%;
+      }
+  
+      .line-container-animate {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: var(--bg-color-black);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: width 1s ease-out;
+      }
+    }
+
+    &.animate-content {
+      .banner-brand-reveal-line {
+        .line-container-animate {
+          width: 0%;
+        }
+      }
+    }
+  }
+}
+
+// keyframes for text zoom animation
+@keyframes intro_primary_text_zoom {
+  from {
+    transform: scale(500%);
+  }
+
+  40% {
+    transform: scale(100%);
+  }
+
+  90% {
+    transform: scale(100%);
+  }
+
+  to {
+    transform: scale(0%);
+  }
+}
+
+@keyframes intro_secondary_text_zoom {
+  from {
+    opacity: 1;
+    transform: scale(300%);
+  }
+
+  10% {
+    opacity: 1;
+    transform: scale(100%);
+  }
+
+  90% {
+    opacity: 1;
+    transform: scale(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(0%);
+  }
+}

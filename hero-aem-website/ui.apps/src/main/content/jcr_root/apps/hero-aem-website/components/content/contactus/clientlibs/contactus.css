@@ -1,0 +1,214 @@
+.address-section{
+    display: flex;
+    justify-content: center;
+}
+
+.corpaorateOffice {
+    width: 839px;
+    position: relative;
+    padding: 10px 73px 10px 73px;
+    margin: 30px 10%;
+    background: #e2e2e2 url(/content/dam/hero-aem-website/icons/reg-corner.gif) no-repeat left top;
+    box-sizing: content-box;
+}
+
+.showAdd {
+    display: flex !important;
+}
+
+.corpaorateOffice h1 {
+    font-size: 24px;
+    color: #303030;
+    line-height: 100%;
+    margin: 10px 0 0 10px;
+    font-weight: 600;
+}
+
+.corpaorateOffice h1{
+    font-weight: 600;
+}
+
+.mapcon {
+    padding: 10px 0 0 0px;
+}
+
+#map_container {
+    width: 825px;
+    padding: 0px;
+    color: #353535;
+    margin: 10px 0 0 0;
+    margin-left: 50px !important;
+    margin-top: 30px !important;
+}
+
+.mapcon{
+    padding: 0 0 5px;
+    list-style: none;
+    display: block;
+    float: none;
+    font-weight: 600;
+}
+.address-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.address-col {
+    margin-left: 15px;
+    width: 100px;
+    font-weight: 600 !important;
+    font-size: 13px;
+}
+
+.address-col-val {
+    display: flex;
+    font-size: 13px;
+    font-weight: 600 !important;
+    max-width: 84%;
+}
+
+.address-col-val a{
+    margin:0 4px;
+}
+
+.address-col-val p{
+    font-size: 13px;
+}
+
+.main-col h5 {
+    font-family: 'Open Sans', sans-serif !important;
+    color: #303030 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    margin-bottom: 15px;
+}
+
+.white-line {
+    margin: 5px 0 10px;
+    width: 750px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.under-line {
+    width: 750px;
+    border-bottom: 1px solid #c5c5c5;
+    padding: 8px 0 2px 0;
+    margin-bottom: 10px;
+}
+
+.empty-space{
+    margin-top: 40px;
+}
+
+.address-divider{
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    .corpaorateOffice {
+        width: 92%;
+        padding: 35px 0 10px 15px;
+        margin: 3px 1px 5px 20px;
+    }
+
+    #map_container {
+        width: 100%;
+        margin-left: 5% !important;
+    }
+
+    .address-row {
+        width: 100%;
+        display: block;
+    }
+
+    .corpaorateOffice h1{
+        margin-left: 8%;
+    }
+
+    .address-divider{
+        display: flex;
+    }
+
+    .contact-us-section .selectaddress {
+        margin-right: 0px;
+    }
+
+    .under-line {
+        width: 570px;
+    }
+
+    .address-col-val {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .corpaorateOffice {
+        width: 85%;
+        padding: 35px 0 10px 15px;
+        margin: 3px 1px 5px 20px;
+    }
+
+    .corpaorateOffice h1{
+        margin-left: 8%;
+        width: 80%;
+        font-size: 22px;
+    }
+
+    #map_container {
+        width: 90%;
+        margin-left: 5% !important;
+    }
+
+    .address-row {
+        width: 100%;
+    }
+
+    .address-col{
+        margin-left: 1px;
+        min-width: 30%;
+    }
+
+    .address-col-val{
+        width: 55%;
+        word-wrap: break-word;
+        display: block;
+    }
+
+    .white-line{
+        width:100%;
+    }
+    .under-line{
+        width: 100%;
+    }
+    .mapcon{
+        padding: 0px 20px 5px;
+    }
+
+    .address-divider{
+        display: flex;
+    }
+
+    .contact-us-section .selectaddress {
+        margin-right: 0px;
+    }
+
+    .address-col {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #map_container {
+        width: 80%;
+        margin-left: 5% !important;
+    }
+}
+
+@media  screen and (max-width : 300px) {
+    .address-col-val {
+        width: 69%;
+    }
+}

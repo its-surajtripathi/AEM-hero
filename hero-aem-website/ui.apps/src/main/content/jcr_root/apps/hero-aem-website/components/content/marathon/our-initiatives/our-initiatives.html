@@ -1,0 +1,44 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<div class="our-initiatives">
+  <h2 class="initiatives-header">
+    ${properties.titleHeader @ context = 'html'}
+  </h2>
+  <div class="our-initiatives-wrapper">
+    <sly data-sly-list.parent="${resource.children}">
+      <div class="slide">
+        <sly data-sly-test="${parent.name == 'multifield'}">
+          <sly data-sly-list.child="${parent.children}">
+            <sly data-sly-test.totalCount="${childList.count}" />
+          </sly>
+        </sly>
+        <sly data-sly-test="${parent.name == 'multifield'}">
+          <sly data-sly-test="${!(totalCount > 3)}">
+            <sly data-sly-list.child="${parent.children}">
+              <div class="image-container">
+                <img class="initiatives-image" src="${child.image}" />
+                <p class="slider-about-text">${child.text}</p>
+              </div>
+            </sly>
+            <sly data-sly-list.child="${parent.children}">
+              <div class="image-container">
+                <img class="initiatives-image" src="${child.image}" />
+                <p class="slider-about-text">${child.text}</p>
+              </div>
+            </sly>
+          </sly>
+          <sly data-sly-test="${totalCount > 3 }">
+            <sly data-sly-list.child="${parent.children}">
+              <div class="image-container">
+                <img class="initiatives-image" src="${child.image}" />
+                <p class="slider-about-text">${child.text}</p>
+              </div>
+            </sly>
+          </sly>
+        </sly>
+      </div>
+    </sly>
+  </div>
+</div>

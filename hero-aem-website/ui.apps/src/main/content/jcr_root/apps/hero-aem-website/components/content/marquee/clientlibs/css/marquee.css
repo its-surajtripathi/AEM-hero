@@ -1,0 +1,38 @@
+.new_inf {
+    padding: 12px 0 12px 190px;
+    float: none;
+    background :url("/apps/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/marq-bgi.gif")#f3f3f3 left 150px center no-repeat;
+
+}
+
+.new_inf .txtscr {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+    padding: 0px 0 0px 0px;
+    margin: 0;
+    background: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.txtscr {
+    color: #000000;
+    padding: 12px 0 12px 40px;
+    background: url(../images/marq-bg.gif)#f3f3f3 left center no-repeat;
+    float: right;
+    font-size: 13px;
+    max-width: 720px;
+    /* width: 95%; */
+    margin-top: 15px;
+}
+
+
+
+@media screen and (max-width: 610px){
+.new_inf {
+    background :url("/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/marq-bgi.gif")#f3f3f3 left 20px center no-repeat;
+    padding-left: 70px;
+}
+   }

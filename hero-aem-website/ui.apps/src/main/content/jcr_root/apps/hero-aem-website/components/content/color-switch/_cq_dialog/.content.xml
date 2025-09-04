@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Color Switch"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <content
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Content"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <variation
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                class="cq-dialog-dropdown-showhide"
+                                                cq-dialog-dropdown-showhide-target=".variation-show-hide"
+                                                fieldLabel="Select Variation"
+                                                name="./variationtype">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <citypage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="City Page"
+                                                        value="city-explore-360-main"/>
+                                                    <citypluspage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="City Plus Page"
+                                                        value="city-plus-explore-360-main"/>
+                                                    <sportspage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Sports and Adventure Page"
+                                                        value="sports"/>
+                                                    <scooter
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Scooter Page"
+                                                        value="scooter-explore-360-main"/>
+                                                </items>
+                                            </variation>
+                                            <scooter
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="variation-show-hide"
+                                                showhidetargetvalue="scooter-explore-360-main">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <classforscooter
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Class name for Scooter variation"
+                                                        name="./classforscooter"/>
+                                                </items>
+                                            </scooter>
+                                            <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="variation-show-hide"
+                                                showhidetargetvalue="city-explore-360-main,city-plus-explore-360-main,scooter-explore-360-main,sports">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <headline
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Heading of the component."
+                                                        name="./headline"/>
+                                                    <background
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Back Ground Image"
+                                                        name="./background"
+                                                        rootPath="/content/dam"/>
+                                                    <leftarrow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Left Arrow Path"
+                                                        name="./leftarrowpath"
+                                                        rootPath="/content/dam"/>
+                                                    <rightarrow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Right Arrow Path"
+                                                        name="./rightarrowpath"
+                                                        rootPath="/content/dam"/>
+                                                    <leftheading
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter heading for colors"
+                                                            name="./leftheading"/>
+                                                </items>
+                                            </heading>
+
+                                            <colors
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Add all the colors of product"
+                                                fieldLabel="Colors"
+                                                showhidetargetvalue="">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./colors">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <colortitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                fieldLabel="Enter Color Title"
+                                                                name="./colortitle"
+                                                                required="{Boolean}true"
+                                                                useFixedInlineToolbar="{Boolean}true">
+                                                            <rtePlugins
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                            <uiSettings
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                            <htmlRules jcr:primaryType="nt:unstructured">
+                                                                <blockHandling
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        removeSingleParagraphContainer="{Boolean}true"/>
+                                                            </htmlRules>
+                                                        </colortitle>
+                                                        <scooter
+			                                                jcr:primaryType="nt:unstructured"
+			                                                sling:resourceType="granite/ui/components/foundation/container"
+			                                                class="variation-show-hide"
+			                                                showhidetargetvalue="scooter-explore-360-main">
+			                                                <items jcr:primaryType="nt:unstructured">
+			                                                    <color
+		                                                            jcr:primaryType="nt:unstructured"
+		                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                            fieldLabel="Enter Color Name "
+		                                                            name="./color"/>
+			                                                </items>
+			                                            </scooter>
+                                                        <colorfolderpath
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Enter Color Folder path "
+                                                            rootPath="/content/dam/hero-aem-website"
+                                                            name="./colorPath"
+                                                            required="{Boolean}true"/>
+                                                        <imagepath
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Enter Image path of corresponding color"
+                                                            name="./colorimagepath"
+                                                            rootPath="/content/dam"/>
+                                                    </items>
+                                                </field>
+                                            </colors>
+                                            <rightside
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="variation-show-hide"
+                                                showhidetargetvalue="city-explore-360-main,city-plus-explore-360-main,scooter-explore-360-main">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <multitext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        fieldDescription="Add all the colors of product"
+                                                        fieldLabel="Right side Multi text"
+                                                        showhidetargetvalue="">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./multitext">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Right Side Text"
+                                                                    name="./title"
+                                                                    required="{Boolean}true"/>
+                                                                <subtext
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Right Side Sub Text"
+                                                                    name="./subtext"/>
+                                                                <rightimage
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                    fieldLabel="Enter Image path for right side content"
+                                                                    name="./rightimage"
+                                                                    rootPath="/content/dam"/>
+                                                            </items>
+                                                        </field>
+                                                    </multitext>
+                                                </items>
+                                            </rightside>
+                                            <accordion
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="variation-show-hide"
+                                                showhidetargetvalue="sports">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <configurations
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <features
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Sports Features"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <enginesound
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldLabel="Engine Sound label"
+                                                                        name="./engsound"/>
+                                                                    <engaudio
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldLabel="CTA Link 1"
+                                                                        name="./engaudio"
+                                                                        rootPath="/content/dam"/>
+                                                                    <multitext
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                        composite="{Boolean}true"
+                                                                        fieldLabel="Right side Multi text"
+                                                                        showhidetargetvalue="">
+                                                                        <field
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                            name="./multitextsports">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <title
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldLabel="Enter Right Side Title"
+                                                                                    name="./title"
+                                                                                    required="{Boolean}true"/>
+                                                                                <features
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                    fieldLabel="Features"
+                                                                                    name="./features"
+                                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                                    <rtePlugins
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                    <uiSettings
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                </features>
+                                                                            </items>
+                                                                        </field>
+                                                                    </multitext>
+                                                                </items>
+                                                            </features>
+                                                        </items>
+                                                    </configurations>
+                                                </items>
+                                            </accordion>
+                                            <loaderimg
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Enter Loader image path"
+                                                name="./loaderimg"
+                                                required="{Boolean}true"/>
+                                            <btnlabel1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Button label 1"
+                                                name="./btnlabel1"/>
+                                            <imgbtn1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Enter Image path for 360 icon"
+                                                name="./imgbtn1"/>
+                                            <linkTo1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="CTA Link 1"
+                                                name="./linkTo1"
+                                                rootPath="/content"
+                                                suffix=".html"/>
+                                            <styling1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                fieldDescription="Select Styling of the Button1"
+                                                fieldLabel="Select Styling for Button1"
+                                                name="./styling1">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <backgroundfilled
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Background filled"
+                                                        value="btn-red-gradient"/>
+                                                    <nofill
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="No fill"
+                                                        value="btn-icon btn-white"/>
+                                                    <textbold
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Text bold"
+                                                        value="text-bold"/>
+                                                </items>
+                                            </styling1>
+                                            <btnlabel2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Button label 2"
+                                                name="./btnlabel2"/>
+                                            <linkTo2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="CTA Link 2"
+                                                name="./linkTo2"
+                                                rootPath="/content"
+                                                suffix=".html"/>
+                                            <styling2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                fieldDescription="Select Styling of the Button2"
+                                                fieldLabel="Select Styling for Button2"
+                                                name="./styling2">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <backgroundfilled
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Background filled"
+                                                        value="btn-red-gradient"/>
+                                                    <nofill
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="No fill"
+                                                        value="btn-icon btn-white"/>
+                                                    <textbold
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Text bold"
+                                                        value="text-bold"/>
+                                                </items>
+                                            </styling2>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </content>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

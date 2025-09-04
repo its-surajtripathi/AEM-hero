@@ -1,0 +1,53 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<section class="footer-wrapper premia-footer-wrapper" data-sly-test="${properties.mobilefooter == 'false'}">
+   <div class="container-fixed-width">
+      <div class="container-fluid footer-list-wrapper">
+         <sly data-sly-resource="${'container' @ resourceType='wcm/foundation/components/responsivegrid' }">
+         </sly>
+         <div class="row footer-social-main">
+            <div class="col-12">
+               <div class="quick-links-social-media pb-64 pl-12 pr-48">
+                  <div class="g-play">
+                     <a class="pr-16"
+                        data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.playstorelink}"
+                        href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                        aa-data-attr="track_cta">
+                        <img loading="lazy" src="${properties.playstore}" alt="google-play" />
+                     </a>
+                     <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.appstorelink}"
+                        href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                        aa-data-attr="track_cta">
+                        <img loading="lazy" src="${properties.appstore}" alt="app-store" />
+                     </a>
+                  </div>
+                  <div class="scoial-media-icon"
+                     data-sly-resource="${'socialicon' @ resourceType='hero-aem-website/components/content/socialicons' }">
+                  </div>
+               </div>
+               <div class="footer-divider"></div>
+               <div class="term-condition-wrapper">
+                  <div class="ter-condition-list py-48 pr-48 d-flex justify-content-between flex-md-row flex-column">
+                     <ul class="ter-condition-ul pt-20"
+                        data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='linksfooter'}"
+                        data-sly-list="${listUse}">
+                        <li class="ter-condition-li pl-16 p-right-16 b1-bold-text-std">
+                           <a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.footerlink}"
+                              href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}"
+                              aa-data-attr="track_cta">${item.properties.footertext @context='html'}</a>
+                        </li>
+                     </ul>
+                     <p class="copy-right pt-4 b1-bold-text-std pr-16">
+                        ${properties.copyrightText}
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<sly data-sly-test="${properties.mobilefooter == 'true'}">
+   <sly data-sly-include="mobilefooter.html" />
+</sly>

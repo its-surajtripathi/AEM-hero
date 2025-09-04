@@ -1,0 +1,18 @@
+<template data-sly-template.tracking="${ @ page }">
+    <script data-sly-test.dataLayerEnabled="${page.data}"
+        data-sly-use.categoryPage="${'/apps/hero-aem-website/utils/pathhelper.js' @depth=4}">
+        var pageTitle = "${currentPage.pageTitle @ context='scriptString'}";
+        var category = "${categoryPage.pageTitle @ context='scriptString'}";
+        var current_country ="${currentPage.language.displayCountry @ context='scriptString'}";
+        var current_language ="${currentPage.language.displayLanguage @ context='scriptString'}";
+        window.digitalData = {
+            page: {
+                pagename: "${currentPage.pageTitle @ context='scriptString'}",
+                country: "${currentPage.language.displayCountry @ context='scriptString'}",
+                language: "${currentPage.language.displayLanguage @ context='scriptString'}",
+                sitetype: "aem",
+                category: "${categoryPage.pageTitle @ context='scriptString'}",
+            }
+        };
+    </script>
+</template>

@@ -1,0 +1,40 @@
+.bcipl-innerPg .selectPressBox {
+    cursor: pointer;
+    font-size: 13.33px;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-investor-contest {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-investor-contest p {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    padding: 0 0 0 50px;
+    margin: 30px 0 0 0;
+    line-height: 27px;
+}
+
+.bcipl-innerPg .bcipl-container .bcipl-investor-contest a {
+    font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+    padding: 5px 5px 5px 20px;
+    font-size: 15px;
+    color: #353535;
+    font-weight: bold;
+    background: url('/etc.clientlibs/hero-aem-website/clientlibs/clientlib-bcipl-site/resources/pdf-icon.png') no-repeat left center;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .bcipl-innerPg .bcipl-container .bcipl-investor-contest p {
+        padding: 0 0 0 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bcipl-innerPg .bcipl-container .bcipl-investor-contest p {
+        padding: 0 0 0 10px;
+    }
+}

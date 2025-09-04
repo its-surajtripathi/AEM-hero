@@ -1,0 +1,69 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+    format=[component.title], i18n}
+</sly>
+
+<sly data-sly-test="${properties.layoutvariation != 'investor' && properties.layoutvariation != 'greybg' && properties.layoutvariation != 'withheader'}">
+    <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='eventinfo'}">
+        <ul class="hdbcevent-container" data-sly-list="${listUse}">
+            <li>
+                <h4 class="event-contents-top">${item.properties.eventinfoValue}</h4>
+                <div class="border-line-events"></div>
+                <p class="event-contents-bottom">${item.properties.eventinfoTitle} </p>
+            </li>
+        </ul>
+    </sly>
+</sly>
+
+<sly data-sly-test="${properties.layoutvariation == 'investor'}">
+    <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='inNumbersInfo'}">
+        <div class="container-statistics">
+            <div class="statistitc-wrapper">
+                <p class="data-time-para">${properties.datayear}</p>
+                <ul class="hdbcevent-container-variation" data-sly-list="${listUse}">
+                    <li>
+                        <h4 class="event-contents-top">${item.properties.inNumberValue @ context='html'}</h4>
+                        <div class="border-line-events-variation"></div>
+                        <div class="event-contents-bottom">${item.properties.inNumberTitle @ context='html'} </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </sly>
+</sly>
+
+<sly data-sly-test="${properties.layoutvariation == 'greybg'}">
+    <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='serNumbersInfo'}">
+        <div class="container-statistics">
+            <div class="statistitc-wrapper ${properties.layoutvariation=='greybg' ? 'statistitc-grey-wrapper' : ''}">
+                <p data-sly-test="${properties.datayear}" class="data-time-para">${properties.datayear}</p>
+                <ul class="hdbcevent-container-variation" data-sly-list="${listUse}">
+                    <li>
+                        <h4 class="event-contents-top ${properties.layoutvariation=='greybg' ? 'event-contents-top-grey' : ''}">${item.properties.serNumberValue @ context='html'}</h4>
+                        <div class="border-line-events-variation ${properties.layoutvariation=='greybg' ? 'border-line-grey' : ''}"></div>
+                        <div class="event-contents-bottom ${properties.layoutvariation=='greybg' ? 'event-contents-bottom-grey' : ''}">${item.properties.serNumberTitle @ context='html'} </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </sly>
+</sly>
+
+<sly data-sly-test="${properties.layoutvariation == 'withheader'}">
+    <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='NumbersInfo'}">
+        <div class="container-statistics">
+            <div class="statistitc-wrapper ${properties.layoutvariation=='withheader' ? 'statistitc-grey-wrapper' : ''}" style="box-shadow: none;">
+                <div style="text-align: center;" data-sly-test="${properties.header}">
+                    <h2 class="overview-heading multicolor  h2-heading-std" style="background: transparent !important; margin-top: 10px;"> ${properties.header}<span style="color: #303030;"> ${properties.header2}</span></h2>
+                </div>
+                <p data-sly-test="${properties.datayear}" class="data-time-para">${properties.datayear}</p>
+                <ul class="hdbcevent-container-variation withheader" data-sly-list="${listUse}">
+                    <li>
+                        <h4 class="event-contents-top ${properties.layoutvariation=='withheader' ? 'event-contents-top-grey' : ''}">${item.properties.serNumberValue @ context='html'}</h4>
+                        <div class="border-line-events-variation ${properties.layoutvariation=='withheader' ? 'border-line-grey' : ''}"></div>
+                        <div class="event-contents-bottom ${properties.layoutvariation=='withheader' ? 'event-contents-bottom-grey' : ''}">${item.properties.serNumberTitle @ context='html'} </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </sly>
+</sly>

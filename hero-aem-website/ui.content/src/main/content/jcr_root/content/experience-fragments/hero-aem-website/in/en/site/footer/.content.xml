@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastReplicated="{Date}2022-08-10T06:32:54.295Z"
+        cq:lastReplicated_publish="{Date}2022-08-10T06:32:54.295Z"
+        cq:lastReplicatedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicatedBy_publish="kiran.jaganmohan@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[]"
+        cq:template="/libs/cq/experience-fragments/components/experiencefragment/template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer"
+        jcr:uuid="01371c7c-ec26-40f7-8c4d-2beb407f95d5"
+        sling:resourceType="cq/experience-fragments/components/experiencefragment"/>
+    <master/>
+</jcr:root>

@@ -1,0 +1,27 @@
+<sly data-sly-test.state="${request.requestPathInfo.selectors[1]}"
+	data-sly-test.city="${request.requestPathInfo.selectors[2]}"
+	data-sly-test.parentPath="${['/content/hmc/prices/harley/harley_x440',state,city] @ join='/'}"
+	data-sly-use.listUse="${'/apps/hero-aem-website/utils/getdropdownvalues.js' @ parentPath=parentPath}">
+	<sly data-sly-list="${listUse}">
+		<div class="cust-form-group">
+			<div class="custom-control custom-radio">
+				<input type="radio" id="customRadio${itemList.count}" name="customRadio" class="custom-control-input"
+					required>
+				<label class="custom-control-label" for="customRadio${itemList.count}">
+					<div class="bike-variant">
+						<h3 class="bike-variant-label">
+							<span>${item.properties.variant_desc}</span>
+							<span>(Mustard Denim)</span>
+						</h3>
+						<div>
+							<span class="bike-variant-price"
+								data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}">${pageconfig.currencyUnit}
+								${item.properties.ex_showroom}</span>
+							<span class="bike-variant-showroom">Ex showroom price</span>
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+	</sly>
+</sly>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OrderedFolder"
+    jcr:title="Site">
+    <teaser/>
+    <stats/>
+    <modal/>
+    <footer/>
+    <header/>
+    <motorcycles/>
+    <scooters/>
+    <community/>
+    <links-flyouts/>
+    <Header_home_test/>
+    <request-callback-pop-up/>
+</jcr:root>

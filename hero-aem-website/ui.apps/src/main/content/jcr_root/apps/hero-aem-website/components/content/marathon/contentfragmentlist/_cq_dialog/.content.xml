@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Content Fragment List"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.contentfragmentlist.v1.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_cflist_v2"
+    trackingFeature="core-components:contentfragmentlist:v2">
+    <content
+        granite:class="cmp-contentfragmentlist__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <granite:data
+            jcr:primaryType="nt:unstructured"
+            component-path="${requestPathInfo.suffix}"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <titleHeading
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Custom Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Heading for the Content fragment list."
+                                        fieldLabel="Title"
+                                        name="./title"/>
+                                    <landingPage
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="{Boolean}false"
+                                        fieldDescription="Select if its landing Page for Birthday wishes"
+                                        name="./isLandingPage"
+                                        text="Is Birthday Landing Page"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <tileClickable
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="{Boolean}false"
+                                        fieldDescription="Select if the whole birthdday tile needs to be clickable"
+                                        name="./isTileClickable"
+                                        text="Enable Link on Birthday Tile"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <viewMore
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Label for View more Link"
+                                        fieldLabel="View More Label"
+                                        name="./viewMore"/>
+                                    <viewMoreLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldLabel="Link for View More."
+                                        name="./viewMoreLink"/>
+                                </items>
+                            </column>
+                        </items>
+                    </titleHeading>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

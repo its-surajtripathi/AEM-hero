@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <rep:policy/>
+    <hero-aem-website jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <structure jcr:primaryType="nt:unstructured">
+                <page-premia-booking jcr:primaryType="nt:unstructured">
+                    <policy_1688111777609
+                        jcr:lastModified="{Date}2023-06-30T13:32:32.639+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="harley policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="[hero-aem-website.dependencies,hero-aem-website.staticpages,premia-booking-aem-website.site,hero-aem-website.site,hero-aem-website.authenticatedpages]"
+                        clientlibsAsync="false">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1688111777609>
+                </page-premia-booking>
+            </structure>
+            <container jcr:primaryType="nt:unstructured">
+                <policy_1688111983628
+                    jcr:lastModified="{Date}2023-06-30T15:07:25.087+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="harley policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[group:Hero MotoCorp - Content,group:Hero MotoCorp - Structure,group:Hero Premia - Content]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1688111983628>
+            </container>
+        </components>
+    </hero-aem-website>
+</jcr:root>

@@ -1,0 +1,169 @@
+.highlighted-features-section {
+  background-color: #000000;
+}
+.highlighted-features-section .container-fluid {
+  padding: 0px;
+}
+.highlighted-features-section .overlay {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.highlighted-features-section .text-content {
+  color: var(--text-color-white);
+  font-style: italic;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+.highlighted-features-section .text-content h2 {
+  font-size: var(--font-size58);
+  font-family: var(--font-tstar-heavy);
+  padding-left: 40px;
+}
+.highlighted-features-section .text-content p {
+  font-size: var(--font-size22);
+  padding-left: 40px;
+}
+.highlighted-features-section .text-content .carousel-indicators {
+  position: static;
+  margin: 35px 0 50px 0;
+}
+.highlighted-features-section .text-content .carousel-indicators li {
+  width: auto;
+  transform: none;
+  height: auto;
+  color: var(--text-color-white);
+  padding: 15px 125px 15px 40px;
+  margin-bottom: 10px;
+  text-indent: 0;
+  background-color: transparent;
+  font-family: var(--font-tstar-bold);
+  font-style: normal;
+  font-size: var(--font-size22);
+}
+.highlighted-features-section .text-content .carousel-indicators li.active {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 40.59%, rgba(255, 255, 255, 0) 100%);
+}
+.highlighted-features-section .text-content h3 {
+  font-family: var(--font-tstar-heavy);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--font-size48);
+  letter-spacing: 5px;
+}
+@media (max-width: 1199px) {
+  .highlighted-features-section {
+    padding: 30px 0;
+  }
+  .highlighted-features-section .text-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    transform: none;
+    z-index: 3;
+  }
+  .highlighted-features-section .text-content .carousel-indicators li {
+    color: var(--text-color-white);
+    padding: 10px 125px 10px 40px;
+  }
+  .highlighted-features-section .carousel-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+  }
+  .highlighted-features-section .carousel-inner video {
+    min-height: 380px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media (max-width: 991px) {
+  .highlighted-features-section {
+    padding: 16px 0px;
+  }
+  .highlighted-features-section .container-fluid {
+    padding: 0 15px;
+  }
+  .highlighted-features-section .text-content h2 {
+    font-size: var(--font-size40);
+    padding-left: 20px;
+    line-height: 45px;
+  }
+  .highlighted-features-section .text-content p {
+    font-size: var(--font-size18);
+    padding-left: 20px;
+  }
+  .highlighted-features-section .text-content .carousel-indicators {
+    position: static;
+    margin: 35px 0 50px 0;
+  }
+  .highlighted-features-section .text-content .carousel-indicators li {
+    font-size: var(--font-size18);
+    padding-right: 100px;
+  }
+  .highlighted-features-section .text-content h3 {
+    font-size: var(--font-size38);
+  }
+}
+@media (max-width: 767px) {
+  .highlighted-features-section {
+    padding: 0px;
+  }
+  .highlighted-features-section .container-fluid {
+    padding: 0 15px;
+  }
+  .highlighted-features-section .carousel-inner {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .highlighted-features-section .text-content h3 {
+    margin-top: auto;
+  }
+  .highlighted-features-section .text-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .highlighted-features-section .text-content h2 {
+    font-size: var(--font-size34);
+    padding-left: 0px;
+  }
+  .highlighted-features-section .text-content p {
+    font-size: var(--font-size14);
+    padding-left: 0px;
+  }
+  .highlighted-features-section .text-content .carousel-indicators {
+    position: static;
+    margin: 25px 0 35px;
+  }
+  .highlighted-features-section .text-content .carousel-indicators li {
+    font-size: var(--font-size16);
+    padding-right: 10px;
+    padding-left: 15px;
+    margin-left: -15px;
+    margin-bottom: 0;
+  }
+  .highlighted-features-section .text-content h3 {
+    font-size: var(--font-size22);
+  }
+  .highlighted-features-section .text-content .container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+  }
+}

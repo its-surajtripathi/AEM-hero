@@ -1,0 +1,44 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<div class="xclan-enrollment-form-wrapper">
+
+   <div class="row align-center">
+
+      <div class="col-lg-11 col-12 xclan-enrollmentform-main">
+         <div class="banner-heading">
+            <!--this html need to be done as part of other-->
+         </div>
+         <div class="enrollment-step prequiste-form-wrapper">
+            <div class="row pre-requistes-details">
+               
+               <div class="col-md-3 col-12">
+                  <p>${properties.formheading}</p>
+               </div>
+               <div class="col-md-9 col-12">
+               		<div class="alert-danger member-api-error hidden mb-4" > ${properties.apiErrorMsg}</div>
+                  <sly data-sly-resource="${'xclan-prereqdetails' @ resourceType='hero-aem-website/components/container' }">
+                  </sly>
+               </div>
+            </div>
+
+            <div class="submit-button-wrapper float-right">
+               <div class="alert-danger api-error hidden" > </div>
+               <input type="hidden" class="success-redirect" value="${properties.sucRedirectPath @ extension='html'}"/>
+               <input type="hidden" class="failure-redirect" value="${properties.failedRedirectPath @ extension='html'}"/>
+               <input type="hidden" class="no-bike-redirect" value="${properties.noXpulsebikePage @ extension='html'}"/>
+               <input type="hidden" class="encFees" name="encodedfees" value=""/>
+               
+                
+                <a class="img-btn-link" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.cancellink}" 
+		            href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}">
+		         	<button class="btn proceed join-ride-form-cancel" >${properties.cancelLabel}</button>
+		         </a>
+            	
+               <button class="btn btn-red-gradient join-ride-form-submit" >${properties.proceedPaymentLabel}</button>
+            </div>
+         </div>
+       </div>
+   </div>
+</div>

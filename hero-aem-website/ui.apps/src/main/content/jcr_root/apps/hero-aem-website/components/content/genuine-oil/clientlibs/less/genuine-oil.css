@@ -1,0 +1,75 @@
+/* Genuie oil styling */
+.hero-geniue-oil #engine,
+.hero-geniue-oil #bike-model-name {
+  border: 1px solid #f1f1f1;
+  background: url(/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/select-down-arrow.jpeg)#f1f1f1;
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 210px;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-family: var(--font-open-sans-semibold);
+  color: #1c1c1c;
+  text-transform: normal;
+  outline: none;
+  margin: 0 15px 0 0;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+}
+
+.geniue-oil-dropdown {
+  width: 100%;
+  text-align: center;
+}
+
+#geniue-oil-table table tr th:first-child,
+#geniue-oil-table table tr td:first-child {
+  display: none;
+}
+
+#geniue-oil-table {
+  background: #e6e6e6;
+  padding: 20px;
+  font-family: var(--font-open-sans-semibold);
+  font-size: 13px;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+
+#geniue-oil-table table {
+  width: 100%;
+  margin: 0 !important;
+
+}
+
+#geniue-oil-table table tr {
+  text-align: center;
+}
+
+
+@media (max-width: 500px) {
+  .geniue-oil-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .geniue-oil-dropdown #bike-model-name {
+    margin-top: 10px;
+  }
+}
+
+@media(max-width: 600px) {
+  #geniue-oil-table{
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  #geniue-oil-table table {
+    width: 600px;
+    overflow-x: auto;
+  }
+}

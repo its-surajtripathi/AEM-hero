@@ -1,0 +1,155 @@
+.profilesection
+.editprofile{
+    margin-right: 0px;
+    display: block;
+}
+.profile-pic {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 1rem auto;
+
+    h5{
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #303030;
+
+        @media (max-width: 767px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}
+ .editprofile a{
+    color: red;
+    float: right;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    margin-block: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.editprofile{ 
+    h4{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FF0000;
+    }
+}
+.profile-pic img{
+    border-radius: 50%;
+
+    padding: 5px;
+    height: 150px;
+    width: 140px;
+}
+
+
+
+.profile-summary-block {
+    .initials{
+        font-size: 50px;
+         width: 60px;
+    }
+    border-bottom: 2px dashed #CCCCCC;
+    @media (max-width: 767px) {
+        border-bottom: 2px solid #CCCCCC;
+        margin: 0;
+    }
+}
+
+.manageLicense{
+    margin:20px;
+     @media (max-width: 767px) {
+            border-bottom: 2px solid #CCCCCC;
+            padding-bottom:20px;
+        }
+}
+ .fetch-image{
+    border-radius: 50%;
+    border: 1px solid red;
+    width: 158px;
+    height: 158px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .profile-roundPic{
+        width: 156px;
+        height: 156px;
+        border-radius:50%;
+        padding: 10px;
+    }
+
+}
+
+.profile-details-wrap{
+    margin: 0 auto;
+    @media (max-width: 767px){
+        border-top: 1px solid #CCCCCC;
+        margin-bottom: 1rem;
+    }
+    .profile-field{
+        margin-top: 1rem;
+        .mobile{
+            display:block;
+        }
+
+        h5{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: rgba(51, 51, 51, 0.8);
+        }
+        p{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: #333333;
+            word-break: break-all;
+            @media (max-width: 767px){
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.my-profile-wrapper{
+    .service-main-heading{
+        h2{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #303030;
+        }
+    }
+
+    #details-section .card .card-header button.accordion-button p{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #333333;
+    }
+
+}
+#details-section .card .card-body{
+    padding-top:0px;
+}
+#details-section .licensesection .document{
+    width:20%;
+    @media (max-width:768px){
+        width:90%;
+    }
+}

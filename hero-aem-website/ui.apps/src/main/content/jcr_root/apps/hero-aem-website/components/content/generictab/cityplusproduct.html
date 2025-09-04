@@ -1,0 +1,48 @@
+
+<div class="city-bike-specifications" id="Specification" 
+     style="background-image: url('${properties.bgimage ? properties.bgimage :'unset'@ context='uri'}')">
+    <h2 class="font-italic text-white text-center h2-heading-std text-to-uppercase" data-sly-test="${properties.specificationstext1}">${properties.specificationstext1}</h2>
+    <div class="sharing-wrapper d-none  d-lg-flex align-items-center justify-content-center justify-content-lg-end">
+        <div class="inner">
+            <sly
+                    data-sly-resource="${'cityplusdownloadbrochure' @resourceType='hero-aem-website/components/content/downloadbrochure'}">
+            </sly>
+            <sly
+                    data-sly-resource="${'cityplusshareicon' @resourceType='hero-aem-website/components/content/shareicon'}">
+            </sly>
+        </div>
+    </div>
+    <div class="city-bike-specifications-inner">
+        <ul class="custom-slider-arrows align-items-center justify-content-between d-flex d-lg-none">
+            <li class="prev">
+                <img loading="lazy" src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/arrow-prev.png" alt="prev arrow">
+            </li>
+            <li class="next">
+                <img loading="lazy" src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/arrow-next.png" alt="next arrow">
+            </li>
+        </ul>
+        <div class="specifications-list" data-sly-use.tabitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='tabitems'}">
+            <div class="slider-nav" data-sly-list="${tabitems}">
+                <div class="b1-heavy-text-std">${item.properties.title}</div>
+            </div>
+            <div class="right-content" >
+                <div class="slider-for" data-sly-list="${tabitems}">
+                    <div class="slider inner-content">
+                        <sly data-sly-resource="${['tab',itemList.index] @ join='-' , resourceType='/apps/hero-aem-website/components/container'}"></sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sharing-wrapper d-flex d-lg-none align-items-center justify-content-center ">
+            <div class="inner">
+                <sly
+                        data-sly-resource="${'cityplusdownloadbrochure' @resourceType='hero-aem-website/components/content/downloadbrochure'}">
+                </sly>
+                <sly
+                        data-sly-resource="${'cityplusshareicon' @resourceType='hero-aem-website/components/content/shareicon'}">
+                </sly>
+            </div>
+
+        </div>
+    </div>
+</div>

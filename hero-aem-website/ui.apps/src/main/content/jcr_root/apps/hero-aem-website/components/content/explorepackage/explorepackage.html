@@ -1,0 +1,43 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<section>
+    <sly data-sly-list.mainMultifield="${resource.getChildren}">
+        <sly data-sly-test="${mainMultifield.name == 'multipackages'}">
+            <div class="sj-explore">
+                <div class="sj-explore-cards">
+                    <sly data-sly-list.packages="${mainMultifield.getChildren}">
+                        <div class="sj-explore-card">
+                            <img class="sj-explore-bg-img" src="${packages.bgimgRef @ context='uri'}">
+                            <div class="sj-explore-content">
+                                <img class="sj-header-img" src="${packages.logoimg}">
+                                <div class="sj-explore-line"></div>
+                                <div class="sj-details">
+                                    <sly data-sly-list.packmulti="${packages.getChildren}">
+                                        <sly data-sly-test="${packmulti.name == 'packagespecs'}">
+                                            <sly data-sly-list.packagespecs="${packmulti.getChildren}">
+                                                <div class="sj-explore-details">
+                                                    <img class="sj-details-icon" src="${packagespecs.imageIconRef}">
+                                                    <div class="sj-details-desc">
+                                                        ${packagespecs.serpackfeature @ context='html'}
+                                                    </div>
+                                                  </div>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </div>
+                                <div class="sj-explore-btn">
+                                    <a class="btn" aa-data-attr="track_cta"
+                                    data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=packages.explorelinkTo}"
+                                    href="${linkuse.value}" x-cq-linkchecker="valid"
+                                    target="${linkuse.isExternal ? '_blank' : '_self'}">${packages.explorectaText}</a>
+                                </div>
+                            </div>
+                        </div>    
+                    </sly>
+                </div>
+            </div>
+        </sly>
+    </sly>
+</section>

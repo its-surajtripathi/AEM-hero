@@ -1,0 +1,45 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+      format=[component.title], i18n} </sly>
+
+<sly data-sly-list.multifield="${resource.getChildren}">
+
+    <sly data-sly-test="${multifield.name == 'toolkititems'}">
+
+		<section>
+			
+					<div class="d-flex justify-content-between toolkit-container">
+						<sly data-sly-list.toolkit="${multifield.getChildren}">
+							<sly data-sly-list.toolkititems="${toolkit.getChildren}">
+								<div class="toolkit-items-wrapper d-flex">
+									<div>
+										<h2 class="investor-heading-wrapper">${toolkit.toolkitheading @ context='html'}</h2>
+										<div class="investor-content-wrapper">
+											<sly data-sly-test="${toolkititems.name=='toolkitreports'}">
+												<sly data-sly-list.reports="${toolkititems.getChildren}">
+													<a href="${reports.inreporturl}" target="_blank">
+														<div class="d-flex justify-content-between toolkit-contents-list">
+															${reports.inreportlabel @ context='html'}
+														
+															<div class="toolkit-img-wrapper">
+																<img class="download-image-toolkit" src="${reports.indownloadicon}">
+															</div>
+														</div>
+													</a>
+												</sly>
+											</sly>
+										</div>
+									</div>
+									
+									<a class="d-flex investor-view-wrapper" aa-data-attr="track_cta" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=toolkit.viewctaurl}" 
+									href="${linkuse.value}" data-sly-test="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}">
+										<div class="invs-view-text">${toolkit.viewctalabel @ context='html'}</div>
+										<div class="invs-view-arrow-wrap"><img class="invs-view-arrow-img" src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/blue-right-arrow.svg"></div>
+									</a>
+								</div>
+							</sly>
+						</sly>
+					</div>
+
+		</section>
+	</sly>	
+</sly>

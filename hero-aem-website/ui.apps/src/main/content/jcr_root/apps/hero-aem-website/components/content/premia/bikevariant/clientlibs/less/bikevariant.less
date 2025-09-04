@@ -1,0 +1,1854 @@
+.product-bike-variant-wrapper {
+  // background: var(--color-wild-sand);
+  background-color: var(--color-white);
+  width: 100%;
+
+  .product-bike-variant-content-wrapper {
+    position: relative;
+
+    .product-bike-background-colored-container {
+      background: var(--color-trinidad);
+      position: absolute;
+      width: 4%;
+      height: 70%;
+      top: 0%;
+      right: 0%;
+      z-index: 0;
+    }
+
+    .product-bike-variant-content {
+      padding-top: 3%;
+      padding-left: 7.5%;
+      padding-bottom: 2%;
+
+      .product-bike-variant-header-wrapper {
+        margin-bottom: 24px;
+
+        .product-bike-variant-header-title-content {
+          .product-bike-variant-top-line {
+            height: 4px;
+            width: 40px;
+            background: var(--color-trinidad);
+            margin-bottom: 16px;
+          }
+
+          .product-bike-variant-header-title-wrapper {
+            .product-bike-variant-desktop-header-title {
+              display: block;
+              color: var(--color-black);
+              font-size: var(--font-size-40);
+              font-family: var(--font-transducer);
+              font-weight: var(--font-weight-600);
+              line-height: var(--line-height-45);
+              margin: 0;
+              position: relative;
+              z-index: 1;
+
+              sup {
+                font-size: var(--font-size-10);
+                top: -2.2em;
+              }
+            }
+
+            .product-bike-variant-mobile-header-title {
+              display: none;
+            }
+          }
+        }
+
+        .bike-variant-dropdown-wrapper {
+          display: none;
+        }
+      }
+
+      .product-bike-variant-view-wrapper {
+        margin-bottom: 8px;
+
+        .product-bike-variant-view-container {
+          display: flex;
+          justify-content: space-between;
+
+          .harley-bike-color-variant-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            padding-top: 3%;
+            position: relative;
+            z-index: 1;
+
+            .harley-bike-color-option-texts-wrapper {
+              margin-bottom: 22px;
+
+              .harley-bike-red-color-text,
+              .harley-bike-black-color-text,
+              .harley-bike-denim-color-text {
+                color: var(--color-black);
+                font-size: var(--font-size-18);
+                font-family: var(--font-transducer);
+                font-weight: var(--font-weight-600);
+                line-height: var(--line-height-22);
+                margin: 0;
+              }
+
+              .harley-bike-silver-color-text {
+                color: var(--color-black);
+                font-size: var(--font-size-18);
+                font-family: var(--font-transducer);
+                font-weight: var(--font-weight-600);
+                line-height: var(--line-height-22);
+                margin: 0;
+              }
+            }
+
+            .harley-bike-color-options-wrapper {
+              display: flex;
+
+              .harley-bike-black-color-option {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background: var(--color-matte-black);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+              }
+
+              .harley-bike-denim-color-option {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background: var(--color-mustard-denim);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+              }
+
+              .harley-bike-red-color-option {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background: linear-gradient(156deg, #881115 0%, #982325 100%);
+                margin-right: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                  max-width: 40%;
+                }
+              }
+
+              .harley-bike-silver-color-option {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background: linear-gradient(156deg, #666 0%, #252525 100%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                  max-width: 40%;
+                }
+              }
+            }
+          }
+
+          .harley-bike-variation-loader-wrapper {
+            width: 100%;
+            position: relative;
+
+            .harley-bike-variation-loader-container {
+              width: 730px;
+              height: 550px;
+              margin-left: 0.5%;
+
+              .bike-holder-container {
+                // transition: opacity 0s ease-out;
+              }
+
+              // .harley-x440s-bike-360-view,
+              .enable-360-view {
+                width: 1050px;
+                height: 550px;
+                position: absolute;
+                left: -18.5%;
+                top: -10%;
+                cursor: pointer;
+              }
+
+              #view_overlay {
+                position: absolute !important;
+                top: 0px !important;
+                left: 0px !important;
+              }
+            }
+
+            .harley-x440-360-circle-wrapper {
+              position: absolute;
+              bottom: -1%;
+
+              .harley-x440-360-circle-line {
+                height: 85px;
+                width: 775px;
+                border: 2px solid var(--color-blaze-orange);
+                border-radius: 50%;
+                border-top: none;
+                opacity: 0.2;
+              }
+
+              .harley-x440-360-icon-wrapper {
+                position: absolute;
+                max-width: 4%;
+                left: 48%;
+                bottom: 29%;
+              }
+
+              .harley-x440-360-text-wrapper {
+                text-align: center;
+                padding-top: 2%;
+
+                .harley-x440-360-text {
+                  color: var(--color-black);
+                  font-size: var(--font-size-12);
+                  font-family: var(--font-transducer);
+                  font-weight: var(--font-weight-500);
+                  line-height: var(--line-height-14);
+                }
+              }
+            }
+          }
+
+          .harley-bike-variations-wrapper {
+            z-index: 2;
+            margin-right: 2%;
+            display: block;
+
+            .harley-bike-variations-container {
+              position: relative;
+              z-index: 1;
+              .harley-x440s-wrapper {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                height: 125px;
+
+                .harley-x440s-text-content-wrapper {
+                  margin-right: 20px;
+                  margin-top: 25px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: end;
+                  cursor: pointer;
+
+                  .harley-x440s-text-wrapper {
+                    margin-bottom: 4px;
+
+                    .harley-x440s-text {
+                      color: var(--color-boulder);
+                      font-size: var(--font-size-24);
+                      font-family: var(--font-transducer-condensed);
+                      font-weight: var(--font-weight-400);
+                      opacity: 0.5;
+                      margin: 0px;
+
+                      sup {
+                        font-size: var(--font-size-4);
+                        top: -3.8em;
+                      }
+                    }
+                  }
+
+                  .harley-x440s-bottom-line {
+                    height: 2px;
+                    width: 50px;
+                    background: var(--color-trinidad);
+                  }
+                }
+
+                .harley-x440s-variant-img-wrapper {
+                  max-width: 26%;
+                  transition-duration: 0.5s;
+                  cursor: pointer;
+                }
+              }
+
+              .harley-x440s-360-icon-wrapper {
+                width: 32px;
+                height: 20px;
+                margin-right: 16px;
+                padding-top: 10px;
+
+                img {
+                  filter: opacity(0.2);
+                }
+              }
+
+              .harley-x440-vivid-wrapper {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                height: 125px;
+
+                .harley-x440-vivid-text-content-wrapper {
+                  margin-right: 20px;
+                  margin-top: 25px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: end;
+                  cursor: pointer;
+
+                  .harley-x440-vivid-text-wrapper {
+                    margin-bottom: 4px;
+
+                    .harley-x440-vivid-text {
+                      color: var(--color-boulder);
+                      font-size: var(--font-size-24);
+                      font-family: var(--font-transducer-condensed);
+                      font-weight: var(--font-weight-400);
+                      opacity: 0.5;
+                      margin: 0;
+
+                      sup {
+                        font-size: var(--font-size-4);
+                        top: -3.8em;
+                      }
+                    }
+                  }
+
+                  .harley-x440-vivid-bottom-line {
+                    height: 2px;
+                    width: 50px;
+                    background: var(--color-trinidad);
+                  }
+                }
+
+                .harley-x440-vivid-variant-img-wrapper {
+                  max-width: 26%;
+                  transition-duration: 0.5s;
+                  cursor: pointer;
+                }
+              }
+
+              .harley-x440-denim-wrapper {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                height: 125px;
+
+                .harley-x440-denim-text-content-wrapper {
+                  margin-right: 20px;
+                  margin-top: 25px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: end;
+                  cursor: pointer;
+
+                  .harley-x440-denim-text-wrapper {
+                    margin-bottom: 4px;
+
+                    .harley-x440-denim-text {
+                      color: var(--color-boulder);
+                      font-size: var(--font-size-24);
+                      font-family: var(--font-transducer-condensed);
+                      font-weight: var(--font-weight-400);
+                      opacity: 0.5;
+                      margin: 0;
+
+                      sup {
+                        font-size: var(--font-size-4);
+                        top: -3.8em;
+                      }
+                    }
+                  }
+
+                  .harley-x440-denim-bottom-line {
+                    height: 2px;
+                    width: 50px;
+                    background: var(--color-trinidad);
+                  }
+                }
+
+                .harley-x440-denim-variant-img-wrapper {
+                  max-width: 26%;
+                  transition-duration: 0.5s;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .product-bike-variant-footer-wrapper {
+        width: 93%;
+
+        .product-bike-variant-footer-content-wrapper {
+          .harley-price-book-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .harley-price-section-wrapper {
+              width: 36%;
+
+              .harley-price-primary-text-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                .harley-x440-price-amount-wrapper {
+                  .harley-x440-price-currency {
+                    color: var(--color-black);
+                    font-size: var(--font-size-32);
+                    font-family: var(--font-transducer);
+                    font-weight: var(--font-weight-600);
+                    line-height: var(--line-height-39);
+                    margin-bottom: 10px;
+                  }
+                }
+
+                .harley-x440-price-text-wrapper {
+                  .harley-x440-price-text {
+                    color: var(--color-boulder);
+                    font-size: var(--font-size-16);
+                    font-family: var(--font-transducer);
+                    font-weight: var(--font-weight-400);
+                    line-height: var(--line-height-24);
+                    margin: 0;
+                    margin-bottom: 16px;
+
+                    sup {
+                      font-size: var(--font-size-6);
+                      top: -1.3em;
+                      color: var(--color-boulder);
+                    }
+                  }
+                }
+
+                .harley-price-disclaimer-text-wrapper {
+                  .harley-price-disclaimer-text {
+                    color: var(--color-boulder);
+                    font-size: var(--font-size-12);
+                    font-family: var(--font-optika-regular);
+                    font-weight: var(--font-weight-400);
+                    line-height: var(--line-height-20);
+                    margin: 0;
+                  }
+                }
+              }
+            }
+
+            .harley-book-section-wrapper {
+              .harley-book-section-container {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+
+                .harley-book-section-content {
+                  display: flex;
+                  // align-items: baseline;
+                  align-items: flex-start;
+                  position: relative;
+
+                  .essential-specs-text-wrapper {
+                    margin-right: 24px;
+
+                    .btn.btn-info {
+                      color: var(--color-trinidad);
+                      font-size: var(--font-size-18);
+                      font-family: var(--font-transducer);
+                      font-weight: var(--font-weight-600);
+                      line-height: var(--line-height-26);
+                      cursor: pointer;
+                      background-color: transparent;
+                      border: 1px solid var(--color-trinidad);
+                      padding: 18px 32px 22px 32px;
+                      border-radius: 0px;
+                    }
+                  }
+
+                  .harley-book-button-wrapper {
+                    margin-bottom: 24px;
+                    cursor: pointer;
+                    position: relative;
+                    z-index: 1;
+
+                    .cmp-button {
+                      color: var(--color-white);
+                      font-size: var(--font-size-18);
+                      font-family: var(--font-transducer);
+                      font-weight: var(--font-weight-600);
+                      background: var(--color-trinidad);
+                      padding: 18px 48px 22px 48px;
+                      border: none;
+                      text-decoration: none;
+                    }
+                  }
+                }
+
+                .harley-disclaimer-text-wrapper {
+                  width: 73%;
+                  text-align: end;
+                  color: var(--color-boulder);
+                  font-size: var(--font-size-12);
+                  font-family: var(--font-optika-regular);
+                  font-weight: var(--font-weight-400);
+                  line-height: var(--line-height-20);
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // css for color-variant section to hide
+  .d-opacity {
+    opacity: 0;
+  }
+
+  .bike-switch-fade-out-transition {
+    opacity: 0 !important;
+    height: 0 !important;
+    display: none;
+  }
+
+  // css for selected bike-variant
+  .d-selected-bike {
+    max-width: 42% !important;
+  }
+
+  .d-selected-font {
+    font-size: var(--font-size-32) !important;
+    color: var(--color-black) !important;
+    font-weight: var(--font-weight-600) !important;
+    opacity: 1 !important;
+
+    sup {
+      font-size: var(--font-size-6) !important;
+      top: -3.3em !important;
+    }
+  }
+
+  .d-selected-icon {
+    filter: opacity(1) !important;
+  }
+
+  .d-popup-blur {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: var(--color-black);
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    opacity: 0.5;
+  }
+
+  .d-color-white {
+    color: var(--color-white) !important;
+  }
+}
+
+.product-bike-variant-wrapper {
+  .tooltipWrapper {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    bottom: 97%;
+    right: 0%;
+    z-index: 9;
+    .tooltiptext {
+      background-color: var(--color-wild-sand);
+      &::after {
+        border-bottom: 6px solid var(--color-wild-sand);
+        right: 16%;
+        transform: scaleY(-1);
+        top: 30px;
+        @media only screen and (max-width: 767px) {
+          right: 40%;
+        }
+        @media screen and (max-width: 1023px) {
+          top: -5px;
+          transform: none;
+        }
+      }
+    }
+  }
+}
+
+.disable-booking-btn {
+  .product-bike-variant-wrapper {
+    .harley-book-button-wrapper {
+      .cmp-button {
+        opacity: 0.3;
+        pointer-events: none;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.show-button-tooltip {
+  .product-bike-variant-wrapper {
+    .harley-book-button-wrapper {
+      @media screen and (max-width: 1023px) {
+        margin-bottom: 48px !important;
+      }
+    }
+    .tooltipWrapper {
+      display: flex;
+    }
+  }
+}
+
+/***********************************  responsive css for intermediate screens  ***************************/
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .product-bike-variant-wrapper {
+    // background: var(--color-wild-sand);
+    // width: 100%;
+
+    .product-bike-variant-content-wrapper {
+      position: relative;
+
+      .product-bike-background-colored-container {
+        background: var(--color-trinidad);
+        position: absolute;
+        width: 4%;
+        height: 70%;
+        top: 0%;
+        right: 0%;
+        z-index: 0;
+      }
+
+      .product-bike-variant-content {
+        padding-top: 3%;
+        padding-left: 7.5%;
+        padding-bottom: 2%;
+
+        .product-bike-variant-header-wrapper {
+          margin-bottom: 24px;
+
+          .product-bike-variant-header-title-content {
+            .product-bike-variant-top-line {
+              width: 24px;
+              margin-bottom: 8px;
+            }
+
+            .product-bike-variant-header-title-wrapper {
+              .product-bike-variant-desktop-header-title {
+                display: block;
+                font-size: var(--font-size-32);
+                font-weight: var(--font-weight-600);
+                line-height: var(--line-height-34);
+                margin: 0;
+
+                sup {
+                  font-size: var(--font-size-7-5);
+                  top: -2.2em;
+                }
+              }
+
+              .product-bike-variant-mobile-header-title {
+                display: none;
+              }
+            }
+          }
+
+          .bike-variant-dropdown-wrapper {
+            display: none;
+          }
+        }
+
+        .product-bike-variant-view-wrapper {
+          margin-bottom: 8px;
+
+          .product-bike-variant-view-container {
+            display: flex;
+            justify-content: space-between;
+
+            .harley-bike-color-variant-wrapper {
+              display: flex;
+              flex-direction: column;
+              width: 45%;
+              padding-top: 3%;
+
+              .harley-bike-color-option-texts-wrapper {
+                margin-bottom: 22px;
+
+                .harley-bike-red-color-text,
+                .harley-bike-black-color-text,
+                .harley-bike-denim-color-text {
+                  color: var(--color-black);
+                  font-size: var(--font-size-12);
+                  font-family: var(--font-transducer);
+                  font-weight: var(--font-weight-600);
+                  line-height: var(--line-height-16);
+                  margin: 0;
+                }
+
+                .harley-bike-silver-color-text {
+                  color: var(--color-black);
+                  font-size: var(--font-size-12);
+                  font-family: var(--font-transducer);
+                  font-weight: var(--font-weight-600);
+                  line-height: var(--line-height-16);
+                  margin: 0;
+                }
+              }
+
+              .harley-bike-color-options-wrapper {
+                display: flex;
+
+                .harley-bike-black-color-option {
+                  height: 32px;
+                  width: 32px;
+                  border-radius: 50%;
+                  background: var(--color-matte-black);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+  
+                .harley-bike-denim-color-option {
+                  height: 32px;
+                  width: 32px;
+                  border-radius: 50%;
+                  background: var(--color-mustard-denim);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+
+                .harley-bike-red-color-option {
+                  height: 32px;
+                  width: 32px;
+                  border-radius: 50%;
+                  background: linear-gradient(156deg, #881115 0%, #982325 100%);
+                  margin-right: 16px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  img {
+                    max-width: 40%;
+                  }
+                }
+
+                .harley-bike-silver-color-option {
+                  height: 32px;
+                  width: 32px;
+                  border-radius: 50%;
+                  background: linear-gradient(156deg, #666 0%, #252525 100%);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  img {
+                    max-width: 40%;
+                  }
+                }
+              }
+            }
+
+            .harley-bike-variation-loader-wrapper {
+              width: 100%;
+              position: relative;
+
+              .harley-bike-variation-loader-container {
+                width: 500px;
+                height: 395px;
+                margin-left: 5%;
+                margin-top: -2%;
+
+                .bike-holder-container {
+                  // transition: opacity 1s ease-out;
+                }
+
+                // .harley-x440s-bike-360-view,
+                .enable-360-view {
+                  // width: 660px !important;
+                  // height: 400px !important;
+                  // position: absolute !important;
+                  // left: -11.2% !important;
+                  // top: -10% !important;
+                  width: 800px !important;
+                  height: 425px !important;
+                  position: absolute !important;
+                  left: -24.2% !important;
+                  top: -13% !important;
+                }
+
+                #view_overlay {
+                  position: absolute !important;
+                  top: 0px !important;
+                  left: 0px !important;
+                }
+              }
+
+              .harley-x440-360-circle-wrapper {
+                position: absolute;
+                bottom: -8%;
+                left: -5.5%;
+
+                .harley-x440-360-circle-line {
+                  height: 85px;
+                  width: 600px;
+                  border: 2px solid var(--color-blaze-orange);
+                  border-radius: 50%;
+                  border-top: none;
+                  opacity: 0.2;
+                }
+
+                .harley-x440-360-icon-wrapper {
+                  position: absolute;
+                  max-width: 4%;
+                  left: 48%;
+                  bottom: 29%;
+                }
+
+                .harley-x440-360-text-wrapper {
+                  text-align: center;
+                  padding-top: 2%;
+
+                  .harley-x440-360-text {
+                    color: var(--color-black);
+                    font-size: var(--font-size-12);
+                    font-family: var(--font-transducer);
+                    font-weight: var(--font-weight-500);
+                    line-height: var(--line-height-14);
+                  }
+                }
+              }
+            }
+
+            .harley-bike-variations-wrapper {
+              z-index: 2;
+              margin-right: 2%;
+              display: block;
+
+              .harley-bike-variations-container {
+                .harley-x440s-wrapper {
+                  display: flex;
+                  justify-content: end;
+                  align-items: center;
+                  height: 100px;
+
+                  .harley-x440s-text-content-wrapper {
+                    margin-right: 14px;
+                    margin-top: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+
+                    .harley-x440s-text-wrapper {
+                      margin-bottom: 4px;
+
+                      .harley-x440s-text {
+                        font-size: var(--font-size-18);
+                        opacity: 0.5;
+                        margin: 0px;
+
+                        sup {
+                          font-size: var(--font-size-3);
+                          top: -3.8em;
+                        }
+                      }
+                    }
+
+                    .harley-x440s-bottom-line {
+                      height: 2px;
+                      width: 35px;
+                      background: var(--color-trinidad);
+                    }
+                  }
+
+                  .harley-x440s-variant-img-wrapper {
+                    max-width: 23%;
+                    transition-duration: 0.5s;
+
+                    img {
+                    }
+                  }
+                }
+
+                .harley-x440s-360-icon-wrapper {
+                  width: 32px;
+                  height: 20px;
+                  margin-right: 8px;
+                  padding-top: 10px;
+
+                  img {
+                    filter: opacity(0.2);
+                  }
+                }
+
+                .harley-x440-vivid-wrapper {
+                  display: flex;
+                  justify-content: end;
+                  align-items: center;
+                  height: 100px;
+
+                  .harley-x440-vivid-text-content-wrapper {
+                    margin-right: 14px;
+                    margin-top: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+
+                    .harley-x440-vivid-text-wrapper {
+                      margin-bottom: 4px;
+
+                      .harley-x440-vivid-text {
+                        font-size: var(--font-size-18);
+                        font-weight: var(--font-weight-400);
+                        opacity: 0.5;
+                        margin: 0;
+
+                        sup {
+                          font-size: var(--font-size-3);
+                          top: -3.8em;
+                        }
+                      }
+                    }
+
+                    .harley-x440-vivid-bottom-line {
+                      height: 2px;
+                      width: 35px;
+                      background: var(--color-trinidad);
+                    }
+                  }
+
+                  .harley-x440-vivid-variant-img-wrapper {
+                    max-width: 23%;
+                    transition-duration: 0.5s;
+
+                    img {
+                    }
+                  }
+                }
+
+                .harley-x440-denim-wrapper {
+                  display: flex;
+                  justify-content: end;
+                  align-items: center;
+                  height: 100px;
+
+                  .harley-x440-denim-text-content-wrapper {
+                    margin-right: 14px;
+                    margin-top: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+
+                    .harley-x440-denim-text-wrapper {
+                      margin-bottom: 4px;
+
+                      .harley-x440-denim-text {
+                        font-size: var(--font-size-18);
+                        opacity: 0.5;
+                        margin: 0;
+
+                        sup {
+                          font-size: var(--font-size-3);
+                          top: -3.8em;
+                        }
+                      }
+                    }
+
+                    .harley-x440-denim-bottom-line {
+                      height: 2px;
+                      width: 35px;
+                      background: var(--color-trinidad);
+                    }
+                  }
+
+                  .harley-x440-denim-variant-img-wrapper {
+                    max-width: 23%;
+                    transition-duration: 0.5s;
+
+                    img {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .product-bike-variant-footer-wrapper {
+          // width: 93%;
+
+          .product-bike-variant-footer-content-wrapper {
+            .harley-price-book-wrapper {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .harley-price-section-wrapper {
+                width: 41%;
+
+                .harley-price-primary-text-wrapper {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: start;
+
+                  .harley-x440-price-amount-wrapper {
+                    .harley-x440-price-currency {
+                      font-size: var(--font-size-24);
+                      line-height: var(--line-height-29);
+                      margin-bottom: 7px;
+                    }
+                  }
+
+                  .harley-x440-price-text-wrapper {
+                    .harley-x440-price-text {
+                      font-size: var(--font-size-12);
+                      line-height: var(--line-height-18);
+                      margin: 0;
+                      margin-bottom: 12px;
+
+                      sup {
+                        font-size: var(--font-size-4-5);
+                        top: -1.3em;
+                        color: var(--color-boulder);
+                      }
+                    }
+                  }
+
+                  .harley-price-disclaimer-text-wrapper {
+                    .harley-price-disclaimer-text {
+                      font-size: var(--font-size-10);
+                      font-weight: var(--font-weight-400);
+                      line-height: var(--line-height-15);
+                      margin: 0;
+                    }
+                  }
+                }
+              }
+
+              .harley-book-section-wrapper {
+                .harley-book-section-container {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: end;
+
+                  .harley-book-section-content {
+                    // display: flex;
+                    // align-items: baseline;
+                    position: relative;
+
+                    .tooltipWrapper {
+                      right: 0%;
+                      bottom: 97%;
+                    }
+
+                    .essential-specs-text-wrapper {
+                      margin-right: 24px;
+
+                      .btn.btn-info {
+                        font-size: var(--font-size-14);
+                        line-height: var(--line-height-20);
+                        background-color: transparent;
+                        border: 1px solid var(--color-trinidad);
+                        padding: 13.5px 32px 16.5px 32px;
+                        border-radius: 0px;
+                      }
+                    }
+
+                    .harley-book-button-wrapper {
+                      margin-bottom: 16px;
+
+                      .cmp-button {
+                        font-size: var(--font-size-14);
+                        padding: 13.5px 36px 16.5px 36px;
+                        border: none;
+                        text-decoration: none;
+                      }
+                    }
+                  }
+
+                  .harley-disclaimer-text-wrapper,
+                  .harley-disclaimer-text-wrapper p {
+                    text-align: end;
+                    font-size: var(--font-size-10);
+                    line-height: var(--line-height-15);
+                    margin: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .d-opacity {
+      opacity: 0;
+    }
+
+    .bike-switch-fade-out-transition {
+      opacity: 0 !important;
+      height: 0 !important;
+    }
+
+    // css for selected bike-variant
+    .d-selected-bike {
+      max-width: 37% !important;
+    }
+
+    .d-selected-font {
+      font-size: var(--font-size-24) !important;
+      color: var(--color-black) !important;
+      font-weight: var(--font-weight-600) !important;
+      opacity: 1 !important;
+
+      sup {
+        font-size: var(--font-size-4-5) !important;
+        top: -3.3em !important;
+      }
+    }
+
+    .d-selected-icon {
+      filter: opacity(1) !important;
+    }
+  }
+}
+
+/***********************************  responsive css for mobile screens  ***************************/
+
+@media only screen and (max-width: 1023px) {
+  .product-bike-variant-wrapper {
+    // background: var(--color-wild-sand);
+    // width: 100%;
+
+    .product-bike-variant-content-wrapper {
+      position: relative;
+
+      .product-bike-background-colored-container {
+        display: none;
+        background: var(--color-trinidad);
+        position: absolute;
+        width: 4%;
+        height: 70%;
+        top: 0%;
+        right: 0%;
+        z-index: 0;
+      }
+
+      .product-bike-variant-content {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-bottom: 24px;
+
+        .product-bike-variant-header-wrapper {
+          margin-bottom: 24px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .product-bike-variant-header-title-content {
+            .product-bike-variant-top-line {
+              width: 24px;
+              margin-bottom: 12px;
+            }
+
+            .product-bike-variant-header-title-wrapper {
+              .product-bike-variant-desktop-header-title {
+                display: none;
+              }
+
+              .product-bike-variant-mobile-header-title {
+                display: block;
+                color: var(--color-black);
+                font-size: var(--font-size-22);
+                font-family: var(--font-transducer);
+                font-weight: var(--font-weight-600);
+                line-height: var(--line-height-28);
+                margin: 0;
+
+                sup {
+                  font-size: var(--font-size-6);
+                  top: -2.2em;
+                }
+              }
+            }
+          }
+
+          .bike-variant-dropdown-wrapper {
+            display: block;
+
+            .bike-variant-dropdown-container {
+              position: relative;
+              z-index: 999;
+
+              .dropdown-title-wrapper {
+                text-align: end;
+                margin-right: 24px;
+
+                .dropdown-title {
+                  color: var(--color-black);
+                  font-size: var(--font-size-8);
+                  font-family: var(--font-transducer);
+                  font-weight: var(--font-weight-400);
+                  line-height: var(--line-height-15);
+                  margin-bottom: 4px;
+                }
+              }
+
+              .dropdown-inner-content-wrapper {
+                height: 28px;
+                width: 140px;
+                // background: var(--color-white);
+                background: var(--color-wild-sand);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 9px;
+                margin-right: 24px;
+                margin-bottom: 10px;
+                cursor: pointer;
+
+                .dropdown-inner-content-text-wrapper {
+                  .dropdown-inner-content-text {
+                    color: var(--color-black);
+                    font-size: var(--font-size-12);
+                    font-family: var(--font-transducer);
+                    font-weight: var(--font-weight-500);
+                    margin: 0;
+
+                    sup {
+                      color: var(--color-black);
+                      font-size: var(--font-size-4);
+                      top: -0.4rem;
+                    }
+                  }
+                }
+
+                .dropdown-inner-content-icon-wrapper {
+                  .dropdown-chevron-down {
+                  }
+
+                  .dropdown-chevron-up {
+                    display: none;
+                  }
+                }
+              }
+
+              .dropdown-popup-wrapper {
+                position: absolute;
+                right: 17%;
+                height: 376px;
+                width: 325px;
+                background: var(--color-white);
+                z-index: 999;
+                cursor: pointer;
+                display: none;
+
+                .dropdown-popup-content-wrapper {
+                  display: flex;
+                  flex-direction: column;
+
+                  .dropdown-x440s-wrapper {
+                    height: 125px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-right: 8px;
+
+                    .dropdown-x440s-color {
+                      height: 125px;
+                      width: 8px;
+                      position: absolute;
+                      left: 0px;
+                    }
+
+                    .dropdown-x440s-img-wrapper {
+                      max-width: 38%;
+                      margin-right: 12px;
+                    }
+
+                    .dropdown-x440s-text-wrapper {
+                      .dropdown-x440s-content-text {
+                        color: var(--color-quill-gray);
+                        font-size: var(--font-size-22);
+                        font-family: var(--font-transducer);
+                        font-weight: var(--font-weight-600);
+                        margin-right: 8px;
+                        margin-bottom: 0px;
+
+                        sup {
+                          font-size: var(--font-size-4);
+                          top: -3.5em;
+                        }
+                      }
+                    }
+
+                    .dropdown-x440s-icon-wrapper {
+                      max-width: 8%;
+                    }
+                  }
+
+                  .dropdown-x440-vivid-wrapper {
+                    display: flex;
+                    height: 125px;
+                    justify-content: center;
+                    align-items: center;
+                    padding-right: 8px;
+
+                    .dropdown-x440-vivid-color {
+                      height: 125px;
+                      width: 8px;
+                      position: absolute;
+                      left: 0px;
+                    }
+
+                    .dropdown-x440-vivid-img-wrapper {
+                      max-width: 38%;
+                      margin-right: 12px;
+                    }
+
+                    .dropdown-x440-vivid-text-wrapper {
+                      .dropdown-x440-vivid-content-text {
+                        color: var(--color-quill-gray);
+                        font-size: var(--font-size-22);
+                        font-family: var(--font-transducer);
+                        font-weight: var(--font-weight-600);
+                        margin-right: 8px;
+                        margin-bottom: 0px;
+
+                        sup {
+                          font-size: var(--font-size-4);
+                          top: -3.5em;
+                        }
+                      }
+                    }
+                  }
+
+                  .dropdown-x440-denim-wrapper {
+                    display: flex;
+                    height: 125px;
+                    justify-content: center;
+                    align-items: center;
+                    padding-right: 8px;
+
+                    .dropdown-x440-denim-color {
+                      height: 125px;
+                      width: 8px;
+                      position: absolute;
+                      left: 0px;
+                    }
+
+                    .dropdown-x440-denim-img-wrapper {
+                      max-width: 38%;
+                      margin-right: 12px;
+                    }
+
+                    .dropdown-x440-denim-text-wrapper {
+                      .dropdown-x440-denim-content-text {
+                        color: var(--color-quill-gray);
+                        font-size: var(--font-size-22);
+                        font-family: var(--font-transducer);
+                        font-weight: var(--font-weight-600);
+                        margin-right: 8px;
+                        margin-bottom: 0px;
+
+                        sup {
+                          font-size: var(--font-size-4);
+                          top: -3.5em;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .product-bike-variant-view-wrapper {
+          margin-bottom: 24px;
+
+          .product-bike-variant-view-container {
+            display: flex;
+            flex-direction: column;
+
+            .harley-bike-color-variant-wrapper {
+              display: flex;
+              flex-direction: column;
+              width: 45%;
+              padding-top: 0%;
+
+              .harley-bike-color-option-texts-wrapper {
+                margin-bottom: 10px;
+
+                .harley-bike-red-color-text,
+                .harley-bike-black-color-text,
+                .harley-bike-denim-color-text {
+                  font-size: var(--font-size-8);
+                  font-weight: var(--font-weight-400);
+                  line-height: var(--line-height-14);
+                  margin: 0;
+                }
+
+                .harley-bike-silver-color-text {
+                  font-size: var(--font-size-8);
+                  font-weight: var(--font-weight-400);
+                  line-height: var(--line-height-46);
+                  margin: 0;
+                }
+              }
+
+              .harley-bike-color-options-wrapper {
+                display: flex;
+
+                .harley-bike-black-color-option {
+                  height: 24px;
+                  width: 24px;
+                  border-radius: 50%;
+                  background: var(--color-matte-black);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+
+                .harley-bike-denim-color-option {
+                  height: 24px;
+                  width: 24px;
+                  border-radius: 50%;
+                  background: var(--color-mustard-denim);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+
+                .harley-bike-red-color-option {
+                  height: 24px;
+                  width: 24px;
+                  border-radius: 50%;
+                  background: linear-gradient(156deg, #881115 0%, #982325 100%);
+                  margin-right: 8px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  img {
+                    max-width: 40%;
+                  }
+                }
+
+                .harley-bike-silver-color-option {
+                  height: 24px;
+                  width: 24px;
+                  border-radius: 50%;
+                  background: linear-gradient(156deg, #666 0%, #252525 100%);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  img {
+                    max-width: 40%;
+                  }
+                }
+              }
+            }
+
+            .harley-bike-variations-wrapper {
+              z-index: 2;
+              margin-right: 2%;
+              display: none;
+
+              .harley-bike-variations-container {
+                .harley-x440s-wrapper {
+                  display: flex;
+                  justify-content: end;
+                  align-items: center;
+                  height: 125px;
+
+                  .harley-x440s-text-content-wrapper {
+                    margin-right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+
+                    .harley-x440s-text-wrapper {
+                      margin-bottom: 8px;
+
+                      .harley-x440s-text {
+                        font-size: var(--font-size-18);
+                        opacity: 0.5;
+                        margin: 0px;
+
+                        sup {
+                          font-size: var(--font-size-3);
+                          top: -3.8em;
+                        }
+                      }
+                    }
+
+                    .harley-x440s-bottom-line {
+                      height: 2px;
+                      width: 35px;
+                      background: var(--color-trinidad);
+                    }
+                  }
+
+                  .harley-x440s-variant-img-wrapper {
+                    max-width: 26%;
+                    transition-duration: 0.5s;
+
+                    img {
+                    }
+                  }
+                }
+
+                .harley-x440s-360-icon-wrapper {
+                  width: 32px;
+                  height: 20px;
+                  margin-right: 16px;
+                  padding-bottom: 28px;
+
+                  img {
+                    filter: opacity(0.2);
+                  }
+                }
+                .harley-x440-vivid-wrapper {
+                  display: flex;
+                  justify-content: end;
+                  align-items: center;
+                  height: 125px;
+
+                  .harley-x440-vivid-text-content-wrapper {
+                    margin-right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+
+                    .harley-x440-vivid-text-wrapper {
+                      margin-bottom: 8px;
+
+                      .harley-x440-vivid-text {
+                        font-size: var(--font-size-18);
+                        font-weight: var(--font-weight-400);
+                        opacity: 0.5;
+                        margin: 0;
+
+                        sup {
+                          font-size: var(--font-size-3);
+                          top: -3.8em;
+                        }
+                      }
+                    }
+
+                    .harley-x440-vivid-bottom-line {
+                      height: 2px;
+                      width: 35px;
+                      background: var(--color-trinidad);
+                    }
+                  }
+
+                  .harley-x440-vivid-variant-img-wrapper {
+                    max-width: 26%;
+                    transition-duration: 0.5s;
+
+                    img {
+                    }
+                  }
+                }
+
+                .harley-x440-denim-wrapper {
+                  display: flex;
+                  justify-content: end;
+                  align-items: center;
+                  height: 125px;
+
+                  .harley-x440-denim-text-content-wrapper {
+                    margin-right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+
+                    .harley-x440-denim-text-wrapper {
+                      margin-bottom: 8px;
+
+                      .harley-x440-denim-text {
+                        font-size: var(--font-size-18);
+                        opacity: 0.5;
+                        margin: 0;
+
+                        sup {
+                          font-size: var(--font-size-3);
+                          top: -3.8em;
+                        }
+                      }
+                    }
+
+                    .harley-x440-denim-bottom-line {
+                      height: 2px;
+                      width: 35px;
+                      background: var(--color-trinidad);
+                    }
+                  }
+
+                  .harley-x440-denim-variant-img-wrapper {
+                    max-width: 26%;
+                    transition-duration: 0.5s;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .product-bike-variant-footer-wrapper {
+          // width: 93%;
+
+          .product-bike-variant-footer-content-wrapper {
+            .harley-price-book-wrapper {
+              display: flex;
+              flex-direction: column;
+
+              .harley-price-section-wrapper {
+                margin-bottom: 18px;
+                width: 100%;
+
+                .harley-price-primary-text-wrapper {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+
+                  .harley-x440-price-amount-wrapper {
+                    .harley-x440-price-currency {
+                      font-size: var(--font-size-18);
+                      line-height: var(--line-height-22);
+                      margin-bottom: 16px;
+                    }
+                  }
+
+                  .harley-x440-price-text-wrapper {
+                    width: 75%;
+                    text-align: center;
+
+                    .harley-x440-price-text {
+                      font-size: var(--font-size-12);
+                      line-height: var(--line-height-15);
+                      margin: 0;
+                      margin-bottom: 12px;
+
+                      sup {
+                        font-size: var(--font-size-4-5);
+                        top: -1.3em;
+                        color: var(--color-boulder);
+                      }
+                    }
+                  }
+
+                  .harley-price-disclaimer-text-wrapper {
+                    .harley-price-disclaimer-text {
+                      font-size: var(--font-size-9);
+                      line-height: var(--line-height-13);
+                      margin: 0;
+                    }
+                  }
+                }
+              }
+
+              .harley-book-section-wrapper {
+                .harley-book-section-container {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+
+                  .harley-book-section-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+
+                    .tooltipWrapper {
+                      right: 17%;
+                      bottom: -5%;
+                    }
+
+                    .essential-specs-text-wrapper {
+                      //   margin: -10px 0px 0px 0px;
+                      margin: auto;
+                      width: 100%;
+
+                      .btn.btn-info {
+                        color: var(--color-trinidad);
+                        font-size: var(--font-size-14);
+                        font-family: var(--font-transducer);
+                        font-weight: var(--font-weight-600);
+                        line-height: var(--line-height-18);
+                        margin-bottom: 16px !important;
+                        border-color: transparent;
+                        background-color: transparent;
+                        border: 1px solid var(--color-trinidad);
+                        padding: 16px 48px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        text-decoration: none;
+                      }
+                    }
+
+                    .harley-book-button-wrapper {
+                      margin-bottom: 16px;
+                      width: 100%;
+
+                      .cmp-button {
+                        font-size: var(--font-size-14);
+                        border: none;
+                        width: 100%;
+                        padding: 16px 0px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        text-decoration: none;
+                      }
+                    }
+                  }
+
+                  .harley-disclaimer-text-wrapper,
+                  .harley-disclaimer-text-wrapper p {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 12px;
+                    font-size: var(--font-size-10);
+                    line-height: var(--line-height-15);
+                    margin: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .d-opacity {
+      opacity: 0;
+    }
+
+    .bike-switch-fade-out-transition {
+      opacity: 0 !important;
+      height: 0 !important;
+    }
+
+    // css for selected bike-variant
+    .d-selected-bike {
+      max-width: 40% !important;
+    }
+
+    .d-selected-font {
+      font-size: var(--font-size-24) !important;
+      color: var(--color-black) !important;
+      font-weight: var(--font-weight-600) !important;
+      opacity: 1 !important;
+
+      sup {
+        font-size: var(--font-size-4-5) !important;
+        top: -3.3em !important;
+      }
+    }
+
+    .d-selected-icon {
+      filter: opacity(1) !important;
+    }
+
+    .d-selected-dropdown {
+      background: var(--color-alabster) !important;
+    }
+
+    .d-selected-black {
+      color: var(--color-black) !important;
+    }
+
+    .d-selected-trinidad {
+      background-color: var(--color-trinidad) !important;
+    }
+  }
+}
+
+/**************************  responsive css for bike mobile view  *************************/
+@media only screen and (max-width: 1023px) {
+  .harley-bike-variation-loader-wrapper {
+    .harley-bike-variation-loader-container {
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 250px;
+      margin-left: -2% !important;
+      // margin-top: 1% !important;
+
+      .bike-holder-container {
+        // transition: opacity 1s ease-out;
+      }
+
+      // .harley-x440s-bike-360-view,
+      .enable-360-view {
+        width: 135% !important;
+        height: 100% !important;
+        position: relative !important;
+        left: -21% !important;
+        // top: -6% !important;
+      }
+
+      #view_overlay {
+        position: absolute !important;
+        top: 0px !important;
+        left: 0px !important;
+      }
+      .harley-x440-360-circle-wrapper {
+        position: absolute !important;
+        bottom: -8% !important;
+        right: 48.5% !important;
+        opacity: 1;
+
+        .harley-x440-360-circle-line {
+          height: 35px !important;
+          width: 370px !important;
+          display: none;
+        }
+        .harley-x440-360-icon-wrapper {
+          position: relative !important;
+          max-width: 50% !important;
+          bottom: 0% !important;
+          left: 0% !important;
+        }
+
+        .harley-x440-360-text-wrapper {
+          padding-top: 0% !important;
+          padding-left: 0% !important;
+          margin-left: -15px;
+
+          .harley-x440-360-text {
+            font-size: var(--font-size-8) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .harley-bike-variation-loader-wrapper {
+    .harley-bike-variation-loader-container {
+      .bike-holder-container {
+        // transition: opacity 1s ease-out;
+      }
+      .harley-x440-360-circle-wrapper {
+        bottom: 0 !important;
+        right: 52% !important;
+      }
+    }
+  }
+}

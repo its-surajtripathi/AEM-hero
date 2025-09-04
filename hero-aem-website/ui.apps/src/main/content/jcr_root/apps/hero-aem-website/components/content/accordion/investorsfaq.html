@@ -1,0 +1,81 @@
+<div class="accordian-faq-wrapper">
+    <div class="generic-desktop-faq faq--slider-wrap" id="accordDeskFaqs">
+        <div data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='invmultitext'}"
+            data-sly-list="${listUse @ begin=0, end=(properties.showfew == '1' ? 3 : 20)}">
+
+
+            <div class="faqs-accord-tile card">
+
+                <div class="card-head-faq" id="${itemList.index}${item.properties.accordianid}">
+                    <h2 class="mb-0 accordian-heading-faq" data-toggle="collapse" data-toggle="collapse"
+                        data-target="#collapse${itemList.index}${item.properties.accordianid}" aria-expanded="true"
+                        aria-controls="collapse${itemList.index}${item.properties.accordianid}">
+                        ${item.properties.invquestion @ context='html'}
+                        <div class="faq-arrow-wrapper">
+                            <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/faq-plus-accord.png"
+                                class="faq-arrows-plus" alt="Accord Plus" />
+                            <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/faq-cross-accord.png"
+                                class="faq-arrows-cross" alt="Accord Cross" />
+                        </div>
+                    </h2>
+                </div>
+
+                <div id="collapse${itemList.index}${item.properties.accordianid}" class="collapse"
+                    aria-labelledby="${itemList.index}${item.properties.accordianid}" data-parent="#accordDeskFaqs">
+                    <div class="card-body-faq">
+                        <span>${item.properties.invanswer @ context='html'}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="d-flex investor-view-wrapper justify-content-end" aa-data-attr="track_cta"
+            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.ctadirection}"
+            href="${linkuse.value}" data-sly-test="${properties.showfew == '1' && properties.ctadirection}"
+            target="${linkuse.isExternal ? '_blank' : '_self'}">
+            <div class="invs-view-text">${properties.ctafaqlabel}</div>
+            <div class="invs-view-arrow-wrap"><img class="invs-view-arrow-img"
+                    src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/blue-right-arrow.svg">
+            </div>
+        </a>
+    </div>
+
+
+
+    <div class="generic-mobile-faq" id="innerFaqAccordMob">
+        <div data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='invmultitext'}"
+            data-sly-list="${listUse @ begin=0, end=(properties.showfew == '1' ? 3 : 20)}">
+            <div class="faq-card-tile-mobile card">
+                <div class="mob-head-faq" id="${itemList.index}${item.properties.accordianid}">
+                    <h2 class="mb-0 d-flex justify-content-between mob-sub-heading-faq" data-toggle="collapse"
+                        data-target="#collapse${itemList.index}${item.properties.accordianid}" aria-expanded="true"
+                        aria-controls="collapse${itemList.index}${item.properties.accordianid}">
+                        ${item.properties.invquestion @ context='html'}
+                        <div class="faq-arrow-wrapper">
+                            <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/faq-plus-accord.png"
+                                class="faq-arrows-plus" alt="Accord Plus" />
+                            <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/faq-cross-accord.png"
+                                class="faq-arrows-cross" alt="Accord Cross" />
+                        </div>
+                    </h2>
+                </div>
+
+                <div id="collapse${itemList.index}${item.properties.accordianid}" class="collapse"
+                    aria-labelledby="${itemList.index}${item.properties.accordianid}" data-parent="#innerFaqAccordMob">
+                    <div class="mob-body-faq">
+                        <span>${item.properties.invanswer @ context='html'}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="d-flex investor-view-wrapper justify-content-end" aa-data-attr="track_cta"
+            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.ctadirection}"
+            href="${linkuse.value}" data-sly-test="${properties.showfew == '1' && properties.ctadirection}"
+            target="${linkuse.isExternal ? '_blank' : '_self'}">
+            <div class="invs-view-text">${properties.ctafaqlabel}</div>
+            <div class="invs-view-arrow-wrap"><img class="invs-view-arrow-img"
+                    src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/blue-right-arrow.svg">
+            </div>
+        </a>
+    </div>
+</div>

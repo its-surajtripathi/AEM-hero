@@ -1,0 +1,325 @@
+.vouchers-available-wrapper {
+    .no-results{
+        text-align: center;
+        font-size: 24px;
+       font-family: 'tstar-medium';
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom:40px;
+        @media (max-width : 768px){
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+    }
+    .voucher-title{
+        margin-bottom:20px;
+    }
+    .voucher-white-card{
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    .row.available-couponvouchers {
+        margin-bottom:50px;
+        justify-content:center;
+        .slick-list.draggable{
+            @media only screen 
+            and (min-device-width: 320px) 
+            and (max-device-width: 480px)
+            and (-webkit-min-device-pixel-ratio: 2) {
+                width: 88%;
+            }
+        }
+        .voucher-value{
+            text-align: center;
+                padding: 10px 0;
+                font-weight:bold;
+
+        }
+        .slick-disabled{
+            opacity:0.25;
+        }
+         .slick-slide img{
+            margin:0;
+        }
+        .slick-prev {
+                left: -1.4rem !important;
+                z-index: 1;
+                @media all and (min-width:768px) {
+                    left: -1.4rem !important;
+                }
+            }
+            .slick-next {
+                right: 0rem !important;
+                z-index: 1;
+                @media only screen 
+                and (min-device-width: 320px) 
+                and (max-device-width: 480px)
+                and (-webkit-min-device-pixel-ratio: 2){
+                    right: 3rem !important;
+            }
+            }
+
+
+
+    }
+    .single-voucher{
+    	@media (max-width : 991px){
+    		.voucher-white-card{
+    			 width: 100% !important;
+   				 max-width: -webkit-fill-available;
+    		}
+    	}
+    	
+    }
+}
+.service-voucher-popup{
+        background: #fff;
+        .service-popup-content{
+        padding: 15px;
+
+        .voucher-redeem-details{
+            display:flex;
+
+            .redeem-giftname{
+                margin-left:5%;
+            }
+            .amount{
+                float: right;
+                    position: absolute;
+                    right: 20%;
+            }
+        }
+
+        .service-instruction-to-avail{
+            margin:5% 0;
+        }
+        }
+        .sms-link{
+            margin-bottom:20px;
+        }
+
+}
+.voucher-button{
+            display:flex;
+            justify-content:center;
+            a{
+                 padding: 12px 32px;
+                width: inherit;
+                height: 48px;
+                background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+                border: 1px solid #EE2326;
+                border-radius: 4px;
+                /*----*/
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 20px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                color: #F5F5F7;
+                @media screen and (max-width:768px){
+                    width:100%;
+                }
+                &.disabled{
+                    background: #ccc;
+                    border: #ccc;
+                    pointer-events: none;
+                }
+            }
+       }
+       .voucher-avail-instru{
+            background:#FDE6D5;
+            text-align:center;
+            padding:10px;
+            p{
+
+                color:#FF0000;
+                font-size:20px;
+            }
+       }
+       .service-select-voucher-popup{
+       .select_voucher{
+       padding:10px 30px;
+  .select-row{
+    display:-webkit-box;
+
+        h5{
+            padding:0;
+        }
+        .align{
+            margin:0;
+        }
+
+
+  }
+  }
+  }
+
+/*------------Milestone modal start---------*/
+.milstoneModals{
+    .modal-dialog{
+        max-width: 689px;
+    }
+    .modal-header{
+        display: block;
+        h5{
+            font-size: 2rem;
+            font-weight: 900;
+             @media (max-width:768px){
+                font-size:24px;
+            }
+        }
+        p{
+            font-size: 1.25rem;
+            color: #686363;
+            font-weight: 400;
+             @media (max-width:768px){
+                font-size:14px;
+            }
+        }
+    }
+    .modal-body{
+        background: #D9D9D9;
+        .offer-containers{
+        &.selected{
+        .offer-container{
+               background-image: url("/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/voucher-bg-active.png");
+               }
+         }
+            .offer-container{
+                background-image: url("/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/voucher-layout.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: inline-block;
+                width: 100%;
+                min-height: 106px;
+
+                 @media (max-width:767px){
+                    min-height: inherit;
+                }
+                .offer-container-left{
+                    float: left;
+                    width: 14%;
+                     height: auto;
+                    display: inline-block;
+                    display: flex;
+                    justify-content: center;
+
+                    min-height: 105px;
+                    @media  (max-width:767px){
+                            min-height: 55px;
+                    }
+                    input[type=radio]{
+                        width: 20px;
+                        accent-color: red;
+                         @media (max-width:768px){
+                                width: 15px;
+                        }
+                    }
+                }
+                .offer-container-right{
+                    @media (max-width:767px){
+                        position:relative;
+                    }
+                    float: left;
+                    width: 85%;
+                    padding: 10px 0;
+                    display: flex;
+                    .offer-sub-left {
+
+                        display: flex;
+                        justify-content: center;
+                        padding: 20px;
+                        @media (max-width:767px){
+                            padding: 5px;
+                        }
+                        img{
+                        height: 37px;
+                        width: 37px;
+                            @media (max-width:767px){
+                                height: 25px;
+                                width: 25px;
+                            }
+                        }
+                        .brand-icon {
+                            box-shadow: 1px 1px 10px #dde;
+                            height: 38px;
+                            width: 38px;
+                            border-radius: 50%;
+                            @media (max-width:767px){
+                                height: 24px;
+                                width: 24px;
+                            }
+
+                        }
+                    }
+
+                    .offer-sub-middle{
+
+                        font-size: 1.4rem;
+                        margin-top: 24px;
+                        font-weight: 700;
+                        @media  (max-width:767px){
+                           margin-top: 10px;
+                           font-size:12px;
+                        }
+                    }
+                    .offer-sub-right{
+                        @media (max-width:767px){
+                            font-size:14px;
+                            right: 13%;
+                                top: -25%;
+                        }
+                        position: absolute;
+                         right: 5%;
+
+                        justify-content: center;
+                        margin-top: 10px;
+                        font-size: 1.8rem;
+                        font-weight: 900;
+                        line-height: 64px;
+                    }
+                }
+            }
+        }
+    }
+    .modal-footer{
+        margin: 0 auto;
+        .btn-redeem,.btn-redeem:hover {
+            background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+            color: #fff;
+            width: 217px;
+        }
+    }
+}
+/*------------Milestone modal end---------*/
+
+
+
+.available-couponvouchers{
+        .slick-prev:before {
+                background-image: url("/content/dam/hero-aem-website/in/servicejourney/Left-Grey-Arrow.svg");
+                background-size: 42px 42px;
+                display: inline-block;
+                width: 42px;
+                height: 42px;
+                content:"";
+                opacity: 1 !important;
+
+            }
+            .slick-next:before {
+                background-image: url("/content/dam/hero-aem-website/in/servicejourney/Right-Grey-Arrow.svg");
+                background-size: 42px 42px;
+                display: inline-block;
+                width: 42px;
+                height: 42px;
+                content:"";
+                opacity: 1 !important;
+
+            }
+}

@@ -1,0 +1,68 @@
+.investor-explore .explore-div a {
+    font-family: var(--font-tstar-bold);
+    font-size: 18px;
+    line-height: 1.2;
+    color: #009FDA;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.investor-explore .explore-div {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.investor-explore .explore-div a::after {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-right-style: solid;
+    border-right-width: 3px;
+    content: "";
+    display: inline-block;
+    height: 9px;
+    right: 0;
+    position: absolute;
+    top: 6.5px;
+    width: 9px;
+    transform: rotate(315deg);
+}
+
+@media (max-width: 625px) {
+    .investor-explore ul.common-tabs-main .nav-item {
+        margin: 0 16px;
+    }
+
+    .investor-explore .explore-tab-section .bike-tab-section .bike-product-wrapper {
+        margin-top: 0;
+    }
+
+    .investor-explore .slick-list {
+        margin: 0 16px;
+    }
+
+    .investor-explore .block {
+        margin-top: 0;
+    }
+
+    .investor-explore .explore-div a {
+        font-size: 14px;
+    }
+
+    .investor-explore .explore-div a::after{
+        height: 8px;
+        width: 8px;
+        top: 4.5px;
+    }
+
+    .investor-explore .explore-div {
+        margin-top: 0;
+        margin-bottom: 16px;
+        padding-top: 0;
+    }
+
+    .investor-explore .blog-container{
+        margin-bottom: 16px;
+    }
+}

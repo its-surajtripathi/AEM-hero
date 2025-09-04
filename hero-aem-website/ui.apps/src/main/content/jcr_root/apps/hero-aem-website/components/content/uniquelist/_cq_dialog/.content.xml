@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Unique List Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <aboutus
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="About Us"
+                        sling:orderBefore="cq:styles"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <headingtext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Enter Heading Text"
+                                                name="./heading1"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                <htmlRules jcr:primaryType="nt:unstructured">
+                                                    <blockHandling
+                                                        jcr:primaryType="nt:unstructured"
+                                                        removeSingleParagraphContainer="{Boolean}true"/>
+                                                </htmlRules>
+                                            </headingtext>
+                                            <well
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                                fieldLabel="QuickLink Details">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <quicklinkdetails
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        fieldLabel="Unique Links"
+                                                        required="{Boolean}false">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./aboutus">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <configurations
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <carouselconfigs
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            jcr:title="Sub Headings"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <footertext
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                    fieldLabel="Provide Unique Text"
+                                                                                    name="./subheading"
+                                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                                    <rtePlugins
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                    <uiSettings
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                    <htmlRules jcr:primaryType="nt:unstructured">
+                                                                                        <blockHandling
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            removeSingleParagraphContainer="{Boolean}true"/>
+                                                                                    </htmlRules>
+                                                                                </footertext>
+                                                                                <footerlink
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldLabel="Provide Unique Text Link"
+                                                                                    name="./linkfooter"/>
+                                                                            </items>
+                                                                        </carouselconfigs>
+                                                                    </items>
+                                                                </configurations>
+                                                            </items>
+                                                        </field>
+                                                    </quicklinkdetails>
+                                                </items>
+                                            </well>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </aboutus>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

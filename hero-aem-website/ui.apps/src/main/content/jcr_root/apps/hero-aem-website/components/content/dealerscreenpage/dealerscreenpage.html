@@ -1,0 +1,186 @@
+<sly data-sly-test="${(wcmmode.edit || wcmmode.design) && !listUse }" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>
+
+<section id="dealer-screen-page">
+	<div class="slide--wrap">
+		<div class="slide-item main-img" id="main-banner" data-autoplay="10000">
+			<img src="${properties.dealerbigimg}" alt="">
+		</div>
+		<div class="slide-item" id="motorcycles">
+			<span class="disclaimer-text">
+				${properties.deleardisclaimer}
+			</span>
+			<div class="content-wrap">
+				<div class="hero-logo">
+					<img src="${properties.dealerherologo}" alt="">
+				</div>
+				<h2 class="main-heading">
+					Motorcycles - <span>(<sly
+							data-sly-test.configuration="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}"
+							data-sly-use.listUse="${'/apps/hero-aem-website/utils/searchutils.js' @ path=configuration.siteRoot}"
+							data-sly-list="${listUse}">
+							<sly data-sly-test="${itemList.index == 0}">
+								<sly
+									data-sly-test.statePath="${'{0}/{1}'  @ format=[item['jcr:content/productmodel'], request.requestPathInfo.selectors[0]]}" />
+								<sly
+									data-sly-use.default="${'/apps/hero-aem-website/utils/getProperty.js' @ parentPath=statePath}">
+									${default.properties.state_name @ i18n},
+								</sly>
+							</sly>
+						</sly>
+						<sly data-sly-test.configuration="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}"
+							data-sly-use.listUse="${'/apps/hero-aem-website/utils/searchutils.js' @ path=configuration.siteRoot}"
+							data-sly-list="${listUse}">
+							<sly data-sly-test="${itemList.index == 0}">
+								<sly
+									data-sly-test.statePath="${'{0}/{1}/{2}'  @ format=[item['jcr:content/productmodel'], request.requestPathInfo.selectors[0], request.requestPathInfo.selectors[1]]}" />
+								<sly
+									data-sly-use.default="${'/apps/hero-aem-website/utils/getProperty.js' @ parentPath=statePath}">
+									${default.properties.city @ i18n}
+								</sly>
+							</sly>
+						</sly> )
+					</span>
+				</h2>
+				<div class="pricelist-wrap">
+					<div class="item-wrap">
+						<sly data-sly-test.configuration="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}"
+							data-sly-use.listUse="${'/apps/hero-aem-website/utils/searchutils.js' @ path=configuration.siteRoot}"
+							data-sly-list="${listUse}">
+							<sly data-sly-test="${item.parent.parent.name == 'motorcycles'}">
+								<div class="item">
+									<div class="bike-thumbnail">
+										<h2>
+											${item['jcr:content/pageTitle'] || item['jcr:content/jcr:title']}
+										</h2>
+										<sly
+											data-sly-use.imageName="${'/apps/hero-aem-website/utils/replaceHyphenHelper.js' @ path=(item['jcr:content/pageTitle'] || item['jcr:content/jcr:title'])}" />
+										<img src="${properties.productimagesPath}/${imageName}.jpg"
+											alt="">
+										<p class="avg-price">
+											Avg. Ex-showroom price
+										</p>
+										<div class="vehicle-variants">
+											<div class="variant-heading">
+												Variants
+											</div>
+											<sly
+												data-sly-use.nodepath="${'/apps/hero-aem-website/utils/replaceHelper.js' @ path=item.name}" />
+											<sly data-sly-test.state="${request.requestPathInfo.selectors[0]}"
+												data-sly-test.city="${request.requestPathInfo.selectors[1]}"
+												data-sly-test.parentPath="${['/content/hmc/prices/in',nodepath,state,city] @ join='/'}"
+												data-sly-use.listUse1="${'/apps/hero-aem-website/utils/getdropdownvalues.js' @ parentPath=parentPath}">
+												<sly data-sly-list.price="${listUse1}">
+													<div class="price-content-wrap">
+														<div class="price-content">
+															<p class="type-text">${price.properties.variant_desc}
+															</p>
+															<p class="price-text"
+																data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}">
+																${pageconfig.currencyUnit}
+																${price.properties.ex_showroom}
+															</p>
+														</div>
+													</div>
+												</sly>
+											</sly>
+										</div>
+									</div>
+								</div>
+							</sly>
+						</sly>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide-item" id="scooters">
+			<span class="disclaimer-text">
+				${properties.deleardisclaimer}
+			</span>
+			<div class="content-wrap">
+				<div class="hero-logo">
+					<img src="${properties.dealerherologo}" alt="">
+				</div>
+				<h2 class="main-heading">
+					Scooters - <span>(<sly
+							data-sly-test.configuration="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}"
+							data-sly-use.listUse="${'/apps/hero-aem-website/utils/searchutils.js' @ path=configuration.siteRoot}"
+							data-sly-list="${listUse}">
+							<sly data-sly-test="${itemList.index == 0}">
+								<sly
+									data-sly-test.statePath="${'{0}/{1}'  @ format=[item['jcr:content/productmodel'], request.requestPathInfo.selectors[0]]}" />
+								<sly
+									data-sly-use.default="${'/apps/hero-aem-website/utils/getProperty.js' @ parentPath=statePath}">
+									${default.properties.state_name @ i18n},
+								</sly>
+							</sly>
+						</sly>
+						<sly data-sly-test.configuration="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}"
+							data-sly-use.listUse="${'/apps/hero-aem-website/utils/searchutils.js' @ path=configuration.siteRoot}"
+							data-sly-list="${listUse}">
+							<sly data-sly-test="${itemList.index == 0}">
+								<sly
+									data-sly-test.statePath="${'{0}/{1}/{2}'  @ format=[item['jcr:content/productmodel'], request.requestPathInfo.selectors[0], request.requestPathInfo.selectors[1]]}" />
+								<sly
+									data-sly-use.default="${'/apps/hero-aem-website/utils/getProperty.js' @ parentPath=statePath}">
+									${default.properties.city @ i18n}
+								</sly>
+							</sly>
+						</sly> )
+					</span>
+				</h2>
+				<div class="pricelist-wrap">
+					<div class="item-wrap">
+						<sly data-sly-test.configuration="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}"
+							data-sly-use.listUse="${'/apps/hero-aem-website/utils/searchutils.js' @ path=configuration.siteRoot}"
+							data-sly-list="${listUse}">
+							<sly data-sly-test="${item.parent.name == 'scooters'}">
+								<div class="item">
+									<div class="bike-thumbnail">
+										<h2>
+											${item['jcr:content/pageTitle'] || item['jcr:content/jcr:title']}
+										</h2>
+										<sly
+											data-sly-use.imageName="${'/apps/hero-aem-website/utils/replaceHyphenHelper.js' @ path=(item['jcr:content/pageTitle'] || item['jcr:content/jcr:title'])}" />
+										<img src="${properties.productimagesPath}/${imageName}.jpg"
+											alt="">
+										<p class="avg-price">
+											Avg. Ex-showroom price
+										</p>
+										<div class="vehicle-variants">
+											<div class="variant-heading">
+												Variants
+											</div>
+											<sly
+												data-sly-use.nodepath="${'/apps/hero-aem-website/utils/replaceHelper.js' @ path=item.name}" />
+											<sly data-sly-test.state="${request.requestPathInfo.selectors[0]}"
+												data-sly-test.city="${request.requestPathInfo.selectors[1]}"
+												data-sly-test.parentPath="${['/content/hmc/prices/in',nodepath,state,city] @ join='/'}"
+												data-sly-use.listUse1="${'/apps/hero-aem-website/utils/getdropdownvalues.js' @ parentPath=parentPath}">
+												<sly data-sly-list.price="${listUse1}">
+													<div class="price-content-wrap">
+														<div class="price-content">
+															<p class="type-text">${price.properties.variant_desc}
+															</p>
+															<p class="price-text"
+																data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}">
+																${pageconfig.currencyUnit}
+																${price.properties.ex_showroom}
+															</p>
+														</div>
+													</div>
+												</sly>
+											</sly>
+
+										</div>
+									</div>
+								</div>
+							</sly>
+						</sly>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

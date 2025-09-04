@@ -1,0 +1,6 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+      format=[component.title], i18n} </sly>
+
+<sly data-sly-test="${properties.accordionvariant == 'faqs'}" data-sly-include="${properties.accordionvariant}.html"></sly>
+<sly data-sly-test="${properties.accordionvariant == 'contacts'}" data-sly-include="${properties.accordionvariant}.html"></sly>
+<sly data-sly-test="${properties.accordionvariant == 'servicedelivers'}" data-sly-include="${properties.accordionvariant}.html"></sly>

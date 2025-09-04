@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Premia Karizma Bike Intro"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.authoring.editor.hook]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <bikeIntro
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Bike Intro Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="*">
+                                            <pretext1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Primary Text"
+                                                name="./preText1"/>
+                                            <pretext2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Secondary Text"
+                                                name="./preText2"/>
+                                            <pointertext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Pointer Text"
+                                                name="./pointerText"/>
+                                            <bikeName
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Bike Name"
+                                                name="./bikeName"/>
+                                            <bikeDes
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Bike Description"
+                                                name="./description"/>
+                                            <infoIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Information Icon"
+                                                fileNameParameter="./infoIcon"
+                                                fileReferenceParameter="./infoIconRef"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/svg+xml]"
+                                                multiple="{Boolean}false"
+                                                name="./infoIconImg"
+                                                title="Upload Image Asset"
+                                                useHTML5="{Boolean}true"/>
+                                              <karizmavideo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Karizma Video"
+                                                name="./karizmaVideo"/>
+                                              <scroll
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                fieldLabel="Scroll Down Icon"
+                                                fileNameParameter="./scrolldown"
+                                                fileReferenceParameter="./scrolldownRef"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/svg+xml]"
+                                                multiple="{Boolean}false"
+                                                name="./scrolldownImg"
+                                                title="Upload Scroll Asset"
+                                                useHTML5="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </bikeIntro>
+                    <styletab
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

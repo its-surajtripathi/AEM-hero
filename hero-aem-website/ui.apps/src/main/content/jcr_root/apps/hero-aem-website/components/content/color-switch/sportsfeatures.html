@@ -1,0 +1,17 @@
+<div class="explore-360-features-main">
+          <div class="explore-download-wrapper">
+            <sly data-sly-resource="${'downloadbrouchure' @resourceType='hero-aem-website/components/content/downloadbrochure'}"/>
+            <sly data-sly-resource="${'share' @resourceType='hero-aem-website/components/content/shareicon'}"/>
+          </div>
+          <div class="features-main">
+            <ul class="features-points" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multitextsports'}"
+      data-sly-list="${listUse}">
+              <li>
+                <span class="b1-text-std">${item.properties.title}</span>
+                <div class="features-info">
+                  ${item.properties.features @context = 'html'}
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>

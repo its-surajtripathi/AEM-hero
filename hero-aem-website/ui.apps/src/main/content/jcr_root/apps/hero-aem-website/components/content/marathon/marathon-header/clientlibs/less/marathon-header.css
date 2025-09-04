@@ -1,0 +1,88 @@
+.marathon-header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: #fff;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(2px);
+}
+
+.marathon-header-logo {
+  height: 40px;
+}
+
+.marathon-header-links-wrapper {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.57;
+  font-family: 'gothamnarrow-bold';
+  font-weight: 600;
+  padding-right: 16px;
+}
+
+.marathon-header-links {
+  padding: 0 24px;
+  position: relative;
+}
+
+.marathon-header-links.active {
+  background-image: linear-gradient(#DF7900, #EDCC1E);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marathon-header-links:not(:last-child)::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, #DF7900 0%, #EDCC1E 100%);
+  opacity: 0.5;
+  padding: 0.5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hero-carousel .img-fluid {
+  width: 100%;
+}
+
+.marathon-text {
+  font-size: 18px;
+  font-family: 'gothamnarrow-book';
+  font-weight: 300;
+  line-height: 1.55;
+
+}
+
+@media (max-width: 768px) {
+  .marathon-header-logo {
+    height: 32px;
+  }
+
+  .marathon-header-wrapper {
+    padding: 10px 16px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.30);
+    background: #fff;
+  }
+
+  .marathon-header-links-wrapper {
+    padding: 0;
+  }
+
+  .marathon-header-links:nth-last-child {
+    padding: 0;
+  }
+
+  .marathon-text {
+    font-size: 14px;
+  }
+}

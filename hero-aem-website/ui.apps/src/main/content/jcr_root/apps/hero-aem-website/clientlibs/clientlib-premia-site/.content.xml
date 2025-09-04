@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[premia-aem-website.site]"
+    cssProcessor="[default:none,min:yui]"
+    dependencies="[premia-site.dependency,granite.csrf.standalone]"
+    embed="[premia.components.carousel.v1,premia.accordion.v1,core.wcm.components.text.v2,premia.footer,premia-site.merchandise,premia-site.navigation,premia-site.teasercountdown,premia-site.premiateaserbanner,premia-site.teaserfeature,premia-site.carousel,premia-site.premiainvite,premia-site.backbtn,premia-site.twocolouredtext, premia-site.productVideoBanner,premia-site.herobanner,premia-site.productkeyfeature,premia-site.productdealership,premia-site.test,premia-site.bikevariant,premia-site.premia-features-carousel,premia-site.specificationmodal,premia-site.premia-model-button,premia-site.premia-booking-enquiry-form]"
+    jsProcessor="[default:none,min:gcc]"/>

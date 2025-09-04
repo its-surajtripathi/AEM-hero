@@ -1,0 +1,440 @@
+.in-press-section .selectpress {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #1c1c1c;
+  padding: 20px 0 25px 0;
+}
+
+.in-press-section .selectpress .dropdown--wrap {
+  display: flex;
+  margin-top: 16px;
+}
+
+.in-press-section .selectpress .dropdown--wrap .select-dropdown {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .in-press-section .selectpress .dropdown--wrap {
+    flex-direction: column;
+  }
+}
+
+.in-press-section .selectpress .dropdown--wrap .select-dropdown:last-child button {
+  margin-right: 0;
+}
+
+.in-press-section .selectpress .dropdown--wrap .select-dropdown button {
+  color: rgb(48, 48, 48);
+  position: relative;
+  background: #fff;
+  border: 1px solid #ced4da;
+  height: 49px;
+  border-radius: 7px;
+  padding: 0 17px;
+  text-transform: capitalize;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.36;
+  background-color: #fff;
+  font-weight: 400;
+  text-align: left;
+  width: 250px;
+  margin-right: 24px;
+  cursor: pointer;
+  box-sizing: unset;
+}
+
+@media (max-width: 767px) {
+  .in-press-section .selectpress .dropdown--wrap .select-dropdown button {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+
+  .in-press-section .selectpress .dropdown--wrap .select-dropdown:last-child button {
+    margin-bottom: 0;
+  }
+}
+
+.in-press-section .selectpress .dropdown--wrap .select-dropdown button::after {
+  content: url('../../../../../clientlibs/clientlib-site/resources/images/icons/select-icon.svg');
+  border: 0;
+  position: absolute;
+  right: 25px;
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+}
+
+.in-press-section .selectpress .dropdown--wrap .select-dropdown .dropdown--menu {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  will-change: transform;
+  box-sizing: unset;
+  max-height: 158px;
+  overflow-y: auto;
+  margin: 0;
+  border: 0;
+  border-radius: 0 0 16px 16px;
+  width: 223px;
+  z-index: 2;
+  padding: 5px 16px;
+  transform: translate3d(0, 41px, 0) !important;
+  text-transform: capitalize;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(120, 120, 120, 0.15);
+  -webkit-backdrop-filter: blur(13.1579px);
+  backdrop-filter: blur(13.1579px);
+  padding: 18px 32px;
+  border-radius: 24px;
+}
+
+.in-press-section .selectpress .dropdown--wrap .select-dropdown .dropdown--menu.show {
+  display: block;
+}
+
+.in-press-section .selectpress .dropdown--wrap .select-dropdown .dropdown--menu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.in-press-section .selectpress .dropdown--wrap .select-dropdown .dropdown--menu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.in-press-section .selectpress .dropdown--wrap .select-dropdown .dropdown--menu li {
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 10px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #212529;
+}
+
+.in-press-section .selectpress .dropdown--wrap .select-dropdown .dropdown--menu li:last-child {
+  border-bottom: none;
+}
+
+.in-press-section .selectpress .dropdown--wrap .select-dropdown span.select--para {
+  position: absolute;
+  top: -7px;
+  left: 15px;
+  z-index: 1;
+  background: #fff;
+  color: #303030;
+  font-size: 16px;
+  line-height: 1.36;
+  font-weight: 600;
+  padding: 0 4px;
+}
+
+.in-press-section .selectpress p {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: var(--font-tstar-regular);
+}
+
+.in-press-section .selectpress .selectPressBox {
+  width: 160px;
+  border: 1px solid #494949;
+  padding: 2px 9px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #353535;
+  outline: none;
+  margin: 0 15px 0 0;
+}
+
+@media (max-width: 767px) {
+  .in-press-section .selectpress .selectPressBox {
+    width: 140px;
+  }
+}
+
+.in-press-section .mediacontent .mediacontent--wrap {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  .in-press-section .mediacontent .mediacontent--wrap {
+    flex-direction: column;
+  }
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressyearBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-tstar-regular);
+  width: 173px;
+  height: 80px;
+  background-color: #a8a8a8;
+  text-align: center;
+  padding: 20px 10px 0 10px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  float: left;
+  margin: 15px 0 0 0;
+  box-sizing: content-box;
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressyearBox img {
+  position: absolute;
+  right: -14px;
+  top: 25px;
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressyearBox p.month {
+  font-family: var(--font-tstar-regular);
+  font-size: 16px;
+  color: #f9f9f9;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.36;
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressyearBox p.year {
+  font-family: var(--font-tstar-regular);
+  margin: 0 0 5px 0;
+  font-size: 32px;
+  font-weight: 900;
+  display: block;
+  text-align: center;
+  line-height: 44.8px;
+  font-weight: bold;
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressList {
+  width: 100%;
+  margin-left: 35px;
+}
+
+@media (max-width: 767px) {
+  .in-press-section .mediacontent .mediacontent--wrap .pressList {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressList ul {
+  font-family: var(--font-tstar-regular);
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressList ul li {
+  margin: 0px;
+  padding: 12px 0;
+  list-style: none;
+  border-bottom: 1px solid #c5c5c5;
+  line-height: 1.36;
+  color: #353535;
+  font-size: 14px;
+  display: none;
+  font-family: var(--font-tstar-regular);
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressList ul li.show {
+  display: block;
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressList ul li a {
+  color: #353535;
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: var(--font-tstar-regular);
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressList ul li .header--title {
+  color: #353535;
+  display: flex;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: var(--font-tstar-regular);
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressList ul li .header--title:hover {
+  color: #ff0000;
+}
+
+.in-press-section .mediacontent .mediacontent--wrap .pressList ul li a:hover {
+  color: #ff0000;
+}
+
+.pressreleases-container,
+.inthepress-container,
+.newsletter-container,
+.annualreport-container {
+  width: 100%;
+}
+
+.pressreleases-container .in-press-section .mediacontent .mediacontent--wrap .pressList ul li a img {
+  width: 13px;
+  height: 18px;
+  padding-left: 5px;
+  box-sizing: unset;
+}
+
+.in-press-section {
+  padding: 20px 0 100px;
+}
+
+.render--div {
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+@media(max-width: 767px) {
+  .render--div {
+    padding-top: 15%;
+  }
+
+  button#go-back {
+    right: 5%;
+  }
+
+  #newsletter ul li .img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .summary-reports ul li .img-wrapper img {
+    max-width: 80%;
+  }
+
+  .summary-reports.in-press-section .mediacontent .mediacontent--wrap .pressList ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section.summary-reports ul li .content-wrapper {
+    margin-left: 10px;
+    margin-top: 1rem;
+  }
+
+  section.summary-reports ul li .content-wrapper h3 {
+    font-size: 20px;
+  }
+
+  .summary-reports.in-press-section .mediacontent .mediacontent--wrap .pressList ul li a {
+    font-size: 14px;
+  }
+}
+
+.render--div h2 {
+  font-family: var(--font-tstar-heavy);
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #303030;
+  padding: 7px 0 20px 20px;
+  line-height: 1.36;
+  text-transform: none;
+  font-weight: bold;
+  border-bottom: #dddddd 1px solid;
+  margin: 0 0 20px 0;
+  background: url(/content/dam/hero-aem-website/in/icons/hero-arrow.png) no-repeat left top;
+}
+
+.render--div p,
+.render--div span,
+.render--div b,
+.render--div li {
+  line-height: 1.36;
+  font-family: var(--font-tstar-regular) !important;
+  font-size: 16px;
+  padding: 0 0 20px 0;
+}
+
+.render--div strong,
+.render--div b,
+.render--div b span,
+.render--div strong span {
+  font-size: 16px;
+  font-family: var(--font-tstar-heavy) !important;
+}
+
+.render--div a,
+.render--div a span {
+  display: initial;
+}
+
+#go-back {
+  position: absolute;
+  top: 1%;
+  right: 0;
+}
+
+.summary-reports.in-press-section .mediacontent .mediacontent--wrap .pressList ul li {
+  display: none;
+  align-items: flex-start;
+}
+
+.summary-reports .header-wrap h2 {
+  font-family: var(--font-tstar-bold);
+  font-size: 16px;
+  color: #303030;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+
+.summary-reports ul li .content-wrapper {
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-reports ul li .content-wrapper h3 {
+  font-family: var(--font-tstar-bold);
+  text-transform: none;
+  color: #303030;
+  font-size: 23px;
+  padding: 15px 0 6px 20px;
+  line-height: 100%;
+  background: url('/content/dam/hero-aem-website/in/icons/hero-arrow.png') no-repeat left 8px;
+}
+
+.summary-reports.in-press-section .mediacontent .mediacontent--wrap .pressList ul li a {
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.summary-reports.in-press-section .mediacontent .mediacontent--wrap .pressList ul li a span {
+  margin-left: 5px;
+}
+
+.summary-reports.in-press-section .mediacontent .mediacontent--wrap .pressyearBox {
+  min-width: 173px;
+}
+
+.media-separator-lines {
+  border-bottom: none !important;
+}

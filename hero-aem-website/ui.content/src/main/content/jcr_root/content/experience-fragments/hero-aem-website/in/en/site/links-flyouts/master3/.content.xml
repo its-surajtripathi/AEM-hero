@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-08-10T05:32:13.859Z"
+        cq:lastModifiedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicated="{Date}2022-08-10T05:38:35.503Z"
+        cq:lastReplicated_publish="{Date}2022-08-10T05:38:35.503Z"
+        cq:lastReplicatedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicatedBy_publish="kiran.jaganmohan@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/xf-web-variation"
+        cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="dealer-locator"
+        jcr:uuid="dcbf74b6-2014-4266-9583-63521277bf09"
+        sling:resourceType="hero-aem-website/components/structure/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <secondarynavigation_
+                jcr:created="{Date}2022-07-24T16:15:56.707+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-07-25T19:47:52.914+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/structure/secondarynavigation"
+                textIsRich="true"
+                variation="megamenu-link-wrapper">
+                <flyouts
+                    jcr:lastModified="{Date}2022-07-24T16:27:57.982+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid">
+                    <linkflyout
+                        jcr:created="{Date}2022-07-25T19:48:01.732+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-07-26T10:09:55.177+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/structure/secondarynavigation/linkflyout"
+                        element="h4"
+                        heading="We provide end-to-end two-wheeler services at your doorstep">
+                        <servicelinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/book-servies-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="Book a Service"
+                                url="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/events-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="Maintenance Schedule"
+                                url="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/extends-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="Extended Warranty"
+                                url="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/road-side-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="Road Side Assistance"
+                                url="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/joy-ride-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="Hero Joyride"
+                                url="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/x-mag-magazine-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="Owner's Manual"
+                                url="#"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/diy-video-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="DIY Videos"
+                                url="#"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/tips-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="2 Wheeler's Tips"
+                                url="#"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/safe-hero-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="Be a Safe Hero"
+                                url="#"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/stor-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="Hero Apparel Store"
+                                url="#"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/tips-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="Storage Tips"
+                                url="#"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/hero-aem-website/brand/design/icons/whataap-care-icon.svg"
+                                subtext="Join our supportive riding community and be a part of something bigger."
+                                text="Experience the care on Whatsapp"
+                                url="#"/>
+                        </servicelinks>
+                    </linkflyout>
+                </flyouts>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                </cq:responsive>
+            </secondarynavigation_>
+        </root>
+    </jcr:content>
+</jcr:root>

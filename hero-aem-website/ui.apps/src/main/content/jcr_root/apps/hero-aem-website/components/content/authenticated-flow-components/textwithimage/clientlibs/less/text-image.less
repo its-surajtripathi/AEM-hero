@@ -1,0 +1,235 @@
+
+.text-flip-container{
+    margin:2rem;
+    width:80%;
+.cta-section {
+    min-height: 300px;
+    position: relative;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+	cursor: pointer;
+}
+.cta-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    border: solid 1px #cbcbcb;
+    @media (max-width: 767px) {
+        border: none;
+    }
+}
+.cta-card div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 2em;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    @media (max-width: 767px) {
+        min-height: 100%;
+        height: auto;
+    }
+}
+.cta-card .front {
+	background: #f5f4f1;
+	border-radius: 5px; 
+    @media (max-width: 767px) {
+        background: #FFFFFF;
+        border: solid 1px #cbcbcb;
+    }
+    .front-img{
+        width: 100%;
+        height: 100%;
+    }
+}
+    .cta-card .back {
+        background: #e1eace; /* Old browsers */
+        background: -moz-linear-gradient(top,  #e1eace 0%, #f2eeed 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #e1eace 0%,#f2eeed 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #e1eace 0%,#f2eeed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1eace', endColorstr='#f2eeed',GradientType=0 ); /* IE6-9 */
+        border-radius: 5px;
+        -webkit-transform: rotateY( 180deg );
+        -moz-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+        padding:1rem;
+
+        h3{
+            text-align: center;
+            margin: 0.5rem;
+            color: #000;
+            text-transform: capitalize;
+            font-weight: 900;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 700;
+            margin-block: 0.5rem;
+        }
+        .mem_Ben_List{
+            line-height: 1.4rem;
+            padding-left: 30px;
+            list-style-type: circle;
+            text-align: left;
+        }
+    }
+    .cta-card.flipped {
+        -webkit-transform: rotateY( 180deg );
+        -moz-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+    }
+    .align-text-bottom {
+        position:absolute;
+        bottom:0;
+        left:0;
+        color: #9B2B49;
+        text-decoration: underline;
+        padding:15px;
+    }
+}
+.membership-plan{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+				gap:15px;
+            	margin:10px 0px 10px 0px;
+                background-size: cover;
+                border-radius: 8px;
+                min-height: 223px;
+            	@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+                	display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                	gap:8px;
+                    height: auto;
+                }
+                @media only screen 
+                and (min-device-width: 320px) 
+                and (max-device-width: 480px)
+                and (-webkit-min-device-pixel-ratio: 2){
+                    min-height: 162px;
+                    height: 162px;
+                }
+			.membership_bg {
+				border-radius: 5%;
+
+				background-repeat: no-repeat;
+				height: 200px;
+                .platinum-content{
+                    @media all and(max-width:768px){
+                        .pricetag{
+                            font-size: 24px; 
+                            margin-left: -14px; 
+                        }
+                        span{
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                }
+			}
+
+
+			.platinum-icon{
+                padding-top: 20px;
+                margin-bottom:15px;
+                @media only screen 
+                and (min-device-width: 320px) 
+                and (max-device-width: 480px)
+                and (-webkit-min-device-pixel-ratio: 2){
+                    width: 80px;
+                }
+            }
+	
+			.banner_btn{
+				padding-top: 10px;
+				width: 100px;
+			}
+			.goldbg-icon{
+				padding-top:20px;
+			}
+			.silver-icon{
+				padding-top:20px;
+			}
+			.pro-icon{
+				padding-top:20px;
+			}
+			.member-icon{
+				padding-top:20px;
+			}
+        	.membership-image{
+            	img{
+					 width:250px;
+                     height:250px;
+                     border-radius: 8px;
+                	 @media all and(max-width:768px){
+                        width: 170px;
+                        height: 170px;                       
+                        border-radius: 4px;
+            	   }
+
+
+        	}
+        }
+        	.membership-name{
+				text-align: center;
+            	p{
+                	font-family: 'T-Star Pro';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 17px;
+						white-space:nowrap;
+                        text-transform: uppercase;
+                        color: #303030;
+                        opacity: 0.8;
+                       @media all and(max-width:768px)
+                    	{
+                            font-size: 12px;
+                            line-height: 12px;
+                		}
+
+            	}
+
+       		}
+
+
+    }
+
+.service-main-heading{
+    @media (max-width: 350px) {
+        padding: 10px;
+    }
+    img.text-icon+span{
+        h2{
+            font-weight: 900;
+            width: max-content;
+            font-size: 28px;
+        }
+    }
+    &.join-clan-heading{
+        border-bottom:none;
+    }
+}
+}

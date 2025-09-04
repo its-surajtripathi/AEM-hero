@@ -1,0 +1,190 @@
+
+.modal{
+    .book-test-drive-section .book-test-drive-wrapper .book-test-drive-parent .book-test-drive-form .cust-form-group{
+        width:20%;
+    }
+}
+.country-modal {
+  .modal-xl {
+    max-width: 850px;
+    .modal-content {
+      border-radius: 8px;
+      .modal-body {
+        padding: 50px 49px;
+        .close {
+          opacity: 1;
+          font-size: 35px;
+          top: 20px;
+          position: absolute;
+          right: 10px;
+          line-height: 35px;
+          float: none;
+          color: var(--text-color-red);
+        }
+        h2 {
+          font-family: var(--font-tstar-bold);
+          font-size: var(--font-size30);
+          font-weight: var(--font-weight-900);
+          margin-bottom: 25px;
+          text-align:center;
+        }
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            width: 140px;
+            margin: 5px;
+            a {
+              background-color: #686868;
+              color: #ffffff;
+              padding: 12px 8px;
+              font-family: var(--font-tstar-regular);
+              font-size: var(--font-size14);
+              display: flex;
+              align-items: flex-start;
+              white-space: nowrap;
+              img {    
+			  margin-right: 5px;
+			  width:auto;
+			  height :20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* MD Devices Start  */
+
+@media (max-width: 991.2px) and (min-width: 768px) {
+    .book-test-drive-section .book-test-drive-wrapper .book-test-drive-parent .book-test-drive-form .cust-form-group{
+        width:100%;
+    }
+    .modal{
+    .book-test-drive-section .book-test-drive-wrapper .book-test-drive-parent .book-test-drive-form .cust-form-group{
+        width:100%;
+    }
+    }
+  .country-modal {
+    .modal-xl {
+      max-width: 700px;
+      .modal-content {
+        .modal-body {
+          padding: 50px 49px;
+          h2 {
+            font-size: var(--font-size24);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* SM & XS Devices Start  */
+
+@media (max-device-width: 767px) and (min-width: 320px) {
+.modal{
+.book-test-drive-section .book-test-drive-wrapper .book-test-drive-parent .book-test-drive-form .cust-form-group{
+    width:100%;
+}
+}
+  .country-modal {
+    .modal-xl {
+      max-width: 100%;
+      margin: 0;
+      .modal-content {
+        border: none;
+        border-radius: 0;
+        padding:0 15px;
+        .modal-body {
+          padding: 40px 30px;
+          h2 {
+            font-size: var(--font-size24);
+          }
+          ul{
+            li{
+                width:46%;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+#requestCallBack{
+	#bookTestRideCollapse{
+		display : block !important;
+	}
+	.modal-content{
+		background-color: var(--bg-color-danger);
+	}
+	.modal-dialog{
+		@media (min-width: 992px){
+			max-width: 1140px;
+		}
+	}
+    .close {
+      opacity: 1;
+      font-size: 35px;
+      top: 20px;
+      position: absolute;
+      right: 10px;
+      line-height: 35px;
+      float: none;
+      color: #fff;
+      z-index: 9;
+    }
+}
+
+.login-modal {
+  justify-content: center;
+}
+#logIn{
+	.login-content {
+		width: unset;
+	}
+}
+.login-content {
+  
+
+  .modal-body{
+    .close{
+      text-transform: capitalize;
+      font-size: 3rem;
+      margin-top: -2%;
+    }
+  }
+
+  .megamenu-option-wrapper{
+    .bootstraplayout{
+      .row{
+        margin-top: 3rem;
+      }
+    }
+    .formfield{
+      display: flex;
+      justify-content: center;
+
+      .profile-button{
+        padding: 12px 32px;
+        font-weight: var(--font-weight-900);
+        font-size: var(--font-size20);
+        line-height: var(--line-height-24);
+        text-transform: uppercase;
+        color: #F5F5F7;
+        background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+        border-radius: 4px;
+        border: 1px solid #EE2326;
+        width: 100%;
+      }
+      .form-group{
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

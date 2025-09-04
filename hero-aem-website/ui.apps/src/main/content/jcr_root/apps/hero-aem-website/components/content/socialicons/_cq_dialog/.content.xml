@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Social Icon Details"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <multifield
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                composite="{Boolean}true">
+                <field
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    name="./socialicondetails">
+                    <items jcr:primaryType="nt:unstructured">
+                        <configurations
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                            <items jcr:primaryType="nt:unstructured">
+                                <carouselconfigs
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Social Icon Item"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <iconlink
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldLabel="Social Icon Link"
+                                            name="./iconlink"/>
+                                        <iconfile
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                            fieldLabel="Icon Image Asset"
+                                            fileNameParameter="./iconFileName"
+                                            fileReferenceParameter="./iconFileReference"
+                                            multiple="{Boolean}false"
+                                            name="./iconFile"
+                                            title="Upload Image Asset"
+                                            useHTML5="{Boolean}true"/>
+                                        <alt
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Alt"
+                                            name="./alt"
+                                            required="{Boolean}true"/>
+                                    </items>
+                                </carouselconfigs>
+                            </items>
+                        </configurations>
+                    </items>
+                </field>
+            </multifield>
+        </items>
+    </content>
+</jcr:root>

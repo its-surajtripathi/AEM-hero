@@ -1,0 +1,27 @@
+<sly
+  data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='mpcategory'}"
+>
+  <div class="category-container" id="${properties.categoryID}">
+    <ul class="category-list" data-sly-list="${listUse}">
+      <li class="category-list-item">
+        <div class="category-content">
+          <h4 class="category-title">${item.properties.categoryTitle}</h4>
+          <a href="${item.properties.viewUrl}" class="category-view"
+            >${item.properties.categoryView}</a
+          >
+          <a href="${item.properties.catImageurl}" class="img-container">
+            <img src="${item.properties.categoryImage}" />
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</sly>
+<sly
+  data-sly-test="${(wcmmode.edit || wcmmode.design) && !listUse }"
+  class="author-note"
+>
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>
+
+<div class="scrollToTop"></div>

@@ -1,0 +1,149 @@
+// footer-section
+.footer-wrapper {
+    background-color: var(--bg-color-secondarygrey);
+    .footer-list-wrapper {
+      .footer-heading {
+        // font-size-20 line-height-24 font-montserrat-bold text-color-white
+        font-size: var(--font-size20);
+        font-family: var(--font-tstar-bold);
+        color: var(--text-color-white);
+      }
+      .footer-link {
+        li {
+          font-size: var(--font-size16);
+          font-family: var(--font-tstar-medium);
+          color: var(--text-color-lightgrey);
+          a {
+            text-decoration: none !important;
+            &:hover {
+              text-decoration: underline !important;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+      .quick-links-social-media {
+        padding-bottom: 48px;
+        border-bottom: 1px solid #ffffff;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .g-play {
+          display: flex;
+          a {
+            &:nth-child(1) {
+              padding-right: 16px;
+            }
+          }
+        }
+        .scoial-media-icon {
+          display: flex;
+          a {
+            padding-right: 30px;
+            &:nth-last-child {
+              padding-right: 0px;
+            }
+          }
+        }
+      }
+      .term-condition-wrapper {
+        .ter-condition-list {
+          .copy-right {
+            font-size: var(--font-size14);
+            font-family: var(--font-montserrat-bold);
+            color: var(--text-color-white);
+          }
+          .ter-condition-ul {
+            padding-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            .ter-condition-li {
+              font-size: var(--font-size14);
+              font-family: var(--font-montserrat-bold);
+              color: var(--text-color-white);
+              padding-right: 12px;
+              &:last-child {
+                border-radius: 1px solid #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // custom-styling end
+  
+  
+  /* SM & XS Devices Start  */
+  
+  @media (max-device-width: 767px) and (min-width: 320px) {
+    // footer-section
+    .footer-wrapper {
+      background-color: var(--bg-color-secondarygrey);
+      .footer-list-wrapper {
+        .footer-col {
+          padding: 0;
+        }
+        .footer-link {
+          li {
+            font-size: var(--font-size12);
+            font-family: var(--font-tstar-medium);
+            color: var(--text-color-lightgrey);
+            a {
+              text-decoration: none !important;
+              &:hover {
+                text-decoration: underline !important;
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+        .quick-links-social-media {
+          padding-bottom: 48px;
+          border-bottom: 1px solid #ffffff;
+          display: flex;
+          justify-content: space-between;
+          .g-play {
+            display: flex;
+            a {
+              &:nth-child(1) {
+                padding-right: 16px;
+              }
+            }
+          }
+          .scoial-media-icon {
+            display: flex;
+            a {
+              padding-right: 30px;
+              &:nth-last-child {
+                padding-right: 0px;
+              }
+            }
+          }
+        }
+        .term-condition-wrapper {
+          .ter-condition-list {
+            .copy-right {
+              font-size: var(--font-size10);
+              font-family: var(--font-montserrat-bold);
+              color: var(--text-color-white);
+            }
+            .ter-condition-ul {
+              padding-top: 20px;
+              display: flex;
+              .ter-condition-li {
+                font-size: var(--font-size10);
+                font-family: var(--font-montserrat-bold);
+                color: var(--text-color-white);
+                padding-right: 12px;
+                &:last-child {
+                  border-radius: 1px solid #ffffff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

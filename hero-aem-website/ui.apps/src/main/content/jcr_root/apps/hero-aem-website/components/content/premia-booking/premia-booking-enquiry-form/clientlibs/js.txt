@@ -1,0 +1,4 @@
+#base=js
+booktestride.js
+booktestridecampaign.js
+captcha.js

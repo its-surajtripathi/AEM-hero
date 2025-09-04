@@ -1,0 +1,38 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+    format=[component.title], i18n} </sly>
+
+<div class="explore container-fluid mission-container-fluid ">
+    <div class="row mission-card-section-slider">
+        <sly data-sly-list.missionMultifield="${resource.getChildren}">
+            <sly data-sly-test="${missionMultifield.name == 'ourmissionmulti'}">
+                <sly data-sly-list.mission="${missionMultifield.getChildren}">
+                    <div class="col-md-4 col-12 mission-column">
+                        <div class="card mission-card text-center">
+                            <div class="mission-card-header h3-heavy-heading-std">
+                                ${mission.title @ context='html'}
+                            </div>
+                            <div class="mission-card-desc b2-text-std">
+                                ${mission.subtitle @ context='html'}
+                            </div>
+                            <div class="container-fluid mission-images-container">
+                                <div class="row">
+                                    <!--/* Get all child resources */-->
+                                    <sly data-sly-list.imagesMultifield="${mission.getChildren}">
+                                        <sly data-sly-test="${imagesMultifield.name == 'multiimages'}"
+                                            data-sly-list.missionimages="${imagesMultifield.getChildren}">
+                                            <div class="col-md-6 col-6 mission-card-images-container">
+                                                <img class="mission-card-images" src=${missionimages.imagepath} atl=""
+                                                    width="100%" height="168px">
+                                            </div>
+                                        </sly>
+                                    </sly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sly>
+            </sly>
+        </sly>
+
+    </div>
+</div>

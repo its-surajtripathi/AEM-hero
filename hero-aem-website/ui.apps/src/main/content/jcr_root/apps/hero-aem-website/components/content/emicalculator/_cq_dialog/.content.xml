@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="EMI Calculator"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem_cmp_tableofcontents_v1">
+    <content
+            granite:class="cmp-toc__editor"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <imageSpecification
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Image Banner"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+
+                                            <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Enter Heading"
+                                                    name="./title"
+                                                    required="{Boolean}true"/>
+                                            <theme
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                    fieldDescription="Select Size"
+                                                    fieldLabel="theme"
+                                                    name="./theme">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <light
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Light Theme"
+                                                            checked="{Boolean}true"
+                                                            value="light"/>
+                                                    <dark
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Dark Theme"
+                                                            value="dark"/>
+                                                </items>
+                                            </theme>
+                                            <backgroundimage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="Configure Background Image"
+                                                    name="./backgroundimage"
+                                                    rootPath="/content/dam/hero-aem-website"/>
+                                            <slidericon
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="Configure Slider Thumb Icon"
+                                                    name="./slidericon"
+                                                    rootPath="/content/dam/hero-aem-website"/>
+                                            <amount
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <amount
+                                                            jcr:primaryType="nt:unstructured"
+                                                            jcr:title="Amount Details"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <amountheading
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Amount Heading"
+                                                                    name="./amountheading"
+                                                                    required="{Boolean}true"/>
+                                                            <!--<currencysymbol
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Currency Unit"
+                                                                    defaultText="₹"
+                                                                    name="./currencysymbol"
+                                                                    required="{Boolean}true"/>-->
+                                                            <amounttextlabel
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Label for Amount"
+                                                                    defaultText="Lakhs"
+                                                                    name="./amounttextlabel"
+                                                                    required="{Boolean}false"/>
+                                                            <defaultamount
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                                                    fieldLabel="Enter Default Amount"
+                                                                    name="./defaultamount"
+                                                                    required="{Boolean}true"/>
+                                                            <amountlowerlimit
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                                                    fieldLabel="Enter Amount lower limit"
+                                                                    name="./amountlowerlimit"
+                                                                    required="{Boolean}true"/>
+                                                            <amountupperlimit
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                                                    fieldLabel="Enter Amount Upper Limit"
+                                                                    name="./amountupperlimit"
+                                                                    required="{Boolean}true"/>
+                                                        </items>
+                                                    </amount>
+                                                </items>
+                                            </amount>
+                                            <interest
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <interest
+                                                            jcr:primaryType="nt:unstructured"
+                                                            jcr:title="Interest Details"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                           <interestheading
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Interest Heading"
+                                                                    name="./interestheading"
+                                                                    text="Interest Heading"/>
+                                                            <interestlabel
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Interest Label"
+                                                                    defaultText="%"
+                                                                    name="./interestlabel"
+                                                                    required="{Boolean}true"/>
+                                                            <defaultinterest
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                                                    fieldLabel="Enter Default Interest Value"
+                                                                    name="./defaultinterest"
+                                                                    step="0.1"
+                                                                    text="Interest sub heading"/>
+                                                            <interestlowerlimit
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                                                    fieldLabel="Enter Interest Lower Limit"
+                                                                    name="./interestlowerlimit"
+                                                                    text="Interest Lower Limit"/>
+                                                            <interestupperlimit
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                                                    fieldLabel="Enter Interest Upper Limit"
+                                                                    name="./interestupperlimit"
+                                                                    text="Interest Upper Limit"/>
+                                                    </items>
+                                                    </interest>
+                                                </items>
+                                            </interest>
+                                            <duration
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <duration
+                                                            jcr:primaryType="nt:unstructured"
+                                                            jcr:title="Duration Details"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <durationHeading
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Duration Heading"
+                                                                    name="./durationHeading"
+                                                                    required="{Boolean}true"/>
+                                                            <durationlabel
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Default Duration (Months/ Years)"
+                                                                    defaultText="Months"
+                                                                    name="./durationlabel"
+                                                                    required="{Boolean}true"/>
+                                                            <defaultduration
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                                                    fieldLabel="Enter Default Duration"
+                                                                    name="./defaultduration"
+                                                                    required="{Boolean}true"/>
+                                                            <durationlowerlimit
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                                                    fieldLabel="Enter Duration lower limit"
+                                                                    name="./durationlowerlimit"
+                                                                    required="{Boolean}true"/>
+                                                            <durationupperlimit
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                                                    fieldLabel="Enter Duration Upper Limit"
+                                                                    name="./durationupperlimit"
+                                                                    required="{Boolean}true"/>
+                                                        </items>
+                                                    </duration>
+                                                </items>
+                                            </duration>
+                                            <payment
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <payment
+                                                            jcr:primaryType="nt:unstructured"
+                                                            jcr:title="Payment Details"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <paymentheading
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Heading"
+                                                                    name="./paymentheading"
+                                                                    text="Payment Heading"/>
+                                                            <paymentamount
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Add Amount"
+                                                                    name="./paymentamount"
+                                                                    text="Payment Amount"/>
+                                                            <paymentbreakup
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Add Payment Breakup text"
+                                                                    name="./paymentbreakup"
+                                                                    text="Payment Breakup text"/>
+                                                            <bgimage
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                    fieldLabel="Configure Background Image"
+                                                                    name="./bgimage"
+                                                                    rootPath="/content/dam/hero-aem-website"/>
+                                                        </items>
+                                                    </payment>
+                                                </items>
+                                            </payment>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </imageSpecification>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

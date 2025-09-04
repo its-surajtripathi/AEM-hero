@@ -1,0 +1,4 @@
+/*CSS to add fancy separtor for multifield(Granite type)*/
+.cq-Dialog coral-multifield[aria-invalid=true] {
+    border: solid 1px #f00;
+}

@@ -1,0 +1,31 @@
+<section class="navUserProg">
+
+    <section class="hero-image" style="background-image: url(${properties.bgImage @context='uri'})">
+
+        <section class="hero-text">
+            <script type="text/html" class="vehicleDataTemplate">
+               	<p class="bikeName"><%=vehicleDetails.modelName%></p>
+               	<p class="plateNum"><%=vehicleDetails.licenseNo%></p>
+			</script>
+        </section>
+		<script type="text/html" class="vehicleImgDataTemplate">
+			<img class="moving-img" src="<%=vehicleDetails.imagePath%>" alt="bikePic">
+        </script>
+
+    </section>
+
+
+    <nav class="step-wrapper" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='progressbarItems'}">
+        <ul class="StepProgress" data-sly-list="${listUse}">
+            <div class="StepProgress-item" data-step-item="${item.properties.id}">
+                <a class="stepLinks">
+                    <img src="${item.properties.activeIcon}" class="active-step d-none"/>
+                    <img src="${item.properties.inactiveIcon}" class="inactive-step"/>
+                    <span>${item.properties.navTitle}</span>
+                </a>
+            </div>
+            <div class="progressBar"></div>
+        </ul>
+    </nav>
+</section>
+

@@ -1,0 +1,34 @@
+<a data-sly-test="${properties.eshopflyout}" class="nav-link dropdown-toggle" href="javascript:void(0)"
+    aa-data-attr="track_cta" aria-haspopup="true" aria-expanded="false"  style="background-image: url(${properties.bgimageeshop @ context='uri'});">
+    <img src="${properties.eshopicon}" class="img-fluid quick-nav-icon" alt="${properties.eshoptext}">
+    <p class="quick-nav-label">${properties.eshoptext}</p>
+    <div id="eshopCarousel" class="carousel vert slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner"
+            data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='eshopsubtitle'}"
+            data-sly-list="${listUse}">
+            <div class="carousel-item${itemList.first? ' active': ''}">
+                <span>${item.properties.eshopsubtitle}</span>
+            </div>
+        </div>
+    </div>
+</a>
+<div data-sly-test="${properties.eshopflyout && properties.eshopurl}" class="dropdown-menu megamenu"
+    data-sly-test.flyoutpath="${properties.eshopurl}"
+    data-sly-resource="${@path=flyoutpath, wcmmode='disabled'}">
+</div>
+<a data-sly-test="${!properties.eshopflyout}" class="nav-link dropdown-toggle" aa-data-attr="track_cta"
+    aria-haspopup="true" aria-expanded="false"
+    data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.eshopurl}"
+    href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" >
+    <img src="${properties.eshopicon}" class="img-fluid quick-nav-icon" alt="${properties.eshoptext}">
+    <p class="quick-nav-label">${properties.eshoptext}</p>
+    <div id="eshopCarousel" class="carousel vert slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner"
+            data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='eshopsubtitle'}"
+            data-sly-list="${listUse}">
+            <div class="carousel-item${itemList.first? ' active': ''}">
+                <span>${item.properties.eshopsubtitle}</span>
+            </div>
+        </div>
+    </div>
+</a>

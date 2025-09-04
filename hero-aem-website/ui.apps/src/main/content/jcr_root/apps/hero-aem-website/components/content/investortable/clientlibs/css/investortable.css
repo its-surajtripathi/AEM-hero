@@ -1,0 +1,797 @@
+/*  Changes for Investors Dividend Details and Pattern Table */
+.invs-dividend-wrap {
+    margin: 2.5rem;
+    padding: 1.125rem 2rem 0.5rem 2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 10.5263px 39.4737px rgb(120 120 120 / 15%);
+    border-radius: 12px;
+}
+
+.invs-dividend-wrap table tr,
+.invs-dividend-wrap table th tr,
+.invs-dividend-wrap table tr tr,
+.invs-dividend-wrap table td tr {
+    background-color: #fff;
+    text-align: center;
+    text-transform: none;
+}
+
+.invs-dividend-wrap .table-bordered thead td,
+.invs-dividend-wrap .table-bordered thead th {
+    background-color: #F7F9FA;
+    color: #303030 !important;
+    border: 0.6px solid #D9D9D9 !important;
+    vertical-align: initial;
+}
+
+.invs-dividend-wrap .table tbody+tbody {
+    border-top: none;
+}
+
+.invs-dividend-wrap .table-bordered td,
+.invs-dividend-wrap .table-bordered th {
+    border: 0.6px solid #D9D9D9 !important;
+    padding: 1rem 0 !important;
+}
+
+.invs-dividend-wrap table tr:first-child th,
+.invs-dividend-wrap table th tr:first-child th,
+.invs-dividend-wrap table tr tr:first-child th,
+.invs-dividend-wrap table td tr:first-child th {
+    color: #ffffff;
+}
+
+.invs-dividend-wrap table tr th:nth-child(1) {
+    width: 2%;
+}
+
+.invs-dividend-wrap table tr th:nth-child(2) {
+    width: 4%;
+    padding: 0.75rem 1rem !important;
+}
+
+.invs-dividend-wrap table tr th:nth-child(3) {
+    width: 2%;
+    padding: 0.75rem 2rem !important;
+}
+
+.invs-dividend-wrap table tr th:nth-child(4) {
+    width: 1.8%;
+    padding: 0.75rem 1.8rem !important;
+}
+
+
+.invs-dividend-wrap table tr th:nth-child(5) {
+    width: 3.9%;
+    padding: 0.75rem 1.6rem !important;
+}
+
+.invs-dividend-wrap table tr th:nth-child(6) {
+    width: 3%;
+    padding: 0.75rem 2rem !important;
+}
+
+.invs-dividend-wrap table tr th:nth-child(7) {
+    width: 4.4%;
+    padding: 0.75rem 1.5rem !important;
+}
+
+
+.invs-dividend-wrap table tr th:nth-child(8) {
+    width: 8%;
+    padding: 0.75rem 1.5rem !important;
+}
+
+.invs-dividend-wrap .table-responsive {
+    display: table;
+}
+
+.invs-dividend-wrap .table-bordered td {
+    font-family: var(--font-tstar-medium);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #303030;
+}
+
+.invs-dividend-wrap .table-bordered thead th {
+    font-family: var(--font-tstar-heavy);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #303030;
+}
+
+@media (max-width: 1250px) {
+    .invs-dividend-wrap table tr th:nth-child(1) {
+        width: 7%;
+    }
+
+    .invs-dividend-wrap table tr th:nth-child(2) {
+        width: 9%;
+        padding: 0.75rem 0.5rem !important;
+    }
+
+    .invs-dividend-wrap table tr th:nth-child(5) {
+        width: 17%;
+        padding: 0.75rem 0.7rem !important;
+    }
+
+    .invs-dividend-wrap table tr th:nth-child(7) {
+        width: 16%;
+        padding: 0.75rem 0.7rem !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .invs-dividend-wrap .divided-scroll-wrapper {
+        overflow-x: scroll;
+    }
+
+    .invs-dividend-wrap .divided-scroll-wrapper::-webkit-scrollbar-track {
+        border-radius: 4px;
+        background-color: #DFDFDF;
+    }
+
+    .invs-dividend-wrap .divided-scroll-wrapper::-webkit-scrollbar {
+        height: 4px;
+        background-color: #DFDFDF;
+    }
+
+    .invs-dividend-wrap .divided-scroll-wrapper::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: #EE2326;
+    }
+
+    .invs-dividend-wrap .divided-scroll-wrapper .table-bordered td {
+        padding: 0.7rem 0.4rem !important;
+    }
+
+    .invs-dividend-wrap .divided-scroll-wrapper .table {
+        width: 130%;
+        margin: 10px 0 10px 0 !important;
+    }
+}
+
+@media (max-width: 569px) {
+
+    .invs-dividend-wrap {
+        margin: 1rem;
+        padding: 0;
+        background: #FFFFFF;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .invs-dividend-wrap .table-bordered td,
+    .invs-dividend-wrap .table-bordered th {
+        padding: 0.375rem 0 !important;
+    }
+
+    .invs-dividend-wrap .table {
+        width: 160%;
+    }
+
+    /* .invs-dividend-wrap table tr th:nth-child(1) {
+        width: 0.05%;
+      } */
+      
+      .invs-dividend-wrap table tr th:nth-child(2) {
+        width: 12%;
+        padding: 0.375rem 0.2rem !important;
+      }
+      
+      .invs-dividend-wrap table tr th:nth-child(3) {
+        /* width: 0.04%; */
+        padding: 0.375rem 0.3rem !important;
+      }
+      
+      .invs-dividend-wrap table tr th:nth-child(4) {
+        width: 16%;
+        padding: 0.375rem 0.2rem !important;
+      }
+      
+      
+      .invs-dividend-wrap table tr th:nth-child(5) {
+        width: 25%;
+        padding: 0.375rem 0.2rem !important;
+      }
+      
+      .invs-dividend-wrap table tr th:nth-child(6) {
+        width: 15%;
+        padding: 0.375rem 0.1rem !important;
+      }
+      
+      .invs-dividend-wrap table tr th:nth-child(7) {
+        width: 33%;
+        padding: 0.375rem 0.1rem !important;
+      }
+
+    .invs-dividend-wrap .table-bordered td {
+        font-family: var(--font-tstar-medium);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #303030;
+    }
+
+    .invs-dividend-wrap .table-bordered thead th {
+        font-family: var(--font-tstar-heavy);
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: #303030;
+    }
+
+    .invs-dividend-wrap .dropdown--wrap .invs-dividend-year-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+/*  Changes for Investors Analyst Coverage Table */
+.inv-analyst-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 41px 89px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 10.5263px 39.4737px rgb(120 120 120 / 15%);
+    border-radius: 12px;
+    padding: 0 3.25rem 2.375rem 2.938rem;
+}
+
+.invs-analyst-wrap .inv-analyst-main-heading {
+    margin: 1.125rem auto;
+}
+
+.invs-analyst-wrap .inv-analyst-main-heading p {
+    font-family: var(--font-tstar-heavy);
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    color: #303030;
+}
+
+.invs-analyst-wrap .inv-analyst-content-heading p {
+    font-family: var(--font-tstar-regular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #303030;
+}
+
+.invs-analyst-wrap .single-reports-quarter-download {
+    font-family: var(--font-tstar-regular);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #009FDA;
+    margin-left: 0.6rem;
+}
+
+.invs-analyst-wrap .inv-analyst-container .label-text {
+    font-family: var(--font-tstar-regular);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #303030;
+}
+
+
+
+.invs-analyst-wrap table tr,
+.invs-analyst-wrap table th tr,
+.invs-analyst-wrap table tr tr,
+.invs-analyst-wrap table td tr {
+    background-color: #fff;
+    text-align: center;
+    text-transform: none;
+    margin: 0;
+}
+
+.invs-analyst-wrap .analyst-scroll-wrapper {
+    margin-top: 1.125rem;
+}
+
+.invs-analyst-wrap .table-bordered thead td,
+.invs-analyst-wrap .table-bordered thead th {
+    background-color: #F7F9FA;
+    color: #303030 !important;
+    border: 0.6px solid #D9D9D9 !important;
+    vertical-align: initial;
+}
+
+.invs-analyst-wrap .table tbody+tbody {
+    border-top: none;
+}
+
+.invs-analyst-wrap .table-bordered td,
+.invs-analyst-wrap .table-bordered th {
+    border: 0.6px solid #D9D9D9 !important;
+    padding: 0.926rem 1rem 0.926rem 1rem !important;
+}
+
+.invs-analyst-wrap table tr:first-child th,
+.invs-analyst-wrap table th tr:first-child th,
+.invs-analyst-wrap table tr tr:first-child th,
+.invs-analyst-wrap table td tr:first-child th {
+    color: #ffffff;
+}
+
+.invs-analyst-wrap table tr th:nth-child(1) {
+    padding: 0.75rem 1rem !important;
+}
+
+.invs-analyst-wrap table tr th:nth-child(2) {
+    padding: 0.75rem 1rem !important;
+}
+
+.invs-analyst-wrap table tr th:nth-child(3) {
+    padding: 0.75rem 1rem !important;
+}
+
+.invs-analyst-wrap table tr th:nth-child(4) {
+    padding: 0.75rem 1rem !important;
+}
+
+.invs-analyst-wrap .table-responsive {
+    display: table;
+}
+
+.invs-analyst-wrap .table-bordered td {
+    font-family: var(--font-tstar-medium);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #303030;
+}
+
+.invs-analyst-wrap .table-bordered thead th {
+    font-family: var(--font-tstar-heavy);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #303030;
+}
+
+.invs-analyst-wrap table {
+    margin: 0 !important;
+}
+
+@media (max-width: 800px) {
+    .invs-analyst-wrap .inv-analyst-container {
+        margin: 52px 25px 89px 25px;
+        padding: 0 1.5rem 1.375rem 1.5rem;
+    }
+
+    .invs-analyst-wrap table tr th:nth-child(1) {
+        width: 13%;
+    }
+
+    .invs-analyst-wrap .inv-analyst-main-heading p {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .invs-analyst-wrap .inv-analyst-content-heading p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 569px) {
+    .invs-analyst-wrap .inv-analyst-container {
+        margin: 1rem 1rem 3rem 1rem;
+    }
+
+    .invs-analyst-wrap table tr,
+    .invs-analyst-wrap table th tr,
+    .invs-analyst-wrap table tr tr,
+    .invs-analyst-wrap table td tr {
+        text-align: center;
+    }
+
+    .invs-analyst-wrap .inv-analyst-content-heading p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 0 1rem 0;
+    }
+
+    .invs-analyst-wrap .single-reports-quarter-download {
+        display: none;
+    }
+
+    .invs-analyst-wrap .inv-analyst-main-heading {
+        margin: 1rem auto;
+    }
+
+    .invs-analyst-wrap .inv-analyst-main-heading p {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .invs-analyst-wrap {
+        margin: 1rem;
+        padding: 0 0.625rem 0.625rem 0.625rem;
+        background: #FFFFFF;
+        box-shadow: none;
+        border-radius: 0;
+        box-shadow: 0px 10.5263px 39.4737px rgba(120, 120, 120, 0.15);
+        border-radius: 4px;
+    }
+
+    .invs-analyst-wrap .table-bordered td,
+    .invs-analyst-wrap .table-bordered th {
+        padding: 0.375rem 0.3rem !important;
+    }
+
+
+    .invs-analyst-wrap .analyst-scroll-wrapper {
+        margin-top: 0;
+    }
+
+    .invs-analyst-wrap .table {
+        margin: 0;
+    }
+
+    .invs-analyst-wrap table tr th:nth-child(1) {
+        width: 15%;
+        padding: 0.75rem 0.375rem !important;
+    }
+
+    .invs-analyst-wrap table tr th:nth-child(2) {
+        width: 27%;
+        padding: 0.75rem 0.375rem !important;
+    }
+
+    .invs-analyst-wrap table tr th:nth-child(3) {
+        width: 30%;
+        padding: 0.75rem 0.375rem !important;
+    }
+
+    .invs-analyst-wrap table tr th:nth-child(4) {
+        padding: 0.75rem 0.375rem !important;
+    }
+
+    .invs-analyst-wrap .table-bordered td {
+        font-family: var(--font-tstar-medium);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #303030;
+    }
+
+    .invs-analyst-wrap .table-bordered thead th {
+        font-family: var(--font-tstar-heavy);
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #303030;
+    }
+}
+
+/*  Changes for Investors Credit Ratings Table */
+
+.inv-credit-container {
+    display: flex;
+    flex-direction: column;
+    margin: 52px 41px 38px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 10.5263px 39.4737px rgb(120 120 120 / 15%);
+    border-radius: 12px;
+}
+
+.invs-credit-wrap .inv-credit-content-wrap {
+    flex-direction: column;
+    padding-left: 1.25rem;
+}
+
+.invs-credit-wrap  .inv-credit-main-heading {
+    margin: 1.125rem auto;
+}
+
+.invs-credit-wrap  .inv-credit-main-heading p {
+    font-family: var(--font-tstar-heavy);
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #303030;
+}
+
+.invs-credit-wrap .inv-credit-middle-container {
+    padding: 0 2rem 2.188rem 2rem;
+}
+
+.invs-credit-wrap .inv-credit-content-heading p {
+    font-family: var(--font-tstar-regular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #303030;
+}
+
+.invs-credit-wrap .inv-credit-image-wrapper {
+    min-width: 236px;
+    min-height: 305px;
+}
+
+.invs-credit-wrap .single-reports-quarter-download {
+    font-family: var(--font-tstar-regular);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #009FDA;
+    margin-left: 0.6rem;
+}
+
+.invs-credit-wrap .inv-credit-desktop-img {
+    max-width: 236px;
+    max-height: 305px;
+}
+
+.invs-credit-wrap .inv-credit-container .label-text {
+    font-family: var(--font-tstar-regular);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #303030;
+}
+
+.invs-credit-wrap table tr,
+.invs-credit-wrap table th tr,
+.invs-credit-wrap table  tr tr,
+.invs-credit-wrap table td tr {
+    background-color: #fff;
+    text-transform: none;
+    margin: 0;
+}
+
+.invs-credit-wrap .credits-scroll-wrapper {
+    margin-top: 1.125rem;
+}
+
+.invs-credit-wrap .table-bordered thead td,
+.invs-credit-wrap .table-bordered thead th {
+    background-color: #F7F9FA;
+    color: #303030 !important;
+    border: 0.6px solid #D9D9D9 !important;
+    vertical-align: initial;
+}
+
+.invs-credit-wrap .table tbody+tbody {
+    border-top: none;
+}
+
+.invs-credit-wrap .table-bordered td,
+.invs-credit-wrap .table-bordered th {
+    border: 0.6px solid #D9D9D9 !important;
+    padding: 0.926rem 1rem 0.926rem 1rem !important;
+}
+
+.invs-credit-wrap table tr:first-child th,
+.invs-credit-wrap table th tr:first-child th,
+.invs-credit-wrap table tr tr:first-child th,
+.invs-credit-wrap table d tr:first-child th {
+    color: #ffffff;
+}
+
+.invs-credit-wrap table tr th:nth-child(1) {
+    padding: 0.75rem 1rem !important;
+}
+
+.invs-credit-wrap table tr th:nth-child(2) {
+    padding: 0.75rem 1rem !important;
+}
+
+.invs-credit-wrap table tr th:nth-child(3) {
+    padding: 0.75rem 1rem !important;
+}
+
+.invs-credit-wrap table tr th:nth-child(4) {
+    padding: 0.75rem 1rem !important;
+}
+
+.invs-credit-wrap .table-responsive {
+    display: table;
+}
+
+.invs-credit-wrap .table-bordered td {
+    font-family: var(--font-tstar-medium);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #303030;
+}
+
+.invs-credit-wrap .table-bordered thead th {
+    font-family: var(--font-tstar-heavy);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #303030;
+}
+
+.invs-credit-wrap table {
+    margin: 0 !important;
+}
+
+.invs-credit-wrap .credits-note-wrapper {
+    margin-top: 13px;
+}
+
+.invs-credit-wrap .investor-text-note {
+    font-family: var(--font-tstar-heavy);
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #303030;
+    opacity: 0.8;
+    margin-right: 9px;
+}
+
+.invs-credit-wrap .investor-text-sub-note p {
+    font-family: var(--font-tstar-regular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #303030;
+    opacity: 0.8;
+}
+
+@media (max-width: 1250px) {
+    .invs-credit-wrap table tr th:nth-child(1) {
+        width: 7%;
+    }
+
+    .invs-credit-wrap table tr th:nth-child(2) {
+        width: 9%;
+        padding: 0.75rem 0.5rem !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .inv-credit-container {
+        margin: 52px 21px 89px 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .invs-credit-wrap table tr th:nth-child(3) {
+        padding: 0.75rem 1rem !important;
+    }
+
+    .invs-credit-wrap table tr th:nth-child(4) {
+        padding: 0.75rem 1rem !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .invs-credit-wrap .inv-credit-main-heading p{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .invs-credit-wrap .inv-credit-content-heading p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 569px) {
+    .inv-credit-container {
+        margin: 1rem 1rem -5px 1rem;
+    }
+
+    .invs-credit-wrap .inv-credit-middle-container {
+        flex-direction: column;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .invs-credit-wrap .inv-credit-image-wrapper {
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .invs-credit-wrap table tr,
+    .invs-credit-wrap table th tr,
+    .invs-credit-wrap table  tr tr,
+    .invs-credit-wrap table td tr {
+        text-align: center;
+    }
+
+    .invs-credit-wrap .inv-credit-content-wrap {
+        padding-left: 0;
+        margin-top: 22px;
+    }
+
+    .invs-credit-wrap .inv-credit-content-heading p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .invs-credit-wrap .single-reports-quarter-download {
+        display: none;
+    }
+
+    .invs-credit-wrap .inv-credit-main-heading {
+        margin: 1rem auto;
+    }
+
+    .invs-credit-wrap .inv-credit-main-heading p {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .invs-credit-wrap  {
+        padding: 0;
+        background: #FFFFFF;
+        box-shadow: 0px 10.5263px 39.4737px rgba(120, 120, 120, 0.15);
+        border-radius: 4px;
+    }
+
+    .invs-credit-wrap .table-bordered td,
+    .invs-credit-wrap .table-bordered th {
+        padding: 0.375rem 0.3rem !important;
+    }
+
+
+    .invs-credit-wrap .credits-scroll-wrapper {
+        margin-top: 0;
+    }
+
+    .invs-credit-wrap .table {
+        margin: 0;
+    }
+
+    .invs-credit-wrap table tr th:nth-child(1) {
+        width: 16%;
+        padding: 0.75rem 0.375rem !important;
+    }
+
+    .invs-credit-wrap table tr th:nth-child(2) {
+        width: 28%;
+        padding: 0.75rem 0.375rem !important;
+    }
+
+    .invs-credit-wrap table tr th:nth-child(3) {
+        padding: 0.75rem 0.375rem !important;
+    }
+
+    .invs-credit-wrap table tr th:nth-child(4) {
+        padding: 0.75rem 0.375rem !important;
+    }
+
+    .invs-credit-wrap .table-bordered td {
+        font-family: var(--font-tstar-medium);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #303030;
+    }
+
+    .invs-credit-wrap .table-bordered thead th {
+        font-family: var(--font-tstar-bold);
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #303030;
+    }
+
+    .invs-credit-wrap .credits-note-wrapper {
+        margin-top: 12px;
+    }
+
+    .invs-credit-wrap .investor-text-note {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .invs-credit-wrap .investor-text-sub-note p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

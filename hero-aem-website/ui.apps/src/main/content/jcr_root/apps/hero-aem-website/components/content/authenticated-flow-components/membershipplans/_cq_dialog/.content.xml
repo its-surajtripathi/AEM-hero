@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Membership Plans"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-author_editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <membershipTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Memberships"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <logo
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldDescription="Configure Logo"
+                                fieldLabel="Configure Logo"
+                                name="./logo"
+                                rootPath="/content/dam/hero-aem-website"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldDescription="Configure Background Image from DAM"
+                                fieldLabel="Configure Background Image"
+                                name="./bgimage"
+                                rootPath="/content/dam/hero-aem-website"/>
+                            <goodlifelogo
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldDescription="Configure Goodlife Logo"
+                                fieldLabel="Configure Goodlife Logo"
+                                name="./goodlifelogo"
+                                rootPath="/content/dam/hero-aem-website"/>
+                            <legend
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Legend">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./legend">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <configurations
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <configs
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Legend Details"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <planicon
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldDescription="Configure Icon Image from DAM"
+                                                            fieldLabel="Configure Icon Path"
+                                                            name="./planicon"
+                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                        <plantext
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                            fieldLabel="Enter Plan Text"
+                                                            name="./plantext"
+                                                            useFixedInlineToolbar="{Boolean}true">
+                                                            <rtePlugins
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                            <uiSettings
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                            <htmlRules jcr:primaryType="nt:unstructured">
+                                                                <blockHandling
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    removeSingleParagraphContainer="{Boolean}true"/>
+                                                            </htmlRules>
+                                                        </plantext>
+                                                        <type
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                                            fieldDescription="Select Type"
+                                                            fieldLabel="Select Theme"
+                                                            name="./type">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <offersamount
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    checked="{Boolean}true"
+                                                                    text="Online Shopping Offers"
+                                                                    value="offersamount"/>
+                                                                <welcomepoints
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Welcome Bonus Points"
+                                                                    value="welcomepoints"/>
+                                                                <referralpoints
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="2 Wheeler Self Referral Bonus Points"
+                                                                    value="selfreferralpoints"/>
+                                                                <twowheelerreferralpoints
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="2 Wheeler Referral Bonus Points"
+                                                                    value="twowheelerreferralpoints"/>
+                                                                <pucpoints
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="PUC Bonus Points"
+                                                                    value="pucpoints"/>
+                                                                <specialoffer
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Special Offers"
+                                                                    value="specialoffer"/>
+                                                                <insurancecover
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Personal Accidental Insurance Cover"
+                                                                    value="insurancecover"/>
+                                                                <exclusiveoppt
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Biking Expedition"
+                                                                    value="exclusiveoppt"/>
+                                                            </items>
+                                                        </type>
+                                                        <featuretext
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Feature Text"
+                                                            name="./featuretext"/>
+                                                    </items>
+                                                </configs>
+                                            </items>
+                                        </configurations>
+                                    </items>
+                                </field>
+                            </legend>
+                            <memberships
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Memberships">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./memberships">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <configurations
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <configs
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Membership Details"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <image
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldDescription="Configure Background Image from DAM"
+                                                            fieldLabel="Configure Background Image"
+                                                            name="./image"
+                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                        <banneriamge
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Configure Banner Image"
+                                                            name="./bannerimage"
+                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                        <name
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Title"
+                                                            name="./name"/>
+                                                        <amount
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Amount"
+                                                            name="./amount"/>
+                                                        <offersamount
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Offers Amount"
+                                                            name="./offersamount"/>
+                                                        <welcomepoints
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Welcome Points"
+                                                            name="./welcomepoints"/>
+                                                        <selfreferralpoints
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Self Referral Points"
+                                                            name="./selfreferralpoints"/>
+                                                        <twowheelerreferralpoints
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Two Wheeler Referral Points"
+                                                            name="./twowheelerreferralpoints"/>
+                                                        <pucpoints
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="PUC Points"
+                                                            name="./pucpoints"/>
+                                                        <specialoffer
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Special Offers"
+                                                            name="./specialoffer"/>
+                                                        <insurancecover
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Insurance Cover"
+                                                            name="./insurancecover"/>
+                                                        <selectbutton
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Select Button Label"
+                                                            name="./selectbutton"/>
+                                                        <selectbuttonlink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Select Button Link"
+                                                            name="./selectbuttonlink"
+                                                            rootPath="/content/hero-aem-website"/>
+                                                        <exclusiveoppt
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            checked="{Boolean}false"
+                                                            fieldDescription="Check if its an exclusive option"
+                                                            name="./exclusiveoppt"
+                                                            text="Exclusive Option?"
+                                                            uncheckedValue="false"
+                                                            value="true"/>
+                                                        <cross
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldDescription="Configure Cross Icon"
+                                                            fieldLabel="Configure Cross Icon"
+                                                            name="./cross"
+                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                        <tick
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldDescription="Configure Tick Icon"
+                                                            fieldLabel="Configure Tick Icon"
+                                                            name="./tick"
+                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                        <additionalClass
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter Additional Class if any"
+                                                            name="./addtnClass"/>
+                                                    </items>
+                                                </configs>
+                                            </items>
+                                        </configurations>
+                                    </items>
+                                </field>
+                            </memberships>
+                        </items>
+                    </membershipTab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

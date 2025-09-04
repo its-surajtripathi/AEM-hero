@@ -1,0 +1,159 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div class="container-fluid-width premia-invite" data-current-resource="${resource.path}">
+  <div class="premia-invite-container">
+    <div class="premia-invite-header">
+      ${properties.title1}<span>${properties.title2}</span>
+    </div>
+    <p data-sly-test="${properties.text}" class="premia-invite-header-body mt-52 mt-mobile-37 mx-mobile-30 mb-0">
+      ${properties.text}
+    </p>
+    <!-- <div class="mt-68 scroll-down">
+      <img
+        src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/arrow.gif"
+        alt="scroll down"
+      />
+    </div> -->
+    <div class="premia-invite-image-wrapper unreveal-envelope">
+      <div class="premia-invite-image-wrapper-container">
+        <div class="premia-invite-image-container">
+          <img
+            src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/invite-envelope.png"
+            loading="lazy" alt="teaser premia invite envelope" />
+        </div>
+        <div class="premia-invite-circle">
+          <div class="premia-invite-circle-text">
+            <a class="premia-invite-get-your-label py-51 px-28" aria-label="Get your invite" href="#"
+              rel="noopener noreferer">
+              ${properties.text3}
+              <span class="premia-invite-invitaion">${properties.text4}</span>
+            </a>
+          </div>
+          <div class="premia-invite-circle-circle-text premia-invite-scrolling-animation-anti-clock">
+            <p>${properties.circleText}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="invite-modal" id="invite-model01">
+    <div class="invite-modal-fade-container pt-0">
+      <div class="invite-modal-container py-32 pr-32 pl-70 py-mobile-16 px-mobile-24">
+        <div class="invite-modal-close">
+          <div class="invite-modal-close-container">
+            <img
+              src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/close-black.png"
+              loading="lazy" alt="close" />
+          </div>
+        </div>
+        <div class="invite-modal-content">
+          <!-- invitation form -->
+          <div class="premia-invitation-form">
+            <h4 class="heading">${properties.formTitle}</h4>
+            <div class="form-desc-text">${properties.formDesc}</div>
+            <form id="premia-invitation-form" data-aa-form-type="premia">
+              <div class="premia-row">
+                <div class="premia-col-6 pr-76 pr-mobile-0">
+                  <div class="premia-form-group mb-52">
+                    <label for="name" class="mb-8">Name</label>
+                    <input id="userName" name="name" class="premia-form-control pb-12 name" type="text" />
+                  </div>
+                </div>
+                <div class="premia-col-6 pr-76 pr-mobile-0">
+                  <div class="premia-form-group mb-52">
+                    <label for="email" class="mb-8">Email</label>
+                    <input id="userEmail" name="email" class="premia-form-control pb-12 email" type="email" />
+                  </div>
+                </div>
+              </div>
+              <div class="premia-row">
+                <div class="premia-col-6 pr-76 pr-mobile-0">
+                  <div class="premia-form-group mb-52">
+                    <label for="mobileNumber" class="mb-8">Contact No.</label>
+                    <div class="premia-contactno-wrapper">
+                      <span class="countrycode">+91</span>
+                      <input id="userMobile" maxlength="10" minlength="10" name="namobileNumber"
+                        class="premia-form-control pb-12 mobilenumber-box" type="text" />
+                      <a class="disabled" id="sendotp" onclick="onSendOTP()">SEND OTP</a>
+                    </div>
+                    <div class="otp-timer" id="otptimer"></div>
+                  </div>
+                </div>
+                <div class="premia-col-6 pr-76 pr-mobile-0">
+                  <div class="premia-form-group mb-52">
+                    <label for="otp" class="otp-label premia-invisible disabled m-visible">OTP</label>
+                    <div class="otp-container disable-input">
+                      <label for="otp" class="otp-label disabled pr-10 m-invisible">OTP</label>
+                      <input name="otp" class="premia-form-control otpbox" maxlength="1" type="tel" id="digit-1"
+                        data-next="digit-2" />
+                      <input name="otp" class="premia-form-control otpbox" maxlength="1" type="tel" id="digit-2"
+                        data-next="digit-3" data-previous="digit-1" />
+                      <input name="otp" class="premia-form-control otpbox" maxlength="1" type="tel" id="digit-3"
+                        data-next="digit-4" data-previous="digit-2" />
+                      <input name="otp" class="premia-form-control otpbox" maxlength="1" type="tel" id="digit-4"
+                        data-next="digit-5" data-previous="digit-3" />
+                      <input name="otp" class="premia-form-control otpbox" maxlength="1" type="tel" id="digit-5"
+                        data-next="digit-6" data-previous="digit-4" />
+                      <input name="otp" class="premia-form-control otpbox" maxlength="1" type="tel" id="digit-6"
+                        data-next="digit-1" data-previous="digit-5" />
+                      <div class="tick d-none">
+                        <img
+                          src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/tick.png"
+                          loading="lazy" alt="tick" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- end here -->
+        </div>
+      </div>
+      <div class="form-button-container">
+        <button type="submit" class="btn-submit disabled invite-done" disabled>
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- post form submit event component -->
+<div class="premia-invite-success-container d-none" data-lottie="${properties.filePath}"
+  data-lottie-mobile="${properties.mobileFilePath}">
+  <div id="invite-lottie-container"></div>
+  <!-- <img src="${properties.filePath}" alt="silk gif" /> -->
+</div>
+<!-- end here -->
+
+<!-- Launch event info section starts -->
+<div class="launch-event-info-container d-none">
+  <!-- <div class="container-fixed-width launch-event-text-wrapper">
+    <h4 class="text-style">${properties.postLunchTitle}</h4>
+    <div class="month">${properties.month} <span class="date">${properties.date}</span></div>
+    <div class="separator-line"></div>
+    <div class="time mt-40 mb-20">${properties.time} <span>${properties.ampm}</span></div>
+  </div> -->
+  <div class="container-fixed-width launch-event-text-wrapper">
+    <img class="mb-100 bike-logo" src="${properties.iconRef}" loading="lazy" alt="logo" />
+    <h4 class="text-style bike-description">
+      ${properties.postLunchDescription}
+    </h4>
+    <!-- <a
+      href="${properties.buttonLink}"
+      target="_blank"
+      ref="noopener noreferer"
+      aria-label="Discover more"
+      class="premia-btn-primary"
+    > -->
+    <div class="countdown-invite-text">${properties.buttonName}</div>
+    <!-- </a> -->
+  </div>
+  <div class="image-wrapper">
+    <img src="${properties.imgRef}" loading="lazy" alt="bike" />
+  </div>
+</div>
+<!-- Launch event info section ends -->

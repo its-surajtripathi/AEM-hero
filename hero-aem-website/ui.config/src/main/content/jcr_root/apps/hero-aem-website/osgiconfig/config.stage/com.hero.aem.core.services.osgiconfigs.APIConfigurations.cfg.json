@@ -1,0 +1,17 @@
+{    
+    "leadGenAPI" : "http://103.228.152.227/HMCBikeLeadWebService_new/Service.svc/HMCLeadInsert",
+    "leadGenSource" : "HeroTestLeads",
+    "leadGenToken" : "$[env:LEAD_GEN_TOKEN]",
+    "aemProxyHost" : "$[env:AEM_PROXY_HOST]",
+    "sendSMSAPI" : "https://hahttp.myvfirst.com/smpp/sendsms",
+    "skipOTPValidation" : "true",
+    "sendSMSAPIFromName" : "HMCLTD",
+    "sendSMSAPIMsgHome" : "{otp} is your OTP for Hero Enquiry. Kindly submit it for your mobile verification. DO NOT SHARE IT WITH OTHERS.-HMCL",
+    "sendSMSAPIMsgProduct" : "{otp} is your OTP for Hero {vehicleName} enquiry. Kindly submit it for your mobile verification. DO NOT SHARE IT WITH OTHERS. - HMCL",
+    "sendSMSAPIPassword" : "$[secret:SMS_API_PASSWORD]",
+    "sendSMSAPITemplateIDHome" : "1707160568313350195",
+    "sendSMSAPITemplateIDProduct" : "1707160568304444608",
+    "sendSMSAPIUsername" : "$[env:SMS_API_USERNAME]",
+    "geocodeAPIURL" : "https://maps.googleapis.com/maps/api/geocode/json",
+    "geocodeAccessKey" : "$[env:GEOCODE_API_KEY]"
+}

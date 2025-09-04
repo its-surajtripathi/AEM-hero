@@ -1,0 +1,128 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<section class="section-styles container-full-height enable-scroll-snap align-center">
+  <div class="container-fixed-width acaa-invite" data-current-resource="${resource.path}" data-invite-present="true">
+    <div class="acaa-invite-container" data-successMsg="${properties.successmsg @ context='html'}">
+      <div class="leadgen-invite-wrapper ">
+        <div class="leadgen-invite-wrapper-card">
+          <picture>
+            <source media="(min-width: 992px)" srcset="
+                /etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/images/leadgen-card.png
+              " />
+            <source media="(max-width: 991px)" srcset="
+                /etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/images/leadgen-card-mobile.png
+              " />
+            <img class="container-bg-image"
+              src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/images/leadgen-card.png"
+              loading="lazy" alt="leadgen bg" />
+          </picture>
+          <div class="leadgen-container">
+            <div class="leadgen-invite-wrapper-container">
+              <div class="leadgen-invite-wrapper-content">
+                ${properties.title @ context='html'}
+                <!-- this is for reference <div class="acaa-section-heading heading"></div> -->
+                <div class="logo-wrapper">
+                  <img data-sly-test="${properties.imgRef}" src="${properties.imgRef}" alt="karizma logo"
+                    loading="lazy" />
+                </div>
+                <div class="line-bottom-right">
+                  <img
+                    src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/images/left-bottom-line.png"
+                    loading="lazy" alt="divider" />
+                </div>
+              </div>
+              <div class="form-container">
+                <!-- success message container -->
+                <div class="success-wrapper" id="success-wrapper">
+                  <div class="success-container">
+                    <div class="success-bg">
+                      <video muted id="successmessage" controlsList="nofullscreen" webkit-playsinline playsinline
+                        playcount="1">
+                        <!-- <source src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/video/leadgen_success.mp4" type="video/mp4"> -->
+                        <source src="${properties.successVideo}" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="state-message">
+                      ${properties.successmsg @ context='html'}
+                    </div>
+                    <div class="right-bottom-line">
+                      <img
+                        src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-acaa/clientlib-acaa-brand-teaser/resources/images/right-bottom-line.png"
+                        alt="bottom right line" loading="lazy" />
+                    </div>
+                    <div class="form-bottom-right-container"></div>
+                  </div>
+                  <div class="submit-leadgen-form" onclick="submitNewLead()">
+                    <a class="new-leadgen-btn"> ${properties.btnlabel2 @ context='html'}</a>
+                  </div>
+                </div>
+
+                <!-- end here -->
+                <div class="leadgen-invite-form">
+                  <form id="leadgen-form">
+                    <div class="form-group">
+                      <label for="userName">Name</label>
+                      <input type="text" class="form-control name" id="userName" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                      <label for="userEmail">Email</label>
+                      <input type="email" class="form-control email" id="userEmail" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                      <label for="pincode">Pincode</label>
+                      <input type="tel" class="form-control pincode" id="pincode" maxlength="6" minlength="6"
+                        name="pincode" autocomplete="off" />
+                      <span class='error-message' id="pincodeerrormessage"></span>
+                    </div>
+                    <div class="form-group">
+                      <div class="phone-and-otp-wrapper">
+                        <label for="userMobile">Phone</label>
+                        <input type="tel" class="form-control mobileNumber" id="userMobile" maxlength="10"
+                          minlength="10" name="mobileNumber" autocomplete="off" />
+                        <span class='error-message' id="phoneerrormessage"></span>
+                        <a class="send-btn disabled" id="sendotp" onclick="onSendOTP()">SEND OTP</a>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="OTP">OTP</label>
+                      <div class="otptime-container">
+                        <div class="otp-container">
+                          <input name="otp" class="form-control otpbox" disabled maxlength="1" type="tel" id="digit-1"
+                            data-next="digit-2" />
+                          <input name="otp" class="form-control otpbox" disabled maxlength="1" type="tel" id="digit-2"
+                            data-next="digit-3" data-previous="digit-1" />
+                          <input name="otp" class="form-control otpbox" disabled maxlength="1" type="tel" id="digit-3"
+                            data-next="digit-4" data-previous="digit-2" />
+                          <input name="otp" class="form-control otpbox" disabled maxlength="1" type="tel" id="digit-4"
+                            data-next="digit-5" data-previous="digit-3" />
+                          <input name="otp" class="form-control otpbox" disabled maxlength="1" type="tel" id="digit-5"
+                            data-next="digit-6" data-previous="digit-4" />
+                          <input name="otp" class="form-control otpbox" disabled maxlength="1" type="tel" id="digit-6"
+                            data-next="digit-1" data-previous="digit-5" />
+                        </div>
+                        <div class="otp-timer" id="otptimer"></div>
+                        `
+                      </div>
+                      <div>
+                        <div class="error-message" id="otperrormessage"></div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="form-bottom-container"></div>
+                </div>
+                <div class="form-button-container" data-resubmit-label="${properties.btnlabel2}">
+                  <button type="submit" id="lead-gen-submit-button" class="btn-submit disabled" disabled
+                    onclick="sendLeadgenData()">
+                    ${properties.btnlabel}
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

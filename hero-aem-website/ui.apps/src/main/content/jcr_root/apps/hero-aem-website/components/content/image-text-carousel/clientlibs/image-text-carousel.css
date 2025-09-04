@@ -1,0 +1,183 @@
+.image-text-carousel .image-text-container {
+    max-width: 1293px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.image-text-carousel .image-text-wrapper {
+    display: flex;
+    margin-left: 7px;
+}
+
+.image-text-carousel .image-wrapper {
+    position: relative;
+}
+
+.image-text-carousel .image-wrapper .image {
+    background: rgba(218, 238, 247, 0.5);
+    object-fit: cover;
+    min-width: 313px;
+    height: 307px;
+}
+
+.image-text-carousel .image-text-wrapper .text-wrapper {
+    padding: 24px 65px 0;
+}
+
+.image-text-carousel .image-text-wrapper .text-wrapper .text-heading {
+    font-family: var(--font-open-sans);
+    font-weight: var(--font-weight-800);
+    line-height: 1.36;
+    font-size: var(--font-size42);
+    position: relative;
+}
+
+.image-text-carousel .image-text-wrapper .text-wrapper .text-description {
+    padding: 21px 0 12px;
+}
+
+.image-text-carousel .image-text-wrapper .text-wrapper .text-description h5 {
+    padding-bottom: 12px;
+    font-size: var(--font-size22);
+    font-weight: var(--font-weight-600);
+    font-family: var(--font-open-sans-semibold);
+    line-height: 1.36;
+}
+
+.image-text-carousel .image-text-wrapper .text-wrapper .text-description p {
+    font-size: var(--font-size22);
+    font-family: var(--font-open-sans-light);
+    line-height: 1.36;
+    font-weight: var(--font-weight-400);
+}
+
+.image-text-carousel .image-text-wrapper .text-wrapper .text-heading::before {
+    content: "\201C";
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+
+.image-text-carousel .image-text-wrapper .text-wrapper .text-heading::after {
+    content: "\201D";
+}
+
+.image-text-carousel .image-border {
+    line-height: 0;
+    height: 52px;
+    width: 13px;
+    transform: skewY(60deg);
+    background-color: #EE2326;
+    position: absolute;
+    left: -7px;
+    top: 14px;
+}
+
+.image-text-carousel .slick-dots {
+    bottom: -21px;
+}
+
+.image-text-carousel .slick-dots li button:before {
+    content: "";
+    line-height: 0;
+    height: 4px;
+    width: 26px;
+    transform: skew(-60deg);
+}
+
+
+.image-text-carousel .slick-dots li button {
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+.image-text-carousel .slick-dots li {
+    width: 26px;
+    height: 3px;
+    margin: 0 3px;
+    padding: 0;
+}
+
+.image-text-carousel .our-mission-section .slick-dots {
+    bottom: -25px;
+    line-height: 0;
+}
+
+.image-text-carousel .slick-dots li.slick-active button:before {
+    background-color: #EE2326;
+}
+
+.image-text-carousel .slick-dots li button:before {
+    background-color: #c1c1c1;
+    opacity: 1;
+    color: unset;
+}
+
+.image-text-carousel .slick-dotted.slick-slider {
+    margin-bottom: 42px;
+}
+
+@media (max-width: 1299) {
+    .image-text-carousel .image-text-container {
+        max-width: 1050px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-text-carousel .image-text-container {
+        width: 100%;
+        padding: 0 16px;
+        margin-top: 12px;
+    }
+
+    .image-text-carousel .image-wrapper .image {
+        min-width: 81px;
+        height: 83px;
+    }
+
+    .image-text-carousel .image-border {
+        height: 13.62px;
+        width: 3.42px;
+        left: -2px;
+        top: 4px;
+    }
+
+    .image-text-carousel .image-text-wrapper .text-wrapper .text-heading {
+        font-size: var(--font-size12);
+        position: relative;
+    }
+
+    .image-text-carousel .image-text-wrapper .text-wrapper .text-description h5 {
+        padding-bottom: 4px;
+        font-size: var(--font-size10);
+    }
+
+    .image-text-carousel .image-text-wrapper .text-wrapper .text-description p {
+        font-size: var(--font-size10);
+    }
+
+    .image-text-carousel .image-text-wrapper .text-wrapper {
+        padding: 0 14px;
+    }
+
+    .image-text-carousel .image-text-wrapper .text-wrapper .text-heading::before {
+        top: 0;
+        left: -7px;
+    }
+
+    .image-text-carousel .image-text-wrapper .text-wrapper .text-description {
+        padding: 4px 0 0;
+    }
+
+    .image-text-carousel .slick-dots li {
+        width: 22px;
+        margin: 0;
+    }
+
+    .image-text-carousel .slick-dots li button:before {
+        width: 17.69px;
+    }
+
+}

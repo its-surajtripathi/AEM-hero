@@ -1,0 +1,13 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div id="timerSticky">
+    <div id="countdown" data-date="${'yyyy-MM-dd HH:mm:ss.SSSXXX' @ format=properties.countdown, timezone='IST'}"></div>
+    <sly data-sly-test="${properties.countdown}">
+        <div class="countdown-container">
+            <div class="countdown-text">${properties.countdowndesc @ context='html'} 
+                <p data-sly-test="${properties.hidetime!='true'}">${ 'MMMM dd, hh:mm a' @ format=properties.countdown, timezone='IST', locale='en'}</p> ${properties.airon} <span class="${properties.hidetime=='true'?'normal-style':''}" id="timer"></span>
+            </div>
+        </div>
+    </sly>
+</div>

@@ -1,0 +1,57 @@
+<div class="step-section selfjobcard book-serv-pages active" id="self-jobcard-container">
+
+    <div class="row">
+        <div class="sub-heading col-md-12 col-lg-12 col-sm-12 col-xs-12 ">
+            <div class="serv-left-right">
+                <img src="${properties.selfjobcardIcon}" alt="image" />
+            </div>
+            <div class="serv-left-right">
+                <h5 class="service-heading">${properties.selfjobcardLabel}</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <h6>${properties.selfjobcardDescription}</h6>
+        </div>
+    </div>
+
+    <div class="row getComplaintCodes">
+        <script type="text/html" class="getCodesTemplate">
+            <div class="job-card-check-box">
+                <% _.each(vehicleDetails, function(item, i, list) { %>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="<%=vehicleDetails[i].Comp_Code%>" id="flexCheckDefault" data-checkbox-value="<%=vehicleDetails[i].Comp_Desc%>">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        <%=vehicleDetails[i].Comp_Desc%>
+                    </label>
+                </div>
+                <% });%>
+            </div>
+        </script>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textarea-container">
+            <h5>${properties.otherissuesLabel}</h5>
+            <div class="form-group">
+                <textarea class="form-control self-job-card-text-area" maxlength="500" id="customer-comments" rows="3"
+                    placeholder="${properties.otherissuesPlaceholder}"></textarea>
+            </div>
+            <div id="the-count">
+                <span id="current">0</span>
+                <span id="maximum">/ 500</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="dealer-button-container row">
+        <div class="foot-btn">
+            <button class="btn btn-danger book-now-back-btn">${properties.backbuttonLabel}</button>
+            <button class="btn book-now-btn nxt-btn" id="job-crd-nxt-btn">${properties.nextbuttonLabel}</button>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,53 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+	format=[component.title], i18n} </sly>
+
+<section id="${properties.xtracgalleryid}" class="xtrac-gallery-section">
+  <img class="xtrac-background-gallery" src="${properties.xtrackgallerybgimg}">
+  <div class="xtrac-contents-wrapper">
+	  <div class="xtrac-gallery-heading">${properties.xtrackgalleryTitle @ context='html'}</div>
+	  <ul class="xtrac-gallery-nav xtrac-gallery-nav-tabs justify-content-center">
+		  <li class="xtrac-gallery-nav-item">
+			  <h2 class="xtrac-gallery-nav-link" id="videoHeading">${properties.xtrackvideoTitle @ context='html'}</h2>
+		  </li>
+		  <li class="xtrac-gallery-nav-item">
+			  <h2 class="xtrac-gallery-nav-link" id="photoHeading">${properties.xtrackimageTitle @ context='html'}</h2>
+		  </li>
+	  </ul>
+	  	<div id="xtracVideoWrap" class="xtrac-video-outer-wrapper">
+			<sly data-sly-use.videoitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='xtrackvidmulti'}">
+			<div class="content-video-xtrac--slider-wrap">
+					<sly data-sly-list="${videoitems}">
+						<div class="xtarc--video-gallery-tile">
+							<div class="video-hover-enlarge">
+								<a class="d-desktop-video-xtrac" href="${item.properties.xtrackvidUrl}">
+									<div class="video-hover-enlarge-img">
+										<img class="hdbc-monitor-image-files"src="${item.properties.xtrackvidthumb}" alt="">
+									</div>
+								</a>
+								${item.properties.xtrackvidcaption @ context='html'}
+							</div>
+						</div>
+				</sly>
+			</div>
+			</sly>
+		</div>
+		
+		<div id="xtracImageWrap" class="xtrac-photo-outer-wrapper">
+			<sly data-sly-use.imageitems="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='xtrackimgmulti'}">
+			  <div class="content-photo-xtrac--slider-wrap">
+					<sly data-sly-list="${imageitems}">
+						<div class="xtarc--photo-gallery-tile">
+							<div class="image-hover-enlarge">	
+							  <a class="d-desktop-image-xtrac" href="${item.properties.xtrackimagelg}">
+								  <div class="image-hover-enlarge-img">
+									  <img class="hdbc-monitor-image-files" src="${item.properties.xtrackimgthumb}">
+								  </div>
+							  </a>
+							</div>
+						</div>
+				  </sly>
+			  </div>
+			</sly>
+		</div>
+  </div>
+</section>

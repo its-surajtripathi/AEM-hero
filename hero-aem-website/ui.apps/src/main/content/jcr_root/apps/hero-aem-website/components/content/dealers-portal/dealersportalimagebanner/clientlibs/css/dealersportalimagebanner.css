@@ -1,0 +1,108 @@
+.imageBannerContainer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 4rem 0;
+    height: 340px;
+}
+
+.imageBannerContainer.grey-filter::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33,33,33,1);
+    opacity: 0.7;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+}
+
+.imageBannerContainer.grey-filter .imageBannerHeading{
+    z-index: 2;
+}
+
+.imageBannerImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.imageBannerHeading {
+    color: #fff;
+    font-family: "oswald";
+    text-align: center;
+    font-size: 53px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 100px;
+    border-bottom: 12px solid rgba(253, 216, 53, 1);
+    line-height: 64px;
+    font-weight: 400;
+    padding: 88px 10px 8px;
+}
+
+.imageBannerHeading.clr-black{
+    color: black !important;
+}
+
+.imageBannerTitle {
+    color: #fff;
+    text-align: center;
+    padding: 40px 48px 0;
+    margin: 45px 196px 0;
+    font-size: 18.66px;
+    line-height: 27px;
+    font-family: var(--font-open-sans-medium);
+    margin: 0;
+    padding-top: 15px;
+}
+
+@media (max-width : 767px) {
+
+    .imageBannerHeading,
+    .imageBannerTitle {
+        margin: 0 20px;
+    }
+
+    .imageBannerHeading {
+        font-size: 38px;
+        line-height: 46px;
+        font-weight: 400;
+    }
+
+    .imageBannerTitle {
+        padding: 20px;
+    }
+
+    .imageBannerImage {
+        height: 100%;
+    }
+
+    .imageBannerContainer {
+        margin-top: 3.2rem;
+        height: 270px;
+    }
+}
+
+.imageBannerHeight {
+    height: 100vh !important;
+}
+.left-align{
+    text-align:left;
+    }
+    .right-align{
+    text-align:right;
+    }

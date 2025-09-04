@@ -1,0 +1,30 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+  format=[component.title], i18n} </p> 
+<section class="contact-us-section">
+  <div class="container">
+    <div class="select-block">
+      <div class="selectaddress" for="address">
+        <p class="h4-heavy-heading-std">
+          Select dropdown to view addresses
+        </p>
+        <div class="dropdown--wrap">
+          <div class="select-dropdown">
+            <select name="address" id="${wcmmode.edit ? '' : 'addressList'}"></select>
+            <span class="select--para">
+              Select Address
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="addressPan">
+        <p>For all queries, please contact using the details below.</p>
+        <div class="tollpan">
+          <div class="mobilePan"><img src="/content/dam/hero-aem-website/icons/mobileIcon.gif"></div>
+          <div class="tollNoPan"><a href="tel:1800 266 0018"><p class="b2-text-std">Toll Free No.</p><span class="h4-heavy-heading-std">${properties.tollfreenumber}</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+</div>

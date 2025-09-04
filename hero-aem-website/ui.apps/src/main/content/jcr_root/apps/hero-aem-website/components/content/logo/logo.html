@@ -1,0 +1,9 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<a class="navbar-brand" aa-data-attr="track_cta"
+    data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.linkto}"
+    href="${linkuse.value}">
+    <img src="${properties.logoReference}" class="img-fluid ${properties.isnothome == 'true' ? 'desktop-logo' : ''}" alt="${properties.logoAlt}">
+    <img src="${properties.logoReferenceMobile}" class="img-fluid mobile-logo" alt="${properties.logoAlt}" data-sly-test="${properties.isnothome == 'true'}">
+</a>

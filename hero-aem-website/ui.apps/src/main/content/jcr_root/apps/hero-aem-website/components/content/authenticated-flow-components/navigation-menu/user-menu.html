@@ -1,0 +1,53 @@
+<sly data-sly-include="getprofile-template.html"></sly>
+
+<div class="d-none d-lg-block sideNavbar-links">
+	<div class="profilesection"></div>
+
+	<div class="sideNav-vertical"
+		data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='navItems'}"
+		data-sly-list="${listUse}">
+		<div class="sideNav-menu">
+			<a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.navLink}"
+			    class="${currentPage.path == item.properties.navLink ? 'active' : ' '}"
+				href="${linkuse.value}"
+				target="${linkuse.isExternal ? '_blank' : '_self'}">
+				<img src="${item.properties.activeIcon}" class="${currentPage.path == item.properties.navLink ? 'activeIcon' : 'd-none'}"/>
+                <img src="${item.properties.inactiveIcon}" class="${currentPage.path != item.properties.navLink ? 'inactiveIcon' : 'd-none'}"/>	
+
+			<span class="sideNav-title">${item.properties.navTitle}</span></a>
+		</div>
+	</div>
+</div>
+
+
+<nav class="d-block d-lg-none navbar navbar-expand-lg navbar-light bg-light sideNavbar">
+
+	<button class="navbar-toggler sideNav-toggle-btn" type="button" data-toggle="collapse"
+		 aria-controls="navbarNav"
+		aria-expanded="false" aria-label="Toggle navigation">
+		<span class="sideNav-btn-title">${properties.menuLabel}</span>
+		<span class="navbar-toggler-icon sideNav-ham-icon"></span>
+	</button>
+
+
+		<div class="sideNavbar-links">
+			<div class="profilesection"></div>
+
+			<div class="sideNav-vertical"
+				data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='navItems'}"
+				data-sly-list="${listUse}">
+				<div class="sideNav-menu">
+					<a data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.navLink}"
+					    class="${currentPage.path == item.properties.navLink ? 'active' : ' '}"
+						href="${linkuse.value}"
+						target="${linkuse.isExternal ? '_blank' : '_self'}">
+						<img src="${item.properties.activeIcon}" class="${currentPage.path == item.properties.navLink ? 'activeIcon' : 'd-none'}"/>
+                        <img src="${item.properties.inactiveIcon}" class="${currentPage.path != item.properties.navLink ? 'inactiveIcon' : 'd-none'}"/>
+						<span class="sideNav-title">${item.properties.navTitle}</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+</nav>

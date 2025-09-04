@@ -1,0 +1,6 @@
+<template data-sly-template.item1="${@ list, item}">
+<a href="${item.path @ extension = 'html'}" class="dropdown-item cmp-list__item-link${currentPage.path == item.path ? ' active' : ''}" 
+		aa-data-attr="track_cta">
+		${item.title}
+</a>
+</template>

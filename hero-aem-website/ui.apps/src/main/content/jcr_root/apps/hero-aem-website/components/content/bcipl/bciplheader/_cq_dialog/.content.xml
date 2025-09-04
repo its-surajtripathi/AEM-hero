@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="BCIPL Header"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <logotitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Please enter Logo Title"
+                                                fieldLabel="Enter Logo Title"
+                                                name="./logotitle"/>
+                                            <logourl
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Enter Home page redirection URL"
+                                                name="./logourl"
+                                                rootPath="/content/hero-aem-website"/>
+                                            <multifield
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="BCIPL Menu Item">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./bciplnavitem">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <navheading
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Please enter Nav item headimg"
+                                                            fieldLabel="Please enter Nav item heading"
+                                                            name="./navheading"/>
+                                                        <navlink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Enter URL"
+                                                            name="./navurl"
+                                                            rootPath="/content/hero-aem-website"/>
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <multifiled
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                    composite="{Boolean}true"
+                                                                    fieldLabel="click on add button to add sub nav Items">
+                                                                    <field
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                        name="./subnavitems">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <subnavheading
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldDescription="Please enter Nav item headimg"
+                                                                                fieldLabel="Please enter Nav item heading"
+                                                                                name="./subnavheading"/>
+                                                                            <subnavlink
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                fieldLabel="Enter URL"
+                                                                                name="./subnavurl"
+                                                                                rootPath="/content/hero-aem-website"/>
+                                                                            <field
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                    <multifield
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                        composite="{Boolean}true"
+                                                                                        fieldLabel="click on add button to add sub nav items">
+                                                                                        <field
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                            name="./secondsubnavitems">
+                                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                                <subnavheading
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                    fieldDescription="Please enter Nav item headimg"
+                                                                                                    fieldLabel="Please enter Nav item heading"
+                                                                                                    name="./secondsubnavheading"/>
+                                                                                                <subnavlink
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                    fieldLabel="Enter URL"
+                                                                                                    name="./secondsubnavurl"
+                                                                                                    rootPath="/content/hero-aem-website"/>
+                                                                                                <field
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                                        <multifield
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                                            composite="{Boolean}true"
+                                                                                                            fieldLabel="click on add button to add Sub Nav Items">
+                                                                                                            <field
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                                                                name="./thirdsubnavitems">
+                                                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                                                    <subnavheading
+                                                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                                        fieldDescription="Please enter Nav item headimg"
+                                                                                                                        fieldLabel="Please enter Nav item heading"
+                                                                                                                        name="./thirdsubnavheading"/>
+                                                                                                                    <subnavlink
+                                                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                                                        fieldLabel="Enter URL"
+                                                                                                                        name="./thirdsubnavurl"
+                                                                                                                        rootPath="/content/hero-aem-website"/>
+                                                                                                                </items>
+                                                                                                            </field>
+                                                                                                        </multifield>
+                                                                                                    </items>
+                                                                                                </field>
+                                                                                            </items>
+                                                                                        </field>
+                                                                                    </multifield>
+                                                                                </items>
+                                                                            </field>
+                                                                        </items>
+                                                                    </field>
+                                                                </multifiled>
+                                                            </items>
+                                                        </field>
+                                                    </items>
+                                                </field>
+                                            </multifield>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

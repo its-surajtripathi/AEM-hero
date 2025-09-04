@@ -1,0 +1,488 @@
+.carousel-wrapper {
+  padding: 120px 0;
+  position: relative;
+  @media screen and (max-width: 767px) {
+    padding-top: 40px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding-top: 100px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 150px;
+  }
+  .carousel.slick-initialized {
+    @media screen and (max-width: 767px) {
+      width: 90%;
+    }
+    margin: auto;
+
+    .slick-slide:not(.slick-active) {
+      opacity: 0.1;
+      z-index: -1;
+      @media screen and (min-width: 768px) {
+        // filter: blur(20px);
+        transform: scale3d(0.8, 0.8, 1);
+      }
+    }
+
+    .slick-slide.slick-active,
+    .current-transitioning-slide {
+      transition: transform 1.2s ease-out;
+      opacity: 1 !important;
+      @media screen and (min-width: 768px) {
+        transform: scale3d(1, 1, 1) !important;
+      }
+    }
+    .slick-slide {
+      position: relative;
+      transition: all 1.2s ease-out;
+      @media screen and (min-width: 1024px) {
+        margin: 0 -1.5%;
+      }
+    }
+
+    .slick-arrow {
+      top: 100%;
+      margin-top: 55px;
+      &.slick-prev {
+        right: 7.5%;
+        margin-right: 74px;
+        left: auto;
+        @media screen and (max-width: 1536px) {
+          margin-right: 56px;
+        }
+        @media screen and (max-width: 767px) {
+          left: 0;
+        }
+      }
+      &.slick-next {
+        right: 7.5%;
+        @media screen and (max-width: 767px) {
+          right: 0;
+        }
+      }
+      &.slick-prev,
+      &.slick-next {
+        width: 58px;
+        height: 58px;
+        border-radius: 58px;
+        border: 1px solid var(--color-white);
+        background-color: transparent;
+        z-index: 2;
+        @media screen and (max-width: 1536px) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      &.slick-prev::before,
+      &.slick-next::before {
+        width: 5px;
+        height: 5px;
+        border: solid white;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 5px;
+        @media screen and (max-width: 1536px) {
+          padding: 4px;
+        }
+      }
+
+      &.slick-prev::before {
+        content: "";
+        transform: rotate(135deg);
+        margin-right: -6px;
+      }
+      &.slick-next::before {
+        content: "";
+        transform: rotate(-45deg);
+        margin-left: -6px;
+      }
+    }
+    .slick-dots {
+      bottom: -60px;
+
+      li {
+        width: 24px;
+        height: 4px;
+        background-color: var(--color-melanzane);
+        border-radius: initial;
+        margin: 0 4px;
+        // transition: width 0s;
+
+        button {
+          padding: 1px;
+          height: 100%;
+          background-color: transparent;
+        }
+
+        &.slick-active {
+          width: 43px;
+          transition: width 0.5s linear;
+          button {
+            width: 100%;
+            background-color: var(--bg-color-trinidad);
+            // animation: progressBar linear both;
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-feature-text-container {
+    margin-bottom: 37px;
+    width: 480px;
+    @media screen and (max-width: 767px) {
+      width: 100%;      
+    }
+    @media (max-width: 1440px) and (min-width: 768px) {
+      width: 392px;
+    }
+  }
+}
+
+// @keyframes progressBar {
+//   from {
+//     width: 0px;
+//     background-color: var(--bg-color-trinidad);
+//   }
+
+//   to {
+//     background-color: var(--bg-color-trinidad);
+//     width: 43px;
+//   }
+// }
+// Carousel styling ends
+
+// Template styles starts
+.carousel-wrapper {
+  .carousel-feature {
+    &-container {
+      background: var(--teaser-feature-background-gradient);
+      font-family: var(--font-transducer);
+      position: relative;
+
+      @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+    &-image-cont {
+      margin: auto;
+    }
+
+    &-text-container {
+      @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 40%;
+        width: 400px;
+        z-index: 1;
+      }
+      @media screen and (min-width: 1440px) {
+        width: 500px;
+      }
+    }
+
+    &-line {
+      width: 24px;
+      height: 4px;
+      background-color: var(--bg-color-trinidad);
+      margin-bottom: 12px;
+
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 16px;
+        width: 40px;
+      }
+    }
+
+    &-title,
+    &-title-static {
+      color: var(--color-white);
+      font-size: var(--font-size-18);
+      font-family: var(--font-transducer);
+      font-weight: var(--font-weight-600);
+      margin-bottom: 8px;
+
+      @media screen and (min-width: 768px) {
+        font-size: var(--font-size-32);
+      }
+      @media screen and (min-width: 1536px) {
+        font-size: var(--font-size-40);
+      }
+      @media screen and (max-width: 767px) {
+        width: 270px;
+      }
+    }
+
+    &-desc {
+      color: var(--color-quill-gray);
+      font-size: var(--font-size-12);
+      font-family: var(--font-optika-regular);
+      margin-bottom: 57px;
+      @media screen and (min-width: 1024px) {
+        font-size: var(--font-size-14);
+      }
+      @media screen and (min-width: 1440px) {
+        font-size: var(--font-size-16);
+      }
+      @media screen and (min-width: 1536px) {
+        font-size: var(--font-size-18);
+        font-family: var(--font-transducer);
+        font-weight: var(--font-weight-500);
+        margin-bottom: 8px;
+
+        @media screen and (min-width: 768px) {
+          font-size: var(--font-size-32);
+        }
+        @media screen and (min-width: 1536px) {
+          font-size: var(--font-size-40);
+        }
+        @media screen and (max-width: 767px) {
+          width: 270px;
+        }
+      }
+
+      &-desc {
+        color: var(--color-quill-gray);
+        font-size: var(--font-size-12);
+        font-family: var(--font-optika-regular);
+        margin-bottom: 57px;
+        @media screen and (min-width: 1024px) {
+          font-size: var(--font-size-14);
+        }
+        @media screen and (min-width: 1440px) {
+          font-size: var(--font-size-16);
+        }
+        @media screen and (min-width: 1536px) {
+          font-size: var(--font-size-18);
+        }
+      }
+    }
+  }
+}
+
+// 2nd Carousel Varirant Css
+// .variant-two {
+//   .carousel-feature {
+//     overflow: hidden;
+
+//     &-line {
+//       display: none;
+//     }
+//     &-desc {
+//       margin-bottom: 40px;
+//     }
+//     @media screen and (max-width: 767px) {
+//       &-text-container {
+//         text-align: center;
+//         margin-bottom: 75px;
+//         padding: 0px 20px;
+//       }
+//       &-title {
+//         font-size: var(--font-size-18);
+//       }
+//       &-desc {
+//         margin-bottom: 10px;
+//         font-size: var(--font-size-14);
+//       }
+//     }
+//     @media only screen and (max-width: 1440px) and (min-width: 768px) {
+//       &-title {
+//         font-size: var(--font-size-24);
+//       }
+//       &-desc {
+//         font-size: var(--font-size-14);
+//         margin-bottom: 24px;
+//       }
+//     }
+//     @media only screen and (min-width: 1441px) {
+//       &-title {
+//         font-size: var(--font-size-32);
+//       }
+//       &-desc {
+//         font-size: var(--font-size-18);
+//         margin-bottom: 24px;
+//       }
+//     }
+//     &-verticalline {
+//       position: relative;
+//       border-left: 1px solid var(--color-quill-gray);
+//       padding-left: 30px;
+
+//       &:after {
+//         content: "";
+//         height: 100%;
+//         display: inline-block;
+//         position: absolute;
+//         width: 1px;
+//         background-color: var(--color-quill-gray);
+//         animation: horizontallineprogressbar linear both;
+//         animation-duration: 5s;
+//         left: -1px;
+//         top: 0;
+//       }
+
+//       @media screen and (max-width: 767px) {
+//         border: none;
+
+//         &:after {
+//           content: none;
+//         }
+//       }
+//     }
+//   }
+
+//   .carousel-feature {
+//     &-line {
+//       width: 24px;
+//       height: 4px;
+//       background-color: var(--bg-color-trinidad);
+//       margin: 21px 0 12px;
+//       @media screen and (min-width: 1440px) {
+//         margin-bottom: 16px;
+//         width: 40px;
+//       }
+//     }
+//     &-heading {
+//       font-size: var(--font-size-40);
+//       color: var(--color-white);
+//       font-family: var(--font-transducer);
+//       font-weight: var(--font-weight-500);
+//       line-height: var(--line-height-44);
+//       @media screen and (max-width: 767px) {
+//         font-size: var(--font-size-22);
+//       }
+//       @media only screen and (max-width: 1920px) and (min-width: 1279px) {
+//         font-size: var(--font-size-32);
+//       }
+//     }
+//   }
+
+//   .cmp-button {
+//     text-decoration: none;
+//     display: inline-block;
+
+//     .cmp-button__text {
+//       font-size: var(--font-size-14);
+//       color: var(--bg-color-trinidad);
+//       font-family: var(--font-transducer);
+//       font-weight: var(--font-weight-400);
+//       display: flex;
+//       align-items: center;
+//       @media screen and (min-width: 1441px) {
+//         font-size: var(--font-size-18);
+//       }
+//       &:after {
+//         content: "";
+//         display: inline-block;
+//         width: 24px;
+//         height: 24px;
+//         object-fit: fill;
+//         background-image: url("/apps/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/chevron_right.png");
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         margin-top: 2px;
+//         @media screen and (min-width: 1441px) {
+//           width: 32px;
+//           height: 32px;
+//         }
+//       }
+//     }
+//   }
+
+//   .slick-dots {
+//     position: relative;
+//     border-image: url("/apps/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/indicator.png")
+//       50% round;
+//     width: 50%;
+//     height: 2px;
+//     margin: 0 auto;
+//     background: linear-gradient(
+//       270deg,
+//       rgba(255, 255, 255, 0) 0%,
+//       rgba(255, 255, 255, 0.5) 14.29%,
+//       rgba(255, 255, 255, 0.5) 85.73%,
+//       rgba(255, 255, 255, 0) 100%
+//     );
+
+//     display: flex;
+//     justify-content: space-around;
+//     li {
+//       z-index: 1;
+//       width: 45px !important;
+//       height: 2px !important;
+//       background-color: transparent !important;
+//       &.slick-active {
+//         width: 45px !important;
+//         animation: none;
+//       }
+//     }
+//     @media screen and (max-width: 767px) {
+//       width: 100%;
+//     }
+//   }
+//   .cmp-carousel__indicators {
+//     width: 50%;
+//     margin: auto;
+//     justify-content: space-evenly;
+//     position: relative;
+//     top: 62px;
+//     @media screen and (max-width: 767px) {
+//       width: 88%;
+//     }
+//   }
+//   li.cmp-carousel__indicator {
+//     background-color: transparent;
+//     // width: 20%;
+//     display: flex;
+//     justify-content: space-evenly;
+//     width: 150px;
+
+//     @media screen and (max-width: 767px) {
+//       flex: 1;
+//     }
+//     cursor: pointer;
+//     .carousel-indicator-title {
+//       text-indent: 0;
+//       color: var(--bg-color-white);
+//       opacity: 0.5;
+//       font-size: var(--font-size-16);
+//       font-family: var(--font-sans-transducer);
+//       font-weight: var(--font-weight-500);
+//       margin: 0;
+//       position: absolute;
+//       top: -45px;
+//       @media only screen and (max-width: 1920px) and (min-width: 1279px) {
+//         font-size: var(--font-size-12);
+//         top: -39px;
+//       }
+//     }
+//     &--active {
+//       background-color: transparent;
+//       background: transparent;
+//       .carousel-indicator-title {
+//         content: none;
+//         padding-bottom: 21px;
+//         opacity: 1;
+//         color: var(--bg-color-white);
+//         background-color: transparent;
+//         height: auto;
+//         width: auto;
+//         animation: none;
+//       }
+//     }
+//   }
+// }
+
+// @keyframes horizontallineprogressbar {
+//   from {
+//     height: 0;
+//     background-color: var(--bg-color-trinidad);
+//   }
+
+//   to {
+//     background-color: var(--bg-color-trinidad);
+//     height: 100%;
+//   }
+// }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="feature-carousel"
+        sling:resourceType="dam/processing/profile/rendition"
+        excludeMimeTypes="application/.*,video/.*,image/psd,image/psb"
+        fmt="png"
+        hei="{Long}406"
+        includeMimeTypes="image/.*"
+        name="feature-carousel.png"
+        watermark="{Boolean}false"
+        wid="{Long}406"/>
+</jcr:root>

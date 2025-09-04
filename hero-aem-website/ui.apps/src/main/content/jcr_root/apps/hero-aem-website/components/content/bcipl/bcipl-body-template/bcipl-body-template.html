@@ -1,0 +1,14 @@
+<sly data-sly-test="${(wcmmode.edit || wcmmode.design) && !listUse }" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>
+
+<div class="bcipl-innerPg">
+    <div class="bcipl-container">
+        <div class="bcipl-registerDetail">
+            ${properties.heading @context='html'}
+        </div>
+        <div class="bcipl-contest">
+            ${properties.body @context='html'}
+        </div>
+    </div>
+</div>

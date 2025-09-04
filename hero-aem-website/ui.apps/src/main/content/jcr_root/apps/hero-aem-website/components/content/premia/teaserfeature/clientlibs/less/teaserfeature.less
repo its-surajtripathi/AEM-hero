@@ -1,0 +1,237 @@
+.teaser-feature {
+  &-container {
+    background: var(--teaser-feature-background-gradient);
+    font-family: var(--font-transducer);
+    position: relative;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &-image-container {
+    width: 80%;
+    margin: auto;
+    @media (max-width: 1440px) and (min-width: 1281px) {
+      width: 944px;
+    }
+  }
+
+  &-text-container {
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 60%;
+      width: 30%;
+    }
+    @media (max-width: 1280px) and (min-width: 768px) {
+      width: 392px;
+    }
+    @media screen and(min-width: 1441px) {
+      width: 490px;
+    }
+  }
+
+  &-line {
+    width: 16px;
+    height: 1px;
+    background-color: var(--bg-color-trinidad);
+    margin: 21px 0 8px;
+
+    @media screen and (min-width: 1024px) {
+      margin: 21px 0 16px;
+      width: 40px;
+    }
+  }
+
+  &-title {
+    color: var(--color-white);
+    font-size: var(--font-size-40);
+    font-weight: var(--font-weight-500);
+    margin-bottom: 8px;
+
+    @media (max-width: 767px) and (min-width: 320px) {
+      font-size: var(--font-size-18);
+      width: 270px;
+    }
+    @media (max-width: 1440px) and (min-width: 768px) {
+      font-size: var(--font-size-32);
+    }
+  }
+
+  &-description {
+    color: var(--color-quill-gray);
+    font-size: var(--font-size-12);
+    margin-bottom: 57px;
+    font-family: var(--font-optika-regular);
+
+    @media screen and (min-width: 1024px) {
+      font-size: var(--font-size-14);
+    }
+    @media screen and (min-width: 1440px) {
+      font-size: var(--font-size-16);
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: var(--font-size-18);
+    }
+  }
+}
+
+// 2nd Carousel Varirant Css
+.variant-two {
+  .teaser-feature {
+    overflow: hidden;
+
+    &-line {
+      display: none;
+    }
+    &-description {
+      margin-bottom: 40px;
+    }
+
+    &-progressbar {
+      height: 90px;
+      width: 2px;
+      background: var(--color-quill-gray);
+      position: absolute;
+      z-index: 1;
+      top: 60%;
+      &:after {
+        content: "";
+        height: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        background: var(--bg-color-trinidad);
+        animation: verticalProgressBar 5s linear both;
+      }
+      @media only screen and (max-width: 1439px) and (min-width: 768px) {
+        height: 75px;
+        &:after {
+          content: "";
+          height: 0px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 2px;
+          background: var(--bg-color-trinidad);
+          animation: verticalProgressBars 5s linear both;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      &-text-container {
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 0px 20px;
+      }
+      &-title {
+        font-size: var(--font-size-18);
+      }
+      &-description {
+        margin-bottom: 10px;
+        font-size: var(--font-size-14);
+      }
+    }
+    @media only screen and (max-width: 1439px) and (min-width: 768px) {
+      &-title {
+        font-size: var(--font-size-24);
+      }
+      &-description {
+        font-size: var(--font-size-14);
+        margin-bottom: 24px;
+      }
+    }
+    @media only screen and (min-width: 1440px) {
+      &-title {
+        font-size: var(--font-size-32);
+      }
+      &-description {
+        font-size: var(--font-size-18);
+        margin-bottom: 24px;
+      }
+    }
+    &-verticalline {
+      position: relative;
+      // border-left: 1px solid var(--color-quill-gray);
+      padding-left: 30px;
+
+      @media screen and (max-width: 767px) {
+        border: none;
+
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .cmp-button {
+    padding-left: 30px;
+    position: absolute;
+    top: 80%;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      top: 85%;
+    }
+
+    @media screen and (max-width: 767px) {
+      position: static;
+      .cmp-button__text {
+        display: block;
+      }
+    }
+  }
+}
+
+@keyframes verticalProgressBar {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 90px;
+  }
+}
+@keyframes verticalProgressBars {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 75px;
+  }
+}
+
+// Variant 3
+.teaserfeature.variant-three {
+  @media screen and (max-width: 767px) {
+    margin: 60px 0 34px;
+  }
+  .teaser-feature {
+    &-text-container {
+      .teaser-feature-line {
+        margin-top: 0;
+        width: 24px;
+        height: 4px;
+        @media screen and (min-width: 1440px) {
+          width: 40px;
+        }
+      }
+      button {
+        display: none;
+      }
+    }
+
+    &-image-container {
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+  .container-fixed-width {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Bootstrap Layout"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <bootcolumns
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Add Multiple Columns"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <supportingclasses
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Container Supporting classes"
+                                                name="./classes"
+                                                validation="hero-firstname-validation"/>
+                                            <rowclasses
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Row Supporting classes"
+                                                name="./rowclasses"
+                                                validation="hero-firstname-validation"/>
+                                            <columnlayouts
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Add Columns">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./columnlayouts">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <columnconfig
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Column Configs"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <xlarge
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                            fieldLabel="X Large Port Grid"
+                                                                            name="./xlarge">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <singlecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="12 Column"
+                                                                                    value="col-xl-12"/>
+                                                                                <tencolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="10 Column"
+                                                                                    value="col-xl-10"/>
+                                                                                <ninecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="9 Column"
+                                                                                    value="col-xl-9"/>
+                                                                                <eightcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="8 Column"
+                                                                                    value="col-xl-8"/>
+                                                                                <sevencolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="7 Column"
+                                                                                    value="col-xl-7"/>
+                                                                                <sixcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="6 Column"
+                                                                                    value="col-xl-6"/>
+                                                                                <fivecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="5 Column"
+                                                                                    value="col-xl-5"/>
+                                                                                <fourcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="4 Column"
+                                                                                    value="col-xl-4"/>
+                                                                                <threecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="3 Column"
+                                                                                    value="col-xl-3"/>
+                                                                                <twocolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="2 Column"
+                                                                                    value="col-xl-2"/>
+                                                                            </items>
+                                                                        </xlarge>
+                                                                        <large
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                            fieldLabel="Large Port Grid"
+                                                                            name="./large">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <twelvecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="12 Column"
+                                                                                    value="col-lg-12"/>
+                                                                                <tencolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="10 Column"
+                                                                                    value="col-lg-10"/>
+                                                                                <ninecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="9 Column"
+                                                                                    value="col-lg-9"/>
+                                                                                <eightcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="8 Column"
+                                                                                    value="col-lg-8"/>
+                                                                                <sevencolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="7 Column"
+                                                                                    value="col-lg-7"/>
+                                                                                <sixcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="6 Column"
+                                                                                    value="col-lg-6"/>
+                                                                                <fivecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="5 Column"
+                                                                                    value="col-lg-5"/>
+                                                                                <fourcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="4 Column"
+                                                                                    value="col-lg-4"/>
+                                                                                <threecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="3 Column"
+                                                                                    value="col-lg-3"/>
+                                                                                <twocolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="2 Column"
+                                                                                    value="col-lg-2"/>
+                                                                            </items>
+                                                                        </large>
+                                                                        <medium
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                            fieldLabel="Medium Port Grid"
+                                                                            name="./medium">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <twelvecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="12 Column"
+                                                                                    value="col-md-12"/>
+                                                                                <tencolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="10 Column"
+                                                                                    value="col-md-10"/>
+                                                                                <ninecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="9 Column"
+                                                                                    value="col-md-9"/>
+                                                                                <eightcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="8 Column"
+                                                                                    value="col-md-8"/>
+                                                                                <sevencolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="7 Column"
+                                                                                    value="col-md-7"/>
+                                                                                <sixcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="6 Column"
+                                                                                    value="col-md-6"/>
+                                                                                <fivecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="5 Column"
+                                                                                    value="col-md-5"/>
+                                                                                <fourcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="4 Column"
+                                                                                    value="col-md-4"/>
+                                                                                <threecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="3 Column"
+                                                                                    value="col-md-3"/>
+                                                                                <twocolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="2 Column"
+                                                                                    value="col-md-2"/>
+                                                                            </items>
+                                                                        </medium>
+                                                                        <small
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                            fieldLabel="Small Port Grid"
+                                                                            name="./small">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <twelvecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="12 Column"
+                                                                                    value="col-12"/>
+                                                                                <tencolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="10 Column"
+                                                                                    value="col-10"/>
+                                                                                <ninecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="9 Column"
+                                                                                    value="col-9"/>
+                                                                                <eightcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="8 Column"
+                                                                                    value="col-8"/>
+                                                                                <sevencolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="7 Column"
+                                                                                    value="col-7"/>
+                                                                                <sixcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="6 Column"
+                                                                                    value="col-6"/>
+                                                                                <fivecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="5 Column"
+                                                                                    value="col-5"/>
+                                                                                <fourcolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="4 Column"
+                                                                                    value="col-4"/>
+                                                                                <threecolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="3 Column"
+                                                                                    value="col-3"/>
+                                                                                <twocolumn
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="2 Column"
+                                                                                    value="col-2"/>
+                                                                            </items>
+                                                                        </small>
+                                                                        <supportingclasses
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="Add additional classes for the column"
+                                                                            name="class"/>
+                                                                        <showfirstinmobile
+							                                                jcr:primaryType="nt:unstructured"
+							                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+							                                                checked="{Boolean}false"
+							                                                fieldDescription="Enable the checkbox to show this section as first section in mobile"
+							                                                name="./showfirstmobile"
+							                                                text="Show First in Mobile?"
+							                                                uncheckedValue="false"
+							                                                value="true"/>
+                                                                    </items>
+                                                                </columnconfig>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </columnlayouts>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </bootcolumns>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

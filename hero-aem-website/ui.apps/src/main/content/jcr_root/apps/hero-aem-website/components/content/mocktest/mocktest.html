@@ -1,0 +1,102 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>
+
+<section class="media--forms media-component" id="mocktestregister" data-component-relativePath="${currentNode.path @ addSelectors=['mocktest'],extension='json'}">
+	<div class="container">
+		<div class="contact--details">
+			<div class="success-heading d-none">
+				<h5 class="h3-bold-heading-std">MOCK TEST SUCCESS</h5>
+			</div>
+			<div class="mock-test-heading">
+				<h5 class="h3-bold-heading-std"> SUBJECT: SAFETY RIDING </h5>
+				<div>
+					<i> Time Allowed: <span style="color:#ed1c24;">15</span> Minutes &nbsp;</i>
+					<i> &nbsp; Maximum Marks: <span style="color:#ed1c24;">15</span> </i>
+				</div>
+			</div>
+			<div class="addressPan m-0">
+				<div class="content--wrap">
+					<h3 class="mocktest-title mb-3">Provide Your Details*</h3>
+					<form action="" class="" autocomplete="off" id="mockTestCredential"
+						data-mock-test-json="${properties.mockjson}">
+						<div class="form--wrap">
+							<div class="form-group cust-form-group  cust-form-control cust-input-padding">
+								<span class="form-span">Full Name <sup>*</sup></span>
+								<input type="text" class="form-control campaign-input cust-form-control name"
+									id="mockTestFullName" required placeholder="Enter Your Full Name"
+									name="mockTestFullName" maxlength="50"
+									validation-msg-req="Please enter your Full Name"
+									oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '');">
+							</div>
+						</div>
+
+						<div class="form--wrap">
+							<div class="form-group cust-form-group">
+								<span class="form-span">Email <sup>*</sup></span>
+								<img src="" alt="" class="input-img2">
+								<input type="email"
+									class="form-control campaign-input cust-form-control email text-transform"
+									placeholder="Enter Your Email ID" id="mockTestEmail" name="mockTestEmail" required
+									validation-msg-req="Please enter your Email Id"
+									validation-msg-format="Please enter a valid Email Id"
+									oninput="this.value=this.value.replace(/\s/g,'');">
+							</div>
+						</div>
+						<div class="form--wrap justify-content-center">
+							<input type="button" class="campaign-btn btn-red-gradient btn book-test-submit"
+								value="submit" name="submit" id="mockTestCredentialSubmit" />
+						</div>
+					</form>
+				</div>
+
+
+				<div class="mockTestContainer" id="mockTestContainer" class="d-none">
+					<form class="" autocomplete="off" id="mockTest">
+						<div class="mocktestQuestions">
+							<div class="form-wrap-mocktest">
+								<div class="d-flex">
+									<h4 class="mocktest-questions mb-3">
+										1) In 4 stroke engine 2T or 4T (self lubricating oil) is:
+									</h4>
+									<img src="https://www.heromotocorp.com/en-in/uploads/safe_mock_media/20180528095554-press-398.png"
+										alt="" />
+								</div>
+								<div class="row">
+									<div class="col-6 anwsers mb-2">
+										<input type="radio" name="fav_language" value="HTML">
+										<span>HTML</span>
+									</div>
+									<div class="col-6 anwsers  mb-2">
+										<input type="radio" name="fav_language" value="CSS">
+										<span>CSS</span>
+									</div>
+									<div class="col-6 anwsers  mb-2">
+										<input type="radio" name="fav_language" value="JavaScript">
+										<span>JavaScript</span>
+									</div>
+									<div class="col-6 anwsers  mb-2">
+										<input type="radio" name="fav_language" value="C++">
+										<span>C++</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="form--wrap justify-content-center">
+							<input type="button" class="campaign-btn btn-red-gradient btn book-test-submit"
+								value="submit" name="submit" id="mockTestSubmit" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="mocktest-thankyou" class="d-none">
+			<h2 class="h3-bold-heading-std">Thank you for submitting your answers, your result is being processed.</h2>
+			<div class="mocktest-results" id="mocktest-results">
+			</div>
+			<div id="mocktest-results-percentage">
+			</div>
+		</div>
+	</div>
+</section>

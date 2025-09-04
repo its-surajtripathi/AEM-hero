@@ -1,0 +1,271 @@
+.investor-download-reports {
+  padding: 40px 40px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.investor-download-reports>.headerbackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.investor-download-reports>.headerbackground:before {
+  width: 100%;
+}
+
+.investor-download-reports>.headerbackground>.download-reports-title {
+  width: max-content;
+  background: white;
+  padding: 0 24px;
+  font-size: 38px;
+  line-height: 46px;
+  font-family: var(--font-tstar-heavy);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #EE2326;
+  text-align: center;
+}
+
+
+.investor-download-reports .download-reports-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 30px 46px;
+  width: 100%;
+  border-radius: 18px;
+  background: #343131;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 20px -4px rgba(24, 39, 75, 0.14);
+}
+
+.investor-download-reports .download-reports-links-container .years-container {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.investor-download-reports .download-reports-links-container .years-container .select-year {
+  font-family: var(--font-tstar-medium);
+  font-size: 24px;
+  line-height: 29px;
+  margin-right: 16px;
+}
+
+.investor-download-reports .download-reports-links-container .years-container .years-list {
+  background: none;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: var(--font-tstar-heavy);
+  cursor: pointer;
+  align-items: center;
+}
+
+.investor-download-reports .download-reports-links-container .years-container .years-list p{
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.investor-download-reports .download-reports-links-container .years-container .years-list ul{
+  background: #E3E3E3;
+  max-height: 225px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 115px;
+  z-index: 1;
+  font-family: 'tstar-medium';
+  border-radius: 6px;
+}
+
+.investor-download-reports .download-reports-links-container .years-container .years-list ul li{
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+.investor-download-reports .download-reports-links-container .years-container .years-list .arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 12px;
+}
+
+.investor-download-reports .download-reports-links-container .years-container .years-list .arrow.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.investor-download-reports .download-reports-links-container .years-container .years-list .calendar-year {
+  color: #000;
+}
+
+.investor-download-reports .download-reports-links-container .reports-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.investor-download-reports .download-reports-links-container .report-category-link {
+  width: 120px;
+  height: 101px;
+  padding: 15px;
+  display: flex;
+  margin-right: 38px;
+  align-items: center;
+  justify-content: center;
+  background: #E3E3E3;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #303030;
+  font-family: var(--font-tstar-heavy);
+  text-align: center;
+  font-weight: 900;
+}
+
+.investor-download-reports .download-reports-links-container .active-report {
+  position: relative;
+  background: #EE2326;
+  color: #ffffff;
+}
+
+.investor-download-reports .download-reports-links-container .active-report:after {
+  width: 85px;
+  content: "";
+  height: 6px;
+  background: #EE2326;
+  position: absolute;
+  bottom: -18px;
+  left: 17.5px;
+  border-radius: 3px;
+}
+
+.investor-download-reports .download-reports-links-container .report-category-link:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 767px) {
+  .investor-download-reports {
+    padding: 16px 16px 26px;
+  }
+
+  .investor-download-reports>.headerbackground {
+    margin-bottom: 16px;
+  }
+
+  .investor-download-reports>.headerbackground>.download-reports-title {
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 0 6px;
+  }
+
+  .investor-download-reports .download-reports-links-container {
+    border-radius: 6px;
+    padding: 16px 62px 26px;
+  }
+
+  .investor-download-reports .download-reports-links-container .years-container {
+    margin-bottom: 0px;
+  }
+
+  .investor-download-reports .download-reports-links-container .years-container .select-year {
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: 12px;
+  }
+
+  .investor-download-reports .download-reports-links-container .years-container .years-list {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .investor-download-reports .download-reports-links-container .years-container .years-list ul{
+    width: 96px;
+    max-height: 182px;
+    font-size: 16px;
+    padding-bottom: 2px;
+  }
+
+  .investor-download-reports .download-reports-links-container .years-container .years-list p{
+    font-size: 18px;
+  }
+
+  .investor-download-reports .download-reports-links-container .reports-links {
+    height: fit-content;
+  }
+
+  .investor-download-reports .download-reports-links-container .report-category-link {
+    width: 94px;
+    height: 74px;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 16px 16px 0 0;
+    padding: 0px 6px;
+  }
+
+  .investor-download-reports .download-reports-links-container .report-category-link:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .investor-download-reports .download-reports-links-container .active-report:after {
+    width: 68px;
+    height: 4px;
+    border-radius: 3px;
+    bottom: -9px;
+    left: 13px;
+  }
+}
+
+@media (max-width: 767px) and (min-width:597px) {
+  .investor-download-reports .download-reports-links-container .report-category-link:nth-child(2n) {
+    margin-right: 16px;
+  }
+
+  .investor-download-reports .download-reports-links-container .reports-links {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 597px) and (min-width:579px) {
+
+  .investor-download-reports .download-reports-links-container {
+    padding: 16px 150px 26px;
+  }
+
+  .investor-download-reports .download-reports-links-container .reports-links {
+    height: fit-content;
+  }
+
+  .investor-download-reports .download-reports-links-container .report-category-link:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 579px) and (min-width:470px) {
+  .investor-download-reports .download-reports-links-container {
+    padding: 16px 117px 26px;
+  }
+
+  .investor-download-reports .download-reports-links-container .reports-links {
+    height: auto;
+  }
+
+  .investor-download-reports .download-reports-links-container .report-category-link:nth-child(2n) {
+    margin-right: 0px;
+  }
+}

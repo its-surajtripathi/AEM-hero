@@ -1,0 +1,13 @@
+<div class="hdbc-heading-container">
+  <div class="hdbc-heading-box">
+    <div class="hdbc-heading-aligner">
+      <div class="hdbc-heading">
+        ${properties.hdbcheading @ context='html'}
+      </div>
+    </div>
+    <div class="hdbc-heading-underline"></div>
+  </div>
+</div>
+<sly data-sly-test="${(wcmmode.edit || wcmmode.design) && !listUse }" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</sly>

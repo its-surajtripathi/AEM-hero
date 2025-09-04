@@ -1,0 +1,115 @@
+<header class="dealer-nav-class" id="dealer-nav">
+  <div class="dealer-hamburger-menu">
+    <img height="20px" width="20px" src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-dealers-portal-site/resources/hamburger-menu.jpeg" alt="">
+  </div>
+  <div id="dealer-logo">
+    <a href="${properties.logourl}">
+      <img src="${properties.logopath}" alt="">
+    </a>
+  </div>
+  <input type="hidden" value="${properties.logourl @ extension = 'html'}" name="homePagePath"/>
+  <nav class="nav-desktop">
+    <ul class="main-list">
+      <sly data-sly-list.mainMenu="${resource.getChildren}">
+        <sly data-sly-test="${mainMenu.name == 'dealersPortalNavItems'}">
+          <sly data-sly-list.navItems="${mainMenu.getChildren}">
+            <li class="main-link">
+              <div class="anchor-wrap">
+                <a href="${navItems.navurl}">
+                  ${navItems.navheading}
+                </a>
+              </div>
+              <sly date-sly-test="${navItems.listChildren && navItems.listChildren.hasNext}">
+                <sly data-sly-list.secnavitems="${navItems.listChildren}">
+                  <sly data-sly-test="${secnavitems.name=='subnavitems'}">
+                    <div class="drop-arrow">
+                    </div>
+                    <div class="drop-down-wrap d-none">
+                      <ul class="dropdown-list">
+                        <div class="dropdown-li-wrap">
+                          <sly data-sly-list.secondnavitems="${secnavitems.getChildren}">
+                            <li>
+                              <a href="${secondnavitems.subnavurl}">
+                                ${secondnavitems.subnavheading}
+                              </a>
+                            </li>
+                          </sly>
+                        </div>
+                      </ul>
+                    </div>
+                  </sly>
+                </sly>
+              </sly>
+            </li>
+          </sly>
+          <li class="main-link">
+            <div class="anchor-wrap dealersLogIn">
+              <a href="${properties.loginPageURL @ extension='html'}">
+                ${properties.loginLabel}
+              </a>
+            </div>
+
+          </li>
+
+          <li class="main-link">
+            <div class="anchor-wrap dealersLogOut d-none">
+              <a href="#logOut">
+                ${properties.logoutLabel}
+              </a>
+            </div>
+          </li>
+        </sly>
+      </sly>
+    </ul>
+  </nav>
+</header>
+<nav class="dealer-nav-class nav-mobile">
+  <input type="hidden" value="${properties.logourl @ extension = 'html'}" name="homePagePath"/>
+  <div class="close-btn">
+  </div>
+  <ul class="mobile-list">
+    <sly data-sly-list.mainMenu="${resource.getChildren}">
+      <sly data-sly-test="${mainMenu.name == 'dealersPortalNavItems'}">
+        <sly data-sly-list.navItems="${mainMenu.getChildren}">
+          <li class="${navItems.listChildren && navItems.listChildren.hasNext ?'mobile-submenu':''}">
+            <div class="mobile-list-wrap">
+              <div class="arrow-dropdown position-absolute"></div>
+              <a href="${navItems.navurl}">
+                ${navItems.navheading}
+              </a>
+            </div>
+            <div class="mob-sub-list d-none">
+              <sly date-sly-test="${navItems.listChildren && navItems.listChildren.hasNext}">
+                <sly data-sly-list.secnavitems="${navItems.listChildren}">
+                  <sly data-sly-test="${secnavitems.name=='subnavitems'}">
+                    <ul>
+                      <sly data-sly-list.secondnavitems="${secnavitems.getChildren}">
+                        <li>
+                          <a href="${secondnavitems.subnavurl}">${secondnavitems.subnavheading}</a>
+                        </li>
+                      </sly>
+                    </ul>
+                  </sly>
+                </sly>
+              </sly>
+            </div>
+          </li>
+        </sly>
+        <li>
+          <div class="mobile-list-wrap dealersLogIn">
+            <a href="${properties.loginPageURL @ extension='html'}">
+              ${properties.loginLabel}
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="mobile-list-wrap dealersLogOut d-none">
+            <a href="#logOutMobile">
+              ${properties.logoutLabel}
+            </a>
+          </div>
+        </li>
+      </sly>
+    </sly>
+  </ul>
+</nav>

@@ -1,0 +1,54 @@
+.slick-dots {
+  right: 0;
+  width: auto;
+  bottom: 1rem;
+  @media screen and (min-width: 768px) {
+    right: -40px;
+    bottom: 50%;
+  }
+  @media screen and (max-width: 991px) {
+    bottom: 115px;
+  }
+  li {
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0;
+
+    button {
+      margin-top: 4px;
+      height: 2rem;
+      background-color: var(--bg-color-white);
+      height: 10px;
+      width: 2px;
+      padding: 5px 1px;
+      &::before {
+        content: none;
+      }
+    }
+
+    &.slick-active {
+      button {
+        width: 4px;
+        height: 24px;
+        padding: 12px 2px;
+        background-color: var(--bg-color-gold);
+        position: relative;
+        @media screen and (max-width: 991px) {
+          width: 2px;
+        }
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          bottom: -1px;
+          border-left: 4px solid var(--color-black);
+          border-top: 2px solid transparent;
+          width: 2px;
+          left: 0;
+          height: 1px;
+        }
+      }
+    }
+  }
+}

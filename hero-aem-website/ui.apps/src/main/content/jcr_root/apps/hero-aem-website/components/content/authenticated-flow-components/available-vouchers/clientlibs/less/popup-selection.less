@@ -1,0 +1,316 @@
+.service-select-voucher-popup {
+    background: #F5F5F7;
+    border-radius: 10px;
+    margin-top: 20px;
+    .select_voucher {
+
+            width: 100%;
+
+            .plus {
+                margin: -8px -5px;
+                font-weight: bold;
+                position: absolute;
+                color: red;
+                font-size: 24px;
+            }
+
+            .minus {
+                margin: -8px -2px;
+                font-weight: bold;
+                position: absolute;
+                color: red;
+                font-size: 24px;
+            }
+
+            .price-input {
+                outline: none;
+                border: 0;
+
+
+            }
+
+            #errorMsg {
+                font-weight: 400;
+                font-size: 16px;
+                color: #FF0000;
+            }
+
+            .pricebox {
+                display: inline-flex;
+                border: 2px solid #e8e8e8;
+                border-radius: 5px;
+                display: inline-flex;
+            }
+
+            .value-button:hover {
+                cursor: pointer;
+            }
+
+
+            .counter {
+                border: 1px solid #E8E8E8;
+                background-color: #fff;
+            }
+
+
+            #input-wrap {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #number {
+                text-align: center;
+                border: none;
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                margin: 0px;
+                width: 40px;
+                height: 40px;
+           }
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+        h5 {
+            color: gray;
+            font-size: 15px;
+            padding: 20px 10px 20px 10px;
+        }
+
+        .rightside-amount {
+            font-weight: bold;
+            font-size: 20px;
+            margin: 3px;
+        }
+
+        select {
+            border: none;
+            border-bottom: 1px solid #cdcdcd;
+            width: 50%;
+        }
+
+        .amount {
+            color: gray;
+            font-size: 18px;
+
+        }
+
+        .voucher_font_size_black {
+            font-size: 20px;
+            color: #303030;
+            float: right;
+            font-weight: bold;
+        }
+
+        .voucher_font_size_red {
+            font-size: 20px;
+            color: red;
+            float: right;
+            font-weight: bold;
+            margin-left: 3px;
+
+        }
+
+        .align {
+            margin: 20px 10px 20px 10px;
+        }
+    }
+    .popup-header {
+        border-radius: 8px 8px 0px 0px;
+        width: 100%;
+        padding: 10px;
+        background: #FFFFFF;
+        border-bottom: 1px solid #D2D2D2;
+        .popup-heading {
+            width: 80%;
+
+            h3 {
+                font-style: normal;
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 40px;
+                color: #1A1A1A;
+
+                @media all and(max-width:768px) {
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 29px;
+                    text-transform: capitalize;
+                    color: #333333;
+                }
+
+            }
+
+        }
+        .cross-mark {
+            width: 20%;
+
+            .cross-icon {
+                width: 40px;
+                height: 32px;
+                float: right;
+
+                @media all and(max-width:768px) {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+    }
+    .service-popup-content {
+    		background: #FFFFFF;
+    		border-radius: 8px;
+    		margin: 15px;
+    		padding: 10px;
+
+    		.service-instruction-to-avail {
+    			display: inline-block;
+
+    			h4 {
+    				font-style: normal;
+    				font-weight: 700;
+    				font-size: 24px;
+    				line-height: 120%;
+    				color: #1A1A1A;
+    				padding: 10px 0px 10px 0px;
+
+    				@media all and(max-width:768px) {
+    					font-style: normal;
+    					font-weight: 700;
+    					font-size: 16px;
+    					line-height: 120%;
+    					color: #1A1A1A;
+    					padding: 10px 0px 10px 0px;
+    				}
+    			}
+
+    			.service-instruction {
+    				padding-left: 10px;
+
+    				li {
+    					font-style: normal;
+    					font-weight: 300;
+    					font-size: 20px;
+    					line-height: 24px;
+    					color: #303030;
+    					padding: 10px 0px 10px 0px;
+
+    					@media all and(max-width:768px) {
+    						font-style: normal;
+    						font-weight: 400;
+    						font-size: 16px;
+    						line-height: 20px;
+    						color: #303030;
+    						padding: 10px 0px 10px 0px;
+    					}
+    				}
+
+    				ul {
+    					list-style-type: disc;
+    					padding-left: 15px;
+    				}
+
+    			}
+    		}
+
+    		.heading-line {
+    			display: inline-block;
+
+    			.heading-icon {
+    				float: left;
+    				width: 5%;
+
+    				@media all and(max-width:768px) {
+    					width: unset;
+
+    				}
+
+    				img {
+    					height: 45px;
+    					width: 45px;
+    				}
+    			}
+
+    			.service-voucher {
+    				h6 {
+    					float: left;
+    					font-style: normal;
+    					font-weight: 700;
+    					//font-size: 24px;
+    					line-height: 120%;
+    					color: #1A1A1A;
+    					width: 90%;
+
+    					@media all and(max-width:768px) {
+    						float: none;
+    						font-style: normal;
+    						font-weight: 700;
+    						font-size: 24px;
+    						line-height: 120%;
+    						color: #1A1A1A;
+    						padding-bottom: 10px;
+    						width: unset;
+
+    					}
+    				}
+
+    				.hrclass {
+    					width: 100%;
+    					float: left;
+    				}
+    			}
+
+    			.voucher-amount {
+    				h3 {
+    					width: 5%;
+    					float: right;
+    					font-style: normal;
+    					font-weight: 900;
+    					font-size: 32px;
+    					line-height: 39px;
+    					color: #303030;
+    					float: right;
+
+    					@media all and(max-width:768px) {
+    						font-style: normal;
+    						font-weight: 900;
+    						font-size: 32px;
+    						line-height: 39px;
+    						color: #303030;
+    						float: left;
+    						width: unset;
+
+    					}
+    				}
+    			}
+    		}
+
+    	}
+    	.sms-voucher-code {
+        		display: flex;
+        		flex-direction: row;
+        		justify-content: center;
+        		align-items: center;
+        		padding: 20px 0px 20px 0px;
+
+        		input[type=button] {
+        			display: flex;
+        			flex-direction: row;
+        			justify-content: center;
+        			align-items: center;
+        			padding: 12px 32px;
+        			gap: 10px;
+        			//background: linear-gradient(95.69deg, #AC0000 0%, #FF0000 26.35%, #FF3B3B 50.83%, #FF0000 72.71%, #FF0000 100%);
+        			border-radius: 4px;
+        			text-transform: uppercase;
+        			color: #F5F5F7;
+        			border: none;
+        		}
+
+        	}
+
+
+}

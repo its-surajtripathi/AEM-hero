@@ -1,0 +1,24 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div class="row ride-list-wrapper" data-ride-type="${properties.ridevariation @ context='scriptString'}">
+    <script type="text/html" class="xclanRide-data">
+        <% _.each(vehicleDetails, function(item, i, list) { %>
+        <div class="col-lg-4 col-sm-6">
+            <div class="ridessection">
+                <a href="${properties.detailsPageLink @ context='uri'}.html?rideId=<%=vehicleDetails[i].Ride_Id%>" onclick="generateDataLayer(event)">
+                    <div class="rideImag"> <img src="<%=vehicleDetails[i].Image_main_URL%>">
+                        <div class="date-month"> <span class="date"><%= new Date(vehicleDetails[i].Ride_Detail_From_Date).getDate()%></span> <span class="month"><%= new Date(vehicleDetails[i].Ride_Detail_From_Date).toLocaleString('en-us', {month: 'short'})%></span> </div>
+                        <div class="durationdetails">
+                            <h3>${properties.durationLabel @ context='scriptString'} | <%= getXclanDateDifference(vehicleDetails[i].Ride_Detail_To_Date, vehicleDetails[i].Ride_Detail_From_Date)%> ${properties.dayslabel @ context='scriptString'}</h3> <%=vehicleDetails[i].Ride_List_Name%>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <% });%>
+    </script>
+    <div class="no-rides-error d-none"> ${properties.error @ context='html'}</div>
+    <div class="api-error d-none"> ${properties.apierror @ context='html'}</div>
+</div>

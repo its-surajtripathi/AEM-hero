@@ -1,0 +1,24 @@
+.bike-tab-section .bike-product-wrapper {
+    padding: 0px 20px 30px 20px;
+    margin-top: 125px;
+  }
+  .bike-tab-section .bike-product-wrapper .tab-content .tab-pane .bike-product-prant {
+    text-align: center;
+  }
+  .bike-tab-section .bike-product-wrapper .tab-content .tab-pane .bike-product-prant p {
+    font-size: var(--font-size12);
+    color: var(--text-color-black);
+    font-family: var(--font-tstar-bold);
+    font-weight: var(--font-weight-900);
+  }
+  .bike-tab-section .bike-product-wrapper .tab-content .tab-pane .bike-product-prant .bike-product-para {
+    opacity: 0;
+  }
+  .bike-tab-section .bike-product-wrapper .tab-content .tab-pane .bike-product-prant .bike-product-paramob {
+    font-size: var(--font-size10);
+    font-family: var(--font-tstar-bold);
+    color: var(--text-color-black);
+  }
+  .bike-tab-section .bike-product-wrapper .tab-content .tab-pane .bike-product-prant:hover .bike-product-para {
+    opacity: 1;
+  }

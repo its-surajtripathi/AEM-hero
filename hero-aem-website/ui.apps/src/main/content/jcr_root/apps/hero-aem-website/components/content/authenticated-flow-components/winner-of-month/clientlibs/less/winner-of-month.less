@@ -1,0 +1,455 @@
+/* Winner Banner section style start */
+.winner-banner-container {
+background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding:20px 0 40px 0;
+    background-color:#ee2326;
+    .row {
+        margin: 0;
+
+        .winner-banner {
+            width: 100%;
+            background-size: cover;
+            display:flex;
+            .winner-banner-left {
+                width: 20%;
+                float: left;
+                padding-top: 50px;
+                img{
+                    float: right;
+                }
+            }
+            .winning-month{
+                margin: auto;
+            }
+            .winner-banner-middle {
+                width: 35% !important;
+                float: left;
+                padding-left: 50px;
+                padding-top: 60px;
+                @media (max-width : 991px){
+			    	width: 70% !important;
+                    float: right;
+                    padding-top: 52px !important;
+                    padding-left: 0;
+			    }
+                .winning-month {
+                    width: 190px;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    border-top-left-radius: 20px;
+                    padding: 10px 0;
+                    color: #fff;
+                    font-size: 1.25rem;
+                    font-weight: 900;
+                    height: 40px;
+                    margin:unset;
+                }
+                h1{
+                    font-size: 1.875rem;
+                    color: #fff;
+                    font-weight: 900;
+                    padding-top: 4px;
+                }
+                .winner-area {
+                    color: #FADEDE;
+                    font-size: 1.5rem;
+                }
+            }
+            .banner-content-right.banner-single{
+            	color: #fff;
+			    padding-top: 0px;
+			    font-size: 14px;
+			    display: block;
+			    width: 35%;
+			    margin-top: 4.5%;
+			    @media (max-width : 991px){
+			    	width: 100%;
+			    }
+            }
+
+            .winner-banner-right {
+            	&.view-details-link{
+            		width: 25% !important;
+            		@media (max-width : 991px){
+			    		width: 100% !important;
+			    	}
+            	}
+                width: 60% !important;
+                float: left;
+                padding-top: 27px;
+                @media (min-width : 768px) and (max-width : 991px){
+			    		width: 100% !important;
+			    }
+                .banner-bike-left {
+                    float: left;
+                    @media only screen 
+                    and (min-device-width: 320px) 
+                    and (max-device-width: 480px)
+                    and (-webkit-min-device-pixel-ratio: 2){
+                        width: 30%;
+                    }
+                }
+                .banner-content-right {
+                    float: left;
+                    color: #fff;
+                    padding-top: 5%;
+                    padding-left:2%;
+                    width: 50%;
+                    @media (max-width : 991px){
+                        text-align: left;
+                        padding-left: 0;
+                        padding-top: 0 !important;
+                    }
+                    @media only screen 
+                    and (min-device-width: 320px) 
+                    and (max-device-width: 480px)
+                    and (-webkit-min-device-pixel-ratio: 2){
+                        width: 70% !important;
+                    }
+                }
+                h2{
+                    font-size: 1.25rem;
+                }
+                h2:last-child{
+                    font-size: 2rem;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    /*-----------Media query start ------------ */
+    // mobile:
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .winner-banner-left {
+        width: 30% !important;
+        img{
+            max-width: 115px;
+        }
+
+    }
+    .winner-banner-right {
+        width: 100% !important;
+        float: left !important;
+        padding-top: 20px !important;
+        .banner-bike-left {
+            float: left;
+            max-width: 182px;
+            width: 50%;
+            img{
+                width: 100%;
+                @media only screen 
+                and (min-device-width: 320px) 
+                and (max-device-width: 480px)
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    max-width: 102px;
+                }
+            }
+        }
+        .banner-content-right {
+            padding-top: 49px !important;
+            width: 50% !important;
+            h2:last-child {
+                font-size: 1.4rem !important;
+            }
+        }
+    }
+}
+
+
+// Ipad:
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+    /*-----------Media query end --------------- */
+}
+.winner-list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .user-circle{
+        height: 43px;
+        width: 43px;
+        border-radius: 50%;
+        text-align: center;
+        padding: 9px 0;
+        font-size: 20px;
+    }
+    .user-circle-red{
+        background: #FFB7B7;
+        color: #EE8686;
+    }
+    .user-circle-green{
+        background: #BEE795;
+        color: #86B953 !important;
+    }
+    .user-circle-blue{
+        background: #A0C2F4;
+        color: #698FC6;
+    }
+    .user-circle-violet{
+        background: #C5A0F4;
+        color: #9E7CCF;
+    }
+}
+
+.user-lists {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+    padding: 10px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    display: flex;
+    position: relative;
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        width: 90%;
+    }
+    .user-short-name {
+        float: left;
+        margin-right: 20px;
+    }
+    .user-name-details {
+        width: 70%;
+        float: left;
+    }
+    .winning-date {
+        font-size: 12px;
+        width: 20%;
+        float: right;
+        color: #fff;
+        text-align: center;
+        font-weight: 900;
+        position: absolute;
+        right: 15px;
+        top: -1px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        @media (min-width:680px) and (max-width:1024px){
+            width:40%;
+            top:-10px;
+            right:-15px;
+        }
+    }
+    .winning-date-red{
+        background: linear-gradient(0deg, #FF0000, #FF0000), #FFFFFF;
+    }
+    .winning-date-black{
+        background: linear-gradient(0deg, #333333, #333333), #FFFFFF;
+    }
+}
+
+.win-user-lists {
+    .left-side-arrow:after{
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-bottom: 13px solid transparent;
+        border-right: 10px solid #fff;
+        position: absolute;
+        left: 2px;
+        top: -13px;
+      }
+      .left-side-arrow {
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 10px solid rgba(246, 2, 2, 0.3);
+        position: absolute;
+        left: -10px;
+        text-indent: -9999px;
+      }      
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: 1px solid rgba(246, 2, 2, 0.3);
+    position: relative;
+    h3 {
+        font-size: 2rem;
+        color: #303030;
+        font-weight: 900;
+    }
+    .details-date {
+        font-size: 1.25rem;
+        color: #FF0000;
+        font-weight: 700;
+    }
+    .winner-details{
+        margin-top: 15px;
+        .honda-img {
+            float: left;
+            margin-right: 10px;
+        }
+        .won-hero-details {
+            float: left;
+            p{
+                color: #1A1A1A;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+            h3{
+                color: #1A1A1A;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
+        .winner-logo-right {
+            float: left;
+            margin-right: 10px;
+        }
+        .winner-name-right {
+            float: left;
+        }
+        h3 {
+            font-size: 2rem;
+            color: #303030;
+            font-weight: 900;
+        }
+        p{
+            font-size: 1rem;
+            color: #8C8C8C;
+            font-weight: 400;
+            display: inline-block;
+        }
+
+    }
+    .digi-voucher{
+        font-weight: 700;
+        font-size: 1.25rem;
+        padding: 20px 0;
+        label{
+            color: #EC2028;
+        }
+
+    }
+    .digi-voucher-winner-container{
+        .user-logo {
+            float: left;
+            width: 9%;
+        }
+        .user-name {
+            float: left;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #1A1A1A;
+            margin-left: 10px;
+            margin-top: 8px;
+            width: 50%;
+        }
+        .user-add {
+            float: right;
+            font-size: 0.875rem;
+            color: #8C8C8C;
+            margin-top: 10px;
+            width: 38%;
+        }
+        .user-list {
+            clear: both;
+            padding: 15px 0;
+            border-bottom: 1px solid #E8E8E8;
+            display: inline-block;
+            width: 100%;
+            min-height: 90px;
+            align-items: center;
+        }
+    }
+}
+/* ------------Media query start---------- */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.winner-list{
+        .win-user-lists{
+            h3{
+                width: 70%;
+                float: left;
+            }
+            margin: 0 20px;
+            .winner-details{
+                .winner-logo-right{
+                    width: 15%;
+                }
+                .winner-name-right{
+                    width: 70%;
+                    h3{
+                        font-size: 1.125rem;
+                    }
+                }
+                .won-hero-details{
+                    h2{
+                        font-size: 1.125rem; 
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .win-user-lists .digi-voucher-winner-container .user-add{
+        width: 84%;
+        margin-top: 0;
+    }
+    .win-user-lists .digi-voucher-winner-container .user-logo{
+        width: 13%;
+    }
+    .win-user-lists .digi-voucher-winner-container .user-name{
+        width: 80%;
+        margin-top: 0;
+    }
+    .win-user-lists .left-side-arrow{
+        display: none;
+    }
+    .winner-banner-container .row .winner-banner .winner-banner-right{
+        width: 100% !important;
+    }
+}
+/* ------------Media query end---------- */
+/* Winner Banner section style end */
+
+.won-hero-wrapper{
+    display:flex;
+    .won-hero-details{
+        h3{
+            font-size:16px;
+         }
+         h2{
+            font-size:24px;
+         }
+    }
+}
+
+
+
+@media (max-width: 991px){
+.winner-banner-container .row .winner-banner {
+    display: table-column;
+ }
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .winner-banner-container .row .winning-month {
+        margin: 0;     
+        padding: 51px 0 0 0;
+        margin-right: 0 !important;
+        h1 {
+            font-weight: 900;
+            color: #fff;
+            width: 100%;
+            padding-left: 8px;
+        }
+    }
+}

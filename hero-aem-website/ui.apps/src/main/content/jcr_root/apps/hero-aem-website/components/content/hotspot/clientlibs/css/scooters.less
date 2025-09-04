@@ -1,0 +1,310 @@
+.features-section-main {
+  &.scooter-features-main {
+    padding-top: 25px;
+    h2 {
+      font-family: var(--font-tstar-heavy);
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: var(--font-size48);
+      font-style: italic;
+    }
+
+    .features-section-wrapper {
+      justify-content: flex-end;
+      .features-box-wrapper {
+        .features-box-main {
+          .features-box {
+            background: #ffffff;
+            box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+            border-radius: 5px;
+            z-index: 2;
+            &::before,
+            &::after {
+              background-color: #000000;
+            }
+            &.feature-1.active::before {
+              height: 113px;
+              left: 120px;
+              top: 306px;
+            }
+            &.feature-1.active::after {
+              left: auto;
+              right: 134px;
+              width: 333px;
+              top: 417px;
+            }
+            &.feature-2.active::before {
+              height: 175px;
+              left: 120px;
+              top: 307px;
+            }
+            &.feature-2.active::after {
+              left: auto;
+              top: 482px;
+              right: 134px;
+              width: 605px;
+            }
+            &.feature-3.active::before {
+              width: 2px;
+              height: 123px;
+              left: 120px;
+              top: 307px;
+            }
+            &.feature-3.active::after {
+              left: auto;
+              right: 134px;
+              top: 429px;
+              width: 590px;
+            }
+            &.feature-4.active::before {
+              content: none;
+            }
+            &.feature-4.active::after {
+              left: auto;
+              right: 134px;
+              width: 481px;
+              top: 70px;
+            }
+            &.feature-5.active::before {
+              height: 47px;
+              left: 120px;
+              top: 282px;
+            }
+            &.feature-5.active::after {
+              left: auto;
+              right: 134px;
+              width: 520px;
+              top: 327px;
+            }
+            &.feature-6.active::before {
+              content: none;
+            }
+            &.feature-6.active::after {
+              height: 2px;
+              left: auto;
+              right: 255px;
+              width: 400px;
+              top: 108px;
+            }
+            > img {
+              width: 100%;
+            }
+            .features-box-info {
+              p {
+                font-family: var(--font-tstar-bold);
+                font-size: var(--font-size18);
+                font-style: normal;
+              }
+              h4 {
+                font-size: var(--font-size28);
+                font-family: var(--font-tstar-heavy);
+              }
+              .badge {
+                justify-content: flex-start;
+              }
+            }
+          }
+        }
+      }
+
+      .features-bike-main {
+        margin-bottom: 0;
+        padding-right: 100px;
+        .feature-btn {
+          z-index: 1;
+          &.btn-1 {
+            top: 399px;
+            left: 338px;
+          }
+          &.btn-2 {
+            top: auto;
+            bottom: 50px;
+            right: auto;
+            left: 65px;
+          }
+          &.btn-3 {
+            top: auto;
+            bottom: 100px;
+            right: auto;
+            left: 80px;
+          }
+          &.btn-4 {
+            top: 50px;
+            right: auto;
+            left: 190px;
+          }
+          &.btn-5 {
+            top: auto;
+            bottom: 200px;
+            right: auto;
+            left: 150px;
+          }
+          &.btn-6 {
+            top: 90px;
+            right: auto;
+            left: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+// media quiries ===========================
+
+@media (max-width: 1199px) {
+  // pleasure xtec
+  .features-section-main {
+    &.scooter-features-main {
+      &.pleasure-xtech {
+        .features-section-wrapper {
+          justify-content: flex-end;
+          .features-box-wrapper {
+            .features-box-main {
+              .features-box {
+                &.feature-1.active::after {
+                  width: 365px;
+                }
+
+                &.feature-2.active::after {
+                  width: 625px;
+                }
+                &.feature-3.active::after {
+                  width: 504px;
+                }
+                &.feature-4.active::after {
+                  width: 465px;
+                }
+
+                &.feature-5.active::after {
+                  width: 485px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+  .features-section-main {
+    &.scooter-features-main {
+      padding: 25px 15px;
+      h2 {
+        font-size: var(--font-size32);
+      }
+      .features-section-wrapper {
+        justify-content: flex-end;
+        .features-box-wrapper {
+          h3 {
+            position: static;
+            margin-top: 10px;
+
+          }
+          .features-box-main {
+            margin-left: 100px;
+            .features-box {
+              background: #ffffff;
+              box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+              border-radius: 5px;
+              z-index: 2;
+              &::before,
+              &::after {
+                background-color: #000000;
+              }
+              &.feature-1.active::before {
+                height: 112px;
+                left: 240px;
+                top: -112px;
+              }
+              &.feature-1.active::after {
+                content: none;
+              }
+              &.feature-2.active::before {
+                height: 148px;
+                left: -31px;
+                top: -47px;
+              }
+              &.feature-2.active::after {
+                left: auto;
+                top: 100px;
+                right: 257px;
+                width: 130px;
+              }
+              &.feature-3.active::before {
+                height: 200px;
+                left: -15px;
+                top: -100px;
+              }
+              &.feature-3.active::after {
+                left: auto;
+                top: 100px;
+                right: 257px;
+                width: 114px;
+              }
+              &.feature-4.active::before {
+                content: "";
+                height: 550px;
+                left: 93px;
+                top: -463px;
+              }
+              &.feature-4.active::after {
+                left: auto;
+                right: 242px;
+                width: 20px;
+                top: 85px;
+              }
+              &.feature-5.active::before {
+                height: 285px;
+                left: 55px;
+                top: -200px;
+              }
+              &.feature-5.active::after {
+                left: auto;
+                right: 242px;
+                width: 59px;
+                top: 85px;
+              }
+              &.feature-6.active::before {
+                content: "";
+                height: 510px;
+                left: 54px;
+                top: -422px;
+                width: 2px;
+              }
+              &.feature-6.active::after {
+                left: auto;
+                right: 242px;
+                width: 60px;
+                top: 85px;
+              }
+              > img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  // pleasure xtec
+  .features-section-main {
+    &.scooter-features-main {
+      .features-section-wrapper {
+        justify-content: flex-end;
+        .features-bike-main {
+          margin: 0 0 10px 0;
+          padding: 0;
+          .features-box .features-box-info .badge{
+            font-size:12px;
+          }
+        }
+      }
+    }
+  }
+}

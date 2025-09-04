@@ -1,0 +1,43 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div class="container-fluid top-bar-main">
+    <div class="top-bar-option ${item.properties.addnclass}" data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='headeritems'}"
+    	data-sly-repeat="${listUse}">
+        <a class="top-bar-link" aa-data-attr="track_cta" data-sly-test="${item.properties.urltype == 'url'}"
+            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.url}"
+            href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}" >
+            <img src="${item.properties.icon}" class="img-fluid top-bar-icon" alt="dealer-icon" />
+            <p class="top-bar-label">${item.properties.text}</p>
+        </a>
+        <a class="top-bar-link" href="javascript:void(0)" aa-data-attr="track_cta" data-toggle="modal"
+            data-target="${item.properties.url}" data-sly-test="${item.properties.urltype == 'modal'}">
+            <img src="${item.properties.icon}" class="img-fluid top-bar-icon" alt="dealer-icon" />
+            <p class="top-bar-label">${item.properties.text}</p>
+        </a>
+    </div>
+    <div class="logout-header d-none">
+        <a class="dropdown-toggle logout-linkText" data-toggle="dropdown">
+            <img src="" class="profile-pic-header d-none"><span class="initials d-none"></span></span><span class="profile-name"></span>
+        </a>
+        <div class="dropdown-menu"
+            data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='headerDropdown'}"
+            data-sly-list="${listUse}">
+
+            <a class="dropdown-item logout-dd-linkWrap ${item.properties.addnclass}" aa-data-attr="track_cta" data-sly-test="${item.properties.urltype == 'url'}"
+            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.url}" 
+            href="${linkuse.value}" target="${linkuse.isExternal ? '_blank' : '_self'}">
+                <img class="logout-dd-img" src="${item.properties.icon}"/>
+                <span class="${currentPage.path == item.properties.url ? 'active' : 'in-active'}">${item.properties.label}</span>
+            </a>
+
+            <a class="dropdown-item logout-dd-linkWrap ${item.properties.addnclass}" href="javascript:void(0)" aa-data-attr="track_cta" data-toggle="modal"
+            data-target="${item.properties.url}" data-sly-test="${item.properties.urltype == 'modal'}">
+            <img class="logout-dd-img" src="${item.properties.icon}"/>
+            ${item.properties.label}
+            </a>
+
+        </div>
+    </div>
+</div>
+

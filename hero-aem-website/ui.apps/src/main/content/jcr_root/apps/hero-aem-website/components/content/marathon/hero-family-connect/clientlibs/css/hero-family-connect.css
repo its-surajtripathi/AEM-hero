@@ -1,0 +1,50 @@
+.hero-family-connect-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 78%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-family-connect-links {
+  flex: 0 0 16%;
+  width: 16%;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-family-connect-links :not(:nth-child(6n)) {
+  padding-right: 52px;
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hero-family-connect-links {
+    flex: 0 0 25%;
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-family-connect-links {
+    flex: 0 0 33.33%;
+    width: 33.33%;
+    margin-bottom: 12px;
+  }
+
+  .hero-family-connect-wrapper {
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .hero-family-connect-img {
+    height: 48px;
+  }
+
+  .hero-family-connect-img.vida-logo {
+    height: 36px;
+  }
+
+  .hero-family-connect-links :not(:nth-child(3n)) {
+    padding-right: 16px;
+  }
+}

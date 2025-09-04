@@ -1,0 +1,209 @@
+// footer-section
+.footer-wrapper {
+  padding-top: 31px;
+    background-color: var(--bg-color-secondarygrey);
+    .footer-list-wrapper {
+        padding: 35px 70px 0px 70px;
+      .footer-heading {
+        // font-size-20 line-height-24 font-montserrat-bold text-color-white
+        font-size: var(--font-size20);
+        font-family: var(--font-tstar-bold);
+        color: var(--text-color-white);
+        padding-bottom: 17px;
+      }
+      .footer-link {
+        li {
+          font-size: var(--font-size16);
+          font-family: var(--font-tstar-medium);
+          color: var(--text-color-lightgrey);
+          padding-bottom: 10px;
+          a {
+            text-decoration: none !important;
+            &:hover {
+              text-decoration: underline !important;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+      .quick-links-social-media {
+        padding-bottom: 48px;
+        border-bottom: 1px solid #ffffff;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 55px;
+        .g-play {
+          display: flex;
+          a {
+            &:nth-child(1) {
+              margin-right: 16px;
+            }
+          }
+        }
+        .scoial-media-icon {
+          display: flex;
+          align-items: center;
+          a{
+            margin-right: 30px;
+            &:last-child {
+              margin-right: 0px;
+            }
+          }
+        }
+      }
+      .term-condition-wrapper {
+        .ter-condition-list {
+          padding: 10px 0px 26px 0px;
+          .copy-right {
+            font-size: var(--font-size14);
+            font-family: var(--font-montserrat-bold);
+            color: var(--text-color-white);
+          }
+          .ter-condition-ul {
+            padding-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            .ter-condition-li {
+              font-size: var(--font-size14);
+              font-family: var(--font-montserrat-bold);
+              color: var(--text-color-white);
+              padding: 0px 8px;
+              position: relative;
+              &::after{
+                content: '';
+                width: 1px;
+                height: 12px;
+                background-color: #FFFFFF;
+                position: absolute;
+                left: 0px;
+                 top: 2px;
+            }
+
+            }
+            .ter-condition-li:first-child{
+                &::after{
+                    content: '';
+                    width: 0px;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .footer-wrapper {
+      padding-top: 17px;
+    }
+  }
+//
+  /* SM & XS Devices Start  */
+
+@media (max-width: 767px) and (min-width: 320px){
+
+  // footer-section
+  .footer-wrapper {
+    background-color: var(--bg-color-secondarygrey);
+    padding-top: 36px;
+    .footer-list-wrapper {
+      .footer-heading  {
+        padding-bottom: 32px;
+      }
+      padding: 35px 15px 0 15px;
+      .footer-col {
+        padding: 0;
+      }
+      .footer-link {
+        li {
+          font-size: var(--font-size12);
+          font-family: var(--font-tstar-medium);
+          color: var(--text-color-lightgrey);
+
+          a {
+            text-decoration: none !important;
+            &:hover {
+              text-decoration: underline !important;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+      .quick-links-social-media {
+        padding-bottom: 26px;
+        padding-top: 30px;
+        border-bottom: 1px solid #ffffff;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        .g-play {
+          display: flex;
+          a {
+          img{
+            max-width:100%;
+          }
+            &:nth-child(1) {
+              margin-right: 20px;
+            }
+          }
+        }
+        .scoial-media-icon {
+          display: flex;
+          margin: 0 auto !important;
+          padding-top: 34px;
+          a {
+            margin-right: 38px;
+            &:last-child {
+              margin-right: 0px;
+            }
+          }
+        }
+      }
+      .term-condition-wrapper {
+        .ter-condition-list {
+          .copy-right {
+            font-size: var(--font-size14);
+            font-family: var(--font-montserrat-bold);
+            color: var(--text-color-white);
+            text-align: center;
+            padding: 0px 12px 44px 12px;
+          }
+
+          .ter-condition-ul {
+            padding-top: 20px;
+            display: flex;
+            display: flex;
+            justify-content: center;
+            .ter-condition-li {
+              font-size: var(--font-size14);
+              font-family: var(--font-montserrat-bold);
+              color: var(--text-color-white);
+              padding: 4px 6px;
+            //   padding-right: 12px;
+            &::after{
+                content: '';
+                width: 1px;
+                height: 14px;
+                background-color: #FFFFFF;
+                position: absolute;
+                left: 0px;
+                top: 7px;
+            }
+             }
+             .ter-condition-li:nth-child(4){
+                &::after{
+                    content: '';
+                    width: 0px;
+                }
+             }
+
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,103 @@
+<sly data-sly-list.galleryMultifield="${resource.getChildren}">
+
+    <sly data-sly-test="${galleryMultifield.name == 'hdbcradio'}">
+
+        <section class="hdbc-gallery-section single-photo-mobile radio-jingles-wrap">
+            <div class="container-hdbc-gallery">
+                <div class="bottom--hdbc-wrapper">
+
+                    <div class="bottom-hdbc--content-section">
+                        <sly data-sly-list.galleries="${galleryMultifield.getChildren}">
+
+                            <!--/* Get all child resources */-->
+                            <sly data-sly-list.itemsMultifield="${galleries.getChildren}">
+
+                                <div class="content-hdbc--slider-wrap reveal">
+                                    <sly data-sly-test="${itemsMultifield.name == 'galleryradioitems'}">
+                                        <sly data-sly-list.galleryitem="${itemsMultifield.getChildren}">
+                                            <div id="hdbcGalleryTile" class="hdbc-gallery-tile" data-toggle="modal"
+                                                data-target="#audioModalRadio">
+                                                <sly data-sly-test="${galleryitem.radioimagepath}">
+                                                    <img class="hdbc-monitor-image-files"
+                                                        src="${galleryitem.radioimagepath}" alt="Image desktop view">
+                                                </sly>
+                                                <sly data-sly-test="${galleryitem.radiomobileimagepath}">
+                                                    <img class="hdbc-mobile-image-files gallery-lightbox-allignments"
+                                                        src="${galleryitem.radiomobileimagepath}"
+                                                        alt="Image Mobile view">
+                                                </sly>
+                                                <div class="hdbc-image-caption">
+
+                                                    ${galleryitem.galleryradiotitle @ context='html'}
+
+                                                </div>
+                                                <a class="d-flex align-items-center" id="anchorAudioTag" href="${galleryitem.audiofilepath}"
+                                                    target="_blank" download></a>
+                                            </div>
+
+                                        </sly>
+                                    </sly>
+
+
+                                </div>
+
+                            </sly>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+            <sly data-sly-list.galleries="${galleryMultifield.getChildren}">
+                <sly data-sly-list.itemsMultifield="${galleries.getChildren}">
+                    <sly data-sly-test="${itemsMultifield.name == 'galleryradioitems'}">
+                        <sly data-sly-list.galleryitem="${itemsMultifield.getChildren}">
+                            <div class="modal fade" id="audioModalRadio" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+
+                                        <audio src="${galleryitem.audiofilepath}" id="audioFileTag">
+                                            Audio is not supported.
+                                        </audio>
+                                        <div class="music_volume">
+                                            <div class="quarterly-clickable-container">
+                                                <div id="btnPlay"><img class="music-pause-img"
+                                                        src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/music_pause.png">
+                                                </div>
+                                                <div id="btnPause"><img class="music-pause-img"
+                                                        src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/music_play.svg">
+                                                </div>
+
+                                                <label id="lblTime" class="label-text">00:00</label>
+                                                <input type="range" step="any" id="seekbar">
+                                                <label id="lblTimeDuration" class="label-text"></label>
+
+                                                <div id="btnMute"><img class="music-volume-img"
+                                                        src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/music_volume.svg">
+                                                </div>
+
+                                                <div id="btnVolume"><img class="music-volume-mute"
+                                                    src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/audio_mute.png">
+                                                </div>
+
+                                                <a href="${galleryitem.audiofilepath}" download id="galleryRadioDownload">
+                                                    
+                                                    <div id="btnMusicDownload"><img class="music-volume-img"
+                                                        src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/download_music.png">
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div id="btnClose" data-dismiss="modal"><img class="music-close-img"
+                                                    src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/music_close.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+            </sly>
+        </section>
+    </sly>
+</sly>

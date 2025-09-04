@@ -1,0 +1,222 @@
+.bcipl-container {
+    width: 100%;
+    min-width: 320px;
+    position: relative;
+}
+
+.bcipl-header-container {
+    width: 100%;
+    max-width: 1290px;
+    background: url('/etc.clientlibs/hero-aem-website/clientlibs/clientlib-bcipl-site/resources/header-bg.png') no-repeat center top;
+    padding: 12px 0 9px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.bcipl-header {
+    width: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bcipl-header .logoPan h3 {
+    width: 310px;
+    margin: 0 0 0 10px;
+    font-size: 44px;
+    color: #ed1c24;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.bcipl-navPan {
+    position: absolute;
+    top: 70px;
+    background-color: #000000;
+    -webkit-box-shadow: 9px 9px 39px -7px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 9px 9px 39px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 9px 39px -7px rgb(0 0 0 / 75%);
+    z-index: 9999;
+    width: 100%;
+}
+
+.bcipl-navPan ul {
+    margin: 0px;
+    padding: 0px 0;
+}
+
+.bcipl-navPan ul li.activeNav {
+    background-color: #ed1c24;
+}
+
+.bcipl-navPan ul li:hover {
+    background-color: #ed1c24;
+}
+
+.bcipl-navPan ul li {
+    list-style: none;
+    float: left;
+    font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0px 11px 0 11px;
+    margin: 0;
+    position: relative;
+}
+
+.bcipl-navPan ul li a {
+    color: #ffffff;
+    margin: 8px;
+    margin-left: 16px;
+    display: inline-block;
+    text-decoration: none;
+    text-indent: -8px;
+}
+
+
+#siteMnuBtn {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 33px;
+    left: 0px;
+    top: 73px;
+    background: url('/etc.clientlibs/hero-aem-website/clientlibs/clientlib-bcipl-site/resources/nav-btn.jpg') no-repeat left top;
+    cursor: pointer;
+    z-index: 99;
+    border: 1px solid #ED1F23;
+}
+
+.outer--ul {
+    position: relative;
+}
+
+.third-level-ul li,
+.second-level-ul li,
+.fourth-level-ul li {
+    background: black;
+}
+
+.second-level-ul,
+.third-level-ul,
+.fourth-level-ul {
+    position: absolute;
+    width: 100%;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.second-level-ul li {
+    width: 189px;
+}
+
+.third-level-ul li {
+    width: 275px;
+}
+
+.second-level-ul {
+    top: 34px;
+    left: 0px;
+    width: 189px;
+}
+
+.fourth-level-ul {
+    left: 260px;
+    top: 0px;
+    z-index: 1;
+}
+
+.third-level-ul {
+    top: 0;
+    left: 189px;
+    width: 275px;
+}
+
+.outer--ul li:hover .second-level-ul,
+.outer--ul li .second-level-ul li:hover .third-level-ul {
+    max-height: 600px;
+    transition: max-height 0.5s ease-in;
+}
+
+.outer--ul li .second-level-ul li .third-level-ul li:hover .fourth-level-ul {
+    max-height: 600px;
+    transition: max-height 1s ease-in;
+}
+
+@media screen and (max-width: 990px) {
+
+    .second-level-ul,
+    .third-level-ul,
+    .fourth-level-ul {
+        position: relative;
+        width: 100%;
+    }
+
+    #siteMnuBtn {
+        display: block;
+    }
+
+    .bcipl-header-container {
+        background: none;
+        background-color: #e3e3e3
+    }
+
+    .bcipl-navPan {
+        width: 300px;
+        position: absolute;
+        top: 109px;
+        left: -300px;
+        max-height: unset;
+        transition: 0.4s;
+    }
+
+    .bcipl-navPan-left {
+        left: 0;
+    }
+
+    .bcipl-header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bcipl-navPan ul {
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+    }
+
+    .bcipl-navPan ul li {
+        background: black;
+        padding: 0;
+    }
+
+    .second-level-ul {
+        top: 0px;
+        left: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .third-level-ul {
+        top: 0px;
+        left: 0px;
+    }
+
+    .fourth-level-ul {
+        left: 10px;
+        top: 0px;
+    }
+
+    .fourth-level-ul li {
+        width: 280px !important;
+    }
+
+    .second-level-ul li {
+        width: 290px;
+    }
+
+    .bcipl-navPan .second-level-ul a {
+        width: 60%;
+    }
+
+}

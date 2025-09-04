@@ -1,0 +1,32 @@
+<!--/* <div data-sly-use.model="${'com.hero.aem.core.models.StateCityModel' @contentPath='/content/hmc/dealers/in/harley'}">
+  <ul data-sly-list="${model.statesList}">
+    <li>
+      <h2>${item}</h2>
+      <p>${model.stateCityMap[item] @ join=" | "}</p>
+    </li>
+  </ul>
+</div>
+ */-->
+<sly data-sly-use.model="${'com.hero.aem.core.models.StateCityModel' @contentPath='/content/hmc/dealers/in/harley'}">
+  <div data-sly-list="${model.statesList}" id="accordion-dealershd" class="cmp-accordion" data-cmp-is="accordion"
+    data-cmp-single-expansion="true" data-placeholder-text="false">
+    <div class="cmp-accordion__item" data-cmp-hook-accordion="item" id="accordion-dealershd-item-${item}">
+      <h3 class="cmp-accordion__header">
+        <button id="accordion-dealershd-item-${item}-button" class="cmp-accordion__button" type="button"
+          aria-controls="accordion-dealershd-item-${item}-panel" data-cmp-hook-accordion="button">
+          <span class="cmp-accordion__title">${item}</span>
+          <span class="cmp-accordion__icon"></span>
+        </button>
+      </h3>
+      <div data-cmp-hook-accordion="panel" id="accordion-dealershd-item-${item}-panel"
+        class="cmp-accordion__panel cmp-accordion__panel--hidden" role="region"
+        aria-labelledby="accordion-dealershd-item-${item}-button" aria-hidden="true">
+        <div class="text">
+          <div id="text-${item}" class="cmp-text">
+            <p>${model.stateCityMap[item] @ join=" | "}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

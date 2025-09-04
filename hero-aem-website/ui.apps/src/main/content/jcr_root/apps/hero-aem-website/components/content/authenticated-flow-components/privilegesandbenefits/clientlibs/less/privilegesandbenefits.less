@@ -1,0 +1,67 @@
+.privilege-available {
+    background: #fff;
+    padding: 40px 30px 100px;
+    .prev-header {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    .privilege-six-container{
+        display: flex;
+        flex-wrap: wrap;
+        .privilege-container{
+            width: 33%;
+            float: left;
+            text-align: center;
+            padding-bottom: 40px;
+            @media only screen 
+            and (min-device-width: 320px) 
+            and (max-device-width: 480px)
+            and (-webkit-min-device-pixel-ratio: 2) {
+                width: 50%;
+            }
+            .privilege-img {
+                display: flex;
+                justify-content: center;
+            }
+            .privilege-discount{
+            	color: #FF0808;
+			    font-family: 'tstar-bold';
+			    font-size: 24px;
+			    line-height: 32px;
+            }
+            .privilege-desc{
+            	font-weight: 400;
+			    font-size: 18px;
+			    line-height: 20px;
+            }
+        }
+    }
+    .insurance-container {
+        width: 346px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        box-shadow: 0px 7px 11px 1px #ddd;
+        .insurance-img{
+            img{
+                width: 100%;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+        }
+        .insurance-content{
+            .insurance-container-left{
+                float: left;
+                width: 20%;
+                padding: 6px;
+            }
+            .insurance-container-right{
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
+    }
+    .prev-header-container {
+        text-align: center;
+    }
+}

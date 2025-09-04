@@ -1,0 +1,52 @@
+<div class="carousel-wrapper" data-slick-autoplay="${properties.autoplay}"
+  data-slick-autoplay-speed="${properties.duration}" data-slick-speed="${properties.speed}">
+  <div class="container-fixed-width">
+    <!-- <div class="carousel-feature-line"></div>
+    <div class="carousel-feature-heading">
+      ${properties.mainTitle @context='html'}
+    </div> -->
+
+    <div data-sly-test="${properties.staticText}" class="carousel-feature-text-container">
+      <div class="carousel-feature-line"></div>
+      <div class="carousel-feature-verticalline">
+        <h4 class="carousel-feature-title-static">
+          ${properties.staticText @context='html'}
+        </h4>
+
+        <!-- <p class="carousel-feature-desc">
+        ${item.properties.featureDescription}
+      </p> -->
+      </div>
+    </div>
+  </div>
+  <div class="premia-feature-carousel carousel">
+    <sly data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='iconTextItems'}">
+      <sly data-sly-list="${listUse}">
+        <div>
+          <div class="carousel-feature-container">
+            <!-- <div class="container-fixed-width"> -->
+            <div class="carousel-feature-image-cont">
+              <img
+                data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.imageRef}"
+                src="${imagePath}" loading="lazy" alt="carousel item" />
+            </div>
+            <div data-sly-test="${item.properties.title}" class="carousel-feature-text-container">
+              <div class="carousel-feature-line"></div>
+              <div class="carousel-feature-verticalline">
+                <h4 class="carousel-feature-title">
+                  ${item.properties.title @context='html'}
+                </h4>
+                <p class="carousel-feature-desc">
+                  ${item.properties.featureDescription @context='html'}
+                </p>
+              </div>
+              <sly data-sly-resource="${'button' @ resourceType='hero-aem-website/components/content/premia/button' }">
+              </sly>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </sly>
+    </sly>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="earning-history-container ${properties.variant}-history-cintainer">
+    <div class="earning-history-title">
+        <label class="history-title-icon"><img src="${properties.headingicon}" /></label>
+        ${properties.heading}
+    </div>
+    <div class="table-responsive redemption-history">
+        <div class="no-results d-none">
+            <h3>${properties.nodatalabel @context='scriptString'}</h3>
+        </div>
+        <script type="text/html" class="getRedemptionHistory">
+            <table>
+                <tr>
+                    <th><div class="first-head">${properties.datelabel @context='scriptString'}</div></th>
+                    <th><div class="sec-head">${properties.rewardslabel @context='scriptString'}</div></th>
+                    <th><div class="third-head">${properties.milestonelabel @context='scriptString'}</div></th>
+                   
+                    <!-- <th>${properties.datelabel @context='scriptString'}</th>
+                    <th>${properties.rewardslabel @context='scriptString'}</th>
+                    <th>${properties.milestonelabel @context='scriptString'}</th>
+                    <th>${properties.voucherlabel @context='scriptString'}</th> -->
+                </tr>
+                <%var counter=0; total=0; _.each(getRedemptionHistoryData, function(item, i, list) {if(getRedemptionHistoryData[i].IS_REDEEMED == 'Y'){counter++;}total=list.length;}); %>
+                <h3>${properties.subheading @context='scriptString'}&nbsp;&nbsp;(<%= counter%> of <%= total%>)</h3>
+                <% _.each(getRedemptionHistoryData, function(item, i, list) { %>
+                <tr><%if(getRedemptionHistoryData[i].IS_REDEEMED == 'Y'){%>
+                    <td><div class="first-earning"><%=getRedemptionHistoryData[i].R_DATE%></div></td>
+                    <td><div class="sec-earning"><%=getRedemptionHistoryData[i].REDEEMED_MESSAGE%></div></td>
+                    <td><div class="third-earning"><div class="points"><img src="${properties.coinicon @context='uri'}">
+                        <%=getRedemptionHistoryData[i].GIFT_POINTS%></div></div></td>
+                    
+                    
+                </tr><% }});%>
+            </table>
+        </script>
+    </div>
+</div>

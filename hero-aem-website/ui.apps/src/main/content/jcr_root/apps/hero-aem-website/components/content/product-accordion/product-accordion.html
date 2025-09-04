@@ -1,0 +1,33 @@
+<div>
+  <p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @ format=[component.title], i18n} </p>
+  <sly data-sly-use.product="com.hero.aem.core.models.ProductAccordionModel">
+    <div class="accordion keypolicies" id="accordionExample">
+      <div data-sly-list.keyName="${product.productList}">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#colapse${keyNameList.index}" aria-expanded="true" aria-controls="collapseOne">
+              <span class="expand-icon"></span>
+              <h5 class="fb"> ${keyName.productTitle @ context='html'}</h5>
+            </button>
+          </div>
+          <div id="colapse${keyNameList.index}" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body image-aliner">
+              <sly data-sly-list.item="${keyName.productLargeImages}">
+                <div class="accordion-container">
+                  <a href="${item}">
+                    <img src="${keyName.productThumbImages[itemList.index]}" class="accordion-image" />
+                    <div class="accordion-overlay">
+                        <div class="accordion-icon">
+                         <img class="accordion-icons" src="${properties.viewicon}"/>
+                        </div>
+                    </div>
+                  </a>
+                </div>
+              </sly>          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sly>
+</div>

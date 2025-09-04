@@ -1,0 +1,219 @@
+
+# Include customer defined variables
+Include conf.d/variables/custom.vars
+
+<VirtualHost *:80>
+	ServerName	"publish"
+	# Put names of which domains are used for your published site/content here
+  ServerAlias www.heromotocorp.com
+	ServerAlias heromotocorp.com
+	ServerAlias *.heromotocorp.com
+	ServerAlias *.adobeaemcloud.com
+	ServerAlias *.adobeaemcloud.net
+	ServerAlias localhost
+	# Use a document root that matches the one in conf.dispatcher.d/default.farm
+	DocumentRoot "${DOCROOT}"
+	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+	AllowEncodedSlashes NoDecode
+
+  SSLProxyEngine on
+
+  # new HeroMotoCorp reverse proxy configurations
+  
+  ProxyPassMatch    "/en-in/(about-us/we-care-green-manufacturing|about-us/supply-chain|about-us/green-it|about-us/familiarisation-program-of-independent-directors|about-us/committee-of-directors|about-us/code-of-conduct|about-us/changes-in-directors|about-us/key-policies/corporate-social-responsibility)(.*)" "https://new.heromotocorp.com/en-in/$1$2$3"
+  ProxyPassReverse  "/" "https://new.heromotocorp.com/"
+  
+  ProxyPassMatch    "/en-in/(?!homepage|motorcycles|scooters|campaigns|about-us|media|reach-us|my-hero|my-account|disclaimer|privacy-policy|terms-of-use|rules-and-regulations|data-collection-contract|key-policies|xclan|good-life|assist|hero-app|hdbc|sustainability|hero-merchandise|two-wheeler-price-rss-feed|two-wheeler-motorcycles-scooters|careers|404|investors|ndc-discussion-forum|hero-rides-and-community|hero-genuine-oil|sitemap|social-links|cookie-policy|public-notice|hero-xpulse-experience-centre|hero-two-wheeler-enquiry-yono|hero-forever|marathon|premia|hd|services)(.*)" "https://new.heromotocorp.com/en-in/$1"
+  ProxyPassReverse  "/" "https://new.heromotocorp.com/"
+
+  ProxyPassMatch    "/(?!en-in)([a-z]{2})-([a-z]{2})/(.*)" "https://new.heromotocorp.com/$1-$2/$3"
+  ProxyPassReverse  "/" "https://new.heromotocorp.com/"
+
+  ProxyPassMatch    "/(happyearth|e2|enable|ridesafe|community-development|Brand-Guidelines|covid19-lockdown-tips-for-motorcycle|manufacturinghappiness|gvdp|hero-book-a-test-ride|distributor|hero-xdrags)(.*)" "https://new.heromotocorp.com/$1$2"
+  ProxyPassReverse  "/" "https://new.heromotocorp.com/"
+
+  Header set Content-Security-Policy "frame-ancestors 'self' heromotocorp.com *.heromotocorp.com"
+  Header set Referrer-Policy "no-referrer-when-downgrade"
+  Header always set Strict-Transport-Security "max-age=16070400; includeSubdomains"
+  Header set X-Content-Security-Policy "frame-ancestors 'self' heromotocorp.com *.heromotocorp.com"
+
+	# Add header breadcrumbs for help in troubleshooting
+	<IfModule mod_headers.c>
+		Header add X-Vhost "publish"
+	</IfModule>
+	<Directory "${DOCROOT}">
+		<IfModule disp_apache2.c>
+			# Some items cache with the wrong mime type
+			# Use this option to use the name to auto-detect mime types when cached improperly
+			ModMimeUsePathInfo On
+			# Use this option to avoid cache poisioning
+			# Sling will return /content/image.jpg as well as /content/image.jpg/ but apache can't search /content/image.jpg/ as a file
+			# Apache will treat that like a directory.  This assures the last slash is never stored in cache
+			DirectorySlash Off
+			# Enable the dispatcher file handler for apache to fetch files from AEM
+			SetHandler dispatcher-handler
+		</IfModule>
+		Options FollowSymLinks
+		AllowOverride None
+		Require all granted
+		# Insert filter
+		SetOutputFilter DEFLATE
+		# Don't compress images
+		SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+		# Prevent clickjacking
+		Header always append X-Frame-Options SAMEORIGIN
+	</Directory>
+	<IfModule disp_apache2.c>
+		# Enabled to allow rewrites to take affect and not be ignored by the dispatcher module
+		DispatcherUseProcessedURL	On
+		# Default setting to allow all errors to come from the aem instance
+		DispatcherPassError		1
+	</IfModule>
+
+  <IfModule mod_deflate.c>
+    SetOutputFilter DEFLATE
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/gif
+    AddOutputFilterByType DEFLATE application/jpg
+    AddOutputFilterByType DEFLATE application/jpeg
+    AddOutputFilterByType DEFLATE application/png
+    AddOutputFilterByType DEFLATE application/ico
+    AddOutputFilterByType DEFLATE application/eot
+    AddOutputFilterByType DEFLATE application/pdf
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/x-woff
+    AddOutputFilterByType DEFLATE image/svg+xml
+    # SetOutputFilter DEFLATE
+    SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.avi$ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.mov$ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.mp3$ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.mp4$ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.rm$ no-gzip dont-vary
+    DeflateCompressionLevel 9
+    # Netscape 4.x has some problems...
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    # Netscape 4.06-4.08 have some more problems
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    # MSIE masquerades as Netscape, but it is fine
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    # Make sure proxies don't deliver the wrong content
+    # Header append Vary Accept-Encoding env=!dont-vary
+  </IfModule>
+  
+  <IfModule mod_rewrite.c>
+      RewriteEngine On
+      Include conf.d/rewrites/www-heromotocorp-com.rules
+      # Rewrite index page internally, pass through (PT)
+      RewriteRule "^(/?)$" "/index.html" [PT]
+  </IfModule>
+  <IfModule mod_headers.c>
+      Header unset ETag
+  </IfModule>
+  FileETag None
+  AddType application/vnd.ms-fontobject .eot
+  AddType application/x-font-ttf .ttf
+  AddType application/x-font-opentype .otf
+  AddType application/x-font-woff .woff
+  AddType image/x-icon .ico
+
+  <FilesMatch "\.(json|html)$">
+    ExpiresActive Off
+  </FilesMatch>
+
+  <LocationMatch "\.(txt)$">
+    ForceType plain/text
+    Header set Content-Disposition inline
+  </LocationMatch>
+
+   <LocationMatch "\.(svg|jpe?g|png|gif)$">
+     ForceType image/svg/gif+xml
+     Header set Content-Disposition inline
+   </LocationMatch>
+
+   <LocationMatch "\.(?i:pdf)$">
+     ForceType application/pdf
+     Header set Content-Disposition inline
+   </LocationMatch>
+
+  <LocationMatch ^/content/dam>
+    Header unset Cache-Control
+    Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+    Header set Surrogate-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+    Header set Age 0
+  </LocationMatch>
+
+  <LocationMatch ^/etc>
+    Header unset Cache-Control
+    ExpiresActive On
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+    ExpiresByType application/x-font-ttf "access plus 1 year"
+    ExpiresByType application/x-font-opentype "access plus 1 year"
+    ExpiresByType application/x-font-woff "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+  </LocationMatch>
+
+  <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+    Header unset Cache-Control
+    Header set Cache-Control "max-age=2592000,stale-while-revalidate=3600,stale-if-error=3600,public" "expr=%{REQUEST_STATUS} < 400"
+    Header set Surrogate-Control "max-age=3600,stale-while-revalidate=3600,stale-if-error=3600,public" "expr=%{REQUEST_STATUS} < 400"
+    Header set Age 0
+  </LocationMatch>
+
+  <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+    Header unset Cache-Control
+    Header set Cache-Control "max-age=43200,stale-while-revalidate=3600,stale-if-error=3600,public" "expr=%{REQUEST_STATUS} < 400"
+    Header set Surrogate-Control "max-age=3600,stale-while-revalidate=3600,stale-if-error=3600,public" "expr=%{REQUEST_STATUS} < 400"
+    Header set Age 0
+  </LocationMatch>
+
+  <LocationMatch "^/content/.*(?!(?:profile|bookatestride|statecitylist|xtrack|xpulse|requestcallback|generatelead|sendotp|captcha|getMMIDetails|bookservice|submitFeedback|getGoodLifeResponse|getPaymentUrl|postPaymentData|premiainvite|decryptservlet))\.html$">
+    Header unset Cache-Control
+    Header unset Expires
+    Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+    Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+    Header set Age 0
+  </LocationMatch>
+
+  <LocationMatch "(profile|bookatestride|statecitylist|xtrack|xpulse|requestcallback|generatelead|sendotp|captcha|getMMIDetails|bookservice|submitFeedback|getGoodLifeResponse|getPaymentUrl|postPaymentData|premiainvite|decryptservlet)\.(html|htm)$">
+    ExpiresActive Off
+    Header unset Cache-Control
+    Header unset Surrogate-Control
+    Header set Cache-Control "private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform"
+    Header set Pragma "no-cache"
+  </LocationMatch>
+  
+  <LocationMatch ^/bin>
+    ExpiresActive Off
+    Header set Cache-Control "private, no-cache, no-store, proxy-revalidate, no-transform"
+    Header set Pragma "no-cache"
+  </LocationMatch>
+
+  <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+   Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+   Header set Surrogate-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+   Header set Age 0
+  </LocationMatch>
+
+  <LocationMatch "^(?!/content/dam/hero-aem-website/in/servicejourney/myvehicles)/(.*)">
+        ErrorDocument 404 /en-in/404.html
+  </LocationMatch>
+
+</VirtualHost>

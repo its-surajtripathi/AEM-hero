@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-06-30T15:07:25.106+05:30"
+        cq:lastModifiedBy="admin"
+        cq:policy="hero-aem-website/components/structure/page-premia-booking/policy_1688111777609"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="hero-aem-website/components/container/policy_1574694950110"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <container
+                cq:policy="hero-aem-website/components/container/policy_1688111983628"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+        </root>
+    </jcr:content>
+    <hero-aem-website jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <structure jcr:primaryType="nt:unstructured">
+                <page-premia-booking jcr:primaryType="nt:unstructured">
+                    <policy_1688111777609
+                        jcr:lastModified="{Date}2023-06-30T13:32:32.639+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="harley policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="[hero-aem-website.dependencies,hero-aem-website.staticpages,premia-booking-aem-website.site,hero-aem-website.site,hero-aem-website.authenticatedpages]"
+                        clientlibsAsync="false">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1688111777609>
+                </page-premia-booking>
+            </structure>
+            <container jcr:primaryType="nt:unstructured">
+                <policy_1688111983628
+                    jcr:lastModified="{Date}2023-06-30T15:07:25.087+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="harley policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[group:Hero MotoCorp - Content,group:Hero MotoCorp - Structure,group:Hero Premia - Content]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1688111983628>
+            </container>
+        </components>
+    </hero-aem-website>
+</jcr:root>

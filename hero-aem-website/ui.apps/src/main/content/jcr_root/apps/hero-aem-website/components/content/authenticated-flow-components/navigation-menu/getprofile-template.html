@@ -1,0 +1,18 @@
+<script type="text/html" class="userDetailsNavTemplate">
+    <div class="profile-update">
+        <div class="myvehicle-profile-pic">
+			<div class="fetch-image">
+				<img class="profile-roundPic pic"  src="<%=vehicleDetails.profilePicPath%>?<%=atob(vehicleDetails.mediaToken)%>" >
+				<div class="initials">   </div>
+			</div>
+			<div class="upload-image">
+				<a href="${properties.editaccountLink @context='uri'}.html">
+					<img src="${properties.pencilIcon @ context='uri'}" alt="pencil-icon"></a>
+			</div>
+            	<h4><%=vehicleDetails.name%></h4>
+            	<p><%=vehicleDetails.mobile%></p>
+            	<a href="${properties.accountLink @context='uri'}.html">${properties.accountLabel @context='scriptString'}</a>
+    		   
+		</div>
+    </div>
+</script> 

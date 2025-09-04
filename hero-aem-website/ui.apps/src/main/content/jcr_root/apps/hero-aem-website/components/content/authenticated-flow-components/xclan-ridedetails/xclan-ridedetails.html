@@ -1,0 +1,72 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<div class="xclan-wrapper">
+    <!-- Ride Info -->
+    <section class="ride-info">
+        <div class="container-fluid ride-details">
+            <p class="ride-error d-none">Ride Not Available</p>
+            <script type="text/html" class="xclanRideDetails-data">
+                <div class="xclan-heading">
+                    <h2><%=vehicleDetails.Ride_Name%></h2>
+                </div>
+                <div class="rideDiscription">
+                    <p><%=vehicleDetails.Ride_Description%></p>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="col-lg-2 col-sm-4 col-12">
+                        <div class="ride-list">
+                            <div class="rideImg-icon"><img src="${properties.temperatureImage @ context='uri'}"></div>
+                            <p>${properties.temperatureLabel @ context='scriptString'}</p>
+                            <h4><%=vehicleDetails.Temperature%></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-12">
+                        <div class="ride-list">
+                            <div class="rideImg-icon"><img src="${properties.altitudeImage @ context='uri'}"></div>
+                            <p>${properties.altitudeLabel @ context='scriptString'}</p>
+                            <h4><%=vehicleDetails.Altitude%></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-12">
+                        <div class="ride-list">
+                            <div class="rideImg-icon"><img src="${properties.distanceImage @ context='uri'}"></div>
+                            <p>${properties.distanceLabel @ context='scriptString'}</p>
+                            <h4><%=vehicleDetails.Distance%></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-12">
+                        <div class="ride-list">
+                            <div class="rideImg-icon"><img src="${properties.dateImage @ context='uri'}"></div>
+                            <p>${properties.dateLabel @ context='scriptString'}</p>
+                            <h4 class="smallfont ride-date"> <%=vehicleDetails.Date_Period.replace('Date_From','From').replace('Date_To','To')%></h4>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-4 col-12">
+                        <div class="ride-list">
+                            <div class="rideImg-icon"><img src="${properties.priceImage @ context='uri'}"></div>
+                            <p>${properties.priceLabel @ context='scriptString'}</p>
+                            <h4 class="smallfont ride-price">XClan member : INR <%=vehicleDetails.XclanFee%><br> Non XClan member : INR <%=vehicleDetails.NonXclanFee%></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-12">
+                        <div class="ride-list">
+                            <div class="rideImg-icon"><img src="${properties.destinationImage @ context='uri'}"></div>
+                            <p>${properties.destinationLabel @ context='scriptString'}</p>
+                            <h4><%=vehicleDetails.Destination%></h4>
+                        </div>
+                    </div>
+
+
+                </div>
+                <a class="register-for-ride d-none" href="${properties.regPath @ context='uri'}.html?xclanfees=<%=vehicleDetails.XclanFee%>&nonXclanfees=<%=vehicleDetails.NonXclanFee%>" onclick="generatexclanDatalayer()">
+                    <button class="btn btn-red-gradient " type="button">${properties.registrationLabel @ context='scriptString'}</button>
+                </a>
+            </script>
+
+
+        </div>
+    </section>
+
+</div>

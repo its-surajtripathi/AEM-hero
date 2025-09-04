@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder"
+    sling:basename="[eon-de-service,hero-aem-website/components/content/adcarousel]">
+    <hero.content.dialog
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="AD Carousel Dialog"/>
+    <hero.content.dialog.heading
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Heading"/>
+    <hero.content.dialog.slidericons
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Show Slider Icons?"/>
+    <hero.content.dialog.additems
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Add Items"/>
+    <hero.content.dialog.item
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Carousel Item"/>
+    <hero.content.dialog.item.image
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Drop an Image"/>
+    <hero.content.dialog.item.alt
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Image Alt Text"/>
+    <hero.content.dialog.item.button
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Button Text"/>
+    <hero.content.dialog.item.link
+        jcr:primaryType="sling:MessageEntry"
+        sling:message="Button URL"/>
+</jcr:root>

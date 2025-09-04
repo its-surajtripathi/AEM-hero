@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Download Brochure"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <variation
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        class="cq-dialog-dropdown-showhide"
+                        cq-dialog-dropdown-showhide-target=".show-hide-textfield"
+                        fieldLabel="Select Variation"
+                        name="./variation"
+                        required="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+	                         <none
+	                                jcr:primaryType="nt:unstructured"
+	                                text="none"
+	                                value="none"/>
+                            <button
+                                jcr:primaryType="nt:unstructured"
+                                text="Button"
+                                value="btn callback-btn"/>
+                            <link
+                                jcr:primaryType="nt:unstructured"
+                                text="Link"
+                                value="link-btn download-btn"/>
+                        </items>
+                    </variation>
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="Enter Link Text"
+                        fieldLabel="Link Text"
+                        name="./text"/>
+                    <link
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Enter Pdf Link path"
+                        fieldLabel="PDF Link path"
+                        name="./link"
+                        rootPath="/content/dam/hero-aem-website"/>
+                    <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="show-hide-textfield"
+                        showhidetargetvalue="link-btn download-btn">
+                        <items jcr:primaryType="nt:unstructured">
+                            <icon
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldDescription="Enter Download Icon path"
+                                fieldLabel="Download Icon path"
+                                name="./icon"
+                                rootPath="/content/dam/hero-aem-website"/>
+                        </items>
+                    </image>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

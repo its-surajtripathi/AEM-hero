@@ -1,0 +1,65 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+      format=[component.title], i18n} </p>
+<div class="container">
+      <div class="address-section">
+            <div class="corpaorateOffice" titleID="${properties.title}">
+                  <div class="mapcon">
+                        <div class="contact-title">${properties.title @ context='html'}</div>
+                        <div id="map_container">
+                              <sly
+                                    data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='multicontact'}">
+                                    <sly data-sly-list="${listUse}">
+                                          <div class="white-line"></div>
+                                          <div class="address-row" data-sly-test="${item.properties.subtitle}">
+                                                <div class="main-col">${item.properties.subtitle @ context='html'}</div>
+                                          </div>
+                                          <div class="address-row" data-sly-test="${item.properties.address}">
+                                                <div class="under-line" data-sly-test="${item.properties.subtitle}">
+                                                </div>
+                                                <div class="address-divider">
+                                                      <div class="address-col"><i class="b2-text-std">Address :</i> </div>
+                                                      <div class="address-col-val">${item.properties.address @
+                                                            context='html'}
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="address-row" data-sly-test="${item.properties.telephone}">
+                                                <div class="under-line"></div>
+                                                <div class="address-divider">
+                                                      <div class="address-col"><i class="b2-text-std">Telephone :</i> </div>
+                                                      <div class="address-col-val b2-text-std" id="phoneNumber" data-office="${item.properties.dataoffice}"><a
+                                                                  href="tel:+${item.properties.telephone}">${item.properties.telephone}</a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="address-row" data-sly-test="${item.properties.fax}">
+                                                <div class="under-line"></div>
+                                                <div class="address-divider">
+                                                      <div class="address-col"><i class="b2-text-std">Fax :</i> </div>
+                                                      <div class="address-col-val b2-text-std">${item.properties.fax}</div>
+                                                </div>                                                
+                                          </div>
+                                          <div class="address-row" data-sly-test="${item.properties.cin}">
+                                                <div class="under-line"></div>
+                                                <div class="address-divider">
+                                                      <div class="address-col"><i class="b2-text-std">CIN :</i> </div>
+                                                      <div class="address-col-val b2-text-std">${item.properties.cin}</div>
+                                                </div>
+                                          </div>
+                                          <div class="address-row" data-sly-test="${item.properties.email}">
+                                                <div class="under-line"></div>
+                                                <div class="address-divider">
+                                                      <div class="address-col"><i class="b2-text-std">Email :</i> </div>
+                                                      <div class="address-col-val b2-text-std"><a
+                                                            href="mailto:${item.properties.email}">${item.properties.email}</a>
+                                                      </div>
+                                                </div>                                                
+                                          </div>
+                                          <div class="empty-space"></div>
+                                    </sly>
+                              </sly>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>

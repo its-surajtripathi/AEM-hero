@@ -1,0 +1,46 @@
+<div class="scooter-specifications" id="Specifications">
+    <div class="inner d-flex flex-md-nowrap flex-wrap justify-content-between">
+        <div class="content">
+            ${properties.headingtext @context='html'}
+            <ul class="specifications-list d-flex flex-wrap"
+                data-sly-use.specifications="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='specifications'}"
+                data-sly-list="${specifications}">
+                <li class="d-flex align-items-center">
+                    <div class="icon-box">
+                        <img loading="lazy" src="${item.properties.icon}" alt="fuel-injection">
+                    </div>
+                    <div class="spec-text">
+                        <h4 class="font-weight-bold">${item.properties.value}</h4>
+                        <p>${item.properties.title}</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="action d-inline-flex align-items-center">
+                <sly
+                        data-sly-resource="${'download' @resourceType='hero-aem-website/components/content/downloadbrochure'}">
+                </sly>
+                <sly data-sly-resource="${'share' @resourceType='hero-aem-website/components/content/shareicon'}">
+                </sly>
+            </div>
+        </div>
+        <div class="img-box text-center text-md-right"
+            data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+            data-sly-test="${image.src}"
+            data-cmp-dmimage="${image.dmImage}"
+            data-asset-id="${image.uuid}"
+            id="${image.id}"
+            data-cmp-data-layer="${image.data.json}"
+            itemscope itemtype="http://schema.org/ImageObject">
+            <img srcset="${image.srcset}" src="${image.src}"
+                loading="${image.lazyEnabled ? 'lazy' : ''}"
+                class="d-md-inline-block d-none"
+                itemprop="contentUrl"
+                alt="${image.alt || true}" title="${image.displayPopupTitle && image.title}"/>
+            <img srcset="${image.srcset}" src="${image.src}"
+                loading="${image.lazyEnabled ? 'lazy' : ''}"
+                class="d-md-none"
+                itemprop="contentUrl"
+                alt="${image.alt || true}" title="${image.displayPopupTitle && image.title}"/>
+        </div>
+    </div>
+</div>

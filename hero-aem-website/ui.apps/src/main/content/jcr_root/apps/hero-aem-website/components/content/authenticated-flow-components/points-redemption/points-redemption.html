@@ -1,0 +1,29 @@
+<!-- Points and reduction section start -->
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+            <div class="bg" style="background:url(${properties.tierbackground @ context='uri'});">
+                <div class="headericon" data-sly-test="${properties.tiericon}" style="background:url(${properties.tiericon @ context='uri'});"> </div>
+                <h1>${properties.heading} </h1> <span>${properties.subtitle}</span>
+            </div>
+            <div class="container points"
+                 data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='rewarddetails'}">
+                 <div class="doted-border"></div>
+                <ul data-sly-list.details="${listUse}">
+                    <li>
+                        <div class="row"><span class="coin-icon" data-sly-test="${properties.coinicon}" style="--coin-icon:url(${properties.coinicon @ context='uri'});"></span>
+                            <div class="con-header-left">
+                                <div class="con-header">
+                                    ${details.properties.rewardamount} </div>
+                            </div>
+                            <div class="con-header-right">
+                                <div class="con-content">
+                                    <span data-sly-test="${properties.gifticon}" class="gift-icon" style="--gift-icon:url(${properties.gifticon @ context='uri'});"></span>
+                                    <span class="con-span">
+                                    ${details.properties.rewarddetails @ context='html'}</span></div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>

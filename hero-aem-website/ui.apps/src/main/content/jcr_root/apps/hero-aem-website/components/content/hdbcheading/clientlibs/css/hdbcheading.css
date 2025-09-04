@@ -1,0 +1,49 @@
+.hdbc-heading-container {
+    height: 138px;
+    background-color: #303030;
+}
+
+.hdbc-heading-box{
+    width: fit-content;
+    margin: auto;
+}
+
+.hdbc-heading-aligner{
+    display: flex;
+    justify-content: center;
+}
+
+.hdbc-heading-container .hdbc-heading p{
+    font-family: var(--font-tstar-bold);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.hdbc-heading-underline{
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FF0000;
+    margin: 0.5rem 0 0.3rem 0;
+}
+
+@media (max-width:768px)  {
+    .hdbc-heading-container .hdbc-heading p{
+        font-size: 28px;
+        line-height: 34px;
+        margin-top: 16px;
+    }
+
+    .hdbc-heading-container {
+        height: 80px;
+    }
+
+    .hdbc-heading-underline {
+        border-style: solid;
+        border-width: 2px;
+    }
+}

@@ -1,0 +1,61 @@
+#campaign-xoom-container{
+    background-color: #ededed;
+    padding-top: 40px;
+}
+
+.camp-xoom-bg{
+    background-color:#ededed !important;
+}
+
+#campaign-xoom-title{
+    font-size: 42px !important;
+}
+
+.campaign-xoom-content-wrapper{
+    display: flex;
+    padding: 38px;
+}
+.campaign-xoom-text-wrapper{
+    Padding:0px 21px;
+    text-align: center;
+}
+.break-line{
+    border: 1px solid #c0c0c0;
+}
+#campaign-xoom-subtitle{
+    padding-bottom: 20px;
+    font-size: 28px !important;
+}
+.break-line:last-child{
+    display: none;
+}
+.font-tstar-regular{
+    font-family: var(--font-tstar-regular) !important;;
+}
+
+@media (max-width: 768px){
+    .campaign-xoom-content-wrapper{
+        flex-direction: column;
+        Padding:0px;
+    }
+    #campaign-xoom-title{
+        font-size: 28px !important;
+    }
+
+    #campaign-xoom-container{
+        padding: 16px;
+    }
+    .campaign-xoom-text-wrapper{
+        Padding:0px;
+    }
+    #campaign-xoom-subtitle{
+        padding-bottom: 12px;
+        padding-top:18px;
+        text-align: left !important;
+        font-size: 24px !important;
+    }
+    .campaign-xoom-content{
+        padding-bottom: 18px;
+        text-align: left !important;
+    }
+}

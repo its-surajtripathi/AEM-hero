@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Our Values"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[hero-aem-website.multifield]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <multifield
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Image Details"
+                        validation="multifield-max-5">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./imageDetails">
+                            <items jcr:primaryType="nt:unstructured">
+                                <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                    fieldLabel="Enter Image Path"
+                                    name="./image"
+                                    rootPath="/content/dam/hero-aem-website"/>
+                                <alttext
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Enter Alt Text"
+                                    name="./altText"/>
+                                <description
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                    fieldLabel="Enter Description"
+                                    name="./description"
+                                    useFixedInlineToolbar="{Boolean}true">
+                                    <rtePlugins
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                    <uiSettings
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                    <htmlRules jcr:primaryType="nt:unstructured">
+                                        <blockHandling
+                                            jcr:primaryType="nt:unstructured"
+                                            removeSingleParagraphContainer="{Boolean}true"/>
+                                    </htmlRules>
+                                </description>
+                            </items>
+                        </field>
+                    </multifield>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

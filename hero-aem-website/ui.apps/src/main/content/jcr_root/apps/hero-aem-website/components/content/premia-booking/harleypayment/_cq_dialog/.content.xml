@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Exchange login form"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <container
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <backlinktext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Back Link Text"
+                                                        name="./backlinktext"/>
+                                                    <backlink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Enter Back Link"
+                                                        name="./backlink"/>
+                                                    <linktextarrow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose Password Image Path"
+                                                        name="./linktextarrow"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <successicon
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose success Image Path"
+                                                        name="./successicon"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <successmsg
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Success message"
+                                                        name="./successmsg"/>
+                                                     <failureicon
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose failure Image Path"
+                                                        name="./failureicon"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <failuremsg
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter failure message"
+                                                        name="./failuremsg"/>
+                                                    <bikeimage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose bike Image Path"
+                                                        name="./bikeimage"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <bikeimagedisk
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose bike Image disk Path"
+                                                        name="./bikeimagedisk"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <stepheader
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter header for steps"
+                                                        name="./stepheader"/>
+                                                    <firststepicon
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose First step Icon Path"
+                                                        name="./firststepicon"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <firststeptext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        fieldLabel="Enter first step text"
+                                                        name="./firststeptext"
+                                                        useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                        <uiSettings
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                    </firststeptext>
+                                                     <firststepiconfailure
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose First step Icon Path failure"
+                                                        name="./firststepiconfailure"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <firststeptextfailure
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        fieldLabel="Enter first step text failure"
+                                                        name="./firststeptextfailure"
+                                                        useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                        <uiSettings
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                    </firststeptextfailure>
+                                                    <secondstepicon
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose second icon Path"
+                                                        name="./secondstepicon"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <secondsteptext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        fieldLabel="Enter second step text"
+                                                        name="./secondsteptext"
+                                                        useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                        <uiSettings
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                    </secondsteptext>
+                                                    <secondstepiconfailure
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose second icon Path failure"
+                                                        name="./secondstepiconfailure"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <secondsteptextfailure
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        fieldLabel="Enter second step text failure"
+                                                        name="./secondsteptextfailure"
+                                                        useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                        <uiSettings
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                    </secondsteptextfailure>
+                                                    <contactheader
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter header for contact"
+                                                        name="./contactheader"/>
+                                                     <helpdesk
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Help desk"
+                                                        name="./helpdesk"/>
+                                                    <helpdeskicon
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose helpdesk Icon Path"
+                                                        name="./helpdeskicon"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <helpdesknumber
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Help desk number"
+                                                        name="./helpdesknumber"/>
+                                                    <localbranch
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Local branch"
+                                                        name="./localbranch"/>
+                                                    <localbranchicon
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Choose phone icon Path"
+                                                        name="./localbranchicon"
+                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                    <localbranchnumber
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Local branch number"
+                                                        name="./localbranchnumber"/>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </container>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Download mobile app banner"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                        <downloadappcarousel
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldDescription="Hero App Details"
+                                            fieldLabel="Hero App Details"
+                                            required="{Boolean}false">
+                                            <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                emptyText="Hero App Carousel Details"
+                                                name="./downloadappcarousel">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <configurations
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <carouselconfigs
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Carousel Items"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <heading
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                        fieldLabel="Enter Title "
+                                                                        name="./downloadTitle"
+                                                                        useFixedInlineToolbar="{Boolean}true">
+                                                                        <rtePlugins
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                        <uiSettings
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                    </heading>
+                                                                    <imagepath
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldLabel="Choose Background Image"
+                                                                        name="./downloadbgimg"
+                                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                                    <mobileimagepath
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldLabel="Choose Background Image for mobile view"
+                                                                        name="./downloadmobilbgimg"
+                                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                                    <imagepath
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldLabel="Choose hero logo Image"
+                                                                        name="./herologo"
+                                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                                    <content
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                        fieldLabel="Enter description"
+                                                                        name="./downloaddescText"
+                                                                        useFixedInlineToolbar="{Boolean}true">
+                                                                        <rtePlugins
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                        <uiSettings
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                    </content>
+                                                                    <rightimg
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldLabel="Choose Right-Side Image"
+                                                                        name="./downloadrightimg"
+                                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                                    <googledownloadimg
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldLabel="Choose thumbnail image for android app download"
+                                                                        name="./androidimg"
+                                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                                    <playstoreurl
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldLabel="Enter Playstore URL"
+                                                                        name="./playstoreurl"
+                                                                        rootPath="/content/hero-aem-website"/>
+                                                                    <appstoreimg
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldLabel="Choose thumbnail image for mac app download"
+                                                                        name="./macimg"
+                                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                                    <appstoreurl
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldLabel="Enter AppStore URL"
+                                                                        name="./appstoreurl"
+                                                                        rootPath="/content/hero-aem-website"/>
+                                                                </items>
+                                                            </carouselconfigs>
+                                                        </items>
+                                                    </configurations>
+                                                </items>
+                                            </field>
+                                        </downloadappcarousel>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

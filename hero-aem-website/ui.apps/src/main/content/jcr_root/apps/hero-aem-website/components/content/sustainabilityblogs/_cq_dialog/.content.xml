@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Sustainability Blogs"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <mainblog
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Main Blog"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <maintitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Enter Title"
+                                                name="./maintitle"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                            </maintitle>
+                                            <maindescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Enter Description"
+                                                name="./maindescription"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                            </maindescription>
+                                            <mainimage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Choose image path"
+                                                name="./mainimage"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <mainimagemobile
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Choose Mobile-image path"
+                                                name="./mainimagemobile"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                            <mainknowmore
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldLabel="Add Know More Link"
+                                                name="./mainknowmore"/>
+                                            <make-mainblogdate-string
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/hidden"
+                                                about="This causes blogdate to be saved as a String in JCR instead of Date"
+                                                name="./mainblogdate@TypeHint"
+                                                value="String"/>
+                                            <mainblogdate
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                fieldLabel="Choose Date"
+                                                name="./mainblogdate"
+                                                valueFormat="MMM DD,YYYY"/>
+                                            <calendaricon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Choose calendar icon path"
+                                                name="./calendaricon"
+                                                rootPath="/content/dam/hero-aem-website"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </mainblog>
+                    <subblogs
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sub Blogs"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <multitext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="click on add button to add blogs">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./multiblogs">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                            fieldLabel="Enter Title"
+                                                            name="./title"
+                                                            useFixedInlineToolbar="{Boolean}true">
+                                                            <rtePlugins
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                            <uiSettings
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                        </title>
+                                                        <description
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                            fieldLabel="Enter Description"
+                                                            name="./description"
+                                                            useFixedInlineToolbar="{Boolean}true">
+                                                            <rtePlugins
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                            <uiSettings
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                        </description>
+                                                        <image
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Choose image path"
+                                                            name="./image"
+                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                        <imagemobile
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Choose Mobile-image path"
+                                                            name="./imagemobile"
+                                                            rootPath="/content/dam/hero-aem-website"/>
+                                                        <knowmore
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Add Know More Link"
+                                                            name="./knowmore"/>
+                                                        <make-blogdate-string
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/hidden"
+                                                            about="This causes blogdate to be saved as a String in JCR instead of Date"
+                                                            name="./blogdate@TypeHint"
+                                                            value="String"/>
+                                                        <blogdate
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                            fieldLabel="Choose Date"
+                                                            name="./blogdate"
+                                                            valueFormat="MMM DD,YYYY"/>
+                                                    </items>
+                                                </field>
+                                            </multitext>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </subblogs>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

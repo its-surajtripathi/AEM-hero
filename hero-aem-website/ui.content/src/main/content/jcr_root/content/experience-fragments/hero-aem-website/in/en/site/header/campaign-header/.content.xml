@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-11-25T13:12:56.155Z"
+        cq:lastModifiedBy="aditya.l.srivastava@accenture.com"
+        cq:lastReplicated="{Date}2023-05-25T09:34:47.148Z"
+        cq:lastReplicated_publish="{Date}2023-05-25T09:34:47.148Z"
+        cq:lastReplicatedBy="pravendra@moonraft.com"
+        cq:lastReplicatedBy_publish="pravendra@moonraft.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[]"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/xf-web-variation"
+        cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Campaign"
+        jcr:uuid="4e3ce8cd-31f4-485a-affb-48034804f687"
+        sling:resourceType="hero-aem-website/components/structure/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <navigation
+                jcr:lastModified="{Date}2022-11-16T15:46:51.341Z"
+                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/structure/navigation"
+                bgimageeshop="/content/dam/hero-aem-website/in/design/icons/e shop icon revised.png"
+                bgimageshowroom="/content/dam/hero-aem-website/in/design/icons/virtual-showroom1.png"
+                collectAllPages="false"
+                disableShadowing="false"
+                eshopflyout="true"
+                eshopicon="/content/dam/hero-aem-website/brand/design/icons/e-shop-icon.svg"
+                eshoptext="E-Shop"
+                eshopuel="/content/hero-aem-website/in/en/scooters"
+                eshopurl="/content/experience-fragments/hero-aem-website/in/en/site/links-flyouts/master5/jcr:content/root/secondarynavigation_"
+                navigationRoot="/content/hero-aem-website/in/en"
+                skipNavigationRoot="false"
+                structureDepth="1"
+                structureStart="1"
+                vshowroomicon="/content/dam/hero-aem-website/brand/design/icons/virtual-showroom-icon.svg"
+                vshowroomtext="VIRTUAL SHOWROOM"
+                vshowroomurl="https://virtualshowroom.heromotocorp.com/">
+                <main-logo
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/content/logo"
+                    linkto="/content/hero-aem-website/in/en/homepage"
+                    logoAlt="Home"
+                    logoReference="/content/dam/hero-aem-website/brand/logo/main-logo.png"/>
+                <logo
+                    jcr:lastModified="{Date}2022-08-10T05:07:39.154Z"
+                    jcr:lastModifiedBy="palak.paisal@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/content/logo"
+                    linkto="/content/hero-aem-website/in/en-in/homepage"
+                    logoAlt="Home"
+                    logoReference="/content/dam/hero-aem-website/brand/logo/logo.svg"/>
+                <footer
+                    jcr:lastModified="{Date}2022-11-25T13:12:55.869Z"
+                    jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/structure/footer"
+                    appstore="/content/dam/hero-aem-website/brand/design/app-store.png"
+                    appstorelink="https://itunes.apple.com/us/app/hero-app/id1079298028?mt=8"
+                    copyrightText="Copyright Hero MotoCorp Ltd. 2022 . All Rights Reserved."
+                    mobilefooter="true"
+                    playstore="/content/dam/hero-aem-website/brand/design/google-play.png"
+                    playstorelink="https://play.google.com/store/apps/details?id=com.customerapp.hero&amp;hl=en"
+                    textIsRich="[true,true,true,true,true,true]">
+                    <socialicon
+                        jcr:lastModified="{Date}2022-08-14T18:29:43.838Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/socialicons">
+                        <socialicondetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                alt="youtube"
+                                iconFileReference="/content/dam/hero-aem-website/brand/design/icons/youtube-icon.svg"
+                                iconlink="http://www.youtube.com/theheromotocorp"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                alt="facebook"
+                                iconFileReference="/content/dam/hero-aem-website/brand/design/icons/facebook-icon.svg"
+                                iconlink="http://www.facebook.com/HeroMotoCorpIndia"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                alt="linkedin"
+                                iconFileReference="/content/dam/hero-aem-website/brand/design/icons/linkedin-icon.svg"
+                                iconlink="https://www.linkedin.com/company/heromotocorp"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                alt="instagram"
+                                iconFileReference="/content/dam/hero-aem-website/brand/design/icons/instagram-icon.svg"
+                                iconlink="https://www.instagram.com/heromotocorp/"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                alt="Twitter"
+                                iconFileReference="/content/dam/hero-aem-website/brand/design/icons/twitter-icon.svg"
+                                iconlink="https://twitter.com/heromotocorp"/>
+                        </socialicondetails>
+                    </socialicon>
+                    <linksfooter jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            footerlink="/content/hero-aem-website/in/en-in/privacy-policy"
+                            footertext="Privacy Policy"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            footerlink="/content/hero-aem-website/in/en-in/disclaimer"
+                            footertext="Disclaimer"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            footerlink="/content/hero-aem-website/in/en-in/terms-of-use"
+                            footertext="Terms of Use"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            footerlink="/content/hero-aem-website/in/en-in/rules-and-regulations"
+                            footertext="Rules &amp;amp; Regulations"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            footerlink="/content/hero-aem-website/in/en-in/data-collection-contract"
+                            footertext="Data Collection Contract"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            footerlink="/en-in/sitemap.html"
+                            footertext="Sitemap"/>
+                    </linksfooter>
+                    <headeritems jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            text="About Us"
+                            url="/en-in/about-us.php"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            text="My Hero"
+                            url="/en-in/owners-manual.html"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            text="Investors"
+                            url="/en-in/investors.html"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            text="Reach Us"
+                            url="/en-in/reach-us/contact-us.html"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            text="Media"
+                            url="/en-in/media.html"/>
+                    </headeritems>
+                </footer>
+                <navitems jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        flyout="true"
+                        icon="/content/dam/hero-aem-website/brand/design/icons/motorcycle-icon.svg"
+                        text="MOTORCYCLES"
+                        url="/content/experience-fragments/hero-aem-website/in/en/site/motorcycles/master/jcr:content/root/secondarynavigation"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        flyout="true"
+                        icon="/content/dam/hero-aem-website/brand/design/icons/scooter-icon.svg"
+                        text="SCOOTERS"
+                        url="/content/experience-fragments/hero-aem-website/in/en/site/scooters/master/jcr:content/root/secondarynavigation_"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        flyout="false"
+                        icon="/content/dam/hero-aem-website/brand/design/icons/motorcycle-icon.svg"
+                        text="EXCHANGE"
+                        url="https://www.wheelsoftrust.com/"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        flyout="true"
+                        icon="/content/dam/hero-aem-website/brand/design/icons/service-icon.svg"
+                        text="SERVICES"
+                        url="/content/experience-fragments/hero-aem-website/in/en/site/links-flyouts/master1/jcr:content/root/secondarynavigation_"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        flyout="true"
+                        icon="/content/dam/hero-aem-website/brand/design/icons/community-events-icon.svg"
+                        text="RIDE &amp; EVENTS"
+                        url="/content/experience-fragments/hero-aem-website/in/en/site/links-flyouts/master/jcr:content/root/secondarynavigation__1478241460"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        flyout="true"
+                        icon="/content/dam/hero-aem-website/brand/design/icons/motorcycle-icon.svg"
+                        text="HERO WORLD"
+                        url="/content/experience-fragments/hero-aem-website/in/en/site/links-flyouts/master2/jcr:content/root/secondarynavigation"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        flyout="false"
+                        icon="/content/dam/hero-aem-website/brand/design/icons/dealer-locator-icon.svg"
+                        text="DEALER LOCATOR"
+                        url="/en-in/reach-us/find-hero-bike-dealers.html"/>
+                </navitems>
+                <eshopsubtitle jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        eshopsubtitle="Apparels"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        eshopsubtitle="Parts"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        eshopsubtitle="Scooter"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        eshopsubtitle="Accessories"/>
+                </eshopsubtitle>
+            </navigation>
+        </root>
+    </jcr:content>
+</jcr:root>

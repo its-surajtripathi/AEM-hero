@@ -1,0 +1,137 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+<section class="near-you-section ${properties.theme}" id="find-dealer-link">
+  <div class="container-fluid">
+    <!-- <div class="near-you-wrapper"> </div> -->
+    <div class="row">
+      <div class="col-md-3 col-12"
+      data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.defaultcity}">
+        <div class="near-you-wrapper">
+          <div class="near-you-left">
+            <h3 class="common-h3 h2-heading-std text-to-uppercase">
+              ${properties.title}
+            </h3>
+            <div class="near-you-content" data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}">
+              <p class="near-you-p">${properties.subtitle}</p>
+              <form class="near-you-form">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 col-6 px-md-2">
+                      <div class="form-group cust-form-group">
+                        <div class="dropdown cust-drop-down">
+                          <button id="stateDropdown" name="statename"
+                            class="dropdown-select form-control cust-form-control font-size-18 line-height-24 font-montserrat-regular font-weight-500 text-color-white bg-color-danger text-left"
+                            type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-default-label="${linkuse.linkResource.parent.state_name.toLowerCase}">
+                            ${linkuse.linkResource.parent.state_name.toLowerCase}
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu cust-dropdown-menu" aria-labelledby="stateDropdown"
+                            data-sly-use.listUse="${'/apps/hero-aem-website/utils/getdropdownvalues.js' @ parentPath=linkuse.linkResource.parent.parent.path}"
+                            data-sly-list="${listUse}">
+                            <li class="font-montserrat-regular font-weight-500 " value="${item.name}">
+                                <a href="javascript:void(0)">${item.properties.state_name.toLowerCase @ i18n}</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-6 px-md-2">
+                      <div class="form-group cust-form-group">
+                        <div class="dropdown cust-drop-down">
+                          <button id="cityDropdown" name="cityname"
+                            class="dropdown-select form-control cust-form-control font-size-18 line-height-24 font-montserrat-regular font-weight-500 text-color-white bg-color-danger text-left"
+                            type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-default-label="${properties.citylabel}">
+                            ${linkuse.linkResource.city.toLowerCase}
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu cust-dropdown-menu" aria-labelledby="cityDropdown"
+                              data-sly-list="${linkuse.linkResource.parent.children}">
+                              <li class="font-montserrat-regular font-weight-500 " value="${item.name}">
+                                  <a href="javascript:void(0)">${item.city.toLowerCase}</a>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" value="${currentPage.path}" name="productpath" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 col-12 px-0 pl-md-2">
+        <div class="near-you-wrapper2">
+          <div class="near-you-right">
+            <h3 class="near-you-h3 h3-bold-heading-std">${properties.dealerheading}</h3>
+            <div class="near-you-wapper">
+              <div class="near-you-slider" data-sly-list="${linkuse.linkResource.children}">
+                <div class="near-you-common-div" data-sly-test="${item.isdeleted_flg == '0'}">
+                  <div class="near-img">
+                    <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=properties.dealerimg1, rendition='dealer-web'}"
+                      src="${imagePath}" alt="img" />
+                    <div class="near-img-content" data-sly-test="${properties.dealerimgtext}">
+                      <p>${properties.dealerimgtext}</p>
+                    </div>
+                  </div>
+                  <div class="near-you-info">
+                     <h3 class="near-you-h3 h4-heavy-heading-std">${item.dealer_name}</h3>
+                     <p class="near-you-p b2-text-std">${item.address_1} ${item.address_2} ${item.address_3}
+                     </p>
+                  </div>
+                  <div class="near-you-no">
+                    <p data-sly-test="${item.virtual_number || item.mobile_1 || item.mobile_2}"
+                       class="near-you-no-p h4-heavy-heading-std">
+                       <a data-sly-test="${item.virtual_number}" href="tel:${pageconfig.countryCode}${item.virtual_number}">
+                          ${item.virtual_number},
+                       </a>
+                       <a data-sly-test="${item.mobile_1}" href="tel:${pageconfig.countryCode}${item.mobile_1}">
+                          ${item.mobile_1},
+                       </a>
+                       <a data-sly-test="${item.mobile_2}" href="tel:${pageconfig.countryCode}${item.mobile_2}">
+                          ${item.mobile_2}
+                       </a>
+                    </p>
+                    <p class="near-you-p b2-text-std" data-sly-test="${item.showroom_tel_1 && item.std_code}"
+                       data-sly-test.tel="${[item.showroom_tel_1,item.showroom_tel_2] @ join=', '}">Tel: ${pageconfig.countryCode}${item.std_code} - ${tel}</p>
+                    <p class="near-you-p b2-text-std" data-sly-test="${item.email_1}">${item.email_1}</p>
+                    <p class="near-you-p b2-text-std" data-sly-test="${item.contact_person_1}">${item.contact_person_1}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dealer-0 d-none">
+    <div class="near-img">
+      <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=properties.dealerimg1, rendition='dealer-web'}"
+        src="${imagePath}" alt="img" data-sly-test="${imagePath}"/>
+      <div class="near-img-content" data-sly-test="${properties.dealerimgtext}">
+        <p>${properties.dealerimgtext}</p>
+      </div>
+    </div>
+  </div>
+  <div class="dealer-1 d-none">
+    <div class="near-img">
+      <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=properties.dealerimg2, rendition='dealer-web'}"
+        src="${imagePath}" alt="img" data-sly-test="${imagePath}"/>
+      <div class="near-img-content" data-sly-test="${properties.dealerimgtext}">
+        <p>${properties.dealerimgtext}</p>
+      </div>
+    </div>
+  </div>
+  <div class="dealer-2 d-none">
+    <div class="near-img">
+      <img data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=properties.dealerimg3, rendition='dealer-web'}"
+        src="${imagePath}" alt="img" data-sly-test="${imagePath}"/>
+      <div class="near-img-content" data-sly-test="${properties.dealerimgtext}">
+        <p>${properties.dealerimgtext}</p>
+      </div>
+    </div>
+  </div>
+</section>

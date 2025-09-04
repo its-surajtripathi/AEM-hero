@@ -1,0 +1,420 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<div class="vouchers-available-wrapper">
+    <div class="voucher-title">
+        <h2><b>${properties.heading}</b></h2>
+    </div>
+    <div class="no-results d-none">${properties.noVoucherMsg}</div>
+    <div class="voucher-redemption-wrapper">
+
+
+        <script type="text/html" class="availableVoucherTemplate">
+            <div class="row available-couponvouchers">
+                <% _.each(vehicleDetails, function(item, i, list) { %>
+
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 voucher-white-card" style="background-image: url(${properties.bgImage @ context='uri'}) ">
+                    <div class="voucher-tab" data-totalmilestones="<%=vehicleDetails[i].length%>">
+                        <div class="vouchers">
+                            <div class="milestonevoucher-image">
+                                <img class="milestone-img d-none" src="${properties.milestoneIcon @ context='uri'}" alt="icon-img">
+                                <img class="voucher-img d-none" src="${properties.voucherIcon @ context='uri'}">
+                            </div>
+                            <p class="offer-text"><span><%=vehicleDetails[i][0].GIFT_POINTS%></span> ${properties.milestoneLabel @ context='scriptString'}</p>
+                            <h4 class="voucher-value"> <span>Rs.</span><%=vehicleDetails[i][0].GIFT_VOUCHER_VALUE%></h4>
+                            <div class="icons-tab d-none">
+
+                                <p class="type-text "><%=vehicleDetails[i].length%> ${properties.typetochooseLabel @ context='scriptString'}</p>
+                            </div>
+
+                            <div class="servicevoucher-value d-none">
+
+                                <p class="service-text "><%=vehicleDetails[i][0].GIFT_NAME%></p>
+                            </div>
+                        </div>
+                        <div class="dashed-border">
+                            <img src="${properties.dashedlineImg @ context='uri'}">
+                        </div>
+                        <div class="choose-one d-none">
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#milstoneModal" class="choose-one-button">${properties.chooseoneLabel @ context='scriptString'}</a>
+                        </div>
+                        <div class="reddem-one reddem-one-voucher d-none">
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#redeemVoucher" class="d-none redeem-direct reddem-button">${properties.reedemLabel @ context='scriptString'}</a>
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#popup-selection" class="d-none redeem-select reddem-button">${properties.reedemLabel @ context='scriptString'}</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <% });%>
+            </div>
+        </script>
+
+    </div>
+
+</div>
+
+
+
+
+<div class="modal milstoneModals" id="redeemVoucher" aria-modal="true" role="dialog" data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Modal body -->
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h5 class="modal-title">${properties.giftVoucherLabel}</h5>
+
+
+            </div>
+            <div class="modal-body">
+                <!--service-voucher-popup-starts-->
+                <div class="service-voucher-popup">
+                    <!--popuo-content-top-heading-starts-->
+
+                    <!--popup--top-heading-ends-->
+                    <!--popup-content-starts-->
+                    <div class="service-popup-content">
+                        <!--popup-content-heading-starts-->
+                        <div class="heading-line">
+
+
+                            <div class="service-voucher">
+                                <div class="voucher-amount">
+                                    <script type="text/html" class="redeem-vouchertemplate">
+                                        <div class="voucher-redeem-details voucher-container <%=vehicleDetails.VOUCHER_GIFT_TYPE%>" data-giftid="<%=vehicleDetails.GIFT_ID%>" data-giftvalue="<%=vehicleDetails.GIFT_VOUCHER_VALUE%>">
+
+                                            <div class="heading-icon">
+                                                <img src="${properties.heroIcon @ context='uri'}" alt="img">
+                                            </div>
+                                            <span class="redeem-giftname">
+                                                <h3><%=vehicleDetails.GIFT_NAME%></h3>
+                                            </span>
+
+                                        </div>
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--popup-content-heading-ends-->
+                        <div class="service-instruction-to-avail">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h4>${properties.howtoavailLabel}</h4>
+                                    <div class="service-instruction">
+                                        ${properties.voucherInstruction @context= 'html'}
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--popup-content-ends-->
+                    <!--popup-content-sms-voucher-button-starts-->
+
+                    <div class="voucher-avail-instru d-none">
+                        <p>${properties.giftRedemptionMsg} </p>
+                    </div>
+                    <div class="voucher-button sms-voucher-code d-none">
+                    	<div class="alert-danger no-response-error hidden" > ${properties.apiErrorMsg}</div>
+                   	    <div class="alert-danger api-error hidden" ></div>
+                        <a href="javascript:void(0)" class="sms-link">${properties.smsvoucherbuttonLabel}</a>
+                    </div>
+                    <!--popup-content-sms-voucher-button-ends-->
+                </div>
+                <!--service-voucher-popup-ends-->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal milstoneModals" id="milstoneModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title" id="exampleModalLabel"><span class="milestoneValue"></span> ${properties.milestoneofferLabel}</h5>
+                <p>${properties.availLabel}</p>
+
+            </div>
+            <div class="modal-body">
+
+                <div class="coupon-milestonemodal-div">
+                    <div class="couponRedemption">
+                        <script type="text/html" class="coupon-vouchertemplate">
+                            <div class="offer-containers voucher-container <%=vehicleDetails.VOUCHER_GIFT_TYPE%>" data-type="<%=vehicleDetails.VOUCHER_GIFT_TYPE%>" data-giftid="<%=vehicleDetails.GIFT_ID%>" data-giftvalue="<%=vehicleDetails.GIFT_VOUCHER_VALUE%>">
+                                <div class="offer-container">
+                                    <div class="offer-container-left">
+                                        <input type="radio" class="product-code" name="productcode" />
+                                    </div>
+                                    <div class="offer-container-right">
+                                        <div class="offer-sub-left">
+                                            <div class="brand-icon">
+                                                <img src="${properties.giftIcon @ context='uri'}" />
+                                            </div>
+                                        </div>
+                                        <div class="offer-sub-middle"><%=vehicleDetails.GIFT_NAME%></div>
+                                        <div class="offer-sub-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+                    </div>
+
+
+                    <div class="voucher-button reddem-one-sku">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#coupon-sku-modal" class="reddem-button">${properties.reedemLabel}</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal milstoneModals" id="coupon-sku-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title" id="exampleModalLabel"><span class="milestoneValue"></span> ${properties.milestoneofferLabel}</h5>
+
+            </div>
+            <div class="modal-body">
+                <div class="coupon-sku-wrapper">
+                    <script type="text/html" class="coupon-skutemplate">
+                        <div class="coupon-sms-wrapper">
+                            <% _.each(vehicleDetails, function(item, k, list) { %>
+                            <div class="offer-containers voucher-container <%=vehicleDetails[k].type%>" data-type="<%=vehicleDetails[k].type%>" data-giftid="<%=vehicleDetails[k].giftid%>" data-giftvalue="<%=vehicleDetails[k].giftvalue%>">
+                                <div class="offer-container">
+                                    <div class="offer-container-left">
+                                        <input type="radio" class="product-skucode" name="productcode" value="<%=vehicleDetails[k].value%>" />
+                                    </div>
+                                    <div class="offer-container-right">
+                                        <div class="offer-sub-left">
+                                            <div class="brand-icon">
+                                                <img src="${properties.voucherIconPath @ context = 'uri'}<%=getVoucherImg(vehicleDetails[k].text)%>" />
+                                            </div>
+                                        </div>
+                                        <div class="offer-sub-middle sku-title"><%=vehicleDetails[k].text%></div>
+                                        <div class="offer-sub-right">₹ <%=vehicleDetails[k].giftvalue%>/-</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        <% });%>
+                        </div>
+                    </script>
+
+                </div>
+
+                <div class="voucher-button sms-voucher-code">
+                	<div class="alert-danger no-response-error hidden" > ${properties.apiErrorMsg}</div>
+                   	<div class="alert-danger api-error hidden" ></div>
+                    <a href="javascript:void(0)" class="sms-link">${properties.smsvoucherbuttonLabel}</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+<div class="modal milstoneModals" id="popup-selection" tabindex="-1" role="dialog" aria-hidden="true" data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title">${properties.serviceVoucherLabel}</h5>
+
+            </div>
+            <div class="modal-body">
+                <!--service-voucher-popup-starts-->
+                <div class="service-select-voucher-popup">
+
+                    <!--popup--top-heading-ends-->
+                    <!--popup-content-starts-->
+                    <div class="service-popup-content voucher-container HSV" data-giftid="<%=vehicleDetails[k].giftid%>" data-giftvalue="<%=vehicleDetails[k].giftvalue%>">
+                        <!--popup-content-heading-starts-->
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 heading-line">
+                                <div class="service-voucher">
+                                    <span>
+                                        <h6>${properties.totalworthLabel} </h6>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 heading-line">
+                                <div class="service-voucher">
+                                    <span>
+                                        <h3 id="redeem">₹<span class="voucher-worth"></span></h3>
+                                    </span>
+                                    <hr class="hrclass">
+                                </div>
+                            </div>
+                        </div>
+                        <!--popup-content-heading-ends-->
+
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="service-instruction">
+                                    <div class="select_voucher">
+
+                                        <div class="select-row">
+                                            <div class="col-8">
+                                                <h5>₹30 Voucher</h5>
+                                                <div class="align">
+                                                    <p class="amount">${properties.amountLabel}</p>
+                                                    <p class="rightside-amount">${pageconfig.currencyUnit @ context='scriptString'}
+                                                    <span class="rightside-number" id="getNumber1"></span></p>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="pricebox">
+                                                <div class="value-button col-2 decrease" value="Decrease Value">
+                                                    <span class="minus">-</span>
+                                                </div>
+                                                <div class="price-input" id="number1">0</div>
+
+                                                <div class="value-button col-2 increase" data-value="30" value="Increase Value">
+                                                    <span class="plus">+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="hrclass">
+                                        <div class="select-row">
+                                            <div class="col-8">
+                                                <h5>₹50 Voucher</h5>
+                                                <div class="align">
+
+                                                    <p class="amount">${properties.amountLabel}</p>
+                                                    <p class="rightside-amount">${pageconfig.currencyUnit}
+                                                    <span class="rightside-number" id="getNumber2"></span></p>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="pricebox">
+                                                <div class="value-button col-2 decrease" value="Decrease Value">
+                                                    <span class="minus">-</span>
+                                                </div>
+                                                <div class="price-input" id="number2">0</div>
+
+                                                <div class="value-button col-2 increase" data-value="50"  value="Increase Value">
+                                                    <span class="plus">+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="hrclass">
+                                        <div class="select-row">
+                                            <div class="col-8">
+                                                <h5>₹100 Voucher</h5>
+                                                <div class="align">
+
+                                                    <p class="amount">${properties.amountLabel}</p>
+                                                    <p class="rightside-amount">${pageconfig.currencyUnit}
+                                                    <span class="rightside-number" id="getNumber3"></span></p>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="pricebox">
+                                                <div class="value-button col-2 decrease" value="Decrease Value">
+                                                    <span class="minus">-</span>
+                                                </div>
+                                                <div class="price-input" id="number3">0</div>
+
+                                                <div class="value-button col-2 increase" data-value="100" value="Increase Value">
+                                                    <span class="plus">+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="hrclass">
+                                        <div class="select-row">
+                                            <div class="col-8">
+                                                <h5>₹200 Voucher</h5>
+                                                <div class="align">
+
+                                                    <p class="amount">${properties.amountLabel}</p>
+                                                    <p class="rightside-amount">${pageconfig.currencyUnit}
+                                                    <span class="rightside-number" id="getNumber4"></span></p>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="pricebox">
+                                                <div class="value-button col-2 decrease" value="Decrease Value">
+                                                    <span class="minus">-</span>
+                                                </div>
+                                                <div class="price-input" id="number4">0</div>
+
+                                                <div class="value-button col-2 increase" data-value="200"  value="Increase Value">
+                                                    <span class="plus">+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <hr class="hrclass">
+                                            <span>
+                                                <p id="errorMsg">${properties.amountexceederrorMsg}</p>
+                                                <p class="voucher_font_size_red" id="total"></p>
+                                                <p class="voucher_font_size_red"> ${pageconfig.currencyUnit}</p>
+                                                </p>
+                                                <p class="voucher_font_size_black">${properties.yourTotalLabel}</p>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--popup-content-ends-->
+                        <!--popup-content-sms-voucher-button-starts-->
+                        <div class="voucher-button sms-voucher-code">
+                        	<div class="alert-danger no-response-error hidden" > ${properties.apiErrorMsg}</div>
+                   	        <div class="alert-danger api-error hidden" ></div>
+                            <a href="javascript:void(0)" class="sms-link">${properties.smsvoucherbuttonLabel}</a>
+                        </div>
+                        <!--popup-content-sms-voucher-button-ends-->
+                    </div>
+                    <!--service-voucher-popup-ends-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,29 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<div class="text-center" data-sly-test="${properties.variation!='bgimage' && properties.variation!='icon' && properties.variation!='multicolor'}">
+   <div class="headerbackground ${properties.variation}">
+      <h2 data-sly-element="${properties.fontsize || 'h2'}" class="overview-heading ${properties.variation} ${properties.addtnclass} ${properties.fontstyle == 'h2-std' ? 'h2-heading-std' : ''}">${properties.heading}</h2>
+   </div>
+</div>
+<div class="text-center" data-sly-test="${properties.variation=='bgimage'}">
+   <div class="${properties.variation}"
+        style="background-image: url('${properties.fileReference ? properties.fileReference :'unset' @ context='styleString'}');">
+      <h2 data-sly-element="${properties.fontsize || 'h2'}"
+          class="${properties.variation} ${properties.addtnclass} ${properties.fontstyle == 'h2-std' ? 'h2-heading-std' : ''}  ${properties.fontstyle == 'h1-std' ? 'h1-heading-std' : '' }"
+          style="color : ${properties.fontcolor @ context = 'styleString'};">
+         <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/details-whitearrowbg.png" class="img" alt="icon">
+         ${properties.heading}</h2>
+   </div>
+</div>
+<div class="service-main-heading ${properties.addtnclass}" data-sly-test="${properties.variation=='icon'}">
+    <a class="back-arrow" data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=properties.link}" href="${linkuse.value}"
+       target="${linkuse.isExternal ? '_blank' : '_self'}" data-sly-test="${properties.arrowIcon}"><img src="${properties.arrowIcon}"></a>
+    <img class="text-icon" src="${properties.headingIcon}" alt="image" data-sly-test="${properties.headingIcon}"><span><h2 data-sly-element="${properties.fontsize || 'h2'}" class="${properties.fontstyle == 'h2-std' ? 'h2-heading-std' : ''} ${properties.fontstyle == 'h1-std' ? 'h1-heading-std' : '' }">${properties.heading}</h2></span>
+</div>
+<div class="text-center" data-sly-test="${properties.variation=='multicolor'}">
+   <div class="headerbackground-multicolor ${properties.variation}">
+      <h2 data-sly-element="${properties.fontsize || 'h2'}" class="overview-heading ${properties.variation} ${properties.addtnclass} ${properties.fontstyle=='h2-std' ? 'h2-heading-std' : ''}  ${properties.fontstyle == 'h1-std' ? 'h1-heading-std' : '' }">${properties.heading} <span style="color: #303030;"> ${properties.heading2}</span></h2>
+   </div>
+</div>

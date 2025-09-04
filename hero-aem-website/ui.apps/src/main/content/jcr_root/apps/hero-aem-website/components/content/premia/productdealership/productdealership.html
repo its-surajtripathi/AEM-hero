@@ -1,0 +1,28 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+  ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<div class="product-dealership-container">
+  <div class="container-fixed-width productDealerShipWrapper">
+    <div class="productDealerTitleWrapper">
+      <div class="productDealerline"></div>
+      <p class="productDealerShipTitle">${properties.title @context='html'}</p>
+      <!-- <p class="productDealerShipTitle">Harley-Davidson X<sup>TM</sup>440</p> -->
+      <p class="productDealerShipDescription">
+        ${properties.description @context='html'}
+      </p>
+      <sly data-sly-resource="${'button' @ resourceType='hero-aem-website/components/content/premia/button' }">
+      </sly>
+      <p class="tooltipWrapper">
+        <span class="info-container tooltiptext">${inheritedPageProperties.bookNowToolTipText1 @context='html'}
+        </span>
+      </p>
+    </div>
+    <sly data-sly-resource="${'dealershd' @ resourceType='hero-aem-website/components/content/premia/dynamic-cities' }">
+    </sly>
+    <!-- <sly data-sly-resource="${'dealers' @ resourceType='hero-aem-website/components/content/premia/accordion' }"></sly> -->
+    <img id="arrow_down"
+      src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/chevrondown.png"
+      alt="down arrow" />
+  </div>
+</div>

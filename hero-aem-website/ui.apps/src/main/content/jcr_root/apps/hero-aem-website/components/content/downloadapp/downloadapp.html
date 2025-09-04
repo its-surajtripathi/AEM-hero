@@ -1,0 +1,37 @@
+<div class="banner-wrapper"
+  data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='downloadappcarousel'}">
+  <div id="carousel${resource.path.hashCode}" class="carousel slide cust-demo downloadappbox" data-ride="carousel">
+    <div class="carousel-inner downloadappbg" data-sly-list="${listUse}">
+      <div class="carousel-item${itemList.first ? ' active' : ''}" id="carousel" data-interval="${item.properties.carouselinterval ? item.properties.carouselinterval : '5' }000" data-pause="false">
+        <div class="sj-banner">
+          <div class="sj-banner-bg">
+            <div class="sj-banner-content">
+              <div class="sj-logo-header">
+                <div class="sj-logo">
+                  <img src="${item.properties.herologo}">
+                </div>
+                <div class="sj-header">
+                  ${item.properties.downloadTitle @ context='html'}
+                </div>
+              </div>
+              <div class="sj-line">
+  
+              </div>
+              <div class="sj-description">
+                ${item.properties.downloaddescText @ context='html'}
+              </div>
+              <div class="sj-appstore">
+                <a href="${item.properties.playstoreurl}"><img src="${item.properties.androidimg}"></a>
+                <a href="${item.properties.appstoreurl}"><img src="${item.properties.macimg}"></a>
+              </div>
+            </div>
+            <div class="sj-banner-img">
+              <img class="sj-img" src="${item.properties.downloadrightimg}">
+              <div class="sj-shadow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

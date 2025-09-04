@@ -1,0 +1,56 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+    ${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+<section class="${properties.theme}" id="Features"
+    style="background-image: url('${properties.bgimage @ context='uri'}')">
+    <h2 data-sly-test="${properties.theme != 'features-section-main'}"
+        class="font-italic${properties.theme == 'features-section-main dark-theme' ? ' text-white ':' '}text-center">
+        ${properties.heading}</h2>
+    <div class="features-section-wrapper"
+        data-sly-use.hotspotdetails="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='hotspotdetails'}">
+        <div class="features-bike-main" data-sly-test="${properties.theme != 'features-section-main'}">
+            <img src="${properties.productimage}" class="img-fluid" alt="${component.title}">
+            <sly data-sly-list="${hotspotdetails}">
+                <a href="javascript:void(0)" class="feature-btn btn-${itemList.count}${itemList.first ? ' active' : ''}"
+                    data-target="feature-${itemList.count}" aa-data-attr="track_cta" aa-data-cta="${component.title}"
+                    style="${item.properties.topbottom @ context='styleToken'}:${item.properties.style1 @ context='styleToken'};
+                       ${item.properties.leftright @ context='styleToken'}:${item.properties.style2 @ context='styleToken'}">
+                    <img src="${properties.icon}" class="img-fluid" alt="hotspoticon${itemList.count}"></a>
+            </sly>
+        </div>
+        <div class="features-box-wrapper">
+            <h3
+                class="d-none d-lg-inline-block ${properties.theme == 'features-section-main dark-theme' ? ' text-white' : ''} h2-heading-std">
+                ${properties.featureheading}</h3>
+            <div class="features-box-main">
+                <div class="features-box feature-${itemList.count}${itemList.first ? ' active' : ''}" data-sly-repeat="${hotspotdetails}">
+                    <img src="${item.properties.featureimage}" class="img-fluid" alt="lead">
+                    <div class="features-box-info">
+                        ${item.properties.featuretext @ context='html'}
+                        <span class="badge" data-sly-test="${item.properties.featuretag}">
+                            <img data-sly-test="${properties.staricon}" src="${properties.staricon}" class="img-fluid" alt="Star Icon">
+                            ${item.properties.featuretag}</span>
+                    </div>
+                </div>
+                <h3
+                class="d-lg-none  ${properties.theme == 'features-section-main dark-theme' ? ' text-white' : ''}">
+                ${properties.featureheading}</h3>
+            </div>
+            
+        </div>
+        <div class="features-bike-main" data-sly-test="${properties.theme == 'features-section-main'}">
+            <img src="${properties.productimage}" class="img-fluid" alt="${properties.productimage}">
+            <sly data-sly-list="${hotspotdetails}">
+                <a href="javascript:void(0)" class="feature-btn btn-${itemList.count}${itemList.first ? ' active' : ''}"
+                    data-target="feature-${itemList.count}" aa-data-attr="track_cta"  aa-data-cta="${component.title}"
+                    style="${item.properties.topbottom @ context='styleToken'}:${item.properties.style1 @ context='styleToken'};
+                       ${item.properties.leftright @ context='styleToken'}:${item.properties.style2 @ context='styleToken'}">
+                    <img src="${properties.icon}" class="img-fluid" alt="hotspot icon${itemList.count}"></a>
+            </sly>
+        </div>
+                <div class="features-bike-img-head" data-sly-test="${properties.theme == 'features-section-main'}">
+                    ${properties.headingtext @ context='html'}
+                </div>
+
+    </div>
+</section>

@@ -1,0 +1,324 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+	${'Edit {0} Component' @ format=[component.title], i18n}
+</p>
+
+<!-- html starts here -->
+<div class="product-bike-variant-wrapper">
+	<div class="popup-background-blur"></div>
+	<div class="product-bike-variant-content-wrapper">
+		<div class="product-bike-background-colored-container"></div>
+		<div class="product-bike-variant-content">
+			<div class="product-bike-variant-header-wrapper">
+				<div class="product-bike-variant-header-title-content">
+					<div class="product-bike-variant-top-line"></div>
+					<div class="product-bike-variant-header-title-wrapper">
+						${properties.preTitle @context='html'}
+						${properties.preTitleMobile @context='html'}
+					</div>
+				</div>
+				<div class="bike-variant-dropdown-wrapper">
+					<div class="bike-variant-dropdown-container">
+						<div class="dropdown-title-wrapper">
+							<p class="dropdown-title">Variants</p>
+						</div>
+						<div class="dropdown-inner-content-wrapper">
+							<div class="dropdown-inner-content-text-wrapper">
+								<p class="dropdown-inner-content-text"><span
+										class="dropdown-x440s-text">${properties.variantName1
+										@context='html'}</span><span
+										class="dropdown-x440-vivid-text d-none">${properties.variantName2
+										@context='html'}</span><span
+										class="dropdown-x440-denim-text d-none">${properties.variantName3
+										@context='html'}</span></p>
+							</div>
+							<div class="dropdown-inner-content-icon-wrapper">
+								<img class="dropdown-chevron-down"
+									src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/chevron_down_arrow.png"
+									loading="lazy" alt="chevron_down_arrow">
+								<img class="dropdown-chevron-up"
+									src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/chevron_up_arrow.png"
+									loading="lazy" alt="chevron_up_arrow">
+							</div>
+						</div>
+						<div class="dropdown-popup-wrapper">
+							<div class="dropdown-popup-content-wrapper">
+								<div class="dropdown-x440s-wrapper d-selected-dropdown"
+									data-360-view="${properties.imagesFolderPath1 ? 'true' : 'false'}">
+									<div class="dropdown-x440s-color d-selected-trinidad"></div>
+									<div class="dropdown-x440s-img-wrapper">
+										<img src="${properties.iconPath1}" loading="lazy" alt="dropdown_x440s_img">
+									</div>
+									<div class="dropdown-x440s-text-wrapper">
+										<p class="dropdown-x440s-content-text d-selected-black">
+											${properties.variantName1 @context='html'}</p>
+									</div>
+									<!-- Adding d-none to hiding the 360 icon as JS might error out if we remove the icon img element -->
+									<div class="dropdown-x440s-icon-wrapper d-none"
+										data-sly-test="${properties.imagesFolderPath1}">
+										<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/360_icon.png"
+											loading="lazy" alt="icon">
+									</div>
+								</div>
+								<div class="dropdown-x440-vivid-wrapper"
+									data-360-view="${properties.imagesFolderPathVar21 ? 'true' : 'false'}">
+									<div class="dropdown-x440-vivid-color"></div>
+									<div class="dropdown-x440-vivid-img-wrapper">
+										<img src="${properties.iconPath2}" loading="lazy" alt="dropdown_x440_vivid_img">
+									</div>
+									<div class="dropdown-x440-vivid-text-wrapper">
+										<p class="dropdown-x440-vivid-content-text">${properties.variantName2
+											@context='html'}</p>
+									</div>
+									<!-- Adding d-none to hiding the 360 icon as JS might error out if we remove the icon img element -->
+									<div class="dropdown-x440s-icon-wrapper d-none"
+										data-sly-test="${properties.imagesFolderPathVar21 || properties.imagesFolderPathVar22}">
+										<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/360_icon.png"
+											loading="lazy" alt="icon">
+									</div>
+								</div>
+								<div class="dropdown-x440-denim-wrapper"
+									data-360-view="${properties.imagesFolderPathVar3 ? 'true' : 'false'}">
+									<div class="dropdown-x440-denim-color"></div>
+									<div class="dropdown-x440-denim-img-wrapper">
+										<img src="${properties.iconPath3}" loading="lazy" alt="dropdown_x440_denim_img">
+									</div>
+									<div class="dropdown-x440-denim-text-wrapper">
+										<p class="dropdown-x440-denim-content-text">${properties.variantName3
+											@context='html'}</p>
+									</div>
+									<!-- Adding d-none to hiding the 360 icon as JS might error out if we remove the icon img element -->
+									<div class="dropdown-x440s-icon-wrapper d-none"
+										data-sly-test="${properties.imagesFolderPathVar3}">
+										<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/360_icon.png"
+											loading="lazy" alt="icon">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product-bike-variant-view-wrapper">
+				<div class="product-bike-variant-view-container">
+					<div class="harley-bike-color-variant-wrapper">
+						<div class="harley-bike-color-option-texts-wrapper">
+							<p class="harley-bike-black-color-text">${properties.colourName1}</p>
+							<p class="harley-bike-red-color-text d-none">${properties.colourName21}</p>
+							<p class="harley-bike-silver-color-text d-none">${properties.colourName22}</p>
+							<p class="harley-bike-denim-color-text d-none">${properties.colourName3}</p>
+						</div>
+						<div class="harley-bike-color-options-wrapper">
+							<div class="harley-bike-black-color-option" style="background: ${properties.colourCode1 @ context='styleToken'}"></div>
+							<div class="harley-bike-red-color-option d-none" style="background: ${properties.colourCode21 @ context='styleToken'}">
+								<img class="red-check-icon"
+									src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/check.png"
+									loading="lazy" alt="red_color_tick_img">
+							</div>
+							<div class="harley-bike-silver-color-option d-none" style="background: ${properties.colourCod22 @ context='styleToken'}">
+								<img class="silver-check-icon d-none"
+									src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/check.png"
+									loading="lazy" alt="silver_color_tick_img">
+							</div>
+							<div class="harley-bike-denim-color-option d-none" style="background: ${properties.colourCode3 @ context='styleToken'}"></div>
+						</div>
+					</div>
+					<div class="harley-bike-variation-loader-wrapper">
+						<div class="harley-bike-variation-loader-container">
+							<div class="harley-x440s-bike-360-view bike-holder-container"
+								data-360-view="${properties.imagesFolderPath1 ? 'true' : 'false'}">
+								<img data-sly-test="${!properties.imagesFolderPath1}" src="${properties.imagePath1}"
+									loading="lazy" alt="harley_bike_variations_img">
+								<div data-sly-test="${properties.imagesFolderPath1}"
+									class="enable-360-view variant-x440-360-view">
+									<sly
+										data-sly-use.listUse2="${'/apps/hero-aem-website/utils/fetchResource.js' @ absolutePath=properties.imagesFolderPath1}">
+										<sly data-sly-list.child="${listUse2}">
+											<img data-sly-test="${child.name != 'jcr:content'}" src="${child.path}"
+												loading="lazy" alt="x440s bike image" />
+										</sly>
+									</sly>
+								</div>
+							</div>
+							<div class="harley_x440_vivid_red_bike_img bike-holder-container bike-switch-fade-out-transition"
+								data-360-view="${properties.imagesFolderPathVar21 ? 'true' : 'false'}">
+								<img data-sly-test="${!properties.imagesFolderPathVar21}"
+									src="${properties.imagePath21}" loading="lazy" alt="harley_bike_variations_img">
+								<div data-sly-test="${properties.imagesFolderPathVar21}"
+									class="enable-360-view variant-vivid-red-360-view">
+									<sly
+										data-sly-use.listUse3="${'/apps/hero-aem-website/utils/fetchResource.js' @ absolutePath=properties.imagesFolderPathVar21}">
+										<sly data-sly-list.child3="${listUse3}">
+											<img data-sly-test="${child3.name != 'jcr:content'}" src="${child3.path}"
+												loading="lazy" alt="vivid red bike image" />
+										</sly>
+									</sly>
+								</div>
+							</div>
+							<div class="harley_x440_vivid_silver_bike_img bike-holder-container bike-switch-fade-out-transition"
+								data-360-view="${properties.imagesFolderPathVar22 ? 'true' : 'false'}">
+								<img data-sly-test="${!properties.imagesFolderPathVar22}"
+									src="${properties.imagePath22}" loading="lazy" alt="harley_bike_variations_img">
+								<div data-sly-test="${properties.imagesFolderPathVar22}"
+									class="enable-360-view variant-vivid-silver-360-view">
+									<sly
+										data-sly-use.listUse4="${'/apps/hero-aem-website/utils/fetchResource.js' @ absolutePath=properties.imagesFolderPathVar22}">
+										<sly data-sly-list.child4="${listUse4}">
+											<img data-sly-test="${child4.name != 'jcr:content'}" src="${child4.path}"
+												loading="lazy" alt="vivid silver bike image" />
+										</sly>
+									</sly>
+								</div>
+							</div>
+							<div class="harley_x440_denim_bike_img bike-holder-container bike-switch-fade-out-transition"
+								data-360-view="${properties.imagesFolderPathVar3 ? 'true' : 'false'}">
+								<img data-sly-test="${!properties.imagesFolderPathVar3}" src="${properties.imagePath3}"
+									loading="lazy" alt="harley_bike_variations_img">
+								<div data-sly-test="${properties.imagesFolderPathVar3}"
+									class="enable-360-view variant-denim-360-view">
+									<sly
+										data-sly-use.listUse5="${'/apps/hero-aem-website/utils/fetchResource.js' @ absolutePath=properties.imagesFolderPathVar3}">
+										<sly data-sly-list.child5="${listUse5}">
+											<img data-sly-test="${child5.name != 'jcr:content'}" src="${child5.path}"
+												loading="lazy" alt="denim bike image" />
+										</sly>
+									</sly>
+								</div>
+							</div>
+
+							<div class="harley-x440-360-circle-wrapper">
+								<div class="harley-x440-360-circle-line"></div>
+								<div class="harley-x440-360-icon-wrapper">
+									<img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/360_icon.png"
+										loading="lazy" alt="harley_x440s_360_icon">
+								</div>
+								<div class="harley-x440-360-text-wrapper">
+									<p class="harley-x440-360-text">View 360</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="harley-bike-variations-wrapper">
+						<div class="harley-bike-variations-container">
+							<div class="harley-x440s-wrapper">
+								<!-- Adding d-none to hiding the 360 icon as JS might error out if we remove the icon img element -->
+								<div data-sly-test="${properties.imagesFolderPath1}"
+									class="harley-x440s-360-icon-wrapper d-none">
+									<img class="harley-x440s-360-icon d-selected-icon"
+										src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/360_icon.png"
+										loading="lazy" alt="harley_x440s_360_icon">
+								</div>
+								<div class="harley-x440s-text-content-wrapper">
+									<div class="harley-x440s-text-wrapper">
+										<p class="harley-x440s-text d-selected-font">${properties.variantName1
+											@context='html'}</p>
+									</div>
+									<div class="harley-x440s-bottom-line"></div>
+								</div>
+								<div class="harley-x440s-variant-img-wrapper d-selected-bike">
+									<img src="${properties.iconPath1}" loading="lazy" alt="harley_x440s_img">
+								</div>
+							</div>
+							<div class="harley-x440-vivid-wrapper">
+								<!-- Adding d-none to hiding the 360 icon as JS might error out if we remove the icon img element -->
+								<div data-sly-test="${properties.imagesFolderPathVar21 || properties.imagesFolderPathVar22}"
+									class="harley-x440s-360-icon-wrapper d-none">
+									<img class="harley-x440s-360-icon d-selected-icon"
+										src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/360_icon.png"
+										loading="lazy" alt="harley_x440s_360_icon">
+								</div>
+								<div class="harley-x440-vivid-text-content-wrapper">
+									<div class="harley-x440-vivid-text-wrapper">
+										<p class="harley-x440-vivid-text">${properties.variantName2 @context='html'}</p>
+									</div>
+									<div class="harley-x440-vivid-bottom-line d-none"></div>
+								</div>
+								<div class="harley-x440-vivid-variant-img-wrapper">
+									<img src="${properties.iconPath2}" loading="lazy" alt="harley_x440_vivid_img">
+								</div>
+							</div>
+							<div class="harley-x440-denim-wrapper">
+								<!-- Adding d-none to hiding the 360 icon as JS might error out if we remove the icon img element -->
+								<div data-sly-test="${properties.imagesFolderPathVar3}"
+									class="harley-x440s-360-icon-wrapper d-none">
+									<img class="harley-x440s-360-icon d-selected-icon"
+										src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-premia-site/resources/images/360_icon.png"
+										loading="lazy" alt="harley_x440s_360_icon">
+								</div>
+								<div class="harley-x440-denim-text-content-wrapper">
+									<div class="harley-x440-denim-text-wrapper">
+										<p class="harley-x440-denim-text">${properties.variantName3 @context='html'}</p>
+									</div>
+									<div class="harley-x440-denim-bottom-line d-none"></div>
+								</div>
+								<div class="harley-x440-denim-variant-img-wrapper">
+									<img src="${properties.iconPath3}" loading="lazy" alt="harley_x440_denim_img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product-bike-variant-footer-wrapper">
+				<div class="product-bike-variant-footer-content-wrapper">
+					<div class="harley-price-book-wrapper">
+						<div class="harley-price-section-wrapper">
+							<div class="harley-price-primary-text-wrapper">
+								<div class="harley-x440-price-amount-wrapper">
+									<p class="harley-x440-price-currency">${properties.currency @context= 'html'} <span
+											class="harley-x440s-price-amount">${properties.price1 @context
+											='html'}</span><span
+											class="harley-x440-vivid-price-amount d-none">${properties.price2 @context
+											='html'}</span><span
+											class="harley-x440-denim-price-amount d-none">${properties.price3 @context
+											='html'}</span></p>
+								</div>
+								<div class="harley-x440-price-text-wrapper">
+									<p class="harley-x440-price-text">
+										<span class="harley-x440s-price-variant">${properties.priceDesc1 @context
+											='html'}</span>
+										<span class="harley-x440-vivid-price-variant d-none">${properties.priceDesc2
+											@context ='html'}</span>
+										<span class="harley-x440-denim-price-variant d-none">${properties.priceDesc3
+											@context ='html'}</span>
+									</p>
+								</div>
+								<div class="harley-price-disclaimer-text-wrapper">
+									<p class="harley-price-disclaimer-text">${properties.description2 @context ='html'}
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="harley-book-section-wrapper">
+							<div class="harley-book-section-container">
+								<div class="harley-book-section-content">
+									<div class="essential-specs-text-wrapper">
+										<sly
+											data-sly-resource="${'btn1' @ resourceType='hero-aem-website/components/content/premia/specificationmodal' }">
+										</sly>
+										<!-- <p class="essential-specs-text">ESSENTIAL SPECS</p> -->
+									</div>
+									<p class="tooltipWrapper"><span
+											class="info-container tooltiptext">${inheritedPageProperties.bookNowToolTipText1 @ context='html'}
+												</span>
+									</p>
+									<div class="harley-book-button-wrapper">
+										<!-- <sly
+											data-sly-resource="${'booknow' @ resourceType='hero-aem-website/components/content/premia/button' }">
+										</sly> -->
+										<sly
+											data-sly-resource="${'buttons-right' @ resourceType='wcm/foundation/components/responsivegrid' }">
+										</sly>
+										<!-- <button type="button" class="harley-book-button">BOOK NOW</button> -->
+									</div>
+								</div>
+								<div class="harley-disclaimer-text-wrapper">
+									${properties.description @context='html'}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

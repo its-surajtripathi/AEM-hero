@@ -1,0 +1,41 @@
+<div class="${properties.variant}-history-container">
+    <div class="earning-history-title">
+        <label class="history-title-icon"><img src="${properties.headingicon}" />
+        </label>${properties.heading}
+    </div>
+    <div class="table-responsive earning-history" data-sly-set.pageconfig="${caconfig['com.hero.aem.core.services.caconfigs.PageCaConfig']}">
+        <div class="no-results d-none">
+            <h3>${properties.nodatalabel @context='scriptString'}</h3>
+        </div>
+        <script type="text/html" class="getEarningHistory">
+            <table>
+                <tr>
+                    <th><div class="first-head">${properties.datelabel @context='scriptString'}</div></th>
+                    <th><div class="sec-head">${properties.amountlabel @context='scriptString'}</div></th>
+                    <th><div class="third-head">${properties.typelabel @context='scriptString'}</div></th>
+                    <th><div class="four-head">${properties.pointslabel @context='scriptString'}</div></th>
+                    <!-- <th>${properties.datelabel @context='scriptString'}</th>
+                    <th>${properties.amountlabel @context='scriptString'}</th>
+                    <th>${properties.typelabel @context='scriptString'}</th>
+                    <th>${properties.pointslabel @context='scriptString'}</th> -->
+                </tr>
+                <% _.each(getEarningsHistoryData, function(item, i, list) { %>
+                <tr>
+                    <td><div class="first-earning"><%= getEarningsHistoryData[i]['Trans Date']%></div></td>
+                    <td><div class="sec-earning">${pageconfig.currencyUnit @ context='scriptString'}<%= getEarningsHistoryData[i]['Bill Amount']%></div></td>
+                    <td><div class="third-earning"><%= getEarningsHistoryData[i]['Trans Type']%></div></td>
+                    <td><div class="four-earning"><div class="points"><img src="${properties.coinicon @context='uri'}">
+                        <%= getEarningsHistoryData[i]['Total Points']%>
+                    </div></div></td>
+                    <!-- <td><%= getEarningsHistoryData[i]['Trans Date']%></td>
+                    <td>${pageconfig.currencyUnit @ context='scriptString'}<%= getEarningsHistoryData[i]['Bill Amount']%></td>
+                    <td><%= getEarningsHistoryData[i]['Trans Type']%></td>
+                    <td><div class="points"><img src="${properties.coinicon @context='uri'}">
+                        <%= getEarningsHistoryData[i]['Total Points']%>
+                    </div>
+                    </td> -->
+                </tr><%});%>
+            </table>
+        </script>
+    </div>
+</div>

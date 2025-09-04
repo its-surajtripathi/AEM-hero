@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Author Image Hotspots"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            granite:class="cmp-author_editor"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <general
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Properties"
+                            sling:orderBefore="cq:styles"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <theme
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    fieldDescription="Select Theme"
+                                                    fieldLabel="Select Theme"
+                                                    class="cq-dialog-dropdown-showhide"
+                                                    cq-dialog-dropdown-showhide-target=".text-show-hide"
+                                                    name="./theme">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <scooter
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Scooter"
+                                                            value="features-section-main scooter-features-main"/>
+                                                    <bike
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Bike"
+                                                            value="features-section-main dark-theme"/>
+                                                    <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Default"
+                                                            value="features-section-main"/>
+                                                </items>
+                                            </theme>
+                                        <heading1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="text-show-hide"
+                                                showhidetargetvalue="features-section-main dark-theme,features-section-main scooter-features-main">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <heading
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Wondering What Features You’ll Get?"
+                                                    fieldLabel="Headline Text for Component"
+                                                    fieldDescription="Add Heading for the Component"
+                                                    name="./heading"/>
+                                        </items>
+                                        </heading1>
+                                        <specificationtext
+                                                granite:class="show text-show-hide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                showhidetargetvalue="features-section-main">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <headingtext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                    fieldLabel="Enter Heading Text"
+                                                    name="./headingtext"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                            </headingtext>
+                                        </items>
+                                        </specificationtext>
+                                            <bgimage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="Configure Background Image"
+                                                    fieldDescription="Configure Background Image from DAM"
+                                                    name="./bgimage"
+                                                    rootPath="/content/dam/hero-aem-website"/>
+                                            <headingconfigs
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Add Headings"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                    margin="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <icons
+                                                            jcr:primaryType="nt:unstructured"
+                                                            jcr:title="Configure Icons"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <icon
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                    fieldLabel="Hotspot Icon Path"
+                                                                    fieldDescription="Configure Icon from DAM to show Hotspot Data"
+                                                                    name="./icon"
+                                                                    required="{Boolean}true"
+                                                                    rootPath="/content/dam/hero-aem-website"/>
+                                                            <staricon
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                    fieldLabel="Star Icon Path"
+                                                                    fieldDescription="Configure Icon for Tags"
+                                                                    name="./staricon"
+                                                                    rootPath="/content/dam/hero-aem-website"/>
+                                                        </items>
+                                                    </icons>
+                                                </items>
+                                            </headingconfigs>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </general>
+                    <hotspot
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Configure Hotspots"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <featureheading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Feature Heading"
+                                    emptyText="Features"
+                                    name="./featureheading"
+                                    required="{Boolean}true"/>
+                            <productimage
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                    fieldLabel="Configure Product Image"
+                                    fieldDescription="Configure Product Image from DAM"
+                                    name="./productimage"
+                                    rootPath="/content/dam/hero-aem-website"/>
+                                    <hotspotdetails
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldDescription="Hotspot Data"
+                                            required="{Boolean}true"
+                                            fieldLabel="Hotspot Details">
+                                        <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                emptyText="Author Hotspot Details"
+                                                name="./hotspotdetails">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <configurations
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configs
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Add Hotspot Details"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <hotspotconfigs
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        jcr:title="Add Headings"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                                        margin="{Boolean}true">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <features
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                jcr:title="Features"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <featureimage
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                        fieldLabel="Feature Image"
+                                                                                        name="./featureimage"
+                                                                                        required="{Boolean}true"
+                                                                                        rootPath="/content/dam/hero-aem-website"/>
+                                                                                <featuretext
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                        fieldLabel="Enter Feature Details"
+                                                                                        name="./featuretext"
+                                                                                        useFixedInlineToolbar="{Boolean}true">
+                                                                                    <rtePlugins
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                                    <uiSettings
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                                </featuretext>
+                                                                                <featuretag
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                        fieldLabel="Feature Tag"
+                                                                                        name="./featuretag"
+                                                                                        required="{Boolean}false"/>
+                                                                            </items>
+                                                                        </features>
+                                                                        <styling
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                jcr:title="Icon Styling"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <topbottom
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                                                        fieldDescription="Select Styling Option for Hotspot Icon"
+                                                                                        fieldLabel="Top / Bottom Styles"
+                                                                                        name="topbottom">
+                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                        <top
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                text="Top"
+                                                                                                checked="{Boolean}true"
+                                                                                                value="top"/>
+                                                                                        <bottom
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                text="Bottom"
+                                                                                                value="bottom"/>
+                                                                                    </items>
+                                                                                </topbottom>
+                                                                                <style1
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                        fieldLabel="Add Top/ Bottom Styles Location for Hotspot Icon"
+                                                                                        name="./style1"
+                                                                                        emptyText="%"
+                                                                                        required="{Boolean}true"/>
+                                                                                <leftright
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                                                        fieldDescription="Select Styling Option"
+                                                                                        fieldLabel="Left / Right Style"
+                                                                                        name="leftright">
+                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                        <left
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                text="Left"
+                                                                                                checked="{Boolean}true"
+                                                                                                value="left"/>
+                                                                                        <right
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                text="Right"
+                                                                                                value="right"/>
+                                                                                    </items>
+                                                                                </leftright>
+                                                                                <style2
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                        fieldLabel="Add Left/ Right Styles Location for Hotspot Icon"
+                                                                                        emptyText="%"
+                                                                                        name="./style2"
+                                                                                        required="{Boolean}true"/>
+                                                                            </items>
+                                                                        </styling>
+                                                                    </items>
+                                                                </hotspotconfigs>
+                                                            </items>
+                                                        </configs>
+                                                    </items>
+                                                </configurations>
+                                            </items>
+                                        </field>
+                                    </hotspotdetails>
+                        </items>
+                    </hotspot>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

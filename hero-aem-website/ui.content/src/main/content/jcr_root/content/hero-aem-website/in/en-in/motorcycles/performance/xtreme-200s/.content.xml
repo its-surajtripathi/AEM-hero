@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-13T08:07:54.260Z"
+        cq:lastModifiedBy="sree.d.kollimarla@accenture.com"
+        cq:lastReplicated="{Date}2022-09-13T11:07:10.548Z"
+        cq:lastReplicated_publish="{Date}2022-09-13T11:07:10.548Z"
+        cq:lastReplicatedBy="kiran.jaganmohan@accenture.com"
+        cq:lastReplicatedBy_publish="kiran.jaganmohan@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/sports-and-adventure"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Xtreme 200S"
+        jcr:uuid="5aa26a0d-f875-4fc2-8d0e-05e43c159108"
+        sling:resourceType="hero-aem-website/components/structure/productpage"
+        pagerank="28"
+        pageTitle="Xtreme 200S"
+        productmodel="/content/hmc/prices/in/xtreme_200s"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <carousel
+                jcr:created="{Date}2022-07-08T10:02:51.945+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-07-08T10:03:42.164+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/carousel"/>
+            <container
+                jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:created="{Date}2022-08-23T08:46:40.183Z"
+                    jcr:createdBy="aditya.l.srivastava@accenture.com"
+                    jcr:lastModified="{Date}2022-08-23T08:46:40.183Z"
+                    jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <container
+                        jcr:created="{Date}2022-08-23T08:46:49.363Z"
+                        jcr:createdBy="aditya.l.srivastava@accenture.com"
+                        jcr:lastModified="{Date}2022-08-23T08:46:49.363Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container">
+                        <productbanner_copy_c
+                            jcr:created="{Date}2022-08-22T05:23:42.070Z"
+                            jcr:createdBy="aditya.l.srivastava@accenture.com"
+                            jcr:lastModified="{Date}2022-09-02T13:39:58.626Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/productbanner"
+                            cta1label="TEST RIDE"
+                            cta1link="#requestCallBack"
+                            cta2label="BOOK NOW"
+                            cta2link="https://eshop.heromotocorp.com/xtreme-200s-bs6.html"
+                            downimage="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse200-4v/scroll-down-arrow.gif"
+                            fileReference="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/banner-img.png"
+                            prodlogo="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/xtreme-200-logo.png"
+                            prodvideo="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse200-4v/videos/xpulse-200-4v.mp4"
+                            textIsRich="[true,true,true,true]"
+                            urltype1="modal"
+                            urltype2="url">
+                            <specdetails jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    specification="Engine"
+                                    valuetext="BS6"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    specification="Max. Torque"
+                                    valuetext="16.45Nm"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    specification="Max. Power"
+                                    valuetext="13.3 kw"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    specification="Ground Clearance"
+                                    valuetext="165mm"/>
+                            </specdetails>
+                        </productbanner_copy_c>
+                    </container>
+                    <container_56378648_c
+                        jcr:created="{Date}2022-08-22T09:51:17.482Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-22T09:59:22.123Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="specification">
+                        <color_switch_copy_86
+                            jcr:created="{Date}2022-08-18T17:46:15.568Z"
+                            jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:lastModified="{Date}2022-09-12T11:03:20.638Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/color-switch"
+                            btnlabel1="Explore"
+                            btnlabel2="Book Now"
+                            imgbtn1="/content/dam/hero-aem-website/brand/design/icons/360-view-icon.svg"
+                            linkTo1="https://virtualshowroom.heromotocorp.com/"
+                            linkTo2="https://eshop.heromotocorp.com/xtreme-200s-bs6.html"
+                            styling1="btn-icon btn-white"
+                            styling2="btn-red-gradient"
+                            textIsRich="[true,true,true,true]"
+                            variationtype="sports">
+                            <imagerotation
+                                jcr:lastModified="{Date}2022-08-29T08:30:57.029Z"
+                                jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagerotation"/>
+                            <downloadbrouchure
+                                jcr:lastModified="{Date}2022-09-08T07:00:23.452Z"
+                                jcr:lastModifiedBy="p.bhausaheb.lande@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/downloadbrochure"
+                                icon="/content/dam/hero-aem-website/brand/design/icons/download-icon.svg"
+                                link="#"
+                                text="Download Brochure"
+                                variation="link-btn download-btn"/>
+                            <share
+                                jcr:lastModified="{Date}2022-08-29T05:48:53.125Z"
+                                jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/shareicon"
+                                emailIcon="/content/dam/hero-aem-website/brand/design/icons/email-icon.svg"
+                                emailicon="/content/dam/hero-aem-website/brand/design/icons/email-icon.svg"
+                                emaillink="abc@test.com"
+                                emailSub="Email subject here!"
+                                emailsub="Download Brochure PDF"
+                                icon="/content/dam/hero-aem-website/brand/design/icons/share-icon.svg"
+                                linkto="#"
+                                text="Please find attachment.&#xd;&#xa;&lt;link>&lt;/link>"
+                                textIsRich="true"
+                                variation="motorcycle"
+                                wpIcon="/content/dam/hero-aem-website/brand/design/icons/whatsapp-icon.svg"
+                                wpicon="/content/dam/hero-aem-website/brand/design/icons/whatsapp-icon.svg"
+                                wpLink="https://api.whatsapp.com"
+                                wplink="https://web.whatsapp.com/"
+                                wpText="share whats app text here!"
+                                wptext="Brochure PDF&#xd;&#xa;&#xd;&#xa;"/>
+                            <colors jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    color="white"
+                                    colorimagepath="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/icons/variation1.svg"
+                                    colorPath="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/white"
+                                    colortitle="Pearl Silver White"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    color="black"
+                                    colorimagepath="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/icons/variation2.svg"
+                                    colorPath="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/black"
+                                    colortitle="Panther Black"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    color="red"
+                                    colorimagepath="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/icons/variation3.svg"
+                                    colorPath="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/red"
+                                    colortitle="Sports Red"/>
+                            </colors>
+                            <multitextsports jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    features="&lt;h5>5-SPEED CONSTANT-MESH&lt;/h5>&#xd;&#xa;&lt;p>169 MPH&lt;/p>&#xd;&#xa;&lt;p>272 KM/H&lt;/p>&#xd;&#xa;"
+                                    title="TOP SPEED "/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    features="&lt;h5>13.3kw&lt;/h5>&#xd;&#xa;&lt;p>18.1 PS&lt;/p>&#xd;&#xa;&lt;p>8500 RPM&lt;/p>&#xd;&#xa;"
+                                    title="POWER "/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    features="&lt;h5>6500 RPM&lt;/h5>&#xd;&#xa;&lt;p>16.15 NM&lt;/p>&#xd;&#xa;&lt;p>89.6 LBF FT&lt;/p>&#xd;&#xa;"
+                                    title="TORQUE"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    features="&lt;p>3.4 US GAL&lt;/p>&#xd;&#xa;&lt;h5>12.8 L&lt;/h5>&#xd;&#xa;&lt;p>2.8 IMP GAL&lt;/p>&#xd;&#xa;"
+                                    title="FUEL CAPACITY"/>
+                            </multitextsports>
+                        </color_switch_copy_86>
+                    </container_56378648_c>
+                </container>
+                <container_354949210_
+                    jcr:created="{Date}2022-08-22T10:22:24.446Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-22T10:22:24.446Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <container_543516788
+                        cq:styleIds="[1660795969470]"
+                        jcr:created="{Date}2022-08-22T10:16:41.213Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-22T10:27:49.181Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="features">
+                        <hotspot_copy
+                            jcr:created="{Date}2022-08-18T05:28:13.740Z"
+                            jcr:createdBy="d.porwal@accenture.com"
+                            jcr:lastModified="{Date}2022-08-26T09:49:30.986Z"
+                            jcr:lastModifiedBy="d.porwal@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/hotspot"
+                            bgimage="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagehotspot/features-section-bg.jpg"
+                            featureheading="Features"
+                            heading="Wondering What Features You’ll Get?"
+                            headingtext="&lt;p>Best choice to pamper your passion for&lt;/p>&#xd;&#xa;&lt;h5>Off Road Riding&lt;/h5>&#xd;&#xa;"
+                            icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagehotspot/features-view-icon.svg"
+                            productimage="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/xtreeme-200-feature.png"
+                            staricon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagehotspot/star-icon-features.svg"
+                            textIsRich="[true,true,true,true,true,true]"
+                            theme="features-section-main">
+                            <hotspotdetails jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    featureimage="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/engine.jpg"
+                                    featuretag="First in the segment"
+                                    featuretext="&lt;p>All New 4 Valve&lt;/p>&#xd;&#xa;&lt;h4>BS6 &lt;span class=&quot;feature-span&quot;>Engine&lt;/span>&lt;/h4>&#xd;&#xa;"
+                                    leftright="left"
+                                    style1="67%"
+                                    style2="49%"
+                                    topbottom="top"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    featureimage="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/sporty-exhaust.png"
+                                    featuretag="First in the segment"
+                                    featuretext="&lt;p>compact&lt;/p>&#xd;&#xa;&lt;h4>Sporty&lt;span class=&quot;feature-span&quot;>Exhaust&lt;/span>&lt;/h4>&#xd;&#xa;"
+                                    leftright="left"
+                                    style1="73%"
+                                    style2="17%"
+                                    topbottom="top"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    featureimage="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/headlamp.png"
+                                    featuretag="First in the segment"
+                                    featuretext="&lt;p>Twin LED&lt;/p>&#xd;&#xa;&lt;h4>Headlamps&lt;/h4>&#xd;&#xa;"
+                                    leftright="left"
+                                    style1="40%"
+                                    style2="72%"
+                                    topbottom="top"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    featureimage="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/single-channel.png"
+                                    featuretag="First in the segment"
+                                    featuretext="&lt;p>ABS&lt;/p>&#xd;&#xa;&lt;h4>Large &lt;span class=&quot;feature-span&quot;>Discs&lt;/span>&lt;/h4>&#xd;&#xa;"
+                                    leftright="left"
+                                    style1="79%"
+                                    style2="81%"
+                                    topbottom="top"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    featureimage="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/lcd-console.png"
+                                    featuretag="First in the segment"
+                                    featuretext="&lt;p>All-Digital Instrument&lt;/p>&#xd;&#xa;&lt;h4>LCD &lt;span class=&quot;feature-span&quot;>Console&lt;/span>&lt;/h4>&#xd;&#xa;"
+                                    leftright="left"
+                                    style1="30%"
+                                    style2="66%"
+                                    topbottom="top"/>
+                            </hotspotdetails>
+                        </hotspot_copy>
+                        <booktestride_copy
+                            jcr:created="{Date}2022-08-08T07:10:29.353Z"
+                            jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:lastModified="{Date}2022-09-13T06:43:59.981Z"
+                            jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/booktestride"
+                            acknowledgemsg="&lt;p>Thank You!&lt;/p>&#xd;&#xa;"
+                            acknowledgemsgfail="&lt;h3>Sorry&lt;/h3>&#xd;&#xa;"
+                            acknowledgemsgfailsubtitle="&lt;p>An error Occured. Please try after sometime&lt;/p>&#xd;&#xa;"
+                            acknowledgemsgsubtitle="&lt;p>We will connect with you soon.&lt;/p>&#xd;&#xa;"
+                            buttonlabel="Submit"
+                            citylabel="City"
+                            cityvalmsg="select a city"
+                            enterOtplabel="Enter OTP"
+                            ispopup="false"
+                            loadimgpath="/content/dam/hero-aem-website/brand/design/icons/form-submit-loader.svg"
+                            mobilelabel="Mobile No."
+                            mobilevalformmsg="Enter correct mobile number"
+                            mobilevalmsg="Please Enter a valid Mobile Number"
+                            name="Name"
+                            nameformvalmsg="Invalid Name"
+                            namereqvalmsg="The Name is required"
+                            otpresultmsg="Incorrect OTP"
+                            otpvalmsg="OTP not matching"
+                            resendOtplabel="Resend OTP"
+                            sendOtplabel="Send OTP"
+                            statelabel="State"
+                            statevalmsg="select a state"
+                            subtitle="&lt;p>Take A Hero Ride And Experience The Thrill.&lt;/p>&#xd;&#xa;"
+                            textIsRich="[true,true,true,true,true,true,true]"
+                            title="&lt;h3>BOOK A TEST RIDE NOW&lt;/h3>&#xd;&#xa;"
+                            variationtype="productpage"
+                            vehiclelabel="Vehicle"
+                            vehiclevalmsg="Select a vehicle"/>
+                    </container_543516788>
+                    <container
+                        jcr:created="{Date}2022-08-22T10:28:37.577Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-22T10:29:01.784Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="price">
+                        <price_info_copy
+                            jcr:created="{Date}2022-08-18T09:33:32.211Z"
+                            jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:lastModified="{Date}2022-09-12T12:02:47.951Z"
+                            jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/price-info"
+                            bgImage="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/price-info/bg-pattern-1.png"
+                            bgStyle="btn-red-gradient"
+                            buttonlabel="Book Now"
+                            buttonlink="https://eshop.heromotocorp.com/xtreme-200s-bs6.html"
+                            buttonlinktype="url"
+                            citylabel="City"
+                            defaultcitylabel="Select City"
+                            defaultcitypath="/content/hmc/prices/in/xtreme_200s/mah/mumbai"
+                            defaultstatelabel="Select State"
+                            defaultstatepath="/content/hmc/prices/in/xtreme_200s/mah"
+                            desktopimage="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/xtreme-200-img2.png"
+                            disclaimer="&lt;p>*Please contact the dealer for exact on-road prices. Local levies, Octroi, Entry tax will be extra as applicable. Price ruling at the time of delivery would be applicable. Prices are subject to change without notice. HMCL reserves the right to modify the prices at its discretion at any point of time.&lt;/p>&#xd;&#xa;"
+                            heading="XTREME 200 S PRICE"
+                            mobilemage="/content/dam/hero-aem-website/in/products/sports-adventure/xtreme-200s/xtreme-img-5.png"
+                            productPath="/content/hero-aem-website/in/en-in/motorcycles/performance/xtreme-200s"
+                            showroomlabel="Ex-Showroom Price"
+                            statelabel="State"
+                            textIsRich="true"
+                            variantlabel="Variant"
+                            variationtype="sports-section"/>
+                        <container
+                            cq:styleIds="[1660795121046]"
+                            jcr:created="{Date}2022-08-22T11:24:23.869Z"
+                            jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:lastModified="{Date}2022-08-22T11:24:23.915Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <text
+                                jcr:created="{Date}2022-08-23T12:01:59.874Z"
+                                jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:lastModified="{Date}2022-09-10T17:13:59.077Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/text"
+                                text="&lt;h2 style=&quot;text-align: center;&quot;>Book Now for ₹ 2700. Fully refundable&lt;/h2>&#xd;&#xa;&lt;h2 style=&quot;text-align: center;&quot;>&amp;nbsp;&lt;/h2>&#xd;&#xa;&lt;p style=&quot;text-align: center;&quot;>&lt;span class=&quot;btn btn-white&quot;>&lt;a title=&quot;book now&quot; href=&quot;https://eshop.heromotocorp.com/xtreme-200s-bs6.html&quot; target=&quot;_blank&quot;>BOOK NOW&lt;/a>&lt;/span>&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"/>
+                        </container>
+                        <container_copy
+                            cq:styleIds="[1660795962763]"
+                            jcr:created="{Date}2022-08-22T10:54:24.033Z"
+                            jcr:createdBy="gausiya.latif.momin@accenture.com"
+                            jcr:lastModified="{Date}2022-08-22T11:54:40.953Z"
+                            jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container"
+                            addtnclass="news-n-blogs bg-black">
+                            <bootstraplayout
+                                jcr:created="{Date}2022-08-22T10:56:00.216Z"
+                                jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                jcr:lastModified="{Date}2022-08-22T11:30:30.177Z"
+                                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/bootstraplayout"
+                                classes="container-fluid px-0"
+                                rowclasses="row no-gutters">
+                                <container-item0
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <genericteaser
+                                        jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-22T11:25:01.155Z"
+                                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                        alt="Specialized-Loyalty-Program"
+                                        file="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/Specialized-Loyalty-Program.png"
+                                        height="385"
+                                        layoutvariation="layoutvariation1"
+                                        searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                        searchbtnpath="#"
+                                        searchbtntitle="View all benefits"
+                                        subtitle="Specialized Loyalty Program"
+                                        teasertitle="GOODLIFE"
+                                        textIsRich="true"/>
+                                </container-item0>
+                                <container-item1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <genericteaser_copy
+                                        jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-22T11:24:47.768Z"
+                                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                        alt="Community &amp; Event"
+                                        file="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/Community-Event.png"
+                                        height="385"
+                                        layoutvariation="layoutvariation1"
+                                        searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                        searchbtnpath="#"
+                                        searchbtntitle="View Events"
+                                        subtitle="Join our Hero"
+                                        teaserdescription="Join our supportive riding community and be a part of something bigger."
+                                        teasertitle="Community &amp; Event"
+                                        textIsRich="true">
+                                        <imageicondetails jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                iconalt="user"
+                                                iconimagelink="#"
+                                                iconimagepath="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/user-1.png"
+                                                titleicon="Motorsports"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                iconalt="user"
+                                                iconimagelink="#"
+                                                iconimagepath="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/user-2.png"
+                                                titleicon="Xtracks"/>
+                                        </imageicondetails>
+                                    </genericteaser_copy>
+                                </container-item1>
+                                <container-item2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <genericteaser_copy
+                                        jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-09-02T11:51:05.659Z"
+                                        jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                        alt="customer-says"
+                                        file="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/customer-says.png"
+                                        height="385"
+                                        layoutvariation="layoutvariation1"
+                                        searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                        searchbtnpath="#"
+                                        searchbtntitle="View all reviews"
+                                        subtitle="What Our"
+                                        teasertitle="Customer’s Say"
+                                        textIsRich="true">
+                                        <imageicondetails jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                iconalt="user"
+                                                iconimagelink="#"
+                                                iconimagepath="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/user-1.png"
+                                                titleicon="Rahul Pandit"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                iconalt="user"
+                                                iconimagelink="#"
+                                                iconimagepath="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/user-2.png"
+                                                titleicon="Harsh Saxena"/>
+                                        </imageicondetails>
+                                    </genericteaser_copy>
+                                </container-item2>
+                                <container-item3
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <genericteaser_copy
+                                        jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-22T11:23:02.687Z"
+                                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                        alt="hero Connect"
+                                        file="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/hero-connet.png"
+                                        height="385"
+                                        layoutvariation="layoutvariation1"
+                                        searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                        searchbtnpath="#"
+                                        searchbtntitle="Explore"
+                                        subtitle="Our Special Feature"
+                                        teaserdescription="Smart people smart bike"
+                                        teasertitle="Hero Connect"
+                                        textIsRich="true"/>
+                                </container-item3>
+                                <container-item4
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hero-aem-website/components/container">
+                                    <genericteaser_copy
+                                        jcr:created="{Date}2022-08-22T11:01:24.528Z"
+                                        jcr:createdBy="gausiya.latif.momin@accenture.com"
+                                        jcr:lastModified="{Date}2022-08-22T11:22:49.437Z"
+                                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="hero-aem-website/components/content/genericteaser"
+                                        alt="rally-kit"
+                                        file="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/rally-kit.png"
+                                        height="385"
+                                        layoutvariation="layoutvariation1"
+                                        searchbtn="/content/dam/hero-aem-website/in/products/sports-adventure/xpulse-200/new-events/arrow-right.png"
+                                        searchbtnpath="#"
+                                        searchbtntitle="Explore"
+                                        subtitle="Explore Specialized"
+                                        teaserdescription="Upgrade your bike with Accessories, Parts, Gears"
+                                        teasertitle="RallyKit"
+                                        textIsRich="true"/>
+                                </container-item4>
+                                <columnlayouts jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-4"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-4"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-8"
+                                        medium="col-md-6"
+                                        small="col-12"
+                                        xlarge="col-xl-8"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-4"
+                                        medium="col-md-4"
+                                        small="col-12"
+                                        xlarge="col-xl-4"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-4"
+                                        medium="col-md-4"
+                                        small="col-12"
+                                        xlarge="col-xl-4"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        large="col-lg-4"
+                                        medium="col-md-4"
+                                        small="col-12"
+                                        xlarge="col-xl-4"/>
+                                </columnlayouts>
+                            </bootstraplayout>
+                        </container_copy>
+                    </container>
+                    <container_1979851162
+                        cq:styleIds="[1660795991335]"
+                        jcr:created="{Date}2022-08-22T11:26:36.487Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-08-22T11:29:50.667Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/container"
+                        id="find-dealer">
+                        <dealer_info_copy
+                            jcr:created="{Date}2022-08-18T13:54:15.970Z"
+                            jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                            jcr:lastModified="{Date}2022-09-12T12:03:20.278Z"
+                            jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/dealer-info"
+                            citylabel="City"
+                            dealerheading="Book appointment at your nearest experience center"
+                            defaultcity="/content/hmc/dealers/in/dlr/MAH/mumbai"
+                            statelabel="State"
+                            subtitle="Where do you live?"
+                            title="We are near you!"/>
+                    </container_1979851162>
+                </container_354949210_>
+                <experiencefragment_c
+                    jcr:created="{Date}2022-08-29T07:43:49.455Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-03T17:43:52.512Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/modals/request-callback-pop-up-product"/>
+            </container>
+            <experiencefragment-header
+                jcr:lastModified="{Date}2022-08-23T08:46:24.886Z"
+                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/header/sports-header"/>
+            <experiencefragment
+                jcr:created="{Date}2022-07-04T12:03:17.349+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-08-11T22:13:13.322+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/footer/master"/>
+            <experiencefragment-footer
+                jcr:lastModified="{Date}2022-09-08T08:50:29.925Z"
+                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/footer/master"
+                id="footer"/>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-09-13T08:07:54.240Z"
+            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

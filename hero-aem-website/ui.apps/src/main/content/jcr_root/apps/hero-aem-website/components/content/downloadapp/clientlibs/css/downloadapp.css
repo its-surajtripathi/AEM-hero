@@ -1,0 +1,198 @@
+
+.sj-banner .sj-banner-bg{
+  width: 100%;
+  height: 478px;
+  background: transparent;
+  border-radius: 12px;
+  display: flex;
+}
+
+.downloadapp .downloadappbox{
+  margin: 0px 40px;
+}
+
+.downloadapp .downloadappbg {
+  background: #303030;
+  border-radius: 12px;
+}
+
+.sj-banner .sj-banner-bg .sj-banner-content{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 160px;
+}
+
+.sj-banner .sj-banner-bg .sj-banner-content .sj-logo-header{
+  display: flex;
+  padding: 76px 0px 0px 0px;
+  height: 200px;
+  max-width: 400px;
+}
+
+.sj-banner .sj-banner-bg .sj-banner-content .sj-logo-header .sj-logo img{
+  width: 90px;
+  margin: 0px 25px;
+}
+
+.sj-banner .sj-banner-bg .sj-banner-content .sj-logo-header .sj-header{
+  
+}
+
+.sj-banner .sj-banner-bg .sj-banner-content .sj-logo-header .sj-header p{
+  font-family: var(--font-tstar-heavy);
+  font-weight: 900;
+  font-size: 48px;
+  color: #F50A00;
+  line-height: 1.2;
+}
+
+.sj-banner .sj-banner-bg .sj-banner-content .sj-logo-header .sj-header h2{
+  font-family: var(--font-tstar-heavy);
+  font-weight: 900;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+
+.sj-banner .sj-banner-bg .sj-banner-img{
+  width: 30%;
+  padding: 40px;
+  margin-right: 10%;
+}
+
+.sj-banner .sj-banner-bg .sj-banner-img .sj-img{
+  z-index: 1;
+  position: relative;
+}
+
+.sj-banner .sj-banner-bg .sj-banner-content .sj-line{
+  width: 320px;
+  height: 4px;
+  background: #FFFFFF;
+  margin:15px 20px;
+}
+
+.sj-banner .sj-banner-bg .sj-banner-content .sj-description p{
+  max-width: 400px;
+  font-family: var(--font-tstar-bold);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  padding: 10px 55px 0px 20px;
+}
+
+.sj-banner .sj-banner-bg .sj-banner-content .sj-appstore{
+  display: flex;
+}
+
+.sj-banner .sj-banner-bg .sj-banner-content .sj-appstore img{
+  padding: 15px 10px 0px 20px;
+}
+
+.sj-shadow{
+  width: 300px;
+  height: 50px;
+  background: #5A5A5A;
+  filter: blur(26.5px);
+  margin-top: -40px;
+}
+
+@media(max-width:1100px){
+  .sj-banner .sj-banner-bg .sj-banner-content{
+    margin-left: 70px;
+  }
+}
+
+@media (max-width:800px){
+  .sj-banner .sj-banner-bg{
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-content{
+    margin-left: -15px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-content .sj-logo-header{
+    padding: 16px 0 0 0;
+  }
+
+  .sj-banner {
+    margin: 0px 16px;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-content .sj-line{
+    width:100%;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-content .sj-logo-header .sj-logo img {
+    width: 60px;
+    margin: 0px 10px 0 30px;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-content .sj-logo-header .sj-header p{
+    font-size: 32px;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-content .sj-logo-header .sj-header h2{
+    font-size: 32px;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-content .sj-line{
+    width: 200px;
+    height: 3px;
+    margin: 0px 0px 10px 35px;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-content .sj-logo-header{
+    height: fit-content;
+    max-width: 100%;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-content .sj-appstore img {
+    width: 100px;
+    padding: 8px 10px 0px 0px;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-img {
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-content .sj-description p{
+    max-width: 320px;
+    padding: 0px 0px 0px 35px;
+    font-size: 16px;
+  }
+
+  .sj-shadow{
+    width: 200px;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-content .sj-appstore{
+    padding-left: 33px;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-img .sj-img{
+    width: 123px;
+    height: 182px;
+  }
+}
+
+@media(max-width:768px) {
+  .downloadapp .downloadappbox{
+    margin: 0px 16px;
+  }
+
+  .sj-banner .sj-banner-bg .sj-banner-img{
+    padding: 0px;
+  }
+}

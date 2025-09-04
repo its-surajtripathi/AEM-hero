@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/hero-aem-website/clientlibs"/>
+    <filter root="/apps/hero-aem-website/components"/>
+    <filter root="/apps/hero-aem-website/i18n"/>
+    <filter root="/apps/hero-aem-website/templates"/>
+    <filter root="/apps/hero-aem-website/utils"/>
+</workspaceFilter>

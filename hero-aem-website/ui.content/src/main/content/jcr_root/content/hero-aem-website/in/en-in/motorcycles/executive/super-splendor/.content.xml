@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-13T11:47:38.825Z"
+        cq:lastModifiedBy="gausiya.latif.momin@accenture.com"
+        cq:lastReplicated="{Date}2022-09-13T11:47:55.041Z"
+        cq:lastReplicated_publish="{Date}2022-09-13T11:47:55.041Z"
+        cq:lastReplicatedBy="gausiya.latif.momin@accenture.com"
+        cq:lastReplicatedBy_publish="gausiya.latif.momin@accenture.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/hero-aem-website/settings/wcm/templates/city-plus"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Super Splendor"
+        jcr:uuid="aa7bf8c0-6c32-4e8f-9673-8762505073cd"
+        sling:resourceType="hero-aem-website/components/structure/productpage"
+        navTitle="Super Splendor"
+        pagerank="28"
+        pageTitle="Super Splendor"
+        productmodel="/content/hmc/prices/in/new_super_splendor"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="hero-aem-website/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                jcr:lastModified="{Date}2022-08-21T10:48:38.534Z"
+                jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/header/city-plus-header"/>
+            <container
+                jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/container"
+                layout="responsiveGrid">
+                <container
+                    cq:styleIds="[1660795084168]"
+                    jcr:lastModified="{Date}2022-08-11T11:20:26.129+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    layout="responsiveGrid">
+                    <carousel_copy
+                        jcr:created="{Date}2022-08-18T13:32:17.401Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T12:46:09.220Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/carousel"
+                        carouselindicatorstyling="carousel-indicators"
+                        textIsRich="[true]"
+                        variant="home">
+                        <image.sftmp/>
+                        <herodetailswithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                assettype="imageasset"
+                                btnlabel1="Request Call Back"
+                                btnlabel2="Book Now"
+                                buttonalign="slide-1-content-left"
+                                imageAlt="banner"
+                                imageRef="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/banner/banner.jpg"
+                                linkTo1="#requestCallBack"
+                                linkTo2="https://eshop.heromotocorp.com/super-splendor-bs6.html"
+                                mobimageRef="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/banner/banner-mob.png"
+                                styling="text-left"
+                                styling1="callback-btn btn-white"
+                                styling2="booknow-btn"
+                                urltype1="modal1"
+                                urltype2="url2"/>
+                        </herodetailswithmap>
+                    </carousel_copy>
+                </container>
+                <container_copy
+                    jcr:lastModified="{Date}2022-08-18T13:32:00.216Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="OVERVIEW"
+                    layout="responsiveGrid">
+                    <color_switch
+                        jcr:created="{Date}2022-08-18T17:46:15.568Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T11:47:38.782Z"
+                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/color-switch"
+                        background="/content/dam/hero-aem-website/in/products/city-plus/color-switch/rotate-section-bg.png"
+                        btnlabel1="Explore"
+                        btnlabel2="Book Now"
+                        headline="Colours &amp; 360"
+                        imgbtn1="/content/dam/hero-aem-website/brand/design/icons/360-view-icon.svg"
+                        leftarrowpath="/content/dam/hero-aem-website/in/products/city-plus/glamour/color-switch/rotate-icon-left.png"
+                        leftheading="COLORS"
+                        linkTo1="https://virtualshowroom.heromotocorp.com/"
+                        linkTo2="https://eshop.heromotocorp.com/super-splendor-bs6.html"
+                        rightarrowpath="/content/dam/hero-aem-website/in/products/city-plus/glamour/color-switch/rotate-icon-right.png"
+                        styling1="btn-icon btn-white"
+                        styling2="btn-red-gradient"
+                        variationtype="city-plus-explore-360-main">
+                        <imagerotation
+                            jcr:lastModified="{Date}2022-08-30T07:48:08.184Z"
+                            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/imagerotation"/>
+                        <colors jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/color-switch/canvas-blank.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/360/canvasblack"
+                                colortitle="Canvas Black"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/color-switch/duskyblack.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/360/dusky-black"
+                                colortitle="Dusky Black"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/color-switch/glaze-black.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/360/glaze-black"
+                                colortitle="Glaze Black"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/color-switch/candy-blazing-red.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/360/heavy-grey"
+                                colortitle="Heavy Grey"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/color-switch/nexus-black.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/360/nexus-blue"
+                                colortitle="Nexus Blue"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                color="/content/dam/hero-aem-website/in/products/city-plus/glamour/360/techno-blue"
+                                colorimagepath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/color-switch/cb-red.png"
+                                colorPath="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/360/cb-red"
+                                colortitle="Candy Blazing Red"/>
+                        </colors>
+                        <multitext jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/1white.png"
+                                title="TWO-WHEELER MANUFACTURER"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/37white.png"
+                                title="YEARS OF EXCELLENCE"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/100Mnwhite.png"
+                                title="TWO-WHEELERS SOLD"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                rightimage="/content/dam/hero-aem-website/brand/design/icons/statistics/9000white.png"
+                                title="CUSTOMER TOUCH POINTS"/>
+                        </multitext>
+                    </color_switch>
+                </container_copy>
+                <container_814465498
+                    cq:styleIds="[1660795969470]"
+                    jcr:created="{Date}2022-08-30T10:56:53.008Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T10:56:53.008Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <booktestride_copy_co
+                        jcr:created="{Date}2022-08-08T07:10:29.353Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:37:28.163Z"
+                        jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/booktestride"
+                        acknowledgemsg="&lt;p>Thank You!&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgfail="&lt;h3>Sorry&lt;/h3>&#xd;&#xa;"
+                        acknowledgemsgfailsubtitle="&lt;p>An error Occured. Please try after sometime&lt;/p>&#xd;&#xa;"
+                        acknowledgemsgsubtitle="&lt;p>We will connect with you soon.&lt;/p>&#xd;&#xa;"
+                        buttonlabel="Submit"
+                        citylabel="City"
+                        cityvalmsg="select a city"
+                        defaultproduct="/content/hero-aem-website/in/en-in/motorcycles/executive/super-splendor"
+                        enterOtplabel="Enter OTP"
+                        ispopup="false"
+                        loadimgpath="/content/dam/hero-aem-website/brand/design/icons/form-submit-loader.svg"
+                        mobilelabel="Mobile No."
+                        mobilevalformmsg="Enter correct mobile number"
+                        mobilevalmsg="Please Enter a valid Mobile Number"
+                        name="Name"
+                        nameformvalmsg="Invalid Name"
+                        namereqvalmsg="The Name is required"
+                        otpresultmsg=" Incorrect OTP"
+                        otpvalmsg="OTP not matching"
+                        resendOtplabel="Resend OTP"
+                        sendOtplabel="Send OTP"
+                        statelabel="State"
+                        statevalmsg="select a state"
+                        subtitle="&lt;p>Take A Hero Ride And Experience The Thrill.&lt;/p>&#xd;&#xa;"
+                        textIsRich="[true,true,true,true,true,true,true]"
+                        title="&lt;h3>BOOK A TEST RIDE NOW&lt;/h3>&#xd;&#xa;"
+                        variationtype="productpage"
+                        vehiclelabel="Vehicle"
+                        vehiclevalmsg="Select a vehicle"/>
+                </container_814465498>
+                <container_782757487
+                    jcr:created="{Date}2022-08-29T18:27:52.478Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:08.564Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FEATURES">
+                    <hotspot
+                        jcr:created="{Date}2022-08-29T18:28:45.986Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T11:26:10.902Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/hotspot"
+                        bgimage="/content/dam/hero-aem-website/in/products/city-plus/new-glamour/hotspot/Hotspot-Background.jpg"
+                        featureheading="Features"
+                        heading="Know More about the Super Splendor"
+                        icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagehotspot/features-view-icon2.svg"
+                        productimage="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/360/canvasblack/13.png"
+                        staricon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagehotspot/star-icon-features.svg"
+                        textIsRich="[true,true,true,true,true,true,true,true,true]"
+                        theme="features-section-main dark-theme">
+                        <hotspotdetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/hotspot/engine.jpg"
+                                featuretext="&lt;p>Powerful 125 cc engine&lt;/p>&#xd;&#xa;"
+                                leftright="left"
+                                style1="61%"
+                                style2="50%"
+                                topbottom="top"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/hotspot/tank.jpg"
+                                featuretext="&lt;p>13% more mileage*&lt;/p>&#xd;&#xa;"
+                                leftright="left"
+                                style1="34%"
+                                style2="44%"
+                                topbottom="top"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/hotspot/seat.jpg"
+                                featuretext="&lt;p>Long and comfortable seat&lt;/p>&#xd;&#xa;"
+                                leftright="left"
+                                style1="33%"
+                                style2="30%"
+                                topbottom="top"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/hotspot/usb-charger.jpg"
+                                featuretext="&lt;p> Integrated USB charger&lt;/p>&#xd;&#xa;"
+                                leftright="left"
+                                style1="29%"
+                                style2="55%"
+                                topbottom="top"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/specification/Super Splender 250X250 PXL_Ground Clearance _Image 6-min.jpg"
+                                featuretext="&lt;p>Best in class 180 mm ground clearance&lt;/p>&#xd;&#xa;"
+                                leftright="left"
+                                style1="78%"
+                                style2="50%"
+                                topbottom="top"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/hotspot/side-stand.jpg"
+                                featuretext="&lt;p>Side stand engine cut off&lt;/p>&#xd;&#xa;"
+                                leftright="left"
+                                style1="71%"
+                                style2="40%"
+                                topbottom="top"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/hotspot/autosail.jpg"
+                                featuretext="&lt;p>Autosaile technology for smooth ride in traffic&lt;/p>&#xd;&#xa;"
+                                leftright="left"
+                                style1="49%"
+                                style2="50%"
+                                topbottom="top"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                featureimage="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/hotspot/digi-analog-meter.jpg"
+                                featuretext="&lt;p>Digital Analog Meter with Real Time Mileage Indicator&lt;/p>&#xd;&#xa;"
+                                leftright="left"
+                                style1="23%"
+                                style2="58%"
+                                topbottom="top"/>
+                        </hotspotdetails>
+                    </hotspot>
+                </container_782757487>
+                <container_2132676925
+                    jcr:created="{Date}2022-08-29T18:29:32.182Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-12T13:30:54.675Z"
+                    jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <adbanner_copy_copy
+                        jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T10:03:09.369Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adbanner"
+                        background="red-theme no-mob-img-hide"
+                        bgStyle1="btn-white"
+                        bgStyle2="btn-red-gradient"
+                        button1label="BOOK NOW"
+                        fileReference="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/specification/Super Splender 386X288 PXL_Dimensions-min.jpg"
+                        headline="&lt;h4>Book a test ride now &lt;/h4>&#xd;&#xa;&lt;p>Take a test ride of new Super Splendor!&lt;/p>&#xd;&#xa;"
+                        imageAlt="hero ride image"
+                        imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-ride-img.svg"
+                        linkTo1="https://eshop.heromotocorp.com/super-splendor-bs6.html"
+                        textIsRich="true"
+                        type1="url1"
+                        type2="modal2"/>
+                </container_2132676925>
+                <container_1179138905
+                    cq:styleIds="[1660795123209]"
+                    jcr:created="{Date}2022-08-29T18:30:09.931Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:27.154Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="SPECIFICATION">
+                    <generictab
+                        jcr:created="{Date}2022-08-29T18:30:47.206Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T05:32:18.253Z"
+                        jcr:lastModifiedBy="d.porwal@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/generictab"
+                        bgimage="/content/dam/hero-aem-website/in/products/city-plus/bg-images/specification-bg.png"
+                        specificationstext1="Super Splendor Specifications"
+                        textIsRich="true"
+                        variant="cityplusproduct">
+                        <tab-0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:01:02.696Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-13T09:29:29.931Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="NA"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/specification/Engine.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Type"
+                                        value="Air Cooled, 4-stroke"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Displacement"
+                                        value="124.7 cc"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Power"
+                                        value="10.7 BHP @ 7500 rpm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Max. Torque"
+                                        value="10.6 Nm @ 6000 rpm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Bore x Stroke "
+                                        value="52.4 x 57.8 mm"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel System"
+                                        value=" Fuel Injection (FI)"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Compression Ratio"
+                                        value="9.9:1"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-0>
+                        <tab-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:03:31.272Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-13T09:23:06.713Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="NA"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/specification/Wheels-tyres.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Wheel Type"
+                                        value="Alloy"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front Tyre"
+                                        value="80/100-18 (Tubeless)"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear Tyre"
+                                        value="100/80-18 (Tubeless)"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-1>
+                        <tab-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:05:40.892Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-13T09:25:07.988Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="NA"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/specification/Suspension.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front"
+                                        value="Dia.30 Telescopic"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear"
+                                        value="5-step Adjustable Hydraulic Shock Absorbers"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-2>
+                        <tab-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:07:09.821Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-13T09:29:57.717Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="NA"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/specification/Chassis.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Clutch"
+                                        value=" Wet Multiplate"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Frame Type"
+                                        value=" Diamond"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Transmission"
+                                        value="5-Speed"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-3>
+                        <tab-4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:08:37.556Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-13T09:30:55.392Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="NA"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/specification/brake.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Front"
+                                        value="Disc - Dia 240 mm / Drum - Dia 130 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Rear"
+                                        value="Drum 130 mm"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-4>
+                        <tab-5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:10:40.859Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-13T09:32:53.961Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="NA"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/specification/Electricals.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Battery"
+                                        value="MF 12V , 4Ah (ETZ 5)"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Starting System"
+                                        value="Self (with i3s) &amp; Kick"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-5>
+                        <tab-6
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/container">
+                            <imagespecification
+                                jcr:created="{Date}2022-08-30T08:12:51.774Z"
+                                jcr:createdBy="d.porwal@accenture.com"
+                                jcr:lastModified="{Date}2022-09-13T09:57:14.884Z"
+                                jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="hero-aem-website/components/content/imagespecification"
+                                alt="NA"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="false"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/specification/super splendor_specifications.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                theme="cityplus"
+                                titleValueFromDAM="false">
+                                <specifications jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Length"
+                                        value="2051 mm"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Width"
+                                        value="Drum -720 mm / Disc -743 mm"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Height"
+                                        value="1074 mm"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        title=" Saddle Height "
+                                        value="798 mm"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        title=" Wheelbase"
+                                        value="1273 mm"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Ground Clearance "
+                                        value="180 mm"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Fuel Tank Capacity"
+                                        value="10 Litre"/>
+                                    <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Kerb Weight"
+                                        value="Self Drum Cast- 122 Kg, Self Disc Cast- 123 kg"/>
+                                    <item8
+                                        jcr:primaryType="nt:unstructured"
+                                        title="Trail"
+                                        value="92mm"/>
+                                </specifications>
+                            </imagespecification>
+                        </tab-6>
+                        <cityplusdownloadbrochure
+                            jcr:lastModified="{Date}2022-09-07T10:26:15.348Z"
+                            jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/downloadbrochure"
+                            icon="/content/dam/hero-aem-website/in/products/city/hf-deluxe/imagespecifications/icons/arrow-down.png"
+                            link="/content/dam/hero-aem-website/in/documents/product-brochures/super-splendor-Brochure.pdf"
+                            text="Download Brochure"
+                            variation="link-btn download-btn"/>
+                        <cityplusshareicon
+                            jcr:lastModified="{Date}2022-09-07T10:29:30.411Z"
+                            jcr:lastModifiedBy="jadhav.shruthi.laya@accenture.com"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="hero-aem-website/components/content/shareicon"
+                            emailIcon="/content/dam/hero-aem-website/brand/design/icons/email-icon.svg"
+                            emailSub="Hero Super Splendor Brochure"
+                            icon="/content/dam/hero-aem-website/brand/design/icons/share-icon.svg"
+                            linkpath="/content/dam/hero-aem-website/in/documents/product-brochures/super-splendor-Brochure.pdf"
+                            text="please find attachment"
+                            variation="motorcycle"
+                            wpIcon="/content/dam/hero-aem-website/brand/design/icons/whatsapp-icon.svg"
+                            wpLink="https://api.whatsapp.com"
+                            wpText="Hero Super Splendor Brochure"/>
+                        <tabitems jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                title="Engine"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                title="Wheels &amp; Tyres"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                title="Suspensions"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                title="Transmission &amp; Chassis"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                title="Brakes"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                title="Electricals"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                title="Dimensions"/>
+                        </tabitems>
+                    </generictab>
+                </container_1179138905>
+                <container_883143836
+                    cq:styleIds="[1660795283944]"
+                    jcr:created="{Date}2022-08-29T18:33:47.386Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:19:47.207Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="PRICE">
+                    <price_info_copy_copy
+                        jcr:created="{Date}2022-08-18T09:33:32.211Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T10:36:25.024Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/price-info"
+                        bgImage="/content/dam/hero-aem-website/in/products/city-plus/bg-images/pricing-bg.png"
+                        bgStyle="btn-red-gradient"
+                        buttonlabel="Book Now"
+                        buttonlink="https://eshop.heromotocorp.com/super-splendor-bs6.html"
+                        buttonlinktype="url"
+                        citylabel="City"
+                        defaultcitylabel="Select City"
+                        defaultcitypath="/content/hmc/prices/in/new_super_splendor/mah/mumbai"
+                        defaultstatelabel="Select State"
+                        defaultstatepath="/content/hmc/prices/in/new_super_splendor/mah"
+                        desktopimage="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/pricing/Desktop Price Section_490 x 522pxl-03.png"
+                        disclaimer="&lt;p>*Please contact the dealer for exact on-road prices. Local levies, Octroi, Entry tax will be extra as applicable. Price ruling at the time of delivery would be applicable. Prices are subject to change without notice. HMCL reserves the right to modify the prices at its discretion at any point of time.&lt;/p>&#xd;&#xa;&lt;p>*More Mileage as compared to the previous variant.&lt;/p>&#xd;&#xa;"
+                        heading="Super Splendor Price"
+                        mobilemage="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/pricing/Mobile Price Section_158 x 122pxl-02.png"
+                        productPath="/content/hero-aem-website/in/en-in/motorcycles/executive/super-splendor"
+                        showroomlabel="Ex-Showroom Price"
+                        statelabel="State"
+                        textIsRich="true"
+                        variantlabel="Variant"
+                        variationtype="dark-theme"/>
+                </container_883143836>
+                <container_1947122026
+                    cq:styleIds="[1660796993324]"
+                    jcr:created="{Date}2022-08-30T10:38:55.093Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-07T12:35:33.612Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FINANCE">
+                    <adbanner_copy_copy_c
+                        jcr:created="{Date}2022-08-17T09:02:46.396Z"
+                        jcr:createdBy="d.porwal@accenture.com"
+                        jcr:lastModified="{Date}2022-09-05T14:44:04.190Z"
+                        jcr:lastModifiedBy="p.bhausaheb.lande@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/adbanner"
+                        background="red-theme no-mob-img-hide"
+                        bgStyle1="btn-white"
+                        bgStyle2="btn-red-gradient"
+                        button1label="EXCHANGE NOW"
+                        fileReference="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/exchange/exchange.png"
+                        headline="&lt;h4>Exciting Exchange Offers&lt;/h4>&#xd;&#xa;&lt;p>Get best resale value for your old two-wheeler and ride home on all new Hero two-wheeler&lt;/p>&#xd;&#xa;"
+                        imageAlt="restart india image"
+                        imageRef="/content/dam/hero-aem-website/in/products/city/hf-deluxe/adbanner/hero-exchange-img.png"
+                        linkTo1="http://wheelsoftrust.com/"
+                        textIsRich="true"
+                        type1="url1"
+                        type2="modal2">
+                        <image/>
+                    </adbanner_copy_copy_c>
+                </container_1947122026>
+                <container_1646420646
+                    cq:styleIds="[1660795941874]"
+                    jcr:created="{Date}2022-08-30T10:40:31.652Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:20:07.709Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FINANCE"/>
+                <container_698488038
+                    cq:styleIds="[1660797055151]"
+                    jcr:created="{Date}2022-08-30T10:41:13.904Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T10:41:13.904Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"/>
+                <container_101072763
+                    cq:styleIds="[1660795954617]"
+                    jcr:created="{Date}2022-08-30T10:41:26.687Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:20:20.973Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="COMPARE">
+                    <productcompare_copy_
+                        jcr:created="{Date}2022-08-17T10:06:55.280Z"
+                        jcr:createdBy="jadhav.shruthi.laya@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T09:48:52.202Z"
+                        jcr:lastModifiedBy="aditya.l.srivastava@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/productcompare"
+                        headline="COMPARE"
+                        image="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/compare/super-splendor-left.png"
+                        imageOneAlt="Hero Super Splendor"
+                        imageOneMob="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/compare/super-splendor-left-mob.png"
+                        imageTwo="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/compare/super-splendor-right.png"
+                        imageTwoAlt="Hero Splendor+"
+                        imageTwoMob="/content/dam/hero-aem-website/in/products/city-plus/new-super-splendor/compare/super-splendor-right-mob.png"
+                        productName="SUPER SPLENDOR"
+                        productNameTwo="GLAMOUR"
+                        theme="dark-theme"
+                        variation="normal">
+                        <specificationDetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                type="Displacement"
+                                valueOne="124.7 cc"
+                                valueTwo="124.7 cc"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                type="Ignition System"
+                                valueOne="Self start"
+                                valueTwo=" Self (with i3s) &amp;  Kick"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                type="Max Power"
+                                valueOne="10.7 kW @ 7500 rpm"
+                                valueTwo="10.73 kW @ 7500 rpm"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                type="Max Torque"
+                                valueOne="10.6 Nm @ 6000 rpm"
+                                valueTwo="10.6 Nm @ 6000 rpm"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                type="Fuel tanck capacity"
+                                valueOne="12 L"
+                                valueTwo="10 L"/>
+                        </specificationDetails>
+                    </productcompare_copy_>
+                </container_101072763>
+                <container_1062518803
+                    cq:styleIds="[1660795975221]"
+                    jcr:created="{Date}2022-08-30T10:57:44.838Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T10:57:44.838Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container">
+                    <experiencefragment_c
+                        jcr:created="{Date}2022-09-13T06:37:55.363Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-13T06:38:25.215Z"
+                        jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/collage-section/master"/>
+                </container_1062518803>
+                <container_2075998844
+                    jcr:created="{Date}2022-08-30T10:58:31.293Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-08-30T14:21:18.190Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/container"
+                    id="FIND-DEALER">
+                    <dealer_info_copy
+                        jcr:created="{Date}2022-08-18T13:54:15.970Z"
+                        jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                        jcr:lastModified="{Date}2022-09-12T11:51:20.735Z"
+                        jcr:lastModifiedBy="gausiya.latif.momin@accenture.com"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="hero-aem-website/components/content/dealer-info"
+                        citylabel="City"
+                        dealerheading="Book appointment at your nearest experience center"
+                        defaultcity="/content/hmc/dealers/in/dlr/MAH/mumbai"
+                        statelabel="State"
+                        subtitle="Where do you live?"
+                        theme="city-plus-theme dark-theme"
+                        title="We are near you!"/>
+                </container_2075998844>
+                <experiencefragment_c
+                    jcr:created="{Date}2022-09-03T12:48:10.231Z"
+                    jcr:createdBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:lastModified="{Date}2022-09-03T17:47:07.683Z"
+                    jcr:lastModifiedBy="c.vishwa.prakash.s@accenture.com"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="hero-aem-website/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/product/modals/request-callback-pop-up-product"/>
+            </container>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="hero-aem-website/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/hero-aem-website/in/en/site/footer/master"
+                id="footer"/>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-09-13T08:05:03.620Z"
+            jcr:lastModifiedBy="sree.d.kollimarla@accenture.com"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

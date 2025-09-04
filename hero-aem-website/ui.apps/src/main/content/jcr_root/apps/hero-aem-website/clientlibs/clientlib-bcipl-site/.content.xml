@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[bcipl-aem-website.site]"
+    cssProcessor="[default:none,min:yui]"
+    embed="[bcipl-aem-website.bciplcontent,bcipl-aem-website.bciplmainbodytemplate,bcipl-aem-website.bciplheader,bcipl-aem-website.bciplfooter,bcipl-aem-website.bcipldropdown]"
+    jsProcessor="[default:none,min:gcc]"/>

@@ -1,0 +1,15 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+<video data-sly-test="${properties.isanimation != 'true'}" class="w-100 ${properties.addtnclass}"  controls>
+   <source src="${properties.video1}" type="video/webm">
+   <source src="${properties.video2}" type="video/mp4">
+   Your browser does not support the video tag.
+</video>
+<div class="child_section1 mb-3 mb-md-0 mt-3" data-sly-test="${properties.isanimation == 'true'}" data-aos="${properties.animationtype}" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200">
+   <video class="w-100 ${properties.addtnclass}" controls>
+      <source src="${properties.video1}" type="video/webm">
+      <source src="${properties.video2}" type="video/mp4">
+      Your browser does not support the video tag.
+   </video>
+</div>

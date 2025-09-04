@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Points Redemption Component"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem_cmp_tableofcontents_v1">
+    <content
+            granite:class="cmp-toc__editor"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <rewards
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Points and Rewards"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <tierbackground
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Path for Tier Background Image"
+                                                    fieldLabel="Configure Tier Background Image"
+                                                    rootPath="/content/dam/hero-aem-website"
+                                                    name="./tierbackground"/>
+                                            <tiericon
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Path for Tier Icon"
+                                                    fieldLabel="Configure Tier Icon"
+                                                    rootPath="/content/dam/hero-aem-website"
+                                                    name="./tiericon"/>
+                                            <heading
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Enter Tier Heading"
+                                                    name="./heading"
+                                                    required="{Boolean}true"/>
+                                            <subtitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Enter Tier Description"
+                                                    name="./subtitle"
+                                                    required="{Boolean}true"/>
+                                            <coinicon
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Path for Coin Icon"
+                                                    fieldLabel="Configure Coin Icon"
+                                                    rootPath="/content/dam/hero-aem-website"
+                                                    name="./coinicon"/>
+                                            <gifticon
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Path for Gift Icon"
+                                                    fieldLabel="Configure Gift Icon"
+                                                    rootPath="/content/dam/hero-aem-website"
+                                                    name="./gifticon"/>
+                                            <multi
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldDescription="Add images for Desktop and Mobile"
+                                                    fieldLabel="Add Points and Reward Details">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./rewarddetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <configurations
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <configs
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        jcr:title="Reward Details"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+
+                                                                        <rewardamount
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                                                fieldLabel="Enter Reward Amount"
+                                                                                name="./rewardamount"/>
+                                                                        <rewarddetails
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                                fieldLabel="Enter Reward Details"
+                                                                                name="./rewarddetails"
+                                                                                useFixedInlineToolbar="{Boolean}true">
+                                                                            <rtePlugins
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
+                                                                            <uiSettings
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceSuperType="/apps/hero-aem-website/components/content/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
+                                                                            <htmlRules jcr:primaryType="nt:unstructured">
+                                                                                <blockHandling
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        removeSingleParagraphContainer="{Boolean}true"/>
+                                                                            </htmlRules>
+                                                                        </rewarddetails>
+                                                                    </items>
+                                                                </configs>
+                                                            </items>
+                                                        </configurations>
+                                                    </items>
+                                                </field>
+                                            </multi>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </rewards>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

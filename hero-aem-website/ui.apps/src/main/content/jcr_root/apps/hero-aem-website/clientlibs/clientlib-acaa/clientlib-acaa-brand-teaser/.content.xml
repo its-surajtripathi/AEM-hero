@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    cssProcessor="[default:none,min:yui]"
+    jsProcessor="[default:none,min:gcc]"
+    dependencies="[hero-aem-website.jqueryv3-5-1,hero-aem-website.threejs,hero-aem-website.gsap,granite.csrf.standalone, hero-aem-website.slick]"
+    embed="[acaa.brand-teaser,acaa.navigation,acaa.bike-intro,acaa.current-trends,acaa.insta-feed,acaa.bike-intro,acaa.testimonial,acaa.leadgen-invite,acaa.pre-teaser,acaa.pricelist]"
+    categories="[acaa.brand-teaser-site]"/>

@@ -1,0 +1,23 @@
+{
+  "PWSESSIONRS": {
+    "PWPROCESSRS": {
+      "PWHEADER": {
+        "IN_PROCESS_ID": "2",
+        "APP_ID": "ONEAPP",
+        "ORG_ID": "ONEAPP",
+        "OUT_PROCESS_ID": "oa_getSRID",
+        "LOGIN_ID": ""
+      },
+      "PWDATA": {
+        "oa_getSRID": {
+          "Row": [
+            {
+                "0": "${job_card_number}"
+            }
+          ]
+        }
+      },
+      "PWERROR": ""
+    }
+  }
+}

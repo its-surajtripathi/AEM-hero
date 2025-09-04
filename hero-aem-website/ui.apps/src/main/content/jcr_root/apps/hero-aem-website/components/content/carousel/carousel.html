@@ -1,0 +1,104 @@
+<p data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note">
+   ${'hero.editcomponent' @ format=[component.title], i18n}
+</p>
+<!-- banner-section -->
+<div class="container-fluid p-0 position-relative"
+   data-sly-test="${properties.variant != 'scooter' && properties.variant != 'my-vehicle' && properties.variant != 'investors' && properties.variant != 'red-carousel' && properties.variant != 'harley-devidson'}">
+   <div class="banner-wrapper"
+      data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='herodetailswithmap'}">
+      <div id="carousel${resource.path.hashCode}" class="carousel slide cust-demo" data-ride="carousel">
+         <!-- Indicators -->
+         <ul class="${properties.carouselindicatorstyling}" data-sly-list="${listUse}"
+            data-sly-test="${listUse.length > 1}">
+            <li data-target="#carousel${resource.path.hashCode}" data-slide-to="${itemList.index}"
+               class="${itemList.first ? 'active' : ''}">
+            </li>
+         </ul>
+         <!-- The slideshow -->
+         <div class="carousel-inner" data-sly-list="${listUse}">
+            <div class="carousel-item${itemList.first ? ' active' : ''}" id="carousel"
+               data-interval="${item.properties.carouselinterval ? item.properties.carouselinterval : '5' }000">
+               <a data-sly-unwrap="${!item.properties.bannerLink}" href="${item.properties.bannerLink}">
+                  <img
+                     data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.imageRef, rendition='banner-web'}"
+                     src="${imagePath}" alt="${item.properties.imageAlt}" class="img-fluid d-none d-md-block">
+                  <img
+                     data-sly-use.imagePath="${'/apps/hero-aem-website/utils/imagehelper.js' @ path=item.properties.mobimageRef, rendition='banner-mobile'}"
+                     src="${imagePath}" alt="${item.properties.imageAlt}" class="img-fluid d-block d-md-none">
+               </a>
+               <div class="slider-content text-white ${item.properties.styling}"
+                  style="color : ${item.properties.fontcolor @ context = 'styleToken'} !important;">
+                  ${item.properties.headline @ context='html'}
+               </div>
+                  <div class="slide-1-content ${item.properties.buttonalign} ${inheritedPageProperties.showctaanimation=='true' ? 'd-md-block d-none' : ''}" id="carousel${resource.path.hashCode}">
+                     <a aa-data-cta="${item.properties.imageAlt}"
+                        data-sly-test="${item.properties.linkTo1 && item.properties.urltype1 == 'url1'}"
+                        class="btn ${item.properties.styling1}" aa-data-attr="track_cta"
+                        data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo1}"
+                        href="${linkuse.value}"
+                        target="${linkuse.isExternal ? '_blank' : '_self'}">${item.properties.btnlabel1}</a>
+                     <a aa-data-cta="${item.properties.imageAlt}"
+                        data-sly-test="${item.properties.linkTo1 && item.properties.urltype1 == 'modal1'}"
+                        class="btn ${item.properties.styling1}" aa-data-attr="track_cta" data-toggle="modal"
+                        data-target="${item.properties.linkTo1}"
+                        data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo1}"
+                        href="javascript:void(0)">${item.properties.btnlabel1}</a>
+                     <a aa-data-cta="${item.properties.imageAlt}"
+                        data-sly-test="${item.properties.linkTo2 && item.properties.urltype2 == 'url2'}"
+                        class="btn ${item.properties.styling2}" aa-data-attr="track_cta"
+                        data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo2}"
+                        href="${linkuse.value}"
+                        target="${linkuse.isExternal ? '_blank' : '_self'}">${item.properties.btnlabel2}</a>
+                     <a aa-data-cta="${item.properties.imageAlt}"
+                        data-sly-test="${item.properties.linkTo2 && item.properties.urltype2 == 'modal2'}"
+                        class="btn ${item.properties.styling2}" aa-data-attr="track_cta" data-toggle="modal"
+                        data-target="${item.properties.linkTo2}"
+                        data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkTo2}"
+                        href="javascript:void(0)">${item.properties.btnlabel2}</a>
+                  </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <sly data-sly-test="${inheritedPageProperties.showctaanimation}">
+      <sly data-sly-test="${properties.variant != 'scooter' && properties.variant != 'my-vehicle' && properties.variant != 'investors' && properties.variant != 'red-carousel' && properties.variant != 'harley-devidson'}">
+      <sly data-sly-list.parent="${resource.children}">
+         <sly data-sly-test="${parent.name == 'herodetailswithmap'}">
+            <sly data-sly-list.child="${parent.children}">
+               <sly data-sly-test="${childList.index == 0}">
+                  <div class="slide-1-content ${child.buttonalign} d-md-none d-flex w-100 side-margin"
+                     id="scooter-banner-slide-mob" data-animation="${properties.showanimation}">
+                     <a aa-data-cta="${child.imageAlt}" data-sly-test="${child.linkTo1 && child.urltype1 == 'url1'}"
+                        class="btn ${child.styling1}" aa-data-attr="track_cta"
+                        data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=child.linkTo1}"
+                        href="${linkuse.value}"
+                        target="${linkuse.isExternal ? '_blank' : '_self'}">${child.btnlabel1}</a>
+                     <a aa-data-cta="${child.imageAlt}" data-sly-test="${child.linkTo1 && child.urltype1 == 'modal1'}"
+                        class="btn ${child.styling1}" aa-data-attr="track_cta" data-toggle="modal"
+                        data-target="${child.linkTo1}"
+                        data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=child.linkTo1}"
+                        href="javascript:void(0)">${child.btnlabel1}</a>
+                     <a aa-data-cta="${child.imageAlt}" data-sly-test="${child.linkTo2 && child.urltype2 == 'url2'}"
+                        class="btn ${child.styling2}" aa-data-attr="track_cta"
+                        data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=child.linkTo2}"
+                        href="${linkuse.value}"
+                        target="${linkuse.isExternal ? '_blank' : '_self'}">${child.btnlabel2}</a>
+                     <a aa-data-cta="${child.imageAlt}" data-sly-test="${child.linkTo2 && child.urltype2 == 'modal2'}"
+                        class="btn ${child.styling2}" aa-data-attr="track_cta" data-toggle="modal"
+                        data-target="${item.properties.linkTo2}"
+                        data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=child.linkTo2}"
+                        href="javascript:void(0)">${child.btnlabel2}</a>
+                  </div>
+               </sly>
+            </sly>
+         </sly>
+      </sly>
+   </sly>
+   </sly>
+</div>
+<sly data-sly-test="${properties.variant == 'scooter'}" data-sly-include="${properties.variant}.html"></sly>
+<sly data-sly-test="${properties.variant == 'my-vehicle'}" data-sly-include="${properties.variant}.html"></sly>
+<sly data-sly-test="${properties.variant == 'investors'}" data-sly-include="${properties.variant}.html"></sly>
+<sly data-sly-test="${properties.variant == 'harley-devidson'}" data-sly-include="${properties.variant}.html"></sly>
+
+<img data-sly-test="${properties.teamlogo}" id='xtrack-carrousel-img' src='${properties.teamlogo}'/>

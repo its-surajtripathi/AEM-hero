@@ -1,0 +1,90 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" class="author-note"> ${'Edit {0} Component' @
+    format=[component.title], i18n} </sly>
+
+<section id="nps-feedback" data-component-relativePath="${currentNode.path @ addSelectors=['npsfeedback'],extension='json'}">
+    <div class="nps--toclick">
+        <p>
+            ${properties.npstitle}
+        </p>
+    </div>
+    <sly data-sly-list.mainchild = "${resource.listChildren}">
+        <sly data-sly-test = "${mainchild.name == 'npsfeedbackdetails'}">
+            <div id="feedback-modal">
+                    <div class="ratings-select">
+                        <h4>
+                            ${properties.npsheadline}
+                        </h4>
+                        <div class="ratings--outer">
+                            <div class="outer-wrap">
+                                <div data-sly-list.subchild = "${mainChild.listChildren}" class="ratings-inner-wrap">
+                                    <div class="rating-tile">
+                                        <p>
+                                            ${subchildList.count}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scale--outer">
+                            <div class="scale">
+                                <p class="red-text">
+                                    1- ${properties.npspoorratingtext}
+                                </p>
+                            </div>
+                            <sly data-sly-list.subchild = "${mainChild.listChildren}">
+                                <sly data-sly-test="${subchildList.last}">
+                                    <div class="scale">
+                                        <p class="green-text">
+                                            ${subchildList.count}- ${properties.npstopratingtext}
+                                        </p>
+                                    </div>
+                                </sly>
+                            </sly>
+                        </div>
+                    </div>
+
+                    <div data-sly-list.subchild = "${mainChild.listChildren}" class="suggestion-select d-none">
+                        <div class="suggestions-wrap d-none">
+                            <h4>
+                                ${subchild.npsratingtitle}
+                            </h4>
+                            <sly data-sly-list.subreasonchild="${subchild.listChildren}">
+                                <sly data-sly-test = "${subreasonchild.name == 'npsreasondetails'}">
+                                    <div class="reason-wrap">
+                                        <div class="outer--wrap">
+                                            <div class="inner--wrap" data-sly-list.ratereasonchild="${subreasonchild.listChildren}">
+                                                <div class="reason-tile">
+                                                    <p>
+                                                        ${ratereasonchild.npsratingexpreason}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </sly>
+                            </sly>
+                            <input type="button" class="campaign-btn btn-red-gradient btn" id="manual-sub-btn" name="submit"
+                                value="submit feedback" disabled>
+                        </div>
+                    </div>
+
+                    <div class="thankyou-final d-none">
+                        <div class="thankyou--wrap">
+                            <img src="${properties.npsthankimg}" alt="">
+                            <p class="thankyou">
+                                ${properties.npsthankmain}
+                            </p>
+                            <h3 class="subtext">
+                                ${properties.npsthanksub}
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="close position-absolute">
+                        <img src="/etc.clientlibs/hero-aem-website/clientlibs/clientlib-site/resources/images/icons/modal-close.svg"
+                            alt="">
+                    </div>
+            </div>
+        </sly>
+    </sly>
+</section>

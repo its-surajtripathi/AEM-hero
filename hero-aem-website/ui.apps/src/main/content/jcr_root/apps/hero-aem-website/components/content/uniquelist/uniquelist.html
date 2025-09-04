@@ -1,0 +1,12 @@
+<div class="col-12 footer-col">
+   <h3 class="footer-heading  pb-4 h3-heavy-heading-std">${properties.heading1 @context='html'}</h3>
+   <ul class="footer-link d-md-block d-none"
+      data-sly-use.listUse="${'/apps/hero-aem-website/utils/multifieldhelper.js' @ multifieldName='aboutus'}"
+      data-sly-list="${listUse}">
+      <li class="pb-2">
+         <a aa-data-attr="track_cta" class="b2-text-std font-montserrat-regular text-color-lightgrey"
+            data-sly-use.linkuse="${'/apps/hero-aem-website/utils/linkhelper.js' @ linkUrl=item.properties.linkfooter}"
+            href="${linkuse.value}" x-cq-linkchecker="valid" target="${linkuse.isExternal ? '_blank' : '_self'}" >${item.properties.subheading @context='html'}</a>
+      </li>
+   </ul>
+</div>
